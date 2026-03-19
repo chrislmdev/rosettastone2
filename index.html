@@ -149,6 +149,26 @@ td:last-child{border-right:none}
 .upload-btn{display:flex;align-items:center;justify-content:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--text-dim);background:var(--surface2);border:1px dashed var(--border2);border-radius:5px;padding:8px;cursor:pointer;transition:all 0.15s;text-align:center}
 .upload-btn:hover{border-color:var(--accent);color:var(--accent)}
 /* file inputs are positioned off-screen via inline style */
+
+/* ── MULTI-SELECT DROPDOWN ── */
+.ms-wrap{position:relative;display:inline-block}
+.ms-btn{display:flex;align-items:center;gap:6px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);color:var(--text-dim);font-family:var(--mono);font-size:11px;padding:7px 10px;cursor:pointer;white-space:nowrap;transition:border-color 0.15s;user-select:none;min-width:120px}
+.ms-btn:hover,.ms-btn.open{border-color:var(--accent);color:var(--text)}
+.ms-btn .ms-arrow{margin-left:auto;font-size:9px;transition:transform 0.15s;opacity:0.5}
+.ms-btn.open .ms-arrow{transform:rotate(180deg);opacity:1}
+.ms-count{background:var(--accent);color:#fff;border-radius:3px;font-size:9px;padding:1px 5px;font-weight:600;margin-left:2px}
+.ms-dropdown{display:none;position:absolute;top:calc(100% + 4px);left:0;z-index:300;background:var(--surface);border:1px solid var(--border2);border-radius:8px;min-width:190px;padding:6px;box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+.ms-dropdown.open{display:block;animation:ms-in 0.12s ease}
+@keyframes ms-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.ms-option{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:11px;color:var(--text-dim);transition:background 0.1s;user-select:none}
+.ms-option:hover{background:var(--surface2);color:var(--text)}
+.ms-option.selected{color:var(--text)}
+.ms-check{width:14px;height:14px;border:1px solid var(--border2);border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:9px;transition:all 0.1s}
+.ms-option.selected .ms-check{background:var(--accent);border-color:var(--accent);color:#fff}
+.ms-sep{height:1px;background:var(--border);margin:4px 0}
+.ms-clear{font-family:var(--mono);font-size:10px;color:var(--text-muted);padding:4px 8px;cursor:pointer;text-align:center;border-radius:4px}
+.ms-clear:hover{color:var(--accent);background:var(--surface2)}
+.ms-option-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
 .p-toolbar{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .csp-filter-btn{font-family:var(--mono);font-size:10px;padding:5px 11px;border-radius:5px;cursor:pointer;border:1px solid var(--border2);background:var(--surface2);color:var(--text-muted);transition:all 0.15s;letter-spacing:0.03em}
 .csp-filter-btn:hover{border-color:var(--border2);color:var(--text-dim)}
@@ -207,6 +227,15 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
 .footer-inner{max-width:1500px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:var(--mono);font-size:10px;color:var(--text-muted)}
 .footer-inner a{color:var(--accent2);text-decoration:none}
 
+/* ── LOGOS ── */
+.csp-logo{display:inline-block;flex-shrink:0;vertical-align:middle}
+.csp-logo svg{display:block}
+.csp-logo-sm svg{width:14px;height:14px}
+.csp-logo-md svg{width:20px;height:20px}
+.csp-logo-lg svg{width:32px;height:32px}
+.cat-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.cat-icon svg{width:13px;height:13px;opacity:0.7}
+
 @media(max-width:768px){
   nav,footer,.toolbar,.pricing-layout{padding-left:12px;padding-right:12px}
   .nav-tab span{display:none}
@@ -217,6 +246,30 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
 </style>
 </head>
 <body>
+
+<!-- ── HIDDEN SVG SYMBOL DEFS ── -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- AWS (Simple Icons) -->
+  <symbol id="logo-aws" viewBox="0 0 24 24">
+    <path fill="#FF9900" d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.064.056.128.056.184 0 .08-.048.16-.152.24l-.504.336a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.24-.112a2.47 2.47 0 0 1-.288-.376 6.18 6.18 0 0 1-.248-.472c-.624.736-1.408 1.104-2.352 1.104-.672 0-1.208-.192-1.6-.576-.392-.384-.592-.896-.592-1.536 0-.68.24-1.232.728-1.648.488-.416 1.136-.624 1.96-.624.272 0 .552.024.848.064.296.04.6.104.920.176v-.584c0-.608-.128-1.032-.376-1.28-.256-.248-.688-.368-1.304-.368-.28 0-.568.032-.864.104-.296.072-.584.16-.864.272a2.294 2.294 0 0 1-.28.104.488.488 0 0 1-.128.024c-.112 0-.168-.08-.168-.248v-.392c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.168c.28-.144.616-.264 1.008-.36A4.85 4.85 0 0 1 3.872 6c.968 0 1.68.22 2.14.66.456.44.688 1.1.688 1.98v2.396zm-3.24 1.212c.264 0 .536-.048.824-.144.288-.096.544-.272.760-.512.128-.152.224-.32.272-.512.048-.192.08-.424.08-.696v-.336a6.66 6.66 0 0 0-.736-.056 6.79 6.79 0 0 0-.736.04c-.504.072-.872.232-1.112.488-.24.256-.36.6-.36 1.04 0 .416.104.728.32.944.208.208.504.312.888.312l-.2-.568zm6.111.567c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.312L7.586 7.5a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.192-.2h.784c.152 0 .256.024.312.08.064.048.112.16.16.312l1.2 4.743 1.112-4.743c.04-.16.088-.264.152-.312a.533.533 0 0 1 .32-.08h.64c.152 0 .256.024.32.08.064.048.12.16.152.312l1.128 4.8 1.24-4.8c.048-.16.104-.264.16-.312a.52.52 0 0 1 .312-.08h.744c.128 0 .2.064.2.2 0 .04-.008.08-.016.128a1.137 1.137 0 0 1-.056.2l-1.696 5.924c-.048.16-.104.264-.168.312a.52.52 0 0 1-.304.08h-.688c-.152 0-.256-.024-.32-.08-.064-.056-.12-.16-.152-.32l-1.104-4.584-1.096 4.576c-.04.16-.088.264-.152.32a.545.545 0 0 1-.32.08h-.688zm9.024.184c-.416 0-.832-.048-1.232-.144-.4-.096-.712-.2-.92-.32-.128-.072-.216-.152-.248-.224a.56.56 0 0 1-.048-.232v-.408c0-.168.064-.248.184-.248.048 0 .096.008.144.024.048.016.12.048.2.08.272.12.568.216.888.28.328.064.648.096.976.096.52 0 .92-.088 1.2-.264a.86.86 0 0 0 .424-.768.778.778 0 0 0-.212-.556c-.144-.152-.416-.288-.808-.416l-1.16-.36c-.584-.184-1.016-.456-1.288-.816a1.953 1.953 0 0 1-.408-1.192c0-.344.072-.648.216-.912.144-.264.336-.496.576-.688.24-.2.512-.344.824-.448.312-.104.640-.152.984-.152.168 0 .344.008.512.032.176.024.336.056.496.088.152.04.296.08.432.128.136.048.24.096.312.144a.65.65 0 0 1 .216.192.43.43 0 0 1 .064.24v.376c0 .168-.064.256-.184.256a.83.83 0 0 1-.304-.096 3.652 3.652 0 0 0-1.528-.312c-.472 0-.84.08-1.096.24-.256.16-.384.408-.384.752 0 .216.08.4.232.552.152.152.44.304.856.44l1.136.36c.576.184.992.44 1.248.768.256.328.376.704.376 1.12 0 .352-.072.672-.208.952-.144.28-.336.528-.584.728-.248.208-.544.36-.888.464-.36.112-.744.168-1.16.168z"/>
+    <path fill="#FF9900" d="M20.16 17.003c-2.395 1.77-5.877 2.713-8.875 2.713-4.197 0-7.973-1.55-10.826-4.13-.224-.2-.024-.476.248-.32 3.08 1.793 6.889 2.873 10.817 2.873 2.652 0 5.568-.552 8.249-1.697.408-.168.744.272.387.56zm1.097-1.248c-.304-.392-2.017-.184-2.784-.096-.232.032-.272-.176-.056-.328 1.36-.952 3.592-.68 3.848-.36.256.32-.064 2.56-1.344 3.624-.196.168-.384.08-.296-.136.288-.72.928-2.32.632-2.704z"/>
+  </symbol>
+  <!-- Microsoft Azure -->
+  <symbol id="logo-azure" viewBox="0 0 24 24">
+    <path fill="#0078D4" d="M22.379 23.343a1.62 1.62 0 0 0 1.617-1.09l.004-.014-8.138-9.234-4.794 4.481 8.186 5.589a1.617 1.617 0 0 0 1.125.268zM13.302 15.62l-3.896-9.913-7.545 17.428a1.62 1.62 0 0 0 1.49.208l.014-.005zM17.44.658a1.62 1.62 0 0 0-2.55.364l-.007.013-7.524 17.378 5.627-5.26z"/>
+  </symbol>
+  <!-- Google Cloud -->
+  <symbol id="logo-gcp" viewBox="0 0 24 24">
+    <path fill="#4285F4" d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c.053-.02-.055.013 0 0C.959 9.805 0 11.046 0 12.507c0 2.16 1.71 3.838 3.85 3.838h7.817c-.014-.053.007.054 0 0v-2.773H3.85c-.593 0-1.076-.483-1.076-1.077 0-.39.218-.731.543-.918.33-.187.616-.428.616-.428s-.087.087-.043.044c.247-.247.537-.443.862-.574a3.22 3.22 0 0 1 1.225-.246c.116 0 .229.008.34.022.082.011.166.027.247.047l.02.005s.022.007.033.01l.02.006.02.007c.037.013.07.027.104.044l.023.011.01.005.014.008.013.007.012.007.035.023.01.007a.49.49 0 0 0 .028.02c.09.063.168.138.236.22l.013.018.023.032.013.02.01.016.009.015.007.012.015.025.006.011.007.013a1.093 1.093 0 0 0 1.972-.953 3.247 3.247 0 0 0-.11-.224l-.008-.014-.012-.022-.01-.017-.011-.018-.013-.02-.015-.023-.016-.024-.018-.025-.015-.02a3.22 3.22 0 0 0-.23-.27c-.041-.044-.083-.086-.127-.126l-.013-.012-.035-.031-.012-.01-.036-.03-.013-.01-.036-.028-.014-.011-.012-.009-.024-.017-.036-.025a5.026 5.026 0 0 0-.386-.232 5.12 5.12 0 0 0-.39-.174l-.026-.01-.043-.016-.025-.009-.042-.014-.025-.008-.04-.013-.027-.008-.041-.011-.027-.007-.02-.005a5.186 5.186 0 0 0-1.235-.148c-.35 0-.692.043-1.02.124l-.016.004a5.18 5.18 0 0 0-.398.12l-.015.005a5.186 5.186 0 0 0-.89.427 5.26 5.26 0 0 0-.415.3l-.014.012A7.618 7.618 0 0 1 12.19 4.154a7.617 7.617 0 0 1 7.617 7.617c0 4.209-3.408 7.617-7.617 7.617H9.667v2.773h2.523C17.45 22.16 22 17.61 22 12.19c0-5.42-4.55-9.81-9.81-9.81z"/>
+    <path fill="#EA4335" d="M9.667 19.388v2.773h2.523c.968 0 1.905-.143 2.789-.406l-2.39-2.773c-.146.008-.293.012-.44.012z"/>
+    <path fill="#FBBC05" d="M15.38 18.754l2.389 2.773a9.809 9.809 0 0 0 4.23-7.337H18.9a7.617 7.617 0 0 1-3.52 4.564z"/>
+    <path fill="#34A853" d="M18.9 11.413H22a9.809 9.809 0 0 0-4.23-7.337l-2.389 2.773A7.617 7.617 0 0 1 18.9 11.413z"/>
+  </symbol>
+  <!-- Oracle -->
+  <symbol id="logo-oracle" viewBox="0 0 24 24">
+    <path fill="#F80000" d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm-1.2 6h2.4c3.314 0 6 2.687 6 6s-2.686 6-6 6h-2.4c-3.314 0-6-2.687-6-6s2.686-6 6-6zm0 2.4c-1.987 0-3.6 1.613-3.6 3.6s1.613 3.6 3.6 3.6h2.4c1.987 0 3.6-1.613 3.6-3.6s-1.613-3.6-3.6-3.6z"/>
+  </symbol>
+</svg>
 
 <!-- ── TOAST ── -->
 <div class="toast" id="toast"></div>
@@ -256,32 +309,72 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
         <span class="search-icon">🔍</span>
         <input type="text" id="svcSearch" placeholder="Search services, categories…" oninput="renderServices()">
       </div>
-      <div class="select-wrap">
-        <select id="catFilter" onchange="renderServices()">
-          <option value="">All Categories</option>
-        </select>
-        <span class="select-arrow">▾</span>
+
+      <!-- Category multi-select -->
+      <div class="ms-wrap" id="ms-cat-wrap">
+        <div class="ms-btn" id="ms-cat-btn" onclick="toggleMs('cat')">
+          <span id="ms-cat-label">Category</span>
+          <span class="ms-arrow">▾</span>
+        </div>
+        <div class="ms-dropdown" id="ms-cat-drop">
+          <div class="ms-clear" onclick="clearMs('cat')">Clear all</div>
+          <div class="ms-sep"></div>
+          <div id="ms-cat-opts"></div>
+        </div>
       </div>
-      <div class="select-wrap">
-        <select id="ilFilter" onchange="renderServices()">
-          <option value="">All Impact Levels</option>
-          <option value="IL2">IL2</option>
-          <option value="IL4">IL4</option>
-          <option value="IL5">IL5</option>
-          <option value="IL6">IL6</option>
-        </select>
-        <span class="select-arrow">▾</span>
+
+      <!-- Impact Level multi-select -->
+      <div class="ms-wrap" id="ms-il-wrap">
+        <div class="ms-btn" id="ms-il-btn" onclick="toggleMs('il')">
+          <span id="ms-il-label">Impact Level</span>
+          <span class="ms-arrow">▾</span>
+        </div>
+        <div class="ms-dropdown" id="ms-il-drop">
+          <div class="ms-clear" onclick="clearMs('il')">Clear all</div>
+          <div class="ms-sep"></div>
+          <div id="ms-il-opts">
+            <div class="ms-option" data-ms="il" data-val="IL2" onclick="toggleMsOpt('il','IL2',this)">
+              <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il2)"></span>IL2
+            </div>
+            <div class="ms-option" data-ms="il" data-val="IL4" onclick="toggleMsOpt('il','IL4',this)">
+              <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il4)"></span>IL4
+            </div>
+            <div class="ms-option" data-ms="il" data-val="IL5" onclick="toggleMsOpt('il','IL5',this)">
+              <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il5)"></span>IL5
+            </div>
+            <div class="ms-option" data-ms="il" data-val="IL6" onclick="toggleMsOpt('il','IL6',this)">
+              <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il6)"></span>IL6
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="select-wrap">
-        <select id="cspFilter" onchange="renderServices()">
-          <option value="">All CSPs</option>
-          <option value="aws">AWS</option>
-          <option value="azure">Azure</option>
-          <option value="gcp">GCP</option>
-          <option value="oracle">Oracle</option>
-        </select>
-        <span class="select-arrow">▾</span>
+
+      <!-- CSP multi-select -->
+      <div class="ms-wrap" id="ms-csp-wrap">
+        <div class="ms-btn" id="ms-csp-btn" onclick="toggleMs('csp')">
+          <span id="ms-csp-label">CSP</span>
+          <span class="ms-arrow">▾</span>
+        </div>
+        <div class="ms-dropdown" id="ms-csp-drop">
+          <div class="ms-clear" onclick="clearMs('csp')">Clear all</div>
+          <div class="ms-sep"></div>
+          <div id="ms-csp-opts">
+            <div class="ms-option" data-ms="csp" data-val="aws" onclick="toggleMsOpt('csp','aws',this)">
+              <span class="ms-check"></span><svg width="13" height="13"><use href="#logo-aws"/></svg>AWS
+            </div>
+            <div class="ms-option" data-ms="csp" data-val="azure" onclick="toggleMsOpt('csp','azure',this)">
+              <span class="ms-check"></span><svg width="13" height="13"><use href="#logo-azure"/></svg>Azure
+            </div>
+            <div class="ms-option" data-ms="csp" data-val="gcp" onclick="toggleMsOpt('csp','gcp',this)">
+              <span class="ms-check"></span><svg width="13" height="13"><use href="#logo-gcp"/></svg>GCP
+            </div>
+            <div class="ms-option" data-ms="csp" data-val="oracle" onclick="toggleMsOpt('csp','oracle',this)">
+              <span class="ms-check"></span><svg width="13" height="13"><use href="#logo-oracle"/></svg>Oracle
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="toolbar-sep"></div>
       <div class="il-legend">
         <span class="il-chip"><span class="il-dot" style="background:var(--il2)"></span>IL2</span>
@@ -301,10 +394,10 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
           <th class="sortable" data-col="category">Category<span class="si">↕</span></th>
           <th class="sortable" data-col="subcategory">Subcategory<span class="si">↕</span></th>
           <th>Description</th>
-          <th class="th-aws"><div class="csp-hdr"><span class="csp-dot" style="background:var(--aws)"></span>AWS</div></th>
-          <th class="th-azure"><div class="csp-hdr"><span class="csp-dot" style="background:var(--azure)"></span>Azure</div></th>
-          <th class="th-gcp"><div class="csp-hdr"><span class="csp-dot" style="background:var(--gcp)"></span>GCP</div></th>
-          <th class="th-oracle"><div class="csp-hdr"><span class="csp-dot" style="background:var(--oracle)"></span>Oracle</div></th>
+          <th class="th-aws"><div class="csp-hdr"><svg width="16" height="16"><use href="#logo-aws"/></svg>AWS</div></th>
+          <th class="th-azure"><div class="csp-hdr"><svg width="16" height="16"><use href="#logo-azure"/></svg>Azure</div></th>
+          <th class="th-gcp"><div class="csp-hdr"><svg width="16" height="16"><use href="#logo-gcp"/></svg>GCP</div></th>
+          <th class="th-oracle"><div class="csp-hdr"><svg width="16" height="16"><use href="#logo-oracle"/></svg>Oracle</div></th>
         </tr>
       </thead>
       <tbody id="svcBody"></tbody>
@@ -342,7 +435,7 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
     <!-- Upload cards -->
     <div class="upload-grid">
       <div class="upload-card" id="uc-aws">
-        <div class="uc-header"><span class="uc-dot" style="background:var(--aws)"></span><span class="uc-name" style="color:var(--aws)">AWS</span></div>
+        <div class="uc-header"><svg width="22" height="22"><use href="#logo-aws"/></svg><span class="uc-name" style="color:var(--aws)">AWS</span></div>
         <div class="uc-meta" id="aws-meta">No file loaded</div>
         <button class="upload-btn" onclick="document.getElementById('file-aws').click()">⬆ Upload CSV</button>
         <div style="display:flex;gap:6px">
@@ -351,7 +444,7 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
         </div>
       </div>
       <div class="upload-card" id="uc-azure">
-        <div class="uc-header"><span class="uc-dot" style="background:var(--azure)"></span><span class="uc-name" style="color:var(--azure)">Azure</span></div>
+        <div class="uc-header"><svg width="22" height="22"><use href="#logo-azure"/></svg><span class="uc-name" style="color:var(--azure)">Azure</span></div>
         <div class="uc-meta" id="azure-meta">No file loaded</div>
         <button class="upload-btn" onclick="document.getElementById('file-azure').click()">⬆ Upload CSV</button>
         <div style="display:flex;gap:6px">
@@ -360,7 +453,7 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
         </div>
       </div>
       <div class="upload-card" id="uc-gcp">
-        <div class="uc-header"><span class="uc-dot" style="background:var(--gcp)"></span><span class="uc-name" style="color:var(--gcp)">GCP</span></div>
+        <div class="uc-header"><svg width="22" height="22"><use href="#logo-gcp"/></svg><span class="uc-name" style="color:var(--gcp)">GCP</span></div>
         <div class="uc-meta" id="gcp-meta">No file loaded</div>
         <button class="upload-btn" onclick="document.getElementById('file-gcp').click()">⬆ Upload CSV</button>
         <div style="display:flex;gap:6px">
@@ -369,7 +462,7 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
         </div>
       </div>
       <div class="upload-card" id="uc-oracle">
-        <div class="uc-header"><span class="uc-dot" style="background:var(--oracle)"></span><span class="uc-name" style="color:var(--oracle)">Oracle</span></div>
+        <div class="uc-header"><svg width="22" height="22"><use href="#logo-oracle"/></svg><span class="uc-name" style="color:var(--oracle)">Oracle</span></div>
         <div class="uc-meta" id="oracle-meta">No file loaded</div>
         <button class="upload-btn" onclick="document.getElementById('file-oracle').click()">⬆ Upload CSV</button>
         <div style="display:flex;gap:6px">
@@ -385,30 +478,37 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
         <span class="search-icon">🔍</span>
         <input type="text" id="priceSearch" placeholder="Search…" oninput="renderPricing()">
       </div>
-      <button class="csp-filter-btn aws active" id="pf-aws" onclick="togglePriceFilter('aws')">AWS</button>
-      <button class="csp-filter-btn azure active" id="pf-azure" onclick="togglePriceFilter('azure')">Azure</button>
-      <button class="csp-filter-btn gcp active" id="pf-gcp" onclick="togglePriceFilter('gcp')">GCP</button>
-      <button class="csp-filter-btn oracle active" id="pf-oracle" onclick="togglePriceFilter('oracle')">Oracle</button>
+      <button class="csp-filter-btn aws active" id="pf-aws" onclick="togglePriceFilter('aws')"><svg width="13" height="13"><use href="#logo-aws"/></svg> AWS</button>
+      <button class="csp-filter-btn azure active" id="pf-azure" onclick="togglePriceFilter('azure')"><svg width="13" height="13"><use href="#logo-azure"/></svg> Azure</button>
+      <button class="csp-filter-btn gcp active" id="pf-gcp" onclick="togglePriceFilter('gcp')"><svg width="13" height="13"><use href="#logo-gcp"/></svg> GCP</button>
+      <button class="csp-filter-btn oracle active" id="pf-oracle" onclick="togglePriceFilter('oracle')"><svg width="13" height="13"><use href="#logo-oracle"/></svg> Oracle</button>
       <div class="toolbar-sep"></div>
-      <div class="select-wrap">
-        <select id="priceCatFilter" onchange="renderPricing()" style="font-size:11px">
-          <option value="">All Categories</option>
-          <option value="Compute">Compute</option>
-          <option value="Storage">Storage</option>
-          <option value="Database">Database</option>
-          <option value="Networking">Networking</option>
-          <option value="AI and Machine Learning">AI / ML</option>
-          <option value="Security">Security</option>
-          <option value="Integration">Integration</option>
-          <option value="Analytics">Analytics</option>
-          <option value="Developer Tools">Developer Tools</option>
-          <option value="Management and Governance">Management</option>
-          <option value="Internet of Things">IoT</option>
-          <option value="Migration">Migration</option>
-          <option value="End User Computing">End User Computing</option>
-          <option value="Other">Other</option>
-        </select>
-        <span class="select-arrow">▾</span>
+
+      <!-- Pricing category multi-select -->
+      <div class="ms-wrap" id="ms-pcat-wrap">
+        <div class="ms-btn" id="ms-pcat-btn" onclick="toggleMs('pcat')">
+          <span id="ms-pcat-label">Category</span>
+          <span class="ms-arrow">▾</span>
+        </div>
+        <div class="ms-dropdown" id="ms-pcat-drop">
+          <div class="ms-clear" onclick="clearMs('pcat')">Clear all</div>
+          <div class="ms-sep"></div>
+          <div id="ms-pcat-opts">
+            <div class="ms-option" data-ms="pcat" data-val="Compute" onclick="toggleMsOpt('pcat','Compute',this)"><span class="ms-check"></span>Compute</div>
+            <div class="ms-option" data-ms="pcat" data-val="Storage" onclick="toggleMsOpt('pcat','Storage',this)"><span class="ms-check"></span>Storage</div>
+            <div class="ms-option" data-ms="pcat" data-val="Database" onclick="toggleMsOpt('pcat','Database',this)"><span class="ms-check"></span>Database</div>
+            <div class="ms-option" data-ms="pcat" data-val="Networking" onclick="toggleMsOpt('pcat','Networking',this)"><span class="ms-check"></span>Networking</div>
+            <div class="ms-option" data-ms="pcat" data-val="AI and Machine Learning" onclick="toggleMsOpt('pcat','AI and Machine Learning',this)"><span class="ms-check"></span>AI / ML</div>
+            <div class="ms-option" data-ms="pcat" data-val="Security" onclick="toggleMsOpt('pcat','Security',this)"><span class="ms-check"></span>Security</div>
+            <div class="ms-option" data-ms="pcat" data-val="Integration" onclick="toggleMsOpt('pcat','Integration',this)"><span class="ms-check"></span>Integration</div>
+            <div class="ms-option" data-ms="pcat" data-val="Analytics" onclick="toggleMsOpt('pcat','Analytics',this)"><span class="ms-check"></span>Analytics</div>
+            <div class="ms-option" data-ms="pcat" data-val="Developer Tools" onclick="toggleMsOpt('pcat','Developer Tools',this)"><span class="ms-check"></span>Developer Tools</div>
+            <div class="ms-option" data-ms="pcat" data-val="Management and Governance" onclick="toggleMsOpt('pcat','Management and Governance',this)"><span class="ms-check"></span>Management</div>
+            <div class="ms-option" data-ms="pcat" data-val="Internet of Things" onclick="toggleMsOpt('pcat','Internet of Things',this)"><span class="ms-check"></span>IoT</div>
+            <div class="ms-option" data-ms="pcat" data-val="Migration" onclick="toggleMsOpt('pcat','Migration',this)"><span class="ms-check"></span>Migration</div>
+            <div class="ms-option" data-ms="pcat" data-val="End User Computing" onclick="toggleMsOpt('pcat','End User Computing',this)"><span class="ms-check"></span>End User Computing</div>
+          </div>
+        </div>
       </div>
       <div class="select-wrap">
         <select id="priceSort" onchange="renderPricing()" style="font-size:11px">
@@ -936,6 +1036,101 @@ const SAMPLE_DATA = {
 };
 
 // ════════════════════════════════════════════════════════════
+// LOGO HELPERS
+// ════════════════════════════════════════════════════════════
+function cspLogo(csp, size='sm'){
+  return `<span class="csp-logo csp-logo-${size}"><svg><use href="#logo-${csp}"/></svg></span>`;
+}
+
+// Category icons (inline SVG paths)
+const CAT_ICONS = {
+  "Compute":                  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>`,
+  "Storage":                  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>`,
+  "Database":                 `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>`,
+  "Networking":               `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+  "AI and Machine Learning":  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 0 6h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1 0-6h1V6a4 4 0 0 1 4-4z"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="9" r="1" fill="currentColor"/></svg>`,
+  "Security":                 `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+  "Integration":              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>`,
+  "Analytics":                `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`,
+  "Developer Tools":          `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+  "Management and Governance":`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 0-14.14 0M4.93 19.07a10 10 0 0 0 14.14 0M1 12H3M21 12h2M12 1v2M12 21v2"/></svg>`,
+  "Internet of Things":       `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M6.3 6.3a8 8 0 0 0 0 11.4M17.7 6.3a8 8 0 0 1 0 11.4M3.5 3.5a13 13 0 0 0 0 17M20.5 3.5a13 13 0 0 1 0 17"/></svg>`,
+  "Migration":                `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`,
+  "End User Computing":       `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M9 8l2 2 4-4"/></svg>`,
+  "Other":                    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`,
+};
+
+function catIcon(cat){
+  const svg = CAT_ICONS[cat] || CAT_ICONS["Other"];
+  return `<span class="cat-icon">${svg}</span>`;
+}
+
+// ════════════════════════════════════════════════════════════
+// MULTI-SELECT FILTER STATE
+// ════════════════════════════════════════════════════════════
+const msState = { cat: new Set(), il: new Set(), csp: new Set(), pcat: new Set() };
+
+const msLabels = {
+  cat:  { default:'Category',      plural:'Categories' },
+  il:   { default:'Impact Level',  plural:'Impact Levels' },
+  csp:  { default:'CSP',           plural:'CSPs' },
+  pcat: { default:'Category',      plural:'Categories' }
+};
+
+function toggleMs(key){
+  const drop = document.getElementById(`ms-${key}-drop`);
+  const btn  = document.getElementById(`ms-${key}-btn`);
+  const isOpen = drop.classList.contains('open');
+  // close all dropdowns first
+  document.querySelectorAll('.ms-dropdown').forEach(d=>d.classList.remove('open'));
+  document.querySelectorAll('.ms-btn').forEach(b=>b.classList.remove('open'));
+  if(!isOpen){ drop.classList.add('open'); btn.classList.add('open'); }
+}
+
+function toggleMsOpt(key, val, el){
+  if(msState[key].has(val)) msState[key].delete(val);
+  else msState[key].add(val);
+  el.classList.toggle('selected', msState[key].has(val));
+  updateMsLabel(key);
+  if(key==='cat'||key==='il'||key==='csp') renderServices();
+  else renderPricing();
+}
+
+function clearMs(key){
+  msState[key].clear();
+  document.querySelectorAll(`[data-ms="${key}"]`).forEach(el=>el.classList.remove('selected'));
+  updateMsLabel(key);
+  if(key==='cat'||key==='il'||key==='csp') renderServices();
+  else renderPricing();
+}
+
+function updateMsLabel(key){
+  const s = msState[key];
+  const lbl = document.getElementById(`ms-${key}-label`);
+  const btn = document.getElementById(`ms-${key}-btn`);
+  // remove old count badge
+  const old = btn.querySelector('.ms-count');
+  if(old) old.remove();
+  if(s.size===0){
+    lbl.textContent = msLabels[key].default;
+  } else {
+    lbl.textContent = s.size===1 ? [...s][0] : msLabels[key].plural;
+    const badge = document.createElement('span');
+    badge.className='ms-count';
+    badge.textContent=s.size;
+    btn.insertBefore(badge, btn.querySelector('.ms-arrow'));
+  }
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', e=>{
+  if(!e.target.closest('.ms-wrap')){
+    document.querySelectorAll('.ms-dropdown').forEach(d=>d.classList.remove('open'));
+    document.querySelectorAll('.ms-btn').forEach(b=>b.classList.remove('open'));
+  }
+});
+
+// ════════════════════════════════════════════════════════════
 // SERVICES RENDERING
 // ════════════════════════════════════════════════════════════
 let svcSortCol='category', svcSortDir=1;
@@ -953,16 +1148,28 @@ function buildBadges(svcs) {
   }).join('');
 }
 
-function svcMatches(row,q,cat,il,csp){
-  if(cat && row.category!==cat) return false;
-  if(csp){
-    const svcs=row[csp]||[];
-    if(!svcs.length) return false;
-    if(il && !svcs.some(s=>s.il&&s.il.includes(il))) return false;
-  } else if(il){
-    const all=[...row.aws,...row.azure,...row.gcp,...row.oracle];
-    if(!all.some(s=>s.il&&s.il.includes(il))) return false;
+function svcMatches(row,q){
+  const cats = msState.cat;
+  const ils  = msState.il;
+  const csps = msState.csp;
+
+  if(cats.size && !cats.has(row.category)) return false;
+
+  // CSP filter: row must have at least one matching CSP
+  if(csps.size){
+    const hasCsp = [...csps].some(c=>(row[c]||[]).length>0);
+    if(!hasCsp) return false;
   }
+
+  // IL filter: at least one service across selected CSPs must have selected IL
+  if(ils.size){
+    const searchIn = csps.size
+      ? [...csps].flatMap(c=>row[c]||[])
+      : [...row.aws,...row.azure,...row.gcp,...row.oracle];
+    const hasIl = searchIn.some(s=>s.il && [...ils].some(il=>s.il.includes(il)));
+    if(!hasIl) return false;
+  }
+
   if(q){
     const hay=[row.category,row.subcategory,row.description,
       ...row.aws.map(s=>s.name),...row.azure.map(s=>s.name),
@@ -974,10 +1181,7 @@ function svcMatches(row,q,cat,il,csp){
 
 function renderServices(){
   const q=document.getElementById('svcSearch').value.trim();
-  const cat=document.getElementById('catFilter').value;
-  const il=document.getElementById('ilFilter').value;
-  const csp=document.getElementById('cspFilter').value;
-  let rows=[...SERVICES].filter(r=>svcMatches(r,q,cat,il,csp));
+  let rows=[...SERVICES].filter(r=>svcMatches(r,q));
   rows.sort((a,b)=>a[svcSortCol].localeCompare(b[svcSortCol])*svcSortDir);
   const tbody=document.getElementById('svcBody');
   const empty=document.getElementById('svcEmpty');
@@ -985,7 +1189,7 @@ function renderServices(){
   if(!rows.length){tbody.innerHTML='';empty.style.display='block';return;}
   empty.style.display='none';
   tbody.innerHTML=rows.map(r=>`<tr>
-    <td class="td-cat">${r.category}</td>
+    <td class="td-cat"><span style="display:flex;align-items:center;gap:5px">${catIcon(r.category)}${r.category}</span></td>
     <td class="td-sub">${r.subcategory}</td>
     <td class="td-desc">${r.description}</td>
     <td class="svc-cell td-aws-c">${buildBadges(r.aws)}</td>
@@ -997,8 +1201,11 @@ function renderServices(){
 
 function populateCats(){
   const cats=[...new Set(SERVICES.map(s=>s.category))].sort();
-  const sel=document.getElementById('catFilter');
-  cats.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o);});
+  const container=document.getElementById('ms-cat-opts');
+  container.innerHTML=cats.map(c=>`
+    <div class="ms-option" data-ms="cat" data-val="${c}" onclick="toggleMsOpt('cat','${c}',this)">
+      <span class="ms-check"></span>${catIcon(c)}<span>${c}</span>
+    </div>`).join('');
 }
 
 document.querySelectorAll('.sortable').forEach(th=>{
@@ -1034,7 +1241,7 @@ function discClass(d){
 function renderPricing(){
   const q=document.getElementById('priceSearch').value.trim().toLowerCase();
   const sortVal=document.getElementById('priceSort').value;
-  const catFilter=document.getElementById('priceCatFilter').value;
+  const pcats=msState.pcat;
 
   let rows=[];
   ['aws','azure','gcp','oracle'].forEach(csp=>{
@@ -1044,7 +1251,7 @@ function renderPricing(){
     });
   });
 
-  if(catFilter) rows=rows.filter(r=>r.category===catFilter);
+  if(pcats.size) rows=rows.filter(r=>pcats.has(r.category));
   if(q) rows=rows.filter(r=>[r.category,r.title,r.shortName,r.description,r.catalogNum].join(' ').toLowerCase().includes(q));
 
   if(sortVal==='category') rows.sort((a,b)=>(a.category||'').localeCompare(b.category||'')||a.title.localeCompare(b.title));
@@ -1059,8 +1266,8 @@ function renderPricing(){
   if(!rows.length){tbody.innerHTML='';empty.style.display='block';return;}
   empty.style.display='none';
   tbody.innerHTML=rows.map(r=>`<tr>
-    <td><span class="pt-csp-badge ${r.csp}">${r.csp.toUpperCase()}</span></td>
-    <td><span class="td-cat" style="font-size:10px">${r.category||'—'}</span></td>
+    <td><span class="pt-csp-badge ${r.csp}"><svg width="11" height="11" style="vertical-align:middle;margin-right:3px"><use href="#logo-${r.csp}"/></svg>${r.csp.toUpperCase()}</span></td>
+    <td><span style="display:flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;color:var(--text)">${catIcon(r.category)}${r.category||'—'}</span></td>
     <td>${r.title||'—'}</td>
     <td><span class="cat-num">${r.shortName||'—'}</span></td>
     <td class="td-desc" style="max-width:200px">${r.description||'—'}</td>
