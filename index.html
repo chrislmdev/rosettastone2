@@ -236,8 +236,88 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
 .cat-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
 .cat-icon svg{width:13px;height:13px;opacity:0.7}
 
+/* ── IGCE BUILDER ── */
+.igce-layout{max-width:1400px;margin:0 auto;padding:24px 24px 80px}
+.igce-header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:24px}
+.igce-header-left h2{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--text);letter-spacing:0.03em}
+.igce-header-left p{font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-top:4px}
+.igce-header-right{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+
+/* Metadata form */
+.igce-meta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:20px}
+.igce-field label{display:block;font-family:var(--mono);font-size:10px;color:var(--text-muted);margin-bottom:5px;letter-spacing:0.05em;text-transform:uppercase}
+.igce-field input,.igce-field select,.igce-field textarea{width:100%;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);color:var(--text);font-family:var(--mono);font-size:12px;padding:7px 10px;outline:none;transition:border-color 0.15s}
+.igce-field input:focus,.igce-field select:focus,.igce-field textarea:focus{border-color:var(--accent)}
+.igce-field textarea{resize:vertical;min-height:60px;font-size:11px}
+
+/* Section panels */
+.igce-section{background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-bottom:16px;overflow:hidden}
+.igce-section-head{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;user-select:none}
+.igce-section-head:hover{background:var(--surface2)}
+.igce-section-title{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text)}
+.igce-section-badge{font-family:var(--mono);font-size:9px;padding:2px 7px;border-radius:3px;font-weight:600}
+.igce-section-total{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text)}
+.igce-section-chevron{font-size:10px;color:var(--text-muted);transition:transform 0.2s}
+.igce-section-chevron.open{transform:rotate(180deg)}
+.igce-section-body{padding:0}
+.igce-section-body.collapsed{display:none}
+
+/* Line items table */
+.igce-table{width:100%;border-collapse:collapse}
+.igce-table th{padding:8px 12px;text-align:left;font-family:var(--mono);font-size:9px;font-weight:600;color:var(--text-muted);letter-spacing:0.07em;text-transform:uppercase;background:var(--surface2);border-bottom:1px solid var(--border);white-space:nowrap}
+.igce-table td{padding:8px 12px;border-bottom:1px solid var(--border);font-size:12px;color:var(--text-dim);vertical-align:middle}
+.igce-table tr:last-child td{border-bottom:none}
+.igce-table tr:hover td{background:rgba(255,255,255,0.015)}
+.igce-table td input,.igce-table td select{background:var(--surface2);border:1px solid transparent;border-radius:4px;color:var(--text);font-family:var(--mono);font-size:11px;padding:4px 7px;outline:none;width:100%;min-width:60px;transition:border-color 0.15s}
+.igce-table td input:focus,.igce-table td select:focus{border-color:var(--accent);background:var(--surface3)}
+.igce-table td input[type=number]{text-align:right}
+.igce-num{font-family:var(--mono);font-size:11px;color:var(--text);text-align:right}
+.igce-total-row td{background:var(--surface2);font-family:var(--mono);font-size:11px;font-weight:600;color:var(--text);border-top:2px solid var(--border2)}
+.igce-add-row{display:flex;align-items:center;gap:8px;padding:10px 12px;border-top:1px dashed var(--border2);cursor:pointer;font-family:var(--mono);font-size:11px;color:var(--text-muted);transition:color 0.15s}
+.igce-add-row:hover{color:var(--accent);background:rgba(59,130,246,0.04)}
+
+/* Summary panel */
+.igce-summary{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px;margin-top:20px}
+.igce-summary-title{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--text-muted);letter-spacing:0.07em;text-transform:uppercase;margin-bottom:16px}
+.igce-summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+.igce-kpi{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:14px}
+.igce-kpi-label{font-family:var(--mono);font-size:10px;color:var(--text-muted);margin-bottom:6px}
+.igce-kpi-value{font-family:var(--mono);font-size:18px;font-weight:600;color:var(--text)}
+.igce-kpi-sub{font-family:var(--mono);font-size:10px;color:var(--text-muted);margin-top:3px}
+.igce-breakdown{width:100%;border-collapse:collapse}
+.igce-breakdown td,.igce-breakdown th{padding:7px 10px;font-family:var(--mono);font-size:11px}
+.igce-breakdown th{color:var(--text-muted);font-size:9px;letter-spacing:0.07em;text-transform:uppercase;border-bottom:1px solid var(--border)}
+.igce-breakdown td{color:var(--text-dim);border-bottom:1px solid var(--border)}
+.igce-breakdown tr:last-child td{border-bottom:none;color:var(--text);font-weight:600}
+.igce-bar{height:6px;border-radius:3px;background:var(--accent);margin-top:4px;transition:width 0.4s ease}
+
+/* Upload zone */
+.igce-upload-zone{border:1px dashed var(--border2);border-radius:8px;padding:20px;text-align:center;cursor:pointer;transition:all 0.15s;margin-bottom:16px}
+.igce-upload-zone:hover{border-color:var(--accent);background:rgba(59,130,246,0.04)}
+.igce-upload-zone p{font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-top:6px}
+.igce-upload-zone .upload-icon{font-size:24px;margin-bottom:4px}
+
+/* Historical data table */
+.igce-hist-table{width:100%;border-collapse:collapse;margin-top:8px}
+.igce-hist-table th{padding:7px 10px;font-family:var(--mono);font-size:9px;color:var(--text-muted);letter-spacing:0.07em;text-transform:uppercase;border-bottom:1px solid var(--border);text-align:left}
+.igce-hist-table td{padding:7px 10px;font-family:var(--mono);font-size:11px;color:var(--text-dim);border-bottom:1px solid var(--border)}
+.igce-hist-table tr:last-child td{border-bottom:none}
+.igce-badge-clin{font-family:var(--mono);font-size:9px;padding:2px 6px;border-radius:3px;background:rgba(59,130,246,0.12);color:var(--accent);border:1px solid rgba(59,130,246,0.25)}
+.igce-badge-opt{font-family:var(--mono);font-size:9px;padding:2px 6px;border-radius:3px;background:rgba(168,85,247,0.12);color:var(--il5);border:1px solid rgba(168,85,247,0.25)}
+.igce-badge-base{font-family:var(--mono);font-size:9px;padding:2px 6px;border-radius:3px;background:rgba(34,197,94,0.12);color:var(--il2);border:1px solid rgba(34,197,94,0.25)}
+.igce-growth-pill{display:inline-flex;align-items:center;gap:3px;font-family:var(--mono);font-size:9px;padding:1px 5px;border-radius:3px}
+.igce-growth-up{background:rgba(239,68,68,0.1);color:var(--il6)}
+.igce-growth-dn{background:rgba(34,197,94,0.1);color:var(--il2)}
+
+/* Suggest from catalog */
+.igce-catalog-row{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:11px;transition:background 0.1s}
+.igce-catalog-row:hover{background:var(--surface2)}
+.igce-catalog-price{margin-left:auto;color:var(--text-muted);font-size:10px}
+
+@media(max-width:768px){.igce-layout{padding:12px 12px 60px}.igce-meta-grid{grid-template-columns:1fr 1fr}.igce-summary-grid{grid-template-columns:1fr 1fr}}
+
 @media(max-width:768px){
-  nav,footer,.toolbar,.pricing-layout{padding-left:12px;padding-right:12px}
+  nav,footer,.toolbar,.pricing-layout,.igce-layout{padding-left:12px;padding-right:12px}
   .nav-tab span{display:none}
   .il-legend{display:none}
   .table-wrap{padding:12px 12px 40px}
@@ -289,6 +369,10 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
       <button class="nav-tab" data-page="pricing" onclick="switchPage('pricing',this)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         <span>Pricing Catalog</span>
+      </button>
+      <button class="nav-tab" data-page="igce" onclick="switchPage('igce',this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        <span>IGCE Builder</span>
       </button>
     </div>
     <div class="nav-right">
@@ -633,6 +717,145 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
       <button class="btn btn-primary" onclick="saveRow()">Save Row</button>
     </div>
   </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: IGCE BUILDER
+══════════════════════════════════════════ -->
+<div class="page" id="page-igce">
+<div class="igce-layout">
+
+  <!-- Header -->
+  <div class="igce-header">
+    <div class="igce-header-left">
+      <h2>IGCE Builder</h2>
+      <p>Independent Government Cost Estimate — based on historical spend and price catalog data</p>
+    </div>
+    <div class="igce-header-right">
+      <button class="btn btn-ghost" onclick="igceLoadSample()">⬇ Load Sample Data</button>
+      <button class="btn btn-ghost" onclick="igceExportCSV()">↓ Export CSV</button>
+      <button class="btn btn-primary" onclick="igceExportPDF()">⬇ Export PDF</button>
+    </div>
+  </div>
+
+  <!-- Contract Metadata -->
+  <div class="igce-meta-grid">
+    <div class="igce-field" style="grid-column:1/-1">
+      <label>Contract / Task Order Title</label>
+      <input type="text" id="igce-title" placeholder="e.g. Cloud Infrastructure Services — Base Year + 4 Option Years" value="Cloud Infrastructure Managed Services">
+    </div>
+    <div class="igce-field">
+      <label>Prepared By</label>
+      <input type="text" id="igce-preparer" placeholder="Name / Office" value="Office of the CTO">
+    </div>
+    <div class="igce-field">
+      <label>Date Prepared</label>
+      <input type="date" id="igce-date">
+    </div>
+    <div class="igce-field">
+      <label>Contracting Office</label>
+      <input type="text" id="igce-office" placeholder="e.g. DISA, GSA, ARMY" value="DISA">
+    </div>
+    <div class="igce-field">
+      <label>Contract Type</label>
+      <select id="igce-contract-type">
+        <option>Firm Fixed Price (FFP)</option>
+        <option>Time &amp; Materials (T&amp;M)</option>
+        <option selected>Cost-Plus Fixed Fee (CPFF)</option>
+        <option>Indefinite Delivery / Indefinite Quantity (IDIQ)</option>
+        <option>Blanket Purchase Agreement (BPA)</option>
+      </select>
+    </div>
+    <div class="igce-field">
+      <label>Primary CSP</label>
+      <select id="igce-csp">
+        <option value="aws">Amazon Web Services (AWS)</option>
+        <option value="azure">Microsoft Azure</option>
+        <option value="gcp">Google Cloud (GCP)</option>
+        <option value="oracle">Oracle Cloud (OCI)</option>
+        <option value="multi">Multi-Cloud</option>
+      </select>
+    </div>
+    <div class="igce-field">
+      <label>Classification Level</label>
+      <select id="igce-il">
+        <option>IL2 — Controlled Unclassified</option>
+        <option>IL4 — Controlled Unclassified (ITAR)</option>
+        <option selected>IL5 — National Security Systems</option>
+        <option>IL6 — Classified (Secret)</option>
+      </select>
+    </div>
+    <div class="igce-field">
+      <label>Escalation Rate (% / year)</label>
+      <input type="number" id="igce-escalation" value="3" min="0" max="20" step="0.5">
+    </div>
+    <div class="igce-field">
+      <label>Fee / Profit (%)</label>
+      <input type="number" id="igce-fee" value="8" min="0" max="25" step="0.5">
+    </div>
+  </div>
+
+  <!-- Historical Spend Upload -->
+  <div class="igce-section">
+    <div class="igce-section-head" onclick="toggleIgceSection('hist')">
+      <div class="igce-section-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Historical Spend Data
+        <span id="igce-hist-badge" class="igce-section-badge" style="background:rgba(59,130,246,0.12);color:var(--accent);border:1px solid rgba(59,130,246,0.25)">No data</span>
+      </div>
+      <span class="igce-section-chevron open" id="igce-hist-chev">▾</span>
+    </div>
+    <div class="igce-section-body" id="igce-hist-body">
+      <div style="padding:16px">
+        <p style="font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-bottom:12px">
+          Upload a CSV with historical cloud spend. Required columns: <strong style="color:var(--text-dim)">Period, CSP, Category, Service, Spend ($)</strong> — all other columns are optional.
+        </p>
+        <input type="file" id="igce-hist-file" accept=".csv" style="position:absolute;left:-9999px;opacity:0;width:1px;height:1px" onchange="igceHandleHistCSV(this)">
+        <div class="igce-upload-zone" onclick="document.getElementById('igce-hist-file').click()">
+          <div class="upload-icon">📂</div>
+          <strong style="font-family:var(--mono);font-size:12px;color:var(--text-dim)">Click to upload historical spend CSV</strong>
+          <p>or load sample data using the button above</p>
+        </div>
+        <div id="igce-hist-table-wrap" style="display:none;overflow-x:auto">
+          <table class="igce-hist-table">
+            <thead>
+              <tr>
+                <th>Period</th><th>CSP</th><th>Category</th><th>Service</th>
+                <th style="text-align:right">Actual Spend</th><th>YoY Growth</th>
+              </tr>
+            </thead>
+            <tbody id="igce-hist-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIN / Period of Performance sections (dynamically generated) -->
+  <div id="igce-clins"></div>
+
+  <!-- Add Period button -->
+  <button class="btn btn-ghost" style="width:100%;justify-content:center;margin-bottom:20px;border-style:dashed" onclick="igceAddCLIN()">
+    + Add Period of Performance / CLIN
+  </button>
+
+  <!-- Summary -->
+  <div class="igce-summary" id="igce-summary">
+    <div class="igce-summary-title">Cost Summary</div>
+    <div class="igce-summary-grid" id="igce-kpis"></div>
+    <table class="igce-breakdown">
+      <thead>
+        <tr>
+          <th>Period</th><th>Type</th><th>Base Cost</th>
+          <th>Escalation</th><th>Fee</th><th>Total</th>
+          <th>% of Contract</th>
+        </tr>
+      </thead>
+      <tbody id="igce-breakdown-body"></tbody>
+    </table>
+  </div>
+
+</div>
 </div>
 
 <footer>
@@ -1514,10 +1737,781 @@ function showToast(msg,type=''){
   toastTimer=setTimeout(()=>{t.classList.remove('show');},3000);
 }
 
+
+// ════════════════════════════════════════════════════════════
+// IGCE BUILDER
+// ════════════════════════════════════════════════════════════
+
+// ── State ────────────────────────────────────────────────────
+let igceHistData = [];   // [{period, csp, category, service, spend}]
+let igceClins = [];      // [{id, label, type, months, items:[]}]
+let igceClinCounter = 0;
+
+const IGCE_CATEGORIES = [
+  'Compute','Storage','Database','Networking','AI and Machine Learning',
+  'Security','Integration','Analytics','Developer Tools',
+  'Management and Governance','End User Computing','Professional Services','Other'
+];
+
+const IGCE_UNITS = [
+  'Hour','Month','Year','vCPU/Hour','GB/Month','TB/Month',
+  'OCPU/Hour','ECPU/Hour','1M Requests','1M Tokens','Per User/Month',
+  'Instance/Month','Node/Hour','FTE/Month','Task'
+];
+
+// ── Sample data ──────────────────────────────────────────────
+const IGCE_SAMPLE_HIST = [
+  {period:'FY2022',csp:'AWS',  category:'Compute',  service:'EC2 On-Demand',     spend:284500},
+  {period:'FY2022',csp:'AWS',  category:'Storage',  service:'S3 Standard',       spend:42300},
+  {period:'FY2022',csp:'AWS',  category:'Database', service:'RDS PostgreSQL',     spend:118400},
+  {period:'FY2022',csp:'AWS',  category:'Security', service:'GuardDuty',          spend:18200},
+  {period:'FY2022',csp:'AWS',  category:'Networking',service:'VPC / CloudFront',  spend:31600},
+  {period:'FY2022',csp:'Azure',category:'Compute',  service:'Virtual Machines',   spend:112000},
+  {period:'FY2022',csp:'Azure',category:'Security', service:'Microsoft Sentinel', spend:67400},
+  {period:'FY2023',csp:'AWS',  category:'Compute',  service:'EC2 On-Demand',      spend:301200},
+  {period:'FY2023',csp:'AWS',  category:'Storage',  service:'S3 Standard',        spend:48100},
+  {period:'FY2023',csp:'AWS',  category:'Database', service:'RDS PostgreSQL',     spend:127600},
+  {period:'FY2023',csp:'AWS',  category:'Security', service:'GuardDuty',          spend:19900},
+  {period:'FY2023',csp:'AWS',  category:'Networking',service:'VPC / CloudFront',  spend:34200},
+  {period:'FY2023',csp:'Azure',category:'Compute',  service:'Virtual Machines',   spend:128400},
+  {period:'FY2023',csp:'Azure',category:'Security', service:'Microsoft Sentinel', spend:79200},
+  {period:'FY2023',csp:'AWS',  category:'AI and Machine Learning',service:'SageMaker', spend:44800},
+  {period:'FY2024',csp:'AWS',  category:'Compute',  service:'EC2 On-Demand',      spend:318900},
+  {period:'FY2024',csp:'AWS',  category:'Storage',  service:'S3 Standard',        spend:51400},
+  {period:'FY2024',csp:'AWS',  category:'Database', service:'RDS PostgreSQL',     spend:134200},
+  {period:'FY2024',csp:'AWS',  category:'Security', service:'GuardDuty',          spend:21600},
+  {period:'FY2024',csp:'AWS',  category:'Networking',service:'VPC / CloudFront',  spend:37800},
+  {period:'FY2024',csp:'Azure',category:'Compute',  service:'Virtual Machines',   spend:142100},
+  {period:'FY2024',csp:'Azure',category:'Security', service:'Microsoft Sentinel', spend:88600},
+  {period:'FY2024',csp:'AWS',  category:'AI and Machine Learning',service:'Bedrock + SageMaker', spend:89200},
+  {period:'FY2024',csp:'AWS',  category:'End User Computing',service:'WorkSpaces', spend:28400},
+];
+
+const IGCE_SAMPLE_CLINS = [
+  {
+    id:1, label:'Base Year (BY) — FY2025', type:'Base', months:12,
+    items:[
+      {desc:'EC2 Compute (c6i.large × 40)',       cat:'Compute',  unit:'Instance/Month', qty:480, unitPrice:61.20, notes:'40 instances × 12 months'},
+      {desc:'EC2 Compute (m6i.xlarge × 20)',      cat:'Compute',  unit:'Instance/Month', qty:240, unitPrice:138.24,notes:'20 instances × 12 months'},
+      {desc:'S3 Standard Storage',                cat:'Storage',  unit:'TB/Month',       qty:36,  unitPrice:23.56, notes:'3 TB average × 12 months'},
+      {desc:'RDS PostgreSQL (db.r6g.large × 4)',  cat:'Database', unit:'Instance/Month', qty:48,  unitPrice:172.80,notes:'4 DB instances × 12 months'},
+      {desc:'GuardDuty — VPC/DNS Logs',           cat:'Security', unit:'GB/Month',       qty:1200,unitPrice:3.60,  notes:'~100 GB/month analyzed'},
+      {desc:'CloudFront Data Transfer',           cat:'Networking',unit:'TB/Month',      qty:60,  unitPrice:87.00, notes:'5 TB/month egress'},
+      {desc:'Amazon Bedrock (Claude Sonnet)',      cat:'AI and Machine Learning',unit:'1M Tokens',qty:120,unitPrice:2.70,notes:'~10M tokens/month'},
+      {desc:'WorkSpaces Standard (×30 users)',    cat:'End User Computing',unit:'Per User/Month',qty:360,unitPrice:31.50,notes:'30 users × 12 months'},
+      {desc:'Cloud Infrastructure Engineering',   cat:'Professional Services',unit:'FTE/Month',qty:12,unitPrice:22000,notes:'1 FTE cloud engineer'},
+    ]
+  },
+  {
+    id:2, label:'Option Year 1 (OY1) — FY2026', type:'Option', months:12,
+    items:[
+      {desc:'EC2 Compute (c6i.large × 45)',       cat:'Compute',  unit:'Instance/Month', qty:540, unitPrice:63.04, notes:'Capacity growth 12.5%'},
+      {desc:'EC2 Compute (m6i.xlarge × 22)',      cat:'Compute',  unit:'Instance/Month', qty:264, unitPrice:142.39,notes:''},
+      {desc:'S3 Standard Storage',                cat:'Storage',  unit:'TB/Month',       qty:48,  unitPrice:24.27, notes:'4 TB average'},
+      {desc:'RDS PostgreSQL (db.r6g.large × 4)',  cat:'Database', unit:'Instance/Month', qty:48,  unitPrice:177.98,notes:''},
+      {desc:'GuardDuty — VPC/DNS Logs',           cat:'Security', unit:'GB/Month',       qty:1440,unitPrice:3.71,  notes:''},
+      {desc:'CloudFront Data Transfer',           cat:'Networking',unit:'TB/Month',      qty:72,  unitPrice:89.61, notes:''},
+      {desc:'Amazon Bedrock (Claude Sonnet)',      cat:'AI and Machine Learning',unit:'1M Tokens',qty:180,unitPrice:2.78,notes:'AI workloads growing'},
+      {desc:'WorkSpaces Standard (×35 users)',    cat:'End User Computing',unit:'Per User/Month',qty:420,unitPrice:32.45,notes:'User growth'},
+      {desc:'Cloud Infrastructure Engineering',   cat:'Professional Services',unit:'FTE/Month',qty:12,unitPrice:22660,notes:'1 FTE + 3% escalation'},
+    ]
+  },
+  {
+    id:3, label:'Option Year 2 (OY2) — FY2027', type:'Option', months:12,
+    items:[
+      {desc:'EC2 Compute (Mixed Fleet)',           cat:'Compute',  unit:'Instance/Month', qty:720, unitPrice:65.93, notes:'Consolidated estimate'},
+      {desc:'S3 + EFS Storage',                   cat:'Storage',  unit:'TB/Month',       qty:60,  unitPrice:25.00, notes:''},
+      {desc:'RDS Multi-AZ (×5 instances)',        cat:'Database', unit:'Instance/Month', qty:60,  unitPrice:183.32,notes:'Add 1 read replica'},
+      {desc:'Security Services Bundle',           cat:'Security', unit:'Month',          qty:12,  unitPrice:8800,  notes:'GuardDuty + WAF + Inspector'},
+      {desc:'Networking & CDN',                   cat:'Networking',unit:'Month',         qty:12,  unitPrice:7200,  notes:''},
+      {desc:'GenAI / ML Platform',                cat:'AI and Machine Learning',unit:'Month',qty:12,unitPrice:12400,notes:'Expanded AI usage'},
+      {desc:'End User Computing (×40)',           cat:'End User Computing',unit:'Per User/Month',qty:480,unitPrice:33.42,notes:''},
+      {desc:'Cloud Engineering + DevOps',         cat:'Professional Services',unit:'FTE/Month',qty:18,unitPrice:23340,notes:'1.5 FTE'},
+    ]
+  },
+  {
+    id:4, label:'Option Year 3 (OY3) — FY2028', type:'Option', months:12,
+    items:[
+      {desc:'EC2 Compute (Mixed Fleet)',           cat:'Compute',  unit:'Instance/Month', qty:780, unitPrice:67.91, notes:''},
+      {desc:'Storage Services Bundle',             cat:'Storage',  unit:'TB/Month',       qty:72,  unitPrice:25.75, notes:''},
+      {desc:'Database Services Bundle',           cat:'Database', unit:'Month',          qty:12,  unitPrice:14200, notes:''},
+      {desc:'Security Services Bundle',           cat:'Security', unit:'Month',          qty:12,  unitPrice:9064,  notes:''},
+      {desc:'Networking & CDN',                   cat:'Networking',unit:'Month',         qty:12,  unitPrice:7416,  notes:''},
+      {desc:'GenAI / ML Platform',                cat:'AI and Machine Learning',unit:'Month',qty:12,unitPrice:14260,notes:''},
+      {desc:'End User Computing (×45)',           cat:'End User Computing',unit:'Per User/Month',qty:540,unitPrice:34.43,notes:''},
+      {desc:'Cloud Engineering + DevOps',         cat:'Professional Services',unit:'FTE/Month',qty:18,unitPrice:24040,notes:''},
+    ]
+  },
+  {
+    id:5, label:'Option Year 4 (OY4) — FY2029', type:'Option', months:12,
+    items:[
+      {desc:'EC2 Compute (Mixed Fleet)',           cat:'Compute',  unit:'Instance/Month', qty:840, unitPrice:69.95, notes:''},
+      {desc:'Storage Services Bundle',             cat:'Storage',  unit:'TB/Month',       qty:84,  unitPrice:26.52, notes:''},
+      {desc:'Database Services Bundle',           cat:'Database', unit:'Month',          qty:12,  unitPrice:14626, notes:''},
+      {desc:'Security Services Bundle',           cat:'Security', unit:'Month',          qty:12,  unitPrice:9336,  notes:''},
+      {desc:'Networking & CDN',                   cat:'Networking',unit:'Month',         qty:12,  unitPrice:7639,  notes:''},
+      {desc:'GenAI / ML Platform',                cat:'AI and Machine Learning',unit:'Month',qty:12,unitPrice:16399,notes:''},
+      {desc:'End User Computing (×50)',           cat:'End User Computing',unit:'Per User/Month',qty:600,unitPrice:35.46,notes:''},
+      {desc:'Cloud Engineering + DevOps',         cat:'Professional Services',unit:'FTE/Month',qty:18,unitPrice:24761,notes:''},
+    ]
+  },
+];
+
+// ── Section collapse ─────────────────────────────────────────
+function toggleIgceSection(id){
+  const body=document.getElementById('igce-'+id+'-body');
+  const chev=document.getElementById('igce-'+id+'-chev');
+  if(!body)return;
+  const open=!body.classList.contains('collapsed');
+  body.classList.toggle('collapsed',open);
+  if(chev) chev.classList.toggle('open',!open);
+}
+
+function toggleClinSection(clinId){
+  const body=document.getElementById('igce-clin-body-'+clinId);
+  const chev=document.getElementById('igce-clin-chev-'+clinId);
+  if(!body)return;
+  const open=!body.classList.contains('collapsed');
+  body.classList.toggle('collapsed',open);
+  if(chev) chev.classList.toggle('open',!open);
+}
+
+// ── Historical data ──────────────────────────────────────────
+function igceHandleHistCSV(input){
+  const file=input.files[0];
+  if(!file)return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    try{
+      const rows=parseIgceHistCSV(e.target.result);
+      igceHistData=rows;
+      renderIgceHist();
+      showToast(`✓ Loaded ${rows.length} historical spend rows`,'success');
+    }catch(err){showToast('CSV error: '+err.message,'error');}
+    input.value='';
+  };
+  reader.readAsText(file);
+}
+
+function parseIgceHistCSV(text){
+  const lines=text.trim().split(/\r?\n/);
+  const header=lines[0].split(',').map(h=>h.trim().toLowerCase().replace(/['"]/g,''));
+  const colIdx={};
+  ['period','csp','category','service','spend'].forEach(k=>{
+    const i=header.findIndex(h=>h.includes(k.replace(' ','').substring(0,5)));
+    colIdx[k]=i;
+  });
+  const rows=[];
+  for(let i=1;i<lines.length;i++){
+    const cols=splitCSVLine(lines[i]);
+    if(cols.length<2)continue;
+    rows.push({
+      period:  cols[colIdx.period >=0 ? colIdx.period  : 0]||'',
+      csp:     cols[colIdx.csp    >=0 ? colIdx.csp     : 1]||'',
+      category:cols[colIdx.category>=0? colIdx.category: 2]||'',
+      service: cols[colIdx.service>=0 ? colIdx.service : 3]||'',
+      spend:   parseFloat((cols[colIdx.spend>=0 ? colIdx.spend : 4]||'0').replace(/[$,]/g,''))||0,
+    });
+  }
+  return rows;
+}
+
+function renderIgceHist(){
+  const wrap=document.getElementById('igce-hist-table-wrap');
+  const tbody=document.getElementById('igce-hist-tbody');
+  const badge=document.getElementById('igce-hist-badge');
+  if(!igceHistData.length){wrap.style.display='none';badge.textContent='No data';return;}
+
+  wrap.style.display='block';
+  badge.textContent=igceHistData.length+' rows';
+
+  // Compute YoY by service
+  const byService={};
+  igceHistData.forEach(r=>{
+    const k=r.service+'|'+r.csp;
+    if(!byService[k])byService[k]=[];
+    byService[k].push(r);
+  });
+  byService[Object.keys(byService)[0]];
+
+  // Sort by period desc
+  const sorted=[...igceHistData].sort((a,b)=>b.period.localeCompare(a.period));
+
+  tbody.innerHTML=sorted.map(r=>{
+    // Find prior period for same service
+    const priorRows=igceHistData.filter(x=>x.service===r.service&&x.csp===r.csp&&x.period<r.period);
+    const prior=priorRows.sort((a,b)=>b.period.localeCompare(a.period))[0];
+    let growthHtml='—';
+    if(prior&&prior.spend>0){
+      const pct=((r.spend-prior.spend)/prior.spend*100);
+      const cls=pct>0?'igce-growth-up':'igce-growth-dn';
+      const sign=pct>0?'▲':'▼';
+      growthHtml=`<span class="igce-growth-pill ${cls}">${sign} ${Math.abs(pct).toFixed(1)}%</span>`;
+    }
+    return `<tr>
+      <td>${r.period}</td>
+      <td><span class="pt-csp-badge ${(r.csp||'').toLowerCase()}">${r.csp}</span></td>
+      <td style="color:var(--text-dim)">${r.category}</td>
+      <td>${r.service}</td>
+      <td style="text-align:right;font-family:var(--mono);font-size:11px;color:var(--text)">$${r.spend.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}</td>
+      <td>${growthHtml}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── CLIN management ──────────────────────────────────────────
+function igceAddCLIN(prefill){
+  igceClinCounter++;
+  const id=igceClinCounter;
+  const isOption=igceClins.length>0;
+  const clin={
+    id,
+    label: prefill?.label || (igceClins.length===0 ? 'Base Year (BY)' : `Option Year ${igceClins.length} (OY${igceClins.length})`),
+    type:  prefill?.type  || (igceClins.length===0 ? 'Base' : 'Option'),
+    months:prefill?.months||12,
+    items: prefill?.items || []
+  };
+  igceClins.push(clin);
+  renderClin(clin);
+  igceRecalc();
+}
+
+function igceDeleteCLIN(id){
+  if(!confirm('Remove this period of performance?'))return;
+  igceClins=igceClins.filter(c=>c.id!==id);
+  const el=document.getElementById('igce-clin-'+id);
+  if(el)el.remove();
+  igceRecalc();
+}
+
+function renderClin(clin){
+  const container=document.getElementById('igce-clins');
+  const div=document.createElement('div');
+  div.className='igce-section';
+  div.id='igce-clin-'+clin.id;
+  const typeBadge=clin.type==='Base'
+    ?'<span class="igce-badge-base">Base Year</span>'
+    :'<span class="igce-badge-opt">Option Year</span>';
+  div.innerHTML=`
+    <div class="igce-section-head" onclick="toggleClinSection(${clin.id})">
+      <div class="igce-section-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <input onclick="event.stopPropagation()" value="${clin.label}" onchange="igceUpdateClinLabel(${clin.id},this.value)"
+          style="background:transparent;border:none;color:var(--text);font-family:var(--mono);font-size:12px;font-weight:600;outline:none;width:340px;cursor:text">
+        ${typeBadge}
+        <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted)">
+          <input type="number" onclick="event.stopPropagation()" value="${clin.months}" min="1" max="60"
+            onchange="igceUpdateClinMonths(${clin.id},this.value)"
+            style="background:transparent;border:none;color:var(--text-muted);font-family:var(--mono);font-size:10px;outline:none;width:24px;text-align:center"> months
+        </span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="igce-section-total" id="igce-clin-total-${clin.id}">$0</span>
+        <button onclick="event.stopPropagation();igceDeleteCLIN(${clin.id})" class="btn btn-danger" style="padding:2px 7px;font-size:10px">✕</button>
+        <span class="igce-section-chevron open" id="igce-clin-chev-${clin.id}">▾</span>
+      </div>
+    </div>
+    <div class="igce-section-body" id="igce-clin-body-${clin.id}">
+      <div style="overflow-x:auto">
+        <table class="igce-table">
+          <thead>
+            <tr>
+              <th style="min-width:260px">Description / Line Item</th>
+              <th style="min-width:160px">Category</th>
+              <th style="min-width:130px">Unit of Issue</th>
+              <th style="min-width:80px;text-align:right">Qty</th>
+              <th style="min-width:110px;text-align:right">Unit Price ($)</th>
+              <th style="min-width:120px;text-align:right">Extended ($)</th>
+              <th style="min-width:180px">Notes</th>
+              <th style="width:36px"></th>
+            </tr>
+          </thead>
+          <tbody id="igce-clin-items-${clin.id}"></tbody>
+          <tfoot>
+            <tr class="igce-total-row">
+              <td colspan="5" style="text-align:right;letter-spacing:0.04em">SUBTOTAL</td>
+              <td id="igce-clin-sub-${clin.id}" class="igce-num">$0.00</td>
+              <td colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="igce-add-row" onclick="igceAddItem(${clin.id})">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Add line item
+          <span style="margin-left:8px;font-size:10px;color:var(--text-muted)">or</span>
+          <span onclick="event.stopPropagation();igceAddFromCatalog(${clin.id})" style="color:var(--accent);cursor:pointer;font-size:10px">pick from pricing catalog</span>
+        </div>
+      </div>
+    </div>`;
+  container.appendChild(div);
+
+  // Render existing items
+  (clin.items||[]).forEach(item=>igceRenderItem(clin.id,item));
+}
+
+function igceUpdateClinLabel(id,val){
+  const c=igceClins.find(c=>c.id===id);
+  if(c)c.label=val;
+}
+function igceUpdateClinMonths(id,val){
+  const c=igceClins.find(c=>c.id===id);
+  if(c){c.months=parseInt(val)||12;igceRecalc();}
+}
+
+// ── Line items ───────────────────────────────────────────────
+function igceAddItem(clinId, prefill){
+  const clin=igceClins.find(c=>c.id===clinId);
+  if(!clin)return;
+  const item={
+    id: Date.now()+Math.random(),
+    desc:       prefill?.desc||'',
+    cat:        prefill?.cat||'',
+    unit:       prefill?.unit||'Month',
+    qty:        prefill?.qty||1,
+    unitPrice:  prefill?.unitPrice||0,
+    notes:      prefill?.notes||''
+  };
+  clin.items.push(item);
+  igceRenderItem(clinId,item);
+  igceRecalc();
+}
+
+function igceRenderItem(clinId, item){
+  const tbody=document.getElementById('igce-clin-items-'+clinId);
+  if(!tbody)return;
+  const tr=document.createElement('tr');
+  tr.id='igce-item-'+item.id;
+  tr.innerHTML=`
+    <td><input value="${escH(item.desc)}" placeholder="Service / description" onchange="igceUpdateItem(${clinId},'${item.id}','desc',this.value)" style="width:100%"></td>
+    <td>
+      <select onchange="igceUpdateItem(${clinId},'${item.id}','cat',this.value)" style="width:100%">
+        <option value="">—</option>
+        ${IGCE_CATEGORIES.map(c=>`<option value="${c}" ${c===item.cat?'selected':''}>${c}</option>`).join('')}
+      </select>
+    </td>
+    <td>
+      <select onchange="igceUpdateItem(${clinId},'${item.id}','unit',this.value)" style="width:100%">
+        ${IGCE_UNITS.map(u=>`<option value="${u}" ${u===item.unit?'selected':''}>${u}</option>`).join('')}
+      </select>
+    </td>
+    <td><input type="number" value="${item.qty}" min="0" step="1" onchange="igceUpdateItem(${clinId},'${item.id}','qty',this.value)" style="width:100%;text-align:right"></td>
+    <td><input type="number" value="${item.unitPrice}" min="0" step="0.01" onchange="igceUpdateItem(${clinId},'${item.id}','unitPrice',this.value)" style="width:100%;text-align:right"></td>
+    <td class="igce-num" id="igce-ext-${item.id}">$${fmtNum(item.qty*item.unitPrice)}</td>
+    <td><input value="${escH(item.notes)}" placeholder="Notes" onchange="igceUpdateItem(${clinId},'${item.id}','notes',this.value)" style="width:100%"></td>
+    <td><button onclick="igceDeleteItem(${clinId},'${item.id}')" style="background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:14px;padding:2px 4px" title="Remove">✕</button></td>`;
+  tbody.appendChild(tr);
+}
+
+function igceUpdateItem(clinId,itemId,field,value){
+  const clin=igceClins.find(c=>c.id===clinId);
+  if(!clin)return;
+  const item=clin.items.find(i=>String(i.id)===String(itemId));
+  if(!item)return;
+  item[field]=field==='qty'||field==='unitPrice'?parseFloat(value)||0:value;
+  const ext=document.getElementById('igce-ext-'+itemId);
+  if(ext)ext.textContent='$'+fmtNum(item.qty*item.unitPrice);
+  igceRecalc();
+}
+
+function igceDeleteItem(clinId,itemId){
+  const clin=igceClins.find(c=>c.id===clinId);
+  if(!clin)return;
+  clin.items=clin.items.filter(i=>String(i.id)!==String(itemId));
+  const el=document.getElementById('igce-item-'+itemId);
+  if(el)el.remove();
+  igceRecalc();
+}
+
+// ── Pick from pricing catalog ────────────────────────────────
+let igceCatalogTargetClin=null;
+function igceAddFromCatalog(clinId){
+  igceCatalogTargetClin=clinId;
+  // Gather all current pricing items
+  const allPricing=[];
+  ['aws','azure','gcp','oracle'].forEach(csp=>{
+    (pricingData[csp]||[]).forEach(r=>{
+      if(r.title)allPricing.push({...r,csp});
+    });
+  });
+  if(!allPricing.length){
+    showToast('No pricing catalog data loaded — go to Pricing Catalog and load sample data first','error');
+    return;
+  }
+  // Build a simple picker modal
+  let rows=allPricing.slice(0,200).map(r=>`
+    <div class="igce-catalog-row" onclick="igcePickCatalogItem(${JSON.stringify({
+      desc:r.title,cat:r.category||'',unit:r.custUnitIssue||'Month',
+      qty:1,unitPrice:parseFloat(r.custUnitPrice)||0,notes:r.shortName||''
+    }).replace(/"/g,'&quot;')})">
+      <span class="pt-csp-badge ${r.csp}" style="flex-shrink:0">${r.csp.toUpperCase()}</span>
+      <span style="font-size:11px">${escH(r.title)}</span>
+      <span class="igce-catalog-price">$${parseFloat(r.custUnitPrice||0).toFixed(4)} / ${escH(r.custUnitIssue||'')}</span>
+    </div>`).join('');
+
+  document.getElementById('igce-catalog-list').innerHTML=rows;
+  document.getElementById('igce-catalog-search').value='';
+  document.getElementById('igce-catalog-modal').classList.add('open');
+}
+
+function igceCatalogFilter(){
+  const q=document.getElementById('igce-catalog-search').value.toLowerCase();
+  document.querySelectorAll('#igce-catalog-list .igce-catalog-row').forEach(row=>{
+    row.style.display=row.textContent.toLowerCase().includes(q)?'':'none';
+  });
+}
+
+function igcePickCatalogItem(itemJson){
+  let item;
+  try{item=typeof itemJson==='string'?JSON.parse(itemJson):itemJson;}
+  catch{return;}
+  document.getElementById('igce-catalog-modal').classList.remove('open');
+  if(igceCatalogTargetClin!==null)igceAddItem(igceCatalogTargetClin,item);
+}
+
+// ── Recalculate ──────────────────────────────────────────────
+function igceRecalc(){
+  const escalation=(parseFloat(document.getElementById('igce-escalation')?.value)||3)/100;
+  const feePct=(parseFloat(document.getElementById('igce-fee')?.value)||8)/100;
+
+  let grandBase=0,grandFee=0,grandTotal=0;
+  const breakdownRows=[];
+
+  igceClins.forEach((clin,idx)=>{
+    const sub=clin.items.reduce((s,i)=>s+(i.qty*i.unitPrice),0);
+    const esc=sub*escalation*idx;   // escalation applied cumulatively
+    const escalated=sub+esc;
+    const fee=escalated*feePct;
+    const total=escalated+fee;
+
+    grandBase+=sub;
+    grandFee+=fee;
+    grandTotal+=total;
+
+    const subEl=document.getElementById('igce-clin-sub-'+clin.id);
+    const totEl=document.getElementById('igce-clin-total-'+clin.id);
+    if(subEl)subEl.textContent='$'+fmtNum(sub);
+    if(totEl)totEl.textContent='$'+fmtNum(total);
+
+    breakdownRows.push({label:clin.label,type:clin.type,base:sub,esc,fee,total});
+  });
+
+  // KPIs
+  const kpiEl=document.getElementById('igce-kpis');
+  if(kpiEl) kpiEl.innerHTML=`
+    <div class="igce-kpi">
+      <div class="igce-kpi-label">Total Contract Value</div>
+      <div class="igce-kpi-value">$${fmtNum(grandTotal)}</div>
+      <div class="igce-kpi-sub">${igceClins.length} period${igceClins.length!==1?'s':''} of performance</div>
+    </div>
+    <div class="igce-kpi">
+      <div class="igce-kpi-label">Base Period Cost</div>
+      <div class="igce-kpi-value">$${fmtNum(breakdownRows.filter(r=>r.type==='Base').reduce((s,r)=>s+r.total,0))}</div>
+      <div class="igce-kpi-sub">Excluding options</div>
+    </div>
+    <div class="igce-kpi">
+      <div class="igce-kpi-label">All Options Value</div>
+      <div class="igce-kpi-value">$${fmtNum(breakdownRows.filter(r=>r.type==='Option').reduce((s,r)=>s+r.total,0))}</div>
+      <div class="igce-kpi-sub">${breakdownRows.filter(r=>r.type==='Option').length} option period${breakdownRows.filter(r=>r.type==='Option').length!==1?'s':''}</div>
+    </div>
+    <div class="igce-kpi">
+      <div class="igce-kpi-label">Total Fee / Profit</div>
+      <div class="igce-kpi-value">$${fmtNum(grandFee)}</div>
+      <div class="igce-kpi-sub">${((parseFloat(document.getElementById('igce-fee')?.value)||8)).toFixed(1)}% applied rate</div>
+    </div>`;
+
+  // Breakdown table
+  const bdEl=document.getElementById('igce-breakdown-body');
+  if(bdEl) bdEl.innerHTML=breakdownRows.map(r=>`
+    <tr>
+      <td>${escH(r.label)}</td>
+      <td>${r.type==='Base'?'<span class="igce-badge-base">Base</span>':'<span class="igce-badge-opt">Option</span>'}</td>
+      <td class="igce-num">$${fmtNum(r.base)}</td>
+      <td class="igce-num" style="color:var(--text-muted)">$${fmtNum(r.esc)}</td>
+      <td class="igce-num" style="color:var(--text-muted)">$${fmtNum(r.fee)}</td>
+      <td class="igce-num">$${fmtNum(r.total)}</td>
+      <td>
+        <div style="font-family:var(--mono);font-size:10px;color:var(--text-muted)">${grandTotal>0?(r.total/grandTotal*100).toFixed(1):'0.0'}%</div>
+        <div class="igce-bar" style="width:${grandTotal>0?Math.min(r.total/grandTotal*100,100):0}%"></div>
+      </td>
+    </tr>`).join('')
+    + (breakdownRows.length ? `<tr>
+      <td colspan="2"><strong>TOTAL CONTRACT VALUE</strong></td>
+      <td class="igce-num">$${fmtNum(grandBase)}</td>
+      <td class="igce-num" style="color:var(--text-muted)">—</td>
+      <td class="igce-num" style="color:var(--text-muted)">$${fmtNum(grandFee)}</td>
+      <td class="igce-num">$${fmtNum(grandTotal)}</td>
+      <td></td>
+    </tr>` : '');
+}
+
+// ── Load sample ──────────────────────────────────────────────
+function igceLoadSample(){
+  // Load historical data
+  igceHistData=[...IGCE_SAMPLE_HIST];
+  renderIgceHist();
+
+  // Clear and rebuild CLINs
+  igceClins=[];
+  igceClinCounter=0;
+  document.getElementById('igce-clins').innerHTML='';
+
+  IGCE_SAMPLE_CLINS.forEach(s=>{
+    igceClinCounter++;
+    const clin={id:igceClinCounter,label:s.label,type:s.type,months:s.months,items:[]};
+    igceClins.push(clin);
+    renderClin(clin);
+    s.items.forEach(item=>{
+      const i={id:Date.now()+Math.random(),...item};
+      clin.items.push(i);
+      igceRenderItem(clin.id,i);
+    });
+  });
+
+  igceRecalc();
+  showToast('✓ Sample IGCE data loaded','success');
+}
+
+// ── Export CSV ───────────────────────────────────────────────
+function igceExportCSV(){
+  const title=document.getElementById('igce-title')?.value||'IGCE';
+  const esc=(parseFloat(document.getElementById('igce-escalation')?.value)||3)/100;
+  const feePct=(parseFloat(document.getElementById('igce-fee')?.value)||8)/100;
+  let lines=[`"${title}",,,,,,`,'Period,Type,Description,Category,Unit of Issue,Qty,Unit Price,Extended,Notes'];
+  igceClins.forEach((clin,idx)=>{
+    clin.items.forEach(item=>{
+      const ext=item.qty*item.unitPrice;
+      lines.push([clin.label,clin.type,item.desc,item.cat,item.unit,item.qty,item.unitPrice.toFixed(4),ext.toFixed(2),item.notes]
+        .map(v=>`"${String(v||'').replace(/"/g,'""')}"`).join(','));
+    });
+    const sub=clin.items.reduce((s,i)=>s+(i.qty*i.unitPrice),0);
+    const fee=sub*(1+esc*idx)*feePct;
+    lines.push([clin.label,clin.type,'— PERIOD SUBTOTAL','','','','',((sub+fee)*(1+esc*idx)).toFixed(2),'']
+      .map(v=>`"${v}"`).join(','));
+  });
+  const blob=new Blob([lines.join('\n')],{type:'text/csv'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download='IGCE_'+title.replace(/[^a-z0-9]/gi,'_')+'.csv';a.click();
+  URL.revokeObjectURL(url);
+  showToast('✓ IGCE exported as CSV','success');
+}
+
+// ── Export PDF ───────────────────────────────────────────────
+function igceExportPDF(){
+  const title=document.getElementById('igce-title')?.value||'IGCE';
+  const preparer=document.getElementById('igce-preparer')?.value||'';
+  const office=document.getElementById('igce-office')?.value||'';
+  const contractType=document.getElementById('igce-contract-type')?.value||'';
+  const il=document.getElementById('igce-il')?.value||'';
+  const csp=document.getElementById('igce-csp')?.options[document.getElementById('igce-csp')?.selectedIndex]?.text||'';
+  const dateVal=document.getElementById('igce-date')?.value||new Date().toISOString().split('T')[0];
+  const esc=parseFloat(document.getElementById('igce-escalation')?.value)||3;
+  const feePct=parseFloat(document.getElementById('igce-fee')?.value)||8;
+
+  let grandTotal=0;
+  const clinSummaries=igceClins.map((clin,idx)=>{
+    const sub=clin.items.reduce((s,i)=>s+(i.qty*i.unitPrice),0);
+    const escAmt=sub*(esc/100)*idx;
+    const escalated=sub+escAmt;
+    const fee=escalated*(feePct/100);
+    const total=escalated+fee;
+    grandTotal+=total;
+    return {clin,sub,escAmt,fee,total};
+  });
+
+  const pdfHtml=`<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>${escH(title)}</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Times New Roman',serif;font-size:11pt;color:#111;background:#fff;padding:0}
+  .page{padding:0.75in 0.9in;max-width:11in;margin:0 auto}
+  h1{font-size:14pt;font-weight:bold;text-align:center;margin-bottom:4pt;text-transform:uppercase;letter-spacing:0.05em}
+  h2{font-size:11pt;font-weight:bold;text-align:center;margin-bottom:16pt;color:#444}
+  .meta-table{width:100%;border-collapse:collapse;margin-bottom:16pt;font-size:10pt}
+  .meta-table td{padding:4pt 8pt;border:1px solid #ccc}
+  .meta-table .lbl{background:#f5f5f5;font-weight:bold;width:30%;white-space:nowrap}
+  .section-title{font-size:11pt;font-weight:bold;background:#1e3a5f;color:#fff;padding:5pt 8pt;margin:14pt 0 0 0;text-transform:uppercase;letter-spacing:0.04em}
+  .clin-label{font-size:10pt;font-weight:bold;background:#e8edf5;padding:4pt 8pt;border:1px solid #c0c8d8;margin-bottom:0}
+  table.items{width:100%;border-collapse:collapse;font-size:9.5pt;margin-bottom:8pt}
+  table.items th{background:#2d5186;color:#fff;padding:4pt 6pt;text-align:left;font-size:9pt;font-weight:bold}
+  table.items th.r,table.items td.r{text-align:right}
+  table.items td{padding:3pt 6pt;border-bottom:1px solid #e0e0e0;vertical-align:top}
+  table.items tr:nth-child(even) td{background:#f9f9fb}
+  table.items tfoot td{font-weight:bold;background:#e8edf5;border-top:2px solid #2d5186;padding:4pt 6pt}
+  .summary-table{width:100%;border-collapse:collapse;font-size:10pt;margin-top:16pt}
+  .summary-table th{background:#1e3a5f;color:#fff;padding:5pt 8pt;text-align:left;font-size:9.5pt}
+  .summary-table th.r,.summary-table td.r{text-align:right}
+  .summary-table td{padding:4pt 8pt;border-bottom:1px solid #ddd}
+  .summary-table tr:last-child td{font-weight:bold;background:#e8edf5;border-top:2px solid #1e3a5f;font-size:11pt}
+  .footer-note{font-size:8.5pt;color:#666;margin-top:20pt;border-top:1px solid #ccc;padding-top:8pt;line-height:1.5}
+  .sig-block{display:grid;grid-template-columns:1fr 1fr;gap:30pt;margin-top:24pt}
+  .sig-line{border-bottom:1px solid #333;margin-bottom:4pt;height:24pt}
+  .sig-label{font-size:9pt;color:#555}
+  @media print{
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    @page{size:letter;margin:0}
+    .page{padding:0.75in 0.9in}
+  }
+</style>
+</head><body><div class="page">
+
+  <h1>Independent Government Cost Estimate (IGCE)</h1>
+  <h2>${escH(title)}</h2>
+
+  <table class="meta-table">
+    <tr><td class="lbl">Contracting Office</td><td>${escH(office)}</td><td class="lbl">Date Prepared</td><td>${dateVal}</td></tr>
+    <tr><td class="lbl">Prepared By</td><td>${escH(preparer)}</td><td class="lbl">Contract Type</td><td>${escH(contractType)}</td></tr>
+    <tr><td class="lbl">Primary CSP</td><td>${escH(csp)}</td><td class="lbl">Classification Level</td><td>${escH(il)}</td></tr>
+    <tr><td class="lbl">Escalation Rate</td><td>${esc}% per year</td><td class="lbl">Fee / Profit</td><td>${feePct}%</td></tr>
+  </table>
+
+  ${clinSummaries.map(({clin,sub,escAmt,fee,total})=>`
+    <div class="section-title">${escH(clin.label)} &nbsp;·&nbsp; ${clin.type==='Base'?'BASE YEAR':'OPTION YEAR'}</div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width:32%">Description / Line Item</th>
+          <th style="width:16%">Category</th>
+          <th style="width:12%">Unit of Issue</th>
+          <th class="r" style="width:7%">Qty</th>
+          <th class="r" style="width:11%">Unit Price</th>
+          <th class="r" style="width:12%">Extended</th>
+          <th style="width:10%">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${clin.items.map(item=>`<tr>
+          <td>${escH(item.desc)}</td>
+          <td>${escH(item.cat)}</td>
+          <td>${escH(item.unit)}</td>
+          <td class="r">${item.qty.toLocaleString()}</td>
+          <td class="r">$${item.unitPrice.toFixed(4)}</td>
+          <td class="r">$${fmtNum(item.qty*item.unitPrice)}</td>
+          <td>${escH(item.notes)}</td>
+        </tr>`).join('')}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" style="text-align:right">Subtotal (labor + materials)</td>
+          <td class="r">$${fmtNum(sub)}</td><td></td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:right">Escalation (${esc}% × period factor)</td>
+          <td class="r">$${fmtNum(escAmt)}</td><td></td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:right">Fee / Profit (${feePct}%)</td>
+          <td class="r">$${fmtNum(fee)}</td><td></td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:right;font-size:11pt">PERIOD TOTAL</td>
+          <td class="r" style="font-size:11pt">$${fmtNum(total)}</td><td></td>
+        </tr>
+      </tfoot>
+    </table>
+  `).join('')}
+
+  <div class="section-title">Contract Cost Summary</div>
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>Period</th><th>Type</th>
+        <th class="r">Base Cost</th><th class="r">Escalation</th>
+        <th class="r">Fee</th><th class="r">Period Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${clinSummaries.map(({clin,sub,escAmt,fee,total})=>`<tr>
+        <td>${escH(clin.label)}</td>
+        <td>${clin.type}</td>
+        <td class="r">$${fmtNum(sub)}</td>
+        <td class="r">$${fmtNum(escAmt)}</td>
+        <td class="r">$${fmtNum(fee)}</td>
+        <td class="r">$${fmtNum(total)}</td>
+      </tr>`).join('')}
+      <tr>
+        <td colspan="2">TOTAL CONTRACT VALUE</td>
+        <td class="r">$${fmtNum(clinSummaries.reduce((s,r)=>s+r.sub,0))}</td>
+        <td class="r">$${fmtNum(clinSummaries.reduce((s,r)=>s+r.escAmt,0))}</td>
+        <td class="r">$${fmtNum(clinSummaries.reduce((s,r)=>s+r.fee,0))}</td>
+        <td class="r">$${fmtNum(grandTotal)}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sig-block">
+    <div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Signature — Requiring Activity COR/TPOC</div>
+    </div>
+    <div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Signature — Contracting Officer</div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    This Independent Government Cost Estimate was prepared by ${escH(office)} on ${dateVal}.
+    Estimates are based on current pricing catalog data and historical spend analysis. All figures are subject to market conditions and negotiation.
+    This document is for procurement planning purposes only and does not constitute a commitment to fund.
+    FOCUS 1.3 service categories applied per FinOps Foundation specification.
+  </div>
+
+</div></body></html>`;
+
+  const win=window.open('','_blank','width=900,height=700');
+  if(!win){showToast('Pop-up blocked — allow pop-ups to export PDF','error');return;}
+  win.document.write(pdfHtml);
+  win.document.close();
+  setTimeout(()=>{win.focus();win.print();},400);
+  showToast('✓ PDF ready — use browser Print → Save as PDF','success');
+}
+
+// ── Helpers ──────────────────────────────────────────────────
+function fmtNum(n){
+  if(isNaN(n)||n===null)return'0.00';
+  return n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+}
+function escH(s){
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Set today's date on load
+document.addEventListener('DOMContentLoaded',()=>{
+  const d=document.getElementById('igce-date');
+  if(d)d.value=new Date().toISOString().split('T')[0];
+});
+// Also set immediately in case DOM is already ready
+(()=>{const d=document.getElementById('igce-date');if(d)d.value=new Date().toISOString().split('T')[0];})();
+
+// Listen for escalation/fee changes
+['igce-escalation','igce-fee'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el)el.addEventListener('input',igceRecalc);
+});
+
 // ── INIT ──
 populateCats();
 renderServices();
 renderPricing();
+
 </script>
+
+<!-- IGCE Catalog Picker Modal -->
+<div class="modal-overlay" id="igce-catalog-modal">
+  <div class="modal" style="max-width:640px">
+    <div class="modal-head">
+      <h3>Pick from Pricing Catalog</h3>
+      <button class="modal-close" onclick="document.getElementById('igce-catalog-modal').classList.remove('open')">✕</button>
+    </div>
+    <div class="modal-body" style="padding:12px 16px">
+      <div style="position:relative;margin-bottom:10px">
+        <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:12px">🔍</span>
+        <input type="text" id="igce-catalog-search" placeholder="Filter catalog items…" oninput="igceCatalogFilter()" style="width:100%;padding-left:30px">
+      </div>
+      <div id="igce-catalog-list" style="max-height:420px;overflow-y:auto"></div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
