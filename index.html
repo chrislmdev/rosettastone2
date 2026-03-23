@@ -236,7 +236,113 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
 .cat-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
 .cat-icon svg{width:13px;height:13px;opacity:0.7}
 
-/* ── IGCE BUILDER ── */
+/* ── CLOUD CALCULATOR ── */
+.calc-layout{max-width:1400px;margin:0 auto;padding:24px 24px 80px}
+.calc-hero{text-align:center;padding:32px 0 28px;margin-bottom:8px}
+.calc-hero h2{font-family:var(--mono);font-size:18px;font-weight:600;color:var(--text);letter-spacing:0.02em;margin-bottom:8px}
+.calc-hero p{font-family:var(--mono);font-size:11px;color:var(--text-muted);max-width:560px;margin:0 auto;line-height:1.7}
+
+/* Scenario tabs */
+.calc-scenarios{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
+.calc-scen-tab{font-family:var(--mono);font-size:11px;padding:6px 14px;border-radius:20px;border:1px solid var(--border2);background:var(--surface2);color:var(--text-muted);cursor:pointer;transition:all .15s;white-space:nowrap}
+.calc-scen-tab:hover{border-color:var(--border2);color:var(--text-dim)}
+.calc-scen-tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.calc-scen-add{font-family:var(--mono);font-size:11px;padding:6px 12px;border-radius:20px;border:1px dashed var(--border2);background:transparent;color:var(--text-muted);cursor:pointer;transition:all .15s}
+.calc-scen-add:hover{border-color:var(--accent);color:var(--accent)}
+
+/* Two-column layout */
+.calc-body{display:grid;grid-template-columns:340px 1fr;gap:20px;align-items:start}
+@media(max-width:900px){.calc-body{grid-template-columns:1fr}}
+
+/* Config panel */
+.calc-config{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;position:sticky;top:72px}
+.calc-config-head{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.calc-config-head h3{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text)}
+.calc-service-group{border-bottom:1px solid var(--border)}
+.calc-service-group:last-child{border-bottom:none}
+.calc-group-head{display:flex;align-items:center;gap:8px;padding:11px 18px;cursor:pointer;user-select:none;transition:background .1s}
+.calc-group-head:hover{background:var(--surface2)}
+.calc-group-label{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--text);flex:1}
+.calc-group-total{font-family:var(--mono);font-size:11px;color:var(--accent);margin-left:auto;margin-right:8px}
+.calc-group-chev{font-size:9px;color:var(--text-muted);transition:transform .2s}
+.calc-group-chev.open{transform:rotate(180deg)}
+.calc-group-body{padding:0 18px 14px;display:flex;flex-direction:column;gap:10px}
+.calc-group-body.collapsed{display:none}
+.calc-field{display:flex;flex-direction:column;gap:4px}
+.calc-field label{font-family:var(--mono);font-size:9px;color:var(--text-muted);letter-spacing:.06em;text-transform:uppercase}
+.calc-field input[type=number],.calc-field select{background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);color:var(--text);font-family:var(--mono);font-size:12px;padding:7px 10px;outline:none;transition:border-color .15s;width:100%}
+.calc-field input:focus,.calc-field select:focus{border-color:var(--accent)}
+.calc-field-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.calc-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0}
+.calc-toggle label{font-family:var(--mono);font-size:11px;color:var(--text-dim);cursor:pointer}
+.calc-switch{position:relative;width:36px;height:20px;flex-shrink:0}
+.calc-switch input{opacity:0;width:0;height:0;position:absolute}
+.calc-switch-track{position:absolute;inset:0;background:var(--border2);border-radius:10px;transition:background .2s;cursor:pointer}
+.calc-switch input:checked+.calc-switch-track{background:var(--accent)}
+.calc-switch-track:before{content:'';position:absolute;width:14px;height:14px;border-radius:50%;background:#fff;top:3px;left:3px;transition:transform .2s}
+.calc-switch input:checked+.calc-switch-track:before{transform:translateX(16px)}
+
+/* Results panel */
+.calc-results{display:flex;flex-direction:column;gap:16px}
+.calc-duration-bar{display:flex;gap:6px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;flex-wrap:wrap;align-items:center}
+.calc-dur-label{font-family:var(--mono);font-size:10px;color:var(--text-muted);margin-right:4px}
+.calc-dur-btn{font-family:var(--mono);font-size:10px;padding:4px 10px;border-radius:5px;border:1px solid var(--border2);background:var(--surface2);color:var(--text-muted);cursor:pointer;transition:all .15s}
+.calc-dur-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* Winner banner */
+.calc-winner{display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:8px;margin-bottom:4px;border:1px solid}
+.calc-winner.aws  {background:rgba(255,153,0,.08);border-color:rgba(255,153,0,.3)}
+.calc-winner.azure{background:rgba(0,150,214,.08);border-color:rgba(0,150,214,.3)}
+.calc-winner.gcp  {background:rgba(52,168,83,.08);border-color:rgba(52,168,83,.3)}
+.calc-winner.oracle{background:rgba(199,70,52,.08);border-color:rgba(199,70,52,.3)}
+.calc-winner-label{font-family:var(--mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em}
+.calc-winner-name{font-family:var(--mono);font-size:14px;font-weight:700}
+.calc-winner.aws   .calc-winner-name{color:var(--aws)}
+.calc-winner.azure .calc-winner-name{color:var(--azure)}
+.calc-winner.gcp   .calc-winner-name{color:var(--gcp)}
+.calc-winner.oracle .calc-winner-name{color:var(--oracle)}
+.calc-winner-savings{font-family:var(--mono);font-size:11px;color:var(--il2);margin-left:auto}
+
+/* CSP cards */
+.calc-csp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(max-width:1100px){.calc-csp-grid{grid-template-columns:1fr 1fr}}
+.calc-csp-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:border-color .2s}
+.calc-csp-card.winner{border-color:rgba(34,197,94,.35);box-shadow:0 0 0 1px rgba(34,197,94,.15)}
+.calc-card-head{padding:14px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)}
+.calc-card-price{margin-left:auto;text-align:right}
+.calc-card-price-val{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--text)}
+.calc-card-price-period{font-family:var(--mono);font-size:9px;color:var(--text-muted)}
+.calc-card-body{padding:14px 16px}
+.calc-line{display:flex;align-items:center;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)}
+.calc-line:last-child{border-bottom:none}
+.calc-line-label{font-family:var(--mono);font-size:10px;color:var(--text-muted)}
+.calc-line-val{font-family:var(--mono);font-size:11px;color:var(--text)}
+.calc-line-sub{font-family:var(--mono);font-size:9px;color:var(--text-muted);text-align:right}
+.calc-savings-chip{font-family:var(--mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(34,197,94,.12);color:var(--il2);border:1px solid rgba(34,197,94,.25)}
+.calc-expensive-chip{font-family:var(--mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(239,68,68,.1);color:var(--il6);border:1px solid rgba(239,68,68,.2)}
+
+/* Chart container */
+.calc-chart-section{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px}
+.calc-chart-title{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--text-dim);margin-bottom:16px;letter-spacing:.04em}
+.calc-bar-chart{display:flex;flex-direction:column;gap:10px}
+.calc-bar-row{display:flex;align-items:center;gap:10px}
+.calc-bar-csp{font-family:var(--mono);font-size:10px;color:var(--text-muted);width:52px;text-align:right;flex-shrink:0}
+.calc-bar-track{flex:1;height:24px;background:var(--surface2);border-radius:4px;overflow:hidden;position:relative}
+.calc-bar-fill{height:100%;border-radius:4px;transition:width .6s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;padding-left:8px;min-width:2px}
+.calc-bar-fill span{font-family:var(--mono);font-size:10px;font-weight:600;color:#fff;white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+.calc-bar-amount{font-family:var(--mono);font-size:10px;color:var(--text-dim);width:80px;text-align:right;flex-shrink:0}
+
+/* Breakdown donut-style category bars */
+.calc-cat-bars{display:flex;flex-direction:column;gap:7px}
+.calc-cat-row{display:flex;align-items:center;gap:8px}
+.calc-cat-label{font-family:var(--mono);font-size:10px;color:var(--text-muted);width:140px;flex-shrink:0;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+.calc-cat-bar{flex:1;height:8px;background:var(--surface2);border-radius:4px;overflow:hidden}
+.calc-cat-fill{height:100%;border-radius:4px;transition:width .5s ease}
+.calc-cat-val{font-family:var(--mono);font-size:10px;color:var(--text-dim);width:70px;text-align:right;flex-shrink:0}
+
+/* Assumptions note */
+.calc-assumptions{background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.18);border-radius:8px;padding:12px 16px;font-family:var(--mono);font-size:10px;color:#d97706;line-height:1.6}
+.calc-assumptions strong{color:var(--new-col)}
 .igce-layout{max-width:1400px;margin:0 auto;padding:24px 24px 80px}
 .igce-header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:24px}
 .igce-header-left h2{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--text);letter-spacing:0.03em}
@@ -373,6 +479,10 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
       <button class="nav-tab" data-page="igce" onclick="switchPage('igce',this)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         <span>IGCE Builder</span>
+      </button>
+      <button class="nav-tab" data-page="calc" onclick="switchPage('calc',this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/><line x1="16" y1="14" x2="16" y2="18"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="12" y1="18" x2="14" y2="18"/></svg>
+        <span>Cloud Calculator</span>
       </button>
     </div>
     <div class="nav-right">
@@ -853,6 +963,87 @@ footer{border-top:1px solid var(--border);padding:14px 24px}
       </thead>
       <tbody id="igce-breakdown-body"></tbody>
     </table>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: CLOUD CALCULATOR
+══════════════════════════════════════════ -->
+<div class="page" id="page-calc">
+<div class="calc-layout">
+
+  <div class="calc-hero">
+    <h2>☁ Cloud Cost Calculator</h2>
+    <p>Configure your workload and instantly compare estimated monthly costs across AWS, Azure, GCP, and Oracle Cloud. Prices are based on the loaded pricing catalog — load sample catalog data for a demo.</p>
+    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px">
+      <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted);align-self:center">Quick start:</span>
+      <button class="calc-scen-tab" onclick="calcLoadPreset('Web App')" style="border-radius:20px">🌐 Web App</button>
+      <button class="calc-scen-tab" onclick="calcLoadPreset('Big Data')" style="border-radius:20px">📊 Big Data</button>
+      <button class="calc-scen-tab" onclick="calcLoadPreset('DevSecOps')" style="border-radius:20px">🔒 DevSecOps</button>
+      <button class="calc-scen-tab" onclick="calcLoadPreset('VDI / EUC')" style="border-radius:20px">🖥 VDI / EUC</button>
+      <button class="calc-scen-tab" onclick="calcLoadPreset('GenAI Platform')" style="border-radius:20px">🤖 GenAI Platform</button>
+    </div>
+  </div>
+
+  <!-- Scenario tabs -->
+  <div class="calc-scenarios">
+    <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em">Scenario:</span>
+    <div id="calc-scen-tabs"></div>
+    <button class="calc-scen-add" onclick="calcAddScenario()">+ New Scenario</button>
+    <div style="margin-left:auto;display:flex;gap:8px">
+      <button class="btn btn-ghost" onclick="calcExportCSV()">↓ Export CSV</button>
+      <button class="btn btn-primary" onclick="calcExportPDF()">⬇ Export PDF</button>
+    </div>
+  </div>
+
+  <div class="calc-body">
+    <!-- ── Config Panel ── -->
+    <div class="calc-config" id="calc-config-panel">
+      <div class="calc-config-head">
+        <h3>Workload Configuration</h3>
+        <button class="btn btn-ghost btn-sm" onclick="calcReset()" style="font-size:10px">Reset</button>
+      </div>
+      <div id="calc-service-groups"></div>
+    </div>
+
+    <!-- ── Results Panel ── -->
+    <div class="calc-results" id="calc-results">
+      <!-- Duration selector -->
+      <div class="calc-duration-bar">
+        <span class="calc-dur-label">View as:</span>
+        <button class="calc-dur-btn active" onclick="calcSetDuration('monthly',this)">Monthly</button>
+        <button class="calc-dur-btn" onclick="calcSetDuration('quarterly',this)">Quarterly</button>
+        <button class="calc-dur-btn" onclick="calcSetDuration('annual',this)">Annual (1yr)</button>
+        <button class="calc-dur-btn" onclick="calcSetDuration('3year',this)">3-Year</button>
+        <button class="calc-dur-btn" onclick="calcSetDuration('5year',this)">5-Year</button>
+      </div>
+
+      <!-- Winner banner -->
+      <div id="calc-winner-banner"></div>
+
+      <!-- CSP comparison cards -->
+      <div class="calc-csp-grid" id="calc-csp-cards"></div>
+
+      <!-- Bar chart -->
+      <div class="calc-chart-section">
+        <div class="calc-chart-title">TOTAL COST COMPARISON</div>
+        <div class="calc-bar-chart" id="calc-bar-chart"></div>
+      </div>
+
+      <!-- Category breakdown chart -->
+      <div class="calc-chart-section">
+        <div class="calc-chart-title">COST BREAKDOWN BY CATEGORY (lowest-cost CSP)</div>
+        <div class="calc-cat-bars" id="calc-cat-chart"></div>
+      </div>
+
+      <!-- Assumptions -->
+      <div class="calc-assumptions">
+        <strong>⚠ Assumptions & Disclaimer</strong><br>
+        Estimates are based on on-demand / pay-as-you-go list prices from the loaded pricing catalog. Reserved instance, committed use, or spot/preemptible discounts are not applied unless reflected in the catalog's customer unit price. Storage assumes standard tier pricing. Networking egress costs are estimated at 5 GB/day. All figures are approximate and should be verified against official CSP pricing pages before procurement decisions.
+      </div>
+    </div>
   </div>
 
 </div>
@@ -2483,16 +2674,719 @@ document.addEventListener('DOMContentLoaded',()=>{
 // Also set immediately in case DOM is already ready
 (()=>{const d=document.getElementById('igce-date');if(d)d.value=new Date().toISOString().split('T')[0];})();
 
-// Listen for escalation/fee changes
-['igce-escalation','igce-fee'].forEach(id=>{
-  const el=document.getElementById(id);
-  if(el)el.addEventListener('input',igceRecalc);
-});
-
 // ── INIT ──
 populateCats();
 renderServices();
 renderPricing();
+['igce-escalation','igce-fee'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el)el.addEventListener('input',igceRecalc);
+});
+calcInit();
+
+
+// ════════════════════════════════════════════════════════════
+// CLOUD CALCULATOR
+// ════════════════════════════════════════════════════════════
+
+// ── Built-in pricing data (used when catalog not loaded) ──────
+// These are realistic approximate on-demand prices for demo purposes.
+// When catalog data is loaded, those prices override these.
+const CALC_BASE_PRICES = {
+  // Compute — per vCPU-month (approx, standard general purpose)
+  compute_vcpu_month: { aws:24.60, azure:26.28, gcp:25.32, oracle:22.40 },
+  // Compute — per GB RAM-month
+  compute_ram_month:  { aws:3.10,  azure:3.32,  gcp:3.38,  oracle:2.80  },
+  // Storage — GB primary (SSD block) per month
+  storage_primary_gb: { aws:0.080, azure:0.084, gcp:0.085, oracle:0.0765 },
+  // Storage — GB archive per month
+  storage_archive_gb: { aws:0.004, azure:0.002, gcp:0.004, oracle:0.003  },
+  // Storage — GB object per month
+  storage_object_gb:  { aws:0.023, azure:0.020, gcp:0.026, oracle:0.0255 },
+  // Database — per vCPU-month (managed relational)
+  database_vcpu_month:{ aws:58.40, azure:63.72, gcp:52.56, oracle:56.10  },
+  // Database — storage GB/month
+  database_storage_gb:{ aws:0.115, azure:0.115, gcp:0.170, oracle:0.102  },
+  // Networking — egress GB
+  networking_egress_gb:{ aws:0.085,azure:0.087, gcp:0.085, oracle:0.0085 },
+  // Load Balancer — per month
+  lb_month:           { aws:16.43, azure:18.40, gcp:18.26, oracle:14.60  },
+  // Kubernetes — cluster management per month
+  k8s_cluster_month:  { aws:72.00, azure:0.00,  gcp:72.00, oracle:0.00   },
+  // Firewall / WAF — per month
+  waf_month:          { aws:5.00,  azure:10.67, gcp:5.00,  oracle:2.88   },
+  // Monitoring — per month (base)
+  monitoring_month:   { aws:0.30,  azure:0.31,  gcp:0.18,  oracle:0.10   },
+  // ML / AI inference — per million tokens
+  ml_tokens_m:        { aws:2.70,  azure:4.50,  gcp:3.50,  oracle:1.02   },
+  // Virtual Desktop — per user/month
+  vdi_user_month:     { aws:31.50, azure:32.00, gcp:0.00,  oracle:24.00  },
+  // Backup — per GB/month
+  backup_gb_month:    { aws:0.050, azure:0.020, gcp:0.023, oracle:0.026  },
+};
+
+// ── Service group definitions ─────────────────────────────────
+const CALC_GROUPS = [
+  {
+    id:'compute', label:'Compute', icon:'🖥',
+    color:'var(--accent)',
+    fields:[
+      {id:'vm_count',   label:'Virtual Machines',   type:'number', default:4,    min:0, max:1000, step:1,   unit:'instances'},
+      {id:'vm_vcpu',    label:'vCPUs per VM',        type:'number', default:4,    min:1, max:192,  step:1,   unit:'vCPUs'},
+      {id:'vm_ram',     label:'RAM per VM',          type:'number', default:16,   min:1, max:1536, step:1,   unit:'GB'},
+      {id:'vm_os',      label:'Operating System',   type:'select', default:'linux', options:['linux','windows']},
+    ]
+  },
+  {
+    id:'storage', label:'Storage', icon:'💾',
+    color:'var(--il2)',
+    fields:[
+      {id:'storage_primary', label:'Primary Storage (SSD)', type:'number', default:200,  min:0, max:100000, step:10,  unit:'GB'},
+      {id:'storage_archive', label:'Archive Storage',       type:'number', default:2000, min:0, max:500000, step:100, unit:'GB'},
+      {id:'storage_object',  label:'Object Storage',        type:'number', default:500,  min:0, max:500000, step:100, unit:'GB'},
+      {id:'storage_backup',  label:'Backup Storage',        type:'number', default:200,  min:0, max:100000, step:10,  unit:'GB'},
+    ]
+  },
+  {
+    id:'database', label:'Database', icon:'🗄',
+    color:'var(--il5)',
+    fields:[
+      {id:'db_enabled',  label:'Include Managed Database',  type:'toggle', default:true},
+      {id:'db_vcpu',     label:'Database vCPUs',            type:'number', default:4,   min:1, max:96,   step:1,  unit:'vCPUs'},
+      {id:'db_storage',  label:'Database Storage',          type:'number', default:500, min:1, max:50000,step:10, unit:'GB'},
+      {id:'db_ha',       label:'High Availability (Multi-AZ)', type:'toggle', default:true},
+    ]
+  },
+  {
+    id:'networking', label:'Networking', icon:'🌐',
+    color:'var(--accent2)',
+    fields:[
+      {id:'net_egress',  label:'Monthly Egress',            type:'number', default:150, min:0, max:100000, step:10, unit:'GB'},
+      {id:'net_lb',      label:'Load Balancers',            type:'number', default:2,   min:0, max:20,     step:1,  unit:'instances'},
+      {id:'net_waf',     label:'WAF / Firewall',            type:'toggle', default:true},
+    ]
+  },
+  {
+    id:'kubernetes', label:'Containers / K8s', icon:'⚙',
+    color:'#f97316',
+    fields:[
+      {id:'k8s_enabled', label:'Include Kubernetes',        type:'toggle', default:false},
+      {id:'k8s_nodes',   label:'Worker Nodes',              type:'number', default:3,   min:1, max:100,  step:1,  unit:'nodes'},
+      {id:'k8s_vcpu',    label:'vCPUs per Node',            type:'number', default:4,   min:1, max:96,   step:1,  unit:'vCPUs'},
+      {id:'k8s_ram',     label:'RAM per Node',              type:'number', default:16,  min:1, max:768,  step:1,  unit:'GB'},
+    ]
+  },
+  {
+    id:'ai', label:'AI / ML', icon:'🤖',
+    color:'var(--il5)',
+    fields:[
+      {id:'ai_enabled',  label:'Include AI / ML Services',  type:'toggle', default:false},
+      {id:'ai_tokens',   label:'Monthly Token Usage',       type:'number', default:10,  min:0, max:10000,step:1,  unit:'M tokens'},
+      {id:'ai_training', label:'Training Jobs / month',     type:'number', default:0,   min:0, max:100,  step:1,  unit:'jobs'},
+    ]
+  },
+  {
+    id:'vdi', label:'Virtual Desktop', icon:'🖱',
+    color:'var(--aws)',
+    fields:[
+      {id:'vdi_enabled', label:'Include Virtual Desktops',  type:'toggle', default:false},
+      {id:'vdi_users',   label:'Number of Users',           type:'number', default:25,  min:1, max:10000,step:1,  unit:'users'},
+    ]
+  },
+  {
+    id:'monitoring', label:'Monitoring & Ops', icon:'📊',
+    color:'var(--il4)',
+    fields:[
+      {id:'mon_enabled', label:'Include Monitoring',        type:'toggle', default:true},
+      {id:'mon_logs_gb', label:'Log Ingestion / month',     type:'number', default:50,  min:0, max:10000, step:10, unit:'GB'},
+    ]
+  },
+];
+
+// ── State ─────────────────────────────────────────────────────
+let calcScenarios = [];
+let calcActiveScen = 0;
+let calcDuration = 'monthly';
+let calcGroupOpen = {};
+
+// ── Init ──────────────────────────────────────────────────────
+function calcInit(){
+  // Default scenario
+  calcScenarios = [];
+  calcAddScenario('Web Application Stack', false);
+  calcRenderScenTabs();
+  calcRenderConfig();
+  calcRun();
+}
+
+function calcAddScenario(name, render=true){
+  const defaults = {};
+  CALC_GROUPS.forEach(g => g.fields.forEach(f => { defaults[f.id] = f.default; }));
+  calcScenarios.push({ name: name || `Scenario ${calcScenarios.length+1}`, config: defaults });
+  calcActiveScen = calcScenarios.length - 1;
+  if(render){ calcRenderScenTabs(); calcRenderConfig(); calcRun(); }
+}
+
+function calcSetScenario(idx){
+  calcActiveScen = idx;
+  calcRenderScenTabs();
+  calcRenderConfig();
+  calcRun();
+}
+
+function calcReset(){
+  const defaults = {};
+  CALC_GROUPS.forEach(g => g.fields.forEach(f => { defaults[f.id] = f.default; }));
+  calcScenarios[calcActiveScen].config = defaults;
+  calcRenderConfig();
+  calcRun();
+}
+
+// ── Render scenario tabs ──────────────────────────────────────
+function calcRenderScenTabs(){
+  const el = document.getElementById('calc-scen-tabs');
+  if(!el) return;
+  el.innerHTML = calcScenarios.map((s,i)=>`
+    <button class="calc-scen-tab${i===calcActiveScen?' active':''}" onclick="calcSetScenario(${i})" title="${s.name}">
+      ${s.name}
+      ${calcScenarios.length>1?`<span onclick="event.stopPropagation();calcRemoveScenario(${i})" style="margin-left:6px;opacity:.5;font-size:10px">✕</span>`:''}
+    </button>`).join('');
+}
+
+function calcRemoveScenario(idx){
+  if(calcScenarios.length===1) return;
+  calcScenarios.splice(idx,1);
+  calcActiveScen = Math.max(0, calcActiveScen-1);
+  calcRenderScenTabs(); calcRenderConfig(); calcRun();
+}
+
+// ── Render config panel ───────────────────────────────────────
+function calcRenderConfig(){
+  const cfg = calcScenarios[calcActiveScen]?.config || {};
+  const el = document.getElementById('calc-service-groups');
+  if(!el) return;
+  el.innerHTML = '';
+  CALC_GROUPS.forEach(g => {
+    const isOpen = calcGroupOpen[g.id] !== false; // default open
+    const div = document.createElement('div');
+    div.className = 'calc-service-group';
+    div.innerHTML = `
+      <div class="calc-group-head" onclick="calcToggleGroup('${g.id}')">
+        <span style="font-size:14px">${g.icon}</span>
+        <span class="calc-group-label">${g.label}</span>
+        <span class="calc-group-total" id="cgt-${g.id}"></span>
+        <span class="calc-group-chev${isOpen?' open':''}" id="cgc-${g.id}">▾</span>
+      </div>
+      <div class="calc-group-body${isOpen?'':' collapsed'}" id="cgb-${g.id}">
+        ${g.fields.map(f => calcRenderField(f, cfg[f.id])).join('')}
+      </div>`;
+    el.appendChild(div);
+  });
+}
+
+function calcRenderField(f, val){
+  if(f.type==='toggle') return `
+    <div class="calc-toggle">
+      <label for="cf-${f.id}">${f.label}</label>
+      <label class="calc-switch">
+        <input type="checkbox" id="cf-${f.id}" ${val?'checked':''} onchange="calcFieldChange('${f.id}',this.checked)">
+        <span class="calc-switch-track"></span>
+      </label>
+    </div>`;
+  if(f.type==='select') return `
+    <div class="calc-field">
+      <label>${f.label}</label>
+      <select id="cf-${f.id}" onchange="calcFieldChange('${f.id}',this.value)">
+        ${f.options.map(o=>`<option value="${o}" ${o===val?'selected':''}>${o.charAt(0).toUpperCase()+o.slice(1)}</option>`).join('')}
+      </select>
+    </div>`;
+  return `
+    <div class="calc-field">
+      <label>${f.label} <span style="color:var(--accent2)">${f.unit||''}</span></label>
+      <input type="number" id="cf-${f.id}" value="${val??f.default}" min="${f.min??0}" max="${f.max??99999}" step="${f.step??1}" oninput="calcFieldChange('${f.id}',this.value)">
+    </div>`;
+}
+
+function calcToggleGroup(id){
+  calcGroupOpen[id] = calcGroupOpen[id]===false ? true : false;
+  const body = document.getElementById('cgb-'+id);
+  const chev = document.getElementById('cgc-'+id);
+  if(body) body.classList.toggle('collapsed', calcGroupOpen[id]===false);
+  if(chev) chev.classList.toggle('open', calcGroupOpen[id]!==false);
+}
+
+function calcFieldChange(id, val){
+  const cfg = calcScenarios[calcActiveScen]?.config;
+  if(!cfg) return;
+  if(typeof val==='string' && !isNaN(val) && val!=='') val = parseFloat(val);
+  cfg[id] = val;
+  calcRun();
+}
+
+// ── Pricing lookup ────────────────────────────────────────────
+function calcGetPrice(key, csp){
+  // First try to find from loaded pricing catalog
+  const allItems = [...(pricingData.aws||[]),...(pricingData.azure||[]),...(pricingData.gcp||[]),...(pricingData.oracle||[])];
+  // key mappings to catalog short names
+  const keyMap = {
+    compute_vcpu_month: ['EC2','Virtual Machines','Compute Engine','Compute'],
+    storage_primary_gb: ['EBS','Managed Disks','Persistent Disk','Block Volumes'],
+    storage_archive_gb: ['S3 Glacier','Archive Storage'],
+    storage_object_gb:  ['S3','Blob Storage','Cloud Storage','Object Storage'],
+    database_vcpu_month:['RDS','SQL Database','Cloud SQL','Autonomous Database'],
+    networking_egress_gb:['CloudFront','CDN'],
+    lb_month:           ['Elastic Load Balancing','Load Balancer','Cloud Load Balancing'],
+    waf_month:          ['WAF','Azure WAF','Cloud Armor'],
+    monitoring_month:   ['CloudWatch','Azure Monitor','Cloud Monitoring','Monitoring'],
+    ml_tokens_m:        ['Bedrock','Azure OpenAI','Vertex AI','OCI Generative AI'],
+    vdi_user_month:     ['WorkSpaces','Azure Virtual Desktop','Secure Desktops'],
+    backup_gb_month:    ['S3','Blob Storage'],
+    k8s_cluster_month:  ['EKS','AKS','GKE','Container Engine'],
+  };
+  const names = keyMap[key]||[];
+  const cspItems = allItems.filter(i=>(i.csp||'')===csp);
+  for(const name of names){
+    const match = cspItems.find(i=>(i.shortName||'').toLowerCase().includes(name.toLowerCase()));
+    if(match && match.custUnitPrice){
+      const p = parseFloat(match.custUnitPrice);
+      if(!isNaN(p) && p>0) return p;
+    }
+  }
+  // Fall back to built-in
+  return CALC_BASE_PRICES[key]?.[csp] ?? 0;
+}
+
+// ── Calculation engine ────────────────────────────────────────
+function calcCompute(cfg, csp){
+  const breakdown = {};
+
+  // Compute
+  const vmCount = cfg.vm_count||0;
+  const vmVcpu  = cfg.vm_vcpu||0;
+  const vmRam   = cfg.vm_ram||0;
+  const winFactor = cfg.vm_os==='windows' ? 1.4 : 1.0;
+  const computeCost = vmCount * (
+    vmVcpu * calcGetPrice('compute_vcpu_month',csp) +
+    vmRam  * calcGetPrice('compute_ram_month',csp)
+  ) * winFactor;
+  breakdown['Compute'] = computeCost;
+
+  // Storage
+  const storageCost =
+    (cfg.storage_primary||0) * calcGetPrice('storage_primary_gb',csp) +
+    (cfg.storage_archive||0) * calcGetPrice('storage_archive_gb',csp) +
+    (cfg.storage_object||0)  * calcGetPrice('storage_object_gb',csp)  +
+    (cfg.storage_backup||0)  * calcGetPrice('backup_gb_month',csp);
+  breakdown['Storage'] = storageCost;
+
+  // Database
+  let dbCost = 0;
+  if(cfg.db_enabled){
+    const haFactor = cfg.db_ha ? 2 : 1;
+    dbCost = (
+      (cfg.db_vcpu||0) * calcGetPrice('database_vcpu_month',csp) +
+      (cfg.db_storage||0) * calcGetPrice('database_storage_gb',csp)
+    ) * haFactor;
+  }
+  breakdown['Database'] = dbCost;
+
+  // Networking
+  const netCost =
+    (cfg.net_egress||0) * calcGetPrice('networking_egress_gb',csp) +
+    (cfg.net_lb||0) * calcGetPrice('lb_month',csp) +
+    (cfg.net_waf ? calcGetPrice('waf_month',csp) : 0);
+  breakdown['Networking'] = netCost;
+
+  // Kubernetes
+  let k8sCost = 0;
+  if(cfg.k8s_enabled){
+    k8sCost = calcGetPrice('k8s_cluster_month',csp) +
+      (cfg.k8s_nodes||0) * (
+        (cfg.k8s_vcpu||0) * calcGetPrice('compute_vcpu_month',csp) +
+        (cfg.k8s_ram||0)  * calcGetPrice('compute_ram_month',csp)
+      );
+  }
+  breakdown['Containers'] = k8sCost;
+
+  // AI / ML
+  let aiCost = 0;
+  if(cfg.ai_enabled){
+    aiCost = (cfg.ai_tokens||0) * calcGetPrice('ml_tokens_m',csp) +
+             (cfg.ai_training||0) * calcGetPrice('compute_vcpu_month',csp) * 8 * 4;
+    // training: ~8 vCPUs × 4 hrs per job estimate
+  }
+  breakdown['AI / ML'] = aiCost;
+
+  // VDI
+  let vdiCost = 0;
+  if(cfg.vdi_enabled){
+    const vdiRate = calcGetPrice('vdi_user_month',csp);
+    vdiCost = (vdiRate > 0) ? (cfg.vdi_users||0) * vdiRate : 0;
+    if(csp==='gcp' && cfg.vdi_enabled) vdiCost = (cfg.vdi_users||0) * 32; // GCP Cloud Workstations
+  }
+  breakdown['Virtual Desktop'] = vdiCost;
+
+  // Monitoring
+  let monCost = 0;
+  if(cfg.mon_enabled){
+    monCost = (cfg.mon_logs_gb||0) * calcGetPrice('monitoring_month',csp) * 5 + 8;
+  }
+  breakdown['Monitoring'] = monCost;
+
+  const total = Object.values(breakdown).reduce((s,v)=>s+(v||0),0);
+  return { total, breakdown };
+}
+
+// ── Duration multiplier ───────────────────────────────────────
+function calcDurationMult(){
+  return { monthly:1, quarterly:3, annual:12, '3year':36, '5year':60 }[calcDuration] || 1;
+}
+
+function calcDurationLabel(){
+  return { monthly:'/ mo', quarterly:'/ qtr', annual:'/ yr', '3year':'/ 3yr', '5year':'/ 5yr' }[calcDuration] || '/ mo';
+}
+
+function calcSetDuration(d, btn){
+  calcDuration = d;
+  document.querySelectorAll('.calc-dur-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  calcRender(calcLastResults);
+}
+
+// ── Run calculation ───────────────────────────────────────────
+let calcLastResults = null;
+
+function calcRun(){
+  const cfg = calcScenarios[calcActiveScen]?.config;
+  if(!cfg) return;
+  const csps = ['aws','azure','gcp','oracle'];
+  const results = {};
+  csps.forEach(c => { results[c] = calcCompute(cfg, c); });
+
+  // Update group totals in sidebar
+  CALC_GROUPS.forEach(g => {
+    const el = document.getElementById('cgt-'+g.id);
+    if(!el) return;
+    // Average across CSPs for the group
+    const cats = { compute:'Compute', storage:'Storage', database:'Database', networking:'Networking',
+                   kubernetes:'Containers', ai:'AI / ML', vdi:'Virtual Desktop', monitoring:'Monitoring' };
+    const cat = cats[g.id];
+    const avg = csps.reduce((s,c)=>s+(results[c].breakdown[cat]||0),0)/4;
+    el.textContent = avg > 0 ? '$'+fmtNum(avg)+'/mo' : '';
+  });
+
+  calcLastResults = results;
+  calcRender(results);
+}
+
+function calcRender(results){
+  if(!results) return;
+  const mult = calcDurationMult();
+  const label = calcDurationLabel();
+  const csps = ['aws','azure','gcp','oracle'];
+  const cspNames = { aws:'AWS', azure:'Azure', gcp:'GCP', oracle:'Oracle' };
+  const cspColors = { aws:'var(--aws)', azure:'var(--azure)', gcp:'var(--gcp)', oracle:'var(--oracle)' };
+
+  const totals = {};
+  csps.forEach(c => { totals[c] = (results[c]?.total||0) * mult; });
+
+  const sorted = [...csps].sort((a,b)=>totals[a]-totals[b]);
+  const winner = sorted[0];
+  const maxTotal = Math.max(...Object.values(totals));
+  const minTotal = totals[winner];
+
+  // Winner banner
+  const savings = totals[sorted[sorted.length-1]] - minTotal;
+  const wBanner = document.getElementById('calc-winner-banner');
+  if(wBanner) wBanner.innerHTML = minTotal > 0 ? `
+    <div class="calc-winner ${winner}">
+      <svg width="18" height="18"><use href="#logo-${winner}"/></svg>
+      <div>
+        <div class="calc-winner-label">Lowest cost provider</div>
+        <div class="calc-winner-name">${cspNames[winner]}</div>
+      </div>
+      <div style="margin-left:12px">
+        <div style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--text)">$${fmtNum(minTotal)}</div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--text-muted)">${label}</div>
+      </div>
+      <div class="calc-winner-savings" style="margin-left:auto">
+        Save up to $${fmtNum(savings)} vs highest<br>
+        <span style="font-size:9px;opacity:.7">${((savings/totals[sorted[sorted.length-1]])*100).toFixed(0)}% less expensive</span>
+      </div>
+    </div>` : '';
+
+  // CSP cards
+  const cardsEl = document.getElementById('calc-csp-cards');
+  if(cardsEl) cardsEl.innerHTML = sorted.map((csp,rank) => {
+    const total = totals[csp];
+    const bd = results[csp]?.breakdown || {};
+    const isWinner = rank===0;
+    const savingsVsWinner = total - minTotal;
+    const categories = Object.entries(bd).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+    return `
+      <div class="calc-csp-card${isWinner?' winner':''}">
+        <div class="calc-card-head" style="border-left:3px solid ${cspColors[csp]}">
+          <svg width="20" height="20"><use href="#logo-${csp}"/></svg>
+          <div>
+            <div style="font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text)">${cspNames[csp]}</div>
+            <div style="font-family:var(--mono);font-size:9px;color:var(--text-muted)">Rank #${rank+1}</div>
+          </div>
+          <div class="calc-card-price">
+            <div class="calc-card-price-val" style="color:${cspColors[csp]}">$${fmtNum(total)}</div>
+            <div class="calc-card-price-period">${label}</div>
+          </div>
+        </div>
+        <div class="calc-card-body">
+          ${isWinner?'<div class="calc-savings-chip" style="margin-bottom:8px;display:inline-block">✓ Best Value</div>':
+            `<div class="calc-expensive-chip" style="margin-bottom:8px;display:inline-block">+$${fmtNum(savingsVsWinner)} vs ${cspNames[winner]}</div>`}
+          ${categories.slice(0,6).map(([cat,cost])=>`
+            <div class="calc-line">
+              <span class="calc-line-label">${cat}</span>
+              <div style="text-align:right">
+                <div class="calc-line-val">$${fmtNum(cost*mult)}</div>
+                <div class="calc-line-sub">${total>0?((cost*mult/total)*100).toFixed(0):'0'}%</div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>`;
+  }).join('');
+
+  // Bar chart
+  const barEl = document.getElementById('calc-bar-chart');
+  if(barEl) barEl.innerHTML = sorted.map(csp => {
+    const pct = maxTotal>0 ? (totals[csp]/maxTotal)*100 : 0;
+    return `
+      <div class="calc-bar-row">
+        <span class="calc-bar-csp">${cspNames[csp]}</span>
+        <div class="calc-bar-track">
+          <div class="calc-bar-fill" style="width:${pct}%;background:${cspColors[csp]}">
+            <span>${pct>15?cspNames[csp]:''}</span>
+          </div>
+        </div>
+        <span class="calc-bar-amount">$${fmtNum(totals[csp])}</span>
+      </div>`;
+  }).join('');
+
+  // Category breakdown (for winner)
+  const catEl = document.getElementById('calc-cat-chart');
+  if(catEl){
+    const wBd = results[winner]?.breakdown || {};
+    const wTotal = totals[winner];
+    const catColors = {
+      Compute:'var(--accent)', Storage:'var(--il2)', Database:'var(--il5)',
+      Networking:'var(--accent2)', Containers:'#f97316', 'AI / ML':'var(--il5)',
+      'Virtual Desktop':'var(--aws)', Monitoring:'var(--il4)'
+    };
+    const cats = Object.entries(wBd).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+    const catMax = cats[0]?.[1]||1;
+    catEl.innerHTML = cats.map(([cat,cost])=>`
+      <div class="calc-cat-row">
+        <span class="calc-cat-label">${cat}</span>
+        <div class="calc-cat-bar">
+          <div class="calc-cat-fill" style="width:${Math.min((cost/catMax)*100,100)}%;background:${catColors[cat]||'var(--accent)'}"></div>
+        </div>
+        <span class="calc-cat-val">$${fmtNum(cost*mult)}</span>
+      </div>`).join('');
+  }
+}
+
+// ── Export CSV ────────────────────────────────────────────────
+function calcExportCSV(){
+  const scen = calcScenarios[calcActiveScen];
+  const mult = calcDurationMult();
+  const label = calcDurationLabel();
+  const results = calcLastResults;
+  if(!results){ showToast('No results to export','error'); return; }
+  const csps = ['aws','azure','gcp','oracle'];
+  const cspNames = { aws:'AWS', azure:'Azure', gcp:'GCP', oracle:'Oracle' };
+  const cats = ['Compute','Storage','Database','Networking','Containers','AI / ML','Virtual Desktop','Monitoring'];
+  let lines = [`"${scen.name} — Cloud Cost Estimate (${label})"`,
+    'Category,' + csps.map(c=>cspNames[c]).join(',')];
+  cats.forEach(cat => {
+    const row = csps.map(c=>(results[c]?.breakdown[cat]||0)*mult);
+    if(row.some(v=>v>0)) lines.push(`"${cat}",${row.map(v=>v.toFixed(2)).join(',')}`);
+  });
+  lines.push('TOTAL,'+csps.map(c=>((results[c]?.total||0)*mult).toFixed(2)).join(','));
+  const blob = new Blob([lines.join('\n')],{type:'text/csv'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href=url; a.download='cloud-estimate.csv'; a.click();
+  URL.revokeObjectURL(url);
+  showToast('✓ Estimate exported as CSV','success');
+}
+
+// ── Export PDF ────────────────────────────────────────────────
+function calcExportPDF(){
+  const scen = calcScenarios[calcActiveScen];
+  const cfg = scen.config;
+  const mult = calcDurationMult();
+  const label = calcDurationLabel();
+  const results = calcLastResults;
+  if(!results){ showToast('No results to export','error'); return; }
+  const csps = ['aws','azure','gcp','oracle'];
+  const cspNames = { aws:'Amazon Web Services', azure:'Microsoft Azure', gcp:'Google Cloud', oracle:'Oracle Cloud' };
+  const cspShort = { aws:'AWS', azure:'Azure', gcp:'GCP', oracle:'Oracle' };
+  const cspColors = { aws:'#ff9900', azure:'#0078D4', gcp:'#34a853', oracle:'#F80000' };
+  const totals = {}; csps.forEach(c=>{totals[c]=(results[c]?.total||0)*mult});
+  const sorted = [...csps].sort((a,b)=>totals[a]-totals[b]);
+  const winner = sorted[0];
+  const cats = ['Compute','Storage','Database','Networking','Containers','AI / ML','Virtual Desktop','Monitoring'];
+
+  // Config summary lines
+  const configLines = [
+    ['Virtual Machines', `${cfg.vm_count} × ${cfg.vm_vcpu} vCPU / ${cfg.vm_ram} GB RAM (${cfg.vm_os})`],
+    ['Primary Storage', `${cfg.storage_primary} GB SSD`],
+    ['Archive Storage', `${cfg.storage_archive} GB`],
+    ['Object Storage',  `${cfg.storage_object} GB`],
+    ['Backup Storage',  `${cfg.storage_backup} GB`],
+    cfg.db_enabled  ? ['Managed Database', `${cfg.db_vcpu} vCPU, ${cfg.db_storage} GB${cfg.db_ha?' (HA)':''}`] : null,
+    ['Network Egress',  `${cfg.net_egress} GB/mo, ${cfg.net_lb} LB${cfg.net_waf?', WAF':''}` ],
+    cfg.k8s_enabled ? ['Kubernetes', `${cfg.k8s_nodes} nodes × ${cfg.k8s_vcpu} vCPU / ${cfg.k8s_ram} GB`] : null,
+    cfg.ai_enabled  ? ['AI / ML', `${cfg.ai_tokens}M tokens/mo`] : null,
+    cfg.vdi_enabled ? ['Virtual Desktops', `${cfg.vdi_users} users`] : null,
+    cfg.mon_enabled ? ['Monitoring', `${cfg.mon_logs_gb} GB logs/mo`] : null,
+  ].filter(Boolean);
+
+  const html = `<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>${escH(scen.name)} — Cloud Cost Estimate</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:10.5pt;color:#111;background:#fff;padding:0}
+  .page{padding:.65in .85in;max-width:11in;margin:0 auto}
+  h1{font-size:16pt;font-weight:700;color:#1a2332;margin-bottom:4pt}
+  .subtitle{font-size:10pt;color:#6b7280;margin-bottom:20pt}
+  .section{margin-bottom:20pt}
+  .section-title{font-size:9pt;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#6b7280;border-bottom:1px solid #e5e7eb;padding-bottom:4pt;margin-bottom:10pt}
+  .config-grid{display:grid;grid-template-columns:1fr 1fr;gap:6pt}
+  .config-item{background:#f9fafb;border:1px solid #e5e7eb;border-radius:4pt;padding:6pt 8pt}
+  .config-label{font-size:8.5pt;color:#6b7280;margin-bottom:2pt}
+  .config-val{font-size:9.5pt;font-weight:600;color:#111}
+  .csp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin-bottom:16pt}
+  .csp-card{border-radius:6pt;border:1.5px solid #e5e7eb;padding:10pt 12pt;text-align:center}
+  .csp-card.winner{border-color:#22c55e;background:#f0fdf4}
+  .csp-name{font-size:8.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4pt}
+  .csp-price{font-size:17pt;font-weight:800;margin-bottom:2pt}
+  .csp-period{font-size:7.5pt;color:#6b7280}
+  .csp-rank{font-size:7.5pt;margin-top:4pt;color:#9ca3af}
+  .csp-card.winner .csp-rank{color:#16a34a;font-weight:600}
+  table.comp{width:100%;border-collapse:collapse;font-size:9pt}
+  table.comp th{background:#1a2332;color:#fff;padding:5pt 8pt;text-align:left;font-size:8.5pt}
+  table.comp th.r{text-align:right}
+  table.comp td{padding:4.5pt 8pt;border-bottom:1px solid #f3f4f6}
+  table.comp td.r{text-align:right;font-variant-numeric:tabular-nums}
+  table.comp tr:last-child td{font-weight:700;background:#f9fafb;border-top:2px solid #1a2332}
+  .bar-row{display:flex;align-items:center;gap:8pt;margin-bottom:6pt}
+  .bar-csp{width:40pt;font-size:8.5pt;text-align:right;font-weight:600}
+  .bar-track{flex:1;height:18pt;background:#f3f4f6;border-radius:3pt;overflow:hidden}
+  .bar-fill{height:100%;border-radius:3pt;display:flex;align-items:center;padding-left:6pt}
+  .bar-fill span{font-size:7.5pt;font-weight:700;color:#fff}
+  .bar-amount{width:75pt;font-size:9pt;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+  .badge-winner{display:inline-block;background:#dcfce7;color:#15803d;border:1px solid #86efac;border-radius:3pt;font-size:7.5pt;padding:1.5pt 5pt;font-weight:700}
+  .footer-note{font-size:7.5pt;color:#9ca3af;margin-top:16pt;border-top:1px solid #e5e7eb;padding-top:8pt;line-height:1.55}
+  @media print{
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    @page{size:letter;margin:0}
+    .page{padding:.65in .85in}
+  }
+</style></head><body><div class="page">
+
+  <h1>Cloud Cost Estimate</h1>
+  <div class="subtitle">${escH(scen.name)} &nbsp;·&nbsp; ${label.replace('/','per ')} estimate &nbsp;·&nbsp; Generated ${new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}</div>
+
+  <div class="section">
+    <div class="section-title">Workload Configuration</div>
+    <div class="config-grid">
+      ${configLines.map(([l,v])=>`<div class="config-item"><div class="config-label">${l}</div><div class="config-val">${v}</div></div>`).join('')}
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Provider Comparison Summary</div>
+    <div class="csp-grid">
+      ${sorted.map((csp,rank)=>`
+        <div class="csp-card${rank===0?' winner':''}">
+          <div class="csp-name" style="color:${cspColors[csp]}">${cspShort[csp]}</div>
+          <div class="csp-price" style="color:${cspColors[csp]}">$${fmtNum(totals[csp])}</div>
+          <div class="csp-period">${label}</div>
+          <div class="csp-rank">${rank===0?'✓ Best Value':'#'+(rank+1)+' — $'+fmtNum(totals[csp]-totals[winner])+' more'}</div>
+        </div>`).join('')}
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Cost by Category</div>
+    <table class="comp">
+      <thead>
+        <tr>
+          <th>Category</th>
+          ${sorted.map(c=>`<th class="r">${cspShort[c]}</th>`).join('')}
+        </tr>
+      </thead>
+      <tbody>
+        ${cats.map(cat=>{
+          const row = sorted.map(c=>(results[c]?.breakdown[cat]||0)*mult);
+          if(!row.some(v=>v>0)) return '';
+          return `<tr><td>${cat}</td>${row.map(v=>`<td class="r">${v>0?'$'+fmtNum(v):'—'}</td>`).join('')}</tr>`;
+        }).join('')}
+        <tr>
+          <td>TOTAL</td>
+          ${sorted.map(c=>`<td class="r" style="color:${cspColors[c]}">$${fmtNum(totals[c])}</td>`).join('')}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Visual Comparison</div>
+    ${sorted.map(csp=>{
+      const maxT = totals[sorted[sorted.length-1]]||1;
+      const pct = Math.min((totals[csp]/maxT)*100,100);
+      return `<div class="bar-row">
+        <span class="bar-csp" style="color:${cspColors[csp]}">${cspShort[csp]}</span>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${pct}%;background:${cspColors[csp]}">
+            <span>${pct>15?cspShort[csp]:''}</span>
+          </div>
+        </div>
+        <span class="bar-amount">$${fmtNum(totals[csp])}</span>
+      </div>`;
+    }).join('')}
+  </div>
+
+  <div class="footer-note">
+    Estimates based on on-demand pricing from the loaded pricing catalog and default rate assumptions. Reserved instance or committed use discounts are not applied. Networking egress, licensing, and support costs may vary. All figures are approximate. Verify against official CSP pricing documentation before procurement decisions.
+    Generated by RosettaStone · FOCUS 1.3 aligned · ${new Date().toISOString().split('T')[0]}
+  </div>
+
+</div></body></html>`;
+
+  const win = window.open('','_blank','width=960,height=720');
+  if(!win){ showToast('Pop-up blocked — please allow pop-ups','error'); return; }
+  win.document.write(html);
+  win.document.close();
+  setTimeout(()=>{win.focus();win.print();},400);
+  showToast('✓ PDF ready — Print → Save as PDF','success');
+}
+
+// ── Startup presets ───────────────────────────────────────────
+function calcLoadPreset(name){
+  const presets = {
+    'Web App': { vm_count:4, vm_vcpu:4, vm_ram:16, vm_os:'linux', storage_primary:200, storage_archive:2000, storage_object:500, storage_backup:200, db_enabled:true, db_vcpu:4, db_storage:500, db_ha:true, net_egress:150, net_lb:2, net_waf:true, k8s_enabled:false, ai_enabled:false, vdi_enabled:false, mon_enabled:true, mon_logs_gb:50 },
+    'Big Data': { vm_count:10, vm_vcpu:8, vm_ram:64, vm_os:'linux', storage_primary:500, storage_archive:10000, storage_object:5000, storage_backup:2000, db_enabled:true, db_vcpu:8, db_storage:2000, db_ha:true, net_egress:500, net_lb:2, net_waf:true, k8s_enabled:true, k8s_nodes:6, k8s_vcpu:8, k8s_ram:32, ai_enabled:true, ai_tokens:50, ai_training:10, vdi_enabled:false, mon_enabled:true, mon_logs_gb:200 },
+    'DevSecOps': { vm_count:6, vm_vcpu:4, vm_ram:16, vm_os:'linux', storage_primary:300, storage_archive:1000, storage_object:300, storage_backup:300, db_enabled:true, db_vcpu:4, db_storage:300, db_ha:true, net_egress:80, net_lb:3, net_waf:true, k8s_enabled:true, k8s_nodes:4, k8s_vcpu:4, k8s_ram:16, ai_enabled:false, vdi_enabled:true, vdi_users:20, mon_enabled:true, mon_logs_gb:100 },
+    'VDI / EUC': { vm_count:2, vm_vcpu:4, vm_ram:16, vm_os:'windows', storage_primary:100, storage_archive:500, storage_object:200, storage_backup:100, db_enabled:true, db_vcpu:2, db_storage:100, db_ha:false, net_egress:50, net_lb:1, net_waf:false, k8s_enabled:false, ai_enabled:false, vdi_enabled:true, vdi_users:50, mon_enabled:true, mon_logs_gb:20 },
+    'GenAI Platform': { vm_count:2, vm_vcpu:8, vm_ram:32, vm_os:'linux', storage_primary:100, storage_archive:1000, storage_object:1000, storage_backup:100, db_enabled:true, db_vcpu:4, db_storage:200, db_ha:false, net_egress:200, net_lb:2, net_waf:true, k8s_enabled:true, k8s_nodes:4, k8s_vcpu:8, k8s_ram:32, ai_enabled:true, ai_tokens:200, ai_training:20, vdi_enabled:false, mon_enabled:true, mon_logs_gb:80 },
+  };
+  const p = presets[name];
+  if(!p) return;
+  calcScenarios[calcActiveScen].name = name;
+  calcScenarios[calcActiveScen].config = {...calcScenarios[calcActiveScen].config, ...p};
+  calcRenderScenTabs();
+  calcRenderConfig();
+  calcRun();
+  showToast(`✓ Loaded "${name}" preset`,'success');
+}
+
+
 
 </script>
 
