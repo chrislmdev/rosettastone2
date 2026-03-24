@@ -2682,7 +2682,7 @@ renderPricing();
   const el=document.getElementById(id);
   if(el)el.addEventListener('input',igceRecalc);
 });
-calcInit();
+// NOTE: calcInit() is called at bottom of script after all calculator code is defined
 
 
 // ════════════════════════════════════════════════════════════
@@ -3386,7 +3386,8 @@ function calcLoadPreset(name){
   showToast(`✓ Loaded "${name}" preset`,'success');
 }
 
-
+// ── Initialize calculator (must be after all calc code is defined) ──
+calcInit();
 
 </script>
 
