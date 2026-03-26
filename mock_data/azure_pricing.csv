@@ -1,0 +1,8 @@
+title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+"Storage - Block - SSD","Storage - Block","High-speed SSD storage volume","S2001",0.12,"GB Per Month",0.09,"GB Per Month","25%"
+"Azure VM - D-Series","Compute - VM","General purpose Virtual Machine","C1002",0.096,"vCPU/Hour",0.0816,"vCPU/Hour","-15%"
+"Azure SQL","Database - SQL","PaaS SQL database on Azure","D3002",0.54,"DTU/Hour",0.486,"DTU/Hour","-10%"
+"ExpressRoute","Networking","Private connection to Microsoft cloud","N4002",1.25,"Port/Month",1.125,"Port/Month","-10%"
+"OpenAI ChatGPT-4","AI/ML","Custom LLM integration on Azure","A5002",0.03,"1k Tokens",0.024,"1k Tokens","-20%"
+"Blob Storage - Cool","Object Storage","Infrequent access storage","S2101",0.015,"GB Per Month",0.012,"GB Per Month","-20%"
+"Azure App Service","Compute - Web","Fully managed web application hosting","C2101",0.14,"Instance/Hour",0.11,"Instance/Hour","-20%"

@@ -1,0 +1,8 @@
+title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+"OCI Compute - E5","Compute - OCPU","AMD-based virtual machine shapes","C1004",0.025,"OCPU/Hour",0.0225,"OCPU/Hour","-10%"
+"OCI Object Storage","Object Storage","Scalable storage for OCI","S3004",0.025,"GB Per Month",0.02,"GB Per Month","-20%"
+"Autonomous Database","Database - SQL","Self-driving SQL database service","D3004",1.34,"OCPU/Hour",1.072,"OCPU/Hour","-20%"
+"OCI FastConnect","Networking","Dedicated private networking","N4004",0.00,"Port/Hour",0.00,"Port/Hour","Free"
+"OCI AI Vision","AI/ML","Image recognition and processing","A5004",0.50,"1k units",0.40,"1k units","-20%"
+"Block Volume - Ultra High","Storage - Block","Extreme performance block storage","S4101",0.25,"GB/Month",0.20,"GB/Month","-20%"
+"Container Engine (OKE)","Compute - Container","Managed Kubernetes on OCI","C4101",0.00,"Cluster/Hour",0.00,"Cluster/Hour","Free"

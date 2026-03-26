@@ -1,0 +1,8 @@
+title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+"Compute - GPU - A10","Compute - GPU","High-performance NVIDIA A10 Tensor Core GPU","C1001",2.50,"GPU Per Hour",1.85,"GPU Per Hour","25%"
+"S3 Standard","Object Storage","Scalable object storage for any data type","S3-001",0.023,"GB Per Month",0.023,"GB Per Month","0%"
+"RDS PostgreSQL","Database - SQL","Managed PostgreSQL engine on AWS","D3001",0.12,"Instance/Hour",0.108,"Instance/Hour","-10%"
+"Direct Connect","Networking","Dedicated network connection to AWS","N4001",0.30,"Port/Hour",0.27,"Port/Hour","-10%"
+"Bedrock - Claude 3","AI/ML","Generative AI foundational model","A5001",0.003,"1k Tokens",0.0024,"1k Tokens","-20%"
+"EC2 - c6i.large","Compute - VM","General purpose compute instance","C1101",0.085,"Instance/Hour",0.0765,"Instance/Hour","-10%"
+"Glacier Deep Archive","Object Storage","Ultra-low cost data archiving","S3101",0.00099,"GB Per Month",0.0009,"GB Per Month","-10%"

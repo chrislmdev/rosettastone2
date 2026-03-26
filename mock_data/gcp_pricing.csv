@@ -1,0 +1,8 @@
+title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+"GCE - N2 Instance","Compute - VM","Workload-optimized virtual machine","C1003",0.104,"vCPU/Hour",0.0832,"vCPU/Hour","-20%"
+"Cloud Storage - Nearline","Object Storage","Infrequent access object storage","S3003",0.01,"GB Per Month",0.008,"GB Per Month","-20%"
+"Cloud SQL - MySQL","Database - SQL","Managed MySQL service on GCP","D3003",0.13,"Instance/Hour",0.11,"Instance/Hour","-15%"
+"Cloud Interconnect","Networking","High-bandwidth dedicated connection","N4003",0.12,"Port/Hour",0.12,"Port/Hour","0%"
+"Vertex AI","AI/ML","Unified AI platform for GCP","A5003",0.002,"1k Characters",0.0016,"1k Characters","-20%"
+"GKE Node - Autopilot","Compute - Container","Serverless GKE container engine","C3101",0.10,"vCPU/Hour",0.08,"vCPU/Hour","-20%"
+"BigQuery Storage","Storage - Analytics","Columnar storage for data warehouse","S3201",0.02,"GB Per Month",0.016,"GB Per Month","-20%"
