@@ -1,0 +1,3 @@
+ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+"E-OCI-004","Cloud Infrastructure Engineering","IL5","Approved","Section 2.1.2","Admin access exception for cleared personnel","High"
+"E-OCI-401","OCI FastConnect","IL2","Approved","Section 5.1","Direct connectivity for hybrid cloud","Moderate"

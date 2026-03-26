@@ -2824,17 +2824,6 @@
         </div>
       </div>
 
-      <script>
-        let currentCSPUpload = null;
-        let currentSchemaUpload = null;
-        function triggerCSPUpload(schema, csp) {
-          currentSchemaUpload = schema;
-          currentCSPUpload = csp;
-          const inputId = schema === 'csoPricing' ? 'file-csopricing' :
-            schema === 'csoException' ? 'file-csoexception' : 'file-csoparent';
-          document.getElementById(inputId).click();
-        }
-      </script>
     </div>
   </div>
 
@@ -3326,444 +3315,7 @@
     let csOParentServiceData = [];
 
     // LEGACY DATA (To be replaced)
-    const SERVICES = [
-      // ── COMPUTE ──────────────────────────────────────────────
-      {
-        category: "Compute", subcategory: "Virtual Machines", description: "On-demand, resizable virtual compute instances with choice of CPU, memory, OS, and networking.",
-        aws: [{ name: "EC2", url: "https://aws.amazon.com/ec2/", il: ["IL2", "IL4", "IL5"] }, { name: "Lightsail", url: "https://aws.amazon.com/lightsail/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Virtual Machines", url: "https://azure.microsoft.com/products/virtual-machines", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Azure VMware Solution", url: "https://azure.microsoft.com/products/azure-vmware", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Compute Engine", url: "https://cloud.google.com/compute", il: ["IL2", "IL4"] }, { name: "Bare Metal Solution", url: "https://cloud.google.com/bare-metal", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Compute", url: "https://www.oracle.com/cloud/compute/", il: ["IL2", "IL4", "IL5"] }, { name: "Dedicated VM Hosts", url: "https://www.oracle.com/cloud/compute/dedicated-vm-hosts/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Compute", subcategory: "Serverless / Functions", description: "Event-driven compute that executes code in response to triggers without server management.",
-        aws: [{ name: "Lambda", url: "https://aws.amazon.com/lambda/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Azure Functions", url: "https://azure.microsoft.com/products/functions", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Cloud Functions", url: "https://cloud.google.com/functions", il: ["IL2", "IL4"] }, { name: "Cloud Run", url: "https://cloud.google.com/run", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Functions", url: "https://www.oracle.com/cloud/cloud-native/functions/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Compute", subcategory: "Container Orchestration", description: "Managed Kubernetes and container platforms for deploying and scaling containerized applications.",
-        aws: [{ name: "ECS", url: "https://aws.amazon.com/ecs/", il: ["IL2", "IL4", "IL5"] }, { name: "EKS", url: "https://aws.amazon.com/eks/", il: ["IL2", "IL4", "IL5"] }, { name: "Fargate", url: "https://aws.amazon.com/fargate/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "AKS", url: "https://azure.microsoft.com/products/kubernetes-service", il: ["IL2", "IL4", "IL5"] }, { name: "Container Apps", url: "https://azure.microsoft.com/products/container-apps", il: ["IL2", "IL4"] }, { name: "Container Instances", url: "https://azure.microsoft.com/products/container-instances", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "GKE", url: "https://cloud.google.com/kubernetes-engine", il: ["IL2", "IL4"] }, { name: "Cloud Run", url: "https://cloud.google.com/run", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Container Engine (OKE)", url: "https://www.oracle.com/cloud/cloud-native/container-engine-kubernetes/", il: ["IL2", "IL4"] }, { name: "Container Instances", url: "https://www.oracle.com/cloud/cloud-native/container-instances/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Compute", subcategory: "PaaS / App Hosting", description: "Managed application hosting platforms where infrastructure and runtime are abstracted.",
-        aws: [{ name: "Elastic Beanstalk", url: "https://aws.amazon.com/elasticbeanstalk/", il: ["IL2", "IL4"] }, { name: "App Runner", url: "https://aws.amazon.com/apprunner/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "App Service", url: "https://azure.microsoft.com/products/app-service", il: ["IL2", "IL4", "IL5"] }, { name: "Spring Apps", url: "https://azure.microsoft.com/products/spring-apps", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "App Engine", url: "https://cloud.google.com/appengine", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Visual Builder", url: "https://www.oracle.com/application-development/visual-builder/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Compute", subcategory: "Batch Processing", description: "Large-scale parallel and HPC batch workloads with auto-managed compute environments.",
-        aws: [{ name: "AWS Batch", url: "https://aws.amazon.com/batch/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Batch", url: "https://azure.microsoft.com/products/batch", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Batch", url: "https://cloud.google.com/batch", il: ["IL2"] }],
-        oracle: [{ name: "OCI Batch", url: "https://www.oracle.com/cloud/cloud-native/batch/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Compute", subcategory: "HPC / GPU", description: "High-performance computing and GPU instances for ML training, simulation, and rendering.",
-        aws: [{ name: "EC2 HPC (Hpc7g/Hpc6a)", url: "https://aws.amazon.com/ec2/instance-types/hpc/", il: ["IL2", "IL4"] }, { name: "EC2 GPU (P/G Series)", url: "https://aws.amazon.com/ec2/instance-types/p4/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "HPC VMs (HB/HC/ND)", url: "https://azure.microsoft.com/solutions/high-performance-computing", il: ["IL2", "IL4"] }, { name: "NDm A100 v4", url: "https://azure.microsoft.com/products/virtual-machines", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "A3 (NVIDIA H100)", url: "https://cloud.google.com/compute/docs/accelerator-optimized-machines", il: ["IL2", "IL4"] }, { name: "TPU v5", url: "https://cloud.google.com/tpu", il: ["IL2"] }],
-        oracle: [{ name: "GPU Instances (BM.GPU4)", url: "https://www.oracle.com/cloud/compute/gpu/", il: ["IL2", "IL4"] }, { name: "HPC Cluster Network", url: "https://www.oracle.com/cloud/compute/cluster-network/", il: ["IL2", "IL4"] }]
-      },
-
-      // ── STORAGE ──────────────────────────────────────────────
-      {
-        category: "Storage", subcategory: "Object Storage", description: "Scalable, durable object storage for unstructured data, backups, logs, and static assets.",
-        aws: [{ name: "S3", url: "https://aws.amazon.com/s3/", il: ["IL2", "IL4", "IL5"] }, { name: "S3 Glacier", url: "https://aws.amazon.com/s3/storage-classes/glacier/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Blob Storage", url: "https://azure.microsoft.com/products/storage/blobs", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Archive Storage", url: "https://azure.microsoft.com/products/storage/archive-storage", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Cloud Storage", url: "https://cloud.google.com/storage", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Object Storage", url: "https://www.oracle.com/cloud/storage/object-storage/", il: ["IL2", "IL4", "IL5"] }, { name: "Archive Storage", url: "https://www.oracle.com/cloud/storage/archive-storage/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Storage", subcategory: "Block Storage", description: "High-performance persistent block volumes attached to virtual machine instances.",
-        aws: [{ name: "EBS", url: "https://aws.amazon.com/ebs/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Managed Disks", url: "https://azure.microsoft.com/products/storage/disks", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Ultra Disk", url: "https://azure.microsoft.com/products/storage/disks", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Persistent Disk", url: "https://cloud.google.com/persistent-disk", il: ["IL2", "IL4"] }, { name: "Hyperdisk", url: "https://cloud.google.com/compute/docs/disks/hyperdisks", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Block Volumes", url: "https://www.oracle.com/cloud/storage/block-volumes/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Storage", subcategory: "File Storage", description: "Managed NFS/SMB shared file systems for cloud and hybrid access patterns.",
-        aws: [{ name: "EFS", url: "https://aws.amazon.com/efs/", il: ["IL2", "IL4"] }, { name: "FSx for Windows", url: "https://aws.amazon.com/fsx/windows/", il: ["IL2", "IL4", "IL5"] }, { name: "FSx for Lustre", url: "https://aws.amazon.com/fsx/lustre/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Files", url: "https://azure.microsoft.com/products/storage/files", il: ["IL2", "IL4", "IL5"] }, { name: "Azure NetApp Files", url: "https://azure.microsoft.com/products/netapp", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Filestore", url: "https://cloud.google.com/filestore", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "File Storage", url: "https://www.oracle.com/cloud/storage/file-storage/", il: ["IL2", "IL4"] }, { name: "File Storage with Lustre", url: "https://docs.oracle.com/iaas/Content/File/Concepts/filestorageoverview.htm", il: ["IL2", "IL4"], newService: true }]
-      },
-
-      {
-        category: "Storage", subcategory: "Storage Gateway / Hybrid", description: "Services bridging on-premises storage with cloud object or block storage.",
-        aws: [{ name: "Storage Gateway", url: "https://aws.amazon.com/storagegateway/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "StorSimple", url: "https://azure.microsoft.com/products/storsimple", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Transfer Appliance", url: "https://cloud.google.com/transfer-appliance", il: ["IL2"] }],
-        oracle: [{ name: "Data Transfer Service", url: "https://www.oracle.com/cloud/storage/data-transfer.html", il: ["IL2", "IL4"] }]
-      },
-
-      // ── DATABASE ─────────────────────────────────────────────
-      {
-        category: "Database", subcategory: "Relational Database", description: "Fully managed SQL relational databases including MySQL, PostgreSQL, SQL Server, and Aurora.",
-        aws: [{ name: "RDS", url: "https://aws.amazon.com/rds/", il: ["IL2", "IL4", "IL5"] }, { name: "Aurora", url: "https://aws.amazon.com/rds/aurora/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Azure SQL Database", url: "https://azure.microsoft.com/products/azure-sql/database", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "DB for PostgreSQL", url: "https://azure.microsoft.com/products/postgresql", il: ["IL2", "IL4", "IL5"] }, { name: "DB for MySQL", url: "https://azure.microsoft.com/products/mysql", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Cloud SQL", url: "https://cloud.google.com/sql", il: ["IL2", "IL4"] }, { name: "AlloyDB", url: "https://cloud.google.com/alloydb", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Autonomous Database (ATP/ADW)", url: "https://www.oracle.com/autonomous-database/", il: ["IL2", "IL4", "IL5"] }, { name: "Base Database Service", url: "https://www.oracle.com/database/base-database-service/", il: ["IL2", "IL4", "IL5"] }, { name: "Exadata Database Service", url: "https://www.oracle.com/engineered-systems/exadata/cloud-service/", il: ["IL2", "IL4", "IL5"] }, { name: "MySQL HeatWave", url: "https://www.oracle.com/mysql/", il: ["IL2", "IL4", "IL5"], newlyAuthorizedIL5: true }]
-      },
-
-      {
-        category: "Database", subcategory: "NoSQL / Document", description: "Managed document, key-value, and wide-column NoSQL databases for flexible, high-scale workloads.",
-        aws: [{ name: "DynamoDB", url: "https://aws.amazon.com/dynamodb/", il: ["IL2", "IL4", "IL5"] }, { name: "DocumentDB", url: "https://aws.amazon.com/documentdb/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Cosmos DB", url: "https://azure.microsoft.com/products/cosmos-db", il: ["IL2", "IL4", "IL5"] }, { name: "Table Storage", url: "https://azure.microsoft.com/products/storage/tables", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Firestore", url: "https://cloud.google.com/firestore", il: ["IL2"] }, { name: "Bigtable", url: "https://cloud.google.com/bigtable", il: ["IL2", "IL4"] }, { name: "Spanner", url: "https://cloud.google.com/spanner", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "NoSQL Database", url: "https://www.oracle.com/database/nosql/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Database", subcategory: "In-Memory Cache", description: "Managed Redis/Valkey/Memcached in-memory caching for sub-millisecond latency applications.",
-        aws: [{ name: "ElastiCache", url: "https://aws.amazon.com/elasticache/", il: ["IL2", "IL4"] }, { name: "MemoryDB for Redis", url: "https://aws.amazon.com/memorydb/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Cache for Redis", url: "https://azure.microsoft.com/products/cache", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Memorystore", url: "https://cloud.google.com/memorystore", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "OCI Cache (Redis/Valkey)", url: "https://www.oracle.com/cloud/cache/", il: ["IL2", "IL4", "IL5"], newlyAuthorizedIL5: true }]
-      },
-
-      {
-        category: "Database", subcategory: "Graph Database", description: "Managed graph database for storing and querying highly connected data with relationships.",
-        aws: [{ name: "Neptune", url: "https://aws.amazon.com/neptune/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Cosmos DB Gremlin API", url: "https://azure.microsoft.com/products/cosmos-db", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Spanner Graph", url: "https://cloud.google.com/spanner", il: ["IL2"] }],
-        oracle: [{ name: "Graph Studio (ADB)", url: "https://www.oracle.com/database/graph/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Database", subcategory: "Time Series", description: "Optimized databases for time-stamped telemetry, IoT, and monitoring data.",
-        aws: [{ name: "Timestream", url: "https://aws.amazon.com/timestream/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Time Series Insights", url: "https://azure.microsoft.com/products/time-series-insights", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Bigtable (TS workload)", url: "https://cloud.google.com/bigtable", il: ["IL2"] }],
-        oracle: [{ name: "TimesTen (OKE)", url: "https://www.oracle.com/database/technologies/related/timesten.html", il: ["IL2"] }]
-      },
-
-      // ── NETWORKING ───────────────────────────────────────────
-      {
-        category: "Networking", subcategory: "Virtual Networking", description: "Isolated virtual networks with full control over IP ranges, subnets, routing, and gateways.",
-        aws: [{ name: "VPC", url: "https://aws.amazon.com/vpc/", il: ["IL2", "IL4", "IL5"] }, { name: "PrivateLink", url: "https://aws.amazon.com/privatelink/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Virtual Network", url: "https://azure.microsoft.com/products/virtual-network", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Private Link", url: "https://azure.microsoft.com/products/private-link", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "VPC", url: "https://cloud.google.com/vpc", il: ["IL2", "IL4"] }, { name: "Private Service Connect", url: "https://cloud.google.com/vpc/docs/private-service-connect", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "VCN", url: "https://www.oracle.com/cloud/networking/virtual-cloud-network/", il: ["IL2", "IL4", "IL5"] }, { name: "Private Endpoint", url: "https://www.oracle.com/cloud/networking/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Networking", subcategory: "Load Balancing", description: "Layer 4/7 traffic distribution across compute targets for high availability and scale.",
-        aws: [{ name: "Elastic Load Balancing (ALB/NLB/CLB)", url: "https://aws.amazon.com/elasticloadbalancing/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Load Balancer", url: "https://azure.microsoft.com/products/load-balancer", il: ["IL2", "IL4", "IL5"] }, { name: "Application Gateway", url: "https://azure.microsoft.com/products/application-gateway", il: ["IL2", "IL4", "IL5"] }, { name: "Front Door", url: "https://azure.microsoft.com/products/frontdoor", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Cloud Load Balancing", url: "https://cloud.google.com/load-balancing", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Load Balancer", url: "https://www.oracle.com/cloud/networking/load-balancing/", il: ["IL2", "IL4", "IL5"] }, { name: "Network Load Balancer", url: "https://www.oracle.com/cloud/networking/network-load-balancer/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Networking", subcategory: "CDN", description: "Content delivery network caching assets at edge locations globally for low-latency delivery.",
-        aws: [{ name: "CloudFront", url: "https://aws.amazon.com/cloudfront/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure CDN", url: "https://azure.microsoft.com/products/cdn", il: ["IL2", "IL4"] }, { name: "Front Door (CDN)", url: "https://azure.microsoft.com/products/frontdoor", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Cloud CDN", url: "https://cloud.google.com/cdn", il: ["IL2"] }],
-        oracle: [{ name: "CDN", url: "https://www.oracle.com/cloud/networking/cdn/", il: ["IL2"] }]
-      },
-
-      {
-        category: "Networking", subcategory: "DNS", description: "Scalable, highly available managed Domain Name System (DNS) service.",
-        aws: [{ name: "Route 53", url: "https://aws.amazon.com/route53/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Azure DNS", url: "https://azure.microsoft.com/products/dns", il: ["IL2", "IL4", "IL5"] }, { name: "Private DNS", url: "https://azure.microsoft.com/products/dns", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Cloud DNS", url: "https://cloud.google.com/dns", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "DNS", url: "https://www.oracle.com/cloud/networking/dns/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Networking", subcategory: "VPN / Dedicated Connect", description: "Encrypted VPN tunnels and dedicated private connectivity from on-premises to cloud.",
-        aws: [{ name: "Site-to-Site VPN", url: "https://aws.amazon.com/vpn/", il: ["IL2", "IL4", "IL5"] }, { name: "Direct Connect", url: "https://aws.amazon.com/directconnect/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "VPN Gateway", url: "https://azure.microsoft.com/products/vpn-gateway", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "ExpressRoute", url: "https://azure.microsoft.com/products/expressroute", il: ["IL2", "IL4", "IL5", "IL6"] }],
-        gcp: [{ name: "Cloud VPN", url: "https://cloud.google.com/network-connectivity/docs/vpn", il: ["IL2", "IL4"] }, { name: "Cloud Interconnect", url: "https://cloud.google.com/network-connectivity/docs/interconnect", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "VPN Connect", url: "https://www.oracle.com/cloud/networking/vpn/", il: ["IL2", "IL4", "IL5"] }, { name: "FastConnect", url: "https://www.oracle.com/cloud/networking/fastconnect/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Networking", subcategory: "Network Firewall", description: "Managed stateful network firewall and IDS/IPS for traffic inspection and policy enforcement.",
-        aws: [{ name: "AWS Network Firewall", url: "https://aws.amazon.com/network-firewall/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Azure Firewall", url: "https://azure.microsoft.com/products/azure-firewall", il: ["IL2", "IL4", "IL5", "IL6"] }],
-        gcp: [{ name: "Cloud Next-Gen Firewall", url: "https://cloud.google.com/firewall", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Network Firewall", url: "https://www.oracle.com/security/cloud-security/network-firewall/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      // ── AI AND ML ─────────────────────────────────────────────
-      {
-        category: "AI and Machine Learning", subcategory: "ML Platform", description: "End-to-end platforms for building, training, tuning, and deploying machine learning models.",
-        aws: [{ name: "SageMaker", url: "https://aws.amazon.com/sagemaker/", il: ["IL2", "IL4", "IL5"], newlyAuthorizedIL5: true }],
-        azure: [{ name: "Azure Machine Learning", url: "https://azure.microsoft.com/products/machine-learning", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Vertex AI", url: "https://cloud.google.com/vertex-ai", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "OCI Data Science", url: "https://www.oracle.com/artificial-intelligence/data-science/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "AI and Machine Learning", subcategory: "Generative AI / Foundation Models", description: "Managed access to large language models (LLMs) and generative AI foundation models via API.",
-        aws: [{ name: "Amazon Bedrock", url: "https://aws.amazon.com/bedrock/", il: ["IL2", "IL4"], newService: true }],
-        azure: [{ name: "Azure OpenAI Service", url: "https://azure.microsoft.com/products/ai-services/openai-service", il: ["IL2", "IL4", "IL5"], newService: true }],
-        gcp: [{ name: "Vertex AI Generative AI", url: "https://cloud.google.com/vertex-ai/generative-ai/docs", il: ["IL2", "IL4"], newService: true }, { name: "Gemini API", url: "https://ai.google.dev/", il: ["IL2"], newService: true }],
-        oracle: [{ name: "OCI Generative AI", url: "https://www.oracle.com/artificial-intelligence/generative-ai/", il: ["IL2", "IL4", "IL5"], newService: true, newlyAuthorizedIL5: true }]
-      },
-
-      {
-        category: "AI and Machine Learning", subcategory: "Computer Vision", description: "Pre-trained APIs for image/video analysis: object detection, OCR, face recognition, and labeling.",
-        aws: [{ name: "Rekognition", url: "https://aws.amazon.com/rekognition/", il: ["IL2", "IL4"] }, { name: "Textract", url: "https://aws.amazon.com/textract/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure AI Vision", url: "https://azure.microsoft.com/products/ai-services/ai-vision", il: ["IL2", "IL4"] }, { name: "Azure AI Document Intelligence", url: "https://azure.microsoft.com/products/ai-services/ai-document-intelligence", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Vision AI", url: "https://cloud.google.com/vision", il: ["IL2"] }, { name: "Document AI", url: "https://cloud.google.com/document-ai", il: ["IL2"] }],
-        oracle: [{ name: "Vision", url: "https://www.oracle.com/artificial-intelligence/vision/", il: ["IL2", "IL4"] }, { name: "Document Understanding", url: "https://www.oracle.com/artificial-intelligence/document-understanding/", il: ["IL2", "IL4", "IL5"], newlyAuthorizedIL5: true }]
-      },
-
-      {
-        category: "AI and Machine Learning", subcategory: "Natural Language Processing", description: "Pre-built NLP APIs for entity recognition, sentiment analysis, key phrase extraction, and translation.",
-        aws: [{ name: "Comprehend", url: "https://aws.amazon.com/comprehend/", il: ["IL2", "IL4"] }, { name: "Translate", url: "https://aws.amazon.com/translate/", il: ["IL2"] }],
-        azure: [{ name: "Azure AI Language", url: "https://azure.microsoft.com/products/ai-services/text-analytics", il: ["IL2", "IL4"] }, { name: "Translator", url: "https://azure.microsoft.com/products/ai-services/translator", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Natural Language AI", url: "https://cloud.google.com/natural-language", il: ["IL2"] }, { name: "Translation AI", url: "https://cloud.google.com/translate", il: ["IL2"] }],
-        oracle: [{ name: "Language", url: "https://www.oracle.com/artificial-intelligence/language/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "AI and Machine Learning", subcategory: "Speech AI", description: "Speech-to-text transcription and text-to-speech synthesis services.",
-        aws: [{ name: "Transcribe", url: "https://aws.amazon.com/transcribe/", il: ["IL2", "IL4"] }, { name: "Polly", url: "https://aws.amazon.com/polly/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure AI Speech", url: "https://azure.microsoft.com/products/ai-services/ai-speech", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Speech-to-Text", url: "https://cloud.google.com/speech-to-text", il: ["IL2"] }, { name: "Text-to-Speech", url: "https://cloud.google.com/text-to-speech", il: ["IL2"] }],
-        oracle: [{ name: "Speech", url: "https://www.oracle.com/artificial-intelligence/speech/", il: ["IL2", "IL4"] }]
-      },
-
-      // ── SECURITY ──────────────────────────────────────────────
-      {
-        category: "Security", subcategory: "Identity & Access Management", description: "Fine-grained access control for cloud resources via users, roles, policies, and federated identity.",
-        aws: [{ name: "IAM", url: "https://aws.amazon.com/iam/", il: ["IL2", "IL4", "IL5"] }, { name: "IAM Identity Center", url: "https://aws.amazon.com/iam/identity-center/", il: ["IL2", "IL4", "IL5"] }, { name: "Cognito", url: "https://aws.amazon.com/cognito/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Microsoft Entra ID", url: "https://azure.microsoft.com/products/entra/id", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Entra External ID", url: "https://azure.microsoft.com/products/entra/external-id", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Cloud IAM", url: "https://cloud.google.com/iam", il: ["IL2", "IL4"] }, { name: "Identity Platform", url: "https://cloud.google.com/identity-platform", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "IAM with Identity Domains", url: "https://www.oracle.com/security/identity-management/", il: ["IL2", "IL4", "IL5"] }, { name: "Access Governance", url: "https://www.oracle.com/security/access-governance/", il: ["IL2", "IL4", "IL5"], newlyAuthorizedIL5: true }]
-      },
-
-      {
-        category: "Security", subcategory: "Key Management / HSM", description: "Managed encryption key creation, storage, rotation, and Hardware Security Modules (HSM).",
-        aws: [{ name: "KMS", url: "https://aws.amazon.com/kms/", il: ["IL2", "IL4", "IL5"] }, { name: "CloudHSM", url: "https://aws.amazon.com/cloudhsm/", il: ["IL4", "IL5", "IL6"] }],
-        azure: [{ name: "Key Vault", url: "https://azure.microsoft.com/products/key-vault", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Managed HSM", url: "https://azure.microsoft.com/products/azure-dedicated-hsm", il: ["IL4", "IL5", "IL6"] }],
-        gcp: [{ name: "Cloud KMS", url: "https://cloud.google.com/kms", il: ["IL2", "IL4"] }, { name: "Cloud HSM", url: "https://cloud.google.com/hsm", il: ["IL4"] }],
-        oracle: [{ name: "Vault", url: "https://www.oracle.com/security/cloud-security/key-management/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Security", subcategory: "Web Application Firewall / DDoS", description: "Managed WAF protecting web applications from OWASP threats, bots, and volumetric DDoS.",
-        aws: [{ name: "WAF", url: "https://aws.amazon.com/waf/", il: ["IL2", "IL4", "IL5"] }, { name: "Shield", url: "https://aws.amazon.com/shield/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Azure WAF", url: "https://azure.microsoft.com/products/web-application-firewall", il: ["IL2", "IL4", "IL5"] }, { name: "DDoS Protection", url: "https://azure.microsoft.com/products/ddos-protection", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Cloud Armor", url: "https://cloud.google.com/armor", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "WAF", url: "https://www.oracle.com/security/cloud-security/web-application-firewall/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Security", subcategory: "Threat Detection / SIEM", description: "Cloud-native SIEM, threat intelligence, and anomaly detection for cloud resource activity.",
-        aws: [{ name: "GuardDuty", url: "https://aws.amazon.com/guardduty/", il: ["IL2", "IL4", "IL5"] }, { name: "Security Hub", url: "https://aws.amazon.com/security-hub/", il: ["IL2", "IL4", "IL5"] }, { name: "Inspector", url: "https://aws.amazon.com/inspector/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Microsoft Sentinel", url: "https://azure.microsoft.com/products/microsoft-sentinel", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Defender for Cloud", url: "https://azure.microsoft.com/products/defender-for-cloud", il: ["IL2", "IL4", "IL5", "IL6"] }],
-        gcp: [{ name: "Security Command Center", url: "https://cloud.google.com/security-command-center", il: ["IL2", "IL4"] }, { name: "Chronicle SIEM", url: "https://cloud.google.com/chronicle", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Cloud Guard", url: "https://www.oracle.com/security/cloud-security/cloud-guard/", il: ["IL2", "IL4"] }, { name: "Vulnerability Scanning", url: "https://www.oracle.com/security/cloud-security/vulnerability-scanning/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Security", subcategory: "Data Loss Prevention / Macie", description: "Automated scanning and classification of sensitive data such as PII, PCI, and HIPAA-regulated data.",
-        aws: [{ name: "Macie", url: "https://aws.amazon.com/macie/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Microsoft Purview (DLP)", url: "https://azure.microsoft.com/products/purview", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Sensitive Data Protection (DLP)", url: "https://cloud.google.com/sensitive-data-protection", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Data Safe", url: "https://www.oracle.com/database/data-safe/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Security", subcategory: "Secrets Management", description: "Centralized, audited storage for credentials, API keys, and other application secrets.",
-        aws: [{ name: "Secrets Manager", url: "https://aws.amazon.com/secrets-manager/", il: ["IL2", "IL4", "IL5"] }, { name: "Systems Manager (Parameter Store)", url: "https://aws.amazon.com/systems-manager/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Key Vault (Secrets)", url: "https://azure.microsoft.com/products/key-vault", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Secret Manager", url: "https://cloud.google.com/secret-manager", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Vault (Secrets)", url: "https://www.oracle.com/security/cloud-security/key-management/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      // ── INTEGRATION ──────────────────────────────────────────
-      {
-        category: "Integration", subcategory: "Message Queue", description: "Managed message queues for durable, decoupled, asynchronous application communication.",
-        aws: [{ name: "SQS", url: "https://aws.amazon.com/sqs/", il: ["IL2", "IL4", "IL5"] }, { name: "SNS", url: "https://aws.amazon.com/sns/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Service Bus", url: "https://azure.microsoft.com/products/service-bus", il: ["IL2", "IL4", "IL5"] }, { name: "Event Grid", url: "https://azure.microsoft.com/products/event-grid", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Pub/Sub", url: "https://cloud.google.com/pubsub", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Queue", url: "https://www.oracle.com/cloud/queue/", il: ["IL2", "IL4"] }, { name: "Notifications", url: "https://www.oracle.com/cloud/notifications/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Integration", subcategory: "Event Streaming / Kafka", description: "High-throughput managed event streaming with Kafka-compatible APIs for real-time data pipelines.",
-        aws: [{ name: "Kinesis", url: "https://aws.amazon.com/kinesis/", il: ["IL2", "IL4"] }, { name: "MSK (Managed Kafka)", url: "https://aws.amazon.com/msk/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Event Hubs", url: "https://azure.microsoft.com/products/event-hubs", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Dataflow", url: "https://cloud.google.com/dataflow", il: ["IL2"] }, { name: "Pub/Sub Lite", url: "https://cloud.google.com/pubsub/lite/docs", il: ["IL2"] }],
-        oracle: [{ name: "Streaming (Kafka-compatible)", url: "https://www.oracle.com/cloud/streaming/", il: ["IL2", "IL4"], newService: true }]
-      },
-
-      {
-        category: "Integration", subcategory: "API Management", description: "Create, publish, secure, version, and monitor APIs with developer portal and analytics.",
-        aws: [{ name: "API Gateway", url: "https://aws.amazon.com/api-gateway/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "API Management", url: "https://azure.microsoft.com/products/api-management", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Apigee", url: "https://cloud.google.com/apigee", il: ["IL2", "IL4"] }, { name: "Cloud Endpoints", url: "https://cloud.google.com/endpoints", il: ["IL2"] }],
-        oracle: [{ name: "API Gateway", url: "https://www.oracle.com/cloud/cloud-native/api-management/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Integration", subcategory: "Workflow / Orchestration", description: "Managed workflow orchestration services for coordinating multi-step distributed applications.",
-        aws: [{ name: "Step Functions", url: "https://aws.amazon.com/step-functions/", il: ["IL2", "IL4"] }, { name: "EventBridge", url: "https://aws.amazon.com/eventbridge/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Logic Apps", url: "https://azure.microsoft.com/products/logic-apps", il: ["IL2", "IL4", "IL5"] }, { name: "Durable Functions", url: "https://azure.microsoft.com/products/functions", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Workflows", url: "https://cloud.google.com/workflows", il: ["IL2"] }, { name: "Cloud Composer (Airflow)", url: "https://cloud.google.com/composer", il: ["IL2"] }],
-        oracle: [{ name: "Process Automation", url: "https://www.oracle.com/integration/process-automation/", il: ["IL2", "IL4"] }]
-      },
-
-      // ── ANALYTICS ────────────────────────────────────────────
-      {
-        category: "Analytics", subcategory: "Data Warehouse", description: "Managed, serverless cloud data warehouses optimized for petabyte-scale analytical SQL queries.",
-        aws: [{ name: "Redshift", url: "https://aws.amazon.com/redshift/", il: ["IL2", "IL4"] }, { name: "Athena", url: "https://aws.amazon.com/athena/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Synapse Analytics", url: "https://azure.microsoft.com/products/synapse-analytics", il: ["IL2", "IL4", "IL5"] }, { name: "Azure SQL Analytics", url: "https://azure.microsoft.com/products/azure-sql/database", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "BigQuery", url: "https://cloud.google.com/bigquery", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Autonomous Data Warehouse", url: "https://www.oracle.com/autonomous-database/autonomous-data-warehouse/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Analytics", subcategory: "Business Intelligence", description: "Self-service BI and interactive dashboards for data visualization and reporting.",
-        aws: [{ name: "QuickSight", url: "https://aws.amazon.com/quicksight/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Power BI Embedded", url: "https://azure.microsoft.com/products/power-bi-embedded", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Looker", url: "https://cloud.google.com/looker", il: ["IL2"] }, { name: "Looker Studio", url: "https://cloud.google.com/looker-studio", il: ["IL2"] }],
-        oracle: [{ name: "Analytics Cloud", url: "https://www.oracle.com/business-analytics/analytics-cloud.html", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Analytics", subcategory: "Big Data / Spark / Hadoop", description: "Managed distributed big data processing frameworks including Apache Spark, Hadoop, and Hive.",
-        aws: [{ name: "EMR (Elastic MapReduce)", url: "https://aws.amazon.com/emr/", il: ["IL2", "IL4"] }, { name: "Glue", url: "https://aws.amazon.com/glue/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "HDInsight", url: "https://azure.microsoft.com/products/hdinsight", il: ["IL2", "IL4"] }, { name: "Databricks (Azure)", url: "https://azure.microsoft.com/products/databricks", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Dataproc", url: "https://cloud.google.com/dataproc", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Big Data Service (BDS)", url: "https://www.oracle.com/big-data/big-data-service/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Analytics", subcategory: "Data Lake", description: "Centralized, governed data lake combining object storage with analytics query engines.",
-        aws: [{ name: "Lake Formation", url: "https://aws.amazon.com/lake-formation/", il: ["IL2", "IL4"] }, { name: "S3 + Glue Data Catalog", url: "https://aws.amazon.com/glue/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Data Lake Storage Gen2", url: "https://azure.microsoft.com/products/storage/data-lake-storage", il: ["IL2", "IL4", "IL5"] }, { name: "Microsoft Fabric", url: "https://azure.microsoft.com/products/fabric", il: ["IL2", "IL4"], newService: true }],
-        gcp: [{ name: "Dataplex", url: "https://cloud.google.com/dataplex", il: ["IL2"] }],
-        oracle: [{ name: "Data Lake", url: "https://www.oracle.com/big-data/data-lake/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Analytics", subcategory: "Search", description: "Managed search and analytics engine services based on Elasticsearch/OpenSearch.",
-        aws: [{ name: "OpenSearch Service", url: "https://aws.amazon.com/opensearch-service/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure AI Search", url: "https://azure.microsoft.com/products/ai-services/cognitive-search", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Vertex AI Search", url: "https://cloud.google.com/enterprise-search", il: ["IL2"] }],
-        oracle: [{ name: "OCI Search with OpenSearch", url: "https://www.oracle.com/cloud/opensearch/", il: ["IL2", "IL4"] }]
-      },
-
-      // ── DEVELOPER TOOLS ──────────────────────────────────────
-      {
-        category: "Developer Tools", subcategory: "CI/CD Pipelines", description: "Managed continuous integration and delivery pipelines for automated build, test, and deployment.",
-        aws: [{ name: "CodePipeline", url: "https://aws.amazon.com/codepipeline/", il: ["IL2", "IL4"] }, { name: "CodeBuild", url: "https://aws.amazon.com/codebuild/", il: ["IL2", "IL4"] }, { name: "CodeDeploy", url: "https://aws.amazon.com/codedeploy/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Pipelines (DevOps)", url: "https://azure.microsoft.com/products/devops/pipelines", il: ["IL2", "IL4", "IL5"] }, { name: "GitHub Actions (Azure)", url: "https://azure.microsoft.com/products/github", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Cloud Build", url: "https://cloud.google.com/build", il: ["IL2"] }, { name: "Cloud Deploy", url: "https://cloud.google.com/deploy", il: ["IL2"] }],
-        oracle: [{ name: "DevOps (Build / Deploy)", url: "https://www.oracle.com/devops/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Developer Tools", subcategory: "Source Control", description: "Managed Git hosting and code repository services.",
-        aws: [{ name: "CodeCommit", url: "https://aws.amazon.com/codecommit/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Repos (DevOps)", url: "https://azure.microsoft.com/products/devops/repos", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Cloud Source Repositories", url: "https://cloud.google.com/source-repositories", il: ["IL2"] }],
-        oracle: [{ name: "Visual Builder Studio (Repos)", url: "https://www.oracle.com/application-development/visual-builder-studio/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Developer Tools", subcategory: "Infrastructure as Code", description: "Declarative templates and SDKs for automated, repeatable cloud resource provisioning.",
-        aws: [{ name: "CloudFormation", url: "https://aws.amazon.com/cloudformation/", il: ["IL2", "IL4", "IL5"] }, { name: "CDK", url: "https://aws.amazon.com/cdk/", il: ["IL2", "IL4"] }, { name: "SAM", url: "https://aws.amazon.com/serverless/sam/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "ARM Templates", url: "https://azure.microsoft.com/products/arm-templates", il: ["IL2", "IL4", "IL5"] }, { name: "Bicep", url: "https://azure.microsoft.com/resources/azure-bicep/", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Deployment Manager", url: "https://cloud.google.com/deployment-manager", il: ["IL2"] }, { name: "Config Connector", url: "https://cloud.google.com/config-connector", il: ["IL2"] }],
-        oracle: [{ name: "Resource Manager (Terraform)", url: "https://www.oracle.com/devops/resource-manager/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Developer Tools", subcategory: "Artifact Registry", description: "Managed repositories for storing and managing container images, packages, and build artifacts.",
-        aws: [{ name: "ECR", url: "https://aws.amazon.com/ecr/", il: ["IL2", "IL4", "IL5"] }, { name: "CodeArtifact", url: "https://aws.amazon.com/codeartifact/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Container Registry", url: "https://azure.microsoft.com/products/container-registry", il: ["IL2", "IL4", "IL5"] }, { name: "Artifacts (DevOps)", url: "https://azure.microsoft.com/products/devops/artifacts", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Artifact Registry", url: "https://cloud.google.com/artifact-registry", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Container Registry", url: "https://www.oracle.com/cloud/cloud-native/container-registry/", il: ["IL2", "IL4"] }, { name: "Artifact Registry", url: "https://www.oracle.com/devops/artifact-registry/", il: ["IL2", "IL4"] }]
-      },
-
-      // ── MANAGEMENT AND GOVERNANCE ─────────────────────────────
-      {
-        category: "Management and Governance", subcategory: "Monitoring & Observability", description: "Unified metrics, logs, traces, dashboards, and alerting for cloud-native and hybrid environments.",
-        aws: [{ name: "CloudWatch", url: "https://aws.amazon.com/cloudwatch/", il: ["IL2", "IL4", "IL5"] }, { name: "X-Ray", url: "https://aws.amazon.com/xray/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Monitor", url: "https://azure.microsoft.com/products/monitor", il: ["IL2", "IL4", "IL5"] }, { name: "Application Insights", url: "https://azure.microsoft.com/products/monitor", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Cloud Monitoring", url: "https://cloud.google.com/monitoring", il: ["IL2", "IL4"] }, { name: "Cloud Logging", url: "https://cloud.google.com/logging", il: ["IL2", "IL4"] }, { name: "Cloud Trace", url: "https://cloud.google.com/trace", il: ["IL2"] }],
-        oracle: [{ name: "Monitoring", url: "https://www.oracle.com/manageability/monitoring/", il: ["IL2", "IL4", "IL5"] }, { name: "Logging", url: "https://www.oracle.com/manageability/logging/", il: ["IL2", "IL4", "IL5"] }, { name: "Application Performance Monitoring", url: "https://www.oracle.com/manageability/application-performance-monitoring/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Management and Governance", subcategory: "Policy & Compliance", description: "Automated policy definition, evaluation, and remediation for cloud governance and compliance.",
-        aws: [{ name: "Config", url: "https://aws.amazon.com/config/", il: ["IL2", "IL4", "IL5"] }, { name: "Control Tower", url: "https://aws.amazon.com/controltower/", il: ["IL2", "IL4"] }, { name: "Organizations", url: "https://aws.amazon.com/organizations/", il: ["IL2", "IL4", "IL5"] }],
-        azure: [{ name: "Azure Policy", url: "https://azure.microsoft.com/products/azure-policy", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Blueprints", url: "https://azure.microsoft.com/products/blueprints", il: ["IL2", "IL4"] }, { name: "Management Groups", url: "https://azure.microsoft.com/features/management-groups", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Organization Policy", url: "https://cloud.google.com/resource-manager/docs/organization-policy/overview", il: ["IL2", "IL4"] }, { name: "Assured Workloads", url: "https://cloud.google.com/assured-workloads", il: ["IL4", "IL5"] }],
-        oracle: [{ name: "Cloud Guard", url: "https://www.oracle.com/security/cloud-security/cloud-guard/", il: ["IL2", "IL4"] }, { name: "Security Zones", url: "https://www.oracle.com/security/cloud-security/security-zones/", il: ["IL2", "IL4", "IL5"] }, { name: "Compartments / Tagging", url: "https://www.oracle.com/cloud/compartments/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      {
-        category: "Management and Governance", subcategory: "Cost Management", description: "Native cloud cost visibility, budgeting, anomaly detection, and optimization recommendations.",
-        aws: [{ name: "Cost Explorer", url: "https://aws.amazon.com/aws-cost-management/aws-cost-explorer/", il: ["IL2", "IL4"] }, { name: "Budgets", url: "https://aws.amazon.com/aws-cost-management/aws-budgets/", il: ["IL2", "IL4"] }, { name: "Cost & Usage Report", url: "https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Cost Management + Billing", url: "https://azure.microsoft.com/products/cost-management", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Cloud Billing", url: "https://cloud.google.com/billing", il: ["IL2"] }, { name: "Cost Table / Budget Alerts", url: "https://cloud.google.com/billing/docs/how-to/budgets", il: ["IL2"] }],
-        oracle: [{ name: "Cost Management (FinOps Hub)", url: "https://www.oracle.com/cloud/cost-estimator.html", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Management and Governance", subcategory: "Automation / Config Management", description: "Patch management, run commands, automated remediation, and configuration management at scale.",
-        aws: [{ name: "Systems Manager", url: "https://aws.amazon.com/systems-manager/", il: ["IL2", "IL4", "IL5"] }, { name: "OpsWorks", url: "https://aws.amazon.com/opsworks/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Automation", url: "https://azure.microsoft.com/products/automation", il: ["IL2", "IL4", "IL5"] }, { name: "Azure Arc", url: "https://azure.microsoft.com/products/azure-arc", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "OS Config", url: "https://cloud.google.com/compute/docs/os-config-management", il: ["IL2"] }],
-        oracle: [{ name: "Fleet Application Management", url: "https://www.oracle.com/manageability/", il: ["IL2", "IL4"], newService: true }]
-      },
-
-      // ── IoT ──────────────────────────────────────────────────
-      {
-        category: "Internet of Things", subcategory: "IoT Device Management", description: "Connect, manage, and process data from billions of IoT devices at scale.",
-        aws: [{ name: "IoT Core", url: "https://aws.amazon.com/iot-core/", il: ["IL2", "IL4"] }, { name: "IoT Greengrass", url: "https://aws.amazon.com/greengrass/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "IoT Hub", url: "https://azure.microsoft.com/products/iot-hub", il: ["IL2", "IL4"] }, { name: "IoT Central", url: "https://azure.microsoft.com/products/iot-central", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Cloud IoT Core", url: "https://cloud.google.com/iot-core", il: ["IL2"] }],
-        oracle: [{ name: "IoT Cloud Service", url: "https://www.oracle.com/internet-of-things/", il: ["IL2"] }]
-      },
-
-      // ── MIGRATION ────────────────────────────────────────────
-      {
-        category: "Migration", subcategory: "Server Migration", description: "Tools and services for discovering, assessing, and migrating on-premises servers to the cloud.",
-        aws: [{ name: "Application Migration Service", url: "https://aws.amazon.com/application-migration-service/", il: ["IL2", "IL4"] }, { name: "Migration Hub", url: "https://aws.amazon.com/migration-hub/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Migrate", url: "https://azure.microsoft.com/products/azure-migrate", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Migrate to Virtual Machines", url: "https://cloud.google.com/migrate/virtual-machines", il: ["IL2"] }],
-        oracle: [{ name: "Oracle Cloud Migrations", url: "https://www.oracle.com/cloud/migrate/", il: ["IL2", "IL4"] }]
-      },
-
-      {
-        category: "Migration", subcategory: "Database Migration", description: "Schema conversion and online database migration services with minimal downtime.",
-        aws: [{ name: "DMS (Database Migration Service)", url: "https://aws.amazon.com/dms/", il: ["IL2", "IL4", "IL5"] }, { name: "SCT (Schema Conversion Tool)", url: "https://aws.amazon.com/dms/schema-conversion-tool/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Database Migration Service", url: "https://azure.microsoft.com/products/database-migration", il: ["IL2", "IL4", "IL5"] }],
-        gcp: [{ name: "Database Migration Service", url: "https://cloud.google.com/database-migration", il: ["IL2", "IL4"] }],
-        oracle: [{ name: "Database Migration", url: "https://www.oracle.com/database/cloud-migration/", il: ["IL2", "IL4"] }, { name: "GoldenGate", url: "https://www.oracle.com/integration/goldengate/", il: ["IL2", "IL4", "IL5"] }]
-      },
-
-      // ── DESKTOP / END USER ─────────────────────────────────────
-      {
-        category: "End User Computing", subcategory: "Virtual Desktop / DaaS", description: "Cloud-hosted virtual desktops and applications delivered to end users on any device.",
-        aws: [{ name: "WorkSpaces", url: "https://aws.amazon.com/workspaces/", il: ["IL2", "IL4", "IL5"] }, { name: "AppStream 2.0", url: "https://aws.amazon.com/appstream2/", il: ["IL2", "IL4"] }],
-        azure: [{ name: "Azure Virtual Desktop", url: "https://azure.microsoft.com/products/virtual-desktop", il: ["IL2", "IL4", "IL5", "IL6"] }, { name: "Windows 365", url: "https://www.microsoft.com/windows-365", il: ["IL2", "IL4"] }],
-        gcp: [{ name: "Cloud Workstations", url: "https://cloud.google.com/workstations", il: ["IL2"] }],
-        oracle: [{ name: "Virtual Desktop (Secure Desktops)", url: "https://www.oracle.com/cloud/secure-desktops/", il: ["IL2", "IL4", "IL5"], newlyAuthorizedIL5: true }]
-      },
-    ];
+    const SERVICES = [];
 
     // ════════════════════════════════════════════════════════════
     // PRICING DATA STORE
@@ -3947,60 +3499,76 @@
         return;
       }
 
-      // Refined Grouping: Group by Category + Parent Service Link
       const grouped = {};
       data.forEach(s => {
-        // We group by csoparentservice to keep equivalent services aligned horizontally
-        const key = (s.category || 'Other') + '|' + (s.csoparentservice || s.csoshortname || 'Other');
-        if (!grouped[key]) grouped[key] = {
-          category: s.category || 'Other',
-          subcategory: s.csoshortname || 'Other',
-          parentName: s.csoparentservice || s.csoshortname,
-          description: s.description || 'Monthly CSP Service Offering Mapping',
-          aws: [], azure: [], gcp: [], oracle: []
-        };
-        if (s.csp && grouped[key][s.csp.toLowerCase()]) {
-          grouped[key][s.csp.toLowerCase()].push(s);
+        // Robust property access regardless of original CSV casing
+        const cat = s.category || s.Category || 'Other';
+        const parent = s.csoparentservice || s.csOParentService || s.csoshortname || s.csoShortName || 'Other';
+        const key = (cat + '|' + parent).toLowerCase().trim();
+
+        if (!grouped[key]) {
+          grouped[key] = {
+            category: cat,
+            parentName: parent,
+            description: s.description || s.Description || 'Monthly CSP Service Offering Mapping',
+            aws: [], azure: [], gcp: [], oracle: []
+          };
+        }
+        
+        // Find which CSP this row belongs to
+        const provider = (s.csp_injected || s.csp || '').toLowerCase().trim();
+        if (provider && grouped[key][provider]) {
+          grouped[key][provider].push(s);
         }
       });
 
       const flat = Object.values(grouped);
       const filtered = flat.filter(g => {
         const qLower = query.toLowerCase();
-        const matchQuery = !query || g.subcategory.toLowerCase().includes(qLower) || g.parentName.toLowerCase().includes(qLower);
+        const matchQuery = !query || g.parentName.toLowerCase().includes(qLower) || g.category.toLowerCase().includes(qLower);
         const matchCat = msState.cat.size === 0 || msState.cat.has(g.category);
-        // Keys like impactlevel are now lowercase in the row objects
-        const matchIL = msState.il.size === 0 || ['aws', 'azure', 'gcp', 'oracle'].some(csp => g[csp].some(s => msState.il.has(s.impactlevel)));
+        
+        const matchIL = msState.il.size === 0 || ['aws', 'azure', 'gcp', 'oracle'].some(csp => 
+          g[csp].some(s => {
+            const levels = (s.impactlevel || s.ImpactLevel || '').split('|').map(l => l.trim().toUpperCase());
+            return levels.some(lv => msState.il.has(lv));
+          })
+        );
+        
         const matchCSP = msState.csp.size === 0 || ['aws', 'azure', 'gcp', 'oracle'].some(csp => msState.csp.has(csp) && g[csp].length > 0);
         return matchQuery && matchCat && matchIL && matchCSP;
       });
 
       body.innerHTML = filtered.map(g => `<tr>
-    <td class="td-cat">${g.category}</td>
-    <td class="td-sub">${g.parentName}</td>
-    <td class="td-desc">${g.description}</td>
-    <td class="svc-cell td-aws-c">${renderCspCellGroup(g.aws)}</td>
-    <td class="svc-cell td-azure-c">${renderCspCellGroup(g.azure)}</td>
-    <td class="svc-cell td-gcp-c">${renderCspCellGroup(g.gcp)}</td>
-    <td class="svc-cell td-oracle-c">${renderCspCellGroup(g.oracle)}</td>
-  </tr>`).join('');
+        <td class="td-cat">${g.category}</td>
+        <td class="td-sub">${g.parentName}</td>
+        <td class="td-desc">${g.description}</td>
+        <td class="svc-cell td-aws-c">${renderCspCellGroup(g.aws)}</td>
+        <td class="svc-cell td-azure-c">${renderCspCellGroup(g.azure)}</td>
+        <td class="svc-cell td-gcp-c">${renderCspCellGroup(g.gcp)}</td>
+        <td class="svc-cell td-oracle-c">${renderCspCellGroup(g.oracle)}</td>
+      </tr>`).join('');
 
-      if (meta) meta.innerHTML = `Showing <strong>${filtered.length}</strong> groups of <strong>${flat.length}</strong> services types from monthly data source`;
+      if (meta) meta.innerHTML = `Showing <strong>${filtered.length}</strong> groups of <strong>${flat.length}</strong> service mapping types`;
     }
 
     function renderCspCellGroup(svcs) {
       if (!svcs || !svcs.length) return '<span class="none-ind">·</span>';
-      // Limit to 3 items per cell for clean comparison
       const visible = svcs.slice(0, 3);
       const extra = svcs.length > 3 ? `<div style="font-size:9px;color:var(--text-muted);margin-top:4px">+ ${svcs.length - 3} more...</div>` : '';
 
       return visible.map(s => {
-        const ilClass = `il-${s.impactlevel || 'IL2'}`;
-        const title = s.title || s.csOParentService;
+        const rawIL = s.impactlevel || s.ImpactLevel || 'IL2';
+        const levels = String(rawIL).split('|').map(l => l.trim().toUpperCase());
+        const ilBadges = levels.map(lv => `<span class="ib il-${lv}">${lv}</span>`).join('');
+        
+        // Robust name detection for Mapping rows
+        const label = s.csoshortname || s.csoShortName || s.csoparentservice || s.csOParentService || s.title || s.name || 'Unknown';
+        
         return `<div class="se">
-      <div class="sn" title="${s.description || ''}">${title}</div>
-      <div class="sm"><span class="ib ${ilClass}">${s.impactlevel}</span></div>
-    </div>`;
+          <div class="sn" title="${s.description || ''}">${label}</div>
+          <div class="sm">${ilBadges}</div>
+        </div>`;
       }).join('') + extra;
     }
 
@@ -4207,17 +3775,6 @@
       return rows;
     }
 
-    function splitCSVLine(line) {
-      const result = []; let cur = ''; let inQ = false;
-      for (let i = 0; i < line.length; i++) {
-        const c = line[i];
-        if (c === '"') { inQ = !inQ; }
-        else if (c === ',' && !inQ) { result.push(cur.trim()); cur = ''; }
-        else { cur += c; }
-      }
-      result.push(cur.trim());
-      return result;
-    }
 
     function handleCSV(csp, input) {
       const file = input.files[0];
@@ -4382,35 +3939,72 @@
 
     // ── ADMIN LOGIC ──────────────────────────────────────────────
     function loadSampleAdminData() {
-      const awsCSV = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+      // 1. CsoPricing Mock Data
+      const awsPricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
 "Compute - GPU - A10","Compute - GPU","High-performance NVIDIA A10 Tensor Core GPU","C1001",2.50,"GPU Per Hour",1.85,"GPU Per Hour","25%"
 "S3 Standard","Object Storage","Scalable object storage for any data type","S3-001",0.023,"GB Per Month",0.023,"GB Per Month","0%"`;
-
-      const azureCSV = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+      const azurePricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+"Azure VM - D-Series","Compute - VM","General purpose Virtual Machine","C1002",0.096,"vCPU/Hour",0.0816,"vCPU/Hour","-15%"
 "Storage - Block - SSD","Storage - Block","High-speed SSD storage volume","S2001",0.12,"GB Per Month",0.09,"GB Per Month","25%"`;
+      const gcpPricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+"GCE - N2 Instance","Compute - VM","Workload-optimized virtual machine","C1003",0.104,"vCPU/Hour",0.0832,"vCPU/Hour","-20%"
+"Cloud Storage - Nearline","Object Storage","Infrequent access object storage","S3003",0.01,"GB Per Month",0.008,"GB Per Month","-20%"`;
+      const oraclePricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+"OCI Compute - E5","Compute - OCPU","AMD-based virtual machine shapes","C1004",0.025,"OCPU/Hour",0.0225,"OCPU/Hour","-10%"
+"OCI Object Storage","Object Storage","Scalable storage for OCI","S3004",0.025,"GB Per Month",0.02,"GB Per Month","-20%"`;
 
-      const exceptionCSV = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
-"E-9001","Compute - GPU","IL5","Approved","Section 5.5.6.3","Special sovereign requirement for AI training","Moderate"`;
+      // 2. csoException Mock Data
+      const awsExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+"E-AWS-001","Compute - GPU","IL5","Approved","Section 5.5.6.3","Special sovereign requirement for AI training","Moderate"`;
+      const azureExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+"E-AZ-002","Database - SQL","IL6","Pending","Section 6.1.2.9","IL6 requirement for mission critical DB","High"`;
+      const gcpExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+"E-GCP-003","AI/ML","IL5","Approved","Section 4.2.1","Generative AI exception for secure workloads","Moderate"`;
+      const oracleExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+"E-OCI-004","Cloud Infrastructure Engineering","IL5","Approved","Section 2.1.2","Admin access exception for cleared personnel","High"`;
 
-      const parentServiceCSV = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
-"AWS EC2","Compute - GPU","C1001","aws","Compute","IL5",true
-"Azure Managed Disks","Storage - Block","S2001","azure","Storage","IL5",false`;
+      // 3. CsoParentService Mock Data
+      const awsMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU),Compute - GPU,C1001,aws,Compute,IL2|IL4|IL5,TRUE
+Object/Block Storage,S3 Standard,S3-001,aws,Storage,IL5,FALSE`;
+      const azureMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU),Azure VM - D-Series,C1002,azure,Compute,IL2|IL4|IL5|IL6,FALSE
+Object/Block Storage,Storage - Block - SSD,S2001,azure,Storage,IL6,FALSE`;
+      const gcpMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU),GCE - N2 Instance,C1003,gcp,Compute,IL2|IL4,FALSE
+Object/Block Storage,Cloud Storage - Nearline,S3003,gcp,Storage,IL4,FALSE`;
+      const oracleMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU),OCI Compute - E5,C1004,oracle,Compute,IL2|IL4|IL5,FALSE
+Object/Block Storage,OCI Object Storage,S3004,oracle,Storage,IL2,FALSE`;
 
-      // Use the new Merge/Inject logic
-      csoPricingData = []; // Clear current first
-      handleAdminCSVRaw('csoPricing', awsCSV, 'aws');
-      handleAdminCSVRaw('csoPricing', azureCSV, 'azure');
+      // Clear current data
+      csoPricingData = []; csoExceptionData = []; csOParentServiceData = [];
 
-      handleAdminCSVRaw('csoException', exceptionCSV);
-      handleAdminCSVRaw('csOParentService', parentServiceCSV);
-      showToast('✓ Mock data loaded successfully', 'success');
+      // Load all by CSP
+      ['aws', 'azure', 'gcp', 'oracle'].forEach(csp => {
+        const p = csp === 'aws' ? awsPricing : csp === 'azure' ? azurePricing : csp === 'gcp' ? gcpPricing : oraclePricing;
+        const e = csp === 'aws' ? awsExc : csp === 'azure' ? azureExc : csp === 'gcp' ? gcpExc : oracleExc;
+        const m = csp === 'aws' ? awsMap : csp === 'azure' ? azureMap : csp === 'gcp' ? gcpMap : oracleMap;
+
+        handleAdminCSVRaw('csoPricing', p, csp);
+        handleAdminCSVRaw('csoException', e, csp);
+        handleAdminCSVRaw('csOParentService', m, csp);
+      });
+
+      showToast('✓ Split sample data loaded with multi-IL support', 'success');
     }
 
     function clearAdminData(schema) {
-      if (schema === 'csoPricing') csoPricingData = [];
+      if (schema === 'csoPricing') {
+        csoPricingData = [];
+        pricingData = { aws: [], azure: [], gcp: [], oracle: [] }; // Reset display store
+      }
       if (schema === 'csoException') csoExceptionData = [];
       if (schema === 'csOParentService') csOParentServiceData = [];
+      
       updateAdminMeta(schema);
+      renderPricing(); // Refresh catalog
+      calcRun(); // Refresh calculator
       showToast(`✓ Removed all ${schema} data`, 'success');
     }
 
@@ -4428,51 +4022,64 @@
       reader.readAsText(file);
     }
 
+    let currentCSPUpload = null;
+    let currentSchemaUpload = null;
+
+    function triggerCSPUpload(schema, csp) {
+      currentSchemaUpload = schema;
+      currentCSPUpload = csp;
+      const inputId = schema === 'csoPricing' ? 'file-csopricing' :
+        schema === 'csoException' ? 'file-csoexception' : 'file-csoparent';
+      document.getElementById(inputId).click();
+    }
+
     function handleAdminCSVRaw(schema, text, injectedCSP = null) {
       const lines = (text || '').trim().split(/\r?\n/);
       if (lines.length < 2) return;
-      // Normalize headers to lowercase
-      const header = lines[0].split(',').map(h => h.trim().replace(/"/g, '').toLowerCase());
+      
+      // Clean headers: lowercase and alphanumeric only
+      const header = splitCSVLine(lines[0]).map(h => h.trim().replace(/[^a-z0-9]/gi, '').toLowerCase());
       const rows = [];
+
       for (let i = 1; i < lines.length; i++) {
         const cols = splitCSVLine(lines[i]);
+        // Strict check: skip if row doesn't have enough data
         if (cols.length < header.length) continue;
+        
         const row = {};
-        header.forEach((h, idx) => { row[h] = cols[idx]; });
+        header.forEach((h, idx) => { 
+          let val = (cols[idx] || '').trim();
+          const uVal = val.toUpperCase();
+          if (uVal === 'TRUE') val = true;
+          else if (uVal === 'FALSE') val = false;
+          row[h] = val; 
+        });
 
-        // Inject CSP if this is a CSP-specific upload
-        if (injectedCSP) row['csp_injected'] = injectedCSP;
-
+        if (injectedCSP) row['csp_injected'] = injectedCSP.toLowerCase();
         rows.push(row);
       }
 
-      // Handle all schemas with Merge/Replace logic
       if (schema === 'csoPricing') {
         if (injectedCSP) {
-          csoPricingData = csoPricingData.filter(r => r.csp_injected !== injectedCSP);
+          csoPricingData = csoPricingData.filter(r => r.csp_injected !== injectedCSP.toLowerCase());
           csoPricingData = [...csoPricingData, ...rows];
-        } else {
-          csoPricingData = rows;
-        }
+        } else { csoPricingData = rows; }
       } else if (schema === 'csoException') {
         if (injectedCSP) {
-          csoExceptionData = csoExceptionData.filter(r => r.csp_injected !== injectedCSP);
+          csoExceptionData = csoExceptionData.filter(r => r.csp_injected !== injectedCSP.toLowerCase());
           csoExceptionData = [...csoExceptionData, ...rows];
-        } else {
-          csoExceptionData = rows;
-        }
+        } else { csoExceptionData = rows; }
       } else if (schema === 'csOParentService') {
         if (injectedCSP) {
-          csOParentServiceData = csOParentServiceData.filter(r => r.csp_injected !== injectedCSP);
+          csOParentServiceData = csOParentServiceData.filter(r => r.csp_injected !== injectedCSP.toLowerCase());
           csOParentServiceData = [...csOParentServiceData, ...rows];
-        } else {
-          csOParentServiceData = rows;
-        }
+        } else { csOParentServiceData = rows; }
       }
 
       updateAdminMeta(schema);
       renderServices();
       renderPricing();
+      if (typeof calcRun === 'function') calcRun();
     }
 
     function updateAdminMeta(schema) {
@@ -4487,8 +4094,14 @@
         else if (schema === 'csoException') data = csoExceptionData;
         else data = csOParentServiceData;
 
-        const cnt = data.filter(r => r.csp_injected === csp).length;
+        // More robust count filter
+        const cnt = data.filter(r => {
+          const rCsp = (r.csp_injected || r.csp || '').toLowerCase().trim();
+          return rCsp === csp;
+        }).length;
+
         el.textContent = cnt > 0 ? `✓ ${cnt} records` : 'No file';
+        el.className = 'uc-meta ' + (cnt > 0 ? 'loaded' : 'empty');
       });
     }
 
@@ -5276,36 +4889,21 @@
     // These are realistic approximate on-demand prices for demo purposes.
     // When catalog data is loaded, those prices override these.
     const CALC_BASE_PRICES = {
-      // Compute — per vCPU-month (approx, standard general purpose)
-      compute_vcpu_month: { aws: 24.60, azure: 26.28, gcp: 25.32, oracle: 22.40 },
-      // Compute — per GB RAM-month
-      compute_ram_month: { aws: 3.10, azure: 3.32, gcp: 3.38, oracle: 2.80 },
-      // Storage — GB primary (SSD block) per month
-      storage_primary_gb: { aws: 0.080, azure: 0.084, gcp: 0.085, oracle: 0.0765 },
-      // Storage — GB archive per month
-      storage_archive_gb: { aws: 0.004, azure: 0.002, gcp: 0.004, oracle: 0.003 },
-      // Storage — GB object per month
-      storage_object_gb: { aws: 0.023, azure: 0.020, gcp: 0.026, oracle: 0.0255 },
-      // Database — per vCPU-month (managed relational)
-      database_vcpu_month: { aws: 58.40, azure: 63.72, gcp: 52.56, oracle: 56.10 },
-      // Database — storage GB/month
-      database_storage_gb: { aws: 0.115, azure: 0.115, gcp: 0.170, oracle: 0.102 },
-      // Networking — egress GB
-      networking_egress_gb: { aws: 0.085, azure: 0.087, gcp: 0.085, oracle: 0.0085 },
-      // Load Balancer — per month
-      lb_month: { aws: 16.43, azure: 18.40, gcp: 18.26, oracle: 14.60 },
-      // Kubernetes — cluster management per month
-      k8s_cluster_month: { aws: 72.00, azure: 0.00, gcp: 72.00, oracle: 0.00 },
-      // Firewall / WAF — per month
-      waf_month: { aws: 5.00, azure: 10.67, gcp: 5.00, oracle: 2.88 },
-      // Monitoring — per month (base)
-      monitoring_month: { aws: 0.30, azure: 0.31, gcp: 0.18, oracle: 0.10 },
-      // ML / AI inference — per million tokens
-      ml_tokens_m: { aws: 2.70, azure: 4.50, gcp: 3.50, oracle: 1.02 },
-      // Virtual Desktop — per user/month
-      vdi_user_month: { aws: 31.50, azure: 32.00, gcp: 0.00, oracle: 24.00 },
-      // Backup — per GB/month
-      backup_gb_month: { aws: 0.050, azure: 0.020, gcp: 0.023, oracle: 0.026 },
+      compute_vcpu_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      compute_ram_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      storage_primary_gb: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      storage_archive_gb: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      storage_object_gb: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      database_vcpu_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      database_storage_gb: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      networking_egress_gb: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      lb_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      k8s_cluster_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      waf_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      monitoring_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      ml_tokens_m: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      vdi_user_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
+      backup_gb_month: { aws: 0, azure: 0, gcp: 0, oracle: 0 },
     };
 
     // ── Service group definitions ─────────────────────────────────
@@ -5508,9 +5106,9 @@
 
     // ── Pricing lookup ────────────────────────────────────────────
     function calcGetPrice(key, csp) {
-      // First try to find from loaded pricing catalog
-      const allItems = [...(pricingData.aws || []), ...(pricingData.azure || []), ...(pricingData.gcp || []), ...(pricingData.oracle || [])];
-      // key mappings to catalog short names
+      // 1. First attempt: Use dynamic, user-uploaded data
+      const data = csoPricingData.length > 0 ? csoPricingData : [];
+      
       const keyMap = {
         compute_vcpu_month: ['EC2', 'Virtual Machines', 'Compute Engine', 'Compute'],
         storage_primary_gb: ['EBS', 'Managed Disks', 'Persistent Disk', 'Block Volumes'],
@@ -5526,16 +5124,24 @@
         backup_gb_month: ['S3', 'Blob Storage'],
         k8s_cluster_month: ['EKS', 'AKS', 'GKE', 'Container Engine'],
       };
-      const names = keyMap[key] || [];
-      const cspItems = allItems.filter(i => (i.csp || '') === csp);
-      for (const name of names) {
-        const match = cspItems.find(i => (i.shortName || '').toLowerCase().includes(name.toLowerCase()));
-        if (match && match.custUnitPrice) {
-          const p = parseFloat(match.custUnitPrice);
-          if (!isNaN(p) && p > 0) return p;
+
+      const searchNames = keyMap[key] || [];
+      const targetCsp = csp.toLowerCase();
+
+      if (data.length) {
+        // Filter rows belonging to the requested CSP
+        const cspItems = data.filter(r => (r.csp_injected === targetCsp || (r.csp && r.csp.toLowerCase() === targetCsp)));
+
+        for (const name of searchNames) {
+          const match = cspItems.find(i => (i.csoshortname || '').toLowerCase().includes(name.toLowerCase()));
+          if (match) {
+            const price = parseFloat(match.customerunitprice);
+            if (!isNaN(price) && price > 0) return price;
+          }
         }
       }
-      // Fall back to built-in
+
+      // 2. Second attempt: Fallback to built-in pricing or hardcoded defaults
       return CALC_BASE_PRICES[key]?.[csp] ?? 0;
     }
 
@@ -5605,14 +5211,13 @@
       if (cfg.vdi_enabled) {
         const vdiRate = calcGetPrice('vdi_user_month', csp);
         vdiCost = (vdiRate > 0) ? (cfg.vdi_users || 0) * vdiRate : 0;
-        if (csp === 'gcp' && cfg.vdi_enabled) vdiCost = (cfg.vdi_users || 0) * 32; // GCP Cloud Workstations
       }
       breakdown['Virtual Desktop'] = vdiCost;
 
       // Monitoring
       let monCost = 0;
       if (cfg.mon_enabled) {
-        monCost = (cfg.mon_logs_gb || 0) * calcGetPrice('monitoring_month', csp) * 5 + 8;
+        monCost = (cfg.mon_logs_gb || 0) * calcGetPrice('monitoring_month', csp);
       }
       breakdown['Monitoring'] = monCost;
 

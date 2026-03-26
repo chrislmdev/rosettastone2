@@ -1,0 +1,7 @@
+csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU),Compute - GPU,C1001,aws,Compute,IL2|IL4|IL5,TRUE
+Object/Block Storage,S3 Standard,S3-001,aws,Storage,IL5,FALSE
+Managed SQL DB,RDS PostgreSQL,D3001,aws,Database,IL5,FALSE
+Direct Connection,Direct Connect,N4001,aws,Networking,IL5,FALSE
+GenAI Services,Bedrock - Claude 3,A5001,aws,AI and Machine Learning,IL5,TRUE
+App Hosting,Amazon ECS/EKS,C1201,aws,Compute,IL5,FALSE

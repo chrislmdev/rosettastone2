@@ -1,0 +1,3 @@
+ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+"E-AZ-002","Database - SQL","IL6","Pending","Section 6.1.2.9","IL6 requirement for mission critical DB","High"
+"E-AZ-201","Storage - Block - SSD","IL6","Approved","Section 1.2","Compliance for secure block volumes","High"

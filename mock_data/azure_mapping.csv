@@ -1,0 +1,7 @@
+csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU),Azure VM - D-Series,C1002,azure,Compute,IL2|IL4|IL5|IL6,FALSE
+Object/Block Storage,Storage - Block - SSD,S2001,azure,Storage,IL6,FALSE
+Managed SQL DB,Azure SQL,D3002,azure,Database,IL5,TRUE
+Direct Connection,ExpressRoute,N4002,azure,Networking,IL5,FALSE
+GenAI Services,OpenAI ChatGPT-4,A5002,azure,AI and Machine Learning,IL5,TRUE
+App Hosting,Azure App Service,C2101,azure,Compute,IL5,FALSE
