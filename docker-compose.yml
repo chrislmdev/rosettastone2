@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: rosetta_db
+    environment:
+      POSTGRES_DB: rosettastone
+      POSTGRES_USER: rosetta
+      POSTGRES_PASSWORD: rosetta
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: rosetta_api
+    environment:
+      PORT: 3001
+      DATABASE_URL: postgres://rosetta:rosetta@db:5432/rosettastone
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+
+  web:
+    image: nginx:stable
+    container_name: rosetta_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
