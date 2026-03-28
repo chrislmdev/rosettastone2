@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RosettaStone | Cloud Service Provider Comparison</title>
+  <title>CloudPrism | Cloud Intelligence Platform</title>
+  <meta name="description" content="CloudPrism — FinOps FOCUS 1.3 aligned cloud pricing intelligence for JWCC contract vehicles.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
@@ -953,11 +954,61 @@
     }
 
     .pricing-table-wrap {
-      overflow-x: auto
+      overflow-x: auto;
+      width: 100%
     }
 
     .pricing-table-wrap table {
-      min-width: 1100px
+      width: 100%;
+      table-layout: fixed
+    }
+
+    .pricing-table-wrap th,
+    .pricing-table-wrap td {
+      overflow-wrap: break-word;
+      white-space: normal;
+      word-break: break-word
+    }
+
+    /* Column widths for pricing catalog */
+    #priceTable th:nth-child(1) { width: 5% }   /* CSP */
+    #priceTable th:nth-child(2) { width: 9% }   /* Category */
+    #priceTable th:nth-child(3) { width: 12% }  /* Title */
+    #priceTable th:nth-child(4) { width: 9% }   /* Short Name */
+    #priceTable th:nth-child(5) { width: 18% }  /* Description */
+    #priceTable th:nth-child(6) { width: 9% }   /* Catalog # */
+    #priceTable th:nth-child(7) { width: 8% }   /* Comm. Unit Price */
+    #priceTable th:nth-child(8) { width: 7% }   /* Comm. Unit of Issue */
+    #priceTable th:nth-child(9) { width: 8% }   /* jwccunitprice */
+    #priceTable th:nth-child(10) { width: 7% }  /* jwccunitofissue */
+    #priceTable th:nth-child(11) { width: 8% }  /* Discount/Premium */
+    #priceTable th:nth-child(12) { width: 5% }  /* Actions */
+
+    /* Exception charts grid */
+    .exc-charts-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 20px
+    }
+    .exc-chart-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column
+    }
+    .exc-chart-card h4 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 12px
+    }
+    .exc-chart-card canvas {
+      flex: 1
     }
 
     .pt-csp-badge {
@@ -2452,6 +2503,8 @@
       }
     }
   </style>
+  <!-- Chart.js for exception analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
@@ -2495,8 +2548,8 @@
   <nav>
     <div class="nav-inner">
       <a href="#" class="logo">
-        <div class="logo-mark">R</div>
-        <span class="logo-text">RosettaStone</span>
+        <div class="logo-mark">C</div>
+        <span class="logo-text">CloudPrism</span>
       </a>
       <div class="nav-tabs">
         <button class="nav-tab active" data-page="services" onclick="switchPage('services',this)">
@@ -2842,7 +2895,7 @@
         <div>
           <h2>Pricing Catalog</h2>
           <p>Upload monthly CSV price lists from each CSP. Columns: Title, Short Name, Description, Catalog #,
-            Commercial Unit Price, Commercial Unit of Issue, Customer Unit Price, Customer Unit of Issue,
+            Commercial Unit Price, Commercial Unit of Issue, jwccunitprice, jwccunitofissue,
             Discount/Premium/Fee</p>
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -2919,8 +2972,8 @@
               <th>Catalog #</th>
               <th>Comm. Unit Price</th>
               <th>Comm. Unit of Issue</th>
-              <th>Cust. Unit Price</th>
-              <th>Cust. Unit of Issue</th>
+              <th>JWCC Unit Price</th>
+              <th>JWCC Unit of Issue</th>
               <th>Discount / Premium / Fee</th>
               <th style="width:60px">Actions</th>
             </tr>
@@ -2998,11 +3051,11 @@
             <input class="form-input" type="text" id="m-cui" placeholder="e.g. Hour">
           </div>
           <div class="form-group">
-            <label class="form-label">Customer Unit Price</label>
+            <label class="form-label">JWCC Unit Price</label>
             <input class="form-input" type="number" id="m-kusp" placeholder="0.00" step="0.0001">
           </div>
           <div class="form-group">
-            <label class="form-label">Customer Unit of Issue</label>
+            <label class="form-label">JWCC Unit of Issue</label>
             <input class="form-input" type="text" id="m-kusi" placeholder="e.g. Hour">
           </div>
         </div>
@@ -3207,7 +3260,38 @@
           </select>
           <span class="select-arrow">▾</span>
         </div>
+        <div class="select-wrap">
+          <select id="excImpactFilter" onchange="renderExceptions()">
+            <option value="">Impact: All</option>
+            <option value="il2">IL2</option>
+            <option value="il4">IL4</option>
+            <option value="il5">IL5</option>
+            <option value="il6">IL6</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+        <div class="select-wrap">
+          <select id="excServiceFilter" onchange="renderExceptions()">
+            <option value="">Service: All</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
         <span id="excCount" style="font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-left:auto"></span>
+      </div>
+      <!-- Exception Analytics Charts -->
+      <div class="exc-charts-grid" id="excChartsGrid" style="display:none">
+        <div class="exc-chart-card">
+          <h4>Exceptions by Service</h4>
+          <canvas id="excChartByService" role="img" aria-label="Bar chart showing top exceptions by CSO short name"></canvas>
+        </div>
+        <div class="exc-chart-card">
+          <h4>Status Breakdown</h4>
+          <canvas id="excChartByStatus" role="img" aria-label="Doughnut chart showing exception status distribution"></canvas>
+        </div>
+        <div class="exc-chart-card">
+          <h4>Impact Level by CSP</h4>
+          <canvas id="excChartByImpact" role="img" aria-label="Stacked bar chart showing exceptions by impact level per CSP"></canvas>
+        </div>
       </div>
       <div class="pricing-table-wrap">
         <table>
@@ -3373,7 +3457,7 @@
             <strong>⚠ Assumptions & Disclaimer</strong><br>
             Estimates are based on on-demand / pay-as-you-go list prices from the loaded pricing catalog. Reserved
             instance, committed use, or spot/preemptible discounts are not applied unless reflected in the catalog's
-            customer unit price. Storage assumes standard tier pricing. Networking egress costs are estimated at 5
+            jwccunitprice. Storage assumes standard tier pricing. Networking egress costs are estimated at 5
             GB/day. All figures are approximate and should be verified against official CSP pricing pages before
             procurement decisions.
           </div>
@@ -3760,8 +3844,8 @@
       // Sorting
       if (sortVal === 'title') rows.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
       else if (sortVal === 'category') rows.sort((a, b) => (a.mapped_category || '').localeCompare(b.mapped_category || ''));
-      else if (sortVal === 'price-asc') rows.sort((a, b) => parseFloat(a.customerunitprice || 0) - parseFloat(b.customerunitprice || 0));
-      else if (sortVal === 'price-desc') rows.sort((a, b) => parseFloat(b.customerunitprice || 0) - parseFloat(a.customerunitprice || 0));
+      else if (sortVal === 'price-asc') rows.sort((a, b) => parseFloat(a.jwccunitprice || 0) - parseFloat(b.jwccunitprice || 0));
+      else if (sortVal === 'price-desc') rows.sort((a, b) => parseFloat(b.jwccunitprice || 0) - parseFloat(a.jwccunitprice || 0));
 
       if (!rows.length) {
         tbody.innerHTML = '';
@@ -3783,8 +3867,8 @@
       <td class="cat-num">${r.catalogitemnumber || ''}</td>
       <td class="price-val">$${parseFloat(r.commercialunitprice || 0).toFixed(4)}</td>
       <td class="uoi">${r.commercialunitofissue || ''}</td>
-      <td class="price-val"><strong>$${parseFloat(r.customerunitprice || 0).toFixed(4)}</strong></td>
-      <td class="uoi">${r.customerunitofissue || ''}</td>
+      <td class="price-val"><strong>$${parseFloat(r.jwccunitprice || 0).toFixed(4)}</strong></td>
+      <td class="uoi">${r.jwccunitofissue || ''}</td>
       <td class="${isNeg ? 'price-disc-neg' : 'price-disc'}">${disc}</td>
       <td>
         <button class="btn btn-ghost" style="padding:2px 4px" title="Edit" onclick="openEditModal('${r.catalogitemnumber}')">✎</button>
@@ -3897,21 +3981,21 @@
     // EXPORT / SAMPLE CSV
     // ════════════════════════════════════════════════════════════
     function exportPricingCSV() {
-      let lines = ['CSP,Category,Title,Short Name,Description,Catalog #,Commercial Unit Price,Commercial Unit of Issue,Customer Unit Price,Customer Unit of Issue,Discount/Premium/Fee'];
+      let lines = ['CSP,Category,Title,Short Name,Description,Catalog #,Commercial Unit Price,Commercial Unit of Issue,JWCC Unit Price,JWCC Unit of Issue,Discount/Premium/Fee'];
       ['aws', 'azure', 'gcp', 'oracle'].forEach(csp => {
         pricingData[csp].forEach(r => {
-          lines.push([csp.toUpperCase(), r.category, r.title, r.shortName, r.description, r.catalogNum, r.commUnitPrice, r.commUnitIssue, r.custUnitPrice, r.custUnitIssue, r.discountFee].map(v => `"${String(v || '').replace(/"/g, '""')}"`).join(','));
+          lines.push([csp.toUpperCase(), r.category, r.title, r.shortName, r.description, r.catalogNum, r.commUnitPrice, r.commUnitIssue, r.jwccUnitPrice, r.jwccUnitIssue, r.discountFee].map(v => `"${String(v || '').replace(/"/g, '""')}"`).join(','));
         });
       });
-      downloadBlob(lines.join('\n'), 'rosettastone-pricing-export.csv', 'text/csv');
+      downloadBlob(lines.join('\n'), 'cloudprism-pricing-export.csv', 'text/csv');
       showToast('✓ Exported pricing data', 'success');
     }
 
     function downloadSampleCSV() {
-      let lines = ['Category,Title,Short Name,Description,Catalog #,Commercial Unit Price,Commercial Unit of Issue,Customer Unit Price,Customer Unit of Issue,Discount/Premium/Fee'];
+      let lines = ['Category,Title,Short Name,Description,Catalog #,Commercial Unit Price,Commercial Unit of Issue,JWCC Unit Price,JWCC Unit of Issue,Discount/Premium/Fee'];
       lines.push('"Compute","Amazon EC2 On-Demand (c6i.large)","EC2","2 vCPU / 4 GiB compute instance","AWS-EC2-001","0.0850","Hour","0.0765","Hour","-10%"');
       lines.push('"Storage","Amazon S3 Standard Storage","S3","Object storage – first 50 TB/month","AWS-S3-001","0.0230","GB/Month","0.0207","GB/Month","-10%"');
-      downloadBlob(lines.join('\n'), 'rosettastone-sample.csv', 'text/csv');
+      downloadBlob(lines.join('\n'), 'cloudprism-sample.csv', 'text/csv');
       showToast('✓ Sample CSV downloaded');
     }
 
@@ -3957,8 +4041,8 @@
       document.getElementById('m-cat').value = r.catalogitemnumber || '';
       document.getElementById('m-cup').value = r.commercialunitprice || '';
       document.getElementById('m-cui').value = r.commercialunitofissue || '';
-      document.getElementById('m-kusp').value = r.customerunitprice || '';
-      document.getElementById('m-kusi').value = r.customerunitofissue || '';
+      document.getElementById('m-kusp').value = r.jwccunitprice || '';
+      document.getElementById('m-kusi').value = r.jwccunitofissue || '';
       document.getElementById('m-dpf').value = r.discountpremiumfee || '';
       document.getElementById('rowModal').classList.add('open');
     }
@@ -3976,8 +4060,8 @@
         catalogitemnumber: document.getElementById('m-cat').value.trim(),
         commercialunitprice: document.getElementById('m-cup').value,
         commercialunitofissue: document.getElementById('m-cui').value.trim(),
-        customerunitprice: document.getElementById('m-kusp').value,
-        customerunitofissue: document.getElementById('m-kusi').value.trim(),
+        jwccunitprice: document.getElementById('m-kusp').value,
+        jwccunitofissue: document.getElementById('m-kusi').value.trim(),
         discountpremiumfee: document.getElementById('m-dpf').value.trim()
       };
 
@@ -4587,12 +4671,12 @@
       // Build a simple picker modal
       let rows = allPricing.slice(0, 300).map(r => `
     <div class="igce-catalog-row" onclick="igcePickCatalogItem(${JSON.stringify({
-        desc: r.title, cat: '', unit: r.customerunitofissue || 'Month',
-        qty: 1, unitPrice: parseFloat(r.customerunitprice || 0), notes: r.csoshortname || ''
+        desc: r.title, cat: '', unit: r.jwccunitofissue || 'Month',
+        qty: 1, unitPrice: parseFloat(r.jwccunitprice || 0), notes: r.csoshortname || ''
       }).replace(/"/g, '&quot;')})">
       <span class="pt-csp-badge cso" style="flex-shrink:0">CSO</span>
       <span style="font-size:11px">${escH(r.title || '')}</span>
-      <span class="igce-catalog-price">$${parseFloat(r.customerunitprice || 0).toFixed(4)} / ${escH(r.customerunitofissue || '')}</span>
+      <span class="igce-catalog-price">$${parseFloat(r.jwccunitprice || 0).toFixed(4)} / ${escH(r.jwccunitofissue || '')}</span>
     </div>`).join('');
 
       document.getElementById('igce-catalog-list').innerHTML = rows;
@@ -5195,7 +5279,7 @@
         for (const name of searchNames) {
           const match = cspItems.find(i => (i.csoshortname || '').toLowerCase().includes(name.toLowerCase()));
           if (match) {
-            const price = parseFloat(match.customerunitprice);
+            const price = parseFloat(match.jwccunitprice || match.jwccunitprice);
             if (!isNaN(price) && price > 0) return price;
           }
         }

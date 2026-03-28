@@ -3,33 +3,62 @@ version: "3.9"
 services:
   db:
     image: postgres:16
-    container_name: rosetta_db
+    container_name: cloudprism_db
     environment:
-      POSTGRES_DB: rosettastone
-      POSTGRES_USER: rosetta
-      POSTGRES_PASSWORD: rosetta
+      POSTGRES_DB: cloudprism
+      POSTGRES_USER: cloudprism
+      POSTGRES_PASSWORD: cloudprism
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./infra/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
 
+  redis:
+    image: redis:7-alpine
+    container_name: cloudprism_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    command: redis-server --appendonly yes
+
   api:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: rosetta_api
+    container_name: cloudprism_api
     environment:
       PORT: 3001
-      DATABASE_URL: postgres://rosetta:rosetta@db:5432/rosettastone
+      DATABASE_URL: postgres://cloudprism:cloudprism@db:5432/cloudprism
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: change-me-in-production-use-long-random-string
     ports:
       - "3001:3001"
     depends_on:
       - db
+      - redis
+    volumes:
+      - uploads:/tmp/cloudprism-uploads
+
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cloudprism_worker
+    command: node src/worker.js
+    environment:
+      DATABASE_URL: postgres://cloudprism:cloudprism@db:5432/cloudprism
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - uploads:/tmp/cloudprism-uploads
 
   web:
     image: nginx:stable
-    container_name: rosetta_web
+    container_name: cloudprism_web
     ports:
       - "8080:80"
     volumes:
@@ -39,3 +68,5 @@ services:
 
 volumes:
   pgdata:
+  redisdata:
+  uploads:
