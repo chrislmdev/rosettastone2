@@ -2515,15 +2515,19 @@
           </svg>
           <span>Pricing Catalog</span>
         </button>
-        <button class="nav-tab" data-page="igce" onclick="switchPage('igce',this)">
+        <button class="nav-tab" data-page="exceptions" onclick="switchPage('exceptions',this)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <polyline points="14 2 14 8 20 8" />
-            <line x1="16" y1="13" x2="8" y2="13" />
-            <line x1="16" y1="17" x2="8" y2="17" />
-            <polyline points="10 9 9 9 8 9" />
+            <path d="M9 12l2 2 4-4" />
+            <circle cx="12" cy="12" r="9" />
           </svg>
-          <span>IGCE Builder</span>
+          <span>Exceptions</span>
+        </button>
+        <button class="nav-tab" data-page="changes" onclick="switchPage('changes',this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 17 9 11 13 15 21 7" />
+            <polyline points="14 7 21 7 21 14" />
+          </svg>
+          <span>Catalog Changes</span>
         </button>
         <button class="nav-tab" data-page="calc" onclick="switchPage('calc',this)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -2703,7 +2707,9 @@
           <h2>Data Management (Admin)</h2>
           <p>Upload monthly CSV files to update the application's underlying data schemas for each Cloud Service Provider (CSP).</p>
         </div>
-        <div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <label style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">Import Month</label>
+          <input type="month" id="importMonth" style="padding:6px 8px;border-radius:8px;border:1px solid var(--border)" />
           <button class="btn btn-ghost" onclick="loadSampleAdminData()">⬇ Load All Mock Data</button>
         </div>
       </div>
@@ -2883,42 +2889,7 @@
           <div class="ms-dropdown" id="ms-pcat-drop">
             <div class="ms-clear" onclick="clearMs('pcat')">Clear all</div>
             <div class="ms-sep"></div>
-            <div id="ms-pcat-opts">
-              <div class="ms-option" data-ms="pcat" data-val="Compute" onclick="toggleMsOpt('pcat','Compute',this)">
-                <span class="ms-check"></span>Compute
-              </div>
-              <div class="ms-option" data-ms="pcat" data-val="Storage" onclick="toggleMsOpt('pcat','Storage',this)">
-                <span class="ms-check"></span>Storage
-              </div>
-              <div class="ms-option" data-ms="pcat" data-val="Database" onclick="toggleMsOpt('pcat','Database',this)">
-                <span class="ms-check"></span>Database
-              </div>
-              <div class="ms-option" data-ms="pcat" data-val="Networking"
-                onclick="toggleMsOpt('pcat','Networking',this)"><span class="ms-check"></span>Networking</div>
-              <div class="ms-option" data-ms="pcat" data-val="AI and Machine Learning"
-                onclick="toggleMsOpt('pcat','AI and Machine Learning',this)"><span class="ms-check"></span>AI / ML</div>
-              <div class="ms-option" data-ms="pcat" data-val="Security" onclick="toggleMsOpt('pcat','Security',this)">
-                <span class="ms-check"></span>Security
-              </div>
-              <div class="ms-option" data-ms="pcat" data-val="Integration"
-                onclick="toggleMsOpt('pcat','Integration',this)"><span class="ms-check"></span>Integration</div>
-              <div class="ms-option" data-ms="pcat" data-val="Analytics" onclick="toggleMsOpt('pcat','Analytics',this)">
-                <span class="ms-check"></span>Analytics
-              </div>
-              <div class="ms-option" data-ms="pcat" data-val="Developer Tools"
-                onclick="toggleMsOpt('pcat','Developer Tools',this)"><span class="ms-check"></span>Developer Tools</div>
-              <div class="ms-option" data-ms="pcat" data-val="Management and Governance"
-                onclick="toggleMsOpt('pcat','Management and Governance',this)"><span class="ms-check"></span>Management
-              </div>
-              <div class="ms-option" data-ms="pcat" data-val="Internet of Things"
-                onclick="toggleMsOpt('pcat','Internet of Things',this)"><span class="ms-check"></span>IoT</div>
-              <div class="ms-option" data-ms="pcat" data-val="Migration" onclick="toggleMsOpt('pcat','Migration',this)">
-                <span class="ms-check"></span>Migration
-              </div>
-              <div class="ms-option" data-ms="pcat" data-val="End User Computing"
-                onclick="toggleMsOpt('pcat','End User Computing',this)"><span class="ms-check"></span>End User Computing
-              </div>
-            </div>
+            <div id="ms-pcat-opts"></div>
           </div>
         </div>
         <div class="select-wrap">
@@ -3205,6 +3176,121 @@
   </div>
 
   <!-- ══════════════════════════════════════════
+     PAGE: EXCEPTIONS
+══════════════════════════════════════════ -->
+  <div class="page" id="page-exceptions">
+    <div class="pricing-layout">
+      <div class="pricing-header">
+        <div>
+          <h2>Exceptions Library</h2>
+          <p>Search and filter `csoException` records by CSP, short name, impact level, and status.</p>
+        </div>
+      </div>
+      <div class="p-toolbar">
+        <div class="p-search search-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="excSearch" placeholder="Search exceptions..." oninput="renderExceptions()">
+        </div>
+        <div class="select-wrap">
+          <select id="excCspFilter" onchange="renderExceptions()">
+            <option value="">CSP: All</option>
+            <option value="aws">AWS</option>
+            <option value="azure">Azure</option>
+            <option value="gcp">GCP</option>
+            <option value="oracle">Oracle</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+        <div class="select-wrap">
+          <select id="excStatusFilter" onchange="renderExceptions()">
+            <option value="">Status: All</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+        <span id="excCount" style="font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-left:auto"></span>
+      </div>
+      <div class="pricing-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>CSP</th>
+              <th>Exception ID</th>
+              <th>Short Name</th>
+              <th>Impact Level</th>
+              <th>Status</th>
+              <th>PWS Requirement</th>
+              <th>Basis</th>
+              <th>Security</th>
+            </tr>
+          </thead>
+          <tbody id="excBody"></tbody>
+        </table>
+        <div id="excEmpty" class="empty-state" style="display:none">
+          <div class="es-icon">!</div>
+          <p>No exceptions match your filters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+     PAGE: CATALOG CHANGES
+══════════════════════════════════════════ -->
+  <div class="page" id="page-changes">
+    <div class="pricing-layout">
+      <div class="pricing-header">
+        <div>
+          <h2>Catalog Change Report</h2>
+          <p>Track adds/removes/updates and monthly price fluctuations keyed by CSP + Catalog Item #.</p>
+        </div>
+      </div>
+      <div class="p-toolbar">
+        <div class="select-wrap">
+          <select id="chgCspFilter" onchange="renderCatalogChanges()">
+            <option value="">CSP: All</option>
+            <option value="aws">AWS</option>
+            <option value="azure">Azure</option>
+            <option value="gcp">GCP</option>
+            <option value="oracle">Oracle</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+        <div class="select-wrap">
+          <select id="chgTypeFilter" onchange="renderCatalogChanges()">
+            <option value="">Change Type: All</option>
+            <option value="added">Added</option>
+            <option value="removed">Removed</option>
+            <option value="updated">Updated</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+        <span id="chgCount" style="font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-left:auto"></span>
+      </div>
+      <div class="pricing-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>CSP</th>
+              <th>Catalog #</th>
+              <th>Title</th>
+              <th>Type</th>
+              <th>Cust Price Δ</th>
+              <th>Cust Price Δ%</th>
+              <th>Comm Price Δ</th>
+              <th>Comm Price Δ%</th>
+            </tr>
+          </thead>
+          <tbody id="chgBody"></tbody>
+        </table>
+        <div id="chgEmpty" class="empty-state" style="display:none">
+          <div class="es-icon">Δ</div>
+          <p>No change data yet. Load a month and compare against prior month.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
      PAGE: CLOUD CALCULATOR
 ══════════════════════════════════════════ -->
   <div class="page" id="page-calc">
@@ -3306,6 +3392,10 @@
     </div>
   </footer>
 
+  <script src="src/data/taxonomy.js"></script>
+  <script src="src/data/diff.js"></script>
+  <script src="src/app/exceptions.js"></script>
+  <script src="src/app/changes.js"></script>
   <script>
     // ════════════════════════════════════════════════════════════
     // DYNAMIC DATA MODELS (Modernized)
@@ -3313,9 +3403,19 @@
     let csoPricingData = [];
     let csoExceptionData = [];
     let csOParentServiceData = [];
+    let csoPricingEnriched = [];
+    let catalogHistoryByMonth = {};
+    let catalogChanges = [];
 
-    // LEGACY DATA (To be replaced)
-    const SERVICES = [];
+    function syncSharedState() {
+      window.csoPricingData = csoPricingData;
+      window.csoExceptionData = csoExceptionData;
+      window.csOParentServiceData = csOParentServiceData;
+      window.csoPricingEnriched = csoPricingEnriched;
+      window.catalogChanges = catalogChanges;
+      window.catalogHistoryByMonth = catalogHistoryByMonth;
+    }
+    syncSharedState();
 
     // ════════════════════════════════════════════════════════════
     // PRICING DATA STORE
@@ -3328,7 +3428,7 @@
     const CSV_COLS = ["title", "shortName", "description", "catalogNum", "commUnitPrice", "commUnitIssue", "custUnitPrice", "custUnitIssue", "discountFee"];
 
     // ════════════════════════════════════════════════════════════
-    // SAMPLE PRICING DATA (fake/demo)
+    // LEGACY SAMPLE DATA (kept for backward compatibility only)
     // ════════════════════════════════════════════════════════════
     const SAMPLE_DATA = {
       aws: [
@@ -3494,7 +3594,7 @@
       if (!body) return;
 
       const data = csOParentServiceData.length > 0 ? csOParentServiceData : [];
-      if (!data.length && !SERVICES.length) {
+      if (!data.length) {
         body.innerHTML = '';
         return;
       }
@@ -3573,7 +3673,7 @@
     }
 
     function populateCats() {
-      const data = csOParentServiceData.length > 0 ? csOParentServiceData : SERVICES;
+      const data = csOParentServiceData.length > 0 ? csOParentServiceData : [];
       const cats = [...new Set(data.map(s => s.category))].sort();
       const container = document.getElementById('ms-cat-opts');
       container.innerHTML = cats.map(c => `
@@ -3612,34 +3712,25 @@
       return '';
     }
 
-    function categorizeItem(r, mapping) {
-      if (!r) return 'Other';
-      const cID = (r.catalogitemnumber || '').toLowerCase();
-      const title = (r.title || '').toLowerCase();
-      const short = (r.csoshortname || '').toLowerCase();
-      const desc = (r.description || '').toLowerCase();
+    function normalizeCspValue(v) {
+      return String(v || '').toLowerCase().trim();
+    }
 
-      // Tier 1: Precise Catalog ID Match
-      if (mapping.length) {
-        const match = mapping.find(p => p.catalogitemnumber?.toLowerCase() === cID);
-        if (match && match.category) return match.category;
+    function getCurrentImportMonth() {
+      const el = document.getElementById('importMonth');
+      return el && el.value ? el.value : 'unspecified';
+    }
+
+    function updatePricingEnrichment() {
+      if (window.enrichPricingRows) {
+        csoPricingEnriched = window.enrichPricingRows(csoPricingData, csOParentServiceData);
+      } else {
+        csoPricingEnriched = csoPricingData.map(r => ({ ...r, mapped_category: 'Other', classificationConfidence: 'low', classificationSource: 'fallback' }));
       }
-
-      // Tier 2: Service Short Name Match (Reuse category from other mapped services)
-      if (mapping.length) {
-        const match = mapping.find(p => p.csoshortname?.toLowerCase() === short);
-        if (match && match.category) return match.category;
+      syncSharedState();
+      if (window.populatePricingCategoryOptions) {
+        window.populatePricingCategoryOptions(msState);
       }
-
-      // Tier 3: Keyword Inference
-      if (title.includes('compute') || title.includes('vm') || title.includes('instance') || title.includes('gpu') || title.includes('container')) return 'Compute';
-      if (title.includes('storage') || title.includes('bucket') || title.includes('disk') || title.includes('s3') || title.includes('blob')) return 'Storage';
-      if (title.includes('sql') || title.includes('database') || title.includes('rds') || title.includes('cosmos')) return 'Database';
-      if (title.includes('network') || title.includes('vpc') || title.includes('vpn') || title.includes('load balancer') || title.includes('dns')) return 'Networking';
-      if (title.includes('security') || title.includes('iam') || title.includes('kms') || title.includes('waf') || title.includes('shield')) return 'Security';
-      if (title.includes('ai') || title.includes('ml') || title.includes('learning') || title.includes('transcription')) return 'AI and Machine Learning';
-
-      return 'Other';
     }
 
     function renderPricing() {
@@ -3652,22 +3743,7 @@
       if (!tbody) return;
 
       // Use Dynamic csoPricingData with Smart Categorization
-      let rows = csoPricingData.map(r => {
-        // 1. Check for injected CSP from upload
-        let csp = r.csp_injected || '—';
-
-        // 2. Fallback to mapping lookup if not injected
-        if (csp === '—' && csOParentServiceData.length) {
-          const parent = csOParentServiceData.find(p => p.catalogitemnumber === r.catalogitemnumber);
-          if (parent) csp = parent.csp || '—';
-        }
-
-        return {
-          ...r,
-          csp: csp.toLowerCase(),
-          mapped_category: categorizeItem(r, csOParentServiceData)
-        };
-      });
+      let rows = csoPricingEnriched.map(r => ({ ...r, csp: normalizeCspValue(r.csp_injected || r.csp || 'unknown') }));
 
       // Filters
       rows = rows.filter(r => (priceFilters[r.csp] || r.csp === '—'));
@@ -3675,7 +3751,7 @@
       if (q) {
         rows = rows.filter(r =>
           (r.title || '').toLowerCase().includes(q) ||
-          (r.csoshortname || '').toLowerCase().includes(q) ||
+          (r.csoshortname || r.shortName || '').toLowerCase().includes(q) ||
           (r.catalogitemnumber || '').toLowerCase().includes(q) ||
           (r.description || '').toLowerCase().includes(q)
         );
@@ -3716,7 +3792,7 @@
     </tr>`;
       }).join('');
 
-      if (meta) meta.innerHTML = `Showing <strong>${rows.length}</strong> of <strong>${csoPricingData.length}</strong> items`;
+      if (meta) meta.innerHTML = `Showing <strong>${rows.length}</strong> of <strong>${csoPricingEnriched.length}</strong> items`;
     }
 
     function updateMeta(csp) {
@@ -3931,6 +4007,10 @@
     // PAGE SWITCHING
     // ════════════════════════════════════════════════════════════
     function switchPage(name, btn) {
+      if (name === 'igce') {
+        showToast('IGCE builder moved to a separate app', 'error');
+        return;
+      }
       document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
       document.getElementById('page-' + name).classList.add('active');
@@ -3939,59 +4019,23 @@
 
     // ── ADMIN LOGIC ──────────────────────────────────────────────
     function loadSampleAdminData() {
-      // 1. CsoPricing Mock Data
-      const awsPricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
-"Compute - GPU - A10","Compute - GPU","High-performance NVIDIA A10 Tensor Core GPU","C1001",2.50,"GPU Per Hour",1.85,"GPU Per Hour","25%"
-"S3 Standard","Object Storage","Scalable object storage for any data type","S3-001",0.023,"GB Per Month",0.023,"GB Per Month","0%"`;
-      const azurePricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
-"Azure VM - D-Series","Compute - VM","General purpose Virtual Machine","C1002",0.096,"vCPU/Hour",0.0816,"vCPU/Hour","-15%"
-"Storage - Block - SSD","Storage - Block","High-speed SSD storage volume","S2001",0.12,"GB Per Month",0.09,"GB Per Month","25%"`;
-      const gcpPricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
-"GCE - N2 Instance","Compute - VM","Workload-optimized virtual machine","C1003",0.104,"vCPU/Hour",0.0832,"vCPU/Hour","-20%"
-"Cloud Storage - Nearline","Object Storage","Infrequent access object storage","S3003",0.01,"GB Per Month",0.008,"GB Per Month","-20%"`;
-      const oraclePricing = `title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
-"OCI Compute - E5","Compute - OCPU","AMD-based virtual machine shapes","C1004",0.025,"OCPU/Hour",0.0225,"OCPU/Hour","-10%"
-"OCI Object Storage","Object Storage","Scalable storage for OCI","S3004",0.025,"GB Per Month",0.02,"GB Per Month","-20%"`;
-
-      // 2. csoException Mock Data
-      const awsExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
-"E-AWS-001","Compute - GPU","IL5","Approved","Section 5.5.6.3","Special sovereign requirement for AI training","Moderate"`;
-      const azureExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
-"E-AZ-002","Database - SQL","IL6","Pending","Section 6.1.2.9","IL6 requirement for mission critical DB","High"`;
-      const gcpExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
-"E-GCP-003","AI/ML","IL5","Approved","Section 4.2.1","Generative AI exception for secure workloads","Moderate"`;
-      const oracleExc = `ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
-"E-OCI-004","Cloud Infrastructure Engineering","IL5","Approved","Section 2.1.2","Admin access exception for cleared personnel","High"`;
-
-      // 3. CsoParentService Mock Data
-      const awsMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
-Compute (VM/GPU),Compute - GPU,C1001,aws,Compute,IL2|IL4|IL5,TRUE
-Object/Block Storage,S3 Standard,S3-001,aws,Storage,IL5,FALSE`;
-      const azureMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
-Compute (VM/GPU),Azure VM - D-Series,C1002,azure,Compute,IL2|IL4|IL5|IL6,FALSE
-Object/Block Storage,Storage - Block - SSD,S2001,azure,Storage,IL6,FALSE`;
-      const gcpMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
-Compute (VM/GPU),GCE - N2 Instance,C1003,gcp,Compute,IL2|IL4,FALSE
-Object/Block Storage,Cloud Storage - Nearline,S3003,gcp,Storage,IL4,FALSE`;
-      const oracleMap = `csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
-Compute (VM/GPU),OCI Compute - E5,C1004,oracle,Compute,IL2|IL4|IL5,FALSE
-Object/Block Storage,OCI Object Storage,S3004,oracle,Storage,IL2,FALSE`;
-
-      // Clear current data
-      csoPricingData = []; csoExceptionData = []; csOParentServiceData = [];
-
-      // Load all by CSP
-      ['aws', 'azure', 'gcp', 'oracle'].forEach(csp => {
-        const p = csp === 'aws' ? awsPricing : csp === 'azure' ? azurePricing : csp === 'gcp' ? gcpPricing : oraclePricing;
-        const e = csp === 'aws' ? awsExc : csp === 'azure' ? azureExc : csp === 'gcp' ? gcpExc : oracleExc;
-        const m = csp === 'aws' ? awsMap : csp === 'azure' ? azureMap : csp === 'gcp' ? gcpMap : oracleMap;
-
-        handleAdminCSVRaw('csoPricing', p, csp);
-        handleAdminCSVRaw('csoException', e, csp);
-        handleAdminCSVRaw('csOParentService', m, csp);
+      Promise.all([
+        fetch('csoPricing_mock.csv').then(r => r.text()),
+        fetch('csoException_mock.csv').then(r => r.text()),
+        fetch('csOParentService_mock.csv').then(r => r.text())
+      ]).then(([pricingText, exceptionText, parentText]) => {
+        csoPricingData = [];
+        csoExceptionData = [];
+        csOParentServiceData = [];
+        ['aws', 'azure', 'gcp', 'oracle'].forEach(csp => {
+          handleAdminCSVRaw('csoPricing', pricingText, csp);
+          handleAdminCSVRaw('csoException', exceptionText, csp);
+          handleAdminCSVRaw('csOParentService', parentText, csp);
+        });
+        showToast('✓ Mock data loaded from CSV files', 'success');
+      }).catch(() => {
+        showToast('Failed to load mock CSV files', 'error');
       });
-
-      showToast('✓ Split sample data loaded with multi-IL support', 'success');
     }
 
     function clearAdminData(schema) {
@@ -4075,10 +4119,26 @@ Object/Block Storage,OCI Object Storage,S3004,oracle,Storage,IL2,FALSE`;
           csOParentServiceData = [...csOParentServiceData, ...rows];
         } else { csOParentServiceData = rows; }
       }
+      syncSharedState();
 
       updateAdminMeta(schema);
+      updatePricingEnrichment();
       renderServices();
       renderPricing();
+      if (typeof initExceptionsPage === 'function') initExceptionsPage();
+      if (typeof renderExceptions === 'function') renderExceptions();
+      if (schema === 'csoPricing') {
+        const monthKey = getCurrentImportMonth();
+        if (!catalogHistoryByMonth[monthKey]) catalogHistoryByMonth[monthKey] = [];
+        const forCsp = csoPricingData.filter(r => (r.csp_injected || '').toLowerCase() === (injectedCSP || '').toLowerCase());
+        if (forCsp.length) {
+          catalogHistoryByMonth[monthKey] = catalogHistoryByMonth[monthKey].filter(r => (r.csp_injected || '') !== (injectedCSP || '').toLowerCase());
+          catalogHistoryByMonth[monthKey].push(...forCsp);
+        }
+        if (window.computeCatalogChanges) catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth);
+        syncSharedState();
+        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+      }
       if (typeof calcRun === 'function') calcRun();
     }
 
@@ -4871,13 +4931,13 @@ Object/Block Storage,OCI Object Storage,S3004,oracle,Storage,IL2,FALSE`;
     (() => { const d = document.getElementById('igce-date'); if (d) d.value = new Date().toISOString().split('T')[0]; })();
 
     // ── INIT ──
+    updatePricingEnrichment();
     populateCats();
     renderServices();
     renderPricing();
-    ['igce-escalation', 'igce-fee'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener('input', igceRecalc);
-    });
+    if (typeof initExceptionsPage === 'function') initExceptionsPage();
+    if (typeof renderExceptions === 'function') renderExceptions();
+    if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
     // NOTE: calcInit() is called at bottom of script after all calculator code is defined
 
 
@@ -5580,26 +5640,6 @@ Object/Block Storage,OCI Object Storage,S3004,oracle,Storage,IL2,FALSE`;
     calcInit();
 
   </script>
-
-  <!-- IGCE Catalog Picker Modal -->
-  <div class="modal-overlay" id="igce-catalog-modal">
-    <div class="modal" style="max-width:640px">
-      <div class="modal-head">
-        <h3>Pick from Pricing Catalog</h3>
-        <button class="modal-close"
-          onclick="document.getElementById('igce-catalog-modal').classList.remove('open')">✕</button>
-      </div>
-      <div class="modal-body" style="padding:12px 16px">
-        <div style="position:relative;margin-bottom:10px">
-          <span
-            style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:12px">🔍</span>
-          <input type="text" id="igce-catalog-search" placeholder="Filter catalog items…" oninput="igceCatalogFilter()"
-            style="width:100%;padding-left:30px">
-        </div>
-        <div id="igce-catalog-list" style="max-height:420px;overflow-y:auto"></div>
-      </div>
-    </div>
-  </div>
 
 </body>
 
