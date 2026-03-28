@@ -1,28 +1,120 @@
+/**
+ * CloudPrism API Server
+ */
 import express from "express";
 import cors from "cors";
+import multer from "multer";
+import { createHash } from "crypto";
+import { stat } from "fs/promises";
 import pkg from "pg";
+import { loginHandler, requireAuth, createUserHandler } from "./auth.js";
+import { enqueueImport } from "./queue.js";
 
 const { Pool } = pkg;
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: "2mb" }));
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+
+// Multer: store uploads in shared volume, max 200MB
+const upload = multer({
+  dest: process.env.UPLOAD_DIR || "/tmp/cloudprism-uploads",
+  limits: { fileSize: 200 * 1024 * 1024 },
 });
 
+// ── Health ────────────────────────────────────────────────────
 app.get("/health", async (_req, res) => {
   try {
     await pool.query("select 1");
-    res.json({ ok: true });
+    res.json({ ok: true, service: "CloudPrism API" });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message });
   }
 });
 
+// ── Auth ──────────────────────────────────────────────────────
+app.post("/api/login", loginHandler);
+
+// Admin: create/update user (admin only)
+app.post("/api/users", requireAuth("admin"), createUserHandler);
+
+// ── Import endpoints ──────────────────────────────────────────
+// POST /api/import — upload a CSV and queue processing
+// Fields: file, csp (string), importMonth (YYYY-MM), fileType (pricing|parent|exceptions)
+app.post(
+  "/api/import",
+  requireAuth("admin"),
+  upload.single("file"),
+  async (req, res) => {
+    const { csp, importMonth, fileType } = req.body || {};
+    const file = req.file;
+
+    if (!file) return res.status(400).json({ error: "No file uploaded" });
+    if (!csp) return res.status(400).json({ error: "csp is required" });
+    if (!importMonth || !/^\d{4}-\d{2}$/.test(importMonth)) {
+      return res.status(400).json({ error: "importMonth must be YYYY-MM" });
+    }
+    if (!["pricing", "parent", "exceptions"].includes(fileType)) {
+      return res.status(400).json({ error: "fileType must be: pricing, parent, or exceptions" });
+    }
+
+    try {
+      // Compute file checksum for dedup detection
+      const buf = await import("fs").then((m) =>
+        m.promises.readFile(file.path)
+      );
+      const checksum = createHash("sha256").update(buf).digest("hex");
+
+      // Create audit record in pending state
+      const { rows } = await pool.query(
+        `insert into catalog_import
+           (import_month, csp, schema_name, source_file, checksum, status, imported_by)
+         values ($1, $2, $3, $4, $5, 'pending', $6)
+         returning id`,
+        [
+          importMonth,
+          csp.toLowerCase(),
+          fileType,
+          file.originalname,
+          checksum,
+          req.user?.username || "system",
+        ]
+      );
+      const importId = rows[0].id;
+
+      // Enqueue the background job
+      const jobId = await enqueueImport({
+        importId,
+        filePath: file.path,
+        csp: csp.toLowerCase(),
+        fileType,
+        importMonth,
+      });
+
+      res.json({ ok: true, importId, jobId });
+    } catch (err) {
+      console.error("import error:", err);
+      res.status(500).json({ error: err.message });
+    }
+  }
+);
+
+// GET /api/import/status/:importId — poll import progress
+app.get("/api/import/status/:importId", requireAuth("viewer"), async (req, res) => {
+  const { rows } = await pool.query(
+    "select id, status, row_count, error_message, imported_at from catalog_import where id=$1",
+    [req.params.importId]
+  );
+  if (!rows[0]) return res.status(404).json({ error: "Not found" });
+  res.json(rows[0]);
+});
+
+// GET /imports — list import history
 app.get("/imports", async (_req, res) => {
   const q = `
-    select id, import_month, csp, schema_name, source_file, row_count, imported_at
+    select id, import_month, csp, schema_name, source_file,
+           row_count, status, error_message, imported_by, imported_at
     from catalog_import
     order by imported_at desc
     limit 200
@@ -31,49 +123,102 @@ app.get("/imports", async (_req, res) => {
   res.json(rows);
 });
 
+// ── Pricing ───────────────────────────────────────────────────
 app.get("/pricing", async (req, res) => {
   const csp = String(req.query.csp || "").toLowerCase();
   const q = String(req.query.q || "").toLowerCase();
+  const focusCat = String(req.query.focus_category || "").toLowerCase();
   const params = [];
   const where = [];
+
   if (csp) {
     params.push(csp);
     where.push(`p.csp = $${params.length}`);
   }
   if (q) {
     params.push(`%${q}%`);
-    where.push(`(lower(p.title) like $${params.length} or lower(p.csoshortname) like $${params.length} or lower(p.description) like $${params.length})`);
+    where.push(
+      `(lower(p.title) like $${params.length} or lower(p.csoshortname) like $${params.length} or lower(p.description) like $${params.length})`
+    );
   }
+  if (focusCat) {
+    params.push(`%${focusCat}%`);
+    where.push(`lower(p.focus_category) like $${params.length}`);
+  }
+
   const sql = `
-    select p.*
+    select p.csp, p.catalogitemnumber, p.title, p.csoshortname, p.description,
+           p.list_unit_price, p.pricing_unit,
+           p.jwccunitprice, p.jwccunitofissue,
+           p.discountpremiumfee, p.service_category, p.focus_category
     from pricing_item p
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by p.csp, p.catalogitemnumber
-    limit 1000
+    limit 2000
   `;
   const { rows } = await pool.query(sql, params);
   res.json(rows);
 });
 
+// ── Exceptions ────────────────────────────────────────────────
 app.get("/exceptions", async (req, res) => {
   const csp = String(req.query.csp || "").toLowerCase();
+  const status = String(req.query.status || "").toLowerCase();
+  const impactLevel = String(req.query.impact_level || "").toLowerCase();
+  const service = String(req.query.service || "").toLowerCase();
   const params = [];
   const where = [];
+
   if (csp) {
     params.push(csp);
     where.push(`e.csp = $${params.length}`);
   }
+  if (status) {
+    params.push(status);
+    where.push(`lower(e.exceptionstatus) = $${params.length}`);
+  }
+  if (impactLevel) {
+    params.push(impactLevel);
+    where.push(`lower(e.impactlevel) = $${params.length}`);
+  }
+  if (service) {
+    params.push(`%${service}%`);
+    where.push(`lower(e.csoshortname) like $${params.length}`);
+  }
+
   const sql = `
     select e.*
     from exception_item e
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by e.csp, e.exceptionuniqueid
+    limit 2000
+  `;
+  const { rows } = await pool.query(sql, params);
+  res.json(rows);
+});
+
+// GET /exception-changes — exception field-level diff log
+app.get("/exception-changes", async (req, res) => {
+  const csp = String(req.query.csp || "").toLowerCase();
+  const params = [];
+  const where = [];
+  if (csp) {
+    params.push(csp);
+    where.push(`ecl.csp = $${params.length}`);
+  }
+  const sql = `
+    select ecl.*, ci.import_month, ci.source_file
+    from exception_change_log ecl
+    join catalog_import ci on ci.id = ecl.import_id
+    ${where.length ? `where ${where.join(" and ")}` : ""}
+    order by ecl.changed_at desc
     limit 1000
   `;
   const { rows } = await pool.query(sql, params);
   res.json(rows);
 });
 
+// ── Changes ───────────────────────────────────────────────────
 app.get("/changes", async (req, res) => {
   const csp = String(req.query.csp || "").toLowerCase();
   const params = [];
@@ -93,7 +238,30 @@ app.get("/changes", async (req, res) => {
   res.json(rows);
 });
 
+// ── Parent services ───────────────────────────────────────────
+app.get("/parent-services", async (req, res) => {
+  const csp = String(req.query.csp || "").toLowerCase();
+  const params = [];
+  const where = [];
+  if (csp) {
+    params.push(csp);
+    where.push(`ps.csp = $${params.length}`);
+  }
+  const sql = `
+    select ps.csp, ps.catalogitemnumber, ps.csoparentservice,
+           ps.csoshortname, ps.category, ps.focus_category,
+           ps.impactlevel, ps.newservice
+    from parent_service ps
+    ${where.length ? `where ${where.join(" and ")}` : ""}
+    order by ps.csp, ps.csoshortname
+    limit 2000
+  `;
+  const { rows } = await pool.query(sql, params);
+  res.json(rows);
+});
+
+// ── Start ─────────────────────────────────────────────────────
 const port = Number(process.env.PORT || 3001);
 app.listen(port, () => {
-  console.log(`api listening on ${port}`);
+  console.log(`CloudPrism API listening on port ${port}`);
 });
