@@ -12,6 +12,7 @@
     'Integration',
     'Migration',
     'End User Computing',
+    'Professional Services',
     'Other'
   ];
 
@@ -24,6 +25,7 @@
   }
 
   function inferCategory(text) {
+    if (/(professional services|managed service|technical account|tam|consulting|implementation service|support plan|premier support|training workshop|advisory)/.test(text)) return 'Professional Services';
     if (/(compute|vm|virtual machine|instance|kubernetes|container|serverless|lambda|function)/.test(text)) return 'Compute';
     if (/(storage|object|bucket|archive|block|file system|volume|blob|s3)/.test(text)) return 'Storage';
     if (/(database|sql|nosql|rds|postgres|mysql|cosmos|spanner|redis|cache)/.test(text)) return 'Database';

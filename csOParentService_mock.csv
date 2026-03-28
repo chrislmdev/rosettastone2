@@ -999,3 +999,7 @@
 "Virtual Machine Group 250","Virtual Machine","ITEM-01001","azure","Compute","IL2","false"
 "Virtual Machine Group 250","Virtual Machine","ITEM-01002","gcp","Compute","IL2","false"
 "Virtual Machine Group 250","Virtual Machine","ITEM-01003","oracle","Compute","IL4","false"
+"Professional Services — Implementation","Cloud Implementation","ITEM-01004","aws","Professional Services","IL5","false"
+"Professional Services — Implementation","Cloud Implementation","ITEM-01005","azure","Professional Services","IL5","false"
+"Professional Services — Implementation","Cloud Implementation","ITEM-01006","gcp","Professional Services","IL4","false"
+"Professional Services — Implementation","Cloud Implementation","ITEM-01007","oracle","Professional Services","IL5","false"

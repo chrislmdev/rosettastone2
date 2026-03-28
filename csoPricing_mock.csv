@@ -1,4 +1,4 @@
-title,csoShortName,description,catalogitemNumber,jwccUnitPrice,jwccunitofissue,jwccunitprice,jwccunitofissue,discountpremiumfee
+title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialUnitOfIssue,customerUnitPrice,customerUnitOfIssue,discountpremiumfee
 AWS Load Balancer (1),Load Balancer,Standard enterprise mapping for Load Balancer,ITEM-00004,18.746,Month,14.06,Month,25%
 AZURE Load Balancer (1),Load Balancer,Standard enterprise mapping for Load Balancer,ITEM-00005,16.994,Month,12.746,Month,25%
 GCP Load Balancer (1),Load Balancer,Standard enterprise mapping for Load Balancer,ITEM-00006,4.215,Month,3.161,Month,25%
@@ -999,3 +999,7 @@ AWS Virtual Machine (250),Virtual Machine,Standard enterprise mapping for Virtua
 AZURE Virtual Machine (250),Virtual Machine,Standard enterprise mapping for Virtual Machine,ITEM-01001,9.908,Month,7.431,Month,25%
 GCP Virtual Machine (250),Virtual Machine,Standard enterprise mapping for Virtual Machine,ITEM-01002,15.909,Month,11.932,Month,25%
 ORACLE Virtual Machine (250),Virtual Machine,Standard enterprise mapping for Virtual Machine,ITEM-01003,15.989,Month,11.992,Month,25%
+AWS Cloud Implementation (251),Cloud Implementation,Professional services — implementation and migration support,ITEM-01004,12500,Engagement,9375,Engagement,25%
+AZURE Cloud Implementation (251),Cloud Implementation,Professional services — implementation and migration support,ITEM-01005,11800,Engagement,8850,Engagement,25%
+GCP Cloud Implementation (251),Cloud Implementation,Professional services — implementation and migration support,ITEM-01006,11200,Engagement,8400,Engagement,25%
+ORACLE Cloud Implementation (251),Cloud Implementation,Professional services — implementation and migration support,ITEM-01007,12200,Engagement,9150,Engagement,25%
