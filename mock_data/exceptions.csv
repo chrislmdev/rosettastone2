@@ -1,6 +1,0 @@
-ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
-"E-9001","Compute - GPU","IL5","Approved","Section 5.5.6.3","Special sovereign requirement for AI training","Moderate"
-"E-9002","Database - SQL","IL6","Pending","Section 6.1.2.9","IL6 requirement for mission critical DB","High"
-"E-9003","AI/ML","IL5","Approved","Section 4.2.1","Generative AI exception for secure workloads","Moderate"
-"E-9004","Cloud Infrastructure Engineering","IL5","Approved","Section 2.1.2","Admin access exception for cleared personnel","High"
-"E-9005","Direct Connection","IL4","Approved","Section 5.1","Direct connectivity for hybrid cloud","Moderate"

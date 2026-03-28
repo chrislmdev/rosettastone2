@@ -55,6 +55,8 @@ const FOCUS_CATEGORY_MAP = {
   "transfer":             "Migration and Transfer",
   "end user computing":   "End User Computing",
   "desktop":              "End User Computing",
+  "professional services":"Professional Services",
+  "pro services":         "Professional Services",
 };
 
 function normalizeFocusCategory(rawCategory) {

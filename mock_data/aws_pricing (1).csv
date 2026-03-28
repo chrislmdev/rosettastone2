@@ -1,0 +1,168 @@
+title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+AWS EC2 - t3.micro Offer,EC2 - t3.micro,Official AWS Compute offering for t3.micro.,AWS-1000,1.7593,Instance/Hour,1.513,Instance/Hour,-14%
+AWS EC2 - t3.small Offer,EC2 - t3.small,Official AWS Compute offering for t3.small.,AWS-1001,0.5043,Instance/Hour,0.5497,Instance/Hour,9%
+AWS EC2 - t3.medium Offer,EC2 - t3.medium,Official AWS Compute offering for t3.medium.,AWS-1002,2.3105,Instance/Hour,2.1719,Instance/Hour,-6%
+AWS EC2 - m5.large Offer,EC2 - m5.large,Official AWS Compute offering for m5.large.,AWS-1003,2.0273,Instance/Hour,2.3111,Instance/Hour,14%
+AWS EC2 - m5.xlarge Offer,EC2 - m5.xlarge,Official AWS Compute offering for m5.xlarge.,AWS-1004,2.4355,Instance/Hour,2.0702,Instance/Hour,-15%
+AWS EC2 - c6g.large Offer,EC2 - c6g.large,Official AWS Compute offering for c6g.large.,AWS-1005,0.4684,Instance/Hour,0.5012,Instance/Hour,7%
+AWS EC2 - r6g.xlarge Offer,EC2 - r6g.xlarge,Official AWS Compute offering for r6g.xlarge.,AWS-1006,2.8806,Instance/Hour,2.7942,Instance/Hour,-3%
+AWS EC2 - p3.2xlarge Offer,EC2 - p3.2xlarge,Official AWS Compute offering for p3.2xlarge.,AWS-1007,1.8761,Instance/Hour,1.8011,Instance/Hour,-4%
+AWS EC2 - g4dn.xlarge Offer,EC2 - g4dn.xlarge,Official AWS Compute offering for g4dn.xlarge.,AWS-1008,1.8699,Instance/Hour,2.1504,Instance/Hour,15%
+AWS S3 - Standard Offer,S3 - Standard,Official AWS Storage offering for Standard.,AWS-1009,0.0087,GB Per Month,0.0092,GB Per Month,6%
+AWS S3 - Intelligent-Tiering Offer,S3 - Intelligent-Tiering,Official AWS Storage offering for Intelligent-Tiering.,AWS-1010,0.0026,GB Per Month,0.0026,GB Per Month,1%
+AWS S3 - Standard-IA Offer,S3 - Standard-IA,Official AWS Storage offering for Standard-IA.,AWS-1011,0.0152,GB Per Month,0.0154,GB Per Month,1%
+AWS S3 - One Zone-IA Offer,S3 - One Zone-IA,Official AWS Storage offering for One Zone-IA.,AWS-1012,0.0019,GB Per Month,0.0015,GB Per Month,-19%
+AWS S3 - Glacier Instant Retrieval Offer,S3 - Glacier Instant Retrieval,Official AWS Storage offering for Glacier Instant Retrieval.,AWS-1013,0.029,GB Per Month,0.0244,GB Per Month,-16%
+AWS S3 - Glacier Flexible Retrieval Offer,S3 - Glacier Flexible Retrieval,Official AWS Storage offering for Glacier Flexible Retrieval.,AWS-1014,0.0148,GB Per Month,0.012,GB Per Month,-19%
+AWS S3 - Glacier Deep Archive Offer,S3 - Glacier Deep Archive,Official AWS Storage offering for Glacier Deep Archive.,AWS-1015,0.0031,GB Per Month,0.0028,GB Per Month,-10%
+AWS RDS - db.t3.micro Offer,RDS - db.t3.micro,Official AWS Database offering for db.t3.micro.,AWS-1016,1.9954,Instance/Hour,1.8757,Instance/Hour,-6%
+AWS RDS - db.t3.small Offer,RDS - db.t3.small,Official AWS Database offering for db.t3.small.,AWS-1017,0.8202,Instance/Hour,0.6808,Instance/Hour,-17%
+AWS RDS - db.m5.large Offer,RDS - db.m5.large,Official AWS Database offering for db.m5.large.,AWS-1018,0.3511,Instance/Hour,0.2949,Instance/Hour,-16%
+AWS RDS - db.r5.xlarge Offer,RDS - db.r5.xlarge,Official AWS Database offering for db.r5.xlarge.,AWS-1019,1.6032,Instance/Hour,1.3467,Instance/Hour,-16%
+AWS RDS - Aurora MySQL Offer,RDS - Aurora MySQL,Official AWS Database offering for Aurora MySQL.,AWS-1020,0.8575,Instance/Hour,0.9518,Instance/Hour,11%
+AWS RDS - Aurora PostgreSQL Offer,RDS - Aurora PostgreSQL,Official AWS Database offering for Aurora PostgreSQL.,AWS-1021,0.7705,Instance/Hour,0.5856,Instance/Hour,-24%
+AWS DynamoDB - On-Demand Read Offer,DynamoDB - On-Demand Read,Official AWS Database offering for On-Demand Read.,AWS-1022,0.8993,Million Requests,0.8453,Million Requests,-6%
+AWS DynamoDB - On-Demand Write Offer,DynamoDB - On-Demand Write,Official AWS Database offering for On-Demand Write.,AWS-1023,0.9537,Million Requests,0.7153,Million Requests,-25%
+AWS DynamoDB - Provisioned RCU Offer,DynamoDB - Provisioned RCU,Official AWS Database offering for Provisioned RCU.,AWS-1024,0.4613,Million Requests,0.3552,Million Requests,-23%
+AWS DynamoDB - Provisioned WCU Offer,DynamoDB - Provisioned WCU,Official AWS Database offering for Provisioned WCU.,AWS-1025,1.0444,Million Requests,0.94,Million Requests,-10%
+AWS CloudFront - Data Transfer Out (Internet) Offer,CloudFront - Data Transfer Out (Internet),Official AWS Networking offering for Data Transfer Out (Internet).,AWS-1026,0.0869,GB,0.0808,GB,-7%
+AWS CloudFront - Data Transfer Out (Origin) Offer,CloudFront - Data Transfer Out (Origin),Official AWS Networking offering for Data Transfer Out (Origin).,AWS-1027,0.0685,GB,0.0521,GB,-24%
+AWS CloudFront - HTTP Requests Offer,CloudFront - HTTP Requests,Official AWS Networking offering for HTTP Requests.,AWS-1028,0.0508,GB,0.0483,GB,-5%
+AWS CloudFront - HTTPS Requests Offer,CloudFront - HTTPS Requests,Official AWS Networking offering for HTTPS Requests.,AWS-1029,0.0731,GB,0.0731,GB,0%
+AWS SageMaker - ml.t2.medium Offer,SageMaker - ml.t2.medium,Official AWS AI/ML offering for ml.t2.medium.,AWS-1030,1.629,Instance/Hour,1.4824,Instance/Hour,-9%
+AWS SageMaker - ml.m5.large Offer,SageMaker - ml.m5.large,Official AWS AI/ML offering for ml.m5.large.,AWS-1031,3.0906,Instance/Hour,2.7815,Instance/Hour,-10%
+AWS SageMaker - ml.p3.2xlarge Offer,SageMaker - ml.p3.2xlarge,Official AWS AI/ML offering for ml.p3.2xlarge.,AWS-1032,0.0917,Instance/Hour,0.0724,Instance/Hour,-21%
+AWS SageMaker - Endpoint Hosting Offer,SageMaker - Endpoint Hosting,Official AWS AI/ML offering for Endpoint Hosting.,AWS-1033,1.4488,Instance/Hour,1.1446,Instance/Hour,-21%
+AWS SageMaker - Notebook Instance Offer,SageMaker - Notebook Instance,Official AWS AI/ML offering for Notebook Instance.,AWS-1034,0.7914,Instance/Hour,0.6648,Instance/Hour,-16%
+AWS WAF - Web ACL Offer,WAF - Web ACL,Official AWS Security offering for Web ACL.,AWS-1035,2.7728,Monthly/Million Requests,3.0501,Monthly/Million Requests,10%
+AWS WAF - Rule Offer,WAF - Rule,Official AWS Security offering for Rule.,AWS-1036,4.1579,Monthly/Million Requests,3.7837,Monthly/Million Requests,-9%
+AWS WAF - Request Inspection Offer,WAF - Request Inspection,Official AWS Security offering for Request Inspection.,AWS-1037,4.743,Monthly/Million Requests,4.7904,Monthly/Million Requests,1%
+AWS Redshift - dc2.large Offer,Redshift - dc2.large,Official AWS Analytics offering for dc2.large.,AWS-1038,8.9104,Instance/Hour,7.752,Instance/Hour,-13%
+AWS Redshift - ra3.xlargeplus Offer,Redshift - ra3.xlargeplus,Official AWS Analytics offering for ra3.xlargeplus.,AWS-1039,11.1227,Instance/Hour,9.788,Instance/Hour,-12%
+AWS Redshift - ra3.4xlarge Offer,Redshift - ra3.4xlarge,Official AWS Analytics offering for ra3.4xlarge.,AWS-1040,5.99,Instance/Hour,5.8702,Instance/Hour,-2%
+AWS Redshift - ra3.16xlarge Offer,Redshift - ra3.16xlarge,Official AWS Analytics offering for ra3.16xlarge.,AWS-1041,3.7177,Instance/Hour,3.5318,Instance/Hour,-5%
+AWS EBS - gp2 Offer,EBS - gp2,Official AWS Storage offering for gp2.,AWS-1042,0.0625,GB-Month,0.0519,GB-Month,-17%
+AWS EBS - gp3 Offer,EBS - gp3,Official AWS Storage offering for gp3.,AWS-1043,0.1015,GB-Month,0.0944,GB-Month,-7%
+AWS EBS - io1 Offer,EBS - io1,Official AWS Storage offering for io1.,AWS-1044,0.0794,GB-Month,0.0691,GB-Month,-13%
+AWS EBS - io2 Offer,EBS - io2,Official AWS Storage offering for io2.,AWS-1045,0.0789,GB-Month,0.0592,GB-Month,-25%
+AWS EBS - st1 Offer,EBS - st1,Official AWS Storage offering for st1.,AWS-1046,0.1145,GB-Month,0.1294,GB-Month,13%
+AWS EBS - sc1 Offer,EBS - sc1,Official AWS Storage offering for sc1.,AWS-1047,0.06,GB-Month,0.0504,GB-Month,-16%
+AWS Lambda - Request Offer,Lambda - Request,Official AWS Compute offering for Request.,AWS-1048,0.1347,Million/Seconds,0.1522,Million/Seconds,13%
+AWS Lambda - Duration (GB-sec) Offer,Lambda - Duration (GB-sec),Official AWS Compute offering for Duration (GB-sec).,AWS-1049,0.0481,Million/Seconds,0.0544,Million/Seconds,13%
+AWS EC2 - t3.micro Offer,EC2 - t3.micro,Official AWS Compute offering for t3.micro.,AWS-1050,0.1895,Instance/Hour,0.1895,Instance/Hour,0%
+AWS EC2 - t3.small Offer,EC2 - t3.small,Official AWS Compute offering for t3.small.,AWS-1051,1.8764,Instance/Hour,1.4073,Instance/Hour,-25%
+AWS EC2 - t3.medium Offer,EC2 - t3.medium,Official AWS Compute offering for t3.medium.,AWS-1052,1.9387,Instance/Hour,1.9193,Instance/Hour,-1%
+AWS EC2 - m5.large Offer,EC2 - m5.large,Official AWS Compute offering for m5.large.,AWS-1053,2.69,Instance/Hour,2.2058,Instance/Hour,-18%
+AWS EC2 - m5.xlarge Offer,EC2 - m5.xlarge,Official AWS Compute offering for m5.xlarge.,AWS-1054,1.0343,Instance/Hour,0.8068,Instance/Hour,-22%
+AWS EC2 - c6g.large Offer,EC2 - c6g.large,Official AWS Compute offering for c6g.large.,AWS-1055,0.584,Instance/Hour,0.6482,Instance/Hour,11%
+AWS EC2 - r6g.xlarge Offer,EC2 - r6g.xlarge,Official AWS Compute offering for r6g.xlarge.,AWS-1056,1.3805,Instance/Hour,1.5047,Instance/Hour,9%
+AWS EC2 - p3.2xlarge Offer,EC2 - p3.2xlarge,Official AWS Compute offering for p3.2xlarge.,AWS-1057,2.9407,Instance/Hour,3.3524,Instance/Hour,14%
+AWS EC2 - g4dn.xlarge Offer,EC2 - g4dn.xlarge,Official AWS Compute offering for g4dn.xlarge.,AWS-1058,1.9944,Instance/Hour,2.2537,Instance/Hour,13%
+AWS S3 - Standard Offer,S3 - Standard,Official AWS Storage offering for Standard.,AWS-1059,0.0154,GB Per Month,0.0174,GB Per Month,13%
+AWS S3 - Intelligent-Tiering Offer,S3 - Intelligent-Tiering,Official AWS Storage offering for Intelligent-Tiering.,AWS-1060,0.0038,GB Per Month,0.0033,GB Per Month,-14%
+AWS S3 - Standard-IA Offer,S3 - Standard-IA,Official AWS Storage offering for Standard-IA.,AWS-1061,0.0243,GB Per Month,0.0228,GB Per Month,-6%
+AWS S3 - One Zone-IA Offer,S3 - One Zone-IA,Official AWS Storage offering for One Zone-IA.,AWS-1062,0.0216,GB Per Month,0.0238,GB Per Month,10%
+AWS S3 - Glacier Instant Retrieval Offer,S3 - Glacier Instant Retrieval,Official AWS Storage offering for Glacier Instant Retrieval.,AWS-1063,0.0145,GB Per Month,0.0123,GB Per Month,-15%
+AWS S3 - Glacier Flexible Retrieval Offer,S3 - Glacier Flexible Retrieval,Official AWS Storage offering for Glacier Flexible Retrieval.,AWS-1064,0.0054,GB Per Month,0.0056,GB Per Month,4%
+AWS S3 - Glacier Deep Archive Offer,S3 - Glacier Deep Archive,Official AWS Storage offering for Glacier Deep Archive.,AWS-1065,0.0143,GB Per Month,0.0154,GB Per Month,8%
+AWS RDS - db.t3.micro Offer,RDS - db.t3.micro,Official AWS Database offering for db.t3.micro.,AWS-1066,0.088,Instance/Hour,0.073,Instance/Hour,-17%
+AWS RDS - db.t3.small Offer,RDS - db.t3.small,Official AWS Database offering for db.t3.small.,AWS-1067,0.9795,Instance/Hour,0.8522,Instance/Hour,-13%
+AWS RDS - db.m5.large Offer,RDS - db.m5.large,Official AWS Database offering for db.m5.large.,AWS-1068,0.4614,Instance/Hour,0.4153,Instance/Hour,-10%
+AWS RDS - db.r5.xlarge Offer,RDS - db.r5.xlarge,Official AWS Database offering for db.r5.xlarge.,AWS-1069,1.0739,Instance/Hour,1.1813,Instance/Hour,10%
+AWS RDS - Aurora MySQL Offer,RDS - Aurora MySQL,Official AWS Database offering for Aurora MySQL.,AWS-1070,1.858,Instance/Hour,2.0252,Instance/Hour,9%
+AWS RDS - Aurora PostgreSQL Offer,RDS - Aurora PostgreSQL,Official AWS Database offering for Aurora PostgreSQL.,AWS-1071,0.3705,Instance/Hour,0.3742,Instance/Hour,1%
+AWS DynamoDB - On-Demand Read Offer,DynamoDB - On-Demand Read,Official AWS Database offering for On-Demand Read.,AWS-1072,1.0852,Million Requests,0.879,Million Requests,-19%
+AWS DynamoDB - On-Demand Write Offer,DynamoDB - On-Demand Write,Official AWS Database offering for On-Demand Write.,AWS-1073,0.8223,Million Requests,0.9456,Million Requests,15%
+AWS DynamoDB - Provisioned RCU Offer,DynamoDB - Provisioned RCU,Official AWS Database offering for Provisioned RCU.,AWS-1074,0.853,Million Requests,0.6483,Million Requests,-24%
+AWS DynamoDB - Provisioned WCU Offer,DynamoDB - Provisioned WCU,Official AWS Database offering for Provisioned WCU.,AWS-1075,0.3407,Million Requests,0.2896,Million Requests,-15%
+AWS CloudFront - Data Transfer Out (Internet) Offer,CloudFront - Data Transfer Out (Internet),Official AWS Networking offering for Data Transfer Out (Internet).,AWS-1076,0.021,GB,0.0208,GB,-1%
+AWS CloudFront - Data Transfer Out (Origin) Offer,CloudFront - Data Transfer Out (Origin),Official AWS Networking offering for Data Transfer Out (Origin).,AWS-1077,0.0326,GB,0.029,GB,-11%
+AWS CloudFront - HTTP Requests Offer,CloudFront - HTTP Requests,Official AWS Networking offering for HTTP Requests.,AWS-1078,0.0656,GB,0.0525,GB,-20%
+AWS CloudFront - HTTPS Requests Offer,CloudFront - HTTPS Requests,Official AWS Networking offering for HTTPS Requests.,AWS-1079,0.0822,GB,0.0658,GB,-20%
+AWS SageMaker - ml.t2.medium Offer,SageMaker - ml.t2.medium,Official AWS AI/ML offering for ml.t2.medium.,AWS-1080,1.7505,Instance/Hour,1.698,Instance/Hour,-3%
+AWS SageMaker - ml.m5.large Offer,SageMaker - ml.m5.large,Official AWS AI/ML offering for ml.m5.large.,AWS-1081,3.0667,Instance/Hour,2.6067,Instance/Hour,-15%
+AWS SageMaker - ml.p3.2xlarge Offer,SageMaker - ml.p3.2xlarge,Official AWS AI/ML offering for ml.p3.2xlarge.,AWS-1082,3.5092,Instance/Hour,3.3337,Instance/Hour,-5%
+AWS SageMaker - Endpoint Hosting Offer,SageMaker - Endpoint Hosting,Official AWS AI/ML offering for Endpoint Hosting.,AWS-1083,0.1914,Instance/Hour,0.1818,Instance/Hour,-5%
+AWS SageMaker - Notebook Instance Offer,SageMaker - Notebook Instance,Official AWS AI/ML offering for Notebook Instance.,AWS-1084,0.9884,Instance/Hour,0.9291,Instance/Hour,-6%
+AWS WAF - Web ACL Offer,WAF - Web ACL,Official AWS Security offering for Web ACL.,AWS-1085,1.0328,Monthly/Million Requests,1.1051,Monthly/Million Requests,7%
+AWS WAF - Rule Offer,WAF - Rule,Official AWS Security offering for Rule.,AWS-1086,1.1328,Monthly/Million Requests,0.9176,Monthly/Million Requests,-19%
+AWS WAF - Request Inspection Offer,WAF - Request Inspection,Official AWS Security offering for Request Inspection.,AWS-1087,3.9015,Monthly/Million Requests,3.3163,Monthly/Million Requests,-15%
+AWS Redshift - dc2.large Offer,Redshift - dc2.large,Official AWS Analytics offering for dc2.large.,AWS-1088,9.7989,Instance/Hour,9.211,Instance/Hour,-6%
+AWS Redshift - ra3.xlargeplus Offer,Redshift - ra3.xlargeplus,Official AWS Analytics offering for ra3.xlargeplus.,AWS-1089,6.0134,Instance/Hour,4.8107,Instance/Hour,-20%
+AWS Redshift - ra3.4xlarge Offer,Redshift - ra3.4xlarge,Official AWS Analytics offering for ra3.4xlarge.,AWS-1090,4.4251,Instance/Hour,3.5401,Instance/Hour,-20%
+AWS Redshift - ra3.16xlarge Offer,Redshift - ra3.16xlarge,Official AWS Analytics offering for ra3.16xlarge.,AWS-1091,2.1603,Instance/Hour,1.793,Instance/Hour,-17%
+AWS EBS - gp2 Offer,EBS - gp2,Official AWS Storage offering for gp2.,AWS-1092,0.1369,GB-Month,0.1273,GB-Month,-7%
+AWS EBS - gp3 Offer,EBS - gp3,Official AWS Storage offering for gp3.,AWS-1093,0.0479,GB-Month,0.0393,GB-Month,-18%
+AWS EBS - io1 Offer,EBS - io1,Official AWS Storage offering for io1.,AWS-1094,0.084,GB-Month,0.0672,GB-Month,-20%
+AWS EBS - io2 Offer,EBS - io2,Official AWS Storage offering for io2.,AWS-1095,0.1065,GB-Month,0.0927,GB-Month,-13%
+AWS EBS - st1 Offer,EBS - st1,Official AWS Storage offering for st1.,AWS-1096,0.1418,GB-Month,0.1375,GB-Month,-3%
+AWS EBS - sc1 Offer,EBS - sc1,Official AWS Storage offering for sc1.,AWS-1097,0.1077,GB-Month,0.1185,GB-Month,10%
+AWS Lambda - Request Offer,Lambda - Request,Official AWS Compute offering for Request.,AWS-1098,0.0571,Million/Seconds,0.0582,Million/Seconds,2%
+AWS Lambda - Duration (GB-sec) Offer,Lambda - Duration (GB-sec),Official AWS Compute offering for Duration (GB-sec).,AWS-1099,0.1119,Million/Seconds,0.1175,Million/Seconds,5%
+AWS EC2 - t3.micro Offer,EC2 - t3.micro,Official AWS Compute offering for t3.micro.,AWS-1100,2.8533,Instance/Hour,2.3968,Instance/Hour,-16%
+AWS EC2 - t3.small Offer,EC2 - t3.small,Official AWS Compute offering for t3.small.,AWS-1101,2.6504,Instance/Hour,2.4384,Instance/Hour,-8%
+AWS EC2 - t3.medium Offer,EC2 - t3.medium,Official AWS Compute offering for t3.medium.,AWS-1102,1.0473,Instance/Hour,1.1101,Instance/Hour,6%
+AWS EC2 - m5.large Offer,EC2 - m5.large,Official AWS Compute offering for m5.large.,AWS-1103,0.4814,Instance/Hour,0.4718,Instance/Hour,-2%
+AWS EC2 - m5.xlarge Offer,EC2 - m5.xlarge,Official AWS Compute offering for m5.xlarge.,AWS-1104,0.0447,Instance/Hour,0.034,Instance/Hour,-24%
+AWS EC2 - c6g.large Offer,EC2 - c6g.large,Official AWS Compute offering for c6g.large.,AWS-1105,2.2857,Instance/Hour,2.1486,Instance/Hour,-6%
+AWS EC2 - r6g.xlarge Offer,EC2 - r6g.xlarge,Official AWS Compute offering for r6g.xlarge.,AWS-1106,2.8496,Instance/Hour,3.0776,Instance/Hour,8%
+AWS EC2 - p3.2xlarge Offer,EC2 - p3.2xlarge,Official AWS Compute offering for p3.2xlarge.,AWS-1107,2.8244,Instance/Hour,2.9374,Instance/Hour,4%
+AWS EC2 - g4dn.xlarge Offer,EC2 - g4dn.xlarge,Official AWS Compute offering for g4dn.xlarge.,AWS-1108,0.7233,Instance/Hour,0.6654,Instance/Hour,-8%
+AWS S3 - Standard Offer,S3 - Standard,Official AWS Storage offering for Standard.,AWS-1109,0.0227,GB Per Month,0.0236,GB Per Month,4%
+AWS S3 - Intelligent-Tiering Offer,S3 - Intelligent-Tiering,Official AWS Storage offering for Intelligent-Tiering.,AWS-1110,0.0264,GB Per Month,0.0296,GB Per Month,12%
+AWS S3 - Standard-IA Offer,S3 - Standard-IA,Official AWS Storage offering for Standard-IA.,AWS-1111,0.0048,GB Per Month,0.0048,GB Per Month,-1%
+AWS S3 - One Zone-IA Offer,S3 - One Zone-IA,Official AWS Storage offering for One Zone-IA.,AWS-1112,0.0244,GB Per Month,0.0227,GB Per Month,-7%
+AWS S3 - Glacier Instant Retrieval Offer,S3 - Glacier Instant Retrieval,Official AWS Storage offering for Glacier Instant Retrieval.,AWS-1113,0.0131,GB Per Month,0.0132,GB Per Month,1%
+AWS S3 - Glacier Flexible Retrieval Offer,S3 - Glacier Flexible Retrieval,Official AWS Storage offering for Glacier Flexible Retrieval.,AWS-1114,0.0047,GB Per Month,0.0049,GB Per Month,4%
+AWS S3 - Glacier Deep Archive Offer,S3 - Glacier Deep Archive,Official AWS Storage offering for Glacier Deep Archive.,AWS-1115,0.0146,GB Per Month,0.013,GB Per Month,-11%
+AWS RDS - db.t3.micro Offer,RDS - db.t3.micro,Official AWS Database offering for db.t3.micro.,AWS-1116,0.5466,Instance/Hour,0.4701,Instance/Hour,-14%
+AWS RDS - db.t3.small Offer,RDS - db.t3.small,Official AWS Database offering for db.t3.small.,AWS-1117,1.0296,Instance/Hour,0.8855,Instance/Hour,-14%
+AWS RDS - db.m5.large Offer,RDS - db.m5.large,Official AWS Database offering for db.m5.large.,AWS-1118,0.5263,Instance/Hour,0.6,Instance/Hour,14%
+AWS RDS - db.r5.xlarge Offer,RDS - db.r5.xlarge,Official AWS Database offering for db.r5.xlarge.,AWS-1119,0.887,Instance/Hour,0.6741,Instance/Hour,-24%
+AWS RDS - Aurora MySQL Offer,RDS - Aurora MySQL,Official AWS Database offering for Aurora MySQL.,AWS-1120,0.7501,Instance/Hour,0.6601,Instance/Hour,-12%
+AWS RDS - Aurora PostgreSQL Offer,RDS - Aurora PostgreSQL,Official AWS Database offering for Aurora PostgreSQL.,AWS-1121,0.6098,Instance/Hour,0.5366,Instance/Hour,-12%
+AWS DynamoDB - On-Demand Read Offer,DynamoDB - On-Demand Read,Official AWS Database offering for On-Demand Read.,AWS-1122,1.1325,Million Requests,0.906,Million Requests,-20%
+AWS DynamoDB - On-Demand Write Offer,DynamoDB - On-Demand Write,Official AWS Database offering for On-Demand Write.,AWS-1123,0.6656,Million Requests,0.5791,Million Requests,-13%
+AWS DynamoDB - Provisioned RCU Offer,DynamoDB - Provisioned RCU,Official AWS Database offering for Provisioned RCU.,AWS-1124,0.6167,Million Requests,0.5797,Million Requests,-6%
+AWS DynamoDB - Provisioned WCU Offer,DynamoDB - Provisioned WCU,Official AWS Database offering for Provisioned WCU.,AWS-1125,0.487,Million Requests,0.4529,Million Requests,-7%
+AWS CloudFront - Data Transfer Out (Internet) Offer,CloudFront - Data Transfer Out (Internet),Official AWS Networking offering for Data Transfer Out (Internet).,AWS-1126,0.0744,GB,0.0722,GB,-3%
+AWS CloudFront - Data Transfer Out (Origin) Offer,CloudFront - Data Transfer Out (Origin),Official AWS Networking offering for Data Transfer Out (Origin).,AWS-1127,0.078,GB,0.0858,GB,10%
+AWS CloudFront - HTTP Requests Offer,CloudFront - HTTP Requests,Official AWS Networking offering for HTTP Requests.,AWS-1128,0.0728,GB,0.0794,GB,9%
+AWS CloudFront - HTTPS Requests Offer,CloudFront - HTTPS Requests,Official AWS Networking offering for HTTPS Requests.,AWS-1129,0.0215,GB,0.0239,GB,11%
+AWS SageMaker - ml.t2.medium Offer,SageMaker - ml.t2.medium,Official AWS AI/ML offering for ml.t2.medium.,AWS-1130,3.5817,Instance/Hour,3.8324,Instance/Hour,7%
+AWS SageMaker - ml.m5.large Offer,SageMaker - ml.m5.large,Official AWS AI/ML offering for ml.m5.large.,AWS-1131,0.3013,Instance/Hour,0.3314,Instance/Hour,10%
+AWS SageMaker - ml.p3.2xlarge Offer,SageMaker - ml.p3.2xlarge,Official AWS AI/ML offering for ml.p3.2xlarge.,AWS-1132,1.9018,Instance/Hour,1.7687,Instance/Hour,-7%
+AWS SageMaker - Endpoint Hosting Offer,SageMaker - Endpoint Hosting,Official AWS AI/ML offering for Endpoint Hosting.,AWS-1133,3.6446,Instance/Hour,3.9362,Instance/Hour,8%
+AWS SageMaker - Notebook Instance Offer,SageMaker - Notebook Instance,Official AWS AI/ML offering for Notebook Instance.,AWS-1134,2.4252,Instance/Hour,2.4252,Instance/Hour,0%
+AWS WAF - Web ACL Offer,WAF - Web ACL,Official AWS Security offering for Web ACL.,AWS-1135,3.3794,Monthly/Million Requests,2.6697,Monthly/Million Requests,-21%
+AWS WAF - Rule Offer,WAF - Rule,Official AWS Security offering for Rule.,AWS-1136,1.9066,Monthly/Million Requests,2.0019,Monthly/Million Requests,5%
+AWS WAF - Request Inspection Offer,WAF - Request Inspection,Official AWS Security offering for Request Inspection.,AWS-1137,2.263,Monthly/Million Requests,2.6024,Monthly/Million Requests,15%
+AWS Redshift - dc2.large Offer,Redshift - dc2.large,Official AWS Analytics offering for dc2.large.,AWS-1138,14.3031,Instance/Hour,15.1613,Instance/Hour,6%
+AWS Redshift - ra3.xlargeplus Offer,Redshift - ra3.xlargeplus,Official AWS Analytics offering for ra3.xlargeplus.,AWS-1139,3.3085,Instance/Hour,2.8122,Instance/Hour,-15%
+AWS Redshift - ra3.4xlarge Offer,Redshift - ra3.4xlarge,Official AWS Analytics offering for ra3.4xlarge.,AWS-1140,10.5337,Instance/Hour,8.9536,Instance/Hour,-15%
+AWS Redshift - ra3.16xlarge Offer,Redshift - ra3.16xlarge,Official AWS Analytics offering for ra3.16xlarge.,AWS-1141,3.4478,Instance/Hour,3.3444,Instance/Hour,-3%
+AWS EBS - gp2 Offer,EBS - gp2,Official AWS Storage offering for gp2.,AWS-1142,0.0838,GB-Month,0.0637,GB-Month,-24%
+AWS EBS - gp3 Offer,EBS - gp3,Official AWS Storage offering for gp3.,AWS-1143,0.1294,GB-Month,0.1087,GB-Month,-16%
+AWS EBS - io1 Offer,EBS - io1,Official AWS Storage offering for io1.,AWS-1144,0.0985,GB-Month,0.0778,GB-Month,-21%
+AWS EBS - io2 Offer,EBS - io2,Official AWS Storage offering for io2.,AWS-1145,0.047,GB-Month,0.0428,GB-Month,-9%
+AWS EBS - st1 Offer,EBS - st1,Official AWS Storage offering for st1.,AWS-1146,0.1054,GB-Month,0.0938,GB-Month,-11%
+AWS EBS - sc1 Offer,EBS - sc1,Official AWS Storage offering for sc1.,AWS-1147,0.0702,GB-Month,0.0667,GB-Month,-5%
+AWS Lambda - Request Offer,Lambda - Request,Official AWS Compute offering for Request.,AWS-1148,0.043,Million/Seconds,0.0443,Million/Seconds,3%
+AWS Lambda - Duration (GB-sec) Offer,Lambda - Duration (GB-sec),Official AWS Compute offering for Duration (GB-sec).,AWS-1149,0.1024,Million/Seconds,0.0799,Million/Seconds,-22%
+AWS EC2 - t3.micro Offer,EC2 - t3.micro,Official AWS Compute offering for t3.micro.,AWS-1150,2.4236,Instance/Hour,2.3267,Instance/Hour,-4%
+AWS EC2 - t3.small Offer,EC2 - t3.small,Official AWS Compute offering for t3.small.,AWS-1151,2.8017,Instance/Hour,2.1293,Instance/Hour,-24%
+AWS EC2 - t3.medium Offer,EC2 - t3.medium,Official AWS Compute offering for t3.medium.,AWS-1152,0.6883,Instance/Hour,0.5851,Instance/Hour,-15%
+AWS EC2 - m5.large Offer,EC2 - m5.large,Official AWS Compute offering for m5.large.,AWS-1153,0.8164,Instance/Hour,0.8572,Instance/Hour,5%
+AWS EC2 - m5.xlarge Offer,EC2 - m5.xlarge,Official AWS Compute offering for m5.xlarge.,AWS-1154,2.6396,Instance/Hour,2.4812,Instance/Hour,-6%
+AWS EC2 - c6g.large Offer,EC2 - c6g.large,Official AWS Compute offering for c6g.large.,AWS-1155,0.5398,Instance/Hour,0.5182,Instance/Hour,-4%
+AWS EC2 - r6g.xlarge Offer,EC2 - r6g.xlarge,Official AWS Compute offering for r6g.xlarge.,AWS-1156,0.5562,Instance/Hour,0.5117,Instance/Hour,-8%
+AWS EC2 - p3.2xlarge Offer,EC2 - p3.2xlarge,Official AWS Compute offering for p3.2xlarge.,AWS-1157,1.4392,Instance/Hour,1.5112,Instance/Hour,5%
+AWS EC2 - g4dn.xlarge Offer,EC2 - g4dn.xlarge,Official AWS Compute offering for g4dn.xlarge.,AWS-1158,1.1407,Instance/Hour,1.1179,Instance/Hour,-2%
+AWS S3 - Standard Offer,S3 - Standard,Official AWS Storage offering for Standard.,AWS-1159,0.0299,GB Per Month,0.0314,GB Per Month,5%
+AWS S3 - Intelligent-Tiering Offer,S3 - Intelligent-Tiering,Official AWS Storage offering for Intelligent-Tiering.,AWS-1160,0.0085,GB Per Month,0.0074,GB Per Month,-13%
+AWS S3 - Standard-IA Offer,S3 - Standard-IA,Official AWS Storage offering for Standard-IA.,AWS-1161,0.0272,GB Per Month,0.0215,GB Per Month,-21%
+AWS S3 - One Zone-IA Offer,S3 - One Zone-IA,Official AWS Storage offering for One Zone-IA.,AWS-1162,0.0035,GB Per Month,0.0036,GB Per Month,4%
+AWS S3 - Glacier Instant Retrieval Offer,S3 - Glacier Instant Retrieval,Official AWS Storage offering for Glacier Instant Retrieval.,AWS-1163,0.0288,GB Per Month,0.0265,GB Per Month,-8%
+AWS S3 - Glacier Flexible Retrieval Offer,S3 - Glacier Flexible Retrieval,Official AWS Storage offering for Glacier Flexible Retrieval.,AWS-1164,0.0122,GB Per Month,0.0135,GB Per Month,11%
+AWS S3 - Glacier Deep Archive Offer,S3 - Glacier Deep Archive,Official AWS Storage offering for Glacier Deep Archive.,AWS-1165,0.0247,GB Per Month,0.0249,GB Per Month,1%
+AWS RDS - db.t3.micro Offer,RDS - db.t3.micro,Official AWS Database offering for db.t3.micro.,AWS-1166,0.9387,Instance/Hour,0.7416,Instance/Hour,-21%

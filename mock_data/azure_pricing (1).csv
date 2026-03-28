@@ -1,0 +1,168 @@
+title,csoShortName,description,catalogitemNumber,commercialUnitPrice,commercialunitofissue,customerunitprice,customerunitofissue,discountpremiumfee
+AZURE Virtual Machines - D2s v3 Offer,Virtual Machines - D2s v3,Official AZURE Compute offering for D2s v3.,AZURE-1000,3.3567,vCPU/Hour,3.7931,vCPU/Hour,13%
+AZURE Virtual Machines - D4s v3 Offer,Virtual Machines - D4s v3,Official AZURE Compute offering for D4s v3.,AZURE-1001,3.7164,vCPU/Hour,4.088,vCPU/Hour,10%
+AZURE Virtual Machines - E2s v3 Offer,Virtual Machines - E2s v3,Official AZURE Compute offering for E2s v3.,AZURE-1002,4.2683,vCPU/Hour,4.5244,vCPU/Hour,6%
+AZURE Virtual Machines - F2s v2 Offer,Virtual Machines - F2s v2,Official AZURE Compute offering for F2s v2.,AZURE-1003,0.3298,vCPU/Hour,0.2902,vCPU/Hour,-12%
+AZURE Virtual Machines - B1s Offer,Virtual Machines - B1s,Official AZURE Compute offering for B1s.,AZURE-1004,1.8641,vCPU/Hour,1.454,vCPU/Hour,-22%
+AZURE Virtual Machines - B2s Offer,Virtual Machines - B2s,Official AZURE Compute offering for B2s.,AZURE-1005,0.6664,vCPU/Hour,0.7597,vCPU/Hour,14%
+AZURE Virtual Machines - NC6 Offer,Virtual Machines - NC6,Official AZURE Compute offering for NC6.,AZURE-1006,4.0293,vCPU/Hour,3.304,vCPU/Hour,-18%
+AZURE Virtual Machines - ND96asr_v4 Offer,Virtual Machines - ND96asr_v4,Official AZURE Compute offering for ND96asr_v4.,AZURE-1007,0.4048,vCPU/Hour,0.4655,vCPU/Hour,15%
+AZURE Blob Storage - Hot LRS Offer,Blob Storage - Hot LRS,Official AZURE Storage offering for Hot LRS.,AZURE-1008,0.0318,GB Per Month,0.0251,GB Per Month,-21%
+AZURE Blob Storage - Cool LRS Offer,Blob Storage - Cool LRS,Official AZURE Storage offering for Cool LRS.,AZURE-1009,0.0412,GB Per Month,0.0433,GB Per Month,5%
+AZURE Blob Storage - Archive LRS Offer,Blob Storage - Archive LRS,Official AZURE Storage offering for Archive LRS.,AZURE-1010,0.0056,GB Per Month,0.0043,GB Per Month,-23%
+AZURE Blob Storage - Premium ZRS Offer,Blob Storage - Premium ZRS,Official AZURE Storage offering for Premium ZRS.,AZURE-1011,0.0328,GB Per Month,0.0377,GB Per Month,15%
+AZURE Blob Storage - Hot GRS Offer,Blob Storage - Hot GRS,Official AZURE Storage offering for Hot GRS.,AZURE-1012,0.0452,GB Per Month,0.0484,GB Per Month,7%
+AZURE Azure SQL - Basic DTU Offer,Azure SQL - Basic DTU,Official AZURE Database offering for Basic DTU.,AZURE-1013,0.2357,DTU/Hour,0.2192,DTU/Hour,-7%
+AZURE Azure SQL - Standard DTU Offer,Azure SQL - Standard DTU,Official AZURE Database offering for Standard DTU.,AZURE-1014,0.4138,DTU/Hour,0.4097,DTU/Hour,-1%
+AZURE Azure SQL - Premium DTU Offer,Azure SQL - Premium DTU,Official AZURE Database offering for Premium DTU.,AZURE-1015,0.686,DTU/Hour,0.5488,DTU/Hour,-20%
+AZURE Azure SQL - vCore General Purpose Offer,Azure SQL - vCore General Purpose,Official AZURE Database offering for vCore General Purpose.,AZURE-1016,0.7582,DTU/Hour,0.7582,DTU/Hour,0%
+AZURE Azure SQL - vCore Business Critical Offer,Azure SQL - vCore Business Critical,Official AZURE Database offering for vCore Business Critical.,AZURE-1017,1.3089,DTU/Hour,1.3482,DTU/Hour,3%
+AZURE Cosmos DB - Provisioned RU/s Offer,Cosmos DB - Provisioned RU/s,Official AZURE Database offering for Provisioned RU/s.,AZURE-1018,0.0176,100 RU/s/Hour,0.016,100 RU/s/Hour,-9%
+AZURE Cosmos DB - Autoscale RU/s Offer,Cosmos DB - Autoscale RU/s,Official AZURE Database offering for Autoscale RU/s.,AZURE-1019,0.0197,100 RU/s/Hour,0.0197,100 RU/s/Hour,0%
+AZURE Cosmos DB - Multi-region writes Offer,Cosmos DB - Multi-region writes,Official AZURE Database offering for Multi-region writes.,AZURE-1020,0.0178,100 RU/s/Hour,0.0142,100 RU/s/Hour,-20%
+AZURE VPN Gateway - Basic Offer,VPN Gateway - Basic,Official AZURE Networking offering for Basic.,AZURE-1021,0.6339,Gateway/Hour,0.691,Gateway/Hour,9%
+AZURE VPN Gateway - VpnGw1 Offer,VPN Gateway - VpnGw1,Official AZURE Networking offering for VpnGw1.,AZURE-1022,3.6299,Gateway/Hour,3.5936,Gateway/Hour,-1%
+AZURE VPN Gateway - VpnGw2 Offer,VPN Gateway - VpnGw2,Official AZURE Networking offering for VpnGw2.,AZURE-1023,1.4722,Gateway/Hour,1.5753,Gateway/Hour,7%
+AZURE VPN Gateway - VpnGw3 Offer,VPN Gateway - VpnGw3,Official AZURE Networking offering for VpnGw3.,AZURE-1024,3.5073,Gateway/Hour,3.0163,Gateway/Hour,-14%
+AZURE VPN Gateway - VpnGw4 Offer,VPN Gateway - VpnGw4,Official AZURE Networking offering for VpnGw4.,AZURE-1025,2.3968,Gateway/Hour,2.4447,Gateway/Hour,2%
+AZURE VPN Gateway - VpnGw5 Offer,VPN Gateway - VpnGw5,Official AZURE Networking offering for VpnGw5.,AZURE-1026,1.5147,Gateway/Hour,1.439,Gateway/Hour,-5%
+AZURE Azure OpenAI - GPT-3.5-Turbo Offer,Azure OpenAI - GPT-3.5-Turbo,Official AZURE AI/ML offering for GPT-3.5-Turbo.,AZURE-1027,0.0487,1k Tokens,0.0521,1k Tokens,7%
+AZURE Azure OpenAI - GPT-4 Offer,Azure OpenAI - GPT-4,Official AZURE AI/ML offering for GPT-4.,AZURE-1028,0.0034,1k Tokens,0.0026,1k Tokens,-23%
+AZURE Azure OpenAI - GPT-4-32k Offer,Azure OpenAI - GPT-4-32k,Official AZURE AI/ML offering for GPT-4-32k.,AZURE-1029,0.0321,1k Tokens,0.0302,1k Tokens,-6%
+AZURE Azure OpenAI - DALL-E 3 Offer,Azure OpenAI - DALL-E 3,Official AZURE AI/ML offering for DALL-E 3.,AZURE-1030,0.0255,1k Tokens,0.0199,1k Tokens,-22%
+AZURE Azure OpenAI - Whisper Offer,Azure OpenAI - Whisper,Official AZURE AI/ML offering for Whisper.,AZURE-1031,0.0532,1k Tokens,0.0569,1k Tokens,7%
+AZURE App Service - F1 Free Offer,App Service - F1 Free,Official AZURE App Hosting offering for F1 Free.,AZURE-1032,0.0709,Instance/Hour,0.0681,Instance/Hour,-4%
+AZURE App Service - B1 Basic Offer,App Service - B1 Basic,Official AZURE App Hosting offering for B1 Basic.,AZURE-1033,0.3967,Instance/Hour,0.3769,Instance/Hour,-5%
+AZURE App Service - S1 Standard Offer,App Service - S1 Standard,Official AZURE App Hosting offering for S1 Standard.,AZURE-1034,0.3695,Instance/Hour,0.4175,Instance/Hour,13%
+AZURE App Service - P1v2 Premium Offer,App Service - P1v2 Premium,Official AZURE App Hosting offering for P1v2 Premium.,AZURE-1035,0.0598,Instance/Hour,0.049,Instance/Hour,-18%
+AZURE App Service - P1v3 Premium Offer,App Service - P1v3 Premium,Official AZURE App Hosting offering for P1v3 Premium.,AZURE-1036,0.2426,Instance/Hour,0.262,Instance/Hour,8%
+AZURE Synapse - Data Integration Offer,Synapse - Data Integration,Official AZURE Analytics offering for Data Integration.,AZURE-1037,0.112,DWU/Hour,0.112,DWU/Hour,0%
+AZURE Synapse - SQL Pool Offer,Synapse - SQL Pool,Official AZURE Analytics offering for SQL Pool.,AZURE-1038,1.0538,DWU/Hour,1.1276,DWU/Hour,7%
+AZURE Synapse - Spark Pool Offer,Synapse - Spark Pool,Official AZURE Analytics offering for Spark Pool.,AZURE-1039,0.1583,DWU/Hour,0.1409,DWU/Hour,-11%
+AZURE Sentinel - Data Ingestion Offer,Sentinel - Data Ingestion,Official AZURE Security offering for Data Ingestion.,AZURE-1040,2.5579,GB,2.916,GB,14%
+AZURE Sentinel - Retention Offer,Sentinel - Retention,Official AZURE Security offering for Retention.,AZURE-1041,3.9074,GB,4.22,GB,8%
+AZURE Functions - Consumption Plan Offer,Functions - Consumption Plan,Official AZURE Compute offering for Consumption Plan.,AZURE-1042,0.6609,Million Executions,0.5353,Million Executions,-19%
+AZURE Functions - Premium Plan Offer,Functions - Premium Plan,Official AZURE Compute offering for Premium Plan.,AZURE-1043,0.48,Million Executions,0.5184,Million Executions,8%
+AZURE Virtual Machines - D2s v3 Offer,Virtual Machines - D2s v3,Official AZURE Compute offering for D2s v3.,AZURE-1044,1.8428,vCPU/Hour,1.6401,vCPU/Hour,-11%
+AZURE Virtual Machines - D4s v3 Offer,Virtual Machines - D4s v3,Official AZURE Compute offering for D4s v3.,AZURE-1045,4.5271,vCPU/Hour,3.9838,vCPU/Hour,-12%
+AZURE Virtual Machines - E2s v3 Offer,Virtual Machines - E2s v3,Official AZURE Compute offering for E2s v3.,AZURE-1046,0.9994,vCPU/Hour,1.0094,vCPU/Hour,1%
+AZURE Virtual Machines - F2s v2 Offer,Virtual Machines - F2s v2,Official AZURE Compute offering for F2s v2.,AZURE-1047,1.9612,vCPU/Hour,1.5101,vCPU/Hour,-23%
+AZURE Virtual Machines - B1s Offer,Virtual Machines - B1s,Official AZURE Compute offering for B1s.,AZURE-1048,2.027,vCPU/Hour,2.1284,vCPU/Hour,5%
+AZURE Virtual Machines - B2s Offer,Virtual Machines - B2s,Official AZURE Compute offering for B2s.,AZURE-1049,4.4894,vCPU/Hour,3.367,vCPU/Hour,-25%
+AZURE Virtual Machines - NC6 Offer,Virtual Machines - NC6,Official AZURE Compute offering for NC6.,AZURE-1050,0.0702,vCPU/Hour,0.0674,vCPU/Hour,-4%
+AZURE Virtual Machines - ND96asr_v4 Offer,Virtual Machines - ND96asr_v4,Official AZURE Compute offering for ND96asr_v4.,AZURE-1051,4.2476,vCPU/Hour,3.2707,vCPU/Hour,-23%
+AZURE Blob Storage - Hot LRS Offer,Blob Storage - Hot LRS,Official AZURE Storage offering for Hot LRS.,AZURE-1052,0.0176,GB Per Month,0.0197,GB Per Month,12%
+AZURE Blob Storage - Cool LRS Offer,Blob Storage - Cool LRS,Official AZURE Storage offering for Cool LRS.,AZURE-1053,0.0298,GB Per Month,0.0274,GB Per Month,-8%
+AZURE Blob Storage - Archive LRS Offer,Blob Storage - Archive LRS,Official AZURE Storage offering for Archive LRS.,AZURE-1054,0.0359,GB Per Month,0.0359,GB Per Month,0%
+AZURE Blob Storage - Premium ZRS Offer,Blob Storage - Premium ZRS,Official AZURE Storage offering for Premium ZRS.,AZURE-1055,0.0167,GB Per Month,0.0147,GB Per Month,-12%
+AZURE Blob Storage - Hot GRS Offer,Blob Storage - Hot GRS,Official AZURE Storage offering for Hot GRS.,AZURE-1056,0.0466,GB Per Month,0.0466,GB Per Month,0%
+AZURE Azure SQL - Basic DTU Offer,Azure SQL - Basic DTU,Official AZURE Database offering for Basic DTU.,AZURE-1057,0.1729,DTU/Hour,0.1539,DTU/Hour,-11%
+AZURE Azure SQL - Standard DTU Offer,Azure SQL - Standard DTU,Official AZURE Database offering for Standard DTU.,AZURE-1058,0.1808,DTU/Hour,0.1916,DTU/Hour,6%
+AZURE Azure SQL - Premium DTU Offer,Azure SQL - Premium DTU,Official AZURE Database offering for Premium DTU.,AZURE-1059,1.2332,DTU/Hour,1.2085,DTU/Hour,-2%
+AZURE Azure SQL - vCore General Purpose Offer,Azure SQL - vCore General Purpose,Official AZURE Database offering for vCore General Purpose.,AZURE-1060,0.361,DTU/Hour,0.3574,DTU/Hour,-1%
+AZURE Azure SQL - vCore Business Critical Offer,Azure SQL - vCore Business Critical,Official AZURE Database offering for vCore Business Critical.,AZURE-1061,1.0035,DTU/Hour,0.7827,DTU/Hour,-22%
+AZURE Cosmos DB - Provisioned RU/s Offer,Cosmos DB - Provisioned RU/s,Official AZURE Database offering for Provisioned RU/s.,AZURE-1062,0.0159,100 RU/s/Hour,0.0176,100 RU/s/Hour,11%
+AZURE Cosmos DB - Autoscale RU/s Offer,Cosmos DB - Autoscale RU/s,Official AZURE Database offering for Autoscale RU/s.,AZURE-1063,0.015,100 RU/s/Hour,0.0117,100 RU/s/Hour,-22%
+AZURE Cosmos DB - Multi-region writes Offer,Cosmos DB - Multi-region writes,Official AZURE Database offering for Multi-region writes.,AZURE-1064,0.0125,100 RU/s/Hour,0.0128,100 RU/s/Hour,2%
+AZURE VPN Gateway - Basic Offer,VPN Gateway - Basic,Official AZURE Networking offering for Basic.,AZURE-1065,0.4217,Gateway/Hour,0.4386,Gateway/Hour,4%
+AZURE VPN Gateway - VpnGw1 Offer,VPN Gateway - VpnGw1,Official AZURE Networking offering for VpnGw1.,AZURE-1066,3.2595,Gateway/Hour,3.1943,Gateway/Hour,-2%
+AZURE VPN Gateway - VpnGw2 Offer,VPN Gateway - VpnGw2,Official AZURE Networking offering for VpnGw2.,AZURE-1067,1.2884,Gateway/Hour,1.1853,Gateway/Hour,-8%
+AZURE VPN Gateway - VpnGw3 Offer,VPN Gateway - VpnGw3,Official AZURE Networking offering for VpnGw3.,AZURE-1068,2.9788,Gateway/Hour,2.8596,Gateway/Hour,-4%
+AZURE VPN Gateway - VpnGw4 Offer,VPN Gateway - VpnGw4,Official AZURE Networking offering for VpnGw4.,AZURE-1069,3.4173,Gateway/Hour,3.5882,Gateway/Hour,5%
+AZURE VPN Gateway - VpnGw5 Offer,VPN Gateway - VpnGw5,Official AZURE Networking offering for VpnGw5.,AZURE-1070,1.1059,Gateway/Hour,1.1612,Gateway/Hour,5%
+AZURE Azure OpenAI - GPT-3.5-Turbo Offer,Azure OpenAI - GPT-3.5-Turbo,Official AZURE AI/ML offering for GPT-3.5-Turbo.,AZURE-1071,0.0177,1k Tokens,0.0159,1k Tokens,-10%
+AZURE Azure OpenAI - GPT-4 Offer,Azure OpenAI - GPT-4,Official AZURE AI/ML offering for GPT-4.,AZURE-1072,0.0049,1k Tokens,0.0043,1k Tokens,-13%
+AZURE Azure OpenAI - GPT-4-32k Offer,Azure OpenAI - GPT-4-32k,Official AZURE AI/ML offering for GPT-4-32k.,AZURE-1073,0.0209,1k Tokens,0.0238,1k Tokens,14%
+AZURE Azure OpenAI - DALL-E 3 Offer,Azure OpenAI - DALL-E 3,Official AZURE AI/ML offering for DALL-E 3.,AZURE-1074,0.0563,1k Tokens,0.0574,1k Tokens,2%
+AZURE Azure OpenAI - Whisper Offer,Azure OpenAI - Whisper,Official AZURE AI/ML offering for Whisper.,AZURE-1075,0.0269,1k Tokens,0.0218,1k Tokens,-19%
+AZURE App Service - F1 Free Offer,App Service - F1 Free,Official AZURE App Hosting offering for F1 Free.,AZURE-1076,0.1119,Instance/Hour,0.1029,Instance/Hour,-8%
+AZURE App Service - B1 Basic Offer,App Service - B1 Basic,Official AZURE App Hosting offering for B1 Basic.,AZURE-1077,0.1818,Instance/Hour,0.1618,Instance/Hour,-11%
+AZURE App Service - S1 Standard Offer,App Service - S1 Standard,Official AZURE App Hosting offering for S1 Standard.,AZURE-1078,0.1778,Instance/Hour,0.1849,Instance/Hour,4%
+AZURE App Service - P1v2 Premium Offer,App Service - P1v2 Premium,Official AZURE App Hosting offering for P1v2 Premium.,AZURE-1079,0.0742,Instance/Hour,0.0705,Instance/Hour,-5%
+AZURE App Service - P1v3 Premium Offer,App Service - P1v3 Premium,Official AZURE App Hosting offering for P1v3 Premium.,AZURE-1080,0.2804,Instance/Hour,0.2439,Instance/Hour,-13%
+AZURE Synapse - Data Integration Offer,Synapse - Data Integration,Official AZURE Analytics offering for Data Integration.,AZURE-1081,1.6525,DWU/Hour,1.8508,DWU/Hour,12%
+AZURE Synapse - SQL Pool Offer,Synapse - SQL Pool,Official AZURE Analytics offering for SQL Pool.,AZURE-1082,0.4308,DWU/Hour,0.4222,DWU/Hour,-2%
+AZURE Synapse - Spark Pool Offer,Synapse - Spark Pool,Official AZURE Analytics offering for Spark Pool.,AZURE-1083,1.2053,DWU/Hour,1.1691,DWU/Hour,-3%
+AZURE Sentinel - Data Ingestion Offer,Sentinel - Data Ingestion,Official AZURE Security offering for Data Ingestion.,AZURE-1084,2.0608,GB,1.5868,GB,-23%
+AZURE Sentinel - Retention Offer,Sentinel - Retention,Official AZURE Security offering for Retention.,AZURE-1085,3.1276,GB,3.0025,GB,-4%
+AZURE Functions - Consumption Plan Offer,Functions - Consumption Plan,Official AZURE Compute offering for Consumption Plan.,AZURE-1086,0.8455,Million Executions,0.7356,Million Executions,-13%
+AZURE Functions - Premium Plan Offer,Functions - Premium Plan,Official AZURE Compute offering for Premium Plan.,AZURE-1087,0.9881,Million Executions,0.8596,Million Executions,-13%
+AZURE Virtual Machines - D2s v3 Offer,Virtual Machines - D2s v3,Official AZURE Compute offering for D2s v3.,AZURE-1088,2.5911,vCPU/Hour,2.4097,vCPU/Hour,-7%
+AZURE Virtual Machines - D4s v3 Offer,Virtual Machines - D4s v3,Official AZURE Compute offering for D4s v3.,AZURE-1089,3.7445,vCPU/Hour,3.8194,vCPU/Hour,2%
+AZURE Virtual Machines - E2s v3 Offer,Virtual Machines - E2s v3,Official AZURE Compute offering for E2s v3.,AZURE-1090,2.849,vCPU/Hour,2.2792,vCPU/Hour,-20%
+AZURE Virtual Machines - F2s v2 Offer,Virtual Machines - F2s v2,Official AZURE Compute offering for F2s v2.,AZURE-1091,4.997,vCPU/Hour,4.3474,vCPU/Hour,-13%
+AZURE Virtual Machines - B1s Offer,Virtual Machines - B1s,Official AZURE Compute offering for B1s.,AZURE-1092,2.3057,vCPU/Hour,2.6516,vCPU/Hour,15%
+AZURE Virtual Machines - B2s Offer,Virtual Machines - B2s,Official AZURE Compute offering for B2s.,AZURE-1093,0.3694,vCPU/Hour,0.3214,vCPU/Hour,-13%
+AZURE Virtual Machines - NC6 Offer,Virtual Machines - NC6,Official AZURE Compute offering for NC6.,AZURE-1094,0.7514,vCPU/Hour,0.8566,vCPU/Hour,14%
+AZURE Virtual Machines - ND96asr_v4 Offer,Virtual Machines - ND96asr_v4,Official AZURE Compute offering for ND96asr_v4.,AZURE-1095,3.3724,vCPU/Hour,3.4061,vCPU/Hour,1%
+AZURE Blob Storage - Hot LRS Offer,Blob Storage - Hot LRS,Official AZURE Storage offering for Hot LRS.,AZURE-1096,0.0189,GB Per Month,0.0176,GB Per Month,-7%
+AZURE Blob Storage - Cool LRS Offer,Blob Storage - Cool LRS,Official AZURE Storage offering for Cool LRS.,AZURE-1097,0.0215,GB Per Month,0.0245,GB Per Month,14%
+AZURE Blob Storage - Archive LRS Offer,Blob Storage - Archive LRS,Official AZURE Storage offering for Archive LRS.,AZURE-1098,0.0098,GB Per Month,0.0094,GB Per Month,-4%
+AZURE Blob Storage - Premium ZRS Offer,Blob Storage - Premium ZRS,Official AZURE Storage offering for Premium ZRS.,AZURE-1099,0.0064,GB Per Month,0.0058,GB Per Month,-10%
+AZURE Blob Storage - Hot GRS Offer,Blob Storage - Hot GRS,Official AZURE Storage offering for Hot GRS.,AZURE-1100,0.0426,GB Per Month,0.043,GB Per Month,1%
+AZURE Azure SQL - Basic DTU Offer,Azure SQL - Basic DTU,Official AZURE Database offering for Basic DTU.,AZURE-1101,0.3019,DTU/Hour,0.2627,DTU/Hour,-13%
+AZURE Azure SQL - Standard DTU Offer,Azure SQL - Standard DTU,Official AZURE Database offering for Standard DTU.,AZURE-1102,0.3548,DTU/Hour,0.3548,DTU/Hour,0%
+AZURE Azure SQL - Premium DTU Offer,Azure SQL - Premium DTU,Official AZURE Database offering for Premium DTU.,AZURE-1103,1.3365,DTU/Hour,1.3632,DTU/Hour,2%
+AZURE Azure SQL - vCore General Purpose Offer,Azure SQL - vCore General Purpose,Official AZURE Database offering for vCore General Purpose.,AZURE-1104,1.4468,DTU/Hour,1.6059,DTU/Hour,11%
+AZURE Azure SQL - vCore Business Critical Offer,Azure SQL - vCore Business Critical,Official AZURE Database offering for vCore Business Critical.,AZURE-1105,0.6068,DTU/Hour,0.6129,DTU/Hour,1%
+AZURE Cosmos DB - Provisioned RU/s Offer,Cosmos DB - Provisioned RU/s,Official AZURE Database offering for Provisioned RU/s.,AZURE-1106,0.0151,100 RU/s/Hour,0.0118,100 RU/s/Hour,-22%
+AZURE Cosmos DB - Autoscale RU/s Offer,Cosmos DB - Autoscale RU/s,Official AZURE Database offering for Autoscale RU/s.,AZURE-1107,0.0163,100 RU/s/Hour,0.013,100 RU/s/Hour,-20%
+AZURE Cosmos DB - Multi-region writes Offer,Cosmos DB - Multi-region writes,Official AZURE Database offering for Multi-region writes.,AZURE-1108,0.011,100 RU/s/Hour,0.0114,100 RU/s/Hour,4%
+AZURE VPN Gateway - Basic Offer,VPN Gateway - Basic,Official AZURE Networking offering for Basic.,AZURE-1109,0.1561,Gateway/Hour,0.1233,Gateway/Hour,-21%
+AZURE VPN Gateway - VpnGw1 Offer,VPN Gateway - VpnGw1,Official AZURE Networking offering for VpnGw1.,AZURE-1110,2.1663,Gateway/Hour,2.4912,Gateway/Hour,15%
+AZURE VPN Gateway - VpnGw2 Offer,VPN Gateway - VpnGw2,Official AZURE Networking offering for VpnGw2.,AZURE-1111,2.8282,Gateway/Hour,2.1494,Gateway/Hour,-24%
+AZURE VPN Gateway - VpnGw3 Offer,VPN Gateway - VpnGw3,Official AZURE Networking offering for VpnGw3.,AZURE-1112,1.2339,Gateway/Hour,1.0241,Gateway/Hour,-17%
+AZURE VPN Gateway - VpnGw4 Offer,VPN Gateway - VpnGw4,Official AZURE Networking offering for VpnGw4.,AZURE-1113,1.0423,Gateway/Hour,0.886,Gateway/Hour,-15%
+AZURE VPN Gateway - VpnGw5 Offer,VPN Gateway - VpnGw5,Official AZURE Networking offering for VpnGw5.,AZURE-1114,3.4405,Gateway/Hour,2.7868,Gateway/Hour,-19%
+AZURE Azure OpenAI - GPT-3.5-Turbo Offer,Azure OpenAI - GPT-3.5-Turbo,Official AZURE AI/ML offering for GPT-3.5-Turbo.,AZURE-1115,0.0236,1k Tokens,0.0224,1k Tokens,-5%
+AZURE Azure OpenAI - GPT-4 Offer,Azure OpenAI - GPT-4,Official AZURE AI/ML offering for GPT-4.,AZURE-1116,0.0121,1k Tokens,0.0114,1k Tokens,-6%
+AZURE Azure OpenAI - GPT-4-32k Offer,Azure OpenAI - GPT-4-32k,Official AZURE AI/ML offering for GPT-4-32k.,AZURE-1117,0.0317,1k Tokens,0.0238,1k Tokens,-25%
+AZURE Azure OpenAI - DALL-E 3 Offer,Azure OpenAI - DALL-E 3,Official AZURE AI/ML offering for DALL-E 3.,AZURE-1118,0.0542,1k Tokens,0.0434,1k Tokens,-20%
+AZURE Azure OpenAI - Whisper Offer,Azure OpenAI - Whisper,Official AZURE AI/ML offering for Whisper.,AZURE-1119,0.0129,1k Tokens,0.0103,1k Tokens,-20%
+AZURE App Service - F1 Free Offer,App Service - F1 Free,Official AZURE App Hosting offering for F1 Free.,AZURE-1120,0.3583,Instance/Hour,0.3798,Instance/Hour,6%
+AZURE App Service - B1 Basic Offer,App Service - B1 Basic,Official AZURE App Hosting offering for B1 Basic.,AZURE-1121,0.2408,Instance/Hour,0.183,Instance/Hour,-24%
+AZURE App Service - S1 Standard Offer,App Service - S1 Standard,Official AZURE App Hosting offering for S1 Standard.,AZURE-1122,0.386,Instance/Hour,0.3011,Instance/Hour,-22%
+AZURE App Service - P1v2 Premium Offer,App Service - P1v2 Premium,Official AZURE App Hosting offering for P1v2 Premium.,AZURE-1123,0.3497,Instance/Hour,0.3882,Instance/Hour,11%
+AZURE App Service - P1v3 Premium Offer,App Service - P1v3 Premium,Official AZURE App Hosting offering for P1v3 Premium.,AZURE-1124,0.3391,Instance/Hour,0.2543,Instance/Hour,-25%
+AZURE Synapse - Data Integration Offer,Synapse - Data Integration,Official AZURE Analytics offering for Data Integration.,AZURE-1125,0.9744,DWU/Hour,0.9062,DWU/Hour,-7%
+AZURE Synapse - SQL Pool Offer,Synapse - SQL Pool,Official AZURE Analytics offering for SQL Pool.,AZURE-1126,0.5578,DWU/Hour,0.4741,DWU/Hour,-15%
+AZURE Synapse - Spark Pool Offer,Synapse - Spark Pool,Official AZURE Analytics offering for Spark Pool.,AZURE-1127,1.2261,DWU/Hour,1.1771,DWU/Hour,-4%
+AZURE Sentinel - Data Ingestion Offer,Sentinel - Data Ingestion,Official AZURE Security offering for Data Ingestion.,AZURE-1128,3.9543,GB,4.152,GB,5%
+AZURE Sentinel - Retention Offer,Sentinel - Retention,Official AZURE Security offering for Retention.,AZURE-1129,2.1865,GB,2.4926,GB,14%
+AZURE Functions - Consumption Plan Offer,Functions - Consumption Plan,Official AZURE Compute offering for Consumption Plan.,AZURE-1130,0.7236,Million Executions,0.7381,Million Executions,2%
+AZURE Functions - Premium Plan Offer,Functions - Premium Plan,Official AZURE Compute offering for Premium Plan.,AZURE-1131,0.7215,Million Executions,0.8081,Million Executions,12%
+AZURE Virtual Machines - D2s v3 Offer,Virtual Machines - D2s v3,Official AZURE Compute offering for D2s v3.,AZURE-1132,1.2255,vCPU/Hour,1.0294,vCPU/Hour,-16%
+AZURE Virtual Machines - D4s v3 Offer,Virtual Machines - D4s v3,Official AZURE Compute offering for D4s v3.,AZURE-1133,2.0753,vCPU/Hour,2.0545,vCPU/Hour,-1%
+AZURE Virtual Machines - E2s v3 Offer,Virtual Machines - E2s v3,Official AZURE Compute offering for E2s v3.,AZURE-1134,1.8536,vCPU/Hour,1.7053,vCPU/Hour,-8%
+AZURE Virtual Machines - F2s v2 Offer,Virtual Machines - F2s v2,Official AZURE Compute offering for F2s v2.,AZURE-1135,2.3381,vCPU/Hour,2.5953,vCPU/Hour,11%
+AZURE Virtual Machines - B1s Offer,Virtual Machines - B1s,Official AZURE Compute offering for B1s.,AZURE-1136,2.0066,vCPU/Hour,1.7457,vCPU/Hour,-13%
+AZURE Virtual Machines - B2s Offer,Virtual Machines - B2s,Official AZURE Compute offering for B2s.,AZURE-1137,1.7934,vCPU/Hour,1.8831,vCPU/Hour,5%
+AZURE Virtual Machines - NC6 Offer,Virtual Machines - NC6,Official AZURE Compute offering for NC6.,AZURE-1138,3.1341,vCPU/Hour,2.3819,vCPU/Hour,-24%
+AZURE Virtual Machines - ND96asr_v4 Offer,Virtual Machines - ND96asr_v4,Official AZURE Compute offering for ND96asr_v4.,AZURE-1139,0.2822,vCPU/Hour,0.3189,vCPU/Hour,13%
+AZURE Blob Storage - Hot LRS Offer,Blob Storage - Hot LRS,Official AZURE Storage offering for Hot LRS.,AZURE-1140,0.0493,GB Per Month,0.0468,GB Per Month,-5%
+AZURE Blob Storage - Cool LRS Offer,Blob Storage - Cool LRS,Official AZURE Storage offering for Cool LRS.,AZURE-1141,0.0224,GB Per Month,0.0237,GB Per Month,6%
+AZURE Blob Storage - Archive LRS Offer,Blob Storage - Archive LRS,Official AZURE Storage offering for Archive LRS.,AZURE-1142,0.0336,GB Per Month,0.0349,GB Per Month,4%
+AZURE Blob Storage - Premium ZRS Offer,Blob Storage - Premium ZRS,Official AZURE Storage offering for Premium ZRS.,AZURE-1143,0.0485,GB Per Month,0.0485,GB Per Month,0%
+AZURE Blob Storage - Hot GRS Offer,Blob Storage - Hot GRS,Official AZURE Storage offering for Hot GRS.,AZURE-1144,0.0343,GB Per Month,0.036,GB Per Month,5%
+AZURE Azure SQL - Basic DTU Offer,Azure SQL - Basic DTU,Official AZURE Database offering for Basic DTU.,AZURE-1145,1.2137,DTU/Hour,1.2137,DTU/Hour,0%
+AZURE Azure SQL - Standard DTU Offer,Azure SQL - Standard DTU,Official AZURE Database offering for Standard DTU.,AZURE-1146,1.146,DTU/Hour,0.9626,DTU/Hour,-16%
+AZURE Azure SQL - Premium DTU Offer,Azure SQL - Premium DTU,Official AZURE Database offering for Premium DTU.,AZURE-1147,1.0206,DTU/Hour,0.9594,DTU/Hour,-6%
+AZURE Azure SQL - vCore General Purpose Offer,Azure SQL - vCore General Purpose,Official AZURE Database offering for vCore General Purpose.,AZURE-1148,0.5294,DTU/Hour,0.5241,DTU/Hour,-1%
+AZURE Azure SQL - vCore Business Critical Offer,Azure SQL - vCore Business Critical,Official AZURE Database offering for vCore Business Critical.,AZURE-1149,0.8098,DTU/Hour,0.7369,DTU/Hour,-9%
+AZURE Cosmos DB - Provisioned RU/s Offer,Cosmos DB - Provisioned RU/s,Official AZURE Database offering for Provisioned RU/s.,AZURE-1150,0.013,100 RU/s/Hour,0.0113,100 RU/s/Hour,-13%
+AZURE Cosmos DB - Autoscale RU/s Offer,Cosmos DB - Autoscale RU/s,Official AZURE Database offering for Autoscale RU/s.,AZURE-1151,0.0177,100 RU/s/Hour,0.0149,100 RU/s/Hour,-16%
+AZURE Cosmos DB - Multi-region writes Offer,Cosmos DB - Multi-region writes,Official AZURE Database offering for Multi-region writes.,AZURE-1152,0.0126,100 RU/s/Hour,0.014,100 RU/s/Hour,11%
+AZURE VPN Gateway - Basic Offer,VPN Gateway - Basic,Official AZURE Networking offering for Basic.,AZURE-1153,0.9192,Gateway/Hour,0.7354,Gateway/Hour,-20%
+AZURE VPN Gateway - VpnGw1 Offer,VPN Gateway - VpnGw1,Official AZURE Networking offering for VpnGw1.,AZURE-1154,2.4101,Gateway/Hour,1.9281,Gateway/Hour,-20%
+AZURE VPN Gateway - VpnGw2 Offer,VPN Gateway - VpnGw2,Official AZURE Networking offering for VpnGw2.,AZURE-1155,3.0057,Gateway/Hour,2.3745,Gateway/Hour,-21%
+AZURE VPN Gateway - VpnGw3 Offer,VPN Gateway - VpnGw3,Official AZURE Networking offering for VpnGw3.,AZURE-1156,2.2741,Gateway/Hour,1.8875,Gateway/Hour,-17%
+AZURE VPN Gateway - VpnGw4 Offer,VPN Gateway - VpnGw4,Official AZURE Networking offering for VpnGw4.,AZURE-1157,2.5012,Gateway/Hour,2.3511,Gateway/Hour,-6%
+AZURE VPN Gateway - VpnGw5 Offer,VPN Gateway - VpnGw5,Official AZURE Networking offering for VpnGw5.,AZURE-1158,0.3164,Gateway/Hour,0.2405,Gateway/Hour,-24%
+AZURE Azure OpenAI - GPT-3.5-Turbo Offer,Azure OpenAI - GPT-3.5-Turbo,Official AZURE AI/ML offering for GPT-3.5-Turbo.,AZURE-1159,0.0055,1k Tokens,0.0058,1k Tokens,5%
+AZURE Azure OpenAI - GPT-4 Offer,Azure OpenAI - GPT-4,Official AZURE AI/ML offering for GPT-4.,AZURE-1160,0.0278,1k Tokens,0.0303,1k Tokens,9%
+AZURE Azure OpenAI - GPT-4-32k Offer,Azure OpenAI - GPT-4-32k,Official AZURE AI/ML offering for GPT-4-32k.,AZURE-1161,0.0368,1k Tokens,0.0353,1k Tokens,-4%
+AZURE Azure OpenAI - DALL-E 3 Offer,Azure OpenAI - DALL-E 3,Official AZURE AI/ML offering for DALL-E 3.,AZURE-1162,0.0448,1k Tokens,0.0358,1k Tokens,-20%
+AZURE Azure OpenAI - Whisper Offer,Azure OpenAI - Whisper,Official AZURE AI/ML offering for Whisper.,AZURE-1163,0.0262,1k Tokens,0.0291,1k Tokens,11%
+AZURE App Service - F1 Free Offer,App Service - F1 Free,Official AZURE App Hosting offering for F1 Free.,AZURE-1164,0.0949,Instance/Hour,0.0883,Instance/Hour,-7%
+AZURE App Service - B1 Basic Offer,App Service - B1 Basic,Official AZURE App Hosting offering for B1 Basic.,AZURE-1165,0.0729,Instance/Hour,0.059,Instance/Hour,-19%
+AZURE App Service - S1 Standard Offer,App Service - S1 Standard,Official AZURE App Hosting offering for S1 Standard.,AZURE-1166,0.1151,Instance/Hour,0.0898,Instance/Hour,-22%

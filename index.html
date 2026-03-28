@@ -996,7 +996,8 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 16px;
-      min-height: 220px;
+      height: 260px;
+      position: relative;
       display: flex;
       flex-direction: column
     }
@@ -3738,10 +3739,8 @@
 
     function renderCspCellGroup(svcs) {
       if (!svcs || !svcs.length) return '<span class="none-ind">·</span>';
-      const visible = svcs.slice(0, 3);
-      const extra = svcs.length > 3 ? `<div style="font-size:9px;color:var(--text-muted);margin-top:4px">+ ${svcs.length - 3} more...</div>` : '';
-
-      return visible.map(s => {
+      
+      return svcs.map(s => {
         const rawIL = s.impactlevel || s.ImpactLevel || 'IL2';
         const levels = String(rawIL).split('|').map(l => l.trim().toUpperCase());
         const ilBadges = levels.map(lv => `<span class="ib il-${lv}">${lv}</span>`).join('');
@@ -3749,11 +3748,11 @@
         // Robust name detection for Mapping rows
         const label = s.csoshortname || s.csoShortName || s.csoparentservice || s.csOParentService || s.title || s.name || 'Unknown';
         
-        return `<div class="se">
-          <div class="sn" title="${s.description || ''}">${label}</div>
-          <div class="sm">${ilBadges}</div>
+        return `<div class="se" style="flex-direction: row; align-items: center; gap: 8px; border: none; padding: 2px 0; margin: 0;">
+          <div class="sn" title="${s.description || ''}" style="margin-right: -4px;">${label}</div>
+          <div class="sm" style="margin-top: 0;">${ilBadges}</div>
         </div>`;
-      }).join('') + extra;
+      }).join('');
     }
 
     function populateCats() {
@@ -3865,10 +3864,10 @@
       <td class="td-sub">${r.csoshortname || ''}</td>
       <td class="td-desc">${r.description || ''}</td>
       <td class="cat-num">${r.catalogitemnumber || ''}</td>
-      <td class="price-val">$${parseFloat(r.commercialunitprice || 0).toFixed(4)}</td>
-      <td class="uoi">${r.commercialunitofissue || ''}</td>
-      <td class="price-val"><strong>$${parseFloat(r.jwccunitprice || 0).toFixed(4)}</strong></td>
-      <td class="uoi">${r.jwccunitofissue || ''}</td>
+      <td class="price-val">$${parseFloat(r.commercialunitprice || r.commUnitPrice || r.list_unit_price || 0).toFixed(4)}</td>
+      <td class="uoi">${r.commercialunitofissue || r.commUnitIssue || r.pricing_unit || ''}</td>
+      <td class="price-val"><strong>$${parseFloat(r.jwccunitprice || r.custUnitPrice || 0).toFixed(4)}</strong></td>
+      <td class="uoi">${r.jwccunitofissue || r.custUnitIssue || ''}</td>
       <td class="${isNeg ? 'price-disc-neg' : 'price-disc'}">${disc}</td>
       <td>
         <button class="btn btn-ghost" style="padding:2px 4px" title="Edit" onclick="openEditModal('${r.catalogitemnumber}')">✎</button>
@@ -4039,10 +4038,10 @@
       document.getElementById('m-short').value = r.csoshortname || '';
       document.getElementById('m-desc').value = r.description || '';
       document.getElementById('m-cat').value = r.catalogitemnumber || '';
-      document.getElementById('m-cup').value = r.commercialunitprice || '';
-      document.getElementById('m-cui').value = r.commercialunitofissue || '';
-      document.getElementById('m-kusp').value = r.jwccunitprice || '';
-      document.getElementById('m-kusi').value = r.jwccunitofissue || '';
+      document.getElementById('m-cup').value = r.commercialunitprice || r.commUnitPrice || r.list_unit_price || '';
+      document.getElementById('m-cui').value = r.commercialunitofissue || r.commUnitIssue || r.pricing_unit || '';
+      document.getElementById('m-kusp').value = r.jwccunitprice || r.custUnitPrice || '';
+      document.getElementById('m-kusi').value = r.jwccunitofissue || r.custUnitIssue || '';
       document.getElementById('m-dpf').value = r.discountpremiumfee || '';
       document.getElementById('rowModal').classList.add('open');
     }

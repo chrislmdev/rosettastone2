@@ -1,0 +1,507 @@
+csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU),OCI Compute - E5,C1004,oracle,Compute,IL2|IL4|IL5,False
+Object/Block Storage,OCI Object Storage,S3004,oracle,Storage,IL2,False
+Managed SQL DB,Autonomous Database,D3004,oracle,Database,IL2,False
+Direct Connection,OCI FastConnect,N4004,oracle,Networking,IL2,False
+GenAI Services,OCI AI Vision,A5004,oracle,AI and Machine Learning,IL2,False
+App Hosting,Container Engine (OKE),C4101,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5000,oracle,Compute,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5001,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5002,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5003,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5004,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5005,oracle,Compute,IL2|IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5006,oracle,Compute,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5007,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5008,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5009,oracle,Compute,IL4|IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5010,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5011,oracle,Storage,IL2,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5012,oracle,Storage,IL2,False
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5013,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5014,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5015,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5016,oracle,Storage,IL2,True
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5017,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,File Storage - Capacity,OCI-5018,oracle,Storage,IL5,True
+Object/Block/File Storage,File Storage - Requests,OCI-5019,oracle,Storage,IL2|IL4,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5020,oracle,Database,IL4,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5021,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5022,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5023,oracle,Database,IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5024,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5025,oracle,Database,IL4,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5026,oracle,Database,IL4|IL5,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5027,oracle,Database,IL2,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5028,oracle,Networking,IL4|IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5029,oracle,Networking,IL2|IL4,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5030,oracle,Networking,IL2,False
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5031,oracle,Networking,IL4,True
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5032,oracle,Networking,IL2,True
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5033,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5034,oracle,Networking,IL5,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5035,oracle,Networking,IL4|IL5,True
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5036,oracle,AI/ML,IL2,True
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5037,oracle,AI/ML,IL2,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5038,oracle,AI/ML,IL4|IL5,False
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5039,oracle,AI/ML,IL2,False
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5040,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5041,oracle,AI/ML,IL4,False
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5042,oracle,AI/ML,IL4,False
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5043,oracle,AI/ML,IL2,True
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5044,oracle,Analytics,IL4|IL5,False
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5045,oracle,Analytics,IL4,True
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5046,oracle,Security,IL5,True
+Identity/Security/WAF,WAF - Edge Policy,OCI-5047,oracle,Security,IL4,True
+Identity/Security/WAF,WAF - Request fee,OCI-5048,oracle,Security,IL2,True
+Identity/Security/WAF,Vault - Key Version,OCI-5049,oracle,Security,IL2,True
+Identity/Security/WAF,Vault - Secret Version,OCI-5050,oracle,Security,IL2|IL4,True
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5051,oracle,Developer Services,IL2|IL4,True
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5052,oracle,Developer Services,IL2|IL4,False
+PaaS/Containers/Functions,Functions - Invocations,OCI-5053,oracle,Developer Services,IL2,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5054,oracle,Developer Services,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5055,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5056,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5057,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5058,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5059,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5060,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5061,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5062,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5063,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5064,oracle,Compute,IL4|IL5,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5065,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5066,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5067,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5068,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5069,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5070,oracle,Storage,IL5,True
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5071,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5072,oracle,Storage,IL4,True
+Object/Block/File Storage,File Storage - Capacity,OCI-5073,oracle,Storage,IL2|IL4,False
+Object/Block/File Storage,File Storage - Requests,OCI-5074,oracle,Storage,IL5,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5075,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5076,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5077,oracle,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5078,oracle,Database,IL2,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5079,oracle,Database,IL2,True
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5080,oracle,Database,IL5,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5081,oracle,Database,IL4|IL5,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5082,oracle,Database,IL2|IL4,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5083,oracle,Networking,IL4,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5084,oracle,Networking,IL2,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5085,oracle,Networking,IL2,False
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5086,oracle,Networking,IL2,True
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5087,oracle,Networking,IL4|IL5,False
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5088,oracle,Networking,IL5,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5089,oracle,Networking,IL2,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5090,oracle,Networking,IL4|IL5,True
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5091,oracle,AI/ML,IL5,False
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5092,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5093,oracle,AI/ML,IL4,True
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5094,oracle,AI/ML,IL5,False
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5095,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5096,oracle,AI/ML,IL5,True
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5097,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5098,oracle,AI/ML,IL5,False
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5099,oracle,Analytics,IL2,False
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5100,oracle,Analytics,IL2,True
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5101,oracle,Security,IL2,False
+Identity/Security/WAF,WAF - Edge Policy,OCI-5102,oracle,Security,IL4|IL5,False
+Identity/Security/WAF,WAF - Request fee,OCI-5103,oracle,Security,IL4|IL5,False
+Identity/Security/WAF,Vault - Key Version,OCI-5104,oracle,Security,IL2|IL4,True
+Identity/Security/WAF,Vault - Secret Version,OCI-5105,oracle,Security,IL2|IL4,True
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5106,oracle,Developer Services,IL2,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5107,oracle,Developer Services,IL5,False
+PaaS/Containers/Functions,Functions - Invocations,OCI-5108,oracle,Developer Services,IL2,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5109,oracle,Developer Services,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5110,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5111,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5112,oracle,Compute,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5113,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5114,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5115,oracle,Compute,IL2|IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5116,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5117,oracle,Compute,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5118,oracle,Compute,IL2|IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5119,oracle,Compute,IL2|IL4,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5120,oracle,Storage,IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5121,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5122,oracle,Storage,IL5,False
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5123,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5124,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5125,oracle,Storage,IL5,False
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5126,oracle,Storage,IL5,False
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5127,oracle,Storage,IL2,False
+Object/Block/File Storage,File Storage - Capacity,OCI-5128,oracle,Storage,IL2,True
+Object/Block/File Storage,File Storage - Requests,OCI-5129,oracle,Storage,IL5,True
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5130,oracle,Database,IL2,True
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5131,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5132,oracle,Database,IL2,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5133,oracle,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5134,oracle,Database,IL4,True
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5135,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5136,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5137,oracle,Database,IL5,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5138,oracle,Networking,IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5139,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5140,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5141,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5142,oracle,Networking,IL2|IL4,False
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5143,oracle,Networking,IL5,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5144,oracle,Networking,IL5,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5145,oracle,Networking,IL2,True
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5146,oracle,AI/ML,IL5,True
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5147,oracle,AI/ML,IL4|IL5,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5148,oracle,AI/ML,IL5,True
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5149,oracle,AI/ML,IL5,False
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5150,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5151,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5152,oracle,AI/ML,IL2|IL4,False
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5153,oracle,AI/ML,IL2,False
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5154,oracle,Analytics,IL2|IL4,False
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5155,oracle,Analytics,IL2|IL4,True
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5156,oracle,Security,IL2|IL4,True
+Identity/Security/WAF,WAF - Edge Policy,OCI-5157,oracle,Security,IL2,False
+Identity/Security/WAF,WAF - Request fee,OCI-5158,oracle,Security,IL4,False
+Identity/Security/WAF,Vault - Key Version,OCI-5159,oracle,Security,IL4|IL5,True
+Identity/Security/WAF,Vault - Secret Version,OCI-5160,oracle,Security,IL4,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5161,oracle,Developer Services,IL2|IL4,True
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5162,oracle,Developer Services,IL2,False
+PaaS/Containers/Functions,Functions - Invocations,OCI-5163,oracle,Developer Services,IL4,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5164,oracle,Developer Services,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5165,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5166,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5167,oracle,Compute,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5168,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5169,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5170,oracle,Compute,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5171,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5172,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5173,oracle,Compute,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5174,oracle,Compute,IL4|IL5,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5175,oracle,Storage,IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5176,oracle,Storage,IL5,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5177,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5178,oracle,Storage,IL2|IL4,False
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5179,oracle,Storage,IL2,False
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5180,oracle,Storage,IL2,True
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5181,oracle,Storage,IL5,True
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5182,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,File Storage - Capacity,OCI-5183,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,File Storage - Requests,OCI-5184,oracle,Storage,IL2|IL4,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5185,oracle,Database,IL2,True
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5186,oracle,Database,IL4|IL5,True
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5187,oracle,Database,IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5188,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5189,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5190,oracle,Database,IL4,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5191,oracle,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5192,oracle,Database,IL4|IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5193,oracle,Networking,IL5,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5194,oracle,Networking,IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5195,oracle,Networking,IL2,True
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5196,oracle,Networking,IL5,False
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5197,oracle,Networking,IL2|IL4,True
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5198,oracle,Networking,IL4,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5199,oracle,Networking,IL2|IL4,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5200,oracle,Networking,IL5,True
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5201,oracle,AI/ML,IL4,False
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5202,oracle,AI/ML,IL4|IL5,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5203,oracle,AI/ML,IL5,True
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5204,oracle,AI/ML,IL5,True
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5205,oracle,AI/ML,IL2|IL4,False
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5206,oracle,AI/ML,IL4,False
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5207,oracle,AI/ML,IL4,True
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5208,oracle,AI/ML,IL2,False
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5209,oracle,Analytics,IL2,True
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5210,oracle,Analytics,IL5,False
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5211,oracle,Security,IL2,False
+Identity/Security/WAF,WAF - Edge Policy,OCI-5212,oracle,Security,IL4|IL5,True
+Identity/Security/WAF,WAF - Request fee,OCI-5213,oracle,Security,IL4,True
+Identity/Security/WAF,Vault - Key Version,OCI-5214,oracle,Security,IL4|IL5,False
+Identity/Security/WAF,Vault - Secret Version,OCI-5215,oracle,Security,IL5,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5216,oracle,Developer Services,IL4,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5217,oracle,Developer Services,IL2,True
+PaaS/Containers/Functions,Functions - Invocations,OCI-5218,oracle,Developer Services,IL2|IL4,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5219,oracle,Developer Services,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5220,oracle,Compute,IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5221,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5222,oracle,Compute,IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5223,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5224,oracle,Compute,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5225,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5226,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5227,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5228,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5229,oracle,Compute,IL2,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5230,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5231,oracle,Storage,IL2,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5232,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5233,oracle,Storage,IL2,False
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5234,oracle,Storage,IL4,False
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5235,oracle,Storage,IL5,False
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5236,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5237,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,File Storage - Capacity,OCI-5238,oracle,Storage,IL2,False
+Object/Block/File Storage,File Storage - Requests,OCI-5239,oracle,Storage,IL2|IL4,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5240,oracle,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5241,oracle,Database,IL2,False
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5242,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5243,oracle,Database,IL2,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5244,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5245,oracle,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5246,oracle,Database,IL2,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5247,oracle,Database,IL2|IL4,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5248,oracle,Networking,IL2|IL4,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5249,oracle,Networking,IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5250,oracle,Networking,IL2|IL4,True
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5251,oracle,Networking,IL2|IL4,True
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5252,oracle,Networking,IL4,False
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5253,oracle,Networking,IL2|IL4,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5254,oracle,Networking,IL4,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5255,oracle,Networking,IL4,False
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5256,oracle,AI/ML,IL4,False
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5257,oracle,AI/ML,IL4,False
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5258,oracle,AI/ML,IL2,False
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5259,oracle,AI/ML,IL4,False
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5260,oracle,AI/ML,IL4,True
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5261,oracle,AI/ML,IL2,True
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5262,oracle,AI/ML,IL2|IL4,False
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5263,oracle,AI/ML,IL2|IL4,True
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5264,oracle,Analytics,IL2,False
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5265,oracle,Analytics,IL5,False
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5266,oracle,Security,IL5,False
+Identity/Security/WAF,WAF - Edge Policy,OCI-5267,oracle,Security,IL4,True
+Identity/Security/WAF,WAF - Request fee,OCI-5268,oracle,Security,IL2|IL4,False
+Identity/Security/WAF,Vault - Key Version,OCI-5269,oracle,Security,IL2,False
+Identity/Security/WAF,Vault - Secret Version,OCI-5270,oracle,Security,IL2,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5271,oracle,Developer Services,IL4|IL5,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5272,oracle,Developer Services,IL4,False
+PaaS/Containers/Functions,Functions - Invocations,OCI-5273,oracle,Developer Services,IL4,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5274,oracle,Developer Services,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5275,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5276,oracle,Compute,IL2|IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5277,oracle,Compute,IL2|IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5278,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5279,oracle,Compute,IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5280,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5281,oracle,Compute,IL2|IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5282,oracle,Compute,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5283,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5284,oracle,Compute,IL4,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5285,oracle,Storage,IL2,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5286,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5287,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5288,oracle,Storage,IL4,True
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5289,oracle,Storage,IL2|IL4,False
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5290,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5291,oracle,Storage,IL4,False
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5292,oracle,Storage,IL2|IL4,False
+Object/Block/File Storage,File Storage - Capacity,OCI-5293,oracle,Storage,IL5,True
+Object/Block/File Storage,File Storage - Requests,OCI-5294,oracle,Storage,IL5,True
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5295,oracle,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5296,oracle,Database,IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5297,oracle,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5298,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5299,oracle,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5300,oracle,Database,IL5,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5301,oracle,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5302,oracle,Database,IL2|IL4,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5303,oracle,Networking,IL2,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5304,oracle,Networking,IL2,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5305,oracle,Networking,IL2|IL4,False
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5306,oracle,Networking,IL2,False
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5307,oracle,Networking,IL2,True
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5308,oracle,Networking,IL2,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5309,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5310,oracle,Networking,IL4,True
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5311,oracle,AI/ML,IL4,False
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5312,oracle,AI/ML,IL2,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5313,oracle,AI/ML,IL4|IL5,False
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5314,oracle,AI/ML,IL2,True
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5315,oracle,AI/ML,IL4,False
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5316,oracle,AI/ML,IL2|IL4,False
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5317,oracle,AI/ML,IL4|IL5,True
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5318,oracle,AI/ML,IL4,True
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5319,oracle,Analytics,IL2|IL4,True
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5320,oracle,Analytics,IL2|IL4,True
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5321,oracle,Security,IL5,False
+Identity/Security/WAF,WAF - Edge Policy,OCI-5322,oracle,Security,IL2,True
+Identity/Security/WAF,WAF - Request fee,OCI-5323,oracle,Security,IL4,False
+Identity/Security/WAF,Vault - Key Version,OCI-5324,oracle,Security,IL4|IL5,True
+Identity/Security/WAF,Vault - Secret Version,OCI-5325,oracle,Security,IL2,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5326,oracle,Developer Services,IL4,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5327,oracle,Developer Services,IL2|IL4,True
+PaaS/Containers/Functions,Functions - Invocations,OCI-5328,oracle,Developer Services,IL4|IL5,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5329,oracle,Developer Services,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5330,oracle,Compute,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5331,oracle,Compute,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5332,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5333,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5334,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5335,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5336,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5337,oracle,Compute,IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5338,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5339,oracle,Compute,IL2|IL4,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5340,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5341,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5342,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5343,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5344,oracle,Storage,IL2,True
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5345,oracle,Storage,IL4,False
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5346,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5347,oracle,Storage,IL2,True
+Object/Block/File Storage,File Storage - Capacity,OCI-5348,oracle,Storage,IL2,True
+Object/Block/File Storage,File Storage - Requests,OCI-5349,oracle,Storage,IL5,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5350,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5351,oracle,Database,IL5,True
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5352,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5353,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5354,oracle,Database,IL2,True
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5355,oracle,Database,IL4|IL5,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5356,oracle,Database,IL5,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5357,oracle,Database,IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5358,oracle,Networking,IL4,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5359,oracle,Networking,IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5360,oracle,Networking,IL2,True
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5361,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5362,oracle,Networking,IL4,False
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5363,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5364,oracle,Networking,IL4,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5365,oracle,Networking,IL5,False
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5366,oracle,AI/ML,IL4|IL5,True
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5367,oracle,AI/ML,IL4,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5368,oracle,AI/ML,IL4,False
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5369,oracle,AI/ML,IL5,True
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5370,oracle,AI/ML,IL4|IL5,True
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5371,oracle,AI/ML,IL2|IL4,False
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5372,oracle,AI/ML,IL2,True
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5373,oracle,AI/ML,IL2|IL4,False
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5374,oracle,Analytics,IL4,True
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5375,oracle,Analytics,IL2,True
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5376,oracle,Security,IL2,True
+Identity/Security/WAF,WAF - Edge Policy,OCI-5377,oracle,Security,IL2,False
+Identity/Security/WAF,WAF - Request fee,OCI-5378,oracle,Security,IL4|IL5,False
+Identity/Security/WAF,Vault - Key Version,OCI-5379,oracle,Security,IL2|IL4,True
+Identity/Security/WAF,Vault - Secret Version,OCI-5380,oracle,Security,IL2|IL4,True
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5381,oracle,Developer Services,IL5,True
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5382,oracle,Developer Services,IL2|IL4,False
+PaaS/Containers/Functions,Functions - Invocations,OCI-5383,oracle,Developer Services,IL4|IL5,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5384,oracle,Developer Services,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5385,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5386,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5387,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5388,oracle,Compute,IL2|IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5389,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5390,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5391,oracle,Compute,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5392,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5393,oracle,Compute,IL4|IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5394,oracle,Compute,IL2|IL4,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5395,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5396,oracle,Storage,IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5397,oracle,Storage,IL2,True
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5398,oracle,Storage,IL5,False
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5399,oracle,Storage,IL4|IL5,True
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5400,oracle,Storage,IL4,False
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5401,oracle,Storage,IL4,True
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5402,oracle,Storage,IL2,True
+Object/Block/File Storage,File Storage - Capacity,OCI-5403,oracle,Storage,IL2|IL4,False
+Object/Block/File Storage,File Storage - Requests,OCI-5404,oracle,Storage,IL2|IL4,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5405,oracle,Database,IL5,True
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5406,oracle,Database,IL4|IL5,True
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5407,oracle,Database,IL5,True
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5408,oracle,Database,IL2,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5409,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5410,oracle,Database,IL5,False
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5411,oracle,Database,IL4,False
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5412,oracle,Database,IL4|IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5413,oracle,Networking,IL5,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5414,oracle,Networking,IL5,False
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5415,oracle,Networking,IL4|IL5,False
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5416,oracle,Networking,IL4|IL5,False
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5417,oracle,Networking,IL2,True
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5418,oracle,Networking,IL4|IL5,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5419,oracle,Networking,IL4,True
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5420,oracle,Networking,IL2,True
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5421,oracle,AI/ML,IL4|IL5,True
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5422,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5423,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5424,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5425,oracle,AI/ML,IL2,False
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5426,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5427,oracle,AI/ML,IL4,False
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5428,oracle,AI/ML,IL2|IL4,False
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5429,oracle,Analytics,IL5,False
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5430,oracle,Analytics,IL4,True
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5431,oracle,Security,IL5,False
+Identity/Security/WAF,WAF - Edge Policy,OCI-5432,oracle,Security,IL4|IL5,False
+Identity/Security/WAF,WAF - Request fee,OCI-5433,oracle,Security,IL5,False
+Identity/Security/WAF,Vault - Key Version,OCI-5434,oracle,Security,IL2|IL4,True
+Identity/Security/WAF,Vault - Secret Version,OCI-5435,oracle,Security,IL4|IL5,True
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5436,oracle,Developer Services,IL2|IL4,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5437,oracle,Developer Services,IL2|IL4,False
+PaaS/Containers/Functions,Functions - Invocations,OCI-5438,oracle,Developer Services,IL5,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5439,oracle,Developer Services,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5440,oracle,Compute,IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5441,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5442,oracle,Compute,IL2|IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5443,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5444,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - Memory (GB),OCI-5445,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - OCPU,OCI-5446,oracle,Compute,IL2,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard3.Flex - Memory (GB),OCI-5447,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.GPU.A10.1 - 1 GPU,OCI-5448,oracle,Compute,IL5,False
+Compute (VM/GPU/Bare Metal),Compute Instance - BM.Standard.E5.128 - Bare Metal,OCI-5449,oracle,Compute,IL5,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Balanced,OCI-5450,oracle,Storage,IL2|IL4,False
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Higher Perf,OCI-5451,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Performance Units (VPU) - Ultra High,OCI-5452,oracle,Storage,IL2|IL4,True
+Object/Block/File Storage,Block Volume - Storage Capacity,OCI-5453,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Object Storage - Standard Storage,OCI-5454,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,Object Storage - Archive Storage,OCI-5455,oracle,Storage,IL5,False
+Object/Block/File Storage,Object Storage - Requests (A/B),OCI-5456,oracle,Storage,IL2|IL4,False
+Object/Block/File Storage,Object Storage - Data Retrieval,OCI-5457,oracle,Storage,IL4|IL5,False
+Object/Block/File Storage,File Storage - Capacity,OCI-5458,oracle,Storage,IL2,False
+Object/Block/File Storage,File Storage - Requests,OCI-5459,oracle,Storage,IL2,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - OCPU,OCI-5460,oracle,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Autonomous Database (ATP/ADW) - Storage,OCI-5461,oracle,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Base Database Service - Standard Edition,OCI-5462,oracle,Database,IL2,False
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition,OCI-5463,oracle,Database,IL5,True
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition High Performance,OCI-5464,oracle,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Base Database Service - Enterprise Edition Extreme Performance,OCI-5465,oracle,Database,IL4,False
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 Infrastructure,OCI-5466,oracle,Database,IL2,True
+Managed SQL/NoSQL DB,Exadata Cloud Service - X9 OCPU,OCI-5467,oracle,Database,IL4,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (10Mbps),OCI-5468,oracle,Networking,IL4,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (100Mbps),OCI-5469,oracle,Networking,IL2,True
+Connectivity/CDN/LB,Flexible Load Balancer - Bandwidth (1000Mbps),OCI-5470,oracle,Networking,IL4|IL5,False
+Connectivity/CDN/LB,FastConnect - 1 Gbps,OCI-5471,oracle,Networking,IL2,False
+Connectivity/CDN/LB,FastConnect - 10 Gbps,OCI-5472,oracle,Networking,IL5,True
+Connectivity/CDN/LB,VCN Data Transfer - Inbound,OCI-5473,oracle,Networking,IL4,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (First 10TB free),OCI-5474,oracle,Networking,IL4|IL5,False
+Connectivity/CDN/LB,VCN Data Transfer - Outbound to Internet (Next 40TB),OCI-5475,oracle,Networking,IL5,False
+GenAI/AI Services,AI Services - Vision - Image Analysis,OCI-5476,oracle,AI/ML,IL4|IL5,False
+GenAI/AI Services,AI Services - Vision - Document AI,OCI-5477,oracle,AI/ML,IL5,True
+GenAI/AI Services,AI Services - Language - Sentiment Analysis,OCI-5478,oracle,AI/ML,IL2,True
+GenAI/AI Services,AI Services - Speech - Transcription,OCI-5479,oracle,AI/ML,IL2|IL4,True
+GenAI/AI Services,AI Services - Anomaly Detection,OCI-5480,oracle,AI/ML,IL5,True
+GenAI/AI Services,Generative AI - Llama-2-70b Inference,OCI-5481,oracle,AI/ML,IL2,True
+GenAI/AI Services,Generative AI - Cohere Command Inference,OCI-5482,oracle,AI/ML,IL4|IL5,True
+GenAI/AI Services,Generative AI - Dedicated AI Cluster,OCI-5483,oracle,AI/ML,IL4,False
+Analytics/Data Warehouse,Analytics Cloud - Professional Edition,OCI-5484,oracle,Analytics,IL5,True
+Analytics/Data Warehouse,Analytics Cloud - Enterprise Edition,OCI-5485,oracle,Analytics,IL5,False
+Identity/Security/WAF,Cloud Guard - Global Configuration,OCI-5486,oracle,Security,IL2|IL4,False
+Identity/Security/WAF,WAF - Edge Policy,OCI-5487,oracle,Security,IL4|IL5,False
+Identity/Security/WAF,WAF - Request fee,OCI-5488,oracle,Security,IL5,True
+Identity/Security/WAF,Vault - Key Version,OCI-5489,oracle,Security,IL2,False
+Identity/Security/WAF,Vault - Secret Version,OCI-5490,oracle,Security,IL2,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Cluster Management Fee,OCI-5491,oracle,Developer Services,IL2,False
+PaaS/Containers/Functions,OKE (Kubernetes) - Worker Node OCPU,OCI-5492,oracle,Developer Services,IL4,True
+PaaS/Containers/Functions,Functions - Invocations,OCI-5493,oracle,Developer Services,IL2|IL4,False
+PaaS/Containers/Functions,Functions - Execution Duration (GB-Sec),OCI-5494,oracle,Developer Services,IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - OCPU,OCI-5495,oracle,Compute,IL4,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E3.Flex - Memory (GB),OCI-5496,oracle,Compute,IL4|IL5,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - OCPU,OCI-5497,oracle,Compute,IL4,False
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Standard.E4.Flex - Memory (GB),OCI-5498,oracle,Compute,IL2,True
+Compute (VM/GPU/Bare Metal),Compute Instance - VM.Optimized3.Flex - OCPU,OCI-5499,oracle,Compute,IL2|IL4,True

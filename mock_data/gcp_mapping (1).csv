@@ -1,0 +1,167 @@
+csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-2,GCP-1000,gcp,Compute,IL4,False
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-4,GCP-1001,gcp,Compute,IL4|IL5,False
+Compute (VM/GPU/Serverless),Compute Engine - e2-micro,GCP-1002,gcp,Compute,IL4,False
+Compute (VM/GPU/Serverless),Compute Engine - e2-small,GCP-1003,gcp,Compute,IL5,True
+Compute (VM/GPU/Serverless),Compute Engine - c2-standard-4,GCP-1004,gcp,Compute,IL6,True
+Compute (VM/GPU/Serverless),Compute Engine - a2-highgpu-1g,GCP-1005,gcp,Compute,IL4,True
+Object/Block/File Storage,Cloud Storage - Standard,GCP-1006,gcp,Storage,IL2|IL4|IL5|IL6,True
+Object/Block/File Storage,Cloud Storage - Nearline,GCP-1007,gcp,Storage,IL6,False
+Object/Block/File Storage,Cloud Storage - Coldline,GCP-1008,gcp,Storage,IL5,False
+Object/Block/File Storage,Cloud Storage - Archive,GCP-1009,gcp,Storage,IL2|IL4,False
+Managed SQL/NoSQL DB,Cloud SQL - db-f1-micro,GCP-1010,gcp,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Cloud SQL - db-g1-small,GCP-1011,gcp,Database,IL2,True
+Managed SQL/NoSQL DB,Cloud SQL - db-n1-standard-1,GCP-1012,gcp,Database,IL4|IL5,True
+Managed SQL/NoSQL DB,Cloud SQL - High Availability,GCP-1013,gcp,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Spanner - Node,GCP-1014,gcp,Database,IL5|IL6,False
+Managed SQL/NoSQL DB,Spanner - Processing Unit,GCP-1015,gcp,Database,IL2|IL4|IL5|IL6,False
+Managed SQL/NoSQL DB,Spanner - Storage,GCP-1016,gcp,Database,IL2|IL4|IL5|IL6,True
+Connectivity/CDN,Cloud Interconnect - 10Gbps Dedicated,GCP-1017,gcp,Networking,IL4|IL5,True
+Connectivity/CDN,Cloud Interconnect - 100Gbps Dedicated,GCP-1018,gcp,Networking,IL5|IL6,False
+Connectivity/CDN,Cloud Interconnect - VLAN Attachment,GCP-1019,gcp,Networking,IL2|IL4|IL5|IL6,True
+GenAI/ML Services,Vertex AI - AutoML Training,GCP-1020,gcp,AI/ML,IL2,False
+GenAI/ML Services,Vertex AI - Prediction,GCP-1021,gcp,AI/ML,IL2,True
+GenAI/ML Services,Vertex AI - Custom Training,GCP-1022,gcp,AI/ML,IL2|IL4,True
+GenAI/ML Services,Vertex AI - Gemini 1.5 Pro,GCP-1023,gcp,AI/ML,IL2|IL4|IL5|IL6,True
+Compute (VM/GPU/Serverless),Cloud Run - vCPU-second,GCP-1024,gcp,Compute,IL2|IL4|IL5|IL6,True
+Compute (VM/GPU/Serverless),Cloud Run - GiB-second,GCP-1025,gcp,Compute,IL5,True
+Compute (VM/GPU/Serverless),Cloud Run - Request,GCP-1026,gcp,Compute,IL6,False
+Data Warehouse/BI,BigQuery - Active Storage,GCP-1027,gcp,Analytics,IL2,False
+Data Warehouse/BI,BigQuery - Long-term Storage,GCP-1028,gcp,Analytics,IL2|IL4,False
+Data Warehouse/BI,BigQuery - Analysis per TB,GCP-1029,gcp,Analytics,IL5,False
+Data Warehouse/BI,BigQuery - Flat-rate,GCP-1030,gcp,Analytics,IL2,True
+Identity/Encryption,Cloud Armor - Policy,GCP-1031,gcp,Security,IL5,False
+Identity/Encryption,Cloud Armor - Rule,GCP-1032,gcp,Security,IL2|IL4|IL5|IL6,True
+Identity/Encryption,Cloud Armor - Request,GCP-1033,gcp,Security,IL4|IL5,False
+Data Warehouse/BI,Pub/Sub - Throughput,GCP-1034,gcp,Analytics,IL4,True
+Data Warehouse/BI,Pub/Sub - Retention,GCP-1035,gcp,Analytics,IL5|IL6,False
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-2,GCP-1036,gcp,Compute,IL2|IL4,True
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-4,GCP-1037,gcp,Compute,IL5,True
+Compute (VM/GPU/Serverless),Compute Engine - e2-micro,GCP-1038,gcp,Compute,IL2|IL4,True
+Compute (VM/GPU/Serverless),Compute Engine - e2-small,GCP-1039,gcp,Compute,IL2,True
+Compute (VM/GPU/Serverless),Compute Engine - c2-standard-4,GCP-1040,gcp,Compute,IL6,False
+Compute (VM/GPU/Serverless),Compute Engine - a2-highgpu-1g,GCP-1041,gcp,Compute,IL4|IL5,True
+Object/Block/File Storage,Cloud Storage - Standard,GCP-1042,gcp,Storage,IL2|IL4|IL5|IL6,False
+Object/Block/File Storage,Cloud Storage - Nearline,GCP-1043,gcp,Storage,IL2|IL4,True
+Object/Block/File Storage,Cloud Storage - Coldline,GCP-1044,gcp,Storage,IL5,True
+Object/Block/File Storage,Cloud Storage - Archive,GCP-1045,gcp,Storage,IL2|IL4,False
+Managed SQL/NoSQL DB,Cloud SQL - db-f1-micro,GCP-1046,gcp,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Cloud SQL - db-g1-small,GCP-1047,gcp,Database,IL2,True
+Managed SQL/NoSQL DB,Cloud SQL - db-n1-standard-1,GCP-1048,gcp,Database,IL5,False
+Managed SQL/NoSQL DB,Cloud SQL - High Availability,GCP-1049,gcp,Database,IL4,True
+Managed SQL/NoSQL DB,Spanner - Node,GCP-1050,gcp,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Spanner - Processing Unit,GCP-1051,gcp,Database,IL2|IL4|IL5|IL6,True
+Managed SQL/NoSQL DB,Spanner - Storage,GCP-1052,gcp,Database,IL5,True
+Connectivity/CDN,Cloud Interconnect - 10Gbps Dedicated,GCP-1053,gcp,Networking,IL4|IL5,True
+Connectivity/CDN,Cloud Interconnect - 100Gbps Dedicated,GCP-1054,gcp,Networking,IL2,False
+Connectivity/CDN,Cloud Interconnect - VLAN Attachment,GCP-1055,gcp,Networking,IL2|IL4|IL5|IL6,False
+GenAI/ML Services,Vertex AI - AutoML Training,GCP-1056,gcp,AI/ML,IL6,True
+GenAI/ML Services,Vertex AI - Prediction,GCP-1057,gcp,AI/ML,IL6,True
+GenAI/ML Services,Vertex AI - Custom Training,GCP-1058,gcp,AI/ML,IL5,True
+GenAI/ML Services,Vertex AI - Gemini 1.5 Pro,GCP-1059,gcp,AI/ML,IL5,True
+Compute (VM/GPU/Serverless),Cloud Run - vCPU-second,GCP-1060,gcp,Compute,IL2,True
+Compute (VM/GPU/Serverless),Cloud Run - GiB-second,GCP-1061,gcp,Compute,IL4|IL5,False
+Compute (VM/GPU/Serverless),Cloud Run - Request,GCP-1062,gcp,Compute,IL6,False
+Data Warehouse/BI,BigQuery - Active Storage,GCP-1063,gcp,Analytics,IL5,False
+Data Warehouse/BI,BigQuery - Long-term Storage,GCP-1064,gcp,Analytics,IL2,False
+Data Warehouse/BI,BigQuery - Analysis per TB,GCP-1065,gcp,Analytics,IL4|IL5,True
+Data Warehouse/BI,BigQuery - Flat-rate,GCP-1066,gcp,Analytics,IL5,True
+Identity/Encryption,Cloud Armor - Policy,GCP-1067,gcp,Security,IL2|IL4,False
+Identity/Encryption,Cloud Armor - Rule,GCP-1068,gcp,Security,IL5|IL6,False
+Identity/Encryption,Cloud Armor - Request,GCP-1069,gcp,Security,IL2,True
+Data Warehouse/BI,Pub/Sub - Throughput,GCP-1070,gcp,Analytics,IL5,True
+Data Warehouse/BI,Pub/Sub - Retention,GCP-1071,gcp,Analytics,IL6,False
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-2,GCP-1072,gcp,Compute,IL4|IL5,True
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-4,GCP-1073,gcp,Compute,IL4,False
+Compute (VM/GPU/Serverless),Compute Engine - e2-micro,GCP-1074,gcp,Compute,IL4|IL5,True
+Compute (VM/GPU/Serverless),Compute Engine - e2-small,GCP-1075,gcp,Compute,IL2|IL4,False
+Compute (VM/GPU/Serverless),Compute Engine - c2-standard-4,GCP-1076,gcp,Compute,IL4,True
+Compute (VM/GPU/Serverless),Compute Engine - a2-highgpu-1g,GCP-1077,gcp,Compute,IL2,False
+Object/Block/File Storage,Cloud Storage - Standard,GCP-1078,gcp,Storage,IL2|IL4,False
+Object/Block/File Storage,Cloud Storage - Nearline,GCP-1079,gcp,Storage,IL6,False
+Object/Block/File Storage,Cloud Storage - Coldline,GCP-1080,gcp,Storage,IL2,False
+Object/Block/File Storage,Cloud Storage - Archive,GCP-1081,gcp,Storage,IL4|IL5,True
+Managed SQL/NoSQL DB,Cloud SQL - db-f1-micro,GCP-1082,gcp,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Cloud SQL - db-g1-small,GCP-1083,gcp,Database,IL4|IL5,False
+Managed SQL/NoSQL DB,Cloud SQL - db-n1-standard-1,GCP-1084,gcp,Database,IL5,True
+Managed SQL/NoSQL DB,Cloud SQL - High Availability,GCP-1085,gcp,Database,IL5,True
+Managed SQL/NoSQL DB,Spanner - Node,GCP-1086,gcp,Database,IL5,False
+Managed SQL/NoSQL DB,Spanner - Processing Unit,GCP-1087,gcp,Database,IL2|IL4|IL5|IL6,True
+Managed SQL/NoSQL DB,Spanner - Storage,GCP-1088,gcp,Database,IL2|IL4|IL5|IL6,False
+Connectivity/CDN,Cloud Interconnect - 10Gbps Dedicated,GCP-1089,gcp,Networking,IL4,True
+Connectivity/CDN,Cloud Interconnect - 100Gbps Dedicated,GCP-1090,gcp,Networking,IL2|IL4|IL5|IL6,False
+Connectivity/CDN,Cloud Interconnect - VLAN Attachment,GCP-1091,gcp,Networking,IL2,True
+GenAI/ML Services,Vertex AI - AutoML Training,GCP-1092,gcp,AI/ML,IL2,False
+GenAI/ML Services,Vertex AI - Prediction,GCP-1093,gcp,AI/ML,IL5|IL6,True
+GenAI/ML Services,Vertex AI - Custom Training,GCP-1094,gcp,AI/ML,IL5,True
+GenAI/ML Services,Vertex AI - Gemini 1.5 Pro,GCP-1095,gcp,AI/ML,IL5|IL6,False
+Compute (VM/GPU/Serverless),Cloud Run - vCPU-second,GCP-1096,gcp,Compute,IL2|IL4|IL5|IL6,True
+Compute (VM/GPU/Serverless),Cloud Run - GiB-second,GCP-1097,gcp,Compute,IL6,True
+Compute (VM/GPU/Serverless),Cloud Run - Request,GCP-1098,gcp,Compute,IL2|IL4,True
+Data Warehouse/BI,BigQuery - Active Storage,GCP-1099,gcp,Analytics,IL5,False
+Data Warehouse/BI,BigQuery - Long-term Storage,GCP-1100,gcp,Analytics,IL6,False
+Data Warehouse/BI,BigQuery - Analysis per TB,GCP-1101,gcp,Analytics,IL6,False
+Data Warehouse/BI,BigQuery - Flat-rate,GCP-1102,gcp,Analytics,IL2|IL4,True
+Identity/Encryption,Cloud Armor - Policy,GCP-1103,gcp,Security,IL6,False
+Identity/Encryption,Cloud Armor - Rule,GCP-1104,gcp,Security,IL2|IL4|IL5|IL6,False
+Identity/Encryption,Cloud Armor - Request,GCP-1105,gcp,Security,IL2|IL4|IL5|IL6,True
+Data Warehouse/BI,Pub/Sub - Throughput,GCP-1106,gcp,Analytics,IL2,False
+Data Warehouse/BI,Pub/Sub - Retention,GCP-1107,gcp,Analytics,IL4|IL5,False
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-2,GCP-1108,gcp,Compute,IL6,False
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-4,GCP-1109,gcp,Compute,IL6,False
+Compute (VM/GPU/Serverless),Compute Engine - e2-micro,GCP-1110,gcp,Compute,IL4,False
+Compute (VM/GPU/Serverless),Compute Engine - e2-small,GCP-1111,gcp,Compute,IL2|IL4,True
+Compute (VM/GPU/Serverless),Compute Engine - c2-standard-4,GCP-1112,gcp,Compute,IL6,True
+Compute (VM/GPU/Serverless),Compute Engine - a2-highgpu-1g,GCP-1113,gcp,Compute,IL5,True
+Object/Block/File Storage,Cloud Storage - Standard,GCP-1114,gcp,Storage,IL5,False
+Object/Block/File Storage,Cloud Storage - Nearline,GCP-1115,gcp,Storage,IL4,True
+Object/Block/File Storage,Cloud Storage - Coldline,GCP-1116,gcp,Storage,IL4|IL5,True
+Object/Block/File Storage,Cloud Storage - Archive,GCP-1117,gcp,Storage,IL2,False
+Managed SQL/NoSQL DB,Cloud SQL - db-f1-micro,GCP-1118,gcp,Database,IL5,True
+Managed SQL/NoSQL DB,Cloud SQL - db-g1-small,GCP-1119,gcp,Database,IL4,False
+Managed SQL/NoSQL DB,Cloud SQL - db-n1-standard-1,GCP-1120,gcp,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Cloud SQL - High Availability,GCP-1121,gcp,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Spanner - Node,GCP-1122,gcp,Database,IL2|IL4,True
+Managed SQL/NoSQL DB,Spanner - Processing Unit,GCP-1123,gcp,Database,IL2|IL4,False
+Managed SQL/NoSQL DB,Spanner - Storage,GCP-1124,gcp,Database,IL5|IL6,True
+Connectivity/CDN,Cloud Interconnect - 10Gbps Dedicated,GCP-1125,gcp,Networking,IL5|IL6,False
+Connectivity/CDN,Cloud Interconnect - 100Gbps Dedicated,GCP-1126,gcp,Networking,IL4|IL5,False
+Connectivity/CDN,Cloud Interconnect - VLAN Attachment,GCP-1127,gcp,Networking,IL2|IL4,True
+GenAI/ML Services,Vertex AI - AutoML Training,GCP-1128,gcp,AI/ML,IL5,True
+GenAI/ML Services,Vertex AI - Prediction,GCP-1129,gcp,AI/ML,IL4,False
+GenAI/ML Services,Vertex AI - Custom Training,GCP-1130,gcp,AI/ML,IL4|IL5,True
+GenAI/ML Services,Vertex AI - Gemini 1.5 Pro,GCP-1131,gcp,AI/ML,IL2,False
+Compute (VM/GPU/Serverless),Cloud Run - vCPU-second,GCP-1132,gcp,Compute,IL5|IL6,True
+Compute (VM/GPU/Serverless),Cloud Run - GiB-second,GCP-1133,gcp,Compute,IL6,False
+Compute (VM/GPU/Serverless),Cloud Run - Request,GCP-1134,gcp,Compute,IL5,False
+Data Warehouse/BI,BigQuery - Active Storage,GCP-1135,gcp,Analytics,IL2,True
+Data Warehouse/BI,BigQuery - Long-term Storage,GCP-1136,gcp,Analytics,IL5|IL6,True
+Data Warehouse/BI,BigQuery - Analysis per TB,GCP-1137,gcp,Analytics,IL5,True
+Data Warehouse/BI,BigQuery - Flat-rate,GCP-1138,gcp,Analytics,IL4,True
+Identity/Encryption,Cloud Armor - Policy,GCP-1139,gcp,Security,IL2|IL4|IL5|IL6,True
+Identity/Encryption,Cloud Armor - Rule,GCP-1140,gcp,Security,IL4,True
+Identity/Encryption,Cloud Armor - Request,GCP-1141,gcp,Security,IL2,False
+Data Warehouse/BI,Pub/Sub - Throughput,GCP-1142,gcp,Analytics,IL2|IL4,False
+Data Warehouse/BI,Pub/Sub - Retention,GCP-1143,gcp,Analytics,IL2|IL4|IL5|IL6,True
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-2,GCP-1144,gcp,Compute,IL5|IL6,False
+Compute (VM/GPU/Serverless),Compute Engine - n2-standard-4,GCP-1145,gcp,Compute,IL5,False
+Compute (VM/GPU/Serverless),Compute Engine - e2-micro,GCP-1146,gcp,Compute,IL2,False
+Compute (VM/GPU/Serverless),Compute Engine - e2-small,GCP-1147,gcp,Compute,IL2|IL4|IL5|IL6,False
+Compute (VM/GPU/Serverless),Compute Engine - c2-standard-4,GCP-1148,gcp,Compute,IL4|IL5,False
+Compute (VM/GPU/Serverless),Compute Engine - a2-highgpu-1g,GCP-1149,gcp,Compute,IL6,True
+Object/Block/File Storage,Cloud Storage - Standard,GCP-1150,gcp,Storage,IL5|IL6,True
+Object/Block/File Storage,Cloud Storage - Nearline,GCP-1151,gcp,Storage,IL2,True
+Object/Block/File Storage,Cloud Storage - Coldline,GCP-1152,gcp,Storage,IL4|IL5,True
+Object/Block/File Storage,Cloud Storage - Archive,GCP-1153,gcp,Storage,IL5|IL6,False
+Managed SQL/NoSQL DB,Cloud SQL - db-f1-micro,GCP-1154,gcp,Database,IL5,True
+Managed SQL/NoSQL DB,Cloud SQL - db-g1-small,GCP-1155,gcp,Database,IL2,True
+Managed SQL/NoSQL DB,Cloud SQL - db-n1-standard-1,GCP-1156,gcp,Database,IL5,False
+Managed SQL/NoSQL DB,Cloud SQL - High Availability,GCP-1157,gcp,Database,IL6,False
+Managed SQL/NoSQL DB,Spanner - Node,GCP-1158,gcp,Database,IL2|IL4|IL5|IL6,False
+Managed SQL/NoSQL DB,Spanner - Processing Unit,GCP-1159,gcp,Database,IL6,True
+Managed SQL/NoSQL DB,Spanner - Storage,GCP-1160,gcp,Database,IL2|IL4,True
+Connectivity/CDN,Cloud Interconnect - 10Gbps Dedicated,GCP-1161,gcp,Networking,IL2,True
+Connectivity/CDN,Cloud Interconnect - 100Gbps Dedicated,GCP-1162,gcp,Networking,IL4|IL5,False
+Connectivity/CDN,Cloud Interconnect - VLAN Attachment,GCP-1163,gcp,Networking,IL2,False
+GenAI/ML Services,Vertex AI - AutoML Training,GCP-1164,gcp,AI/ML,IL5|IL6,True
+GenAI/ML Services,Vertex AI - Prediction,GCP-1165,gcp,AI/ML,IL6,True
