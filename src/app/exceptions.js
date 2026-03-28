@@ -52,6 +52,7 @@
         },
         options: {
           ...compact,
+          animation: false,
           indexAxis: 'y',
           responsive: true,
           maintainAspectRatio: false,
@@ -87,6 +88,7 @@
         },
         options: {
           ...compact,
+          animation: false,
           responsive: true,
           maintainAspectRatio: false,
           cutout: '58%',
@@ -122,6 +124,7 @@
         },
         options: {
           ...compact,
+          animation: false,
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
@@ -198,7 +201,16 @@
     if (typeof showToast === 'function') showToast('CSV downloaded', 'success');
   }
 
-  function exportExceptionsPdf() {
+  function canvasToPng(id) {
+    const el = document.getElementById(id);
+    try {
+      return el && typeof el.toDataURL === 'function' ? el.toDataURL('image/png') : '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  async function exportExceptionsPdf() {
     const rows = window.__excFilteredRows || [];
     if (!rows.length) {
       if (typeof showToast === 'function') showToast('No rows to export', 'error');
@@ -209,8 +221,53 @@
     const status = String(document.getElementById('excStatusFilter')?.value || '');
     const impact = String(document.getElementById('excImpactFilter')?.value || '');
     const service = String(document.getElementById('excServiceFilter')?.value || '');
-    const filt = [`Count: ${rows.length}`, csp && `CSP: ${csp}`, status && `Status: ${status}`,
-      impact && `Impact: ${impact}`, service && `Service: ${service}`, q && `Search: ${q}`].filter(Boolean).join(' · ');
+    const filtLines = [
+      `Records: ${rows.length}`,
+      csp && `CSP: ${csp}`,
+      status && `Status: ${status}`,
+      impact && `Impact: ${impact}`,
+      service && `Service: ${service}`,
+      q && `Search: ${q}`,
+    ].filter(Boolean);
+    const filtHtml = filtLines.map(l => `<li>${escHtml(l)}</li>`).join('');
+
+    const grid = document.getElementById('excChartsGrid');
+    const prevGridDisplay = grid ? grid.style.display : '';
+    if (grid) grid.style.display = 'grid';
+
+    if (chartDebounceTimer) {
+      clearTimeout(chartDebounceTimer);
+      chartDebounceTimer = null;
+    }
+    renderExceptionCharts(rows);
+    await new Promise(r => {
+      requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(r, 120)));
+    });
+
+    const imgSvc = canvasToPng('excChartByService');
+    const imgSt = canvasToPng('excChartByStatus');
+    const imgIm = canvasToPng('excChartByImpact');
+
+    if (grid) {
+      if (prevGridDisplay) grid.style.display = prevGridDisplay;
+      else if (rows.length) grid.style.display = 'grid';
+    }
+    scheduleExceptionCharts(rows);
+
+    const chartBlock = (title, dataUrl) => {
+      if (!dataUrl || dataUrl.length < 64) return '';
+      return `<figure class="chart-fig"><figcaption>${escHtml(title)}</figcaption><img src="${dataUrl}" alt="" /></figure>`;
+    };
+    const chartsSection = `
+      <section class="charts-section">
+        <h2>Analytics overview</h2>
+        <p class="charts-lead">Snapshot of filtered data at export time.</p>
+        <div class="charts-grid">
+          ${chartBlock('Exceptions by service', imgSvc)}
+          ${chartBlock('Status breakdown', imgSt)}
+          ${chartBlock('Impact level by CSP', imgIm)}
+        </div>
+      </section>`;
 
     const tableRows = rows.slice(0, 500).map(r => `<tr>
       <td>${escHtml(r.csp_injected || r.csp)}</td>
@@ -223,35 +280,62 @@
       <td>${escHtml(r.exceptionsecurityconsiderations || r.exceptionsecurity)}</td>
     </tr>`).join('');
 
-    const more = rows.length > 500 ? `<p style="font-size:11px;color:#666">Showing first 500 of ${rows.length} rows. Use CSV export for the full set.</p>` : '';
+    const more = rows.length > 500 ? `<p class="note">First 500 of ${rows.length} rows shown. Use CSV export for the full dataset.</p>` : '';
+
+    const dateStr = new Date().toLocaleString();
 
     const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Exceptions report</title>
       <style>
-        body{font-family:system-ui,sans-serif;padding:24px;color:#111;font-size:11px}
-        h1{font-size:18px;margin:0 0 8px}
-        .meta{color:#555;margin-bottom:16px;font-size:11px}
-        table{border-collapse:collapse;width:100%}
-        th,td{border:1px solid #ccc;padding:4px 6px;text-align:left;vertical-align:top}
-        th{background:#f0f0f0;font-size:10px}
+        *{box-sizing:border-box}
+        body{font-family:'Segoe UI',system-ui,sans-serif;padding:28px 32px;color:#0f172a;font-size:11px;line-height:1.45;max-width:1100px;margin:0 auto}
+        .report-header{border-bottom:3px solid #2563eb;padding-bottom:16px;margin-bottom:24px}
+        h1{font-size:22px;margin:0 0 6px;font-weight:700;letter-spacing:-0.02em;color:#0f172a}
+        .subtitle{margin:0;color:#64748b;font-size:12px}
+        .meta{margin:12px 0 0;padding-left:18px;color:#475569;font-size:11px}
+        h2{font-size:14px;margin:0 0 10px;color:#1e293b;text-transform:uppercase;letter-spacing:0.06em}
+        .charts-section{margin-bottom:28px;page-break-inside:avoid}
+        .charts-lead{margin:0 0 12px;color:#64748b;font-size:11px}
+        .charts-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:start}
+        @media print{.charts-grid{grid-template-columns:1fr 1fr 1fr}}
+        .chart-fig{margin:0;page-break-inside:avoid;text-align:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 8px 12px}
+        .chart-fig figcaption{font-size:10px;font-weight:600;color:#475569;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em}
+        .chart-fig img{max-width:100%;height:auto;display:block;margin:0 auto;border-radius:4px}
+        table{border-collapse:collapse;width:100%;margin-top:8px}
+        th,td{border:1px solid #cbd5e1;padding:6px 8px;text-align:left;vertical-align:top}
+        th{background:#f1f5f9;font-size:10px;font-weight:600;color:#334155}
+        tr:nth-child(even) td{background:#fafafa}
+        .note{font-size:11px;color:#64748b;margin-top:12px}
+        @page{margin:12mm}
+        @media print{
+          body{padding:0}
+          .chart-fig{border-color:#ccc}
+        }
       </style></head><body>
-      <h1>Exceptions Library</h1>
-      <div class="meta">${escHtml(filt)}</div>
-      <table><thead><tr>
-        <th>CSP</th><th>Exception ID</th><th>Short Name</th><th>Impact</th><th>Status</th>
-        <th>PWS Requirement</th><th>Basis</th><th>Security</th>
-      </tr></thead><tbody>${tableRows}</tbody></table>
-      ${more}
+      <header class="report-header">
+        <h1>Exceptions library</h1>
+        <p class="subtitle">Generated ${escHtml(dateStr)} · CloudPrism</p>
+        <ul class="meta">${filtHtml}</ul>
+      </header>
+      ${chartsSection}
+      <section class="detail-section">
+        <h2>Exception records</h2>
+        <table><thead><tr>
+          <th>CSP</th><th>Exception ID</th><th>Short name</th><th>Impact</th><th>Status</th>
+          <th>PWS requirement</th><th>Basis</th><th>Security</th>
+        </tr></thead><tbody>${tableRows}</tbody></table>
+        ${more}
+      </section>
       </body></html>`;
 
-    const win = window.open('', '_blank', 'width=960,height=720');
+    const win = window.open('', '_blank', 'width=1000,height=780');
     if (!win) {
       if (typeof showToast === 'function') showToast('Pop-up blocked — allow pop-ups to export PDF', 'error');
       return;
     }
     win.document.write(html);
     win.document.close();
-    setTimeout(() => { win.focus(); win.print(); }, 300);
-    if (typeof showToast === 'function') showToast('PDF — use Print dialog → Save as PDF', 'success');
+    setTimeout(() => { win.focus(); win.print(); }, 400);
+    if (typeof showToast === 'function') showToast('PDF — use Print → Save as PDF', 'success');
   }
 
   function initExceptionsPage() {

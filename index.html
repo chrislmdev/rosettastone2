@@ -414,7 +414,78 @@
     .csp-hdr {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 6px
+    }
+
+    /* Services catalog — RosettaStone-style grouping & table polish */
+    #svcTable tbody tr.svc-cat-band td {
+      padding: 0;
+      border-right: none;
+      vertical-align: middle;
+      background: linear-gradient(90deg, rgba(59, 130, 246, 0.14), rgba(59, 130, 246, 0.04));
+      border-bottom: 1px solid var(--border)
+    }
+    #svcTable tbody tr.svc-cat-band:hover {
+      background: transparent
+    }
+    .svc-cat-band-inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: var(--text);
+      border-left: 4px solid var(--accent)
+    }
+    #svcTable tbody tr:not(.svc-cat-band) .td-cat {
+      font-weight: 500;
+      color: var(--text-dim)
+    }
+    #svcTable tbody tr:not(.svc-cat-band) .td-desc {
+      font-style: italic;
+      color: var(--text-muted)
+    }
+    .svc-page-intro {
+      max-width: 1500px;
+      margin: 0 auto 16px;
+      padding: 0 4px
+    }
+    .svc-page-title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 6px;
+      color: var(--text)
+    }
+    .svc-page-sub {
+      margin: 0;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      max-width: 720px
+    }
+    .svc-toolbar-hint {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-right: 6px;
+      white-space: nowrap
+    }
+    .il-legend .legend-key {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-right: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em
+    }
+    .il-legend .legend-detail {
+      font-size: 9px;
+      color: var(--text-muted);
+      opacity: 0.9;
+      margin-left: 4px
     }
 
     .csp-dot {
@@ -2681,6 +2752,10 @@
      PAGE: SERVICES
 ══════════════════════════════════════════ -->
   <div class="page active" id="page-services">
+    <div class="svc-page-intro">
+      <h2 class="svc-page-title">Cloud service offerings comparison</h2>
+      <p class="svc-page-sub">Crosswalk by FOCUS 1.3 category and CSP. Subcategory shows the service short name; category bands group each section.</p>
+    </div>
     <div class="toolbar">
       <div class="toolbar-inner">
         <div class="search-wrap">
@@ -2691,7 +2766,7 @@
         <!-- Category multi-select -->
         <div class="ms-wrap" id="ms-cat-wrap">
           <div class="ms-btn" id="ms-cat-btn" onclick="toggleMs('cat')">
-            <span id="ms-cat-label">Category</span>
+            <span id="ms-cat-label">All categories</span>
             <span class="ms-arrow">▾</span>
           </div>
           <div class="ms-dropdown" id="ms-cat-drop">
@@ -2701,10 +2776,11 @@
           </div>
         </div>
 
+        <span class="svc-toolbar-hint">Filter by impact level</span>
         <!-- Impact Level multi-select -->
         <div class="ms-wrap" id="ms-il-wrap">
           <div class="ms-btn" id="ms-il-btn" onclick="toggleMs('il')">
-            <span id="ms-il-label">Impact Level</span>
+            <span id="ms-il-label">All levels</span>
             <span class="ms-arrow">▾</span>
           </div>
           <div class="ms-dropdown" id="ms-il-drop">
@@ -2733,7 +2809,7 @@
         <!-- CSP multi-select -->
         <div class="ms-wrap" id="ms-csp-wrap">
           <div class="ms-btn" id="ms-csp-btn" onclick="toggleMs('csp')">
-            <span id="ms-csp-label">CSP</span>
+            <span id="ms-csp-label">All CSPs</span>
             <span class="ms-arrow">▾</span>
           </div>
           <div class="ms-dropdown" id="ms-csp-drop">
@@ -2766,12 +2842,14 @@
 
         <div class="toolbar-sep"></div>
         <div class="il-legend">
+          <span class="legend-key">Key</span>
           <span class="il-chip"><span class="il-dot" style="background:var(--il2)"></span>IL2</span>
           <span class="il-chip"><span class="il-dot" style="background:var(--accent2)"></span>IL3</span>
           <span class="il-chip"><span class="il-dot" style="background:var(--il4)"></span>IL4</span>
           <span class="il-chip"><span class="il-dot" style="background:var(--il5)"></span>IL5</span>
           <span class="il-chip"><span class="il-dot" style="background:var(--il6)"></span>IL6</span>
-          <span class="new-chip">✦ New (30d)</span>
+          <span class="legend-detail">IL5 highlight · newly authorized</span>
+          <span class="new-chip">✦ New service (30d)</span>
         </div>
       </div>
     </div>
@@ -2959,9 +3037,10 @@
             <label style="font-size:10px;color:var(--text-muted)">API base URL</label>
             <input type="text" id="apiBaseUrl" placeholder="http://localhost:3001" class="form-input" style="width:220px;font-size:11px;padding:6px 8px" onchange="persistApiBaseUrl()">
           </div>
-          <div style="display:flex;flex-direction:column;gap:4px">
+          <div style="display:flex;flex-direction:column;gap:4px;max-width:320px">
             <label style="font-size:10px;color:var(--text-muted)">Admin JWT (queue import)</label>
-            <input type="password" id="apiAuthToken" placeholder="Bearer token" class="form-input" style="width:200px;font-size:11px;padding:6px 8px" onchange="persistApiToken()">
+            <input type="password" id="apiAuthToken" placeholder="Paste token from login response" class="form-input" style="width:200px;font-size:11px;padding:6px 8px" onchange="persistApiToken()">
+            <span style="font-size:10px;color:var(--text-muted);line-height:1.4">No default token. Obtain one with <code style="font-size:9px">POST /api/login</code> JSON <code style="font-size:9px">{"username","password"}</code> as a user with <strong>admin</strong> role; paste the <code style="font-size:9px">token</code> field only (the app sends <code style="font-size:9px">Authorization: Bearer …</code>). Expires per server config (often 24h).</span>
           </div>
           <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="loadCatalogsFromApi()">Load from API</button>
           <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="restoreCatalogSnapshot()">Restore snapshot</button>
@@ -3974,9 +4053,9 @@
     const msState = { cat: new Set(), il: new Set(), csp: new Set(), pcat: new Set() };
 
     const msLabels = {
-      cat: { default: 'Category', plural: 'Categories' },
-      il: { default: 'Impact Level', plural: 'Impact Levels' },
-      csp: { default: 'CSP', plural: 'CSPs' },
+      cat: { default: 'All categories', plural: 'Categories' },
+      il: { default: 'All levels', plural: 'Impact levels' },
+      csp: { default: 'All CSPs', plural: 'CSPs' },
       pcat: { default: 'Category', plural: 'Categories' }
     };
 
@@ -4061,6 +4140,9 @@
       const data = csOParentServiceData.length > 0 ? csOParentServiceData : [];
       if (!data.length) {
         body.innerHTML = '';
+        const svcEmpty = document.getElementById('svcEmpty');
+        if (svcEmpty) svcEmpty.style.display = 'none';
+        if (meta) meta.innerHTML = 'Load mapping data from <strong>Admin</strong> or restore a snapshot.';
         return;
       }
 
@@ -4075,11 +4157,14 @@
           grouped[key] = {
             category: cat,
             parentName: parent,
+            subcategoryLabel: '',
             description: s.description || s.Description || 'Monthly CSP Service Offering Mapping',
             aws: [], azure: [], gcp: [], oracle: []
           };
         }
-        
+        const shortN = String(s.csoshortname || s.csoShortName || '').trim();
+        if (shortN && !grouped[key].subcategoryLabel) grouped[key].subcategoryLabel = shortN;
+
         // Find which CSP this row belongs to
         const provider = (s.csp_injected || s.csp || '').toLowerCase().trim();
         if (provider && grouped[key][provider]) {
@@ -4088,9 +4173,16 @@
       });
 
       const flat = Object.values(grouped);
+      const svcEmpty = document.getElementById('svcEmpty');
       const filtered = flat.filter(g => {
         const qLower = query.toLowerCase();
-        const matchQuery = !query || g.parentName.toLowerCase().includes(qLower) || g.category.toLowerCase().includes(qLower);
+        const subLbl = (g.subcategoryLabel || g.parentName || '').toLowerCase();
+        const descL = (g.description || '').toLowerCase();
+        const matchQuery = !query ||
+          g.parentName.toLowerCase().includes(qLower) ||
+          g.category.toLowerCase().includes(qLower) ||
+          subLbl.includes(qLower) ||
+          descL.includes(qLower);
         const matchCat = msState.cat.size === 0 || msState.cat.has(g.category);
         
         const matchIL = msState.il.size === 0 || ['aws', 'azure', 'gcp', 'oracle'].some(csp => 
@@ -4104,17 +4196,52 @@
         return matchQuery && matchCat && matchIL && matchCSP;
       });
 
-      body.innerHTML = filtered.map(g => `<tr>
+      if (!filtered.length) {
+        body.innerHTML = '';
+        if (svcEmpty) svcEmpty.style.display = 'block';
+        if (meta) meta.innerHTML = flat.length ? 'No rows match your filters.' : 'No mapping data loaded.';
+        return;
+      }
+      if (svcEmpty) svcEmpty.style.display = 'none';
+
+      const subDisp = g => g.subcategoryLabel || g.parentName;
+      const byCat = {};
+      filtered.forEach(g => {
+        if (!byCat[g.category]) byCat[g.category] = [];
+        byCat[g.category].push(g);
+      });
+      let catsOrdered = [...Object.keys(byCat)];
+      catsOrdered.sort((a, b) => a.localeCompare(b));
+      if (svcSortCol === 'category' && svcSortDir < 0) catsOrdered.reverse();
+
+      catsOrdered.forEach(cat => {
+        const list = byCat[cat];
+        if (svcSortCol === 'subcategory') {
+          list.sort((a, b) => subDisp(a).localeCompare(subDisp(b)) * svcSortDir);
+        } else {
+          list.sort((a, b) => subDisp(a).localeCompare(subDisp(b)));
+        }
+      });
+
+      const rowsHtml = [];
+      for (const cat of catsOrdered) {
+        const list = byCat[cat];
+        rowsHtml.push(`<tr class="svc-cat-band"><td colspan="7"><div class="svc-cat-band-inner">${catIcon(cat)}<span>${cat}</span></div></td></tr>`);
+        for (const g of list) {
+        rowsHtml.push(`<tr>
         <td class="td-cat"><span style="display:flex;align-items:center;gap:5px">${catIcon(g.category)}${g.category}</span></td>
-        <td class="td-sub">${g.parentName}</td>
+        <td class="td-sub">${subDisp(g)}</td>
         <td class="td-desc">${g.description}</td>
         <td class="svc-cell td-aws-c">${renderCspCellGroup(g.aws)}</td>
         <td class="svc-cell td-azure-c">${renderCspCellGroup(g.azure)}</td>
         <td class="svc-cell td-gcp-c">${renderCspCellGroup(g.gcp)}</td>
         <td class="svc-cell td-oracle-c">${renderCspCellGroup(g.oracle)}</td>
-      </tr>`).join('');
+      </tr>`);
+        }
+      }
+      body.innerHTML = rowsHtml.join('');
 
-      if (meta) meta.innerHTML = `Showing <strong>${filtered.length}</strong> groups of <strong>${flat.length}</strong> service mapping types`;
+      if (meta) meta.innerHTML = `Showing <strong>${filtered.length}</strong> offering rows in <strong>${new Set(filtered.map(x => x.category)).size}</strong> categories (${flat.length} total groups)`;
     }
 
     const SVC_IL_ORDER = ['IL2', 'IL3', 'IL4', 'IL5', 'IL6'];
