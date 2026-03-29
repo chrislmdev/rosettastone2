@@ -1156,6 +1156,13 @@
       margin-bottom: 4px;
       font-size: 10px
     }
+    .admin-batch-backend-hint {
+      font-size: 10px;
+      font-family: var(--mono);
+      color: var(--text-muted);
+      margin: 0 0 8px;
+      word-break: break-all
+    }
     .bulk-progress-track {
       height: 6px;
       background: var(--surface3);
@@ -3113,6 +3120,7 @@
         <p style="font-size:11px;color:var(--text-muted);margin:0 0 10px;max-width:640px">
           Filenames should include CSP and type (e.g. <code style="font-size:10px">oci_pricing.csv</code>, <code style="font-size:10px">aws_parent_mapping.csv</code>). Set <strong>Import month</strong> above, add files, then <strong>Process all</strong> — uploads, waits for processing, and reloads catalogs from the backend.
         </p>
+        <p id="adminBatchBackendHint" class="admin-batch-backend-hint" aria-live="polite"></p>
         <div class="admin-batch-bar">
           <div id="batchDropzone" class="batch-dropzone batch-dropzone-compact" role="button" tabindex="0"
             onclick="document.getElementById('batchDropzoneInput').click()"
@@ -3146,7 +3154,7 @@
           <div class="adv-grid">
             <div style="display:flex;flex-direction:column;gap:4px">
               <label style="font-size:10px;color:var(--text-muted)">Backend URL</label>
-              <input type="text" id="apiBaseUrl" placeholder="http://localhost:3001" class="form-input" style="width:220px;font-size:11px;padding:6px 8px" onchange="persistApiBaseUrl()" title="Leave empty to use localhost:3001">
+              <input type="text" id="apiBaseUrl" placeholder="http://localhost:3001" class="form-input" style="width:220px;font-size:11px;padding:6px 8px" oninput="updateAdminBatchBackendHint()" onchange="persistApiBaseUrl()" title="Leave empty to use localhost:3001">
             </div>
             <div style="display:flex;flex-direction:column;gap:4px">
               <label style="font-size:10px;color:var(--text-muted)">Bearer token (optional)</label>
@@ -3791,6 +3799,7 @@
       const v = (document.getElementById('apiBaseUrl')?.value || '').trim().replace(/\/$/, '');
       if (v) localStorage.setItem(API_BASE_LS, v);
       else localStorage.removeItem(API_BASE_LS);
+      updateAdminBatchBackendHint();
     }
     function persistApiToken() {
       const v = (document.getElementById('apiAuthToken')?.value || '').trim();
@@ -3808,6 +3817,48 @@
       const fromInput = (document.getElementById('apiAuthToken')?.value || '').trim();
       if (fromInput) return fromInput;
       return (localStorage.getItem(API_TOKEN_LS) || '').trim();
+    }
+
+    function formatFetchError(err, baseUrl) {
+      const b = baseUrl || getApiBase();
+      const msg = String(err && err.message ? err.message : err || '');
+      const name = err && err.name ? err.name : '';
+      const fileHint =
+        window.location.protocol === 'file:'
+          ? ' This page was opened as a local file; serve it over HTTP so the browser can reach the API.'
+          : '';
+      if (name === 'AbortError') {
+        return `Connection to ${b} timed out or was aborted.${fileHint} Check Admin → Advanced → Backend URL.`;
+      }
+      if (
+        msg === 'Failed to fetch' ||
+        msg === 'NetworkError when attempting to fetch resource.' ||
+        /networkerror|load failed/i.test(msg)
+      ) {
+        return `Cannot reach API at ${b}. Is the server running? Check Admin → Advanced → Backend URL.${fileHint}`;
+      }
+      return msg;
+    }
+
+    async function pingApiHealth(base) {
+      const url = `${base}/health`;
+      const ac = new AbortController();
+      const timer = setTimeout(() => ac.abort(), 5000);
+      try {
+        const res = await fetch(url, {
+          method: 'GET',
+          signal: ac.signal,
+          headers: { Accept: 'application/json' },
+        });
+        if (!res.ok) throw new Error(`health HTTP ${res.status}`);
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    function updateAdminBatchBackendHint() {
+      const el = document.getElementById('adminBatchBackendHint');
+      if (el) el.textContent = 'Using backend: ' + getApiBase();
     }
 
     function persistCatalogSnapshot() {
@@ -3942,7 +3993,7 @@
           'success'
         );
       } catch (err) {
-        showToast('API load failed: ' + (err.message || err), 'error');
+        showToast('API load failed: ' + formatFetchError(err, getApiBase()), 'error');
       }
     }
 
@@ -4184,6 +4235,13 @@
         }
       }
 
+      try {
+        await pingApiHealth(base);
+      } catch (e) {
+        showToast('Cannot start batch import: ' + formatFetchError(e, base), 'error');
+        return;
+      }
+
       const panel = document.getElementById('bulkImportPanel');
       const rowsEl = document.getElementById('bulkImportRows');
       const labelEl = document.getElementById('bulkProgressLabel');
@@ -4228,16 +4286,17 @@
         body = await res.json().catch(() => ({}));
         if (!res.ok) throw new Error(body.error || res.statusText);
       } catch (e) {
+        const detail = formatFetchError(e, base);
         if (labelEl) labelEl.textContent = 'Batch failed';
         for (let i = 0; i < jobs.length; i++) {
           const stEl = document.getElementById('bulk-st-' + i);
           if (stEl) {
             stEl.textContent = 'error';
             stEl.className = 'bulk-st-error';
-            stEl.title = String(e.message || e);
+            stEl.title = detail;
           }
         }
-        showToast('Batch import failed: ' + (e.message || e), 'error');
+        showToast('Batch import failed: ' + detail, 'error');
         return;
       }
 
@@ -4300,12 +4359,13 @@
         } catch (e) {
           completed++;
           setProgress();
+          const detail = formatFetchError(e, base);
           if (stEl) {
             stEl.textContent = 'error';
             stEl.className = 'bulk-st-error';
-            stEl.title = String(e.message || e);
+            stEl.title = detail;
           }
-          showToast(`${name}: ${e.message || e}`, 'error');
+          showToast(`${name}: ${detail}`, 'error');
         }
       }
 
@@ -4323,7 +4383,7 @@
           );
         } catch (e) {
           showToast(
-            'Imports queued on server; could not reload catalogs: ' + (e.message || e),
+            'Imports queued on server; could not reload catalogs: ' + formatFetchError(e, base),
             'error'
           );
         }
@@ -5041,27 +5101,45 @@
       document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
       document.getElementById('page-' + name).classList.add('active');
       if (btn) btn.classList.add('active');
+      if (name === 'admin') updateAdminBatchBackendHint();
     }
 
     // ── ADMIN LOGIC ──────────────────────────────────────────────
     function loadSampleAdminData() {
-      Promise.all([
-        fetch('csoPricing_mock.csv').then(r => r.text()),
-        fetch('csoException_mock.csv').then(r => r.text()),
-        fetch('csOParentService_mock.csv').then(r => r.text())
-      ]).then(([pricingText, exceptionText, parentText]) => {
-        csoPricingData = [];
-        csoExceptionData = [];
-        csOParentServiceData = [];
-        ['aws', 'azure', 'gcp', 'oracle'].forEach(csp => {
-          handleAdminCSVRaw('csoPricing', pricingText, csp);
-          handleAdminCSVRaw('csoException', exceptionText, csp);
-          handleAdminCSVRaw('csOParentService', parentText, csp);
+      const csps = ['aws', 'azure', 'gcp', 'oracle'];
+      const loadText = path =>
+        fetch(path).then(r => {
+          if (!r.ok) throw new Error(path + ' HTTP ' + r.status);
+          return r.text();
         });
-        showToast('✓ Mock data loaded from CSV files', 'success');
-      }).catch(() => {
-        showToast('Failed to load mock CSV files', 'error');
-      });
+      Promise.all(
+        csps.map(csp =>
+          Promise.all([
+            loadText(`mock_data/${csp}_Pricing_mock.csv`),
+            loadText(`mock_data/${csp}_Exception_mock.csv`),
+            loadText(`mock_data/${csp}_ParentService_mock.csv`),
+          ]).then(([pricingText, exceptionText, parentText]) => ({
+            csp,
+            pricingText,
+            exceptionText,
+            parentText,
+          }))
+        )
+      )
+        .then(results => {
+          csoPricingData = [];
+          csoExceptionData = [];
+          csOParentServiceData = [];
+          for (const { csp, pricingText, exceptionText, parentText } of results) {
+            handleAdminCSVRaw('csoPricing', pricingText, csp);
+            handleAdminCSVRaw('csoException', exceptionText, csp);
+            handleAdminCSVRaw('csOParentService', parentText, csp);
+          }
+          showToast('✓ Mock data loaded from mock_data/ (per CSP)', 'success');
+        })
+        .catch(() => {
+          showToast('Failed to load mock CSV files from mock_data/', 'error');
+        });
     }
 
     function clearAdminData(schema) {
@@ -5966,6 +6044,7 @@
       if (ab && localStorage.getItem(API_BASE_LS)) ab.value = localStorage.getItem(API_BASE_LS);
       const tk = document.getElementById('apiAuthToken');
       if (tk && localStorage.getItem(API_TOKEN_LS)) tk.value = localStorage.getItem(API_TOKEN_LS);
+      updateAdminBatchBackendHint();
     });
     // Also set immediately in case DOM is already ready
     (() => { const d = document.getElementById('igce-date'); if (d) d.value = new Date().toISOString().split('T')[0]; })();
