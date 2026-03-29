@@ -1,0 +1,1001 @@
+title,csoshortname,description,catalogitemNumber,commercialUnitPrice,commercialUnitOfIssue,customerUnitPrice,customerUnitOfIssue,discountpremiumfee
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00001,111.213,Month,83.41,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00002,90.051,Month,67.538,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00003,22.23,Month,16.672,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00004,105.198,Month,78.898,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00005,49.583,Month,37.187,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00006,64.514,Month,48.385,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00007,70.813,Month,53.11,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00008,72.834,Month,54.626,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00009,32.534,Month,24.401,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00010,35.14,Month,26.355,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00011,112.804,Month,84.603,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00012,72.602,Month,54.452,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00013,22.736,Month,17.052,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00014,28.725,Month,21.544,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00015,32.352,Month,24.264,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00016,50.891,Month,38.168,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00017,24.093,Month,18.07,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00018,42.238,Month,31.678,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00019,59.803,Month,44.852,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00020,85.734,Month,64.3,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00021,16.403,Month,12.302,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00022,55.492,Month,41.619,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00023,31.338,Month,23.504,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00024,55.689,Month,41.767,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00025,57.518,Month,43.139,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00026,111.436,Month,83.577,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00027,33.188,Month,24.891,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00028,72.45,Month,54.338,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00029,33.881,Month,25.411,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00030,106.675,Month,80.006,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00031,38.65,Month,28.987,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00032,78.363,Month,58.772,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00033,20.869,Month,15.652,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00034,72.792,Month,54.594,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00035,93.591,Month,70.193,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00036,28.129,Month,21.097,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00037,108.787,Month,81.59,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00038,27.438,Month,20.578,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00039,38.344,Month,28.758,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00040,117.39,Month,88.043,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00041,106.763,Month,80.072,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00042,87.234,Month,65.425,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00043,78.831,Month,59.123,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00044,78.896,Month,59.172,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00045,87.582,Month,65.686,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00046,41.89,Month,31.418,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00047,112.673,Month,84.505,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00048,54.013,Month,40.51,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00049,62.785,Month,47.089,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00050,1.45,Month,1.087,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00051,90.241,Month,67.681,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00052,94.516,Month,70.887,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00053,71.216,Month,53.412,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00054,28.212,Month,21.159,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00055,67.172,Month,50.379,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00056,10.126,Month,7.595,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00057,60.179,Month,45.134,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00058,4.302,Month,3.226,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00059,10.704,Month,8.028,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00060,1.131,Month,0.848,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00061,34.152,Month,25.614,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00062,104.001,Month,78.001,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00063,50.146,Month,37.609,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00064,108.26,Month,81.195,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00065,6.278,Month,4.708,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00066,86.574,Month,64.93,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00067,85.342,Month,64.007,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00068,24.966,Month,18.724,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00069,11.13,Month,8.348,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00070,21.1,Month,15.825,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00071,84.438,Month,63.329,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00072,23.497,Month,17.623,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00073,94.87,Month,71.153,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00074,72.722,Month,54.541,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00075,36.922,Month,27.691,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00076,48.997,Month,36.748,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00077,9.329,Month,6.997,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00078,105.661,Month,79.246,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00079,23.716,Month,17.787,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00080,100.808,Month,75.606,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00081,70.671,Month,53.003,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00082,9.574,Month,7.181,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00083,57.055,Month,42.791,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00084,109.419,Month,82.064,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00085,89.735,Month,67.301,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00086,21.227,Month,15.92,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00087,118.886,Month,89.165,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00088,41.126,Month,30.844,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00089,109.047,Month,81.785,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00090,59.419,Month,44.564,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00091,103.359,Month,77.519,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00092,81.9,Month,61.425,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00093,24.381,Month,18.286,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00094,48.935,Month,36.701,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00095,92.746,Month,69.559,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00096,94.752,Month,71.064,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00097,72.966,Month,54.724,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00098,109.106,Month,81.829,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00099,12.054,Month,9.04,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00100,17.621,Month,13.216,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00101,44.096,Month,33.072,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00102,115.119,Month,86.339,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00103,77.892,Month,58.419,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00104,102.615,Month,76.961,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00105,69.031,Month,51.773,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00106,56.165,Month,42.124,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00107,5.911,Month,4.433,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00108,86.614,Month,64.96,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00109,56.84,Month,42.63,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00110,103.016,Month,77.262,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00111,87.619,Month,65.714,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00112,34.565,Month,25.924,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00113,5.308,Month,3.981,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00114,78.622,Month,58.966,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00115,101.991,Month,76.493,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00116,65.529,Month,49.147,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00117,66.286,Month,49.715,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00118,20.14,Month,15.105,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00119,73.031,Month,54.773,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00120,16.918,Month,12.688,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00121,10.861,Month,8.146,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00122,29.651,Month,22.238,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00123,77.002,Month,57.751,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00124,10.639,Month,7.979,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00125,79.277,Month,59.458,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00126,94.706,Month,71.029,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00127,23.524,Month,17.643,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00128,98.975,Month,74.231,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00129,3.347,Month,2.51,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00130,88.583,Month,66.437,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00131,71.075,Month,53.306,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00132,40.9,Month,30.675,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00133,5.456,Month,4.092,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00134,41.726,Month,31.294,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00135,88.994,Month,66.745,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00136,109.739,Month,82.304,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00137,112.307,Month,84.23,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00138,19.405,Month,14.554,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00139,47.63,Month,35.723,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00140,15.964,Month,11.973,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00141,78.415,Month,58.811,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00142,118.426,Month,88.82,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00143,3.711,Month,2.783,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00144,102.656,Month,76.992,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00145,84.817,Month,63.613,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00146,99.733,Month,74.8,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00147,82.921,Month,62.191,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00148,46.332,Month,34.749,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00149,78.581,Month,58.936,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00150,52.694,Month,39.52,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00151,92.364,Month,69.273,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00152,59.651,Month,44.738,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00153,108.238,Month,81.178,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00154,107.006,Month,80.255,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00155,35.11,Month,26.332,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00156,77.694,Month,58.27,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00157,23.568,Month,17.676,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00158,53.714,Month,40.285,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00159,8.074,Month,6.056,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00160,98.521,Month,73.891,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00161,41.434,Month,31.075,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00162,82.511,Month,61.883,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00163,35.161,Month,26.371,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00164,107.431,Month,80.573,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00165,33.677,Month,25.258,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00166,63.529,Month,47.647,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00167,82.591,Month,61.943,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00168,114.391,Month,85.793,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00169,88.789,Month,66.592,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00170,26.036,Month,19.527,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00171,111.18,Month,83.385,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00172,12.174,Month,9.13,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00173,35.635,Month,26.726,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00174,72.203,Month,54.152,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00175,6.964,Month,5.223,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00176,19.312,Month,14.484,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00177,117.933,Month,88.45,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00178,8.293,Month,6.22,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00179,85.053,Month,63.79,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00180,90.678,Month,68.008,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00181,35.294,Month,26.47,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00182,97.758,Month,73.319,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00183,68.921,Month,51.691,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00184,88.632,Month,66.474,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00185,68.694,Month,51.52,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00186,95.035,Month,71.276,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00187,87.767,Month,65.825,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00188,15.916,Month,11.937,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00189,48.218,Month,36.163,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00190,86.368,Month,64.776,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00191,91.833,Month,68.875,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00192,39.724,Month,29.793,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00193,59.045,Month,44.284,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00194,21.838,Month,16.379,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00195,13.948,Month,10.461,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00196,59.243,Month,44.432,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00197,91.126,Month,68.345,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00198,68.818,Month,51.614,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00199,115.866,Month,86.9,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00200,64.84,Month,48.63,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00201,2.48,Month,1.86,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00202,110.144,Month,82.608,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00203,41.66,Month,31.245,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00204,26.946,Month,20.21,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00205,62.75,Month,47.062,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00206,31.864,Month,23.898,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00207,87.617,Month,65.713,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00208,95.748,Month,71.811,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00209,20.363,Month,15.272,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00210,13.496,Month,10.122,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00211,63.945,Month,47.959,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00212,66.128,Month,49.596,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00213,97.531,Month,73.148,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00214,28.049,Month,21.037,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00215,13.157,Month,9.868,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00216,116.445,Month,87.334,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00217,113.986,Month,85.49,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00218,64.104,Month,48.078,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00219,1.105,Month,0.829,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00220,57.788,Month,43.341,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00221,36.209,Month,27.157,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00222,48.464,Month,36.348,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00223,61.065,Month,45.799,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00224,11.739,Month,8.804,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00225,57.855,Month,43.391,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00226,55.762,Month,41.822,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00227,30.876,Month,23.157,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00228,39.421,Month,29.566,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00229,4.88,Month,3.66,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00230,54.064,Month,40.548,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00231,21.836,Month,16.377,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00232,11.405,Month,8.554,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00233,79.303,Month,59.477,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00234,73.751,Month,55.313,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00235,76.337,Month,57.253,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00236,47.107,Month,35.33,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00237,83.403,Month,62.552,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00238,108.581,Month,81.436,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00239,53.754,Month,40.316,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00240,92.389,Month,69.292,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00241,15.786,Month,11.839,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00242,4.355,Month,3.266,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00243,6.986,Month,5.239,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00244,54.242,Month,40.681,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00245,110.64,Month,82.98,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00246,32.194,Month,24.146,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00247,90.906,Month,68.18,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00248,60.143,Month,45.107,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00249,12.205,Month,9.154,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00250,96.297,Month,72.223,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00251,51.533,Month,38.65,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00252,40.948,Month,30.711,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00253,16.78,Month,12.585,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00254,64.068,Month,48.051,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00255,43.665,Month,32.749,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00256,17.689,Month,13.267,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00257,108.233,Month,81.175,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00258,17.566,Month,13.174,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00259,43.695,Month,32.771,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00260,4.575,Month,3.431,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00261,23.543,Month,17.657,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00262,119.836,Month,89.877,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00263,75.479,Month,56.609,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00264,56.51,Month,42.383,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00265,55.85,Month,41.888,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00266,2.403,Month,1.802,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00267,15.708,Month,11.781,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00268,61.085,Month,45.814,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00269,5.827,Month,4.37,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00270,59.214,Month,44.41,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00271,110.367,Month,82.775,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00272,104.936,Month,78.702,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00273,6.902,Month,5.176,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00274,23.587,Month,17.69,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00275,66.867,Month,50.15,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00276,110.466,Month,82.849,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00277,61.839,Month,46.379,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00278,16.344,Month,12.258,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00279,94.577,Month,70.933,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00280,2.934,Month,2.2,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00281,24.77,Month,18.578,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00282,96.909,Month,72.682,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00283,73.318,Month,54.989,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00284,50.792,Month,38.094,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00285,80.667,Month,60.5,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00286,90.707,Month,68.03,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00287,65.125,Month,48.844,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00288,112.016,Month,84.012,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00289,33.764,Month,25.323,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00290,70.256,Month,52.692,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00291,94.805,Month,71.104,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00292,80.733,Month,60.55,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00293,103.404,Month,77.553,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00294,61.359,Month,46.019,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00295,101.177,Month,75.883,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00296,20.775,Month,15.581,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00297,88.974,Month,66.731,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00298,50.441,Month,37.831,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00299,53.984,Month,40.488,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00300,9.549,Month,7.162,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00301,92.876,Month,69.657,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00302,89.408,Month,67.056,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00303,2.951,Month,2.213,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00304,75.044,Month,56.283,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00305,87.489,Month,65.617,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00306,13.988,Month,10.491,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00307,98.207,Month,73.655,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00308,110.64,Month,82.98,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00309,112.682,Month,84.511,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00310,86.903,Month,65.177,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00311,6.73,Month,5.048,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00312,115.84,Month,86.88,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00313,93.985,Month,70.489,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00314,31.133,Month,23.35,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00315,4.558,Month,3.418,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00316,101.634,Month,76.225,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00317,41.202,Month,30.901,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00318,39.027,Month,29.27,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00319,1.717,Month,1.288,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00320,99.697,Month,74.773,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00321,82.502,Month,61.876,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00322,58.17,Month,43.627,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00323,93.501,Month,70.126,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00324,33.206,Month,24.905,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00325,38.39,Month,28.793,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00326,42.895,Month,32.171,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00327,39.59,Month,29.693,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00328,115.282,Month,86.462,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00329,40.829,Month,30.622,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00330,91.024,Month,68.268,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00331,74.816,Month,56.112,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00332,72.844,Month,54.633,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00333,1.92,Month,1.44,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00334,69.06,Month,51.795,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00335,63.005,Month,47.254,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00336,102.994,Month,77.245,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00337,80.594,Month,60.445,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00338,112.943,Month,84.707,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00339,92.43,Month,69.323,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00340,111.217,Month,83.413,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00341,38.089,Month,28.567,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00342,29.18,Month,21.885,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00343,13.145,Month,9.859,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00344,81.896,Month,61.422,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00345,0.125,Month,0.094,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00346,35.6,Month,26.7,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00347,106.54,Month,79.905,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00348,114.546,Month,85.91,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00349,94.823,Month,71.117,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00350,87.724,Month,65.793,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00351,54.2,Month,40.65,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00352,4.984,Month,3.738,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00353,90.188,Month,67.641,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00354,63.056,Month,47.292,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00355,4.215,Month,3.161,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00356,101.696,Month,76.272,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00357,103.874,Month,77.905,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00358,56.86,Month,42.645,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00359,101.221,Month,75.916,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00360,61.354,Month,46.016,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00361,4.256,Month,3.192,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00362,68.287,Month,51.215,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00363,59.917,Month,44.938,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00364,99.768,Month,74.826,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00365,47.473,Month,35.605,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00366,4.614,Month,3.46,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00367,106.781,Month,80.086,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00368,31.504,Month,23.628,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00369,116.075,Month,87.056,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00370,33.066,Month,24.8,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00371,108.878,Month,81.659,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00372,85.124,Month,63.843,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00373,39.896,Month,29.922,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00374,78.173,Month,58.63,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00375,36.731,Month,27.548,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00376,49.535,Month,37.151,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00377,59.11,Month,44.332,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00378,105.068,Month,78.801,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00379,113.741,Month,85.306,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00380,96.868,Month,72.651,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00381,49.479,Month,37.109,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00382,79.205,Month,59.404,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00383,78.956,Month,59.217,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00384,39.866,Month,29.899,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00385,2.696,Month,2.022,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00386,97.851,Month,73.388,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00387,5.18,Month,3.885,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00388,36.343,Month,27.257,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00389,98.982,Month,74.237,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00390,15.939,Month,11.954,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00391,54.537,Month,40.903,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00392,107.161,Month,80.371,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00393,50.542,Month,37.907,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00394,71.165,Month,53.374,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00395,103.225,Month,77.419,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00396,87.424,Month,65.568,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00397,32.951,Month,24.713,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00398,19.454,Month,14.591,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00399,108.785,Month,81.589,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00400,21.489,Month,16.117,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00401,9.068,Month,6.801,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00402,6.026,Month,4.519,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00403,115.186,Month,86.389,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00404,62.856,Month,47.142,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00405,25.779,Month,19.334,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00406,91.573,Month,68.68,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00407,98.008,Month,73.506,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00408,64.279,Month,48.209,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00409,35.818,Month,26.863,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00410,50.89,Month,38.168,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00411,7.577,Month,5.683,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00412,87.664,Month,65.748,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00413,114.554,Month,85.916,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00414,118.61,Month,88.957,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00415,40.014,Month,30.011,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00416,38.128,Month,28.596,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00417,96.589,Month,72.442,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00418,97.654,Month,73.24,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00419,81.294,Month,60.971,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00420,77.33,Month,57.998,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00421,26.296,Month,19.722,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00422,37.316,Month,27.987,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00423,42.54,Month,31.905,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00424,82.08,Month,61.56,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00425,86.414,Month,64.811,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00426,68.914,Month,51.686,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00427,20.684,Month,15.513,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00428,96.403,Month,72.302,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00429,94.515,Month,70.886,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00430,110.156,Month,82.617,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00431,72.159,Month,54.119,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00432,116.234,Month,87.175,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00433,11.381,Month,8.536,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00434,56.442,Month,42.331,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00435,7.093,Month,5.32,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00436,54.026,Month,40.52,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00437,25.06,Month,18.795,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00438,42.202,Month,31.651,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00439,57.623,Month,43.217,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00440,3.405,Month,2.554,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00441,84.968,Month,63.726,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00442,57.385,Month,43.039,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00443,11.471,Month,8.603,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00444,60.759,Month,45.569,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00445,94.113,Month,70.585,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00446,0.342,Month,0.257,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00447,52.069,Month,39.052,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00448,6.679,Month,5.009,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00449,55.756,Month,41.817,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00450,88.254,Month,66.191,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00451,38.531,Month,28.898,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00452,87.836,Month,65.877,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00453,105.569,Month,79.177,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00454,9.794,Month,7.346,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00455,63.214,Month,47.41,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00456,23.574,Month,17.681,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00457,25.913,Month,19.435,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00458,43.096,Month,32.322,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00459,92.501,Month,69.376,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00460,85.904,Month,64.428,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00461,117.123,Month,87.842,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00462,20.397,Month,15.298,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00463,101.986,Month,76.49,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00464,101.201,Month,75.901,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00465,47.76,Month,35.82,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00466,14.454,Month,10.841,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00467,16.986,Month,12.739,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00468,3.75,Month,2.812,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00469,74.21,Month,55.657,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00470,35.25,Month,26.438,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00471,50.247,Month,37.685,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00472,77.304,Month,57.978,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00473,11.624,Month,8.718,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00474,48.337,Month,36.253,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00475,73.696,Month,55.272,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00476,101.422,Month,76.066,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00477,55.164,Month,41.373,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00478,89.476,Month,67.107,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00479,79.694,Month,59.77,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00480,112.614,Month,84.46,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00481,74.041,Month,55.531,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00482,80.445,Month,60.334,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00483,85.383,Month,64.037,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00484,55.018,Month,41.264,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00485,65.675,Month,49.256,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00486,74.082,Month,55.561,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00487,98.916,Month,74.187,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00488,56.712,Month,42.534,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00489,40.957,Month,30.718,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00490,82.32,Month,61.74,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00491,82.477,Month,61.858,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00492,24.072,Month,18.054,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00493,104.021,Month,78.016,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00494,68.71,Month,51.532,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00495,45.534,Month,34.151,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00496,80.735,Month,60.551,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00497,84.405,Month,63.304,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00498,25.517,Month,19.138,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00499,84.938,Month,63.704,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00500,97.477,Month,73.108,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00501,74.237,Month,55.678,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00502,27.658,Month,20.744,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00503,81.113,Month,60.835,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00504,33.64,Month,25.23,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00505,113.447,Month,85.085,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00506,104.744,Month,78.558,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00507,54.583,Month,40.937,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00508,105.201,Month,78.901,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00509,23.788,Month,17.841,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00510,26.942,Month,20.206,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00511,62.321,Month,46.741,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00512,89.33,Month,66.998,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00513,59.89,Month,44.918,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00514,108.638,Month,81.478,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00515,20.318,Month,15.239,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00516,26.858,Month,20.143,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00517,52.825,Month,39.619,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00518,27.225,Month,20.419,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00519,49.337,Month,37.003,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00520,31.332,Month,23.499,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00521,77.138,Month,57.854,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00522,32.093,Month,24.07,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00523,28.801,Month,21.601,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00524,60.234,Month,45.175,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00525,76.066,Month,57.05,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00526,55.646,Month,41.734,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00527,90.669,Month,68.002,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00528,105.212,Month,78.909,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00529,17.584,Month,13.188,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00530,95.013,Month,71.26,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00531,31.047,Month,23.285,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00532,69.585,Month,52.189,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00533,78.773,Month,59.08,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00534,106.739,Month,80.054,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00535,85.822,Month,64.367,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00536,48.549,Month,36.412,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00537,2.601,Month,1.951,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00538,104.989,Month,78.742,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00539,69.697,Month,52.273,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00540,14.58,Month,10.935,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00541,56.068,Month,42.051,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00542,104.997,Month,78.748,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00543,104.702,Month,78.526,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00544,104.857,Month,78.643,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00545,53.485,Month,40.114,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00546,34.644,Month,25.983,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00547,97.701,Month,73.276,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00548,74.964,Month,56.223,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00549,119.23,Month,89.422,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00550,42.713,Month,32.035,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00551,92.791,Month,69.593,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00552,46.477,Month,34.858,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00553,84.448,Month,63.336,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00554,63.234,Month,47.425,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00555,70.414,Month,52.811,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00556,14.325,Month,10.744,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00557,64.422,Month,48.316,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00558,117.274,Month,87.956,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00559,88.098,Month,66.073,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00560,84.059,Month,63.044,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00561,33.057,Month,24.793,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00562,21.862,Month,16.396,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00563,84.281,Month,63.211,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00564,60.163,Month,45.122,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00565,70.145,Month,52.609,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00566,113.794,Month,85.346,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00567,53.387,Month,40.04,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00568,48.39,Month,36.293,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00569,80.606,Month,60.454,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00570,66.734,Month,50.05,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00571,1.714,Month,1.285,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00572,112.382,Month,84.287,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00573,43.283,Month,32.462,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00574,68.584,Month,51.438,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00575,79.543,Month,59.657,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00576,33.185,Month,24.889,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00577,90.288,Month,67.716,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00578,108.891,Month,81.668,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00579,72.808,Month,54.606,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00580,40.062,Month,30.046,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00581,83.394,Month,62.546,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00582,56.888,Month,42.666,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00583,56.613,Month,42.46,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00584,46.26,Month,34.695,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00585,103.797,Month,77.848,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00586,61.831,Month,46.373,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00587,81.602,Month,61.202,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00588,79.833,Month,59.875,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00589,42.648,Month,31.986,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00590,117.207,Month,87.905,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00591,91.999,Month,68.999,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00592,97.391,Month,73.043,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00593,88.913,Month,66.685,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00594,12.212,Month,9.159,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00595,39.929,Month,29.947,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00596,16.402,Month,12.302,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00597,118.36,Month,88.77,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00598,11.086,Month,8.315,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00599,23.691,Month,17.768,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00600,18.956,Month,14.217,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00601,19.501,Month,14.626,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00602,24.179,Month,18.134,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00603,16.404,Month,12.303,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00604,88.916,Month,66.687,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00605,42.108,Month,31.581,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00606,118.377,Month,88.783,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00607,69.361,Month,52.021,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00608,16.041,Month,12.031,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00609,55.587,Month,41.69,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00610,98.705,Month,74.029,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00611,8.877,Month,6.658,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00612,31.898,Month,23.924,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00613,62.03,Month,46.523,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00614,1.243,Month,0.932,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00615,113.135,Month,84.851,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00616,40.855,Month,30.641,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00617,51.586,Month,38.689,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00618,18.569,Month,13.927,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00619,61.5,Month,46.125,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00620,20.493,Month,15.37,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00621,28.397,Month,21.298,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00622,61.847,Month,46.385,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00623,94.071,Month,70.553,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00624,39.394,Month,29.545,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00625,22.654,Month,16.991,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00626,12.969,Month,9.727,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00627,36.983,Month,27.737,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00628,118.955,Month,89.216,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00629,1.713,Month,1.285,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00630,65.629,Month,49.222,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00631,97.303,Month,72.977,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00632,57.825,Month,43.369,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00633,71.929,Month,53.947,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00634,55.593,Month,41.695,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00635,42.479,Month,31.859,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00636,20.908,Month,15.681,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00637,90.284,Month,67.713,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00638,47.03,Month,35.273,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00639,81.912,Month,61.434,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00640,59.511,Month,44.633,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00641,35.184,Month,26.388,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00642,68.53,Month,51.398,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00643,69.462,Month,52.097,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00644,93.607,Month,70.205,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00645,113.312,Month,84.984,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00646,21.14,Month,15.855,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00647,88.907,Month,66.68,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00648,41.766,Month,31.325,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00649,78.848,Month,59.136,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00650,114.669,Month,86.002,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00651,38.663,Month,28.997,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00652,65.07,Month,48.802,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00653,12.501,Month,9.376,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00654,66.43,Month,49.823,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00655,11.24,Month,8.43,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00656,21.834,Month,16.375,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00657,50.678,Month,38.008,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00658,26.089,Month,19.567,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00659,92.202,Month,69.151,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00660,17.536,Month,13.152,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00661,62.834,Month,47.126,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00662,41.922,Month,31.441,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00663,61.781,Month,46.336,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00664,14.082,Month,10.562,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00665,78.711,Month,59.033,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00666,26.717,Month,20.038,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00667,41.203,Month,30.902,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00668,39.461,Month,29.596,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00669,63.912,Month,47.934,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00670,32.032,Month,24.024,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00671,110.938,Month,83.204,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00672,22.043,Month,16.532,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00673,73.366,Month,55.025,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00674,109.877,Month,82.408,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00675,24.008,Month,18.006,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00676,8.271,Month,6.203,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00677,23.598,Month,17.698,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00678,30.554,Month,22.915,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00679,7.405,Month,5.554,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00680,20.765,Month,15.574,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00681,70.707,Month,53.03,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00682,41.174,Month,30.88,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00683,17.791,Month,13.343,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00684,60.518,Month,45.389,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00685,42.221,Month,31.666,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00686,47.868,Month,35.901,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00687,34.052,Month,25.539,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00688,24.15,Month,18.112,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00689,8.007,Month,6.005,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00690,37.097,Month,27.823,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00691,13.792,Month,10.344,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00692,109.639,Month,82.229,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00693,7.214,Month,5.411,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00694,82.604,Month,61.953,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00695,14.503,Month,10.877,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00696,110.106,Month,82.579,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00697,114.644,Month,85.983,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00698,37.458,Month,28.093,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00699,25.316,Month,18.987,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00700,100.187,Month,75.14,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00701,36.29,Month,27.218,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00702,31.853,Month,23.89,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00703,82.761,Month,62.071,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00704,15.049,Month,11.287,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00705,3.438,Month,2.579,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00706,91.111,Month,68.333,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00707,38.044,Month,28.533,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00708,114.982,Month,86.237,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00709,58.949,Month,44.212,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00710,33.732,Month,25.299,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00711,4.044,Month,3.033,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00712,86.615,Month,64.961,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00713,75.98,Month,56.985,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00714,117.088,Month,87.816,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00715,15.086,Month,11.315,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00716,119.502,Month,89.626,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00717,52.05,Month,39.037,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00718,90.697,Month,68.023,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00719,107.401,Month,80.551,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00720,54.013,Month,40.51,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00721,3.757,Month,2.818,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00722,78.965,Month,59.224,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00723,88.534,Month,66.401,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00724,49.049,Month,36.787,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00725,87.059,Month,65.294,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00726,63.328,Month,47.496,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00727,102.731,Month,77.048,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00728,1.271,Month,0.953,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00729,15.864,Month,11.898,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00730,18.516,Month,13.887,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00731,59.627,Month,44.72,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00732,9.08,Month,6.81,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00733,53.93,Month,40.447,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00734,14.547,Month,10.91,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00735,73.962,Month,55.472,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00736,52.573,Month,39.43,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00737,17.289,Month,12.967,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00738,4.146,Month,3.109,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00739,61.988,Month,46.491,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00740,71.478,Month,53.608,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00741,12.106,Month,9.079,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00742,70.223,Month,52.667,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00743,108.632,Month,81.474,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00744,79.319,Month,59.489,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00745,42.944,Month,32.208,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00746,28.568,Month,21.426,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00747,69.412,Month,52.059,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00748,103.801,Month,77.851,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00749,36.131,Month,27.098,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00750,77.025,Month,57.769,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00751,58.793,Month,44.095,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00752,115.827,Month,86.87,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00753,17.207,Month,12.905,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00754,31.086,Month,23.314,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00755,68.664,Month,51.498,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00756,65.787,Month,49.34,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00757,83.849,Month,62.887,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00758,92.092,Month,69.069,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00759,56.117,Month,42.088,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00760,36.697,Month,27.523,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00761,54.214,Month,40.66,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00762,30.849,Month,23.137,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00763,88.923,Month,66.692,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00764,5.434,Month,4.075,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00765,2.826,Month,2.119,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00766,102.463,Month,76.847,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00767,116.486,Month,87.365,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00768,84.169,Month,63.127,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00769,7.164,Month,5.373,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00770,46.024,Month,34.518,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00771,31.433,Month,23.575,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00772,54.341,Month,40.756,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00773,99.551,Month,74.663,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00774,67.402,Month,50.552,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00775,30.827,Month,23.12,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00776,47.562,Month,35.671,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00777,112.576,Month,84.432,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00778,86.927,Month,65.195,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00779,106.181,Month,79.636,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00780,24.23,Month,18.172,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00781,15.585,Month,11.689,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00782,89.498,Month,67.124,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00783,33.058,Month,24.794,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00784,94.096,Month,70.572,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00785,60.592,Month,45.444,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00786,105.856,Month,79.392,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00787,29.044,Month,21.783,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00788,25.046,Month,18.785,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00789,11.82,Month,8.865,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00790,54.524,Month,40.893,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00791,60.236,Month,45.177,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00792,113.221,Month,84.916,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00793,25.88,Month,19.41,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00794,26.843,Month,20.132,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00795,35.057,Month,26.293,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00796,14.065,Month,10.549,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00797,51.239,Month,38.429,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00798,57.931,Month,43.448,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00799,47.759,Month,35.819,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00800,33.205,Month,24.904,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00801,7.899,Month,5.924,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00802,116.284,Month,87.213,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00803,117.749,Month,88.312,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00804,112.654,Month,84.49,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00805,34.501,Month,25.876,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00806,113.959,Month,85.469,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00807,35.138,Month,26.353,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00808,44.814,Month,33.611,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00809,20.484,Month,15.363,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00810,8.27,Month,6.202,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00811,111.491,Month,83.618,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00812,96.714,Month,72.535,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00813,105.13,Month,78.847,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00814,108.195,Month,81.146,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00815,51.351,Month,38.513,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00816,102.74,Month,77.055,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00817,115.048,Month,86.286,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00818,24.997,Month,18.748,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00819,51.498,Month,38.623,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00820,15.018,Month,11.264,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00821,23.006,Month,17.255,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00822,14.566,Month,10.925,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00823,48.851,Month,36.638,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00824,101.659,Month,76.244,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00825,18.95,Month,14.212,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00826,118.911,Month,89.183,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00827,98.331,Month,73.748,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00828,15.661,Month,11.746,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00829,1.011,Month,0.758,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00830,52.476,Month,39.357,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00831,74.63,Month,55.972,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00832,4.556,Month,3.417,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00833,69.998,Month,52.499,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00834,57.252,Month,42.939,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00835,105.862,Month,79.397,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00836,97.407,Month,73.055,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00837,21.37,Month,16.027,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00838,88.522,Month,66.392,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00839,12.097,Month,9.073,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00840,22.395,Month,16.796,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00841,101.849,Month,76.387,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00842,36.691,Month,27.518,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00843,83.194,Month,62.395,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00844,46.727,Month,35.045,Month,25%
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,OCI service description for Big Data Service,ITEM-ORCL-00845,2.144,Month,1.608,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00846,77.837,Month,58.378,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00847,2.658,Month,1.994,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00848,115.117,Month,86.338,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00849,6.029,Month,4.522,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00850,17.577,Month,13.183,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00851,63.809,Month,47.857,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00852,21.663,Month,16.247,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00853,58.102,Month,43.576,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00854,54.894,Month,41.17,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00855,99.284,Month,74.463,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00856,84.223,Month,63.167,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00857,49.761,Month,37.321,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00858,111.184,Month,83.388,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00859,109.051,Month,81.788,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00860,66.542,Month,49.907,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00861,25.954,Month,19.465,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00862,43.407,Month,32.555,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00863,117.544,Month,88.158,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00864,26.393,Month,19.795,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00865,68.251,Month,51.188,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00866,97.452,Month,73.089,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00867,23.959,Month,17.969,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00868,86.636,Month,64.977,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00869,82.267,Month,61.7,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00870,89.641,Month,67.231,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00871,98.758,Month,74.069,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00872,105.406,Month,79.055,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00873,82.542,Month,61.907,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00874,71.023,Month,53.267,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00875,44.808,Month,33.606,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00876,5.38,Month,4.035,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00877,73.418,Month,55.064,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00878,69.127,Month,51.845,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00879,27.252,Month,20.439,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00880,17.319,Month,12.989,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00881,44.372,Month,33.279,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00882,24.292,Month,18.219,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00883,50.73,Month,38.047,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00884,13.864,Month,10.398,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00885,64.976,Month,48.732,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00886,2.311,Month,1.733,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00887,17.384,Month,13.038,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00888,98.423,Month,73.817,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00889,71.476,Month,53.607,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00890,104.252,Month,78.189,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00891,103.103,Month,77.327,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00892,0.592,Month,0.444,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00893,71.915,Month,53.936,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00894,58.36,Month,43.77,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00895,3.464,Month,2.598,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00896,101.794,Month,76.346,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00897,103.31,Month,77.483,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00898,71.861,Month,53.896,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00899,57.718,Month,43.288,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00900,40.29,Month,30.218,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00901,35.332,Month,26.499,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00902,6.222,Month,4.667,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00903,39.218,Month,29.414,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00904,6.285,Month,4.714,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00905,29.1,Month,21.825,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00906,11.051,Month,8.288,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00907,60.545,Month,45.409,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00908,114.68,Month,86.01,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00909,27.881,Month,20.911,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00910,38.821,Month,29.116,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00911,118.397,Month,88.798,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00912,103.365,Month,77.524,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00913,8.746,Month,6.559,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00914,6.197,Month,4.648,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00915,27.023,Month,20.267,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00916,88.473,Month,66.355,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00917,88.972,Month,66.729,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00918,91.436,Month,68.577,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00919,114.545,Month,85.909,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00920,52.822,Month,39.617,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00921,14.844,Month,11.133,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00922,23.815,Month,17.861,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00923,72.93,Month,54.698,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00924,111.405,Month,83.554,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00925,71.064,Month,53.298,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00926,119.502,Month,89.626,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00927,13.599,Month,10.199,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00928,84.039,Month,63.029,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00929,93.682,Month,70.261,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00930,62.091,Month,46.568,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00931,70.852,Month,53.139,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00932,45.686,Month,34.264,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00933,5.32,Month,3.99,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00934,115.614,Month,86.71,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00935,21.183,Month,15.887,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00936,94.167,Month,70.625,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00937,10.764,Month,8.073,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00938,109.83,Month,82.373,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00939,95.737,Month,71.803,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00940,71.868,Month,53.901,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00941,117.658,Month,88.243,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00942,22.05,Month,16.538,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00943,90.895,Month,68.171,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00944,95.949,Month,71.962,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00945,26.117,Month,19.588,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00946,51.452,Month,38.589,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00947,114.691,Month,86.018,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00948,78.543,Month,58.907,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00949,82.951,Month,62.213,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00950,116.703,Month,87.527,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00951,19.875,Month,14.906,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00952,36.006,Month,27.005,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00953,86.939,Month,65.204,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00954,53.353,Month,40.015,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00955,73.899,Month,55.424,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00956,71.08,Month,53.31,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00957,104.373,Month,78.28,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00958,30.878,Month,23.159,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00959,47.415,Month,35.561,Month,25%
+Oracle Cloud Infrastructure Functions,Functions,OCI service description for Functions,ITEM-ORCL-00960,102.245,Month,76.684,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00961,9.178,Month,6.884,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00962,20.12,Month,15.09,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00963,31.548,Month,23.661,Month,25%
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,OCI service description for VCN,ITEM-ORCL-00964,96.524,Month,72.393,Month,25%
+Oracle Cloud Infrastructure Data Flow,Data Flow,OCI service description for Data Flow,ITEM-ORCL-00965,100.52,Month,75.39,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00966,7.908,Month,5.931,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00967,37.648,Month,28.236,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00968,65.673,Month,49.255,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00969,44.105,Month,33.079,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00970,56.716,Month,42.537,Month,25%
+Oracle Cloud Infrastructure Identity and Access Management,IAM,OCI service description for IAM,ITEM-ORCL-00971,59.935,Month,44.951,Month,25%
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,OCI service description for Exadata,ITEM-ORCL-00972,78.647,Month,58.985,Month,25%
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,OCI service description for Load Balancer,ITEM-ORCL-00973,75.124,Month,56.343,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00974,28.448,Month,21.336,Month,25%
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,OCI service description for OKE,ITEM-ORCL-00975,68.674,Month,51.506,Month,25%
+Oracle Cloud Infrastructure Compute,Compute,OCI service description for Compute,ITEM-ORCL-00976,100.196,Month,75.147,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00977,58.617,Month,43.963,Month,25%
+Oracle Cloud Infrastructure API Gateway,API Gateway,OCI service description for API Gateway,ITEM-ORCL-00978,54.158,Month,40.618,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00979,21.628,Month,16.221,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00980,115.741,Month,86.806,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00981,58.887,Month,44.165,Month,25%
+Oracle Cloud Infrastructure Data Safe,Data Safe,OCI service description for Data Safe,ITEM-ORCL-00982,2.911,Month,2.183,Month,25%
+Oracle Cloud Infrastructure Web Application Firewall,WAF,OCI service description for WAF,ITEM-ORCL-00983,106.384,Month,79.788,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00984,53.573,Month,40.18,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00985,96.429,Month,72.322,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00986,111.713,Month,83.785,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00987,110.478,Month,82.858,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00988,35.793,Month,26.845,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00989,45.041,Month,33.781,Month,25%
+Oracle Autonomous Database,Autonomous Database,OCI service description for Autonomous Database,ITEM-ORCL-00990,99.204,Month,74.403,Month,25%
+Oracle Cloud Infrastructure Key Management,KMS,OCI service description for KMS,ITEM-ORCL-00991,106.719,Month,80.039,Month,25%
+Oracle Cloud Infrastructure Streaming,Streaming,OCI service description for Streaming,ITEM-ORCL-00992,105.138,Month,78.853,Month,25%
+Oracle Cloud Infrastructure Object Storage,Object Storage,OCI service description for Object Storage,ITEM-ORCL-00993,17.396,Month,13.047,Month,25%
+Oracle Cloud Infrastructure Monitoring,Monitoring,OCI service description for Monitoring,ITEM-ORCL-00994,64.613,Month,48.46,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00995,74.44,Month,55.83,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-00996,112.744,Month,84.558,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00997,105.008,Month,78.756,Month,25%
+Oracle Cloud Infrastructure Block Volumes,Block Volume,OCI service description for Block Volume,ITEM-ORCL-00998,58.131,Month,43.598,Month,25%
+Oracle Cloud Infrastructure Logging,Logging,OCI service description for Logging,ITEM-ORCL-00999,62.154,Month,46.616,Month,25%
+Oracle Cloud Infrastructure FastConnect,FastConnect,OCI service description for FastConnect,ITEM-ORCL-01000,4.146,Month,3.109,Month,25%

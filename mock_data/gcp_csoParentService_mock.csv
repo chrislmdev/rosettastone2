@@ -1,0 +1,1001 @@
+csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+,Cloud Spanner,ITEM-00001,gcp,,IL6,FALSE
+,Cloud Profiler,ITEM-00002,gcp,,IL2|IL5,TRUE
+,Cloud DNS,ITEM-00003,gcp,,IL4|IL5,FALSE
+,Cloud Logging,ITEM-00004,gcp,,IL4|IL5|IL6,TRUE
+,Firestore,ITEM-00005,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Trace,ITEM-00006,gcp,,IL2|IL4,FALSE
+,Cloud IAM,ITEM-00007,gcp,,IL4|IL6,FALSE
+,Cloud IAM,ITEM-00008,gcp,,IL2|IL4|IL5,FALSE
+,Cloud SQL,ITEM-00009,gcp,,IL2|IL5,FALSE
+,Cloud Trace,ITEM-00010,gcp,,IL4|IL5|IL6,FALSE
+,Firestore,ITEM-00011,gcp,,IL6,FALSE
+,Cloud Monitoring,ITEM-00012,gcp,,IL4,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00013,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Spanner,ITEM-00014,gcp,,IL2|IL4,FALSE
+,Cloud Armor,ITEM-00015,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Source Repositories,ITEM-00016,gcp,,IL6,FALSE
+,Cloud Profiler,ITEM-00017,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00018,gcp,,IL4|IL5,FALSE
+,Workflows,ITEM-00019,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Identity,ITEM-00020,gcp,,IL2|IL5,FALSE
+,Cloud Scheduler,ITEM-00021,gcp,,IL4|IL5|IL6,FALSE
+,Cloud IAM,ITEM-00022,gcp,,IL5|IL6,TRUE
+,Cloud CDN,ITEM-00023,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Load Balancing,ITEM-00024,gcp,,IL2|IL6,TRUE
+,Cloud Load Balancing,ITEM-00025,gcp,,IL4|IL5,TRUE
+,Firestore,ITEM-00026,gcp,,IL4|IL6,FALSE
+,Memorystore,ITEM-00027,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Spanner,ITEM-00028,gcp,,IL2|IL5|IL6,FALSE
+,Memorystore,ITEM-00029,gcp,,IL2|IL5|IL6,FALSE
+,Cloud CDN,ITEM-00030,gcp,,IL6,TRUE
+,Compute Engine,ITEM-00031,gcp,,IL5,FALSE
+,Cloud Tasks,ITEM-00032,gcp,,IL2,TRUE
+,Memorystore,ITEM-00033,gcp,,IL2|IL5|IL6,TRUE
+,BigQuery,ITEM-00034,gcp,,IL6,FALSE
+,Cloud Source Repositories,ITEM-00035,gcp,,IL2,FALSE
+,Apigee,ITEM-00036,gcp,,IL2|IL6,FALSE
+,Compute Engine,ITEM-00037,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Tasks,ITEM-00038,gcp,,IL5,TRUE
+,Cloud Logging,ITEM-00039,gcp,,IL2|IL4|IL5,TRUE
+,App Engine,ITEM-00040,gcp,,IL5,FALSE
+,Cloud Deployment Manager,ITEM-00041,gcp,,IL2|IL6,FALSE
+,Cloud Identity,ITEM-00042,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Pub/Sub,ITEM-00043,gcp,,IL2,TRUE
+,Secret Manager,ITEM-00044,gcp,,IL4,FALSE
+,Cloud Scheduler,ITEM-00045,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Monitoring,ITEM-00046,gcp,,IL2|IL6,TRUE
+,Compute Engine,ITEM-00047,gcp,,IL2,FALSE
+,Cloud CDN,ITEM-00048,gcp,,IL6,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00049,gcp,,IL2|IL4|IL5,TRUE
+,Cloud SQL,ITEM-00050,gcp,,IL5,FALSE
+,Cloud Run,ITEM-00051,gcp,,IL2|IL4|IL6,FALSE
+,Artifact Registry,ITEM-00052,gcp,,IL2|IL5|IL6,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00053,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Profiler,ITEM-00054,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00055,gcp,,IL4|IL6,TRUE
+,Cloud Run,ITEM-00056,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Armor,ITEM-00057,gcp,,IL5|IL6,TRUE
+,Cloud DNS,ITEM-00058,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Source Repositories,ITEM-00059,gcp,,IL4,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00060,gcp,,IL5|IL6,FALSE
+,Cloud Build,ITEM-00061,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Interconnect,ITEM-00062,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Run,ITEM-00063,gcp,,IL4,FALSE
+,Error Reporting,ITEM-00064,gcp,,IL2|IL5,TRUE
+,Cloud Spanner,ITEM-00065,gcp,,IL4|IL5,TRUE
+,BigQuery,ITEM-00066,gcp,,IL2|IL6,TRUE
+,Workflows,ITEM-00067,gcp,,IL4|IL5|IL6,FALSE
+,Compute Engine,ITEM-00068,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Build,ITEM-00069,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Load Balancing,ITEM-00070,gcp,,IL5,TRUE
+,Cloud Profiler,ITEM-00071,gcp,,IL4|IL5,TRUE
+,Cloud Load Balancing,ITEM-00072,gcp,,IL2|IL5,FALSE
+,Cloud Identity,ITEM-00073,gcp,,IL4|IL5|IL6,FALSE
+,Cloud IAM,ITEM-00074,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Pub/Sub,ITEM-00075,gcp,,IL2|IL4|IL5,FALSE
+,Cloud SQL,ITEM-00076,gcp,,IL2,FALSE
+,Cloud Storage,ITEM-00077,gcp,,IL4,FALSE
+,Cloud Functions,ITEM-00078,gcp,,IL2|IL5|IL6,TRUE
+,VPC Network,ITEM-00079,gcp,,IL4,FALSE
+,Cloud Healthcare API,ITEM-00080,gcp,,IL2|IL4|IL6,TRUE
+,App Engine,ITEM-00081,gcp,,IL4,TRUE
+,Cloud Tasks,ITEM-00082,gcp,,IL4|IL6,FALSE
+,Cloud Monitoring,ITEM-00083,gcp,,IL5|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00084,gcp,,IL2|IL6,TRUE
+,Cloud Run,ITEM-00085,gcp,,IL5|IL6,FALSE
+,Cloud Identity,ITEM-00086,gcp,,IL2,TRUE
+,App Engine,ITEM-00087,gcp,,IL2|IL6,FALSE
+,Dataproc,ITEM-00088,gcp,,IL2|IL4|IL6,FALSE
+,VPC Network,ITEM-00089,gcp,,IL2|IL6,TRUE
+,Cloud Spanner,ITEM-00090,gcp,,IL4|IL5,TRUE
+,Artifact Registry,ITEM-00091,gcp,,IL2|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00092,gcp,,IL5|IL6,TRUE
+,Cloud IAM,ITEM-00093,gcp,,IL5,TRUE
+,Cloud Armor,ITEM-00094,gcp,,IL4,TRUE
+,Cloud Functions,ITEM-00095,gcp,,IL5,TRUE
+,Cloud Healthcare API,ITEM-00096,gcp,,IL2|IL6,FALSE
+,BigQuery,ITEM-00097,gcp,,IL2|IL6,FALSE
+,Memorystore,ITEM-00098,gcp,,IL4|IL6,FALSE
+,Cloud Identity,ITEM-00099,gcp,,IL5,TRUE
+,Cloud DNS,ITEM-00100,gcp,,IL2|IL4|IL5,TRUE
+,Vertex AI,ITEM-00101,gcp,,IL5|IL6,TRUE
+,Cloud Logging,ITEM-00102,gcp,,IL2|IL5,FALSE
+,Cloud DNS,ITEM-00103,gcp,,IL4,TRUE
+,Dataflow,ITEM-00104,gcp,,IL6,TRUE
+,Cloud Storage,ITEM-00105,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Pub/Sub,ITEM-00106,gcp,,IL2,FALSE
+,Compute Engine,ITEM-00107,gcp,,IL5,FALSE
+,App Engine,ITEM-00108,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Tasks,ITEM-00109,gcp,,IL5,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00110,gcp,,IL2,FALSE
+,Cloud Armor,ITEM-00111,gcp,,IL5,TRUE
+,Cloud Healthcare API,ITEM-00112,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Load Balancing,ITEM-00113,gcp,,IL2|IL4|IL5,FALSE
+,Cloud CDN,ITEM-00114,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Monitoring,ITEM-00115,gcp,,IL4|IL5,FALSE
+,Dataflow,ITEM-00116,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Pub/Sub,ITEM-00117,gcp,,IL2|IL4|IL6,TRUE
+,Compute Engine,ITEM-00118,gcp,,IL2|IL6,FALSE
+,Error Reporting,ITEM-00119,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Pub/Sub,ITEM-00120,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00121,gcp,,IL4,FALSE
+,Cloud Trace,ITEM-00122,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Profiler,ITEM-00123,gcp,,IL6,TRUE
+,Compute Engine,ITEM-00124,gcp,,IL2|IL6,FALSE
+,Cloud Deployment Manager,ITEM-00125,gcp,,IL2|IL4|IL5,TRUE
+,Cloud DNS,ITEM-00126,gcp,,IL5,TRUE
+,Cloud Tasks,ITEM-00127,gcp,,IL2|IL6,TRUE
+,Cloud Load Balancing,ITEM-00128,gcp,,IL2,FALSE
+,Cloud KMS,ITEM-00129,gcp,,IL5,FALSE
+,Cloud Build,ITEM-00130,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Spanner,ITEM-00131,gcp,,IL2|IL4|IL6,FALSE
+,Memorystore,ITEM-00132,gcp,,IL2,TRUE
+,Cloud Storage,ITEM-00133,gcp,,IL5,FALSE
+,BigQuery,ITEM-00134,gcp,,IL2,TRUE
+,Cloud Pub/Sub,ITEM-00135,gcp,,IL4|IL6,FALSE
+,Cloud IAM,ITEM-00136,gcp,,IL2|IL4|IL5,FALSE
+,Compute Engine,ITEM-00137,gcp,,IL4|IL6,FALSE
+,Cloud Healthcare API,ITEM-00138,gcp,,IL5|IL6,FALSE
+,Cloud Storage,ITEM-00139,gcp,,IL2|IL5|IL6,TRUE
+,Secret Manager,ITEM-00140,gcp,,IL5|IL6,FALSE
+,Cloud SQL,ITEM-00141,gcp,,IL6,FALSE
+,Memorystore,ITEM-00142,gcp,,IL4|IL5,TRUE
+,Apigee,ITEM-00143,gcp,,IL6,TRUE
+,Memorystore,ITEM-00144,gcp,,IL2|IL4|IL5,FALSE
+,Vertex AI,ITEM-00145,gcp,,IL2|IL6,TRUE
+,Cloud Bigtable,ITEM-00146,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Storage,ITEM-00147,gcp,,IL2,TRUE
+,Cloud Functions,ITEM-00148,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Bigtable,ITEM-00149,gcp,,IL6,FALSE
+,Dataflow,ITEM-00150,gcp,,IL4,FALSE
+,Cloud IAM,ITEM-00151,gcp,,IL5|IL6,TRUE
+,Artifact Registry,ITEM-00152,gcp,,IL4|IL5|IL6,FALSE
+,Cloud SQL,ITEM-00153,gcp,,IL4|IL6,TRUE
+,Cloud Logging,ITEM-00154,gcp,,IL2,FALSE
+,Cloud Scheduler,ITEM-00155,gcp,,IL4,TRUE
+,Secret Manager,ITEM-00156,gcp,,IL2|IL5,FALSE
+,Cloud Identity,ITEM-00157,gcp,,IL4,TRUE
+,Cloud Functions,ITEM-00158,gcp,,IL2|IL6,TRUE
+,Artifact Registry,ITEM-00159,gcp,,IL4|IL5,FALSE
+,Cloud Monitoring,ITEM-00160,gcp,,IL5,TRUE
+,Cloud SQL,ITEM-00161,gcp,,IL4|IL6,TRUE
+,Compute Engine,ITEM-00162,gcp,,IL2,TRUE
+,Cloud Deployment Manager,ITEM-00163,gcp,,IL2|IL6,FALSE
+,Cloud Bigtable,ITEM-00164,gcp,,IL2|IL4,TRUE
+,Firestore,ITEM-00165,gcp,,IL4|IL5,TRUE
+,App Engine,ITEM-00166,gcp,,IL2|IL4,FALSE
+,Cloud SQL,ITEM-00167,gcp,,IL5,TRUE
+,Cloud Load Balancing,ITEM-00168,gcp,,IL2,TRUE
+,Cloud Interconnect,ITEM-00169,gcp,,IL4|IL5|IL6,FALSE
+,Cloud KMS,ITEM-00170,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Spanner,ITEM-00171,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Storage,ITEM-00172,gcp,,IL4|IL5,TRUE
+,Secret Manager,ITEM-00173,gcp,,IL2|IL4|IL5,FALSE
+,Cloud SQL,ITEM-00174,gcp,,IL5|IL6,FALSE
+,Cloud KMS,ITEM-00175,gcp,,IL4|IL5|IL6,FALSE
+,BigQuery,ITEM-00176,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Identity,ITEM-00177,gcp,,IL4,TRUE
+,Secret Manager,ITEM-00178,gcp,,IL5,TRUE
+,Cloud Tasks,ITEM-00179,gcp,,IL4,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00180,gcp,,IL5|IL6,FALSE
+,Cloud Armor,ITEM-00181,gcp,,IL4|IL5,TRUE
+,Compute Engine,ITEM-00182,gcp,,IL2|IL5,TRUE
+,Cloud Bigtable,ITEM-00183,gcp,,IL4|IL5|IL6,TRUE
+,Workflows,ITEM-00184,gcp,,IL4,FALSE
+,Cloud Identity,ITEM-00185,gcp,,IL5,TRUE
+,Cloud Functions,ITEM-00186,gcp,,IL5,TRUE
+,Dataflow,ITEM-00187,gcp,,IL2|IL5,FALSE
+,Cloud Armor,ITEM-00188,gcp,,IL4|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00189,gcp,,IL2,TRUE
+,Cloud Identity,ITEM-00190,gcp,,IL2|IL5,FALSE
+,Cloud IAM,ITEM-00191,gcp,,IL2|IL4,FALSE
+,Cloud Armor,ITEM-00192,gcp,,IL5|IL6,FALSE
+,Cloud Trace,ITEM-00193,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Source Repositories,ITEM-00194,gcp,,IL2,TRUE
+,Cloud KMS,ITEM-00195,gcp,,IL5,FALSE
+,Workflows,ITEM-00196,gcp,,IL2,TRUE
+,Dataflow,ITEM-00197,gcp,,IL4|IL6,TRUE
+,Cloud Storage,ITEM-00198,gcp,,IL2|IL4,FALSE
+,Cloud Bigtable,ITEM-00199,gcp,,IL2,TRUE
+,Cloud CDN,ITEM-00200,gcp,,IL4|IL5,TRUE
+,Cloud Trace,ITEM-00201,gcp,,IL4|IL5,FALSE
+,Cloud IAM,ITEM-00202,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Logging,ITEM-00203,gcp,,IL5,FALSE
+,Cloud Tasks,ITEM-00204,gcp,,IL2|IL4,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00205,gcp,,IL2|IL5,FALSE
+,Dataflow,ITEM-00206,gcp,,IL2|IL5|IL6,TRUE
+,Compute Engine,ITEM-00207,gcp,,IL4,FALSE
+,Firestore,ITEM-00208,gcp,,IL2|IL5,FALSE
+,Cloud IAM,ITEM-00209,gcp,,IL2|IL5,FALSE
+,Artifact Registry,ITEM-00210,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Source Repositories,ITEM-00211,gcp,,IL2|IL4|IL6,FALSE
+,Cloud CDN,ITEM-00212,gcp,,IL6,TRUE
+,Cloud Load Balancing,ITEM-00213,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Spanner,ITEM-00214,gcp,,IL5,TRUE
+,Cloud Storage,ITEM-00215,gcp,,IL5|IL6,TRUE
+,Cloud Load Balancing,ITEM-00216,gcp,,IL4|IL5|IL6,FALSE
+,BigQuery,ITEM-00217,gcp,,IL4,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00218,gcp,,IL4|IL5|IL6,FALSE
+,Cloud DNS,ITEM-00219,gcp,,IL5|IL6,FALSE
+,Cloud Spanner,ITEM-00220,gcp,,IL4|IL6,FALSE
+,Artifact Registry,ITEM-00221,gcp,,IL2|IL4|IL5,TRUE
+,Compute Engine,ITEM-00222,gcp,,IL2|IL6,TRUE
+,Cloud IAM,ITEM-00223,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Functions,ITEM-00224,gcp,,IL5|IL6,FALSE
+,Cloud Tasks,ITEM-00225,gcp,,IL2|IL5,TRUE
+,App Engine,ITEM-00226,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Profiler,ITEM-00227,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Spanner,ITEM-00228,gcp,,IL5,TRUE
+,Cloud Bigtable,ITEM-00229,gcp,,IL5|IL6,TRUE
+,Cloud Pub/Sub,ITEM-00230,gcp,,IL6,FALSE
+,Firestore,ITEM-00231,gcp,,IL2|IL5,TRUE
+,Cloud Pub/Sub,ITEM-00232,gcp,,IL2|IL5|IL6,TRUE
+,Cloud DNS,ITEM-00233,gcp,,IL5,TRUE
+,Cloud Logging,ITEM-00234,gcp,,IL2|IL5,FALSE
+,Cloud Tasks,ITEM-00235,gcp,,IL5,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00236,gcp,,IL2|IL4|IL5,FALSE
+,BigQuery,ITEM-00237,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Logging,ITEM-00238,gcp,,IL4|IL5|IL6,TRUE
+,Cloud SQL,ITEM-00239,gcp,,IL2,TRUE
+,Firestore,ITEM-00240,gcp,,IL4,TRUE
+,BigQuery,ITEM-00241,gcp,,IL2|IL4,FALSE
+,Cloud Source Repositories,ITEM-00242,gcp,,IL2,TRUE
+,Cloud Identity,ITEM-00243,gcp,,IL4,TRUE
+,Dataflow,ITEM-00244,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Spanner,ITEM-00245,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Identity,ITEM-00246,gcp,,IL2|IL6,TRUE
+,Cloud CDN,ITEM-00247,gcp,,IL2|IL5,FALSE
+,Cloud Tasks,ITEM-00248,gcp,,IL6,FALSE
+,Cloud KMS,ITEM-00249,gcp,,IL2|IL6,FALSE
+,Cloud Monitoring,ITEM-00250,gcp,,IL5,FALSE
+,Cloud Trace,ITEM-00251,gcp,,IL4|IL6,TRUE
+,Cloud Trace,ITEM-00252,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Tasks,ITEM-00253,gcp,,IL2|IL5|IL6,FALSE
+,Memorystore,ITEM-00254,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Storage,ITEM-00255,gcp,,IL2,FALSE
+,Cloud Pub/Sub,ITEM-00256,gcp,,IL2|IL5|IL6,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00257,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Armor,ITEM-00258,gcp,,IL6,TRUE
+,App Engine,ITEM-00259,gcp,,IL2|IL4|IL6,TRUE
+,Cloud IAM,ITEM-00260,gcp,,IL2,FALSE
+,Vertex AI,ITEM-00261,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Build,ITEM-00262,gcp,,IL2,FALSE
+,Memorystore,ITEM-00263,gcp,,IL4|IL5|IL6,TRUE
+,Compute Engine,ITEM-00264,gcp,,IL4|IL5,TRUE
+,Cloud CDN,ITEM-00265,gcp,,IL5,FALSE
+,Cloud Storage,ITEM-00266,gcp,,IL4|IL5|IL6,TRUE
+,Dataproc,ITEM-00267,gcp,,IL2|IL4,FALSE
+,Workflows,ITEM-00268,gcp,,IL4,TRUE
+,Cloud Source Repositories,ITEM-00269,gcp,,IL2|IL4|IL5,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00270,gcp,,IL4|IL6,FALSE
+,Error Reporting,ITEM-00271,gcp,,IL6,TRUE
+,Cloud Deployment Manager,ITEM-00272,gcp,,IL4|IL5,FALSE
+,Cloud Logging,ITEM-00273,gcp,,IL4|IL6,TRUE
+,Workflows,ITEM-00274,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Build,ITEM-00275,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Bigtable,ITEM-00276,gcp,,IL4,TRUE
+,App Engine,ITEM-00277,gcp,,IL6,TRUE
+,Cloud Build,ITEM-00278,gcp,,IL2|IL5,FALSE
+,Cloud Build,ITEM-00279,gcp,,IL4|IL6,FALSE
+,Cloud Storage,ITEM-00280,gcp,,IL2,TRUE
+,Secret Manager,ITEM-00281,gcp,,IL2,TRUE
+,Cloud Monitoring,ITEM-00282,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Run,ITEM-00283,gcp,,IL4|IL5|IL6,FALSE
+,BigQuery,ITEM-00284,gcp,,IL2|IL6,TRUE
+,Cloud Load Balancing,ITEM-00285,gcp,,IL6,TRUE
+,Cloud Storage,ITEM-00286,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Spanner,ITEM-00287,gcp,,IL2|IL6,TRUE
+,Dataflow,ITEM-00288,gcp,,IL5,FALSE
+,Firestore,ITEM-00289,gcp,,IL2|IL5|IL6,TRUE
+,VPC Network,ITEM-00290,gcp,,IL5,TRUE
+,Cloud Deployment Manager,ITEM-00291,gcp,,IL5,FALSE
+,Cloud Trace,ITEM-00292,gcp,,IL6,FALSE
+,Cloud Spanner,ITEM-00293,gcp,,IL2|IL4,FALSE
+,Apigee,ITEM-00294,gcp,,IL2|IL4,FALSE
+,Cloud SQL,ITEM-00295,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Trace,ITEM-00296,gcp,,IL6,FALSE
+,Cloud Tasks,ITEM-00297,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Storage,ITEM-00298,gcp,,IL2|IL5|IL6,FALSE
+,App Engine,ITEM-00299,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Armor,ITEM-00300,gcp,,IL4|IL5,TRUE
+,Cloud Source Repositories,ITEM-00301,gcp,,IL2|IL4,TRUE
+,Cloud Load Balancing,ITEM-00302,gcp,,IL4|IL6,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00303,gcp,,IL4|IL5,TRUE
+,Cloud SQL,ITEM-00304,gcp,,IL5,FALSE
+,Cloud KMS,ITEM-00305,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Build,ITEM-00306,gcp,,IL4|IL5,FALSE
+,Cloud Deployment Manager,ITEM-00307,gcp,,IL4,FALSE
+,Cloud IAM,ITEM-00308,gcp,,IL2|IL4|IL5,TRUE
+,Cloud CDN,ITEM-00309,gcp,,IL2,TRUE
+,Cloud IAM,ITEM-00310,gcp,,IL2|IL4|IL5,TRUE
+,Memorystore,ITEM-00311,gcp,,IL4|IL6,FALSE
+,App Engine,ITEM-00312,gcp,,IL2,FALSE
+,Cloud Trace,ITEM-00313,gcp,,IL5,TRUE
+,Cloud Spanner,ITEM-00314,gcp,,IL4|IL5|IL6,FALSE
+,BigQuery,ITEM-00315,gcp,,IL6,FALSE
+,App Engine,ITEM-00316,gcp,,IL4|IL5|IL6,TRUE
+,Artifact Registry,ITEM-00317,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Source Repositories,ITEM-00318,gcp,,IL4|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00319,gcp,,IL6,TRUE
+,Cloud Bigtable,ITEM-00320,gcp,,IL4,FALSE
+,Cloud CDN,ITEM-00321,gcp,,IL5|IL6,FALSE
+,Vertex AI,ITEM-00322,gcp,,IL2|IL4,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00323,gcp,,IL4,TRUE
+,Cloud Scheduler,ITEM-00324,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Monitoring,ITEM-00325,gcp,,IL5|IL6,TRUE
+,Cloud Build,ITEM-00326,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Tasks,ITEM-00327,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Profiler,ITEM-00328,gcp,,IL2|IL5,FALSE
+,Artifact Registry,ITEM-00329,gcp,,IL2|IL5,FALSE
+,Cloud Bigtable,ITEM-00330,gcp,,IL2|IL4,FALSE
+,Firestore,ITEM-00331,gcp,,IL4|IL5,FALSE
+,Apigee,ITEM-00332,gcp,,IL4,FALSE
+,Cloud Pub/Sub,ITEM-00333,gcp,,IL4|IL5,TRUE
+,Vertex AI,ITEM-00334,gcp,,IL2|IL6,FALSE
+,Memorystore,ITEM-00335,gcp,,IL2|IL6,FALSE
+,Cloud Storage,ITEM-00336,gcp,,IL2|IL4,TRUE
+,Cloud KMS,ITEM-00337,gcp,,IL2|IL4|IL6,TRUE
+,Dataproc,ITEM-00338,gcp,,IL5,FALSE
+,Apigee,ITEM-00339,gcp,,IL4|IL5,TRUE
+,VPC Network,ITEM-00340,gcp,,IL2|IL4,FALSE
+,Cloud Monitoring,ITEM-00341,gcp,,IL2|IL4|IL5,TRUE
+,BigQuery,ITEM-00342,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Run,ITEM-00343,gcp,,IL6,FALSE
+,Cloud Build,ITEM-00344,gcp,,IL4|IL5|IL6,FALSE
+,App Engine,ITEM-00345,gcp,,IL2,FALSE
+,Dataproc,ITEM-00346,gcp,,IL2|IL5,TRUE
+,Apigee,ITEM-00347,gcp,,IL4,TRUE
+,VPC Network,ITEM-00348,gcp,,IL4|IL6,TRUE
+,Error Reporting,ITEM-00349,gcp,,IL2|IL6,TRUE
+,Cloud Bigtable,ITEM-00350,gcp,,IL4|IL6,TRUE
+,Cloud Armor,ITEM-00351,gcp,,IL2|IL4|IL5,FALSE
+,Cloud CDN,ITEM-00352,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Build,ITEM-00353,gcp,,IL5,TRUE
+,Cloud Interconnect,ITEM-00354,gcp,,IL2|IL6,FALSE
+,Workflows,ITEM-00355,gcp,,IL2,FALSE
+,Cloud Profiler,ITEM-00356,gcp,,IL4,TRUE
+,Cloud Deployment Manager,ITEM-00357,gcp,,IL2|IL5|IL6,FALSE
+,Cloud KMS,ITEM-00358,gcp,,IL2|IL5|IL6,TRUE
+,BigQuery,ITEM-00359,gcp,,IL2|IL6,TRUE
+,Cloud Armor,ITEM-00360,gcp,,IL4,FALSE
+,Cloud Functions,ITEM-00361,gcp,,IL2|IL4,FALSE
+,Cloud Identity,ITEM-00362,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Interconnect,ITEM-00363,gcp,,IL2|IL4|IL6,TRUE
+,BigQuery,ITEM-00364,gcp,,IL2|IL4|IL5,FALSE
+,Cloud IAM,ITEM-00365,gcp,,IL4|IL5,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00366,gcp,,IL4|IL6,FALSE
+,Cloud CDN,ITEM-00367,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Run,ITEM-00368,gcp,,IL2|IL5,FALSE
+,Cloud Identity,ITEM-00369,gcp,,IL4|IL5|IL6,TRUE
+,Compute Engine,ITEM-00370,gcp,,IL2|IL5,TRUE
+,Cloud Pub/Sub,ITEM-00371,gcp,,IL4|IL5,TRUE
+,Cloud Trace,ITEM-00372,gcp,,IL2|IL4|IL6,FALSE
+,Compute Engine,ITEM-00373,gcp,,IL5|IL6,TRUE
+,Dataproc,ITEM-00374,gcp,,IL4,TRUE
+,Cloud KMS,ITEM-00375,gcp,,IL2|IL4|IL6,FALSE
+,Error Reporting,ITEM-00376,gcp,,IL4|IL5,TRUE
+,Cloud Spanner,ITEM-00377,gcp,,IL5,FALSE
+,Cloud Monitoring,ITEM-00378,gcp,,IL2,FALSE
+,Cloud SQL,ITEM-00379,gcp,,IL4|IL5,TRUE
+,App Engine,ITEM-00380,gcp,,IL2|IL4|IL5,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00381,gcp,,IL2,FALSE
+,Firestore,ITEM-00382,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Armor,ITEM-00383,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Logging,ITEM-00384,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Bigtable,ITEM-00385,gcp,,IL6,FALSE
+,Cloud Monitoring,ITEM-00386,gcp,,IL5|IL6,TRUE
+,Cloud Monitoring,ITEM-00387,gcp,,IL5,TRUE
+,Cloud Armor,ITEM-00388,gcp,,IL2|IL6,TRUE
+,Dataflow,ITEM-00389,gcp,,IL5,TRUE
+,Apigee,ITEM-00390,gcp,,IL6,TRUE
+,Cloud Trace,ITEM-00391,gcp,,IL6,TRUE
+,Cloud Scheduler,ITEM-00392,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Tasks,ITEM-00393,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Load Balancing,ITEM-00394,gcp,,IL4,FALSE
+,Cloud Healthcare API,ITEM-00395,gcp,,IL2|IL6,FALSE
+,Error Reporting,ITEM-00396,gcp,,IL2|IL5,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00397,gcp,,IL2|IL6,FALSE
+,Dataflow,ITEM-00398,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Bigtable,ITEM-00399,gcp,,IL2|IL4|IL5,FALSE
+,Cloud DNS,ITEM-00400,gcp,,IL4,FALSE
+,App Engine,ITEM-00401,gcp,,IL4|IL6,FALSE
+,Cloud Scheduler,ITEM-00402,gcp,,IL5,TRUE
+,Vertex AI,ITEM-00403,gcp,,IL2|IL5,TRUE
+,Cloud Pub/Sub,ITEM-00404,gcp,,IL2,FALSE
+,Cloud Build,ITEM-00405,gcp,,IL2|IL4,FALSE
+,Cloud Source Repositories,ITEM-00406,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Profiler,ITEM-00407,gcp,,IL6,TRUE
+,Cloud Scheduler,ITEM-00408,gcp,,IL5,TRUE
+,Compute Engine,ITEM-00409,gcp,,IL2,FALSE
+,Cloud Trace,ITEM-00410,gcp,,IL4|IL5,FALSE
+,Cloud Storage,ITEM-00411,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Interconnect,ITEM-00412,gcp,,IL2|IL6,TRUE
+,Cloud Functions,ITEM-00413,gcp,,IL2,FALSE
+,Memorystore,ITEM-00414,gcp,,IL2|IL5|IL6,FALSE
+,BigQuery,ITEM-00415,gcp,,IL6,FALSE
+,Cloud Bigtable,ITEM-00416,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Monitoring,ITEM-00417,gcp,,IL5,TRUE
+,Cloud Profiler,ITEM-00418,gcp,,IL4,FALSE
+,Cloud Pub/Sub,ITEM-00419,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Identity,ITEM-00420,gcp,,IL4|IL5|IL6,TRUE
+,Error Reporting,ITEM-00421,gcp,,IL4,FALSE
+,Vertex AI,ITEM-00422,gcp,,IL2|IL6,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00423,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Monitoring,ITEM-00424,gcp,,IL4|IL5,TRUE
+,Cloud Identity,ITEM-00425,gcp,,IL4,TRUE
+,Cloud Pub/Sub,ITEM-00426,gcp,,IL2|IL5|IL6,TRUE
+,Cloud DNS,ITEM-00427,gcp,,IL2|IL4,FALSE
+,Apigee,ITEM-00428,gcp,,IL2|IL6,FALSE
+,Cloud Interconnect,ITEM-00429,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Identity,ITEM-00430,gcp,,IL2|IL4|IL5,FALSE
+,VPC Network,ITEM-00431,gcp,,IL5,TRUE
+,Cloud Bigtable,ITEM-00432,gcp,,IL5,TRUE
+,Dataflow,ITEM-00433,gcp,,IL4|IL5|IL6,FALSE
+,Workflows,ITEM-00434,gcp,,IL6,FALSE
+,Cloud Spanner,ITEM-00435,gcp,,IL2|IL4|IL5,FALSE
+,Artifact Registry,ITEM-00436,gcp,,IL2|IL4|IL6,TRUE
+,Vertex AI,ITEM-00437,gcp,,IL4|IL5|IL6,TRUE
+,Workflows,ITEM-00438,gcp,,IL4,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00439,gcp,,IL2|IL5,FALSE
+,Cloud Build,ITEM-00440,gcp,,IL6,TRUE
+,Cloud Build,ITEM-00441,gcp,,IL2|IL4|IL6,FALSE
+,Dataflow,ITEM-00442,gcp,,IL5|IL6,TRUE
+,Cloud Identity,ITEM-00443,gcp,,IL4,TRUE
+,Compute Engine,ITEM-00444,gcp,,IL5,FALSE
+,Cloud Source Repositories,ITEM-00445,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Scheduler,ITEM-00446,gcp,,IL2|IL4,FALSE
+,Cloud SQL,ITEM-00447,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Source Repositories,ITEM-00448,gcp,,IL4,TRUE
+,Cloud Storage,ITEM-00449,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Logging,ITEM-00450,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Functions,ITEM-00451,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Pub/Sub,ITEM-00452,gcp,,IL2,FALSE
+,Workflows,ITEM-00453,gcp,,IL2|IL5|IL6,TRUE
+,Compute Engine,ITEM-00454,gcp,,IL2|IL4|IL5,FALSE
+,Dataflow,ITEM-00455,gcp,,IL4|IL5,FALSE
+,Cloud Load Balancing,ITEM-00456,gcp,,IL5,TRUE
+,Memorystore,ITEM-00457,gcp,,IL2,TRUE
+,Workflows,ITEM-00458,gcp,,IL2|IL5,FALSE
+,Cloud Bigtable,ITEM-00459,gcp,,IL2,FALSE
+,Firestore,ITEM-00460,gcp,,IL4|IL5,FALSE
+,Cloud Trace,ITEM-00461,gcp,,IL6,FALSE
+,Cloud Trace,ITEM-00462,gcp,,IL5|IL6,FALSE
+,Cloud Load Balancing,ITEM-00463,gcp,,IL2|IL4|IL6,FALSE
+,Error Reporting,ITEM-00464,gcp,,IL4|IL5,FALSE
+,Cloud Armor,ITEM-00465,gcp,,IL5,TRUE
+,Cloud IAM,ITEM-00466,gcp,,IL2|IL5|IL6,FALSE
+,Apigee,ITEM-00467,gcp,,IL2|IL4,FALSE
+,Cloud Deployment Manager,ITEM-00468,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Storage,ITEM-00469,gcp,,IL2|IL5|IL6,FALSE
+,Dataproc,ITEM-00470,gcp,,IL2,TRUE
+,BigQuery,ITEM-00471,gcp,,IL4|IL6,TRUE
+,Cloud Healthcare API,ITEM-00472,gcp,,IL2|IL4,FALSE
+,Cloud Scheduler,ITEM-00473,gcp,,IL4|IL6,FALSE
+,Cloud Healthcare API,ITEM-00474,gcp,,IL6,FALSE
+,Cloud Source Repositories,ITEM-00475,gcp,,IL5,FALSE
+,Cloud Build,ITEM-00476,gcp,,IL5,FALSE
+,VPC Network,ITEM-00477,gcp,,IL4|IL5|IL6,TRUE
+,Apigee,ITEM-00478,gcp,,IL2|IL5|IL6,FALSE
+,Memorystore,ITEM-00479,gcp,,IL4|IL5|IL6,TRUE
+,Compute Engine,ITEM-00480,gcp,,IL2|IL5,TRUE
+,Cloud Load Balancing,ITEM-00481,gcp,,IL2|IL6,TRUE
+,Cloud KMS,ITEM-00482,gcp,,IL4|IL5|IL6,TRUE
+,Cloud IAM,ITEM-00483,gcp,,IL4|IL6,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00484,gcp,,IL2|IL5,TRUE
+,Firestore,ITEM-00485,gcp,,IL2,TRUE
+,Cloud Run,ITEM-00486,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Storage,ITEM-00487,gcp,,IL2|IL6,FALSE
+,Secret Manager,ITEM-00488,gcp,,IL5,TRUE
+,Cloud Identity,ITEM-00489,gcp,,IL6,FALSE
+,Dataproc,ITEM-00490,gcp,,IL5|IL6,TRUE
+,Cloud Profiler,ITEM-00491,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Storage,ITEM-00492,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Profiler,ITEM-00493,gcp,,IL2,FALSE
+,Cloud Load Balancing,ITEM-00494,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Spanner,ITEM-00495,gcp,,IL6,FALSE
+,Cloud Bigtable,ITEM-00496,gcp,,IL2|IL5|IL6,FALSE
+,Dataproc,ITEM-00497,gcp,,IL4,FALSE
+,Artifact Registry,ITEM-00498,gcp,,IL2,FALSE
+,Workflows,ITEM-00499,gcp,,IL4|IL6,FALSE
+,Cloud Deployment Manager,ITEM-00500,gcp,,IL2|IL4|IL5,TRUE
+,Apigee,ITEM-00501,gcp,,IL2,FALSE
+,Memorystore,ITEM-00502,gcp,,IL4,TRUE
+,Cloud Load Balancing,ITEM-00503,gcp,,IL4|IL5|IL6,FALSE
+,Apigee,ITEM-00504,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Logging,ITEM-00505,gcp,,IL5,FALSE
+,Cloud Profiler,ITEM-00506,gcp,,IL5|IL6,FALSE
+,VPC Network,ITEM-00507,gcp,,IL2|IL4|IL6,FALSE
+,VPC Network,ITEM-00508,gcp,,IL2|IL5,TRUE
+,Cloud Scheduler,ITEM-00509,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Build,ITEM-00510,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Load Balancing,ITEM-00511,gcp,,IL2|IL4,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00512,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Armor,ITEM-00513,gcp,,IL2|IL5,FALSE
+,Cloud Pub/Sub,ITEM-00514,gcp,,IL2,FALSE
+,Cloud Tasks,ITEM-00515,gcp,,IL4|IL5|IL6,FALSE
+,BigQuery,ITEM-00516,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00517,gcp,,IL4,TRUE
+,Cloud Trace,ITEM-00518,gcp,,IL2|IL4|IL5,FALSE
+,Cloud KMS,ITEM-00519,gcp,,IL6,TRUE
+,Cloud Trace,ITEM-00520,gcp,,IL2|IL4,FALSE
+,Cloud Monitoring,ITEM-00521,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Functions,ITEM-00522,gcp,,IL4,FALSE
+,Cloud Spanner,ITEM-00523,gcp,,IL2|IL5|IL6,FALSE
+,Cloud DNS,ITEM-00524,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Logging,ITEM-00525,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Tasks,ITEM-00526,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Spanner,ITEM-00527,gcp,,IL2|IL4,FALSE
+,Cloud IAM,ITEM-00528,gcp,,IL2|IL5,FALSE
+,Cloud Trace,ITEM-00529,gcp,,IL5,FALSE
+,Cloud KMS,ITEM-00530,gcp,,IL6,FALSE
+,Workflows,ITEM-00531,gcp,,IL4,FALSE
+,VPC Network,ITEM-00532,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Interconnect,ITEM-00533,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Build,ITEM-00534,gcp,,IL5|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00535,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Interconnect,ITEM-00536,gcp,,IL5,TRUE
+,Cloud Monitoring,ITEM-00537,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Source Repositories,ITEM-00538,gcp,,IL4,TRUE
+,Cloud IAM,ITEM-00539,gcp,,IL2|IL6,TRUE
+,Cloud Run,ITEM-00540,gcp,,IL5|IL6,FALSE
+,Workflows,ITEM-00541,gcp,,IL4|IL6,TRUE
+,BigQuery,ITEM-00542,gcp,,IL4|IL5|IL6,TRUE
+,Dataproc,ITEM-00543,gcp,,IL2|IL4|IL6,TRUE
+,Cloud CDN,ITEM-00544,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Identity,ITEM-00545,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Spanner,ITEM-00546,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Profiler,ITEM-00547,gcp,,IL4|IL6,FALSE
+,Firestore,ITEM-00548,gcp,,IL4,TRUE
+,Cloud Storage,ITEM-00549,gcp,,IL4,TRUE
+,Apigee,ITEM-00550,gcp,,IL4|IL5|IL6,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00551,gcp,,IL5|IL6,FALSE
+,Dataproc,ITEM-00552,gcp,,IL2|IL5|IL6,TRUE
+,VPC Network,ITEM-00553,gcp,,IL4,FALSE
+,Cloud Storage,ITEM-00554,gcp,,IL5,FALSE
+,Cloud Source Repositories,ITEM-00555,gcp,,IL2|IL4|IL5,FALSE
+,VPC Network,ITEM-00556,gcp,,IL5|IL6,FALSE
+,Cloud Monitoring,ITEM-00557,gcp,,IL4|IL6,FALSE
+,Cloud Scheduler,ITEM-00558,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Storage,ITEM-00559,gcp,,IL4|IL6,FALSE
+,App Engine,ITEM-00560,gcp,,IL6,TRUE
+,Dataflow,ITEM-00561,gcp,,IL4,FALSE
+,Memorystore,ITEM-00562,gcp,,IL5,FALSE
+,Cloud Deployment Manager,ITEM-00563,gcp,,IL2|IL4,FALSE
+,Cloud Interconnect,ITEM-00564,gcp,,IL4|IL5,FALSE
+,Cloud Tasks,ITEM-00565,gcp,,IL6,FALSE
+,Cloud Tasks,ITEM-00566,gcp,,IL2|IL5|IL6,FALSE
+,Cloud DNS,ITEM-00567,gcp,,IL2|IL5|IL6,FALSE
+,Compute Engine,ITEM-00568,gcp,,IL2|IL6,FALSE
+,BigQuery,ITEM-00569,gcp,,IL4,TRUE
+,Cloud Trace,ITEM-00570,gcp,,IL4|IL6,TRUE
+,Cloud Pub/Sub,ITEM-00571,gcp,,IL2,TRUE
+,Artifact Registry,ITEM-00572,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Tasks,ITEM-00573,gcp,,IL2|IL5,TRUE
+,Cloud SQL,ITEM-00574,gcp,,IL4|IL5,FALSE
+,Cloud Healthcare API,ITEM-00575,gcp,,IL4|IL6,TRUE
+,Cloud Pub/Sub,ITEM-00576,gcp,,IL6,FALSE
+,Cloud Tasks,ITEM-00577,gcp,,IL5,TRUE
+,Compute Engine,ITEM-00578,gcp,,IL4|IL6,TRUE
+,Cloud Armor,ITEM-00579,gcp,,IL5,TRUE
+,Cloud Monitoring,ITEM-00580,gcp,,IL4,TRUE
+,Cloud Load Balancing,ITEM-00581,gcp,,IL2|IL5|IL6,FALSE
+,Secret Manager,ITEM-00582,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Scheduler,ITEM-00583,gcp,,IL4|IL5,FALSE
+,Cloud KMS,ITEM-00584,gcp,,IL6,TRUE
+,Workflows,ITEM-00585,gcp,,IL4|IL5|IL6,FALSE
+,Memorystore,ITEM-00586,gcp,,IL2,FALSE
+,Cloud Source Repositories,ITEM-00587,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Healthcare API,ITEM-00588,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Monitoring,ITEM-00589,gcp,,IL5,TRUE
+,Cloud Storage,ITEM-00590,gcp,,IL4|IL5|IL6,FALSE
+,Dataproc,ITEM-00591,gcp,,IL2|IL5,FALSE
+,Cloud Storage,ITEM-00592,gcp,,IL5,TRUE
+,Cloud Functions,ITEM-00593,gcp,,IL4,FALSE
+,Cloud Tasks,ITEM-00594,gcp,,IL2,TRUE
+,Workflows,ITEM-00595,gcp,,IL2,FALSE
+,Cloud Tasks,ITEM-00596,gcp,,IL4|IL5,FALSE
+,Cloud Functions,ITEM-00597,gcp,,IL5,FALSE
+,Cloud Interconnect,ITEM-00598,gcp,,IL2|IL4|IL5,FALSE
+,Dataproc,ITEM-00599,gcp,,IL5,TRUE
+,Cloud Scheduler,ITEM-00600,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Interconnect,ITEM-00601,gcp,,IL4|IL6,TRUE
+,Cloud Bigtable,ITEM-00602,gcp,,IL2|IL4|IL5,TRUE
+,Vertex AI,ITEM-00603,gcp,,IL5,TRUE
+,Cloud DNS,ITEM-00604,gcp,,IL2|IL4,FALSE
+,Error Reporting,ITEM-00605,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Deployment Manager,ITEM-00606,gcp,,IL4|IL5|IL6,TRUE
+,Apigee,ITEM-00607,gcp,,IL5,TRUE
+,Cloud Interconnect,ITEM-00608,gcp,,IL5,FALSE
+,Compute Engine,ITEM-00609,gcp,,IL6,TRUE
+,Cloud KMS,ITEM-00610,gcp,,IL2|IL6,TRUE
+,Cloud Source Repositories,ITEM-00611,gcp,,IL4|IL5|IL6,FALSE
+,Cloud DNS,ITEM-00612,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Run,ITEM-00613,gcp,,IL2,FALSE
+,Memorystore,ITEM-00614,gcp,,IL2|IL4,TRUE
+,Memorystore,ITEM-00615,gcp,,IL6,FALSE
+,Apigee,ITEM-00616,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00617,gcp,,IL5,FALSE
+,Cloud Source Repositories,ITEM-00618,gcp,,IL2|IL6,TRUE
+,BigQuery,ITEM-00619,gcp,,IL2|IL4|IL5,FALSE
+,Workflows,ITEM-00620,gcp,,IL5|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00621,gcp,,IL4,FALSE
+,Cloud Spanner,ITEM-00622,gcp,,IL6,FALSE
+,Cloud Identity,ITEM-00623,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Armor,ITEM-00624,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00625,gcp,,IL2|IL4|IL6,TRUE
+,Secret Manager,ITEM-00626,gcp,,IL5,FALSE
+,Cloud Profiler,ITEM-00627,gcp,,IL2|IL5,TRUE
+,Cloud Identity,ITEM-00628,gcp,,IL2|IL4,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00629,gcp,,IL2,FALSE
+,Cloud Identity,ITEM-00630,gcp,,IL2|IL4|IL6,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00631,gcp,,IL5,TRUE
+,Cloud Identity,ITEM-00632,gcp,,IL2|IL5|IL6,FALSE
+,Apigee,ITEM-00633,gcp,,IL5,FALSE
+,Cloud Run,ITEM-00634,gcp,,IL5,FALSE
+,BigQuery,ITEM-00635,gcp,,IL4,FALSE
+,Cloud Run,ITEM-00636,gcp,,IL2|IL6,TRUE
+,VPC Network,ITEM-00637,gcp,,IL2,TRUE
+,Cloud Storage,ITEM-00638,gcp,,IL2,FALSE
+,Cloud KMS,ITEM-00639,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Storage,ITEM-00640,gcp,,IL2|IL5,FALSE
+,Cloud Source Repositories,ITEM-00641,gcp,,IL2|IL4|IL6,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00642,gcp,,IL5|IL6,FALSE
+,Cloud Healthcare API,ITEM-00643,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Armor,ITEM-00644,gcp,,IL4,TRUE
+,Cloud Load Balancing,ITEM-00645,gcp,,IL2|IL5,TRUE
+,Cloud DNS,ITEM-00646,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Source Repositories,ITEM-00647,gcp,,IL4|IL5|IL6,FALSE
+,Cloud CDN,ITEM-00648,gcp,,IL4|IL5,FALSE
+,Error Reporting,ITEM-00649,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Profiler,ITEM-00650,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Logging,ITEM-00651,gcp,,IL4,FALSE
+,Compute Engine,ITEM-00652,gcp,,IL4|IL5,TRUE
+,Secret Manager,ITEM-00653,gcp,,IL6,TRUE
+,Artifact Registry,ITEM-00654,gcp,,IL2|IL6,FALSE
+,Dataflow,ITEM-00655,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Identity,ITEM-00656,gcp,,IL2|IL4|IL6,FALSE
+,Cloud DNS,ITEM-00657,gcp,,IL2|IL5,TRUE
+,Dataflow,ITEM-00658,gcp,,IL4,FALSE
+,Compute Engine,ITEM-00659,gcp,,IL5,FALSE
+,BigQuery,ITEM-00660,gcp,,IL5,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00661,gcp,,IL4|IL5|IL6,TRUE
+,Compute Engine,ITEM-00662,gcp,,IL2|IL5|IL6,FALSE
+,Apigee,ITEM-00663,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Identity,ITEM-00664,gcp,,IL4,FALSE
+,Cloud Trace,ITEM-00665,gcp,,IL4,TRUE
+,Apigee,ITEM-00666,gcp,,IL2|IL6,TRUE
+,Cloud Tasks,ITEM-00667,gcp,,IL2,FALSE
+,App Engine,ITEM-00668,gcp,,IL2|IL5,TRUE
+,Artifact Registry,ITEM-00669,gcp,,IL4|IL5,FALSE
+,Cloud DNS,ITEM-00670,gcp,,IL5,TRUE
+,Cloud Source Repositories,ITEM-00671,gcp,,IL5|IL6,FALSE
+,Cloud Logging,ITEM-00672,gcp,,IL6,FALSE
+,Cloud Profiler,ITEM-00673,gcp,,IL5,TRUE
+,Firestore,ITEM-00674,gcp,,IL6,FALSE
+,Cloud Healthcare API,ITEM-00675,gcp,,IL4,FALSE
+,Cloud Load Balancing,ITEM-00676,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Identity,ITEM-00677,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Healthcare API,ITEM-00678,gcp,,IL6,FALSE
+,Cloud Load Balancing,ITEM-00679,gcp,,IL2|IL6,TRUE
+,Cloud Monitoring,ITEM-00680,gcp,,IL6,FALSE
+,Cloud Load Balancing,ITEM-00681,gcp,,IL4|IL6,FALSE
+,Cloud Run,ITEM-00682,gcp,,IL2|IL4|IL5,TRUE
+,Memorystore,ITEM-00683,gcp,,IL4,FALSE
+,Cloud KMS,ITEM-00684,gcp,,IL5,TRUE
+,Memorystore,ITEM-00685,gcp,,IL2|IL4,FALSE
+,Compute Engine,ITEM-00686,gcp,,IL2,FALSE
+,Cloud Monitoring,ITEM-00687,gcp,,IL4|IL6,FALSE
+,VPC Network,ITEM-00688,gcp,,IL2|IL5|IL6,TRUE
+,Compute Engine,ITEM-00689,gcp,,IL6,TRUE
+,Cloud Source Repositories,ITEM-00690,gcp,,IL4|IL5,FALSE
+,Cloud Run,ITEM-00691,gcp,,IL5|IL6,FALSE
+,Cloud Profiler,ITEM-00692,gcp,,IL2|IL5|IL6,FALSE
+,Dataproc,ITEM-00693,gcp,,IL2|IL4,FALSE
+,Firestore,ITEM-00694,gcp,,IL5|IL6,TRUE
+,Cloud IAM,ITEM-00695,gcp,,IL2,FALSE
+,Vertex AI,ITEM-00696,gcp,,IL2,TRUE
+,Cloud Pub/Sub,ITEM-00697,gcp,,IL4|IL6,TRUE
+,Dataproc,ITEM-00698,gcp,,IL2|IL4,TRUE
+,Cloud Monitoring,ITEM-00699,gcp,,IL2|IL4,TRUE
+,Cloud Run,ITEM-00700,gcp,,IL4,FALSE
+,Cloud Healthcare API,ITEM-00701,gcp,,IL6,TRUE
+,Dataflow,ITEM-00702,gcp,,IL4,FALSE
+,Cloud Profiler,ITEM-00703,gcp,,IL4|IL5,FALSE
+,Vertex AI,ITEM-00704,gcp,,IL2|IL4|IL6,FALSE
+,App Engine,ITEM-00705,gcp,,IL6,FALSE
+,Cloud Tasks,ITEM-00706,gcp,,IL2|IL6,TRUE
+,Cloud Healthcare API,ITEM-00707,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Logging,ITEM-00708,gcp,,IL2|IL5|IL6,FALSE
+,Dataflow,ITEM-00709,gcp,,IL5|IL6,TRUE
+,Cloud Spanner,ITEM-00710,gcp,,IL5,TRUE
+,Cloud Load Balancing,ITEM-00711,gcp,,IL6,FALSE
+,Compute Engine,ITEM-00712,gcp,,IL6,FALSE
+,Cloud Scheduler,ITEM-00713,gcp,,IL4|IL5,FALSE
+,Apigee,ITEM-00714,gcp,,IL2,FALSE
+,Cloud Storage,ITEM-00715,gcp,,IL6,TRUE
+,Workflows,ITEM-00716,gcp,,IL5,FALSE
+,Vertex AI,ITEM-00717,gcp,,IL2|IL4,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00718,gcp,,IL5,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00719,gcp,,IL6,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00720,gcp,,IL2,TRUE
+,Cloud Spanner,ITEM-00721,gcp,,IL4|IL6,FALSE
+,Cloud Storage,ITEM-00722,gcp,,IL2|IL5|IL6,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00723,gcp,,IL5,TRUE
+,Cloud Logging,ITEM-00724,gcp,,IL2|IL4|IL5,TRUE
+,Dataflow,ITEM-00725,gcp,,IL4|IL5|IL6,FALSE
+,Vertex AI,ITEM-00726,gcp,,IL2|IL4|IL6,FALSE
+,Firestore,ITEM-00727,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Identity,ITEM-00728,gcp,,IL5,TRUE
+,Workflows,ITEM-00729,gcp,,IL2,FALSE
+,Secret Manager,ITEM-00730,gcp,,IL2|IL5|IL6,TRUE
+,Cloud CDN,ITEM-00731,gcp,,IL4,FALSE
+,Cloud Monitoring,ITEM-00732,gcp,,IL2|IL4|IL6,FALSE
+,Cloud SQL,ITEM-00733,gcp,,IL2|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00734,gcp,,IL2,TRUE
+,BigQuery,ITEM-00735,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Build,ITEM-00736,gcp,,IL2|IL5,FALSE
+,Cloud Healthcare API,ITEM-00737,gcp,,IL5|IL6,TRUE
+,Cloud Identity,ITEM-00738,gcp,,IL2|IL4|IL5,FALSE
+,Workflows,ITEM-00739,gcp,,IL5,FALSE
+,Cloud KMS,ITEM-00740,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Build,ITEM-00741,gcp,,IL2|IL5,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00742,gcp,,IL2,TRUE
+,Vertex AI,ITEM-00743,gcp,,IL4|IL5,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00744,gcp,,IL2|IL4|IL5,TRUE
+,Compute Engine,ITEM-00745,gcp,,IL2|IL5,TRUE
+,Cloud Profiler,ITEM-00746,gcp,,IL4|IL5|IL6,TRUE
+,Compute Engine,ITEM-00747,gcp,,IL4,TRUE
+,Cloud SQL,ITEM-00748,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Tasks,ITEM-00749,gcp,,IL2,FALSE
+,Cloud Storage,ITEM-00750,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Interconnect,ITEM-00751,gcp,,IL4|IL5,FALSE
+,Cloud Functions,ITEM-00752,gcp,,IL5,TRUE
+,Error Reporting,ITEM-00753,gcp,,IL5,FALSE
+,Cloud Interconnect,ITEM-00754,gcp,,IL5,TRUE
+,Firestore,ITEM-00755,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Storage,ITEM-00756,gcp,,IL2|IL4,TRUE
+,Cloud Trace,ITEM-00757,gcp,,IL2|IL5,FALSE
+,VPC Network,ITEM-00758,gcp,,IL2|IL6,FALSE
+,App Engine,ITEM-00759,gcp,,IL6,TRUE
+,Dataproc,ITEM-00760,gcp,,IL6,FALSE
+,Cloud KMS,ITEM-00761,gcp,,IL2,FALSE
+,BigQuery,ITEM-00762,gcp,,IL5,FALSE
+,Artifact Registry,ITEM-00763,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Source Repositories,ITEM-00764,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Identity,ITEM-00765,gcp,,IL2|IL4|IL6,TRUE
+,Dataflow,ITEM-00766,gcp,,IL4|IL6,FALSE
+,Cloud Load Balancing,ITEM-00767,gcp,,IL6,TRUE
+,Firestore,ITEM-00768,gcp,,IL2,TRUE
+,Cloud IAM,ITEM-00769,gcp,,IL4|IL6,FALSE
+,Cloud Run,ITEM-00770,gcp,,IL4|IL5,FALSE
+,Cloud IAM,ITEM-00771,gcp,,IL5,TRUE
+,Cloud Deployment Manager,ITEM-00772,gcp,,IL2|IL6,TRUE
+,Cloud KMS,ITEM-00773,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Bigtable,ITEM-00774,gcp,,IL5|IL6,TRUE
+,Cloud Source Repositories,ITEM-00775,gcp,,IL2|IL5|IL6,FALSE
+,Cloud DNS,ITEM-00776,gcp,,IL2|IL5|IL6,TRUE
+,Cloud SQL,ITEM-00777,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Load Balancing,ITEM-00778,gcp,,IL5|IL6,FALSE
+,Workflows,ITEM-00779,gcp,,IL4|IL6,FALSE
+,Cloud Monitoring,ITEM-00780,gcp,,IL2|IL5,FALSE
+,Artifact Registry,ITEM-00781,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Profiler,ITEM-00782,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Armor,ITEM-00783,gcp,,IL6,FALSE
+,Cloud Storage,ITEM-00784,gcp,,IL5,TRUE
+,VPC Network,ITEM-00785,gcp,,IL2|IL6,FALSE
+,BigQuery,ITEM-00786,gcp,,IL4|IL5,FALSE
+,Cloud Build,ITEM-00787,gcp,,IL4|IL5|IL6,TRUE
+,Secret Manager,ITEM-00788,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Run,ITEM-00789,gcp,,IL5,FALSE
+,App Engine,ITEM-00790,gcp,,IL5|IL6,FALSE
+,Artifact Registry,ITEM-00791,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Profiler,ITEM-00792,gcp,,IL4|IL5,TRUE
+,Cloud DNS,ITEM-00793,gcp,,IL2|IL5,FALSE
+,Cloud Pub/Sub,ITEM-00794,gcp,,IL2|IL5,FALSE
+,Cloud Build,ITEM-00795,gcp,,IL2|IL5|IL6,TRUE
+,Cloud CDN,ITEM-00796,gcp,,IL4|IL6,TRUE
+,Apigee,ITEM-00797,gcp,,IL2|IL6,TRUE
+,BigQuery,ITEM-00798,gcp,,IL2,TRUE
+,Cloud Profiler,ITEM-00799,gcp,,IL2|IL5|IL6,TRUE
+,Cloud CDN,ITEM-00800,gcp,,IL4,FALSE
+,Vertex AI,ITEM-00801,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Monitoring,ITEM-00802,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Load Balancing,ITEM-00803,gcp,,IL5,TRUE
+,Artifact Registry,ITEM-00804,gcp,,IL4|IL6,FALSE
+,Dataproc,ITEM-00805,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Tasks,ITEM-00806,gcp,,IL2|IL5|IL6,FALSE
+,Secret Manager,ITEM-00807,gcp,,IL2|IL5|IL6,TRUE
+,Cloud SQL,ITEM-00808,gcp,,IL2|IL5|IL6,FALSE
+,VPC Network,ITEM-00809,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Monitoring,ITEM-00810,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Logging,ITEM-00811,gcp,,IL2|IL5,FALSE
+,Memorystore,ITEM-00812,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Logging,ITEM-00813,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Pub/Sub,ITEM-00814,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Monitoring,ITEM-00815,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Scheduler,ITEM-00816,gcp,,IL2|IL6,FALSE
+,Cloud Scheduler,ITEM-00817,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00818,gcp,,IL4|IL5,TRUE
+,Cloud KMS,ITEM-00819,gcp,,IL4|IL6,FALSE
+,Artifact Registry,ITEM-00820,gcp,,IL4,FALSE
+,Cloud Bigtable,ITEM-00821,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Run,ITEM-00822,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Trace,ITEM-00823,gcp,,IL4|IL6,TRUE
+,Cloud Logging,ITEM-00824,gcp,,IL6,TRUE
+,Cloud Scheduler,ITEM-00825,gcp,,IL6,FALSE
+,Cloud Armor,ITEM-00826,gcp,,IL5|IL6,FALSE
+,Cloud Deployment Manager,ITEM-00827,gcp,,IL5,FALSE
+,Cloud Pub/Sub,ITEM-00828,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Logging,ITEM-00829,gcp,,IL2,TRUE
+,Cloud Deployment Manager,ITEM-00830,gcp,,IL4,TRUE
+,Cloud Bigtable,ITEM-00831,gcp,,IL6,FALSE
+,Compute Engine,ITEM-00832,gcp,,IL6,TRUE
+,Cloud Armor,ITEM-00833,gcp,,IL2|IL6,FALSE
+,Error Reporting,ITEM-00834,gcp,,IL5|IL6,FALSE
+,App Engine,ITEM-00835,gcp,,IL2|IL6,FALSE
+,Cloud Identity,ITEM-00836,gcp,,IL2,FALSE
+,Cloud Interconnect,ITEM-00837,gcp,,IL4|IL6,FALSE
+,Vertex AI,ITEM-00838,gcp,,IL2|IL4|IL5,TRUE
+,VPC Network,ITEM-00839,gcp,,IL2|IL6,FALSE
+,Cloud IAM,ITEM-00840,gcp,,IL2,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00841,gcp,,IL2|IL4,TRUE
+,Cloud Deployment Manager,ITEM-00842,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Profiler,ITEM-00843,gcp,,IL4,TRUE
+,Cloud Interconnect,ITEM-00844,gcp,,IL2,FALSE
+,Cloud Load Balancing,ITEM-00845,gcp,,IL2|IL5,FALSE
+,Error Reporting,ITEM-00846,gcp,,IL2|IL4|IL5,TRUE
+,Secret Manager,ITEM-00847,gcp,,IL5,FALSE
+,App Engine,ITEM-00848,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Pub/Sub,ITEM-00849,gcp,,IL4|IL5|IL6,FALSE
+,Secret Manager,ITEM-00850,gcp,,IL6,TRUE
+,Cloud Source Repositories,ITEM-00851,gcp,,IL5|IL6,TRUE
+,Cloud Spanner,ITEM-00852,gcp,,IL5,TRUE
+,Cloud Armor,ITEM-00853,gcp,,IL4,TRUE
+,Memorystore,ITEM-00854,gcp,,IL2|IL5|IL6,TRUE
+,Dataproc,ITEM-00855,gcp,,IL2,FALSE
+,Dataproc,ITEM-00856,gcp,,IL2|IL5,FALSE
+,Cloud KMS,ITEM-00857,gcp,,IL6,TRUE
+,Cloud Profiler,ITEM-00858,gcp,,IL5,FALSE
+,Cloud Source Repositories,ITEM-00859,gcp,,IL2,TRUE
+,Cloud Functions,ITEM-00860,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Interconnect,ITEM-00861,gcp,,IL2,FALSE
+,Cloud Storage,ITEM-00862,gcp,,IL5|IL6,TRUE
+,Dataflow,ITEM-00863,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Trace,ITEM-00864,gcp,,IL4,TRUE
+,Cloud SQL,ITEM-00865,gcp,,IL2|IL4|IL5,TRUE
+,Artifact Registry,ITEM-00866,gcp,,IL2|IL4,FALSE
+,Memorystore,ITEM-00867,gcp,,IL2|IL4|IL5,FALSE
+,Cloud Source Repositories,ITEM-00868,gcp,,IL2|IL6,TRUE
+,Cloud Profiler,ITEM-00869,gcp,,IL4|IL5,TRUE
+,Cloud Monitoring,ITEM-00870,gcp,,IL6,FALSE
+,Cloud Spanner,ITEM-00871,gcp,,IL6,TRUE
+,Cloud Load Balancing,ITEM-00872,gcp,,IL6,TRUE
+,App Engine,ITEM-00873,gcp,,IL6,FALSE
+,Cloud Pub/Sub,ITEM-00874,gcp,,IL2,FALSE
+,Cloud Interconnect,ITEM-00875,gcp,,IL2|IL4,FALSE
+,App Engine,ITEM-00876,gcp,,IL4,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00877,gcp,,IL2,TRUE
+,Secret Manager,ITEM-00878,gcp,,IL2|IL5|IL6,TRUE
+,Compute Engine,ITEM-00879,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Bigtable,ITEM-00880,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Run,ITEM-00881,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Armor,ITEM-00882,gcp,,IL4|IL6,FALSE
+,Cloud CDN,ITEM-00883,gcp,,IL5|IL6,FALSE
+,Cloud Tasks,ITEM-00884,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Monitoring,ITEM-00885,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Functions,ITEM-00886,gcp,,IL4,FALSE
+,Cloud SQL,ITEM-00887,gcp,,IL2|IL6,TRUE
+,Cloud Functions,ITEM-00888,gcp,,IL2|IL4,FALSE
+,Cloud Load Balancing,ITEM-00889,gcp,,IL4|IL6,TRUE
+,Cloud Logging,ITEM-00890,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Bigtable,ITEM-00891,gcp,,IL2|IL5|IL6,FALSE
+,Cloud KMS,ITEM-00892,gcp,,IL2|IL6,FALSE
+,App Engine,ITEM-00893,gcp,,IL5|IL6,TRUE
+,Cloud Healthcare API,ITEM-00894,gcp,,IL6,TRUE
+,Cloud Bigtable,ITEM-00895,gcp,,IL4|IL5,FALSE
+,Error Reporting,ITEM-00896,gcp,,IL2|IL6,TRUE
+,Cloud Pub/Sub,ITEM-00897,gcp,,IL5|IL6,TRUE
+,Vertex AI,ITEM-00898,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00899,gcp,,IL2|IL4,TRUE
+,Error Reporting,ITEM-00900,gcp,,IL5|IL6,FALSE
+,Cloud Source Repositories,ITEM-00901,gcp,,IL4,TRUE
+,Cloud Load Balancing,ITEM-00902,gcp,,IL2|IL4|IL5,TRUE
+,BigQuery,ITEM-00903,gcp,,IL2,FALSE
+,BigQuery,ITEM-00904,gcp,,IL2|IL5|IL6,FALSE
+,Cloud CDN,ITEM-00905,gcp,,IL2|IL4|IL5,TRUE
+,Cloud Spanner,ITEM-00906,gcp,,IL4|IL5|IL6,TRUE
+,Cloud KMS,ITEM-00907,gcp,,IL2|IL4|IL5,TRUE
+,Memorystore,ITEM-00908,gcp,,IL2|IL5,FALSE
+,Cloud SQL,ITEM-00909,gcp,,IL2|IL5,FALSE
+,Cloud DNS,ITEM-00910,gcp,,IL2|IL4,FALSE
+,Cloud Load Balancing,ITEM-00911,gcp,,IL5,TRUE
+,Dataproc,ITEM-00912,gcp,,IL2|IL6,TRUE
+,Cloud Functions,ITEM-00913,gcp,,IL2|IL4,TRUE
+,Cloud Logging,ITEM-00914,gcp,,IL5|IL6,FALSE
+,Cloud DNS,ITEM-00915,gcp,,IL2|IL6,TRUE
+,Cloud Spanner,ITEM-00916,gcp,,IL5|IL6,TRUE
+,Dataproc,ITEM-00917,gcp,,IL2|IL6,TRUE
+,Workflows,ITEM-00918,gcp,,IL2|IL4,FALSE
+,Cloud Scheduler,ITEM-00919,gcp,,IL2|IL5|IL6,TRUE
+,Google Kubernetes Engine (GKE),ITEM-00920,gcp,,IL5,FALSE
+,Cloud Functions,ITEM-00921,gcp,,IL4|IL6,TRUE
+,Cloud CDN,ITEM-00922,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Monitoring,ITEM-00923,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Source Repositories,ITEM-00924,gcp,,IL2,FALSE
+,Cloud Functions,ITEM-00925,gcp,,IL6,TRUE
+,Cloud Interconnect,ITEM-00926,gcp,,IL4,FALSE
+,Cloud Spanner,ITEM-00927,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Logging,ITEM-00928,gcp,,IL2|IL4|IL6,TRUE
+,Cloud IAM,ITEM-00929,gcp,,IL5,FALSE
+,Dataproc,ITEM-00930,gcp,,IL2|IL4|IL6,FALSE
+,Artifact Registry,ITEM-00931,gcp,,IL2|IL4|IL6,TRUE
+,Cloud Deployment Manager,ITEM-00932,gcp,,IL4|IL5|IL6,FALSE
+,Cloud KMS,ITEM-00933,gcp,,IL5,FALSE
+,Cloud Armor,ITEM-00934,gcp,,IL4|IL6,TRUE
+,Cloud DNS,ITEM-00935,gcp,,IL2|IL5|IL6,FALSE
+,Cloud SQL,ITEM-00936,gcp,,IL6,FALSE
+,Cloud DNS,ITEM-00937,gcp,,IL2|IL4|IL6,TRUE
+,Dataflow,ITEM-00938,gcp,,IL2|IL5|IL6,TRUE
+,Apigee,ITEM-00939,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Spanner,ITEM-00940,gcp,,IL2,TRUE
+,Cloud Monitoring,ITEM-00941,gcp,,IL4,TRUE
+,Cloud Armor,ITEM-00942,gcp,,IL2|IL4,TRUE
+,Cloud Run,ITEM-00943,gcp,,IL5|IL6,FALSE
+,Workflows,ITEM-00944,gcp,,IL2,FALSE
+,Cloud Deployment Manager,ITEM-00945,gcp,,IL6,TRUE
+,Cloud KMS,ITEM-00946,gcp,,IL4,FALSE
+,Cloud Profiler,ITEM-00947,gcp,,IL2|IL6,FALSE
+,Secret Manager,ITEM-00948,gcp,,IL2,FALSE
+,Dataproc,ITEM-00949,gcp,,IL2|IL5,TRUE
+,Cloud KMS,ITEM-00950,gcp,,IL2|IL5|IL6,TRUE
+,Cloud Load Balancing,ITEM-00951,gcp,,IL4|IL6,TRUE
+,Dataproc,ITEM-00952,gcp,,IL5,FALSE
+,Cloud Source Repositories,ITEM-00953,gcp,,IL2,TRUE
+,Cloud Bigtable,ITEM-00954,gcp,,IL4,FALSE
+,Artifact Registry,ITEM-00955,gcp,,IL2|IL5|IL6,FALSE
+,Cloud Spanner,ITEM-00956,gcp,,IL4|IL5,FALSE
+,Cloud KMS,ITEM-00957,gcp,,IL4|IL5|IL6,TRUE
+,Dataflow,ITEM-00958,gcp,,IL2|IL6,TRUE
+,Cloud CDN,ITEM-00959,gcp,,IL5|IL6,TRUE
+,Cloud Run,ITEM-00960,gcp,,IL2|IL4|IL6,FALSE
+,Workflows,ITEM-00961,gcp,,IL2|IL6,FALSE
+,Cloud Logging,ITEM-00962,gcp,,IL2,FALSE
+,Cloud Spanner,ITEM-00963,gcp,,IL5|IL6,TRUE
+,Artifact Registry,ITEM-00964,gcp,,IL4,FALSE
+,VPC Network,ITEM-00965,gcp,,IL2|IL5,TRUE
+,Cloud Deployment Manager,ITEM-00966,gcp,,IL2,TRUE
+,Cloud IAM,ITEM-00967,gcp,,IL2|IL4|IL6,FALSE
+,Secret Manager,ITEM-00968,gcp,,IL5|IL6,TRUE
+,Compute Engine,ITEM-00969,gcp,,IL4|IL5|IL6,TRUE
+,Cloud Functions,ITEM-00970,gcp,,IL2,TRUE
+,Dataproc,ITEM-00971,gcp,,IL5,FALSE
+,Cloud Storage,ITEM-00972,gcp,,IL2,FALSE
+,Cloud Storage,ITEM-00973,gcp,,IL2|IL5|IL6,TRUE
+,Apigee,ITEM-00974,gcp,,IL5|IL6,TRUE
+,Cloud Pub/Sub,ITEM-00975,gcp,,IL2|IL5|IL6,FALSE
+,Google Kubernetes Engine (GKE),ITEM-00976,gcp,,IL6,TRUE
+,Dataflow,ITEM-00977,gcp,,IL4|IL6,FALSE
+,Cloud SQL,ITEM-00978,gcp,,IL5,TRUE
+,Cloud Bigtable,ITEM-00979,gcp,,IL4,TRUE
+,Apigee,ITEM-00980,gcp,,IL2|IL4|IL6,TRUE
+,Cloud CDN,ITEM-00981,gcp,,IL2|IL4|IL6,TRUE
+,Memorystore,ITEM-00982,gcp,,IL2|IL5|IL6,TRUE
+,Dataflow,ITEM-00983,gcp,,IL2,TRUE
+,Cloud Pub/Sub,ITEM-00984,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Run,ITEM-00985,gcp,,IL2,TRUE
+,Apigee,ITEM-00986,gcp,,IL2|IL4|IL6,FALSE
+,Cloud Tasks,ITEM-00987,gcp,,IL2|IL4|IL6,TRUE
+,Error Reporting,ITEM-00988,gcp,,IL5|IL6,TRUE
+,Cloud Trace,ITEM-00989,gcp,,IL5,FALSE
+,Cloud Deployment Manager,ITEM-00990,gcp,,IL4|IL6,TRUE
+,Cloud Spanner,ITEM-00991,gcp,,IL2|IL5|IL6,FALSE
+,BigQuery,ITEM-00992,gcp,,IL2|IL5|IL6,FALSE
+,Cloud SQL,ITEM-00993,gcp,,IL4,FALSE
+,Apigee,ITEM-00994,gcp,,IL2,FALSE
+,Cloud Bigtable,ITEM-00995,gcp,,IL2|IL4|IL6,FALSE
+,Vertex AI,ITEM-00996,gcp,,IL4|IL6,FALSE
+,Dataflow,ITEM-00997,gcp,,IL2,TRUE
+,Cloud Pub/Sub,ITEM-00998,gcp,,IL2,FALSE
+,VPC Network,ITEM-00999,gcp,,IL4|IL5|IL6,FALSE
+,Cloud Build,ITEM-01000,gcp,,IL2,TRUE

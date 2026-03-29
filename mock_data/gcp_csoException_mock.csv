@@ -1,0 +1,1001 @@
+ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+EX-D1426E81,Error Reporting,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F38CBE2D,Cloud Bigtable,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4BE7744E,Cloud Spanner,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F2C6E2F,Compute Engine,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E7AA8C55,Cloud Storage,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C6EC321D,Cloud Run,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-88B99B35,Cloud Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-293F2292,Cloud Profiler,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0462665F,Cloud Armor,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B79ED767,Google Kubernetes Engine (GKE),IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5F19B2E0,Cloud Spanner,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0834ABE,Dataflow,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94503571,Cloud DNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80FDEB89,Dataproc,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-099D589A,Cloud Pub/Sub,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D6C29B5,Cloud Deployment Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1657A79D,Cloud Pub/Sub,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FA0E5C29,Cloud Bigtable,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-46AB8628,Google Kubernetes Engine (GKE),IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-46C85465,Apigee,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8FE58396,Cloud KMS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2FE72B94,Dataflow,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B217F9A7,Cloud Bigtable,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF71F637,Cloud Logging,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D41DF4C7,Apigee,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3E5B456D,Cloud KMS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F0E3724,Cloud Load Balancing,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95A90BD8,Firestore,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DD6D1C7B,Cloud IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FDA4B671,Cloud Bigtable,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D455A62,Google Kubernetes Engine (GKE),IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7886710F,Google Kubernetes Engine (GKE),IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-33C3AE4D,Cloud Scheduler,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7411C218,Cloud Pub/Sub,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE469411,Secret Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E6884B3A,VPC Network,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8812F94D,Firestore,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C49C0F11,Cloud Scheduler,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-67152CA2,Cloud SQL,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8C350EDA,Cloud Monitoring,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A6B4108,Firestore,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1BDC5C4A,Cloud Interconnect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87913F76,Cloud Trace,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C985D7D,VPC Network,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF0D9A49,Cloud Storage,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-98AE06ED,Cloud Functions,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3AB77FB,Cloud Run,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8124DDBD,Cloud Logging,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-824AE623,Cloud Deployment Manager,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-177B1939,Cloud Interconnect,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3DAB3E6,Cloud Profiler,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5E9A655C,Secret Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4FE86CD8,Dataflow,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92347FC1,BigQuery,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-14176E94,Dataflow,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F634539,Cloud Run,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7273298C,Cloud KMS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-271739EE,Cloud Bigtable,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9DD05F97,Dataproc,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-905D3C63,Cloud Armor,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-89F1FB48,Cloud Interconnect,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF2292B1,Cloud Bigtable,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE034D00,App Engine,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3130E51,Cloud Identity,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C1F1415,Cloud CDN,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FEDC4CC,Secret Manager,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A460E86,BigQuery,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F88B54FE,Secret Manager,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6ADD5D36,Google Kubernetes Engine (GKE),IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-583177EA,Cloud DNS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-39FB14E8,Cloud Healthcare API,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28B01C7C,Cloud Load Balancing,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83E699FD,Dataproc,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA714908,Memorystore,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76D581BE,Cloud Bigtable,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D5ED5E0,Cloud DNS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6A5E5BD,Vertex AI,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3852B174,Error Reporting,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FAFED9A7,VPC Network,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B2316385,VPC Network,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95480C49,Cloud Trace,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-447FD49D,Error Reporting,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9591854D,Cloud Monitoring,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78C0B772,Secret Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A637778C,Cloud Storage,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6BEFBF1,Cloud Tasks,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E0E6F2F,Cloud Identity,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-604724E1,Cloud Pub/Sub,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F8DA098,Cloud IAM,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD9F462C,Cloud Functions,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-800849AC,Cloud Build,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2F6F4D16,Cloud Healthcare API,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5858201F,Memorystore,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F9AAD844,Cloud Healthcare API,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4C35DB8,VPC Network,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-62606C63,Cloud CDN,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-475AFE47,Cloud Load Balancing,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5BA7BC98,Cloud Armor,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A963F217,Google Kubernetes Engine (GKE),IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-40F060EB,Firestore,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7214D517,Cloud Load Balancing,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF2B9042,Cloud CDN,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D6C972BF,Cloud Functions,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0F8407AA,Dataproc,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-46238FF4,Cloud DNS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F4377B6,Dataflow,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D958792,Cloud Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BE3126E7,Cloud DNS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-65D689C4,Cloud SQL,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D60D96B,Google Kubernetes Engine (GKE),IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C29C25D4,Cloud CDN,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FCA4A99,Cloud Logging,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DC753887,Cloud Identity,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-74B4CDCA,Cloud Trace,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DAC4E9FA,Cloud Trace,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E1F9B9C,Vertex AI,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF42B51C,Cloud Build,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E66C7096,Cloud IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-241DE797,Firestore,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F39A9213,Cloud SQL,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B33AA19,Cloud Source Repositories,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EB902C99,Cloud Bigtable,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FED7A1B2,Vertex AI,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-105E809A,Cloud Deployment Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-956D3ECA,Firestore,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE92C1B1,Dataflow,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D46684F1,Cloud Profiler,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5CD82A6F,Cloud CDN,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1A057025,Cloud KMS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-650B93C3,Cloud KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7F1E46E,Cloud CDN,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A67060ED,Cloud Scheduler,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C6884DC,Dataflow,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31748219,Cloud Spanner,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77AF099F,Error Reporting,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D138AEF9,Cloud KMS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-307AA50A,Cloud Storage,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-450E9766,Secret Manager,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-03B377D4,Firestore,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-30AB9B08,Secret Manager,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BC11915D,VPC Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23D976DA,Dataflow,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E763321E,Cloud Interconnect,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D91EB70,Cloud Spanner,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3280B79D,Cloud Run,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1EBF1C40,Cloud Trace,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5BF595AF,Cloud Monitoring,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1327AAC1,BigQuery,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B8CE9DC3,Cloud Functions,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9C7A5DA7,Cloud CDN,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E8FA9A5F,Cloud Healthcare API,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CB923721,Cloud KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77EB0909,Cloud Bigtable,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-382466A6,Cloud Bigtable,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-79D4C24D,Cloud Interconnect,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-07AB5F6E,Compute Engine,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BDF8FCB,Cloud Build,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F2F9A9EB,Cloud KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-098A699D,Vertex AI,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-93D5FD12,Cloud KMS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-846F14D4,Cloud Healthcare API,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23EBA8BF,Cloud Load Balancing,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-09B37256,BigQuery,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0DAC61DA,Cloud CDN,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75511AAA,Cloud Armor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E27D2393,Compute Engine,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F0A14EC0,Cloud Deployment Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AD00ABFD,Workflows,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90AF7874,Cloud Build,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B261B75,Cloud Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9344097,Cloud DNS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5F557A2A,Cloud Run,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B1FE3C05,Cloud Load Balancing,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-84341061,BigQuery,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6872A77D,Cloud Build,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EBB0CB5D,Secret Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F9E0C31,Cloud Monitoring,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-52E63188,Artifact Registry,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC4F1050,Cloud Load Balancing,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-455B798A,Cloud Source Repositories,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B491528,Cloud Profiler,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-872EAE3C,Cloud Bigtable,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CB40B140,Artifact Registry,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E8E38EE,Cloud KMS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-930CA47D,Cloud Scheduler,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D27E7CAB,Cloud SQL,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FA684DE2,Cloud KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1FD89D65,Cloud Load Balancing,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EEAA1545,VPC Network,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EECB3CCE,Cloud SQL,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-71EDCF8E,Artifact Registry,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E17A6535,Google Kubernetes Engine (GKE),IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA3E0A57,Google Kubernetes Engine (GKE),IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A0DA4E3,Cloud Scheduler,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-481C0114,Cloud Profiler,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DD3CD069,Memorystore,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5874BF41,Cloud Source Repositories,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A9C72DA,Vertex AI,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A06302FE,BigQuery,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1025E056,Cloud Build,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B097C91,Cloud Bigtable,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51298278,Firestore,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D4B014EB,Compute Engine,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-206696C8,Cloud SQL,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-73D4EFF6,Cloud Spanner,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C860E25C,Cloud Logging,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-188136CE,Cloud Deployment Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C5FCDEDE,VPC Network,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D8B4FC62,Cloud KMS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5AF660CD,Google Kubernetes Engine (GKE),IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-217393C4,Error Reporting,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9950F8F8,Cloud Functions,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-722666D4,VPC Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AD5D8836,Cloud Identity,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A727956E,Cloud Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E8ACF7D,Cloud Bigtable,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F61430A4,Dataproc,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7F0FC25,Cloud DNS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76E1B865,Cloud Load Balancing,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-592CEFCA,VPC Network,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51F81B3B,Cloud Armor,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E5B23F2B,Firestore,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-836216C7,Cloud DNS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B947F693,Cloud Logging,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C9C63F7,Cloud Armor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-637F4AA1,Workflows,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D2A2F85,Artifact Registry,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-968A0FD5,Cloud DNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F53C5CA6,Memorystore,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C0AB7638,Memorystore,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-490A658A,Cloud Bigtable,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1067F075,Memorystore,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A9716494,Cloud Armor,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-74794C01,Cloud Build,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-33151245,Cloud Spanner,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D2251F60,Cloud Bigtable,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CC841948,Cloud Run,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DFC150EF,Workflows,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D50C592,Memorystore,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-84E13BD3,App Engine,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FD07C431,Cloud Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A8B16A8,Workflows,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D629980F,Vertex AI,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D81A83B,Cloud CDN,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-646AF389,Cloud Profiler,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5640558A,Cloud Bigtable,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A777A34C,Dataflow,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75FC2241,Secret Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1AA8D511,Vertex AI,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4BF9A6E9,Cloud CDN,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D94A1311,Cloud Monitoring,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48B7035B,Dataflow,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F88ADD86,Cloud Run,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E5FA4467,Error Reporting,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7128AF5F,Cloud Run,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5E343EEE,Cloud Spanner,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-914B6A37,Error Reporting,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D1F9D63F,Dataproc,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C6B1F911,Cloud Logging,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9D74DC53,Dataflow,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-319F56E2,Cloud Source Repositories,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1239C0CD,VPC Network,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-612F08A6,Cloud Build,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FA99C62F,Cloud KMS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5F4B624,Cloud IAM,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8BBE34A4,Cloud Logging,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-57479C4B,Cloud Profiler,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51292FA3,Google Kubernetes Engine (GKE),IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4BF5047C,Cloud Build,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE15E37F,Cloud Source Repositories,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6893ED6,Cloud Load Balancing,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6AEF9A73,Cloud Spanner,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F224A31E,Cloud Storage,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-71366563,Cloud Trace,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-66ACAB4B,Compute Engine,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBDAD563,Cloud Trace,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C0DAAF82,BigQuery,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF839D99,Vertex AI,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0AE6096F,Workflows,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E318E262,Cloud Storage,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-17A3201A,Vertex AI,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C79CF46,Google Kubernetes Engine (GKE),IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BCD3F814,Dataflow,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-45DEA34C,Cloud Identity,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A2E0A11,VPC Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12DD8A65,Error Reporting,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-27212274,Cloud Pub/Sub,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F81A9FB,Cloud Healthcare API,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4609CC85,Cloud Monitoring,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75A0B0B6,Cloud Storage,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A8E2E3C1,Cloud Bigtable,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F595841B,Cloud Load Balancing,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F28CD96,Apigee,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7763FB0,Cloud Tasks,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE58B69F,Cloud Run,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8C2EA391,Cloud Spanner,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7D9A4F25,Google Kubernetes Engine (GKE),IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31AE082C,Cloud IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B994BFAB,Cloud Source Repositories,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8EF4F6AE,Cloud Tasks,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0B87A5A4,Google Kubernetes Engine (GKE),IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-63FDF667,Cloud DNS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3130D170,Cloud KMS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-672D7E0C,Cloud SQL,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF61B30C,Google Kubernetes Engine (GKE),IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-97CB5A3C,Cloud Deployment Manager,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B8879213,Cloud Monitoring,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6F708CB,Cloud Tasks,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CEB22913,Cloud Armor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C4ABEFE3,Cloud SQL,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AEB1BCB2,Cloud Source Repositories,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B3BA4A36,App Engine,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E9390EF,Secret Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FDC518C2,Error Reporting,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D2526877,Apigee,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-24D1938A,Cloud Tasks,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E05168F1,Cloud Profiler,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-005F64AB,Cloud Run,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F2DDAE1,Cloud IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77D29646,Google Kubernetes Engine (GKE),IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EDCC60B4,Cloud Deployment Manager,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B0B280F,Workflows,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-166872B3,Google Kubernetes Engine (GKE),IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-03400C23,Dataproc,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D1D7D6A,Cloud Monitoring,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28F25A0B,Dataproc,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-20A2E286,VPC Network,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-416577AE,Cloud CDN,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F7095B8,Apigee,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5000C420,Cloud Healthcare API,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF26CAF1,Cloud Healthcare API,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D74AD49,Secret Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4FF91066,Error Reporting,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7030EC07,Cloud Run,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC14EBE1,Google Kubernetes Engine (GKE),IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-985F66A0,Cloud Run,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6653005A,Cloud Interconnect,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0F442B8D,Cloud Functions,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-08583CC6,Cloud Profiler,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E0399BF,Cloud CDN,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C4E0A8DA,Workflows,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2DC7EB9D,Secret Manager,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BE73719C,Vertex AI,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6FF34A48,Artifact Registry,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4936FA7D,Cloud Identity,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B23C5C6,Dataflow,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83919719,App Engine,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-93A4C17B,Cloud Build,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1B047679,Cloud Interconnect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E37EC85,Dataproc,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-97C97BF9,Cloud Build,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D769A7E,Cloud Logging,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FB83F93,Firestore,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1481602F,VPC Network,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4343CB8C,Cloud Source Repositories,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CFD0C01,App Engine,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C02A77CE,Cloud Build,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE075087,Cloud Trace,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D8450ED,Cloud KMS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DAAF831F,Cloud IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-054D0284,Cloud SQL,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-351149AE,Cloud CDN,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4DA4EB87,Dataflow,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-299E6F79,Cloud Load Balancing,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-798E7E7B,Google Kubernetes Engine (GKE),IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36F2F2A1,Cloud Deployment Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFF7B6AD,Cloud Bigtable,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ECBB84E3,Cloud Functions,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78CC3189,Apigee,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F2849087,Cloud IAM,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE6364C9,Google Kubernetes Engine (GKE),IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D4B8CA3,Memorystore,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7DB7E9FD,Dataproc,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8631538F,Cloud SQL,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23886799,Cloud Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2176ABDE,Cloud Functions,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-86B3A507,Cloud Scheduler,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8CDF838E,Secret Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4799DC73,Apigee,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E38EA299,Cloud CDN,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-606FD546,Cloud Profiler,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-300A4271,Cloud Source Repositories,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DDA0AE84,Cloud Tasks,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B6E4418,Cloud Identity,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C0D40F1,Artifact Registry,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A5C6DD6,Dataflow,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC6B03C9,Cloud Load Balancing,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6609B10F,Cloud Profiler,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8DF11BC7,Cloud KMS,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23594946,Secret Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77A4291D,Dataproc,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9D465594,Cloud Trace,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36A4796C,Artifact Registry,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B6F98ED,Cloud Build,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E2C3B844,Vertex AI,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-41054BD2,Google Kubernetes Engine (GKE),IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F6F8275,Cloud Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-589AFD39,Cloud Armor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-361C8E8F,Cloud Healthcare API,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7C2ED403,Cloud Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1F2E8722,Cloud SQL,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8D2B0F72,Secret Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-080EF0B3,Cloud Scheduler,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE918AB9,Cloud Spanner,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D6F0A1C8,Cloud Load Balancing,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5F9B07AB,Cloud Healthcare API,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B21CAF5E,Secret Manager,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D8235E43,Cloud Scheduler,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-25DFD2F7,Cloud Source Repositories,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A2249DA,Cloud Bigtable,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6D30E85,Cloud CDN,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CCDA1961,Cloud Profiler,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2373082F,Cloud Deployment Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6607B66C,Cloud Interconnect,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DCD6AB3A,Cloud DNS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE36A846,Cloud IAM,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6274C993,Compute Engine,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ECD97DB9,Artifact Registry,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1166F18E,Cloud CDN,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF0949D9,Dataproc,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E92FD489,Cloud Run,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7CD48309,Cloud Bigtable,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ED6B41CA,Cloud Deployment Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EB6ABC5B,Cloud CDN,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C82B19E,Google Kubernetes Engine (GKE),IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1CE7340F,Cloud CDN,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E04BC0FF,Workflows,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B9B0682B,Memorystore,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90E26AD5,Cloud Load Balancing,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-922583C0,BigQuery,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-756EF2C7,Error Reporting,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AB9D259E,Apigee,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2AB4E7AE,Vertex AI,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-832D5677,Cloud Profiler,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95ACDF06,Cloud Spanner,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A2421FDA,Secret Manager,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-863C73E3,Cloud Interconnect,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-239ECF11,Cloud SQL,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BD35E2B,Memorystore,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B11C390,Cloud Run,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31BCAF67,Cloud Scheduler,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-969B46E3,Memorystore,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7AD6D0B0,Cloud Scheduler,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4478C761,Cloud Logging,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F7A3E90,Cloud Interconnect,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54D375F0,Cloud Spanner,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B75A7A5,Cloud Trace,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-39402947,Dataproc,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5133A56A,Cloud Interconnect,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A480CD2,BigQuery,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2DB3182B,Cloud Logging,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6085C200,Cloud Healthcare API,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-56A2F3BE,Cloud Tasks,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CFF0B62,Cloud Storage,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-825F8D94,App Engine,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3CA93E26,Compute Engine,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-98BEC7A6,Firestore,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B8B5E325,App Engine,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B7806EC,Cloud Scheduler,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5BB45C6A,Cloud Scheduler,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CDE63F3,Cloud Bigtable,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6553DD83,Cloud Trace,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1264C199,Cloud Identity,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-42CD688D,Cloud Scheduler,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B1297AC,BigQuery,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-568949F7,Cloud Tasks,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A6E50F8,Cloud Pub/Sub,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1DC73E69,Cloud Profiler,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6331633A,Workflows,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E53A10A0,Cloud Trace,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF972355,Cloud Source Repositories,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F206DBF8,Dataflow,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE3BB728,Cloud Storage,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77EF8B35,Cloud KMS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0626393F,Dataflow,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CCD86A47,Cloud Deployment Manager,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE06FEB6,Cloud IAM,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F572A1F5,VPC Network,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0BC1E6D6,Cloud Build,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-67BE4D07,Cloud Run,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-582CCD58,Error Reporting,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C44AEBB4,App Engine,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4E71D455,App Engine,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28DE0A47,Cloud Build,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8C752C9E,Cloud Functions,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC79BC3D,Cloud Source Repositories,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0F6F13F5,Cloud Run,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A65A7E2,Cloud Load Balancing,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B6601DD7,Workflows,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A49AD37,Cloud Monitoring,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A2972F26,Compute Engine,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D22BB718,Cloud Tasks,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-139E0616,Cloud Scheduler,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A2276473,Dataproc,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-592A16BF,Compute Engine,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-71BAA373,Cloud Armor,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F660573F,Cloud Build,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-035D50A4,Workflows,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C2E327AD,Cloud Profiler,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D9384F6,Cloud Storage,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C352D508,Cloud CDN,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A3D0425F,Error Reporting,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C24CA58,Cloud DNS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E8DBFCE8,Cloud Deployment Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1F8F299F,Cloud Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5E3FEBC5,Firestore,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EBC78334,Cloud Load Balancing,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE901646,Cloud Identity,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF16A772,Cloud Spanner,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A3FB07C,Cloud Healthcare API,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A5D77EC,Cloud Identity,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-587E6359,BigQuery,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FAEF0708,Secret Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B2BDEE41,Cloud Identity,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A3DF62FA,BigQuery,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A9BBEC0,Cloud Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-65D6E785,Cloud SQL,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A830EEBE,Cloud KMS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CD594313,Memorystore,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F2D5408,Artifact Registry,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-17C39FD3,Cloud IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EACA7093,Memorystore,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7C70C602,Vertex AI,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3C74FB0A,Cloud Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-46B63DF9,Cloud Deployment Manager,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A129793,Cloud KMS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-872FC422,Cloud Functions,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-186B13FF,BigQuery,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28E69EDA,Cloud Run,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB2A8212,Cloud Armor,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F21D317,Artifact Registry,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-89E0B815,Cloud Load Balancing,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B66974AC,Cloud Healthcare API,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D250C7E1,Cloud Bigtable,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D150520,Cloud Build,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F71E5B66,Memorystore,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C9A4A0C,Cloud Bigtable,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FA356426,Cloud Spanner,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E56F549,Cloud Functions,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC20AE8C,Cloud Functions,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-943389AD,Cloud SQL,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D73AAAD,Cloud Spanner,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-294ECA0A,App Engine,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BC6D501,Cloud Logging,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B7FAF7C,Cloud DNS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A98A855,Cloud Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD01D4F0,App Engine,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-520B9183,Memorystore,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5B2E215,Cloud Build,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA8C1C7C,Workflows,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E596394C,Vertex AI,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0AD61AD0,VPC Network,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3511C155,Workflows,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48EFC3B2,Cloud Identity,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A0B09313,Cloud CDN,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4BAA8B98,Cloud Storage,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-732D09BC,Cloud Bigtable,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BF7D56B,Secret Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-566CFB50,Cloud Deployment Manager,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3C66BA48,Cloud Logging,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8D2AFFD4,Dataflow,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9681D154,Vertex AI,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EEC57D45,Cloud Armor,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CA1AE24,Cloud Interconnect,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-954B44BA,Cloud Logging,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0EF01A3C,Cloud KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-840FF296,Cloud Trace,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A4C152C9,Artifact Registry,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C4BCC84,Dataproc,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D5283DD8,Cloud KMS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5DA3B2F9,Cloud Profiler,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-433B41B3,VPC Network,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E9E32B74,Cloud Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48A94591,Vertex AI,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-575345C3,App Engine,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CD8029FD,Memorystore,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B175A9A,BigQuery,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA344F33,Apigee,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-736B1FC9,Firestore,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-580C0127,VPC Network,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-46644AF0,Cloud Profiler,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5330D9B0,Cloud KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-379FAB31,Cloud Deployment Manager,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C592B509,Cloud Run,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-21469B2A,Dataflow,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2AB1BC58,Cloud Interconnect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F73E867D,Cloud Functions,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-34C74E20,Cloud Interconnect,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B6ED976,Cloud Trace,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A56D1D0C,Dataproc,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A572C53B,Cloud Deployment Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4105AFF9,App Engine,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF993FBC,Memorystore,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4DB8D932,Cloud Profiler,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0B2C011B,Cloud Trace,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36B7B6EC,Cloud Spanner,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2FFDE2B9,Cloud Profiler,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-709BEFDC,Cloud Load Balancing,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-661626F7,Dataproc,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90157B7F,Cloud Armor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0AA81602,Cloud Source Repositories,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC7C69BE,Apigee,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE8D73CF,Cloud Armor,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9BB1C823,Memorystore,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C7B6BA92,Google Kubernetes Engine (GKE),IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D2EAE5F,Cloud Pub/Sub,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E778AD9E,Artifact Registry,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B0DB388,Cloud CDN,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7DBAFC1,Artifact Registry,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8C7A89B6,Vertex AI,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E126A093,App Engine,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1818D55F,Compute Engine,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF748212,Cloud Tasks,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1159FCB5,App Engine,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFA64736,Cloud DNS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E93C120A,Cloud Interconnect,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94ED1C2E,Dataproc,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C36B818,VPC Network,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-04CE4407,BigQuery,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-597CDCDD,BigQuery,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A3F15B72,Cloud Healthcare API,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-258B86BE,Vertex AI,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC09CBCB,Cloud Build,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1984022B,Cloud Armor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75D1C153,Memorystore,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2BB2CE3E,VPC Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F12B1A9,Firestore,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A29D0E51,Cloud Deployment Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B336436F,Cloud Logging,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48F926BC,Cloud CDN,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A8B75A25,Cloud CDN,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B8C3A16A,Cloud Spanner,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12DDFE93,Cloud KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EC965300,Cloud Pub/Sub,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FBD3247A,Cloud Load Balancing,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE80CB47,Artifact Registry,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-81D9381A,Google Kubernetes Engine (GKE),IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-13446523,Cloud Profiler,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-72053695,Secret Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-713D2381,Cloud SQL,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ADC68476,Secret Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF7DE20E,Cloud Scheduler,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-86CC4283,VPC Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-19BE5AC3,Cloud Armor,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7DF8F221,Cloud KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E88DC66F,VPC Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A25EF06,Cloud Spanner,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-82E01BE7,Dataflow,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6FCAB7A0,Cloud CDN,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8CC076E3,Dataproc,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1540128D,VPC Network,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9234E41E,VPC Network,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-450F21F0,Cloud Interconnect,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C4D8F4C0,Cloud Scheduler,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F403C422,Apigee,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-19841D56,Error Reporting,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D7F647F,Artifact Registry,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-470633E5,Memorystore,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6670FE97,VPC Network,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C4B243B,Vertex AI,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5FC092EA,Cloud CDN,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-658F34E7,Cloud IAM,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E15B094C,Cloud Trace,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D96E9E4B,Workflows,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1765FC90,Cloud Deployment Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3FED5070,Cloud SQL,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-300992A9,Cloud Profiler,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76309F0B,Artifact Registry,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ADC83F02,Compute Engine,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4EC74347,BigQuery,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-41AFB461,Cloud Pub/Sub,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FAED70F,Cloud Run,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-673776A8,Memorystore,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DCF7C8B0,Cloud Trace,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F309237A,Workflows,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-561A6F34,Cloud Run,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A9E2FA62,Cloud Tasks,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4E9A0FA8,Cloud IAM,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CBC1F61,Cloud CDN,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2677F6CD,Cloud Source Repositories,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA6F9100,Error Reporting,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C06A1809,Cloud SQL,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F56270B2,Cloud Interconnect,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A0737415,Cloud Healthcare API,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-914A373A,Cloud KMS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-750353B9,Cloud Scheduler,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A0ADDF3,Firestore,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE1350DA,Dataproc,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-133DA48F,Error Reporting,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8D5CD4C0,Cloud IAM,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4DAF7AED,Cloud DNS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-892C71C0,Cloud Identity,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A839977,Cloud Pub/Sub,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9BF8FAF8,Cloud DNS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3813F437,Dataflow,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-931C18C9,Apigee,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0795551B,Cloud Source Repositories,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CECDCE34,Cloud Storage,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0DE16723,Cloud Interconnect,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC4B58EB,Cloud Bigtable,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DFF4B82A,Cloud Functions,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4911ABB4,Cloud Armor,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8EEA84F,BigQuery,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77A9DEB6,Error Reporting,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-79FB011A,Cloud Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BACAB598,Cloud Build,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-16F49955,Cloud Pub/Sub,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9B275E83,Cloud DNS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3BB1808B,Cloud Source Repositories,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E32C97E6,Cloud Tasks,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83727751,Cloud Interconnect,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-004E48E4,Cloud Trace,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1160EADF,Error Reporting,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F6F4169,Cloud Deployment Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-58E9D1F5,Cloud Bigtable,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CBC32A1C,Cloud Healthcare API,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C24A380A,Cloud Logging,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FAA13F59,Cloud IAM,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F5B287F,Cloud Tasks,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-86F02555,Dataflow,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F8804983,Cloud Bigtable,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C00E4F56,Cloud Bigtable,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12F3260A,Secret Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BD1C271,Memorystore,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5EEFF988,Cloud Identity,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3AAA1B0,Cloud Logging,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF6D2054,Artifact Registry,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-29332AE7,Cloud KMS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92AF84B4,Cloud Functions,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F939B42A,Cloud Identity,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-25BBE614,Cloud Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-29BB1CAC,Cloud Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B91594D,Cloud Deployment Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-32B88AB9,Cloud KMS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54AB6F94,Cloud SQL,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-69F9EC56,Vertex AI,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE565913,Cloud Source Repositories,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-235C9C18,Cloud Scheduler,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F85941A,Cloud Trace,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0BA9558C,Cloud Healthcare API,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A3710847,Artifact Registry,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3AD5D2ED,Dataproc,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-901E1E17,Apigee,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D188583F,Google Kubernetes Engine (GKE),IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B449E65D,Cloud Interconnect,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D83D8517,Cloud Build,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DC5176F5,Cloud Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB14740B,Dataproc,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B5B71AE4,Cloud Logging,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7C7537B0,Vertex AI,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A3B132D,Cloud Interconnect,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E10C0CB6,Workflows,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E3DC87B,Cloud Profiler,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B28331EF,Cloud DNS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80316B0A,Cloud Load Balancing,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B20F2EE,Cloud KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7355BF5C,Cloud CDN,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B624E74,Cloud SQL,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF183F64,Cloud Scheduler,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF657709,Cloud Logging,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5DC00198,Error Reporting,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8BBAD701,Cloud Source Repositories,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4E709A23,Cloud Build,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D522D508,Cloud IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5C5FBDC,Cloud Trace,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A4F7E58,Cloud Build,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6103FB03,Cloud Bigtable,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-39874677,Error Reporting,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-52849D6D,Cloud Spanner,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0764649D,Memorystore,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-59213164,Artifact Registry,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0038E9CB,Cloud Profiler,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF21FD40,Cloud Armor,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F1A4882,Compute Engine,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A53BEFC,App Engine,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9AE6470D,Cloud Armor,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F5F8361,Cloud Tasks,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B7E4C39,Cloud CDN,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2EFC4AF1,Cloud Armor,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-251B630F,Error Reporting,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9D02346,Cloud IAM,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FC327DE,Artifact Registry,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B2B0DE3,Cloud Interconnect,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-03365E69,Cloud Interconnect,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-373756A3,Cloud Run,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A4CB8CFD,Workflows,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E4F93A7,Cloud Logging,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F0E7FE55,Cloud DNS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC84BB20,Dataproc,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-64DCDC47,Cloud KMS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A26F8DA,Cloud Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-463E0717,Cloud Storage,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA950058,Cloud IAM,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4721EE0C,Cloud SQL,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3CB6396,Cloud Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C45834F1,Compute Engine,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C51BB29,BigQuery,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BBC9B2C0,Cloud CDN,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-82DF38DE,Dataflow,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-16996E38,Cloud Spanner,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-620A55A7,Cloud Armor,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-384A82F1,App Engine,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-33AB8D7E,Cloud KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F59476CB,Cloud Scheduler,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4DB863B4,Cloud Build,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F8F7E70D,Cloud Monitoring,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BCDDA195,Cloud Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76305781,Cloud DNS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95962F8D,Cloud KMS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BE9D5B1D,Cloud Source Repositories,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1B6BBA58,Cloud Spanner,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28AD4010,Cloud Bigtable,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AF10B597,Memorystore,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DDE23A1F,Compute Engine,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-822BF3F0,BigQuery,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5E3F58DB,Cloud KMS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-627D08AA,Dataproc,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A26C690E,Apigee,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B4784F6,Error Reporting,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A2742AA,Vertex AI,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F945F8C6,Cloud KMS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-763499F8,Cloud KMS,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9AB7B3D2,Dataflow,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7AB45F22,Cloud Run,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-32FAACA7,VPC Network,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CDC0DAB4,Cloud CDN,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-16E462FE,Compute Engine,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1275FB7E,Memorystore,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-63354955,Cloud Source Repositories,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D2443B4C,Cloud SQL,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBE69620,Artifact Registry,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-40DCDB9D,VPC Network,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-683B8075,Dataproc,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B38811BD,Error Reporting,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BB5A82F0,Secret Manager,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F8BAA991,Firestore,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFB23E7B,Error Reporting,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A9C3C50D,Cloud CDN,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77BFE4E1,Cloud Run,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB3CB044,Google Kubernetes Engine (GKE),IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-82ACFD6B,Cloud Bigtable,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8DB3BDC6,Workflows,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5C6BDDD3,Cloud Load Balancing,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-194164C1,Cloud Spanner,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D680D433,Cloud Load Balancing,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F7097F25,Cloud SQL,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7390FF5,Secret Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3FED139,App Engine,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B0350283,Error Reporting,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AA6C19A5,Cloud Tasks,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AB356516,Vertex AI,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6E892093,Cloud Logging,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C0332B9E,Secret Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B54B98BC,Cloud Trace,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F81DC42B,Firestore,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-62338B06,Google Kubernetes Engine (GKE),IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31CF833F,Cloud Spanner,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-021B1F95,Cloud Scheduler,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DFC2DDC6,Cloud Interconnect,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-672C2EBD,Memorystore,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF25F7B9,Cloud Monitoring,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AA311D7A,App Engine,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-39586249,Cloud Source Repositories,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-13A1465F,Cloud Identity,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F59BBAD5,Cloud Identity,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B0DAA2B4,Cloud Bigtable,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ECFC0EBF,Cloud Source Repositories,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7BDECD28,Vertex AI,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0BD8F6FF,Cloud KMS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9550FB76,Cloud Load Balancing,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9737587F,Cloud Logging,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E867821,BigQuery,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4889AB48,Cloud Scheduler,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-89332E3B,Cloud Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E29F31F7,Cloud Monitoring,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A922A840,Cloud Trace,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-070A725F,Cloud Spanner,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CEC4EAC3,Error Reporting,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E13D7050,Cloud CDN,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B941E2E8,Firestore,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C5BF0605,Cloud Pub/Sub,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D1CAD020,Cloud Pub/Sub,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-05D4005F,Cloud Pub/Sub,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-11DA9446,Cloud Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-786AB3C0,Artifact Registry,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E9AD75F,Cloud Logging,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-387AEC2E,Dataflow,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49142CC0,Cloud Bigtable,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-446BA91A,Workflows,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BEFBF3B4,Artifact Registry,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-150ED035,Cloud Logging,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DAC8A237,Cloud Deployment Manager,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA0F8356,Cloud Healthcare API,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FCD56A15,Memorystore,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9D26B5DD,Cloud Monitoring,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5302E0AC,Memorystore,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D026077C,Cloud Armor,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4E3339C7,Cloud Identity,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7EB14F55,Firestore,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE5A97EB,Cloud Healthcare API,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-53611338,Cloud SQL,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B76FCD0,Cloud Tasks,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-983D9865,Cloud Trace,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBD016DF,Apigee,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C796727C,Cloud SQL,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5F24E1A8,Cloud KMS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-13EA5965,Cloud DNS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0837AFCB,Cloud IAM,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BCB17867,Cloud Tasks,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E82C8108,Cloud DNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D671652B,Cloud Bigtable,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CCD7A9BF,Cloud Healthcare API,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-73C5BEC4,Apigee,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-26372D3D,Cloud DNS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E0C8596,VPC Network,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-42ED6D12,Cloud Logging,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-873858AC,Workflows,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF4EC577,Cloud Identity,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-08A3A2BB,Cloud Build,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C1236E7,BigQuery,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC3E90F6,Cloud Deployment Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C16634D8,Memorystore,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8232CD0E,Dataflow,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E087515C,Cloud Load Balancing,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CFB7AB6D,Cloud Build,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-55129A7D,Cloud Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-55A6FE32,Cloud Run,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9AC59B24,BigQuery,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-276CAAA6,Cloud Deployment Manager,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-547C2DBB,Cloud Interconnect,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0510AE9,Cloud Identity,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-975488BB,Cloud Scheduler,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-352FC169,Cloud Profiler,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A138CCE,Cloud Tasks,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F9139FC9,Dataproc,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C41EEFB4,Memorystore,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77A05AFA,Cloud Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6508A07,Google Kubernetes Engine (GKE),IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36D78C7C,Cloud Monitoring,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A37F0C3,Cloud Trace,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BE3AE1D4,Cloud Logging,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-903E402D,Secret Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7BF328CA,Cloud CDN,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-96EFDFEC,BigQuery,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-57F9C234,Cloud Scheduler,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-96561FC0,Cloud Storage,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E7FF3851,Cloud Identity,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-249B47E7,Cloud Tasks,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E343197,Cloud Armor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E9A6B5B6,Cloud Tasks,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BCD2C869,Cloud Build,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C74AD40F,BigQuery,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C02A8BEF,Cloud Monitoring,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95AB6843,Cloud SQL,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83A91B05,Secret Manager,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D325DB5B,Vertex AI,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E1A44559,Google Kubernetes Engine (GKE),IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E68B5C7,Cloud Tasks,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9AABC496,App Engine,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C5D1DB4,Cloud KMS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E4C0B915,App Engine,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F87A13E1,Cloud DNS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-951BA03A,Workflows,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-935F699E,Dataflow,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A2921CA2,Cloud Pub/Sub,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7C1B8E0E,Cloud Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E93D29FF,Cloud Monitoring,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-190C4A45,Cloud Pub/Sub,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80C37E79,Dataflow,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AEFB524D,Cloud Pub/Sub,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CDD298D2,Compute Engine,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC6AF7A4,Cloud Profiler,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FD313E92,Artifact Registry,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF932B9F,Secret Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F8142433,Cloud Healthcare API,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5F3F15DA,Cloud Functions,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-08567B90,Vertex AI,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4BC368DE,Cloud SQL,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-71B3F8CC,Cloud CDN,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-38615023,Cloud Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4C7FC002,Error Reporting,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C392AA11,VPC Network,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-59A21D88,Secret Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4D51E8FA,Cloud Identity,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E2AB5DB3,Dataflow,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2AF557A5,Cloud Source Repositories,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1A1FE80E,Dataflow,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-79153316,Cloud Profiler,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CD5D00F2,Vertex AI,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F1A1B27,Cloud Interconnect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-10950FF5,Cloud Monitoring,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2173D52F,Cloud Bigtable,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B241CC52,Secret Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F33D87A,App Engine,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90B39E3B,Cloud Spanner,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77121B71,Cloud Pub/Sub,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E5B942ED,Google Kubernetes Engine (GKE),IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6704BDA7,Cloud Storage,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E002A0C4,Cloud Armor,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CCBAE6C,Cloud Source Repositories,IL5,Approved,Section 5.3.1,Regulatory compliance,High

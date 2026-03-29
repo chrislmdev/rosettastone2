@@ -1,0 +1,1001 @@
+ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+EX-058DCD02,Azure Site Recovery,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75F14141,Azure ExpressRoute,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F7CBF36F,Azure API Management,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-722594B2,Azure Virtual Network,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44BECEFD,Azure Cosmos DB,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-53C2167D,Azure Site Recovery,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-33B367B5,Azure Data Factory,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1727F4ED,Azure Blob Storage,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-361B4EF7,Azure SQL Database,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-69C92483,Azure Stream Analytics,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0CFF7BE,Azure Container Instances,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF9D3869,Azure Bastion,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C037EF5,Azure Stream Analytics,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A5C757C,Azure API Management,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9113DAED,Azure Stream Analytics,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EB8EFF87,Azure Logic Apps,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AECF4F49,Azure Blob Storage,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A58941E,Azure API Management,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0EC63C83,Azure Spring Apps,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51E22FE1,Azure SQL Database,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AF68404D,Azure SignalR Service,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A170BA01,Azure Event Hubs,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4796C199,Azure Traffic Manager,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9DB68561,Azure Analysis Services,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-57BF2FF6,Azure Machine Learning,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ADDA6484,Azure Cache for Redis,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A111B86A,Azure Spring Apps,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C39DD5C,Azure Virtual Network,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DD4C93EC,Azure API Management,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D46D6B1C,Azure Load Balancer,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE13C9C2,Azure Spring Apps,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA1A8F0B,Azure Firewall,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-03C247B7,Azure Spring Apps,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BC4ABBDA,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E0DEB60,Azure Kubernetes Service (AKS),IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A0D0A563,Azure Blob Storage,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C68BA224,Azure Stream Analytics,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-68EDA964,Azure Functions,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6BDC543,Azure Front Door,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F02EBF90,Azure Batch,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C4A582DB,Azure Databricks,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B5CFBC4D,Azure Site Recovery,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5021E94,Azure Private Link,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D41B97E,Azure Batch,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-15B3B7C7,Azure Virtual Network,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-833DCCF4,Azure Analysis Services,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F787DBF4,Azure Event Hubs,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CF0ACBE,Azure Container Instances,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A91A99D,Azure Logic Apps,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-85063DF9,Azure Functions,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5AF5C3D7,Azure ExpressRoute,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D862CFB7,Azure Advisor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF9E4356,Azure Batch,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-036B3EBE,Azure Monitor,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B1712087,Azure Databricks,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A590DCB,Azure Kubernetes Service (AKS),IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E07F9E7B,Azure Front Door,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6E6FD73,Azure HDInsight,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3FC50722,Azure Kubernetes Service (AKS),IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-716909AB,Azure Backup,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE6EB5FE,Azure App Service,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92FB57EC,Azure Load Balancer,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC5D9ED1,Azure HDInsight,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6ACEADE9,Azure Traffic Manager,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A34312A,Azure Service Bus,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-494E5EE9,Azure Machine Learning,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF1B13C2,Azure Synapse Analytics,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D4B7F11E,Azure Key Vault,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-213CF335,Azure API Management,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8CBB05C7,Azure Backup,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7CB27D26,Azure Event Hubs,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E8774EBA,Azure Virtual Machines,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-64E43114,Azure HDInsight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9620951C,Azure Purview,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-722F414E,Azure Private Link,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76D8E5BB,Azure App Service,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-84CEFBA4,Azure Bastion,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-627F4E89,Azure Monitor,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1AC87E50,Azure Batch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A212B7F6,Azure Advisor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-18B0FF68,Azure HDInsight,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-41A795D1,Azure Spring Apps,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D95947AA,Azure Load Balancer,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-064D94F0,Azure Front Door,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D070892,Azure Databricks,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1FCFC8A5,Azure ExpressRoute,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3FC28411,Azure Active Directory,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77C4AEB2,Azure Container Instances,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28728C2C,Azure Logic Apps,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-99A14212,Azure Virtual Machines,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB9420D6,Azure Firewall,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BDD293E0,Azure Functions,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE51F905,Azure Event Hubs,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1AEF53A8,Azure Spring Apps,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ABEC4B95,Azure Firewall,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6CF7EAE8,Azure Key Vault,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-13852486,Azure Firewall,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-19C0F3B7,Azure Front Door,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92CF7BD9,Azure Arc,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E565DCBD,Azure Front Door,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A499C54,Azure DNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-86D2B857,Azure Load Balancer,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95FCE2A1,Azure Stream Analytics,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EC2584C1,Azure Arc,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-03C33B7A,Azure API Management,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-02F586A1,Azure ExpressRoute,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-86087725,Azure Analysis Services,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-27DCDA53,Azure Site Recovery,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83C2AF07,Azure Load Balancer,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A7AF2B2,Azure Logic Apps,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-422FE279,Azure Logic Apps,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A86FB04,Azure Event Hubs,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5FB0167F,Azure Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2755A97E,Azure Machine Learning,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-60926104,Azure Virtual Network,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A585937,Azure Firewall,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12B35481,Azure Databricks,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1DE2B69F,Azure Load Balancer,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6235F323,Azure Service Bus,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-55E51E52,Azure Data Factory,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8152068F,Azure API Management,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49C48F19,Azure SQL Database,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-326EFEE4,Azure Cache for Redis,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9CD57FBE,Azure Bastion,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-736C5D33,Azure Arc,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-96DE4DC4,Azure Logic Apps,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6127C69D,Azure SQL Database,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-00E59F24,Azure Traffic Manager,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F2C6ADDC,Azure Analysis Services,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-43D02EAC,Azure Machine Learning,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F0CF1287,Azure Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3E54988A,Azure Stream Analytics,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-85BC6411,Azure Cosmos DB,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-25EEEAB4,Azure Blob Storage,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2DDD3347,Azure Analysis Services,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-91F121F2,Azure Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-952F81FA,Azure Spring Apps,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C1D481EF,Azure Service Bus,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7E04C138,Azure Arc,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D77790BA,Azure Cosmos DB,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-58682625,Azure ExpressRoute,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FFB84242,Azure DNS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8480FE05,Azure Active Directory,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B18E2602,Azure SQL Database,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-72ED9BDE,Azure Private Link,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B240F950,Azure Data Factory,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF45E9B3,Azure Key Vault,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-68EB67B9,Azure ExpressRoute,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D54C0D66,Azure Advisor,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E97F3EA,Azure SQL Database,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36F80383,Azure Private Link,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A321832B,Azure ExpressRoute,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-70558B48,Azure Blob Storage,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2940F86B,Azure Site Recovery,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-59FE19E0,Azure Load Balancer,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4FB3734A,Azure Kubernetes Service (AKS),IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-05E9CE13,Azure Blob Storage,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E1AEF0A,Azure Event Hubs,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C20E22B,Azure Blob Storage,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A8DA2AD,Azure Blob Storage,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8C1A95CC,Azure Advisor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F1F55E01,Azure ExpressRoute,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F42CDE0,Azure Key Vault,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2CF965EE,Azure Logic Apps,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C5B56042,Azure Spring Apps,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-72E67B2A,Azure Service Bus,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2052E352,Azure Load Balancer,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D980A9F0,Azure Active Directory,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7D043BDD,Azure Load Balancer,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4DCC1E2A,Azure HDInsight,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D69BFD1F,Azure Purview,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E0DA5B3,Azure Blob Storage,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-276A5B4A,Azure Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C05D68E3,Azure Cache for Redis,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A48BB134,Azure Firewall,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1405C612,Azure Virtual Machines,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-094D1E0E,Azure Purview,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F038F50F,Azure Virtual Network,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A0A2E584,Azure Arc,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-04981C22,Azure Container Instances,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D511272,Azure Logic Apps,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54E0B0B0,Azure Traffic Manager,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C154067F,Azure ExpressRoute,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B0BA276,Azure ExpressRoute,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7E4019AF,Azure Logic Apps,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ED6896FC,Azure Analysis Services,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC10153F,Azure Advisor,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B4CB3C82,Azure Machine Learning,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3669FDF1,Azure Synapse Analytics,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7626486F,Azure Backup,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E14E5768,Azure Arc,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F0574D8F,Azure Data Factory,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-667C734D,Azure Advisor,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE151D34,Azure Backup,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-08DAA6EB,Azure Analysis Services,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7EF96D02,Azure Event Hubs,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E6B7E8EB,Azure Data Factory,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-22874F5D,Azure Cache for Redis,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-075BBA48,Azure DNS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3AEBFDF4,Azure Event Hubs,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1F65230C,Azure Event Hubs,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CFE1B67B,Azure Private Link,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8AD980D4,Azure Monitor,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F613642,Azure Batch,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-88430C0E,Azure Event Hubs,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF60D9C9,Azure Virtual Machines,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D073FE25,Azure SignalR Service,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-60A86258,Azure HDInsight,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E18B6313,Azure SignalR Service,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C7D16256,Azure API Management,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B7B0ED1C,Azure Key Vault,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D4B68A57,Azure Bastion,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2494E377,Azure Cosmos DB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-230B3E82,Azure Blob Storage,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-693D94B6,Azure Load Balancer,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A4C4C44B,Azure Front Door,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D97629C2,Azure Blob Storage,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF5F0A83,Azure DNS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1924F05D,Azure Logic Apps,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F1D0A04,Azure App Service,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-20BD45B2,Azure Purview,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-40722914,Azure Backup,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3696FA70,Azure Key Vault,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7E442EA,Azure Site Recovery,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6987AC9,Azure Active Directory,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-818E32C3,Azure Private Link,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B59CF639,Azure Site Recovery,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF75CE31,Azure Monitor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C5D2246B,Azure Event Hubs,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EC1261A1,Azure Purview,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D1320D3D,Azure Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B55D02D,Azure Bastion,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-32D2AA1D,Azure Container Instances,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5427195B,Azure Traffic Manager,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F6945482,Azure Load Balancer,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D482357,Azure Service Bus,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B8AFA574,Azure Stream Analytics,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BCCD73F2,Azure Active Directory,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9CE9ADB3,Azure HDInsight,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-22EEBEBB,Azure Service Bus,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B8CB19F,Azure Cache for Redis,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-33002D64,Azure Private Link,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B0AF3F0C,Azure DNS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-61DFE949,Azure Synapse Analytics,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-47675D0F,Azure Batch,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-97EC0831,Azure Purview,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBA8861C,Azure App Service,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-01DCBD4C,Azure Site Recovery,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F01C74E9,Azure App Service,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE894EF8,Azure Load Balancer,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-66E386D9,Azure Traffic Manager,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1958A76E,Azure Logic Apps,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F710C838,Azure Purview,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BEDC1566,Azure Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E33C97ED,Azure Data Factory,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-099CC1B3,Azure Monitor,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1228B825,Azure Blob Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C4F07EF7,Azure Key Vault,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E439935,Azure Analysis Services,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C23F2E3,Azure Bastion,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A590416,Azure Monitor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C808C688,Azure Synapse Analytics,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-165348FA,Azure Analysis Services,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F135ED8,Azure Databricks,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-487C0724,Azure Advisor,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B99D3D7,Azure Traffic Manager,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F72CDACF,Azure Kubernetes Service (AKS),IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FA2B6E71,Azure DNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75BEDE33,Azure Data Factory,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7D0D91C9,Azure Analysis Services,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-649B354C,Azure Event Hubs,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7FF684A2,Azure Synapse Analytics,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1ACE56AF,Azure Event Hubs,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A1BA7BCA,Azure Backup,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1F12A6BC,Azure DNS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F94AE0E,Azure Virtual Machines,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C1FAA253,Azure ExpressRoute,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7E66274,Azure Logic Apps,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-444BFFF7,Azure Cache for Redis,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E411A960,Azure Front Door,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BDD26CFB,Azure Traffic Manager,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6646010D,Azure Analysis Services,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E7137582,Azure Batch,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EC1F30EC,Azure Purview,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E885891C,Azure Virtual Network,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F7F44E16,Azure SignalR Service,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F10152D3,Azure Spring Apps,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B25F0BDD,Azure Site Recovery,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F44ED43E,Azure Virtual Machines,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-02662BC6,Azure Monitor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B1CB5CA8,Azure Batch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA30DDE9,Azure Blob Storage,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54D2DA61,Azure SQL Database,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E13A6D7B,Azure Key Vault,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-96E7C751,Azure Virtual Network,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-062FD334,Azure Data Factory,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-021BC6D9,Azure Databricks,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0388319B,Azure Monitor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9B7A68C,Azure Arc,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA6A9FAE,Azure Bastion,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FAD4E9EC,Azure Stream Analytics,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A143B46B,Azure Bastion,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-27B788D8,Azure HDInsight,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD67BEE9,Azure Machine Learning,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C2E0EF83,Azure Service Bus,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-39FEDADB,Azure Backup,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-247B5EDD,Azure Backup,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC6FAAC9,Azure SignalR Service,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-47B2BC3E,Azure Event Hubs,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF1D74BD,Azure Kubernetes Service (AKS),IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2F8E6B8A,Azure Machine Learning,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-56F017C3,Azure Batch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1CEEF247,Azure Firewall,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-66FB309C,Azure Virtual Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7BC8553F,Azure Cache for Redis,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F342E3F1,Azure Backup,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-406708E6,Azure Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D7BB2FD,Azure SignalR Service,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0427748A,Azure App Service,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BB926D7F,Azure Arc,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C064729C,Azure Firewall,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95D9DDCD,Azure Cache for Redis,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E0F05BFB,Azure Backup,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E7CA1CC,Azure Functions,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA62BF1B,Azure Advisor,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AFEAF7B8,Azure Site Recovery,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31495E71,Azure Virtual Network,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-45A891BC,Azure Active Directory,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-596C7027,Azure Key Vault,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F24F7BF5,Azure Machine Learning,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A5F1E60F,Azure Logic Apps,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F14C85C,Azure Virtual Network,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76F629FC,Azure Site Recovery,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6379FA55,Azure Traffic Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CACFC2B8,Azure Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D762AD66,Azure Spring Apps,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C35BD89A,Azure SignalR Service,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49B2B9F0,Azure Advisor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FEBAB161,Azure ExpressRoute,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9AF4FAF6,Azure SQL Database,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A2B03E5,Azure DNS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EAEC9CC5,Azure API Management,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DAD9A27E,Azure Container Instances,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12716F91,Azure Machine Learning,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D2E51A29,Azure Spring Apps,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-502DC2E5,Azure Analysis Services,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C374EE97,Azure Cosmos DB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6773A472,Azure Analysis Services,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E31938DC,Azure Event Hubs,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-891058DB,Azure Front Door,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-62963318,Azure ExpressRoute,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4AD60441,Azure Event Hubs,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51E44B03,Azure Bastion,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA53DD9E,Azure Event Hubs,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E998C342,Azure Active Directory,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9311EF21,Azure Virtual Machines,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-05D0703E,Azure Traffic Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A849421F,Azure Cosmos DB,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-485C4343,Azure SQL Database,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C9CB1F3,Azure Blob Storage,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB2D6244,Azure Backup,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DC0446C0,Azure SQL Database,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E9BC83C3,Azure Data Factory,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7150269C,Azure App Service,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-14037ACF,Azure Machine Learning,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-248506AD,Azure Kubernetes Service (AKS),IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BAF62A8D,Azure ExpressRoute,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-22C38DC5,Azure Cache for Redis,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA2A2741,Azure Virtual Machines,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7ACF19E2,Azure Batch,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9856BDA9,Azure Firewall,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DAEE9684,Azure SQL Database,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F6C372F9,Azure SQL Database,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D547660,Azure Virtual Machines,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87947A0B,Azure Cache for Redis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB00A76C,Azure Key Vault,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ECC072BC,Azure SQL Database,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C14E024E,Azure Synapse Analytics,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D4FE9503,Azure Cosmos DB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EAEF0C29,Azure ExpressRoute,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-997AAF26,Azure Front Door,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-325C4600,Azure Backup,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0DA3430A,Azure Stream Analytics,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A52A2C3,Azure App Service,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C61885AF,Azure Key Vault,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A187C32,Azure DNS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-114302EC,Azure SignalR Service,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F6DED796,Azure Cosmos DB,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D0846BD,Azure Stream Analytics,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1AAF5F34,Azure Bastion,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A602207E,Azure Active Directory,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-02656BA8,Azure Key Vault,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3619F35A,Azure Analysis Services,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC65AC8A,Azure Cosmos DB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1ABBD5D6,Azure Active Directory,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-37F4C7D7,Azure Logic Apps,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DDAED7FA,Azure Batch,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-204B5BBB,Azure Synapse Analytics,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-66675B38,Azure Functions,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8D53C49F,Azure ExpressRoute,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-974EBF71,Azure Event Hubs,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9EE37849,Azure ExpressRoute,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-327F5B1F,Azure Batch,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-129530ED,Azure Analysis Services,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-063C14D5,Azure Logic Apps,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8FCC0F6E,Azure API Management,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-840AA18C,Azure Firewall,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9D43833D,Azure Kubernetes Service (AKS),IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD16B526,Azure Event Hubs,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F971D394,Azure Blob Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8C3EE059,Azure Kubernetes Service (AKS),IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5884EF67,Azure Backup,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-02C15BE4,Azure SQL Database,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54930699,Azure Purview,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A83DD0C0,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-765E0B2B,Azure Event Hubs,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94CB48D8,Azure Cache for Redis,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0562CCE,Azure Front Door,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-387A6A9F,Azure Key Vault,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F26046B,Azure Backup,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-89B6A4EF,Azure Event Hubs,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-88219527,Azure Databricks,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F24793C,Azure Site Recovery,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EB952B93,Azure Cache for Redis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E54F79C0,Azure Kubernetes Service (AKS),IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E440301E,Azure Advisor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9204B0EB,Azure Monitor,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-02AB463E,Azure Cache for Redis,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7DA1DAB0,Azure Site Recovery,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F38A8AEB,Azure HDInsight,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4C64B108,Azure Firewall,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90832247,Azure ExpressRoute,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D6328E3,Azure Kubernetes Service (AKS),IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C92B692C,Azure Container Instances,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D1637540,Azure Functions,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-25547DCA,Azure Spring Apps,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6993A358,Azure API Management,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C9C92F1D,Azure HDInsight,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80EE7F5B,Azure Purview,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-86582849,Azure Synapse Analytics,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ECB732E5,Azure Machine Learning,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8AED6F6F,Azure Advisor,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E0442428,Azure Kubernetes Service (AKS),IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E99040AA,Azure Machine Learning,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0985FBC,Azure Cache for Redis,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-81344E33,Azure Bastion,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C38FC44F,Azure API Management,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A80EE0F2,Azure Monitor,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-231740CB,Azure Synapse Analytics,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB2A154F,Azure SignalR Service,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CC826212,Azure Stream Analytics,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-85DD1D15,Azure DNS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4042839,Azure Stream Analytics,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7D77221A,Azure DNS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DFC29C79,Azure Arc,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F85782B6,Azure Active Directory,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A6F22E5,Azure Virtual Network,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4D40C801,Azure App Service,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-27D7258D,Azure Site Recovery,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5369EA0B,Azure Key Vault,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C790EB66,Azure Virtual Network,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D88196C,Azure Stream Analytics,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CB4AA030,Azure Stream Analytics,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D6E953A,Azure Traffic Manager,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1A4D8B71,Azure Advisor,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-263A542D,Azure Active Directory,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A79024B,Azure Active Directory,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2FFDEB3D,Azure SQL Database,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-85E66269,Azure Monitor,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-39F5BCCB,Azure Monitor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A16851B4,Azure DNS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2BCF3BF4,Azure Synapse Analytics,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F0FF80C5,Azure Bastion,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51A4B5F3,Azure SignalR Service,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-00DA28D7,Azure ExpressRoute,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4CFA5F58,Azure SQL Database,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB865390,Azure Functions,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B4701DE,Azure App Service,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-319DBBCC,Azure Synapse Analytics,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B2A2BE0D,Azure Batch,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D303465C,Azure Traffic Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D078BB8D,Azure Virtual Network,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-212A3C14,Azure SQL Database,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D83019AF,Azure Arc,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-412AFD7F,Azure Cache for Redis,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5787850A,Azure Advisor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-04D9A79D,Azure App Service,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C732D69,Azure Spring Apps,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9BA67929,Azure Machine Learning,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E4EBC64,Azure Machine Learning,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0F192745,Azure Arc,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9B6637FB,Azure Private Link,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2BE91AC3,Azure Stream Analytics,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6676C6BA,Azure Container Instances,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54744163,Azure Traffic Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-19DA4384,Azure Front Door,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-099BB586,Azure Site Recovery,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BAEFFB77,Azure Data Factory,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9CFBC058,Azure Machine Learning,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9ED7A220,Azure SQL Database,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-27586C92,Azure SignalR Service,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-50DD9F09,Azure ExpressRoute,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-926328BE,Azure Advisor,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9B965E99,Azure Firewall,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A1BD1F0C,Azure Stream Analytics,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D4B3D27,Azure Stream Analytics,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D656922E,Azure Machine Learning,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6B9D5155,Azure Kubernetes Service (AKS),IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D3EDAE3,Azure Logic Apps,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0B71EE43,Azure Cosmos DB,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3B41EEF9,Azure Logic Apps,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1DBE08A3,Azure API Management,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F2826F33,Azure Site Recovery,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44A9808C,Azure Kubernetes Service (AKS),IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FAD0A7E6,Azure Advisor,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12101954,Azure Service Bus,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-412895BB,Azure Key Vault,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5E4BAB2F,Azure Data Factory,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3C8C20E0,Azure Monitor,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D1D5C9C,Azure App Service,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F3F8F7D,Azure Purview,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C4DBFFC9,Azure Private Link,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-919EFB39,Azure SignalR Service,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C879D33C,Azure Event Hubs,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3BAE4C16,Azure Cache for Redis,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51F11578,Azure Site Recovery,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F1A1C36,Azure Monitor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-34C26D00,Azure Key Vault,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D97A7D1F,Azure Traffic Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0AA77B9E,Azure Front Door,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D1D1FDFE,Azure Data Factory,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A0880A7E,Azure Active Directory,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-830C80C8,Azure Batch,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E755E6FB,Azure Bastion,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F8F82C29,Azure Blob Storage,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8570E87,Azure Event Hubs,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AD08005C,Azure ExpressRoute,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A8BD3CB,Azure Service Bus,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA4BB1BA,Azure HDInsight,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F80B60F,Azure Site Recovery,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E24E863B,Azure SQL Database,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-79ECF432,Azure Cache for Redis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-022C3E0C,Azure Cache for Redis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-508FA835,Azure Backup,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-366E4F0C,Azure Databricks,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA65FE68,Azure Virtual Network,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9D929B4C,Azure Monitor,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2F42DFCF,Azure Synapse Analytics,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51CEADE1,Azure SignalR Service,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5349DFC,Azure Service Bus,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A05A806,Azure Service Bus,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3DFC970E,Azure Firewall,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8534EB18,Azure Cosmos DB,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49A36381,Azure Firewall,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D33A3813,Azure Private Link,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EE3A257C,Azure Event Hubs,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8EEC6783,Azure Databricks,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-416DCB50,Azure Stream Analytics,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-93EB8D63,Azure Backup,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-59F4E999,Azure Blob Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-770573A6,Azure Data Factory,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A08BACD,Azure Service Bus,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-327C9C7F,Azure Synapse Analytics,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E12A82AE,Azure Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-868B3E1B,Azure Spring Apps,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-73420DC4,Azure Kubernetes Service (AKS),IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B9FC7DA2,Azure ExpressRoute,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-888F2DDE,Azure App Service,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-822017C0,Azure Bastion,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6F2BC77,Azure Virtual Machines,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA2B99D4,Azure Advisor,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A3C8042,Azure API Management,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0F8B465A,Azure Private Link,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BC94B2C0,Azure Container Instances,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E66C577B,Azure Analysis Services,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31ED34AA,Azure Container Instances,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-66474CAD,Azure Arc,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-141FA4FA,Azure Batch,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D17B0AEC,Azure Event Hubs,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D4C434C,Azure Traffic Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-63F7D938,Azure Arc,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A5CC80D8,Azure Logic Apps,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D8B23C2,Azure API Management,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0528A625,Azure Purview,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80638CA4,Azure Functions,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CB6F2771,Azure Traffic Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DEF31EF1,Azure Cache for Redis,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3E86F51,Azure Firewall,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D87E5953,Azure Site Recovery,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C683D913,Azure App Service,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-166EFF19,Azure Blob Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C16490F3,Azure HDInsight,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF2B2CDD,Azure Functions,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DC697221,Azure Virtual Network,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B9CFFF2A,Azure Event Hubs,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6FC9E0A9,Azure Databricks,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F67BA91,Azure Data Factory,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3CA1498B,Azure HDInsight,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-220549FB,Azure Site Recovery,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A97E264E,Azure Databricks,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-38369158,Azure Key Vault,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1AAC84D2,Azure Backup,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1B5D4719,Azure Firewall,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C48FD3E,Azure Synapse Analytics,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BC80EAA7,Azure Cosmos DB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F4BFDC9,Azure Cache for Redis,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AABC3141,Azure Logic Apps,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BDEAD28,Azure Arc,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-64D2B875,Azure Monitor,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6E58A760,Azure DNS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD449489,Azure Virtual Network,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-127BF8B9,Azure SQL Database,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A4ADFA2,Azure Active Directory,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1CEEC2DF,Azure Service Bus,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-967C0530,Azure Front Door,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B22F6621,Azure Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-419F1B58,Azure Functions,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-113AEAFD,Azure Purview,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B21B014E,Azure Bastion,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-839DBCF1,Azure App Service,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6496099F,Azure API Management,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E36F49F2,Azure Databricks,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2F2CC784,Azure API Management,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5DF03BB,Azure Load Balancer,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FB7C7EB,Azure Analysis Services,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9168C077,Azure Purview,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8CD01F5B,Azure SignalR Service,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9C7BD84E,Azure Active Directory,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-994BA68B,Azure Kubernetes Service (AKS),IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-88DBFACC,Azure Machine Learning,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1735F421,Azure SQL Database,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-06EA6170,Azure Active Directory,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4BCCBE6,Azure ExpressRoute,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A901CE17,Azure Front Door,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A63D89E7,Azure App Service,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B8FD1D4,Azure Advisor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B483558F,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-00B0CC1C,Azure Virtual Machines,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B78E4DAA,Azure Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C7BBC444,Azure Databricks,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD02F843,Azure SignalR Service,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7C2B3E4F,Azure Analysis Services,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EEE8C218,Azure Key Vault,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51EC1D8B,Azure ExpressRoute,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F7DE650C,Azure SignalR Service,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5622049E,Azure Logic Apps,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F35605E3,Azure Cosmos DB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7400F6B3,Azure Active Directory,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8981F4CA,Azure HDInsight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4776093,Azure Databricks,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B40DC0E7,Azure Event Hubs,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-74F4CA35,Azure Virtual Network,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AA31EEDF,Azure Service Bus,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD19106C,Azure Stream Analytics,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31B739E2,Azure Backup,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-61E65193,Azure Firewall,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FD111A5,Azure Container Instances,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F95336E,Azure Bastion,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6AACA74F,Azure Virtual Machines,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-919B9639,Azure Service Bus,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D6471B02,Azure Virtual Network,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FE8B34A,Azure Site Recovery,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E02604CC,Azure Virtual Machines,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EE91C4F8,Azure Container Instances,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D2779FA7,Azure Functions,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1CC66D2D,Azure Private Link,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-027DAA50,Azure Arc,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-03D7F365,Azure Virtual Machines,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3EB1F71,Azure Active Directory,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE18517A,Azure Arc,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E56C6B8A,Azure Cosmos DB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-56B49BAE,Azure Functions,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B908AAC1,Azure API Management,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF651C00,Azure Spring Apps,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E2A36F59,Azure Machine Learning,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90400F79,Azure Blob Storage,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D1D12D2,Azure Synapse Analytics,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5C147CBF,Azure Logic Apps,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF1E1E20,Azure Advisor,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4C493761,Azure Site Recovery,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-27E9020C,Azure SQL Database,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A1C22F5,Azure Stream Analytics,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3C88443,Azure Databricks,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F61E3D6,Azure Service Bus,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9538A669,Azure Stream Analytics,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D692444,Azure DNS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B52F6EF,Azure Front Door,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8B0D1216,Azure API Management,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A991823,Azure Monitor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0B0416E7,Azure ExpressRoute,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F7B21639,Azure Private Link,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E1D1CD4,Azure Backup,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5579A13C,Azure Private Link,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D72D800B,Azure Stream Analytics,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A002EA1F,Azure HDInsight,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F518440,Azure Blob Storage,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C49A49A8,Azure SignalR Service,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-71E746A4,Azure Event Hubs,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CACD6C7,Azure Event Hubs,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FFD534D6,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5413105D,Azure Blob Storage,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FC71ABD,Azure ExpressRoute,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6B75DB80,Azure Databricks,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23EED959,Azure DNS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77D4E0C9,Azure Machine Learning,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B827F4AC,Azure App Service,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-41FD1B57,Azure Advisor,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1BA2DAB0,Azure Cosmos DB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-99F86AC4,Azure Firewall,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-40C2245B,Azure Synapse Analytics,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-099EA849,Azure Purview,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A0A5EF0A,Azure Data Factory,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83F10870,Azure Backup,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-89A88A51,Azure API Management,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B6574E9,Azure Databricks,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-63920AB9,Azure Private Link,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2BCCCA01,Azure Databricks,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B9756A0A,Azure Event Hubs,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6700A74,Azure Synapse Analytics,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B2EEEDA7,Azure Virtual Network,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-29142B42,Azure Event Hubs,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-930033E9,Azure Machine Learning,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B2A36734,Azure Virtual Network,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5374CFB8,Azure Monitor,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-40297637,Azure Event Hubs,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-91FEE1AB,Azure Active Directory,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E2C0CCDC,Azure Site Recovery,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51B686D4,Azure Traffic Manager,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A8400B1,Azure HDInsight,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7E10BAE4,Azure App Service,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3E750BDD,Azure Virtual Machines,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2185432F,Azure Databricks,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95E96D6D,Azure Virtual Machines,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E5DFEE7F,Azure Synapse Analytics,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3AFEB971,Azure Active Directory,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE5FBB94,Azure Purview,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C355D2CF,Azure Spring Apps,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3EAD5727,Azure Batch,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5937A53E,Azure Monitor,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-41E8179A,Azure Site Recovery,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5266AD92,Azure Site Recovery,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-501390A4,Azure Synapse Analytics,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BE23B1AB,Azure Backup,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D01C04CA,Azure Load Balancer,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AFB4B52A,Azure Purview,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BBDB4853,Azure Service Bus,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A82DBEAF,Azure Analysis Services,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-53CD5D71,Azure Active Directory,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B52839CE,Azure SQL Database,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-049D0593,Azure Backup,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C262D4F6,Azure Event Hubs,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-57B7580A,Azure DNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E9DF49DE,Azure Load Balancer,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C9FFBA82,Azure Key Vault,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4D7584BF,Azure Site Recovery,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-321F24E1,Azure ExpressRoute,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48C10752,Azure Arc,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-19E00548,Azure Machine Learning,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF14C439,Azure Machine Learning,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB96FD8A,Azure Databricks,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2CF5FF9C,Azure HDInsight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-680961E3,Azure DNS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EE844225,Azure Firewall,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D498473E,Azure ExpressRoute,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4CC9E2B4,Azure Key Vault,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C9AEF8FC,Azure Blob Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA7FCC90,Azure Machine Learning,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A8861FBD,Azure Blob Storage,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-97041B20,Azure Key Vault,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-793BBA00,Azure SignalR Service,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-24E3C8EE,Azure Private Link,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C7C06E8,Azure Site Recovery,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB88C4A1,Azure Synapse Analytics,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A3FBC2BD,Azure Key Vault,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B200DAE,Azure Container Instances,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-11DFBB91,Azure Site Recovery,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C18AB8E1,Azure Cosmos DB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E78F53A4,Azure DNS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-65D4D5EE,Azure Backup,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7C2250F,Azure Spring Apps,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B8FA548E,Azure API Management,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-325A8720,Azure Databricks,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-02132400,Azure Virtual Network,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE6B28CE,Azure Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-38B14A28,Azure Spring Apps,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BB713C6A,Azure Databricks,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4715AB7D,Azure Service Bus,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8461BD1F,Azure Backup,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-506FC149,Azure Logic Apps,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-925F14BC,Azure Bastion,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7E65952E,Azure Front Door,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FA2EBC1,Azure Arc,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-79E8B60B,Azure Firewall,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AEC9F516,Azure Cache for Redis,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-683A497F,Azure Databricks,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2387E824,Azure Machine Learning,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C4AD74E,Azure Spring Apps,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E7D1BA6D,Azure Key Vault,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-609C14C8,Azure SignalR Service,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A392932C,Azure Cache for Redis,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E104204,Azure Data Factory,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80B64BD1,Azure Cosmos DB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A982AD0,Azure Arc,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48DD9849,Azure Container Instances,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0607E271,Azure DNS,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C836E063,Azure Key Vault,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-74D7E7AB,Azure Private Link,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-37898201,Azure Service Bus,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-37E03964,Azure Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E9ADA5F6,Azure Cache for Redis,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80FCC036,Azure Monitor,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-491D88AA,Azure Spring Apps,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B267AA0F,Azure Front Door,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C648485D,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-917B9065,Azure ExpressRoute,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E7F61E71,Azure Traffic Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3B77430,Azure Machine Learning,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA1EED73,Azure Traffic Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-39BDEC5F,Azure Site Recovery,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2CC2E128,Azure Cache for Redis,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE2F6C3C,Azure Stream Analytics,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE27D563,Azure Cosmos DB,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B1BF7570,Azure Machine Learning,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-104845F9,Azure Traffic Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-46696729,Azure Container Instances,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2566CCDC,Azure Logic Apps,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76238C3F,Azure SQL Database,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD5CD230,Azure Kubernetes Service (AKS),IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DCD9465C,Azure ExpressRoute,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F219148,Azure DNS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A4DD96AE,Azure DNS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1F2FBE51,Azure Active Directory,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51449E82,Azure HDInsight,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AFF378F7,Azure Arc,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FF93994,Azure API Management,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A6829326,Azure App Service,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ADFD4DF1,Azure Arc,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F77A07C,Azure Firewall,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A0DEC8A6,Azure Traffic Manager,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2709EF78,Azure Virtual Network,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6EEA4090,Azure Container Instances,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E1CE4BF,Azure Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F38D4C73,Azure Service Bus,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5196604D,Azure App Service,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-24DC2A82,Azure Blob Storage,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A388D207,Azure Arc,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0ECD1CD0,Azure Active Directory,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-940608CF,Azure Site Recovery,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95C28440,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A4855DD,Azure Batch,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-52478766,Azure App Service,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9BA0671F,Azure Container Instances,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49D39050,Azure Load Balancer,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CADCD4F6,Azure Bastion,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6673F5B5,Azure Cache for Redis,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0DD97D82,Azure Private Link,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5ED44B02,Azure SignalR Service,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A56B93AB,Azure Key Vault,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0BD138FD,Azure Front Door,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9ACB5DDF,Azure Batch,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A4C54B3D,Azure App Service,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F1E67E8E,Azure Databricks,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1BF2637E,Azure API Management,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB5A268C,Azure Monitor,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-34132D8C,Azure Batch,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E9369943,Azure DNS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF8FD229,Azure Traffic Manager,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0EF9706D,Azure Logic Apps,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-14CA87FA,Azure Cache for Redis,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E0BA2BF,Azure API Management,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-464F1B70,Azure Synapse Analytics,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-04A76C0C,Azure Private Link,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A577FA3,Azure Kubernetes Service (AKS),IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4D57F418,Azure SQL Database,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5AA927F8,Azure Service Bus,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3886EFFB,Azure Analysis Services,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B8BA057,Azure Traffic Manager,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-08ADA1BE,Azure Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AF3F5047,Azure DNS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFA18A6D,Azure Kubernetes Service (AKS),IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B0323EC1,Azure Stream Analytics,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C82D92CE,Azure Machine Learning,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ECBC5EBE,Azure Monitor,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E46CB1E7,Azure Advisor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B5C72D00,Azure Active Directory,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9DD82AAF,Azure Kubernetes Service (AKS),IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36242FA3,Azure Machine Learning,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D21FA0C0,Azure Kubernetes Service (AKS),IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-74E802F3,Azure Functions,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F9D35E13,Azure Analysis Services,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF907436,Azure Arc,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B422CD95,Azure Advisor,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A8A4C8D1,Azure Analysis Services,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CC2EB322,Azure Kubernetes Service (AKS),IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F90A84C1,Azure Functions,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12F2C81B,Azure Databricks,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A5A890DD,Azure Firewall,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2656597A,Azure DNS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B6F1AC30,Azure Spring Apps,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-53BC354A,Azure Databricks,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-10E16D35,Azure Spring Apps,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC102318,Azure Cosmos DB,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BBAEA5E5,Azure Batch,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0412EB43,Azure Analysis Services,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B4EA3618,Azure Load Balancer,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49447E01,Azure Blob Storage,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-15377B1D,Azure Batch,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BC815C08,Azure Site Recovery,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C62AEEA,Azure API Management,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9549E448,Azure Backup,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-701DE6A2,Azure API Management,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-14B15D1C,Azure Arc,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC6E769C,Azure Traffic Manager,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BFBBF5A3,Azure API Management,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-09F7302E,Azure Key Vault,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DCA5A87A,Azure Container Instances,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-61C79140,Azure Active Directory,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A8E9B22,Azure Load Balancer,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6956F0F1,Azure HDInsight,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-10ABB63E,Azure HDInsight,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1AB1CEF6,Azure Key Vault,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2BDA4642,Azure SQL Database,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EC1CE16C,Azure SQL Database,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12D72AE6,Azure Virtual Machines,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C7326BA2,Azure Synapse Analytics,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-435090B8,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6AAD75E2,Azure SignalR Service,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A94AC92,Azure HDInsight,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B1A2D977,Azure Private Link,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6AD94633,Azure Monitor,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-68B1AECE,Azure Spring Apps,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-20DD908D,Azure Service Bus,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A5F9FBA,Azure Functions,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-37D4B007,Azure App Service,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E0B0E604,Azure App Service,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7E189767,Azure Functions,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A858F57B,Azure Bastion,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-60140787,Azure Front Door,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C2BA6C7E,Azure Machine Learning,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1B011A69,Azure App Service,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F6CCD3A7,Azure SQL Database,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-570D39DE,Azure Cache for Redis,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-70B3278D,Azure App Service,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-18F61709,Azure Key Vault,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F6D48A5,Azure Cache for Redis,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-42D51E65,Azure SQL Database,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D711109,Azure Event Hubs,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12DE5BF1,Azure Service Bus,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-66B95F52,Azure Key Vault,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A90B72EE,Azure Synapse Analytics,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D938B743,Azure ExpressRoute,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-29D65541,Azure Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-96E00A9A,Azure SQL Database,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-99269829,Azure Cosmos DB,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE35BF16,Azure Functions,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E403B11C,Azure Virtual Machines,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CEC5D121,Azure SQL Database,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A48F1B9,Azure Stream Analytics,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A72DB948,Azure Backup,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-50D0F850,Azure Load Balancer,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-61ACC290,Azure Load Balancer,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9CA66444,Azure Service Bus,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C0DB7ABF,Azure Service Bus,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA913B29,Azure Purview,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E770FF6,Azure Traffic Manager,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-55765B19,Azure API Management,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C771B7F6,Azure Functions,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1B44DDA9,Azure Cosmos DB,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-69710EE7,Azure ExpressRoute,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BE1008A4,Azure Arc,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FECB1657,Azure Data Factory,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F4EC6A2,Azure Data Factory,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-47926278,Azure Event Hubs,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4D355255,Azure Advisor,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3BF4E29C,Azure Front Door,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D5C9D1D8,Azure ExpressRoute,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C7280407,Azure Site Recovery,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F2F8AD73,Azure Key Vault,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AC15CC32,Azure Databricks,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A683B884,Azure Spring Apps,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA4D6ED4,Azure Cache for Redis,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DD3B3805,Azure Site Recovery,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B1D53684,Azure ExpressRoute,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-43859F4A,Azure Spring Apps,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-14673B2C,Azure Databricks,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D216F65,Azure Stream Analytics,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92159050,Azure Backup,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B63E8295,Azure ExpressRoute,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E2A9B466,Azure Firewall,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ABA3ADE4,Azure Analysis Services,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0F13DCCE,Azure Machine Learning,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F2C75ED,Azure ExpressRoute,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-85CAA153,Azure Synapse Analytics,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C6190171,Azure Virtual Machines,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0501C21F,Azure Stream Analytics,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-93D0418A,Azure Private Link,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA14CB38,Azure Active Directory,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D3A869A0,Azure Monitor,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FEA08C38,Azure Analysis Services,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3C6E8EA,Azure SQL Database,IL6,Approved,Section 5.3.1,Regulatory compliance,High

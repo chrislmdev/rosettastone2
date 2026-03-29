@@ -1,0 +1,1001 @@
+title,csoshortname,description,catalogitemNumber,commercialUnitPrice,commercialUnitOfIssue,customerUnitPrice,customerUnitOfIssue,discountpremiumfee
+Azure SQL Database,Azure SQL Database,,ITEM-00001,1.917,Month,1.438,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00002,44.717,Month,33.538,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00003,7.31,Month,5.482,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00004,13.251,Month,9.938,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00005,37.803,Month,28.352,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00006,23.918,Month,17.938,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00007,46.984,Month,35.238,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00008,22.378,Month,16.784,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00009,17.902,Month,13.427,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00010,5.675,Month,4.256,Month,25%
+Azure Batch,Azure Batch,,ITEM-00011,24.024,Month,18.018,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00012,3.936,Month,2.952,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00013,39.136,Month,29.352,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00014,22.614,Month,16.96,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00015,21.608,Month,16.206,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00016,18.942,Month,14.207,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00017,0.311,Month,0.233,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00018,38.15,Month,28.612,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00019,19.509,Month,14.632,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00020,29.173,Month,21.88,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00021,10.62,Month,7.965,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00022,46.584,Month,34.938,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00023,9.015,Month,6.761,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00024,8.245,Month,6.184,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00025,0.742,Month,0.556,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00026,43.677,Month,32.758,Month,25%
+Azure Batch,Azure Batch,,ITEM-00027,40.747,Month,30.56,Month,25%
+Azure Functions,Azure Functions,,ITEM-00028,9.365,Month,7.024,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00029,10.748,Month,8.061,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00030,24.842,Month,18.631,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00031,34.627,Month,25.97,Month,25%
+Azure Purview,Azure Purview,,ITEM-00032,16.557,Month,12.418,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00033,16.796,Month,12.597,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00034,41.788,Month,31.341,Month,25%
+Azure App Service,Azure App Service,,ITEM-00035,31.852,Month,23.889,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00036,45.195,Month,33.896,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00037,33.577,Month,25.183,Month,25%
+Azure Purview,Azure Purview,,ITEM-00038,11.419,Month,8.564,Month,25%
+Azure API Management,Azure API Management,,ITEM-00039,2.745,Month,2.059,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00040,6.494,Month,4.87,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00041,18.106,Month,13.58,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00042,49.071,Month,36.803,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00043,31.955,Month,23.966,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00044,47.915,Month,35.936,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00045,48.932,Month,36.699,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00046,4.581,Month,3.436,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00047,43.561,Month,32.671,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00048,14.377,Month,10.783,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00049,5.012,Month,3.759,Month,25%
+Azure App Service,Azure App Service,,ITEM-00050,28.036,Month,21.027,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00051,41.321,Month,30.991,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00052,26.067,Month,19.55,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00053,14.263,Month,10.697,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00054,19.424,Month,14.568,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00055,43.028,Month,32.271,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00056,41.168,Month,30.876,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00057,12.175,Month,9.131,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00058,27.71,Month,20.782,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00059,25.144,Month,18.858,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00060,36.885,Month,27.664,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00061,12.486,Month,9.364,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00062,23.436,Month,17.577,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00063,20.124,Month,15.093,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00064,45.178,Month,33.883,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00065,47.101,Month,35.326,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00066,12.03,Month,9.022,Month,25%
+Azure DNS,Azure DNS,,ITEM-00067,16.907,Month,12.68,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00068,31.319,Month,23.489,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00069,26.174,Month,19.63,Month,25%
+Azure Arc,Azure Arc,,ITEM-00070,25.203,Month,18.902,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00071,7.043,Month,5.282,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00072,32.643,Month,24.482,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00073,3.083,Month,2.312,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00074,48.661,Month,36.496,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00075,4.744,Month,3.558,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00076,44.633,Month,33.475,Month,25%
+Azure Batch,Azure Batch,,ITEM-00077,11.951,Month,8.963,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00078,29.292,Month,21.969,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00079,20.656,Month,15.492,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00080,24.06,Month,18.045,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00081,44.004,Month,33.003,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00082,45.32,Month,33.99,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00083,0.609,Month,0.457,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00084,16.374,Month,12.28,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00085,10.896,Month,8.172,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00086,0.91,Month,0.682,Month,25%
+Azure Arc,Azure Arc,,ITEM-00087,42.967,Month,32.225,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00088,34.182,Month,25.637,Month,25%
+Azure API Management,Azure API Management,,ITEM-00089,24.465,Month,18.349,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00090,21.828,Month,16.371,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00091,12.851,Month,9.638,Month,25%
+Azure App Service,Azure App Service,,ITEM-00092,6.054,Month,4.54,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00093,17.107,Month,12.83,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00094,6.34,Month,4.755,Month,25%
+Azure DNS,Azure DNS,,ITEM-00095,16.519,Month,12.389,Month,25%
+Azure API Management,Azure API Management,,ITEM-00096,40.445,Month,30.334,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00097,44.802,Month,33.602,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00098,17.118,Month,12.838,Month,25%
+Azure Batch,Azure Batch,,ITEM-00099,16.562,Month,12.422,Month,25%
+Azure Purview,Azure Purview,,ITEM-00100,18.065,Month,13.549,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00101,23.624,Month,17.718,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00102,24.643,Month,18.482,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00103,25.449,Month,19.087,Month,25%
+Azure Purview,Azure Purview,,ITEM-00104,49.136,Month,36.852,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00105,49.751,Month,37.313,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00106,3.719,Month,2.789,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00107,38.353,Month,28.765,Month,25%
+Azure API Management,Azure API Management,,ITEM-00108,6.796,Month,5.097,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00109,49.464,Month,37.098,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00110,18.165,Month,13.624,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00111,0.459,Month,0.344,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00112,30.069,Month,22.552,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00113,36.709,Month,27.532,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00114,2.123,Month,1.592,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00115,35.889,Month,26.917,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00116,19.968,Month,14.976,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00117,42.027,Month,31.52,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00118,1.848,Month,1.386,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00119,17.316,Month,12.987,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00120,30.02,Month,22.515,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00121,42.069,Month,31.552,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00122,48.511,Month,36.383,Month,25%
+Azure App Service,Azure App Service,,ITEM-00123,48.273,Month,36.205,Month,25%
+Azure App Service,Azure App Service,,ITEM-00124,18.35,Month,13.763,Month,25%
+Azure Arc,Azure Arc,,ITEM-00125,0.777,Month,0.583,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00126,2.554,Month,1.915,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00127,26.032,Month,19.524,Month,25%
+Azure Backup,Azure Backup,,ITEM-00128,9.053,Month,6.79,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00129,23.429,Month,17.572,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00130,2.792,Month,2.094,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00131,19.44,Month,14.58,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00132,17.113,Month,12.835,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00133,41.353,Month,31.015,Month,25%
+Azure Purview,Azure Purview,,ITEM-00134,36.965,Month,27.724,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00135,17.19,Month,12.893,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00136,13.246,Month,9.934,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00137,4.173,Month,3.13,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00138,27.87,Month,20.902,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00139,26.047,Month,19.535,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00140,43.511,Month,32.633,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00141,8.807,Month,6.605,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00142,27.796,Month,20.847,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00143,27.033,Month,20.275,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00144,47.324,Month,35.493,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00145,6.848,Month,5.136,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00146,25.516,Month,19.137,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00147,31.08,Month,23.31,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00148,48.939,Month,36.704,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00149,46.565,Month,34.924,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00150,0.547,Month,0.41,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00151,46.8,Month,35.1,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00152,35.169,Month,26.377,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00153,0.903,Month,0.677,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00154,40.029,Month,30.022,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00155,28.293,Month,21.22,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00156,44.849,Month,33.637,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00157,13.734,Month,10.3,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00158,30.004,Month,22.503,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00159,6.598,Month,4.949,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00160,33.459,Month,25.094,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00161,4.316,Month,3.237,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00162,26.055,Month,19.541,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00163,30.471,Month,22.853,Month,25%
+Azure Arc,Azure Arc,,ITEM-00164,6.864,Month,5.148,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00165,31.948,Month,23.961,Month,25%
+Azure Backup,Azure Backup,,ITEM-00166,28.483,Month,21.362,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00167,11.369,Month,8.527,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00168,15.994,Month,11.995,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00169,32.951,Month,24.713,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00170,16.674,Month,12.505,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00171,26.597,Month,19.948,Month,25%
+Azure Batch,Azure Batch,,ITEM-00172,45.693,Month,34.27,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00173,30.12,Month,22.59,Month,25%
+Azure Functions,Azure Functions,,ITEM-00174,21.555,Month,16.166,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00175,38.318,Month,28.738,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00176,24.03,Month,18.023,Month,25%
+Azure Functions,Azure Functions,,ITEM-00177,25.81,Month,19.357,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00178,44.369,Month,33.277,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00179,14.261,Month,10.696,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00180,24.401,Month,18.301,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00181,9.025,Month,6.769,Month,25%
+Azure API Management,Azure API Management,,ITEM-00182,27.345,Month,20.509,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00183,49.983,Month,37.487,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00184,29.452,Month,22.089,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00185,24.841,Month,18.631,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00186,7.697,Month,5.773,Month,25%
+Azure DNS,Azure DNS,,ITEM-00187,21.677,Month,16.258,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00188,36.015,Month,27.011,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00189,17.369,Month,13.027,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00190,32.913,Month,24.685,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00191,29.534,Month,22.151,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00192,42.268,Month,31.701,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00193,3.512,Month,2.634,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00194,18.774,Month,14.081,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00195,14.318,Month,10.739,Month,25%
+Azure Backup,Azure Backup,,ITEM-00196,13.662,Month,10.247,Month,25%
+Azure Backup,Azure Backup,,ITEM-00197,37.33,Month,27.997,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00198,29.995,Month,22.496,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00199,44.783,Month,33.587,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00200,27.096,Month,20.322,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00201,7.594,Month,5.696,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00202,5.417,Month,4.063,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00203,49.388,Month,37.041,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00204,29.357,Month,22.018,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00205,8.485,Month,6.364,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00206,13.289,Month,9.967,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00207,11.775,Month,8.831,Month,25%
+Azure Batch,Azure Batch,,ITEM-00208,16.549,Month,12.412,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00209,41.94,Month,31.455,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00210,15.835,Month,11.876,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00211,28.221,Month,21.166,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00212,18.354,Month,13.765,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00213,10.443,Month,7.832,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00214,26.23,Month,19.672,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00215,19.314,Month,14.486,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00216,11.004,Month,8.253,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00217,40.273,Month,30.205,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00218,43.803,Month,32.852,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00219,38.186,Month,28.639,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00220,39.075,Month,29.306,Month,25%
+Azure DNS,Azure DNS,,ITEM-00221,20.352,Month,15.264,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00222,21.633,Month,16.225,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00223,46.193,Month,34.645,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00224,14.878,Month,11.159,Month,25%
+Azure App Service,Azure App Service,,ITEM-00225,45.284,Month,33.963,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00226,44.286,Month,33.215,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00227,13.104,Month,9.828,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00228,15.711,Month,11.783,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00229,2.115,Month,1.586,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00230,34.237,Month,25.678,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00231,24.15,Month,18.112,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00232,48.419,Month,36.314,Month,25%
+Azure Batch,Azure Batch,,ITEM-00233,43.127,Month,32.345,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00234,35.337,Month,26.503,Month,25%
+Azure App Service,Azure App Service,,ITEM-00235,23.937,Month,17.953,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00236,39.483,Month,29.612,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00237,31.502,Month,23.627,Month,25%
+Azure DNS,Azure DNS,,ITEM-00238,13.812,Month,10.359,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00239,22.543,Month,16.907,Month,25%
+Azure Arc,Azure Arc,,ITEM-00240,0.17,Month,0.128,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00241,44.404,Month,33.303,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00242,6.861,Month,5.146,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00243,41.361,Month,31.021,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00244,2.408,Month,1.806,Month,25%
+Azure Purview,Azure Purview,,ITEM-00245,24.369,Month,18.277,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00246,18.151,Month,13.613,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00247,36.519,Month,27.389,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00248,1.795,Month,1.346,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00249,40.054,Month,30.041,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00250,5.346,Month,4.01,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00251,45.326,Month,33.995,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00252,38.887,Month,29.165,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00253,27.859,Month,20.894,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00254,18.213,Month,13.66,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00255,23.127,Month,17.345,Month,25%
+Azure Batch,Azure Batch,,ITEM-00256,38.265,Month,28.699,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00257,32.849,Month,24.637,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00258,24.381,Month,18.286,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00259,27.529,Month,20.647,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00260,49.601,Month,37.201,Month,25%
+Azure App Service,Azure App Service,,ITEM-00261,8.678,Month,6.509,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00262,42.656,Month,31.992,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00263,26.642,Month,19.982,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00264,42.404,Month,31.803,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00265,41.317,Month,30.988,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00266,10.312,Month,7.734,Month,25%
+Azure API Management,Azure API Management,,ITEM-00267,19.245,Month,14.434,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00268,5.055,Month,3.791,Month,25%
+Azure Batch,Azure Batch,,ITEM-00269,37.747,Month,28.31,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00270,45.012,Month,33.759,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00271,46.56,Month,34.92,Month,25%
+Azure Arc,Azure Arc,,ITEM-00272,27.835,Month,20.876,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00273,38.215,Month,28.661,Month,25%
+Azure Backup,Azure Backup,,ITEM-00274,23.883,Month,17.912,Month,25%
+Azure Backup,Azure Backup,,ITEM-00275,49.185,Month,36.889,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00276,19.62,Month,14.715,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00277,46.179,Month,34.634,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00278,37.768,Month,28.326,Month,25%
+Azure Batch,Azure Batch,,ITEM-00279,11.796,Month,8.847,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00280,5.19,Month,3.893,Month,25%
+Azure API Management,Azure API Management,,ITEM-00281,12.307,Month,9.23,Month,25%
+Azure Purview,Azure Purview,,ITEM-00282,20.819,Month,15.614,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00283,18.746,Month,14.059,Month,25%
+Azure Batch,Azure Batch,,ITEM-00284,45.732,Month,34.299,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00285,16.451,Month,12.338,Month,25%
+Azure Purview,Azure Purview,,ITEM-00286,2.891,Month,2.168,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00287,9.309,Month,6.982,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00288,16.144,Month,12.108,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00289,8.377,Month,6.283,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00290,36.546,Month,27.41,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00291,25.784,Month,19.338,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00292,49.877,Month,37.408,Month,25%
+Azure DNS,Azure DNS,,ITEM-00293,10.344,Month,7.758,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00294,42.782,Month,32.087,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00295,25.52,Month,19.14,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00296,9.386,Month,7.039,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00297,29.119,Month,21.839,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00298,20.703,Month,15.527,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00299,28.657,Month,21.493,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00300,33.408,Month,25.056,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00301,16.422,Month,12.317,Month,25%
+Azure Batch,Azure Batch,,ITEM-00302,27.906,Month,20.929,Month,25%
+Azure Functions,Azure Functions,,ITEM-00303,45.457,Month,34.093,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00304,11.082,Month,8.312,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00305,13.0,Month,9.75,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00306,13.584,Month,10.188,Month,25%
+Azure DNS,Azure DNS,,ITEM-00307,43.817,Month,32.863,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00308,47.202,Month,35.401,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00309,27.703,Month,20.777,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00310,1.999,Month,1.499,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00311,27.952,Month,20.964,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00312,16.678,Month,12.509,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00313,28.405,Month,21.304,Month,25%
+Azure Purview,Azure Purview,,ITEM-00314,0.118,Month,0.088,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00315,41.722,Month,31.291,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00316,9.323,Month,6.992,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00317,37.315,Month,27.986,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00318,2.144,Month,1.608,Month,25%
+Azure Functions,Azure Functions,,ITEM-00319,31.618,Month,23.713,Month,25%
+Azure Purview,Azure Purview,,ITEM-00320,31.849,Month,23.887,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00321,28.005,Month,21.004,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00322,4.157,Month,3.118,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00323,45.968,Month,34.476,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00324,47.07,Month,35.303,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00325,7.816,Month,5.862,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00326,22.218,Month,16.663,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00327,10.111,Month,7.583,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00328,35.522,Month,26.642,Month,25%
+Azure Purview,Azure Purview,,ITEM-00329,48.395,Month,36.296,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00330,33.571,Month,25.178,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00331,41.239,Month,30.929,Month,25%
+Azure Batch,Azure Batch,,ITEM-00332,11.866,Month,8.899,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00333,14.228,Month,10.671,Month,25%
+Azure Functions,Azure Functions,,ITEM-00334,12.471,Month,9.353,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00335,43.702,Month,32.776,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00336,24.823,Month,18.617,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00337,7.448,Month,5.586,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00338,3.976,Month,2.982,Month,25%
+Azure Batch,Azure Batch,,ITEM-00339,13.103,Month,9.827,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00340,35.809,Month,26.857,Month,25%
+Azure API Management,Azure API Management,,ITEM-00341,10.257,Month,7.693,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00342,5.395,Month,4.046,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00343,15.73,Month,11.797,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00344,34.648,Month,25.986,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00345,15.596,Month,11.697,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00346,31.132,Month,23.349,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00347,34.218,Month,25.664,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00348,39.224,Month,29.418,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00349,42.542,Month,31.907,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00350,4.884,Month,3.663,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00351,38.594,Month,28.946,Month,25%
+Azure DNS,Azure DNS,,ITEM-00352,43.319,Month,32.489,Month,25%
+Azure App Service,Azure App Service,,ITEM-00353,30.24,Month,22.68,Month,25%
+Azure App Service,Azure App Service,,ITEM-00354,39.37,Month,29.527,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00355,18.259,Month,13.694,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00356,34.584,Month,25.938,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00357,5.7,Month,4.275,Month,25%
+Azure Purview,Azure Purview,,ITEM-00358,41.58,Month,31.185,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00359,37.629,Month,28.222,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00360,43.905,Month,32.929,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00361,46.409,Month,34.807,Month,25%
+Azure Functions,Azure Functions,,ITEM-00362,27.374,Month,20.53,Month,25%
+Azure Functions,Azure Functions,,ITEM-00363,3.383,Month,2.537,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00364,3.045,Month,2.284,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00365,33.463,Month,25.097,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00366,14.671,Month,11.003,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00367,19.28,Month,14.46,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00368,46.643,Month,34.982,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00369,25.675,Month,19.256,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00370,37.461,Month,28.096,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00371,3.575,Month,2.681,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00372,49.661,Month,37.246,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00373,2.105,Month,1.579,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00374,1.688,Month,1.266,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00375,4.122,Month,3.091,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00376,9.94,Month,7.455,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00377,30.771,Month,23.078,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00378,20.981,Month,15.736,Month,25%
+Azure DNS,Azure DNS,,ITEM-00379,33.245,Month,24.934,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00380,32.371,Month,24.278,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00381,39.53,Month,29.648,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00382,38.778,Month,29.084,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00383,34.169,Month,25.627,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00384,47.981,Month,35.986,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00385,16.302,Month,12.226,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00386,47.562,Month,35.671,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00387,4.408,Month,3.306,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00388,1.566,Month,1.175,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00389,23.938,Month,17.953,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00390,2.588,Month,1.941,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00391,20.007,Month,15.005,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00392,43.899,Month,32.924,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00393,21.205,Month,15.904,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00394,31.595,Month,23.696,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00395,8.187,Month,6.14,Month,25%
+Azure Functions,Azure Functions,,ITEM-00396,2.865,Month,2.149,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00397,25.244,Month,18.933,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00398,13.193,Month,9.895,Month,25%
+Azure Backup,Azure Backup,,ITEM-00399,2.562,Month,1.921,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00400,23.004,Month,17.253,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00401,18.069,Month,13.552,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00402,44.8,Month,33.6,Month,25%
+Azure DNS,Azure DNS,,ITEM-00403,49.37,Month,37.027,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00404,2.808,Month,2.106,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00405,26.881,Month,20.161,Month,25%
+Azure API Management,Azure API Management,,ITEM-00406,2.398,Month,1.799,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00407,5.458,Month,4.094,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00408,2.009,Month,1.507,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00409,14.654,Month,10.991,Month,25%
+Azure Arc,Azure Arc,,ITEM-00410,17.634,Month,13.226,Month,25%
+Azure Arc,Azure Arc,,ITEM-00411,4.281,Month,3.211,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00412,0.253,Month,0.19,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00413,38.885,Month,29.164,Month,25%
+Azure Purview,Azure Purview,,ITEM-00414,49.363,Month,37.022,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00415,47.386,Month,35.54,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00416,32.78,Month,24.585,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00417,14.31,Month,10.732,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00418,38.887,Month,29.165,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00419,10.776,Month,8.082,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00420,40.811,Month,30.608,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00421,47.733,Month,35.8,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00422,46.099,Month,34.574,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00423,38.904,Month,29.178,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00424,6.351,Month,4.763,Month,25%
+Azure DNS,Azure DNS,,ITEM-00425,43.464,Month,32.598,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00426,46.158,Month,34.618,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00427,5.856,Month,4.392,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00428,13.097,Month,9.823,Month,25%
+Azure App Service,Azure App Service,,ITEM-00429,23.516,Month,17.637,Month,25%
+Azure API Management,Azure API Management,,ITEM-00430,25.842,Month,19.381,Month,25%
+Azure API Management,Azure API Management,,ITEM-00431,16.529,Month,12.397,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00432,46.097,Month,34.573,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00433,5.881,Month,4.411,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00434,22.02,Month,16.515,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00435,48.626,Month,36.469,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00436,11.403,Month,8.552,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00437,38.614,Month,28.96,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00438,45.034,Month,33.776,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00439,7.352,Month,5.514,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00440,6.535,Month,4.901,Month,25%
+Azure Backup,Azure Backup,,ITEM-00441,40.923,Month,30.692,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00442,35.815,Month,26.861,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00443,46.266,Month,34.7,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00444,49.288,Month,36.966,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00445,10.984,Month,8.238,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00446,23.609,Month,17.707,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00447,46.483,Month,34.862,Month,25%
+Azure Purview,Azure Purview,,ITEM-00448,33.478,Month,25.108,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00449,23.833,Month,17.875,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00450,14.492,Month,10.869,Month,25%
+Azure Arc,Azure Arc,,ITEM-00451,43.058,Month,32.294,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00452,3.226,Month,2.42,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00453,26.193,Month,19.645,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00454,13.266,Month,9.95,Month,25%
+Azure Functions,Azure Functions,,ITEM-00455,28.266,Month,21.2,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00456,9.085,Month,6.814,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00457,9.172,Month,6.879,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00458,33.112,Month,24.834,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00459,46.181,Month,34.636,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00460,6.543,Month,4.907,Month,25%
+Azure Batch,Azure Batch,,ITEM-00461,8.6,Month,6.45,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00462,30.972,Month,23.229,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00463,36.611,Month,27.458,Month,25%
+Azure DNS,Azure DNS,,ITEM-00464,5.333,Month,4.0,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00465,13.274,Month,9.955,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00466,49.81,Month,37.358,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00467,13.05,Month,9.788,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00468,1.087,Month,0.815,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00469,28.217,Month,21.163,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00470,43.269,Month,32.452,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00471,24.18,Month,18.135,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00472,24.475,Month,18.356,Month,25%
+Azure Arc,Azure Arc,,ITEM-00473,15.851,Month,11.888,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00474,12.81,Month,9.607,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00475,21.283,Month,15.962,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00476,6.969,Month,5.227,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00477,42.494,Month,31.87,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00478,5.583,Month,4.187,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00479,40.128,Month,30.096,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00480,44.269,Month,33.202,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00481,44.811,Month,33.608,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00482,10.103,Month,7.577,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00483,49.363,Month,37.022,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00484,39.214,Month,29.41,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00485,22.944,Month,17.208,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00486,24.038,Month,18.029,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00487,41.075,Month,30.806,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00488,36.017,Month,27.013,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00489,8.149,Month,6.112,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00490,9.998,Month,7.498,Month,25%
+Azure Functions,Azure Functions,,ITEM-00491,20.572,Month,15.429,Month,25%
+Azure Purview,Azure Purview,,ITEM-00492,8.643,Month,6.482,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00493,5.945,Month,4.459,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00494,5.54,Month,4.155,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00495,9.064,Month,6.798,Month,25%
+Azure Backup,Azure Backup,,ITEM-00496,18.087,Month,13.565,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00497,43.187,Month,32.39,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00498,48.137,Month,36.103,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00499,25.498,Month,19.123,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00500,28.844,Month,21.633,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00501,16.689,Month,12.517,Month,25%
+Azure API Management,Azure API Management,,ITEM-00502,15.589,Month,11.692,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00503,23.422,Month,17.567,Month,25%
+Azure Functions,Azure Functions,,ITEM-00504,9.006,Month,6.755,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00505,35.324,Month,26.493,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00506,34.17,Month,25.628,Month,25%
+Azure API Management,Azure API Management,,ITEM-00507,0.909,Month,0.682,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00508,14.282,Month,10.712,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00509,2.856,Month,2.142,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00510,16.399,Month,12.299,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00511,40.422,Month,30.316,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00512,20.633,Month,15.475,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00513,43.723,Month,32.792,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00514,2.208,Month,1.656,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00515,21.747,Month,16.31,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00516,19.615,Month,14.711,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00517,14.887,Month,11.165,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00518,10.1,Month,7.575,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00519,15.209,Month,11.407,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00520,34.862,Month,26.147,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00521,13.381,Month,10.036,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00522,39.614,Month,29.71,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00523,37.33,Month,27.997,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00524,21.7,Month,16.275,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00525,29.15,Month,21.862,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00526,8.024,Month,6.018,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00527,39.068,Month,29.301,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00528,0.463,Month,0.347,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00529,8.146,Month,6.11,Month,25%
+Azure Backup,Azure Backup,,ITEM-00530,23.039,Month,17.279,Month,25%
+Azure App Service,Azure App Service,,ITEM-00531,26.822,Month,20.116,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00532,44.761,Month,33.571,Month,25%
+Azure Batch,Azure Batch,,ITEM-00533,32.913,Month,24.685,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00534,13.265,Month,9.949,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00535,9.946,Month,7.46,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00536,20.928,Month,15.696,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00537,17.058,Month,12.793,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00538,9.418,Month,7.063,Month,25%
+Azure Batch,Azure Batch,,ITEM-00539,46.734,Month,35.05,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00540,11.015,Month,8.261,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00541,38.52,Month,28.89,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00542,30.452,Month,22.839,Month,25%
+Azure Batch,Azure Batch,,ITEM-00543,6.822,Month,5.117,Month,25%
+Azure Batch,Azure Batch,,ITEM-00544,9.765,Month,7.324,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00545,17.33,Month,12.997,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00546,27.085,Month,20.314,Month,25%
+Azure Backup,Azure Backup,,ITEM-00547,8.871,Month,6.653,Month,25%
+Azure Functions,Azure Functions,,ITEM-00548,2.376,Month,1.782,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00549,24.85,Month,18.638,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00550,18.037,Month,13.528,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00551,2.949,Month,2.212,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00552,11.194,Month,8.396,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00553,49.484,Month,37.113,Month,25%
+Azure Arc,Azure Arc,,ITEM-00554,42.804,Month,32.103,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00555,28.094,Month,21.071,Month,25%
+Azure Batch,Azure Batch,,ITEM-00556,6.182,Month,4.636,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00557,46.266,Month,34.7,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00558,17.175,Month,12.881,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00559,49.593,Month,37.195,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00560,15.181,Month,11.386,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00561,21.522,Month,16.142,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00562,39.028,Month,29.271,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00563,37.476,Month,28.107,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00564,1.372,Month,1.029,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00565,13.216,Month,9.912,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00566,4.804,Month,3.603,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00567,46.623,Month,34.967,Month,25%
+Azure DNS,Azure DNS,,ITEM-00568,28.124,Month,21.093,Month,25%
+Azure Batch,Azure Batch,,ITEM-00569,16.316,Month,12.237,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00570,40.114,Month,30.085,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00571,6.108,Month,4.581,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00572,18.357,Month,13.768,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00573,18.035,Month,13.526,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00574,1.091,Month,0.818,Month,25%
+Azure Purview,Azure Purview,,ITEM-00575,30.662,Month,22.996,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00576,20.182,Month,15.136,Month,25%
+Azure Functions,Azure Functions,,ITEM-00577,18.55,Month,13.913,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00578,4.172,Month,3.129,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00579,2.352,Month,1.764,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00580,9.201,Month,6.901,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00581,23.104,Month,17.328,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00582,0.37,Month,0.277,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00583,49.16,Month,36.87,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00584,37.376,Month,28.032,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00585,24.841,Month,18.631,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00586,39.03,Month,29.273,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00587,46.455,Month,34.841,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00588,7.361,Month,5.521,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00589,47.644,Month,35.733,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00590,17.647,Month,13.235,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00591,7.701,Month,5.776,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00592,33.214,Month,24.91,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00593,16.244,Month,12.183,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00594,7.675,Month,5.756,Month,25%
+Azure DNS,Azure DNS,,ITEM-00595,14.924,Month,11.193,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00596,33.558,Month,25.169,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00597,11.065,Month,8.299,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00598,23.717,Month,17.788,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00599,36.556,Month,27.417,Month,25%
+Azure Functions,Azure Functions,,ITEM-00600,1.904,Month,1.428,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00601,12.657,Month,9.493,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00602,16.263,Month,12.197,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00603,32.039,Month,24.029,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00604,33.302,Month,24.977,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00605,5.393,Month,4.045,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00606,8.926,Month,6.694,Month,25%
+Azure Backup,Azure Backup,,ITEM-00607,12.594,Month,9.445,Month,25%
+Azure App Service,Azure App Service,,ITEM-00608,13.866,Month,10.399,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00609,16.822,Month,12.616,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00610,6.375,Month,4.781,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00611,28.305,Month,21.229,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00612,44.642,Month,33.482,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00613,26.354,Month,19.765,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00614,37.698,Month,28.273,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00615,49.187,Month,36.89,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00616,48.443,Month,36.332,Month,25%
+Azure Purview,Azure Purview,,ITEM-00617,22.91,Month,17.183,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00618,4.918,Month,3.689,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00619,26.02,Month,19.515,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00620,10.774,Month,8.08,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00621,24.732,Month,18.549,Month,25%
+Azure App Service,Azure App Service,,ITEM-00622,33.837,Month,25.378,Month,25%
+Azure Arc,Azure Arc,,ITEM-00623,15.23,Month,11.422,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00624,16.863,Month,12.647,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00625,16.556,Month,12.417,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00626,11.483,Month,8.612,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00627,37.602,Month,28.201,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00628,6.308,Month,4.731,Month,25%
+Azure API Management,Azure API Management,,ITEM-00629,42.127,Month,31.595,Month,25%
+Azure Purview,Azure Purview,,ITEM-00630,8.942,Month,6.707,Month,25%
+Azure Functions,Azure Functions,,ITEM-00631,2.808,Month,2.106,Month,25%
+Azure Arc,Azure Arc,,ITEM-00632,17.462,Month,13.096,Month,25%
+Azure Functions,Azure Functions,,ITEM-00633,30.278,Month,22.709,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00634,28.02,Month,21.015,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00635,49.955,Month,37.466,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00636,14.702,Month,11.027,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00637,12.904,Month,9.678,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00638,14.617,Month,10.963,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00639,45.237,Month,33.928,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00640,38.057,Month,28.543,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00641,42.133,Month,31.6,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00642,19.996,Month,14.997,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00643,47.216,Month,35.412,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00644,9.336,Month,7.002,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00645,45.768,Month,34.326,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00646,29.337,Month,22.003,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00647,20.303,Month,15.227,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00648,34.153,Month,25.615,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00649,38.219,Month,28.664,Month,25%
+Azure Arc,Azure Arc,,ITEM-00650,42.295,Month,31.721,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00651,36.297,Month,27.223,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00652,40.781,Month,30.586,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00653,0.89,Month,0.667,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00654,47.753,Month,35.815,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00655,12.492,Month,9.369,Month,25%
+Azure Backup,Azure Backup,,ITEM-00656,10.58,Month,7.935,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00657,19.375,Month,14.531,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00658,24.089,Month,18.067,Month,25%
+Azure API Management,Azure API Management,,ITEM-00659,12.972,Month,9.729,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00660,37.578,Month,28.184,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00661,15.03,Month,11.272,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00662,0.66,Month,0.495,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00663,28.215,Month,21.161,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00664,39.28,Month,29.46,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00665,32.076,Month,24.057,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00666,27.37,Month,20.527,Month,25%
+Azure Arc,Azure Arc,,ITEM-00667,41.897,Month,31.423,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00668,43.43,Month,32.572,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00669,25.219,Month,18.914,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00670,44.136,Month,33.102,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00671,7.124,Month,5.343,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00672,4.805,Month,3.604,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00673,34.179,Month,25.634,Month,25%
+Azure App Service,Azure App Service,,ITEM-00674,31.958,Month,23.968,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00675,46.854,Month,35.141,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00676,45.853,Month,34.39,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00677,5.715,Month,4.286,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00678,44.59,Month,33.443,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00679,35.646,Month,26.735,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00680,17.433,Month,13.075,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00681,0.568,Month,0.426,Month,25%
+Azure Batch,Azure Batch,,ITEM-00682,28.149,Month,21.112,Month,25%
+Azure Functions,Azure Functions,,ITEM-00683,30.314,Month,22.736,Month,25%
+Azure Batch,Azure Batch,,ITEM-00684,16.712,Month,12.534,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00685,37.838,Month,28.379,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00686,3.629,Month,2.722,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00687,42.264,Month,31.698,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00688,26.338,Month,19.754,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00689,16.777,Month,12.583,Month,25%
+Azure Arc,Azure Arc,,ITEM-00690,33.113,Month,24.835,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00691,47.061,Month,35.296,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00692,18.579,Month,13.934,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00693,9.311,Month,6.983,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00694,5.187,Month,3.89,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00695,20.51,Month,15.383,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00696,32.923,Month,24.692,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00697,7.636,Month,5.727,Month,25%
+Azure Backup,Azure Backup,,ITEM-00698,39.23,Month,29.422,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00699,47.573,Month,35.68,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00700,46.78,Month,35.085,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00701,44.822,Month,33.617,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00702,34.87,Month,26.152,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00703,15.718,Month,11.788,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00704,13.555,Month,10.166,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00705,6.123,Month,4.592,Month,25%
+Azure Functions,Azure Functions,,ITEM-00706,39.568,Month,29.676,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00707,9.816,Month,7.362,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00708,23.794,Month,17.846,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00709,29.976,Month,22.482,Month,25%
+Azure Batch,Azure Batch,,ITEM-00710,15.36,Month,11.52,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00711,39.027,Month,29.27,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00712,9.911,Month,7.433,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00713,35.928,Month,26.946,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00714,28.954,Month,21.715,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00715,27.356,Month,20.517,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00716,17.179,Month,12.884,Month,25%
+Azure App Service,Azure App Service,,ITEM-00717,39.297,Month,29.473,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00718,47.904,Month,35.928,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00719,2.52,Month,1.89,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00720,2.217,Month,1.663,Month,25%
+Azure Arc,Azure Arc,,ITEM-00721,24.571,Month,18.428,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00722,25.667,Month,19.25,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00723,27.915,Month,20.936,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00724,31.118,Month,23.338,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00725,41.201,Month,30.901,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00726,48.021,Month,36.016,Month,25%
+Azure API Management,Azure API Management,,ITEM-00727,38.734,Month,29.05,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00728,38.091,Month,28.568,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00729,22.943,Month,17.207,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00730,47.987,Month,35.99,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00731,19.474,Month,14.605,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00732,49.796,Month,37.347,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00733,42.218,Month,31.664,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00734,3.751,Month,2.813,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00735,43.408,Month,32.556,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00736,9.811,Month,7.358,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00737,27.738,Month,20.803,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00738,43.152,Month,32.364,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00739,23.323,Month,17.492,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00740,15.974,Month,11.98,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00741,2.362,Month,1.772,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00742,40.64,Month,30.48,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00743,5.261,Month,3.946,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00744,3.759,Month,2.819,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00745,38.867,Month,29.15,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00746,45.23,Month,33.922,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00747,3.919,Month,2.939,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00748,11.096,Month,8.322,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00749,4.744,Month,3.558,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00750,31.051,Month,23.288,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00751,30.115,Month,22.586,Month,25%
+Azure DNS,Azure DNS,,ITEM-00752,26.656,Month,19.992,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00753,29.349,Month,22.012,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00754,10.878,Month,8.159,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00755,35.509,Month,26.632,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00756,37.075,Month,27.806,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00757,32.343,Month,24.257,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00758,39.48,Month,29.61,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00759,24.478,Month,18.358,Month,25%
+Azure API Management,Azure API Management,,ITEM-00760,10.301,Month,7.726,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00761,2.482,Month,1.862,Month,25%
+Azure App Service,Azure App Service,,ITEM-00762,30.919,Month,23.189,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00763,45.16,Month,33.87,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00764,19.081,Month,14.311,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00765,21.978,Month,16.483,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00766,30.005,Month,22.504,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00767,40.575,Month,30.431,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00768,41.36,Month,31.02,Month,25%
+Azure Arc,Azure Arc,,ITEM-00769,22.775,Month,17.081,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00770,31.486,Month,23.614,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00771,18.175,Month,13.631,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00772,19.416,Month,14.562,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00773,24.44,Month,18.33,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00774,25.706,Month,19.279,Month,25%
+Azure Backup,Azure Backup,,ITEM-00775,14.933,Month,11.2,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00776,28.586,Month,21.439,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00777,7.737,Month,5.803,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00778,37.3,Month,27.975,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00779,24.056,Month,18.042,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00780,20.907,Month,15.68,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00781,8.668,Month,6.501,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00782,27.593,Month,20.695,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00783,37.817,Month,28.363,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00784,20.727,Month,15.545,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00785,40.435,Month,30.326,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00786,14.53,Month,10.897,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00787,5.885,Month,4.414,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00788,14.145,Month,10.609,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00789,24.508,Month,18.381,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00790,11.937,Month,8.953,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00791,1.45,Month,1.087,Month,25%
+Azure DNS,Azure DNS,,ITEM-00792,30.256,Month,22.692,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00793,17.427,Month,13.07,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00794,37.269,Month,27.952,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00795,28.905,Month,21.679,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00796,38.613,Month,28.96,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00797,46.083,Month,34.562,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00798,1.621,Month,1.216,Month,25%
+Azure Purview,Azure Purview,,ITEM-00799,19.515,Month,14.636,Month,25%
+Azure Backup,Azure Backup,,ITEM-00800,19.566,Month,14.674,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00801,8.057,Month,6.043,Month,25%
+Azure Backup,Azure Backup,,ITEM-00802,31.633,Month,23.725,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00803,5.257,Month,3.943,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00804,21.534,Month,16.151,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00805,39.678,Month,29.758,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00806,17.987,Month,13.49,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00807,24.789,Month,18.592,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00808,21.747,Month,16.31,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00809,18.589,Month,13.942,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00810,22.031,Month,16.523,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00811,9.426,Month,7.069,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00812,8.852,Month,6.639,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00813,24.347,Month,18.26,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00814,21.74,Month,16.305,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00815,32.254,Month,24.191,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00816,37.415,Month,28.061,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00817,8.998,Month,6.748,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00818,39.579,Month,29.684,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00819,3.563,Month,2.672,Month,25%
+Azure DNS,Azure DNS,,ITEM-00820,5.777,Month,4.333,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00821,33.629,Month,25.222,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00822,29.472,Month,22.104,Month,25%
+Azure Functions,Azure Functions,,ITEM-00823,19.908,Month,14.931,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00824,48.791,Month,36.593,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00825,4.925,Month,3.694,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00826,23.409,Month,17.557,Month,25%
+Azure DNS,Azure DNS,,ITEM-00827,45.896,Month,34.422,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00828,41.038,Month,30.778,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00829,24.781,Month,18.586,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00830,47.208,Month,35.406,Month,25%
+Azure Virtual Network,Azure Virtual Network,,ITEM-00831,36.777,Month,27.583,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00832,40.702,Month,30.526,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00833,38.624,Month,28.968,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00834,34.134,Month,25.601,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00835,44.068,Month,33.051,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00836,19.891,Month,14.918,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00837,48.894,Month,36.67,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00838,34.296,Month,25.722,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00839,38.603,Month,28.952,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00840,37.288,Month,27.966,Month,25%
+Azure Batch,Azure Batch,,ITEM-00841,16.735,Month,12.551,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00842,21.764,Month,16.323,Month,25%
+Azure DNS,Azure DNS,,ITEM-00843,21.503,Month,16.127,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00844,34.025,Month,25.519,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00845,36.522,Month,27.392,Month,25%
+Azure DNS,Azure DNS,,ITEM-00846,12.055,Month,9.041,Month,25%
+Azure Arc,Azure Arc,,ITEM-00847,14.69,Month,11.018,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00848,19.237,Month,14.428,Month,25%
+Azure Advisor,Azure Advisor,,ITEM-00849,26.794,Month,20.096,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00850,9.202,Month,6.902,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00851,14.762,Month,11.072,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00852,29.761,Month,22.321,Month,25%
+Azure Arc,Azure Arc,,ITEM-00853,33.473,Month,25.105,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00854,26.072,Month,19.554,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00855,8.091,Month,6.068,Month,25%
+Azure Batch,Azure Batch,,ITEM-00856,35.341,Month,26.506,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00857,13.873,Month,10.405,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00858,14.194,Month,10.646,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00859,8.952,Month,6.714,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00860,37.846,Month,28.384,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00861,49.312,Month,36.984,Month,25%
+Azure App Service,Azure App Service,,ITEM-00862,26.883,Month,20.162,Month,25%
+Azure Kubernetes Service (AKS),Azure Kubernetes Service (AKS),,ITEM-00863,7.074,Month,5.306,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00864,40.888,Month,30.666,Month,25%
+Azure Purview,Azure Purview,,ITEM-00865,49.07,Month,36.803,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00866,36.494,Month,27.37,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00867,49.573,Month,37.18,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00868,21.538,Month,16.154,Month,25%
+Azure Functions,Azure Functions,,ITEM-00869,27.977,Month,20.983,Month,25%
+Azure Functions,Azure Functions,,ITEM-00870,18.316,Month,13.737,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00871,33.543,Month,25.157,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00872,18.38,Month,13.785,Month,25%
+Azure Batch,Azure Batch,,ITEM-00873,38.283,Month,28.712,Month,25%
+Azure DNS,Azure DNS,,ITEM-00874,21.604,Month,16.203,Month,25%
+Azure Monitor,Azure Monitor,,ITEM-00875,10.864,Month,8.148,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00876,26.596,Month,19.947,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00877,12.47,Month,9.353,Month,25%
+Azure DNS,Azure DNS,,ITEM-00878,30.919,Month,23.189,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00879,18.563,Month,13.922,Month,25%
+Azure API Management,Azure API Management,,ITEM-00880,30.056,Month,22.542,Month,25%
+Azure DNS,Azure DNS,,ITEM-00881,45.635,Month,34.226,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00882,9.177,Month,6.883,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00883,8.177,Month,6.133,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00884,44.091,Month,33.068,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00885,38.544,Month,28.908,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00886,21.262,Month,15.947,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00887,1.404,Month,1.053,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00888,5.037,Month,3.778,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00889,31.727,Month,23.795,Month,25%
+Azure Purview,Azure Purview,,ITEM-00890,13.852,Month,10.389,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00891,40.356,Month,30.267,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00892,31.679,Month,23.759,Month,25%
+Azure Batch,Azure Batch,,ITEM-00893,29.165,Month,21.874,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00894,5.035,Month,3.776,Month,25%
+Azure Private Link,Azure Private Link,,ITEM-00895,10.391,Month,7.793,Month,25%
+Azure DNS,Azure DNS,,ITEM-00896,13.868,Month,10.401,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00897,37.498,Month,28.123,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00898,30.041,Month,22.531,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00899,14.222,Month,10.666,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00900,17.229,Month,12.922,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00901,0.993,Month,0.745,Month,25%
+Azure API Management,Azure API Management,,ITEM-00902,37.619,Month,28.214,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00903,48.849,Month,36.637,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00904,16.627,Month,12.47,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00905,12.064,Month,9.048,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00906,24.049,Month,18.037,Month,25%
+Azure Purview,Azure Purview,,ITEM-00907,36.004,Month,27.003,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00908,36.837,Month,27.628,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00909,21.029,Month,15.772,Month,25%
+Azure Backup,Azure Backup,,ITEM-00910,30.268,Month,22.701,Month,25%
+Azure Backup,Azure Backup,,ITEM-00911,10.779,Month,8.084,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00912,48.184,Month,36.138,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00913,47.296,Month,35.472,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00914,7.506,Month,5.63,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00915,25.379,Month,19.034,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00916,0.496,Month,0.372,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00917,31.15,Month,23.362,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00918,44.698,Month,33.523,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00919,15.231,Month,11.423,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00920,11.876,Month,8.907,Month,25%
+Azure Backup,Azure Backup,,ITEM-00921,33.289,Month,24.967,Month,25%
+Azure Arc,Azure Arc,,ITEM-00922,22.378,Month,16.784,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00923,26.249,Month,19.687,Month,25%
+Azure Virtual Machines,Azure Virtual Machines,,ITEM-00924,34.278,Month,25.709,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00925,44.621,Month,33.466,Month,25%
+Azure SQL Database,Azure SQL Database,,ITEM-00926,31.223,Month,23.417,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00927,26.366,Month,19.774,Month,25%
+Azure Backup,Azure Backup,,ITEM-00928,4.922,Month,3.691,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00929,12.633,Month,9.475,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00930,9.132,Month,6.849,Month,25%
+Azure DNS,Azure DNS,,ITEM-00931,9.586,Month,7.19,Month,25%
+Azure App Service,Azure App Service,,ITEM-00932,8.677,Month,6.508,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00933,3.416,Month,2.562,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00934,29.005,Month,21.754,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00935,44.461,Month,33.346,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00936,40.895,Month,30.671,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00937,39.156,Month,29.367,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00938,5.244,Month,3.933,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00939,36.164,Month,27.123,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00940,6.996,Month,5.247,Month,25%
+Azure Analysis Services,Azure Analysis Services,,ITEM-00941,23.898,Month,17.924,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00942,48.773,Month,36.58,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00943,11.865,Month,8.899,Month,25%
+Azure Stream Analytics,Azure Stream Analytics,,ITEM-00944,24.955,Month,18.716,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00945,36.88,Month,27.66,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00946,0.47,Month,0.352,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00947,5.8,Month,4.35,Month,25%
+Azure Synapse Analytics,Azure Synapse Analytics,,ITEM-00948,41.432,Month,31.074,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00949,2.633,Month,1.975,Month,25%
+Azure Batch,Azure Batch,,ITEM-00950,10.724,Month,8.043,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00951,4.316,Month,3.237,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00952,2.852,Month,2.139,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00953,22.996,Month,17.247,Month,25%
+Azure API Management,Azure API Management,,ITEM-00954,24.461,Month,18.346,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00955,34.948,Month,26.211,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00956,18.656,Month,13.992,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00957,22.91,Month,17.183,Month,25%
+Azure HDInsight,Azure HDInsight,,ITEM-00958,48.035,Month,36.026,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00959,29.5,Month,22.125,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00960,29.936,Month,22.452,Month,25%
+Azure App Service,Azure App Service,,ITEM-00961,5.904,Month,4.428,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00962,27.881,Month,20.911,Month,25%
+Azure Logic Apps,Azure Logic Apps,,ITEM-00963,4.82,Month,3.615,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00964,3.116,Month,2.337,Month,25%
+Azure Key Vault,Azure Key Vault,,ITEM-00965,39.601,Month,29.701,Month,25%
+Azure Functions,Azure Functions,,ITEM-00966,37.295,Month,27.971,Month,25%
+Azure Machine Learning,Azure Machine Learning,,ITEM-00967,43.883,Month,32.912,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00968,31.814,Month,23.861,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00969,21.697,Month,16.273,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00970,20.351,Month,15.263,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00971,27.492,Month,20.619,Month,25%
+Azure Backup,Azure Backup,,ITEM-00972,13.733,Month,10.3,Month,25%
+Azure Active Directory,Azure Active Directory,,ITEM-00973,7.972,Month,5.979,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00974,5.64,Month,4.23,Month,25%
+Azure Service Bus,Azure Service Bus,,ITEM-00975,5.515,Month,4.136,Month,25%
+Azure Cosmos DB,Azure Cosmos DB,,ITEM-00976,45.779,Month,34.334,Month,25%
+Azure SignalR Service,Azure SignalR Service,,ITEM-00977,31.913,Month,23.935,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00978,6.343,Month,4.757,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00979,46.51,Month,34.883,Month,25%
+Azure Traffic Manager,Azure Traffic Manager,,ITEM-00980,0.197,Month,0.148,Month,25%
+Azure Batch,Azure Batch,,ITEM-00981,7.295,Month,5.471,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-00982,16.975,Month,12.731,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00983,49.677,Month,37.258,Month,25%
+Azure Arc,Azure Arc,,ITEM-00984,15.619,Month,11.714,Month,25%
+Azure Front Door,Azure Front Door,,ITEM-00985,39.497,Month,29.623,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00986,22.743,Month,17.057,Month,25%
+Azure Data Factory,Azure Data Factory,,ITEM-00987,3.952,Month,2.964,Month,25%
+Azure Blob Storage,Azure Blob Storage,,ITEM-00988,39.098,Month,29.323,Month,25%
+Azure Backup,Azure Backup,,ITEM-00989,14.942,Month,11.207,Month,25%
+Azure Event Hubs,Azure Event Hubs,,ITEM-00990,35.227,Month,26.42,Month,25%
+Azure Load Balancer,Azure Load Balancer,,ITEM-00991,0.829,Month,0.622,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00992,6.907,Month,5.18,Month,25%
+Azure Cache for Redis,Azure Cache for Redis,,ITEM-00993,42.703,Month,32.027,Month,25%
+Azure Databricks,Azure Databricks,,ITEM-00994,31.265,Month,23.449,Month,25%
+Azure Container Instances,Azure Container Instances,,ITEM-00995,31.907,Month,23.93,Month,25%
+Azure Site Recovery,Azure Site Recovery,,ITEM-00996,33.982,Month,25.486,Month,25%
+Azure ExpressRoute,Azure ExpressRoute,,ITEM-00997,29.245,Month,21.934,Month,25%
+Azure Spring Apps,Azure Spring Apps,,ITEM-00998,12.668,Month,9.501,Month,25%
+Azure Bastion,Azure Bastion,,ITEM-00999,23.258,Month,17.444,Month,25%
+Azure Firewall,Azure Firewall,,ITEM-01000,13.894,Month,10.421,Month,25%

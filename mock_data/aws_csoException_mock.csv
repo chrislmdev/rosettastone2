@@ -1,0 +1,1001 @@
+ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+EX-26CFEEBE,Amazon CloudFront,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-324B7723,Amazon CloudFront,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E6C5C69C,AWS Glue DataBrew,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7BC90C46,Amazon QuickSight,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4370BB5,Amazon Elasticache,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FDD4F0CC,AWS Fargate,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9977EC5,Amazon EC2,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5C4FAFC4,Amazon MQ,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA75CC0B,AWS Fargate,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE89C077,Amazon EKS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2ECF83E2,AWS Direct Connect,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C27E04D9,Amazon AppStream 2.0,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77DD67A2,AWS Batch,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C57555CB,Amazon DocumentDB,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F5AA2B4,Amazon DocumentDB,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-77BA1C43,Amazon CloudFront,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF0A53F4,Amazon AppStream 2.0,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2CD9617E,Amazon CloudFront,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7937AA33,Amazon Redshift,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C57C122E,AWS Batch,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-97858B4F,AWS Batch,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2F5FF9E8,Amazon API Gateway,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7AA82311,Amazon MQ,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-25357411,Amazon Redshift,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0149BB3D,Amazon Redshift,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3E1DF30C,Amazon RDS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C469B12F,Amazon Redshift,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-06B60737,AWS Lake Formation,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F1453407,Amazon Kinesis,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A86BEDE3,Amazon Kinesis,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51B29042,Amazon DocumentDB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92E2ECF7,Amazon SageMaker,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AE93FF88,AWS Lambda,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6479BC86,Amazon Redshift,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3F112F8,Amazon CloudWatch,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-67102977,AWS Direct Connect,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3DAC6E1,AWS KMS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C809B07E,AWS Elastic Beanstalk,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6DA2E077,Amazon MQ,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CDB5CB49,Amazon RDS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-817CD91E,Amazon Lightsail,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F53754A4,Amazon MQ,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-007FAB5A,AWS WAF,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-26ACF473,AWS IAM,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F7B9CC1,AWS Fargate,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1CD324FF,Amazon RDS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FAB6659,Amazon EKS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-32285B89,Amazon S3,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-028C9142,Amazon SNS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EED2E98A,AWS KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E1676F9,AWS Glue,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB81C65F,AWS Batch,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-05564BCB,Amazon SageMaker,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A88F740,Amazon Route 53,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D4E1EFB,Amazon Route 53,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-40B00522,AWS Lake Formation,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-41D794BC,Amazon QuickSight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CCB29768,Amazon CloudFront,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-64ECB902,AWS KMS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5DE92183,Amazon Redshift,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-792C906B,AWS Lake Formation,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6200F0AD,Amazon Athena,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3744C3E,Amazon DynamoDB,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E1DD9FC9,Amazon API Gateway,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E4AFD4B7,Amazon DynamoDB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-11726E1A,AWS Step Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1126B25C,Amazon QuickSight,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5C79294E,AWS KMS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28017360,Amazon Neptune,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E3D9AD3,AWS Lake Formation,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF9297B6,Amazon Athena,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-70187D4C,AWS AppSync,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE98ADDF,AWS Direct Connect,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2DE230A6,AWS Step Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-53623CAF,Amazon Neptune,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D80B3EEF,Amazon SageMaker,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AA9D1FBD,AWS AppSync,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-692A892A,AWS Fargate,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E288AC09,AWS WAF,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-50A92875,Amazon S3,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-05987023,Amazon WorkSpaces,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E6822BE,AWS Amplify,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C89D6FDA,Amazon MQ,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-35D46BCE,Amazon SageMaker,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EDCC1F4D,Amazon QuickSight,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5339BB8F,AWS Lambda,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7778AD3,Amazon Lightsail,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B907B87,Amazon DynamoDB,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CB911D83,AWS KMS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4203F707,Amazon Neptune,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-37C86B18,Amazon Aurora,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FA91E2E3,AWS Direct Connect,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D2D01F9,AWS IAM,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2986839C,Amazon CloudFront,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FBEADC50,Amazon Aurora,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B7F17E7F,Amazon Athena,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AF204D4C,AWS Batch,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E5FC166E,AWS Fargate,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9157051,Amazon API Gateway,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E03564E0,Amazon VPC,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-33EAE179,Amazon WorkSpaces,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-507C2ABC,AWS WAF,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FFA81946,AWS Elastic Beanstalk,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3BDEF46,Amazon Route 53,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0EDD9310,Amazon DynamoDB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6750273C,Amazon ECS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8D24178C,Amazon S3,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B9FA97E6,Amazon Elasticache,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-88A1096E,Amazon EKS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DFE91527,AWS Direct Connect,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5469C4AA,Amazon SQS,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23B67DD5,Amazon S3,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A3A0CE3D,Amazon EKS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C09AB0AD,Amazon AppStream 2.0,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EB31FBC2,Amazon Neptune,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A01080F,AWS IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F1872332,Amazon MQ,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4605BAE7,Amazon RDS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-272E40B9,Amazon Lightsail,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DE9682EB,Amazon EKS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4111B4BD,Amazon QuickSight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-99D98ADB,AWS Glue DataBrew,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-60C03248,AWS Glue,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5FD29D32,AWS Fargate,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7600EA10,AWS Amplify,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7D673D7,AWS WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A77177B2,AWS Lake Formation,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B60588A5,AWS IAM,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5866E4D1,Amazon Aurora,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3019A18,Amazon Route 53,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36059EB6,Amazon Route 53,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B91A3ED,Amazon EKS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D66FE99A,AWS Lake Formation,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-221B578F,Amazon API Gateway,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4492B2A,AWS Amplify,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9CAD80A,Amazon Lightsail,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8632B46B,Amazon SNS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87C51F7A,AWS Batch,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-35C70526,Amazon API Gateway,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54545929,AWS AppSync,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B4DDC250,AWS Lake Formation,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6913D6F4,AWS Glue DataBrew,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A670B81,AWS Lake Formation,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EE0651E3,Amazon API Gateway,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-018DB4D1,Amazon S3,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51F63E28,AWS Step Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B47BBA60,AWS AppSync,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FFE46916,AWS IAM,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4FB1603B,Amazon S3,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E4100CC,AWS Step Functions,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-000A9A6A,Amazon Elasticache,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9AEA6049,Amazon AppStream 2.0,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-18C6A6E4,AWS Lambda,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94C2E3A8,AWS Lambda,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7EEDC8D9,Amazon EKS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B88EBA28,AWS KMS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3EE59EDA,Amazon DocumentDB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-642A0121,Amazon VPC,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B38EC247,Amazon RDS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-926E029F,Amazon Neptune,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-16EF84C4,AWS Glue,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA29A8A0,Amazon Redshift,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C8CB088,AWS Glue,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E787C62A,Amazon Elasticache,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F0D79E34,Amazon CloudFront,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C49636A,Amazon Elasticache,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75578625,Amazon Kinesis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4DAED19D,AWS Amplify,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3CDD3FF0,AWS Amplify,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BDECF661,Amazon SageMaker,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E2A58B34,Amazon DynamoDB,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C9749CBE,Amazon ECS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B79717F1,Amazon SQS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4C19AE60,Amazon DocumentDB,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D632618E,Amazon Elasticache,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA6D46DE,Amazon SageMaker,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A907CCB,Amazon Athena,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6A7AA8AC,Amazon QuickSight,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-56169B04,AWS Direct Connect,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D87F0402,Amazon WorkSpaces,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-06970825,AWS Direct Connect,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9D24A9E,Amazon DocumentDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3D860657,Amazon CloudFront,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0B64D416,Amazon Route 53,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-774E1328,Amazon EC2,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-74F3E4AD,Amazon MQ,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87681057,Amazon Lightsail,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D708288A,Amazon Neptune,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C58278C,Amazon EC2,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F0A44ACE,Amazon DocumentDB,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D51F469,Amazon Neptune,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EECA350C,Amazon Athena,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B0370E3A,AWS Step Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9C012DFB,Amazon CloudWatch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CCB39FFB,Amazon EC2,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-888746C8,Amazon SQS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BEC1B0AA,AWS Glue DataBrew,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B035AB97,Amazon Redshift,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E17AB173,Amazon QuickSight,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F90F8198,Amazon Neptune,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B6452C5,Amazon RDS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D8B0158E,AWS IAM,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-395286B7,Amazon SQS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA88FC91,AWS Lambda,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-134BF6F1,Amazon CloudWatch,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0AA8C4F,Amazon Elasticache,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1F2FC52E,Amazon WorkSpaces,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B97A685A,Amazon Route 53,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-37B04CB0,Amazon ECS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-958D9F3F,Amazon QuickSight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB22028F,AWS Step Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C5391DFF,Amazon EC2,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BDCD560D,Amazon Athena,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-26C7C529,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-16062B03,AWS AppSync,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CFE8B187,Amazon SQS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4EBEE798,AWS Lambda,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8EF41EC9,Amazon WorkSpaces,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B822588,Amazon Lightsail,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B9F692D2,AWS Lake Formation,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-38464A10,AWS Glue,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A19A5BA7,Amazon Kinesis,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A337BCBA,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C03A9A3,Amazon CloudFront,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9CA740FE,AWS IAM,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76158222,Amazon Kinesis,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF8BE518,Amazon ECS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C125B844,Amazon SNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C066D2D,Amazon AppStream 2.0,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EE5C1BA9,Amazon Route 53,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF7A26E9,Amazon Athena,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ABE86C81,AWS Lambda,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F391A1FF,AWS Step Functions,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54EFB8C9,Amazon AppStream 2.0,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78DF7693,AWS Step Functions,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78BDE319,AWS Step Functions,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-17F9B304,Amazon Route 53,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78EEA31E,AWS Glue,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F98AC6CD,Amazon DocumentDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87800E95,AWS Direct Connect,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E701913,Amazon DocumentDB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C74C71BD,AWS Direct Connect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CCBECE69,Amazon DynamoDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E11C6DC,AWS Lambda,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E2A5FB71,Amazon EC2,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-16EC81E6,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-020888AB,Amazon AppStream 2.0,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-276ED85A,Amazon Athena,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54D8495C,AWS Batch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9C88090A,Amazon WorkSpaces,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-85286DB0,Amazon CloudWatch,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C907AEFD,Amazon Lightsail,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6E2AEBD0,Amazon Elasticache,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA43938A,Amazon Lightsail,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8CA83FB3,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0BEE4D69,AWS Batch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C401209B,Amazon WorkSpaces,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-848FF283,AWS WAF,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-919DD159,AWS Batch,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-56765534,AWS KMS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F309555,Amazon Elasticache,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7FE22C77,AWS WAF,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5E8382E5,Amazon Lightsail,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D9861899,Amazon Elasticache,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-569A23E0,Amazon DocumentDB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BA0BAFED,AWS Elastic Beanstalk,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA37B0E3,AWS Elastic Beanstalk,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-43FAADBE,Amazon EKS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8C2BCD8,AWS Lake Formation,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D3BB7EDB,AWS IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A772613,Amazon AppStream 2.0,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF5676F2,Amazon API Gateway,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-65B53A23,AWS Amplify,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-551D98F8,AWS Step Functions,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F67FC5AB,Amazon EKS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D93D083C,Amazon Kinesis,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA17ACC1,AWS Lambda,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2836C76F,Amazon Aurora,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7D71549,Amazon Athena,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DEC6A100,Amazon WorkSpaces,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF0CE0E4,Amazon WorkSpaces,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E14CFEBC,AWS Elastic Beanstalk,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49A8ACC5,AWS Batch,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-052A8E36,AWS Lambda,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6CAE33D8,Amazon Aurora,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94E5EEB1,AWS Glue DataBrew,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-761AF543,Amazon WorkSpaces,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48C9F716,Amazon Athena,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3DB2C7E,Amazon Neptune,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23C91EA5,Amazon WorkSpaces,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FEF6F158,Amazon Route 53,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BE490078,Amazon SNS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7A815BC,AWS KMS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-402D61A2,AWS Lambda,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F288AA9C,Amazon S3,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-942329C7,Amazon DocumentDB,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-548FC91F,Amazon SNS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-530BA0A3,Amazon SQS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7EFF9672,Amazon S3,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-91CE88B9,Amazon Lightsail,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-30AF22A9,Amazon Athena,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BBBCFC9,AWS Glue,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DEE992CA,Amazon Kinesis,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1AD77E4D,Amazon Kinesis,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-98CF2BB8,Amazon CloudWatch,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8B39EF26,AWS Glue,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4FBFE53A,AWS Direct Connect,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BEDC3D9C,AWS Elastic Beanstalk,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CD57CB92,Amazon Aurora,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F70F1CB,AWS Amplify,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6EE12690,Amazon SageMaker,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4CA80AF8,Amazon Aurora,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-81D368B5,Amazon Aurora,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8FB1A14,Amazon SQS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87DD00D6,Amazon SQS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C35E0F4D,AWS IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E8FF722,AWS IAM,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3D8837E,AWS IAM,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0132528B,AWS Step Functions,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-344751DC,Amazon Athena,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F6FCCA8,AWS Lake Formation,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B69B7D99,AWS Direct Connect,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-305158F9,AWS Fargate,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C32685B,AWS Elastic Beanstalk,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-721A1EF7,Amazon QuickSight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D4B5135B,AWS Lake Formation,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7F7AC50,AWS Direct Connect,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F6AE55B7,AWS Fargate,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B8AF26A,AWS Direct Connect,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C58D91C0,AWS Direct Connect,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A4E1B70,Amazon SNS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-162D9273,AWS IAM,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE502552,Amazon Elasticache,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D5B5C529,Amazon S3,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-05EBE8C7,Amazon Route 53,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-12BE1E9E,Amazon ECS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1CDC879D,Amazon VPC,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-47EDE13C,Amazon SQS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-72E149BD,Amazon DynamoDB,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B0409D66,Amazon DynamoDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4031E03,Amazon EC2,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78A74FE8,AWS Glue,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B129D92,AWS Amplify,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92F3457D,Amazon SQS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44773CB3,Amazon EC2,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1EFB6AAB,Amazon VPC,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-055373C9,Amazon SNS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F553F5CA,AWS Step Functions,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F76D4229,Amazon CloudFront,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FB139FE,Amazon SQS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5698A830,AWS Glue DataBrew,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E94E7EED,AWS Direct Connect,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7FBA852,Amazon S3,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A9680A97,Amazon Athena,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-01C9B636,Amazon Redshift,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3324FD0E,AWS Glue DataBrew,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A3BA993,AWS Fargate,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E0D64E2B,Amazon Athena,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D873ECC,Amazon DocumentDB,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E910B59C,AWS Elastic Beanstalk,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-68493C23,Amazon DynamoDB,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AB8D4B68,AWS WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-577B5593,AWS AppSync,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E5E2A35,Amazon Aurora,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5665D278,AWS Glue DataBrew,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E7965796,Amazon VPC,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A53A7541,Amazon CloudFront,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-541E6285,AWS Fargate,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FCEF49CC,Amazon Athena,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F534A55E,AWS Amplify,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8ED8CDE,Amazon ECS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-439A33D6,Amazon Route 53,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B893DB39,Amazon Aurora,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-40D8517D,Amazon API Gateway,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-62879D0B,Amazon EKS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE82EF48,Amazon DynamoDB,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C1FA2263,Amazon Route 53,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CFCD1D5A,Amazon Lightsail,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BAA4B85,Amazon VPC,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FAF36CD0,AWS Fargate,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AF1BE344,Amazon MQ,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7AD8B752,AWS Lambda,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C3F9427,Amazon EC2,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-27474511,Amazon EC2,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA1B83F1,Amazon SQS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE138857,AWS Direct Connect,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-04E9ED46,Amazon EC2,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A1C1FFD,Amazon DocumentDB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C0CB9E5,Amazon Lightsail,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76692681,Amazon Athena,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3BF9079,Amazon CloudWatch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8A2413A,Amazon S3,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F871590,Amazon MQ,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B81D0E48,Amazon SNS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9D8EA8DC,Amazon Lightsail,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C71EBB00,Amazon S3,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AFA0836A,Amazon Aurora,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B75F090,AWS Elastic Beanstalk,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E13B0715,AWS Step Functions,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6557AFD2,AWS Direct Connect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6B20C4B2,Amazon VPC,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7548D70D,Amazon Redshift,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4053888F,Amazon Aurora,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1FCB34DA,AWS Elastic Beanstalk,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9B8E059D,Amazon DynamoDB,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FB3E975B,Amazon SQS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A097AE0,AWS Elastic Beanstalk,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F59F8CE5,AWS Lake Formation,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E320757A,Amazon Neptune,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-048503DE,AWS Amplify,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-120F99B3,Amazon VPC,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54C9B643,Amazon Redshift,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-53C4E301,Amazon WorkSpaces,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-839F46B8,AWS Glue,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6DB2377D,Amazon SQS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E6AF9423,AWS WAF,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E068796,Amazon Aurora,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94E87923,Amazon S3,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E58ED6C,AWS Amplify,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-84A63D9D,AWS AppSync,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2FBEAE38,AWS IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A491402,Amazon QuickSight,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F9BCB483,Amazon ECS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-880A3FDA,Amazon Route 53,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF0EBED8,Amazon Redshift,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF3FC532,AWS Elastic Beanstalk,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D5EE7451,AWS Step Functions,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76066527,AWS Glue DataBrew,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-50F5668D,Amazon SNS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F11E3E41,AWS AppSync,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBF79A6D,AWS Fargate,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8CDD565E,AWS Lambda,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-89AA4E03,AWS Step Functions,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8B164129,Amazon Redshift,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E58CDED8,Amazon Redshift,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3E7C9620,Amazon Redshift,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CC432DD0,Amazon Athena,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-415453BA,AWS Elastic Beanstalk,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-96209E4F,Amazon Route 53,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BEEB529D,Amazon Kinesis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0006A802,Amazon Elasticache,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5A0D3C82,Amazon API Gateway,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ED6EDBA9,AWS Amplify,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C376F5FB,Amazon SageMaker,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-686750A5,Amazon DocumentDB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-857BB25E,AWS Amplify,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-29C9A8F3,Amazon Athena,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-72AD760C,AWS IAM,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-84AE5F1A,AWS Lake Formation,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-62CD7DCE,AWS Direct Connect,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AEA10E14,AWS IAM,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-19BE6A41,Amazon MQ,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-84F00FFF,AWS Glue DataBrew,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4373A44,AWS Lambda,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-931D9844,AWS Direct Connect,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-72333CC8,Amazon RDS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-586056A5,AWS IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB757FA7,Amazon Elasticache,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-06442AA7,Amazon DocumentDB,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-32F2D8A3,AWS Direct Connect,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0775AB61,AWS Lake Formation,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FDAB960F,Amazon API Gateway,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EDDBDE40,Amazon CloudFront,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BD5BF70D,Amazon SNS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ACD459F9,Amazon Athena,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DACFC653,Amazon SQS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7987989,Amazon Kinesis,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9AE6F372,Amazon SQS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-45C7EA2B,Amazon DynamoDB,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0EA17D3,Amazon AppStream 2.0,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9CA3313D,Amazon RDS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-50B807A5,Amazon DocumentDB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3FC4579,Amazon CloudWatch,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D461382B,Amazon S3,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F6327F7B,Amazon Athena,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90925949,Amazon Elasticache,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-770A52E5,Amazon Aurora,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D62A3A50,Amazon EKS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44B0C9F5,AWS Step Functions,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B86582E9,Amazon Redshift,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-89F4CD9C,Amazon Neptune,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5DFFF01,AWS Fargate,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0BC87EE2,Amazon SQS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E8E148C3,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D0BF45CE,AWS Lambda,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBA82919,AWS KMS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A2103A8B,AWS Lake Formation,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D832924,Amazon Kinesis,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AD3E6660,Amazon ECS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-42CCC804,AWS IAM,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83B90816,Amazon EC2,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B3C9E833,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-541F10A9,Amazon DocumentDB,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A17F0D5,Amazon Route 53,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-13E3B98D,AWS AppSync,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-43147B52,AWS Step Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DAD50140,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4FEC6268,Amazon DynamoDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9BFEA7C1,AWS Lambda,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-96B9BF9C,AWS Glue DataBrew,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7DD3CB5C,Amazon Redshift,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1E65126B,Amazon Neptune,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-010DCB8B,AWS IAM,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B166E209,Amazon EKS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F14DD6BB,Amazon S3,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B2DC6825,Amazon DocumentDB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7E38914C,Amazon SageMaker,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A1A9B88,Amazon QuickSight,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D382CD79,AWS Direct Connect,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8F6E4AD,Amazon SQS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6369F5C6,AWS IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F62FE49,Amazon CloudWatch,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-18D6DA64,Amazon DynamoDB,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-352F67A6,Amazon Route 53,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7F08AC9,Amazon DynamoDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4165CB1,AWS KMS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-064EA520,AWS Amplify,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9206AA21,Amazon CloudFront,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A04CD7C,Amazon API Gateway,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A70FC41A,AWS IAM,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-222BAD37,Amazon Redshift,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E36DF118,AWS Amplify,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-97A53AB6,AWS Batch,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-140B4A3D,Amazon Athena,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BCFD231C,AWS Lake Formation,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-817B5DE4,AWS IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-83751877,Amazon SageMaker,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92AC3A52,Amazon Route 53,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-13567B59,Amazon S3,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EB5AAB27,AWS WAF,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A8540BCA,Amazon CloudFront,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DDDE57A3,AWS Lambda,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CB07585,Amazon API Gateway,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D4F13581,AWS Glue,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A3AE5AA,Amazon SageMaker,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F33AD0C3,Amazon S3,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44E37845,AWS Lake Formation,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DC724C86,AWS Lake Formation,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F7FD719,AWS Fargate,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-14E83B70,AWS Glue DataBrew,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4DAB72AB,AWS Lambda,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1FC1B7C2,Amazon Route 53,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3AB836A8,AWS Glue DataBrew,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0DCE2B60,AWS Glue DataBrew,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8027D4CF,Amazon VPC,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FDCFB26B,AWS AppSync,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8220AEA0,AWS AppSync,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1DB74739,AWS Lambda,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0FC86B6F,AWS Amplify,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D642F8AE,Amazon Athena,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BFAFF677,Amazon API Gateway,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-373C450F,AWS Amplify,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1CEE8EA3,AWS Elastic Beanstalk,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D232CAE,Amazon DynamoDB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4171916C,Amazon Aurora,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B7816A9,AWS Step Functions,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E1CA14F4,Amazon QuickSight,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-018274D4,AWS IAM,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F899A14,Amazon Route 53,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4E493F5C,Amazon DocumentDB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F4686076,Amazon ECS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3F8FF414,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-454CC292,Amazon Neptune,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E27C8D06,AWS IAM,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-17978574,AWS AppSync,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-26B04697,AWS Amplify,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A7AC44C,Amazon DocumentDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-75D8922A,AWS Glue,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B4D86CCF,Amazon SageMaker,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49BAB28B,Amazon AppStream 2.0,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E328A4A9,Amazon QuickSight,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FDD433EC,Amazon SageMaker,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1DCAB8F2,Amazon QuickSight,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78D3179E,Amazon Athena,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-607EB72E,Amazon Lightsail,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-869666B4,Amazon ECS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DC1F512A,Amazon Redshift,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0CA46649,AWS Direct Connect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-439E2F42,Amazon AppStream 2.0,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-122D150C,Amazon Lightsail,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6FE5CC75,Amazon Aurora,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4526176A,Amazon ECS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-280D720F,Amazon CloudFront,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-20AF4110,Amazon Athena,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5059E867,Amazon MQ,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A97B6E4,Amazon Lightsail,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-88AFEBFB,Amazon WorkSpaces,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E145946,Amazon API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D65D478,Amazon DocumentDB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B46F7A9B,AWS Direct Connect,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-425DFCC9,Amazon DynamoDB,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-699141B0,Amazon MQ,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-477C0902,Amazon ECS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-10903C84,Amazon SNS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D097CC0,AWS IAM,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5330416,AWS Lake Formation,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9C8ECAE9,Amazon CloudWatch,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ACE67881,AWS Elastic Beanstalk,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B7A182F1,Amazon EKS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0B1A926D,AWS IAM,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FBF7CF3F,AWS Step Functions,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-330464D8,Amazon CloudFront,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1BD53027,Amazon ECS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E626EF3,Amazon Route 53,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B16FF209,AWS Glue,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F041C91,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F7EB4C3,Amazon EKS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87F47EB1,AWS AppSync,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-81AD8B91,Amazon CloudWatch,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-62D1D1C7,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F513093E,Amazon Redshift,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3DB05623,AWS Lake Formation,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D2CB49CC,AWS Fargate,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-56687960,Amazon CloudWatch,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FFA0BB81,Amazon Aurora,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B1DF85D9,Amazon S3,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31B7465B,Amazon Redshift,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EF978E0C,Amazon ECS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A2F187C,Amazon MQ,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1121B37F,Amazon Neptune,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBCB88D9,Amazon DynamoDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DC2526D1,Amazon SQS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78D37D1B,Amazon Kinesis,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B7C1C1DC,Amazon VPC,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6689000E,Amazon WorkSpaces,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1D7B0315,AWS Step Functions,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9F11D00D,Amazon VPC,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-21FFD45A,Amazon Kinesis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BDE85906,AWS IAM,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FDDD5F9,Amazon Elasticache,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FCC27867,AWS Amplify,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4D4944EE,Amazon Aurora,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F93EEF47,Amazon SNS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94770A88,Amazon Lightsail,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9ED469AF,Amazon Athena,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-417FD850,Amazon Kinesis,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C6F91A7,Amazon RDS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-934AA6A2,AWS Step Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44A83BED,Amazon EC2,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-588E85EA,AWS WAF,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5CF096FF,Amazon VPC,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A4C9563,AWS Step Functions,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B294DD9E,Amazon ECS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9BC07233,Amazon ECS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6B03015C,AWS IAM,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0F47CE48,Amazon S3,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-24379C8C,Amazon AppStream 2.0,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A3D9C39B,Amazon Neptune,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BFF8B7BA,AWS Elastic Beanstalk,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51205B93,AWS IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-497881AB,Amazon Neptune,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6C556E29,Amazon CloudFront,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-01E91754,AWS Step Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4983050B,AWS Lake Formation,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D8FBFEDD,AWS Direct Connect,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-32FA5BCE,Amazon Neptune,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-306C817A,Amazon CloudFront,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B14D9ED,AWS Lake Formation,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9332DB74,Amazon DynamoDB,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3A6DF43A,Amazon CloudWatch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-59C029C7,Amazon VPC,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-58B6CDA4,Amazon Athena,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5322922E,AWS Direct Connect,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D5D8DD8F,Amazon SQS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2714282D,Amazon EKS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9126FC40,Amazon SageMaker,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8BF1D3E0,Amazon SNS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0AAD6A68,AWS Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B538A8E,Amazon Lightsail,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-378B75B5,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FD6A05E2,AWS KMS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C7D40596,Amazon Lightsail,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-78373872,Amazon CloudFront,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5B37E8CE,Amazon Kinesis,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B2DD0609,Amazon Aurora,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FE77966A,Amazon Lightsail,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A73A3099,AWS AppSync,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C05B4E9F,Amazon Athena,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FADCC631,AWS Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3C315511,Amazon AppStream 2.0,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E49D6103,AWS Elastic Beanstalk,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-95C81BA6,Amazon Kinesis,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E846C537,Amazon Kinesis,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48DED447,AWS Lambda,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-51638C07,Amazon Redshift,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90103AAC,Amazon AppStream 2.0,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A5B7F22,Amazon S3,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-74A6E15B,Amazon WorkSpaces,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2F929F52,Amazon Route 53,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9B9300DA,Amazon CloudFront,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E7722EA4,AWS Direct Connect,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0D46ACB4,Amazon Elasticache,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F9A11B87,Amazon API Gateway,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D74A04C7,Amazon CloudWatch,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA1F1DA7,AWS KMS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-972F1929,Amazon DynamoDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C7FF3E2,Amazon AppStream 2.0,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E82069E0,Amazon S3,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FF6C9AEB,Amazon Lightsail,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C9553E69,AWS WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7210142B,Amazon DocumentDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-04FDC5C3,Amazon EKS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-34379197,AWS Fargate,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-37674495,Amazon Athena,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B8580649,Amazon Athena,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6EF566F3,AWS AppSync,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-554AE579,Amazon AppStream 2.0,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-892476EB,Amazon Route 53,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7C285F9F,AWS KMS,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-94696E54,AWS Fargate,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-98F5F59D,Amazon VPC,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E97C6918,Amazon Neptune,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6464A276,Amazon S3,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CBF77C7E,Amazon API Gateway,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BAA9547,Amazon EC2,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-09514074,Amazon SageMaker,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-668A5963,Amazon S3,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ABA04522,Amazon S3,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-24E6F900,Amazon WorkSpaces,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-56E5B4B1,AWS IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-92CA03AD,Amazon API Gateway,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BBE4328A,AWS Amplify,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B591C62,AWS Lambda,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2E74D339,Amazon SQS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D5FE4837,Amazon Redshift,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1B9184BE,Amazon Redshift,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CAA0910C,AWS Glue,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CF85FE84,AWS Elastic Beanstalk,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-90B415D0,Amazon WorkSpaces,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D1676AC7,AWS Glue DataBrew,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BE904C5,Amazon AppStream 2.0,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA5DA281,AWS Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F7536B8F,Amazon Redshift,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B50A083B,AWS Elastic Beanstalk,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-31813D04,Amazon Elasticache,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2887EC51,Amazon DynamoDB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5BDE1467,Amazon RDS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F6EAD5A3,Amazon EKS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48B24F2E,Amazon DynamoDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54EAA667,AWS AppSync,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CBBE88E4,AWS KMS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0395E3B6,AWS WAF,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-06330BB8,Amazon QuickSight,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4E6F1118,Amazon Lightsail,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E25D2F2F,AWS Lambda,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EE549C95,AWS IAM,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-666DA930,Amazon DocumentDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE73E132,AWS Fargate,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-52C12C8C,Amazon SQS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C8D737D3,AWS KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-00E2775C,AWS Elastic Beanstalk,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-015F11D0,Amazon Route 53,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0A88A3F6,Amazon Aurora,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4277E094,Amazon Elasticache,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A7F840E,AWS AppSync,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B43AA705,Amazon Athena,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6249E9B5,Amazon Redshift,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFF0C45C,AWS Elastic Beanstalk,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FFDEBFE3,AWS Elastic Beanstalk,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-289B712F,AWS WAF,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-52E594CE,Amazon Kinesis,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5804036F,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-03753921,Amazon API Gateway,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9E921699,Amazon EKS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3BEE832C,Amazon DocumentDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F9E1E916,AWS Amplify,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-71CD8489,Amazon Lightsail,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7F4586E6,Amazon Route 53,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3376AD56,AWS Fargate,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BDFCD726,Amazon EC2,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-43795345,Amazon DynamoDB,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1A39CAC9,Amazon Lightsail,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-643E4F8C,Amazon AppStream 2.0,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-923DC434,AWS Glue,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1BCE765E,AWS Batch,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7EE0C83D,AWS Lambda,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3AE3C99,Amazon SNS,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4CA6B463,AWS Fargate,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-914132AE,Amazon QuickSight,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-43333DD5,Amazon Elasticache,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7824B656,Amazon Kinesis,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E3A6731C,AWS Lambda,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-190443D3,Amazon DynamoDB,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-62C56288,AWS Amplify,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-49FDE10E,Amazon Neptune,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C3DC5A35,Amazon EKS,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0C531F15,Amazon EC2,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3168E451,Amazon Route 53,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-21E59CFF,AWS WAF,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4B2319D2,Amazon MQ,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DAD01DFB,Amazon VPC,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-373CE851,Amazon Kinesis,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-69F4F088,AWS Lambda,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FC07FEF8,AWS Batch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7D9EE4FF,Amazon SageMaker,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F63FF78,Amazon MQ,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F1D09742,AWS KMS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7820804F,Amazon ECS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2CE89E38,AWS Amplify,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FE44AA2,AWS Lambda,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0DE9E1E9,Amazon Kinesis,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DF4D2179,Amazon Redshift,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-891D6799,Amazon API Gateway,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9FF01D09,Amazon DynamoDB,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-152E8FD3,Amazon API Gateway,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C17F095,Amazon MQ,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2064CDB1,Amazon RDS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E4CF8799,Amazon Neptune,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9420EE37,Amazon Lightsail,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5EC8336A,AWS Direct Connect,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3BFC74DC,Amazon API Gateway,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7B44717D,Amazon CloudWatch,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5EDA5553,Amazon SNS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A320CFB,Amazon S3,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4D6AB997,Amazon ECS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A4E4EFB3,Amazon DocumentDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F5DD614E,Amazon DynamoDB,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F1AF8469,AWS Lambda,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-325A5564,AWS Fargate,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-11C26F18,Amazon Kinesis,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-45D764B2,Amazon WorkSpaces,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2C523284,AWS Lake Formation,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48CACB31,AWS Batch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F570E6C,AWS Glue DataBrew,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AA744847,Amazon MQ,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8A45D651,Amazon Kinesis,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D7792504,AWS Amplify,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7D1F69F2,Amazon CloudFront,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E5520F6,Amazon EKS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2DB7DA99,Amazon Kinesis,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-23B3A6B6,Amazon SageMaker,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87300B81,AWS WAF,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7E29C380,Amazon S3,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DFFE06D2,AWS WAF,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF8441C9,Amazon SageMaker,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-01C45FF9,Amazon SNS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5F91586A,Amazon API Gateway,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B52A776F,Amazon QuickSight,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C72F123F,Amazon RDS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B19F5DC,AWS Fargate,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-93F2B3D6,AWS IAM,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFB54CEB,AWS Step Functions,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B749069C,Amazon Neptune,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6E77EB2D,AWS IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-26572759,AWS Lambda,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D621B567,Amazon Aurora,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6DF009E1,AWS Fargate,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DCD4A0C6,Amazon ECS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1FB55351,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-84AF82A5,AWS Amplify,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CE483BD5,Amazon EKS,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-36ED07B6,AWS Elastic Beanstalk,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-616C5E48,Amazon Route 53,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A81B24FF,Amazon Aurora,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44020C03,Amazon EKS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C91BA86F,Amazon QuickSight,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-61D3C0FF,Amazon SageMaker,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6D4A995D,Amazon EKS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F23FBC67,Amazon MQ,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1DDAE72F,Amazon ECS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-166642A9,AWS WAF,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C47358ED,Amazon Neptune,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-579873CC,AWS Glue DataBrew,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2674FCA4,Amazon DocumentDB,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-04619CBE,Amazon VPC,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DD5CE5ED,Amazon RDS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-045C4A95,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFD25AF0,AWS AppSync,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BDC0B06A,Amazon AppStream 2.0,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2CADE90A,Amazon Elasticache,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-527E14B5,Amazon Redshift,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A972A048,AWS IAM,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E6CD93C9,AWS Step Functions,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A9C5A7CD,Amazon WorkSpaces,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2EBEED2D,AWS Direct Connect,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6B0CF9F4,AWS Glue DataBrew,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-778E2D1D,Amazon MQ,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F34407A6,Amazon DocumentDB,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8DE576AA,Amazon Route 53,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F55FBEE4,AWS Lake Formation,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-70A85B83,AWS Step Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5533CF96,Amazon Lightsail,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-20417C14,AWS Fargate,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-66D7CEAE,Amazon CloudFront,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5CAEA1E1,Amazon CloudWatch,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-FDA9DECE,Amazon EKS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8682D8DF,Amazon CloudWatch,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C870C44,AWS Direct Connect,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C629685E,Amazon Athena,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9223685A,Amazon API Gateway,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CAD8E320,Amazon Elasticache,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A9BB6764,Amazon RDS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-973A1A0E,Amazon Neptune,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8D3DF75D,Amazon S3,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2DD2DA1B,AWS Step Functions,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D264E1EF,Amazon CloudFront,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E1221696,Amazon EC2,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-408FC694,AWS Elastic Beanstalk,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7A0B7707,Amazon Athena,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EA8B9198,Amazon SageMaker,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2A4B3355,Amazon API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8ACBD642,Amazon QuickSight,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3E3328E,Amazon ECS,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-298FCD8D,AWS Glue,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A68D9E0F,AWS WAF,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-AD6F35DE,Amazon EC2,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DA565DEE,AWS IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-67FED81D,AWS Fargate,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E6470799,Amazon Elasticache,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D35A3EF7,Amazon CloudFront,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F14AB00A,Amazon SageMaker,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-748C5F96,Amazon CloudWatch,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C2094E7E,Amazon RDS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-923DDCE3,Amazon CloudFront,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80DE91D2,Amazon DocumentDB,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D38F1295,AWS Direct Connect,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9A6A4E5E,AWS Elastic Beanstalk,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-08A44357,AWS Batch,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F2E08180,Amazon API Gateway,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8EE3EC5D,AWS Fargate,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6301600C,Amazon Neptune,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DB9440D2,Amazon SageMaker,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-DBE3C6EA,AWS Glue DataBrew,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4E07A2B5,Amazon CloudWatch,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-44AA80D4,Amazon Elasticache,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-14450289,Amazon EC2,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5539741F,Amazon EC2,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-243750DB,Amazon DocumentDB,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B7D52985,Amazon SNS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6CB14698,Amazon SQS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-63C702C3,AWS KMS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-C279960E,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-921E285E,Amazon DocumentDB,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8E018252,Amazon SageMaker,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-54C82183,AWS Glue DataBrew,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-87B93D94,Amazon CloudFront,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-10146729,Amazon WorkSpaces,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-15B80F4F,Amazon VPC,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3EAE0778,AWS Step Functions,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-80216B6B,Amazon Elasticache,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E4896003,Amazon VPC,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4A66B7C5,Amazon EC2,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0887BB9D,Amazon SageMaker,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-8F015D7C,Amazon MQ,IL2|IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-E9BDA821,Amazon Elasticache,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-7C1B9CC5,Amazon Neptune,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-76CCC650,Amazon DocumentDB,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-754910B1,Amazon Neptune,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-3C91B470,AWS Batch,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0B17CAE1,Amazon Aurora,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-145D817D,AWS Lambda,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-D893E75E,AWS Glue,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-97EE756E,AWS Glue DataBrew,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-337F9F01,Amazon WorkSpaces,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5D91D504,Amazon MQ,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BB5E2CC6,AWS Batch,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-ED524A23,AWS AppSync,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-386E9E42,Amazon SQS,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-BF598200,AWS Batch,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-016E3A47,Amazon SQS,IL4|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6318B9AC,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CA74CA83,Amazon DocumentDB,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-649D0E47,AWS Glue,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F3BE8F93,Amazon MQ,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-50C7C7E3,Amazon DynamoDB,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28086AE2,Amazon Redshift,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-323CF7F7,Amazon RDS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-28528937,Amazon API Gateway,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-139D8E1A,Amazon Redshift,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6BA46691,Amazon ECS,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-48445DE5,AWS Lake Formation,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2451CE50,AWS Batch,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1C051545,Amazon Lightsail,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-79911896,Amazon WorkSpaces,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4AE23B22,Amazon DynamoDB,IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F8FEFDF0,Amazon RDS,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-B4CAC7B5,Amazon MQ,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2B645A87,Amazon SageMaker,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4237D40D,Amazon DocumentDB,IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFF7C728,Amazon DynamoDB,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-EFCC2E48,AWS Elastic Beanstalk,IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-661DBE8C,Amazon Redshift,IL2|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-9C9FDCBE,Amazon API Gateway,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-4F03960D,Amazon VPC,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6F25CA37,AWS KMS,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-633DD65F,AWS Step Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-A7E6B318,Amazon ECS,IL2|IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1736537C,AWS Batch,IL2|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-2D36E193,Amazon EKS,IL2,Approved,Section 5.3.1,Regulatory compliance,High
+EX-5FB6CF0B,Amazon API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-1FDBE23A,Amazon MQ,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-CB37F317,Amazon Neptune,IL4,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F363F8D4,AWS Step Functions,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-32FC39A3,Amazon ECS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-35684FEA,Amazon RDS,IL2|IL4|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-6B6FB89F,Amazon AppStream 2.0,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-F89D2366,Amazon RDS,IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-0E2CCB54,Amazon SQS,IL5|IL6,Approved,Section 5.3.1,Regulatory compliance,High
+EX-25743489,Amazon ECS,IL2|IL4|IL5,Approved,Section 5.3.1,Regulatory compliance,High
+EX-13C66D11,Amazon SNS,IL5,Approved,Section 5.3.1,Regulatory compliance,High

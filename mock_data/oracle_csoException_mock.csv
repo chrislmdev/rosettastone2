@@ -1,0 +1,1001 @@
+ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
+EX-ORCL-534176A0,Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-53F3EA8F,Streaming,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-50FD1CA0,Data Safe,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9A91D534,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AD8A88C9,OKE,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5BF0711B,Data Flow,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0C9787F4,KMS,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-99386E56,API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F24ED72D,Block Volume,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-137DF53C,Data Safe,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A9643338,VCN,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-596005B0,KMS,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5851D4F7,FastConnect,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DE6890AF,Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BBA0C67B,Block Volume,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-65823066,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-37904FFF,IAM,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1D17B9BF,Object Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6680FD10,Block Volume,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1CA453FD,VCN,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4C1F8A0D,Functions,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E60874AC,Autonomous Database,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-29529944,VCN,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3063E92C,FastConnect,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-94EE2118,Logging,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C81DFD57,Logging,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-13B22050,KMS,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-34B773C5,Data Flow,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DDF82851,Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C21B7733,FastConnect,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7AB9C963,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-63082F51,Block Volume,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-679FE569,Object Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F9A05D5C,Autonomous Database,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9F36C66F,OKE,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E2E478A4,VCN,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-903E03B7,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FFAE8231,Object Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0BE3A90E,Autonomous Database,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1F276807,OKE,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D367F9F9,Streaming,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-22641DE6,VCN,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8199C412,VCN,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D3B0FC06,Monitoring,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CB7F83BC,Exadata,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-05E04876,Autonomous Database,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-78F5290E,API Gateway,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2291FEBB,Load Balancer,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-545C93DC,Compute,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F3071F0E,Data Flow,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0315980E,Load Balancer,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3CC5C556,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BF5CF66F,FastConnect,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8E7C3529,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8E537ED4,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4E44A7D3,VCN,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8E394740,API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2B9BD749,FastConnect,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CAF522C0,FastConnect,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8B8BED74,Data Safe,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FAF5AB79,Data Flow,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-41FC603B,Functions,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-95A51038,WAF,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-67FD9E14,Data Safe,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-58B88F42,Exadata,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-86DE5E0A,FastConnect,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BD674C86,Logging,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FB71CC79,OKE,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-84D85816,Object Storage,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9945A7A7,Exadata,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CB175A3C,WAF,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A1DB953E,API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1815BA13,API Gateway,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6E27E154,Data Flow,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-74C15DD6,Data Flow,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-35567A5E,Data Safe,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-88CBDEE4,OKE,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D8A118B3,IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F23B276A,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-96F7DAED,Data Flow,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F9957C3A,Big Data Service,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8074BF72,VCN,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E236A2C6,KMS,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4E047B87,Streaming,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-116E68F1,FastConnect,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-77B05CD5,Big Data Service,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C182526B,WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AD82104A,Monitoring,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A53CF96A,Data Safe,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-41E6AD10,Object Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D9298C4B,KMS,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-67C0C5CF,Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0F90D3C9,Load Balancer,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-631DBC0B,Exadata,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-50363871,KMS,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9D738377,Compute,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FAAD99F2,Monitoring,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A055839A,IAM,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E57BFB40,Object Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-47C16508,Compute,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4F6EEA67,Block Volume,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5CCE4D9A,Compute,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D678CF80,Data Flow,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-20CF1438,Compute,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C997F7CC,FastConnect,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FE2D33EA,Data Flow,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A3D4B196,WAF,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B987CC19,FastConnect,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1A7F1BB7,IAM,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CCEB3B06,VCN,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E134172A,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-886FD26C,Data Safe,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EAD62A88,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CC5A3204,Big Data Service,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9B2DE903,Streaming,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-98D8FE99,Object Storage,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C2E9175E,IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A4F1F58A,WAF,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3BF58207,Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-80F11E2C,IAM,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-94E413AD,API Gateway,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CB42808C,Big Data Service,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5214B621,WAF,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F25A9A9D,Big Data Service,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DEF2ADDD,VCN,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-88A7EA22,Object Storage,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-09E2539A,IAM,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-679A9B0A,Monitoring,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F967F46B,Data Flow,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EEF95899,Big Data Service,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C70B7CC4,Data Safe,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E8B9B618,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4A5A2695,IAM,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F25FA41F,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-537E8D74,Data Flow,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-26A9A946,IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CDCB28F6,FastConnect,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-84EE91D6,IAM,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D7EC94C5,Block Volume,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AAFAEC09,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E1851611,IAM,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0E1F42F0,Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A745FEAF,Streaming,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2D03330F,Monitoring,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3C1E11A8,Logging,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-78F5B6A0,Autonomous Database,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C8260870,WAF,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-16D52397,API Gateway,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DD2CB170,VCN,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C5234319,Functions,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-212CF7B4,Data Flow,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-350F4574,Big Data Service,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B89F6E83,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3966D295,Object Storage,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E43F5723,KMS,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-32865A12,API Gateway,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E1D8A089,OKE,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-971D554C,Block Volume,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9F0DA110,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8473EDFC,Streaming,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-353DEDFE,Monitoring,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-38500FFC,FastConnect,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-49719768,Autonomous Database,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-27CD6169,Exadata,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-939A749E,VCN,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C772C31B,Object Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B245DC40,Object Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D6FD6460,Monitoring,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-072FCC92,Object Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-548614FA,Functions,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-27FEE2B0,Autonomous Database,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9137400A,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-72DF42D4,Compute,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C5989301,Load Balancer,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B2C108CC,VCN,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C26B2555,Streaming,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-92808E10,Compute,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FEB2FC7C,Data Safe,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AA17CE96,Autonomous Database,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6CB08F6A,OKE,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4C46A1AE,Compute,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CCFADC7F,IAM,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4F1DC215,API Gateway,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-80AAF605,Compute,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0D80820E,Logging,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9C10635C,Logging,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-80881ED9,OKE,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-037DB966,WAF,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E009578D,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B4A16D18,OKE,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3F860436,KMS,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4CBA985D,API Gateway,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0C28CD6E,VCN,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8073F786,Compute,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F2154994,Exadata,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E79C8992,IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E00B517A,API Gateway,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4ED66413,Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-87460686,WAF,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B414DF76,Data Flow,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-353A89F3,WAF,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-20C8F6EA,OKE,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4F8125B2,OKE,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-74E485C7,Streaming,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D4E93A33,Data Flow,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-91B8178D,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-750E4BE4,IAM,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E29B80CA,Object Storage,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C192E0C8,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8AA559E1,Data Flow,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-38F027E1,KMS,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EC4E5B4F,Big Data Service,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B4DDE04F,Exadata,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-796AE151,Logging,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-15DDD727,Autonomous Database,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2B521B44,KMS,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3F76F9FD,Monitoring,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1C8AC174,Block Volume,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B23D4E65,Monitoring,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-507C54B3,Streaming,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4E193CC7,Load Balancer,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2F9215F9,API Gateway,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0BE65A19,Monitoring,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B48CE0F4,Functions,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-31123202,Big Data Service,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-21F5A38A,API Gateway,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2F4FF1CD,Object Storage,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E5B5F305,Object Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3351F553,Logging,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7678E1C0,Autonomous Database,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5470A619,Autonomous Database,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FED03E66,Monitoring,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8C21EE5C,WAF,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8380EC95,Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AB6D130A,FastConnect,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D6698BE4,WAF,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5DE62144,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-831EF95D,Streaming,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1B77E0C6,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2F8BEFD1,IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0394A07F,IAM,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B67BDC10,Exadata,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CF3E2812,Monitoring,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-63E6704D,Logging,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-113963DB,Block Volume,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-57AB4CB4,Data Flow,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-57AEFFEB,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-98DAC033,API Gateway,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-89BF1178,KMS,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A5E4234E,Load Balancer,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-040EA22B,API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5696E679,Data Flow,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9EAE3DF5,FastConnect,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7DA8D410,Streaming,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5F904D86,Object Storage,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-02D73D30,WAF,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-36A1C6E7,Data Flow,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1605892A,Big Data Service,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-643EEBCB,Compute,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DE6B14F5,KMS,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2FE0640A,Streaming,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C743EC30,Object Storage,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C2346D9D,Logging,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-884AC324,Exadata,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2F753412,Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4866FCDA,Compute,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FEE20B9A,Compute,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3CF22DEF,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DC319522,Exadata,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BED4ECC9,Data Flow,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-818796D7,Streaming,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-54832AAF,Compute,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A371C44F,IAM,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3B036F25,Autonomous Database,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-00F8BA8D,Logging,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-405BBE35,Compute,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FF8DC0C7,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1C2E40B7,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9A10531C,VCN,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A687183C,API Gateway,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0D18E810,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5DB7F892,KMS,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A1A5CC59,API Gateway,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A5C4DC0B,Data Flow,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CD881DC2,Data Flow,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C16ED02A,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6ECA445B,OKE,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C7C6E8CE,Data Flow,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-11DBA3BC,OKE,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8355461D,Functions,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-893D5AE5,FastConnect,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8CD0F8A7,Compute,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A8258BF3,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-86449031,Data Safe,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A54ABDEA,Load Balancer,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-28147A00,OKE,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0F7CC1A0,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9AD6013D,Autonomous Database,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-25A92D22,Block Volume,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-56486B5E,VCN,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2BA708DC,Logging,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FED51AC6,VCN,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B1E1E70A,Big Data Service,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-195D86DD,Exadata,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-72676192,Exadata,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2EFC95C5,Exadata,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D9C68D1F,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B1E45028,VCN,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BEA47D21,Autonomous Database,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-50ECB78C,Load Balancer,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-73B721A2,Streaming,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6761568B,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ED5C3B94,Compute,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DEC8181A,Autonomous Database,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-71FC8C79,KMS,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0C0D7D06,Exadata,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4A694B22,OKE,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-478B8438,IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-90D00F3D,Data Flow,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-77A9BD2D,KMS,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-27C7C252,Big Data Service,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F4628466,Data Safe,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-09E3AF21,Block Volume,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-485FD54A,KMS,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A24C7D69,Functions,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5E6BD4FF,Data Safe,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-45BE8C89,Autonomous Database,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-04B2B381,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-477547BE,OKE,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-996AAECF,Block Volume,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3E86130E,IAM,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EB0B98C7,VCN,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9E2A1F90,Data Safe,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4BC5DF22,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8FDF31E5,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-94BC9EEB,OKE,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9BACBF4C,OKE,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C0AA670B,Exadata,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B215DF15,API Gateway,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-98588E21,Compute,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-587C1D3E,Autonomous Database,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B39CD1C9,Block Volume,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-443C73D4,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AEC54765,Logging,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9D68536D,Compute,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A364C817,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0F11C286,Data Safe,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D4C3ACB1,Block Volume,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-76AA78FE,IAM,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F0F518AF,Big Data Service,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F47F04DC,Monitoring,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-62C4E69D,Data Flow,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B443DC34,WAF,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-03519A4A,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EEF4CABC,Object Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-162DD726,VCN,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BCEB390C,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F37AB75D,FastConnect,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-66D45C53,OKE,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8A3D0D67,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-170F0539,Monitoring,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-14095F24,Functions,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A9E69C61,OKE,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AFCC4054,Exadata,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3C504D49,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B0BD00DB,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F6620874,Monitoring,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DB6BC65A,Data Flow,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-776A0B32,Compute,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-45BC651A,IAM,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FA24DFEF,Compute,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-29F292F0,Data Safe,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4E14D83A,Streaming,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A79A4844,API Gateway,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-54823580,Block Volume,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-809D7D22,IAM,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D72517B6,WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-07DBA26F,Load Balancer,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-930C8521,Load Balancer,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1A2A4121,API Gateway,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DA90BEF3,WAF,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5BF308F3,VCN,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-50B5CE11,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-890A042C,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9064D137,API Gateway,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1B21E120,Data Safe,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DB1CCED8,Load Balancer,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0F2C0A9C,Functions,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B662D541,Functions,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-627BF5B3,Monitoring,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0EEB363F,Autonomous Database,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4D1B70D7,FastConnect,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-999C4A0E,Big Data Service,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-16A239F3,Data Flow,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D3DA3E23,WAF,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BE543DE6,WAF,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-32A214A7,OKE,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-010A416C,Compute,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8C325353,Functions,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ABC03DB5,Big Data Service,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-859B5757,Logging,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2EDE6DD9,OKE,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A74D17BA,Compute,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-40852AB4,Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-19F2D299,KMS,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-579A089D,Streaming,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5990726F,WAF,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F79998E4,IAM,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-09398801,Data Flow,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3BC01F27,OKE,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-80CC5CB1,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-01EBC5E1,Data Flow,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-55759000,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F3FA622C,Compute,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2AE5469A,Logging,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C5BB7034,Data Safe,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6B6E9013,Load Balancer,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-14D38A7F,Monitoring,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FE38C9AA,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F30D30D5,FastConnect,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8ABC0B93,Data Safe,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D0F2BF94,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-396899CC,FastConnect,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5FE3B451,Exadata,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2559A47E,VCN,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FF7335BF,KMS,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0DB13C42,Big Data Service,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8F268EED,Compute,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E9FFC1A0,FastConnect,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F1747444,Exadata,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C418A7A0,Exadata,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-78C2E425,Block Volume,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E1A82559,Object Storage,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-51214063,Big Data Service,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D838D666,API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C7D372E7,Block Volume,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E0C63B43,Autonomous Database,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F829E5B3,API Gateway,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1AB1154D,OKE,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A865446B,Exadata,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-598EA70D,Exadata,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8391CEF1,VCN,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B872356E,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F16B573D,Functions,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4FB55D10,Big Data Service,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B4DE9E1D,Compute,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A7B9663A,VCN,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AB663F24,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CA7A100C,Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-67EAFE7A,VCN,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5B04C659,KMS,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F07E0758,OKE,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BFC9A1DB,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-813A060A,IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1902CDE5,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A2C887BE,VCN,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-68FA6EAF,Monitoring,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-85A662FC,Data Safe,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-48DB2607,Load Balancer,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-48834C45,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EEA3D21B,Big Data Service,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AD46BE6B,Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-76EBFC87,IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BC6BEFA4,Big Data Service,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-51046830,Streaming,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-259A88EA,Big Data Service,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AF025A19,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A99551A8,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DA6473D6,Load Balancer,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FAE9DA68,Functions,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ED6CB6D5,Object Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F6D9D88B,Autonomous Database,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7213FA71,Block Volume,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BC132A66,Logging,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FE24C358,Autonomous Database,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A9EA8D82,Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-85CB588C,Block Volume,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-699A6B8D,KMS,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D1D514E3,API Gateway,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C99E4C24,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0A87559E,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-746148B4,Monitoring,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9CFCE4F3,Big Data Service,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F4A9CC6B,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E550C6DC,Exadata,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-01BBFEB8,Monitoring,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F975D992,Autonomous Database,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-66D1684C,Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C1F9F81D,Big Data Service,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-01B45BE5,Block Volume,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-59CBEB3A,Streaming,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-950B0967,Data Safe,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-715B8444,Block Volume,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0A4C8BAF,WAF,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-17E49FF3,API Gateway,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-05546070,Monitoring,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0398D1F6,VCN,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1802EA2C,Big Data Service,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EAA27EF5,KMS,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0903789E,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E23BCC97,Data Flow,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-12F25105,FastConnect,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C551D47B,OKE,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8E261900,IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FD1A8E07,Big Data Service,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C6F8D8D2,Block Volume,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0445D1EF,FastConnect,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2E04739B,Exadata,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D462012D,Data Safe,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C8DFF36B,Monitoring,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DF6306F3,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4EE7DBB0,OKE,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8A5442BD,IAM,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E6B9417F,WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4455C183,API Gateway,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AE1135CF,Object Storage,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4BE75F8F,Block Volume,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-339FCAC1,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-77650E37,VCN,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A8D9A0EE,Object Storage,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7C5CF799,FastConnect,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D8AC8E0A,Block Volume,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-55F58257,KMS,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BB097811,KMS,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2D5F9E25,Load Balancer,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D30DFACD,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D9E8ADA8,Object Storage,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1040763D,Big Data Service,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-807B50E0,Monitoring,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-05F1C828,Logging,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CCCE2B72,Load Balancer,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8E3C9BDF,Exadata,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-986D41FB,Data Flow,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0FB3D1F7,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5B7E871F,Data Safe,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2F537586,Big Data Service,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D1F87C37,VCN,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-58256C2E,Data Flow,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7AD26BC5,Object Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DED5EEA1,IAM,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-589FC9AA,KMS,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4E7DAC36,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-560FF750,Exadata,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FCFC537F,WAF,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ED03C0CD,VCN,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FBFCDD3F,Block Volume,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1449462A,Exadata,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D75626C3,WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EEA629A4,Exadata,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-140E4EE1,WAF,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CE405684,IAM,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-50BFB5CD,Data Flow,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BCB131CF,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B9BAFA8A,Object Storage,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9849C24B,API Gateway,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-932293FA,Load Balancer,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-89FE836D,Data Flow,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BB0884A6,Exadata,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FC501C8D,Big Data Service,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-179FBE2D,Compute,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1974C7FB,Data Safe,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4FF09D13,Logging,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C85E5A69,Streaming,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-60393B25,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8F713BD8,Block Volume,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C5948D8D,WAF,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-17594C4A,Streaming,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AA412DBD,Streaming,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B44F0AD5,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EFEFF5C7,Logging,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-443A81F8,Autonomous Database,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CA3EB087,API Gateway,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9077DFA2,IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9930CB79,Block Volume,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FDB02124,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8F14CBFD,WAF,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0FB27BB5,Big Data Service,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E078A9FB,Load Balancer,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1D53CC83,Data Safe,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A5E3AB90,Object Storage,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3594FB0F,Data Flow,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-558A4E93,API Gateway,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D36B7E1C,Data Flow,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FB1FED69,Streaming,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1EB3F4BD,VCN,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3AE3108B,Monitoring,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BD889367,Logging,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8324FD1A,Big Data Service,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F2517626,VCN,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DAC10A43,Functions,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ACF8AA26,Big Data Service,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4F6AE944,Streaming,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ADD800A5,Logging,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B94645F7,Monitoring,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0EB3BA16,Monitoring,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CFE51102,Functions,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C8D187EE,VCN,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-822DBA55,Object Storage,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D9F30C23,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F52113F6,Functions,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1FDC760C,IAM,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4DD7CD92,IAM,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-24D50849,KMS,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7435CB94,Streaming,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2D5C37B9,Block Volume,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BEC03207,Data Safe,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DBF5C904,Big Data Service,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8F3D79DD,Logging,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-784C3019,WAF,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A0314DF6,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7577BDF4,Data Flow,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E2054BF0,Autonomous Database,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-80704DBF,Data Flow,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5050A36E,Object Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5C1E6888,Block Volume,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5FD42273,Monitoring,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BD6C4319,FastConnect,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EBD2DB28,FastConnect,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7A242F9A,Monitoring,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3B9E36CC,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1996F3BC,Block Volume,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A03353E5,FastConnect,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C4DF2DF5,Object Storage,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F08EBA72,Compute,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8607F50D,Functions,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2A3CDBA0,API Gateway,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2B105FBE,IAM,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4F25C446,Compute,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D55E67EE,WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1FF45335,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-99B9062A,Functions,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-988CCE0F,FastConnect,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-98D5488C,Compute,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AEDBEBA1,Compute,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F999844C,Data Safe,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D27603B7,KMS,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DFDD9AC4,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E49FBB59,Exadata,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B0E5E1CE,API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9D05004E,Big Data Service,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0EA57BAB,WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-600DB501,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-33E05364,Load Balancer,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C78BB2E6,Object Storage,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4D87C702,Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F75DF40F,WAF,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-966BD521,Exadata,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-039B3F06,KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D73478CA,Data Safe,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EF1F78D5,Autonomous Database,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3E1F583E,IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ED822E91,Object Storage,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B6C740B5,IAM,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-49346914,IAM,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-21BE7447,Monitoring,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-670842E7,Big Data Service,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-632313DA,Compute,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-896CA9DF,API Gateway,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3E753490,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-76926BF5,Functions,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A285B777,Block Volume,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A3214F2A,Exadata,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C15C9A56,Functions,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D79B310E,Big Data Service,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E78A748E,Data Flow,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-24194275,Logging,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4C12C104,KMS,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-81E43EC9,Data Flow,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E89891F1,WAF,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C96067DE,Data Safe,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FE4F4813,Logging,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-61C12866,Data Safe,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9B95823D,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FA3FC70D,IAM,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6C11E400,Big Data Service,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E572AD27,Functions,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-23FA4B27,Big Data Service,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-391DAF5A,Streaming,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-22D8F1CC,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CCDCA3D0,Object Storage,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E65CFC31,API Gateway,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-733C5A35,VCN,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-39383566,VCN,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-84FF404A,Exadata,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A3AB8431,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CFEEC9B6,Block Volume,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-896EC12D,Data Safe,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9D9F2FF4,Big Data Service,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F6276D10,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B2E69FF9,KMS,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3A5325B7,FastConnect,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4C66122E,Streaming,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-196AD613,Data Safe,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F9129AFD,Load Balancer,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6F9181F7,Streaming,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-59A50053,Logging,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-18667292,Exadata,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E53D649B,Logging,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-65BD87F2,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5B50B193,Load Balancer,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D914E1AE,Load Balancer,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F977869C,Monitoring,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B70A436E,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DF155B82,Data Safe,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-64E21EFD,Exadata,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1C2BE7F7,Streaming,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1C87DE98,Compute,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4B308E8A,OKE,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2EB23F13,Object Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-61C9F1B2,FastConnect,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-73E1459E,Data Flow,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EA4A8910,Exadata,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-705BCEB8,Data Safe,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B9DCB444,Data Safe,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3C890E4A,Functions,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D03DFB2D,Data Safe,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B39E272F,Compute,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EDA0A096,Exadata,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FECF405A,Load Balancer,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DBE51A42,Big Data Service,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-88FCF8B2,Autonomous Database,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3ADD7D06,API Gateway,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C244E067,Object Storage,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8949BA2E,Compute,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-532587B1,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BD25E2BB,Data Flow,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AEE5A51A,Compute,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B3D6CDEA,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-32CAEFD5,Data Flow,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EDBA3416,Block Volume,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5FF0384D,VCN,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D7C8D9F3,Data Safe,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A357653F,Load Balancer,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-412382B0,Exadata,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6F2AFA0F,Block Volume,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FBC152ED,Streaming,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D98F7DB0,Functions,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-595C0359,Exadata,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5357100E,IAM,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6AA13FDA,KMS,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1D74801E,Autonomous Database,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9956AFFD,FastConnect,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-97FFAC00,KMS,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F8E5EAFB,OKE,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C0189061,Big Data Service,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2CF63C97,OKE,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1BB17941,Data Flow,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-407DF4B1,Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D62CF154,VCN,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-65EE7E1A,Data Safe,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D6ED6B1B,Load Balancer,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-966BC13E,Monitoring,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BDEA1E28,Big Data Service,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1CF67148,Exadata,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-411E1537,Big Data Service,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4A633BC5,IAM,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-997ABFFA,Functions,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1E0854A8,Data Safe,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9554D5ED,OKE,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FD85B4DC,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-148B3E1F,IAM,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BB50A8C3,Data Flow,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-96ED03FA,WAF,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-21A876F1,Logging,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0ADAD531,Compute,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ABE4AA62,Load Balancer,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F0309515,VCN,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A152C080,VCN,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-54977890,Logging,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A98AB3C8,API Gateway,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FB9E83A6,Streaming,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BA37E74E,Streaming,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AAA1064E,Logging,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4BCAF95F,Monitoring,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-54DE8D5C,KMS,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4D5EA7F1,FastConnect,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E963367F,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9FFAD74A,Data Safe,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4372F88E,Compute,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-37AA5C21,Block Volume,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F5A6E575,Data Safe,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AFDCF514,FastConnect,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F6B10CCC,Object Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-84265DD9,KMS,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E59B82A2,Streaming,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8E235093,KMS,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FBC7843C,FastConnect,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-85228CD8,Data Flow,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2EAAD28B,FastConnect,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E34B263D,VCN,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B786A511,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-632A8CA4,KMS,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-58FD7DBA,WAF,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-88CCD770,Data Flow,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-53D24CB0,Data Flow,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D0DE3E64,KMS,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2698520D,Compute,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C6EE2FB6,Data Flow,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0359E7F2,KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-048450C3,IAM,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4F068D04,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5A9F1F10,WAF,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-524ED942,Big Data Service,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6B2CB395,Streaming,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B1C11462,IAM,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9EAE668B,Data Safe,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C381714D,IAM,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A95659CE,Monitoring,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-369841A0,OKE,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EC6F9751,Object Storage,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9B9C5654,IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-57B921DC,FastConnect,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CAE45E10,Functions,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-17561334,Logging,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F70062C6,API Gateway,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-38A2BF3C,Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-12550333,Exadata,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-68AEEB9B,FastConnect,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CFC8CE40,Streaming,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6A19D35E,Load Balancer,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C06CE638,Autonomous Database,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BB046192,OKE,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-60FC91A5,Compute,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6975E1C3,VCN,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-50A9DC82,Data Flow,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5A4DBFA6,API Gateway,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-64DBBE41,Big Data Service,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C2D44900,Object Storage,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C0C7B064,Autonomous Database,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CBA3F5C3,IAM,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1980F587,Load Balancer,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D896EA18,Big Data Service,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B5F2C962,Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7FFD3500,FastConnect,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-538C7764,Logging,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-33B8AE93,Autonomous Database,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1177110E,Big Data Service,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B1E82DDB,Autonomous Database,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BCD57CD8,Exadata,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E5F0E856,Compute,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-13F4C05F,Big Data Service,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-120F4F17,OKE,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-872A8CBC,Block Volume,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6431DF9C,Autonomous Database,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-680231EE,Functions,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0567E1C4,VCN,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E23192FD,Big Data Service,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1DCF02D3,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E52C25AA,FastConnect,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F162F49C,Block Volume,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5458F73A,IAM,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C16B7731,Data Flow,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6DAE5D96,Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C24F2D7C,Load Balancer,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FEA16E97,VCN,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-90EBA1F5,Block Volume,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-18982733,IAM,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0EFF8151,Exadata,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4F2ED061,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CBC3B87B,Block Volume,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6C5A9527,API Gateway,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-17821D5B,Load Balancer,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FDD25B7E,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A7AA3CFC,WAF,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4B8650FA,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-640C08D1,Logging,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D13714FF,KMS,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BBF275C0,WAF,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5ACFEF67,FastConnect,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E90453BC,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C5C75918,FastConnect,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E1C2A9FE,Big Data Service,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F2D92B6A,Streaming,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E8D14294,Object Storage,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5CD99D74,Logging,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-795C9A58,Compute,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-637460A2,Block Volume,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C4422358,WAF,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2461FB8F,Exadata,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8C39ADEC,OKE,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-04D1758A,Autonomous Database,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3A8CF3AC,KMS,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DCC066C5,Load Balancer,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E8BB09CE,API Gateway,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-47D3AF79,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-31BAA4E1,Compute,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-520FDBF4,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-16CD4B8C,WAF,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ACC837AF,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AC9A241E,OKE,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-30F9C03C,Exadata,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5DF1B939,API Gateway,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-488F46B7,Object Storage,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DC0F4BC1,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-873E727C,API Gateway,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B6BAC63F,KMS,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0DAAC680,Logging,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3FC74226,Compute,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5ACC99E4,Block Volume,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FB87AA2B,Functions,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C6B0E8F7,Functions,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F4631EB5,Data Flow,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-36154FBC,Logging,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-42AFA51D,Big Data Service,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8A519515,Big Data Service,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D6354B53,Data Flow,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A7BCCC84,Block Volume,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EFA4DBE9,Data Safe,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5AD87A57,Autonomous Database,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0F12C7C3,FastConnect,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D7655E4E,Compute,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BD713F9B,Object Storage,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FEE21027,API Gateway,IL2|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-069081FA,Functions,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9D6E1190,Load Balancer,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-490EB756,API Gateway,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DD693465,Big Data Service,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-34955514,Load Balancer,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-4948B1B2,KMS,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-57FEEFC2,Block Volume,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B2622872,Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F21C65B3,Functions,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-80B27701,Autonomous Database,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A7EB44B9,KMS,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-49A4BC63,Autonomous Database,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-13ABA2B5,IAM,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-93E4FD4E,Monitoring,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5FDCBDC1,Object Storage,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ADF78979,OKE,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0D5D3177,IAM,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1DAF76A9,Monitoring,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-7FB9F8CF,Functions,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-387400A0,Exadata,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6B0066E0,Logging,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-970A918E,Big Data Service,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BB924894,API Gateway,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E8AB705D,Big Data Service,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-AA90F27D,IAM,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-811F5A0E,Data Flow,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E9F97F6A,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FF29A8E4,Logging,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3BADA092,Compute,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-56C4A8B1,FastConnect,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-022369D5,API Gateway,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-541111FA,Autonomous Database,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-619FF3AD,OKE,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-942BF454,Data Safe,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-B2A9E84E,FastConnect,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5BA9AB52,Big Data Service,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0F07FBF8,Compute,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CD6EAB53,KMS,IL2|IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6E765777,IAM,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-96D95DAF,Big Data Service,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EBEAD99F,IAM,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-31116F95,Logging,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3178EB62,Exadata,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0361F5CF,Data Safe,IL2|IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9BBB6102,VCN,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-92A14B6A,Monitoring,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E68F5AED,KMS,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-2D64F704,Data Safe,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D4918DF0,WAF,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EE075B7F,Monitoring,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-80431235,Load Balancer,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-D34F05B2,Load Balancer,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-6E231CEE,Block Volume,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-81C8FCC9,Compute,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BAE4D766,Exadata,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A9812694,KMS,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DB6087BB,OKE,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-618EB2EA,Exadata,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-CF67DBD1,API Gateway,IL4,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-09AF634D,OKE,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0B22CBDF,Compute,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DBCAE534,Compute,IL2,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-BFCC340B,Object Storage,IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F1E4DE20,Streaming,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-FCCA00A4,Load Balancer,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-82111944,Block Volume,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-3C885F1F,Functions,IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-27B42F33,Block Volume,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-1131CB02,Streaming,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F2D3A6F7,OKE,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C3A2D8A8,KMS,IL4|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-595EDF4A,Functions,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DA70A7F8,Monitoring,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-467E5085,IAM,IL2|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-5BE89B86,API Gateway,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-9581CB22,OKE,IL4|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-ECAD21C4,Object Storage,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-DB440277,Block Volume,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-C1D7FBA4,Big Data Service,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-F1E1A95D,Streaming,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-89E78D86,Autonomous Database,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-0C1982FB,WAF,IL2|IL4|IL5,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-8DAB5AB1,Streaming,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EC89B25A,Data Flow,IL2|IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-E622A20C,Autonomous Database,IL5|IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-A273DDD5,Streaming,IL6,Approved,Section 5.3.1,Government compliance,High
+EX-ORCL-EF858676,Data Safe,IL4,Approved,Section 5.3.1,Government compliance,High

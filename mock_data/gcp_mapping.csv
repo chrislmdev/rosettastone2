@@ -1,7 +1,0 @@
-csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
-Compute (VM/GPU),GCE - N2 Instance,C1003,gcp,Compute,IL2|IL4,FALSE
-Object/Block Storage,Cloud Storage - Nearline,S3003,gcp,Storage,IL4,FALSE
-Managed SQL DB,Cloud SQL - MySQL,D3003,gcp,Database,IL4,FALSE
-Direct Connection,Cloud Interconnect,N4003,gcp,Networking,IL4,FALSE
-GenAI Services,Vertex AI,A5003,gcp,AI and Machine Learning,IL4,FALSE
-App Hosting,GKE Node - Autopilot,C3101,gcp,Compute,IL4,FALSE

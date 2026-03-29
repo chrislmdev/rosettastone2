@@ -1,7 +1,0 @@
-csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
-Compute (VM/GPU),OCI Compute - E5,C1004,oracle,Compute,IL2|IL4|IL5,FALSE
-Object/Block Storage,OCI Object Storage,S3004,oracle,Storage,IL2,FALSE
-Managed SQL DB,Autonomous Database,D3004,oracle,Database,IL2,FALSE
-Direct Connection,OCI FastConnect,N4004,oracle,Networking,IL2,FALSE
-GenAI Services,OCI AI Vision,A5004,oracle,AI and Machine Learning,IL2,FALSE
-App Hosting,Container Engine (OKE),C4101,oracle,Compute,IL2,TRUE

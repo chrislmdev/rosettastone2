@@ -1,0 +1,1001 @@
+title,csoshortname,description,catalogitemNumber,commercialUnitPrice,commercialUnitOfIssue,customerUnitPrice,customerUnitOfIssue,discountpremiumfee
+App Engine,App Engine,,ITEM-00001,35.454,Month,26.59,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00002,6.277,Month,4.708,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00003,38.25,Month,28.688,Month,25%
+VPC Network,VPC Network,,ITEM-00004,46.774,Month,35.081,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00005,8.567,Month,6.425,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00006,30.209,Month,22.657,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00007,21.187,Month,15.89,Month,25%
+Vertex AI,Vertex AI,,ITEM-00008,48.107,Month,36.08,Month,25%
+Compute Engine,Compute Engine,,ITEM-00009,3.179,Month,2.384,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00010,37.133,Month,27.85,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00011,9.552,Month,7.164,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00012,14.258,Month,10.694,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00013,33.287,Month,24.965,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00014,11.936,Month,8.952,Month,25%
+App Engine,App Engine,,ITEM-00015,27.528,Month,20.646,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00016,27.264,Month,20.448,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00017,49.828,Month,37.371,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00018,15.315,Month,11.486,Month,25%
+Error Reporting,Error Reporting,,ITEM-00019,14.009,Month,10.507,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00020,43.711,Month,32.783,Month,25%
+Firestore,Firestore,,ITEM-00021,48.642,Month,36.482,Month,25%
+Workflows,Workflows,,ITEM-00022,44.59,Month,33.443,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00023,13.172,Month,9.879,Month,25%
+BigQuery,BigQuery,,ITEM-00024,33.55,Month,25.162,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00025,19.01,Month,14.258,Month,25%
+Memorystore,Memorystore,,ITEM-00026,48.746,Month,36.559,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00027,40.171,Month,30.128,Month,25%
+BigQuery,BigQuery,,ITEM-00028,40.34,Month,30.255,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00029,18.534,Month,13.9,Month,25%
+Workflows,Workflows,,ITEM-00030,13.193,Month,9.895,Month,25%
+Secret Manager,Secret Manager,,ITEM-00031,30.402,Month,22.802,Month,25%
+Dataproc,Dataproc,,ITEM-00032,3.554,Month,2.665,Month,25%
+Dataproc,Dataproc,,ITEM-00033,20.682,Month,15.511,Month,25%
+VPC Network,VPC Network,,ITEM-00034,47.527,Month,35.645,Month,25%
+Cloud Build,Cloud Build,,ITEM-00035,37.808,Month,28.356,Month,25%
+Compute Engine,Compute Engine,,ITEM-00036,32.215,Month,24.161,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00037,40.094,Month,30.071,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00038,38.159,Month,28.619,Month,25%
+App Engine,App Engine,,ITEM-00039,27.949,Month,20.962,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00040,38.474,Month,28.855,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00041,35.371,Month,26.528,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00042,48.502,Month,36.377,Month,25%
+Cloud Build,Cloud Build,,ITEM-00043,33.285,Month,24.964,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00044,41.805,Month,31.354,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00045,32.274,Month,24.206,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00046,35.63,Month,26.723,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00047,24.215,Month,18.161,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00048,34.08,Month,25.56,Month,25%
+Dataproc,Dataproc,,ITEM-00049,20.302,Month,15.226,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00050,30.58,Month,22.935,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00051,42.465,Month,31.849,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00052,25.549,Month,19.162,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00053,40.773,Month,30.58,Month,25%
+Apigee,Apigee,,ITEM-00054,7.489,Month,5.617,Month,25%
+Workflows,Workflows,,ITEM-00055,40.881,Month,30.661,Month,25%
+Compute Engine,Compute Engine,,ITEM-00056,1.861,Month,1.396,Month,25%
+Cloud Build,Cloud Build,,ITEM-00057,20.37,Month,15.277,Month,25%
+Dataflow,Dataflow,,ITEM-00058,49.621,Month,37.216,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00059,34.346,Month,25.759,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00060,18.998,Month,14.248,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00061,19.268,Month,14.451,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00062,31.426,Month,23.569,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00063,37.573,Month,28.18,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00064,46.828,Month,35.121,Month,25%
+VPC Network,VPC Network,,ITEM-00065,43.846,Month,32.884,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00066,11.51,Month,8.633,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00067,18.969,Month,14.227,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00068,9.841,Month,7.381,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00069,31.862,Month,23.896,Month,25%
+Dataflow,Dataflow,,ITEM-00070,39.295,Month,29.471,Month,25%
+Cloud Build,Cloud Build,,ITEM-00071,42.789,Month,32.092,Month,25%
+Apigee,Apigee,,ITEM-00072,2.081,Month,1.561,Month,25%
+Memorystore,Memorystore,,ITEM-00073,29.697,Month,22.273,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00074,8.061,Month,6.046,Month,25%
+BigQuery,BigQuery,,ITEM-00075,27.843,Month,20.882,Month,25%
+Error Reporting,Error Reporting,,ITEM-00076,42.714,Month,32.035,Month,25%
+Firestore,Firestore,,ITEM-00077,6.109,Month,4.582,Month,25%
+Secret Manager,Secret Manager,,ITEM-00078,9.09,Month,6.817,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00079,13.447,Month,10.085,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00080,1.205,Month,0.904,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00081,21.08,Month,15.81,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00082,47.828,Month,35.871,Month,25%
+Dataflow,Dataflow,,ITEM-00083,26.557,Month,19.918,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00084,44.179,Month,33.134,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00085,5.391,Month,4.043,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00086,30.225,Month,22.669,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00087,46.663,Month,34.997,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00088,35.276,Month,26.457,Month,25%
+Compute Engine,Compute Engine,,ITEM-00089,26.478,Month,19.858,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00090,40.206,Month,30.155,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00091,45.976,Month,34.482,Month,25%
+Error Reporting,Error Reporting,,ITEM-00092,9.931,Month,7.448,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00093,48.05,Month,36.037,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00094,23.763,Month,17.822,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00095,43.078,Month,32.309,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00096,15.02,Month,11.265,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00097,20.9,Month,15.675,Month,25%
+Workflows,Workflows,,ITEM-00098,14.819,Month,11.114,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00099,5.444,Month,4.083,Month,25%
+Firestore,Firestore,,ITEM-00100,11.711,Month,8.783,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00101,19.756,Month,14.817,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00102,36.862,Month,27.647,Month,25%
+Memorystore,Memorystore,,ITEM-00103,45.081,Month,33.811,Month,25%
+Cloud Run,Cloud Run,,ITEM-00104,22.71,Month,17.032,Month,25%
+BigQuery,BigQuery,,ITEM-00105,40.512,Month,30.384,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00106,24.93,Month,18.697,Month,25%
+Apigee,Apigee,,ITEM-00107,8.746,Month,6.559,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00108,45.667,Month,34.25,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00109,4.722,Month,3.542,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00110,49.703,Month,37.277,Month,25%
+Error Reporting,Error Reporting,,ITEM-00111,33.074,Month,24.805,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00112,13.301,Month,9.976,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00113,19.901,Month,14.926,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00114,7.234,Month,5.425,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00115,47.785,Month,35.839,Month,25%
+Firestore,Firestore,,ITEM-00116,22.638,Month,16.979,Month,25%
+Dataproc,Dataproc,,ITEM-00117,13.603,Month,10.202,Month,25%
+App Engine,App Engine,,ITEM-00118,34.35,Month,25.763,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00119,34.511,Month,25.883,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00120,27.017,Month,20.263,Month,25%
+Apigee,Apigee,,ITEM-00121,16.46,Month,12.345,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00122,25.684,Month,19.263,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00123,43.842,Month,32.882,Month,25%
+Error Reporting,Error Reporting,,ITEM-00124,7.138,Month,5.354,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00125,2.486,Month,1.865,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00126,15.607,Month,11.705,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00127,11.966,Month,8.974,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00128,45.321,Month,33.991,Month,25%
+Memorystore,Memorystore,,ITEM-00129,16.958,Month,12.718,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00130,19.107,Month,14.33,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00131,34.453,Month,25.84,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00132,33.927,Month,25.445,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00133,48.646,Month,36.484,Month,25%
+Firestore,Firestore,,ITEM-00134,10.164,Month,7.623,Month,25%
+Vertex AI,Vertex AI,,ITEM-00135,16.616,Month,12.462,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00136,22.726,Month,17.044,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00137,39.844,Month,29.883,Month,25%
+Cloud Build,Cloud Build,,ITEM-00138,38.331,Month,28.748,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00139,46.31,Month,34.733,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00140,49.341,Month,37.006,Month,25%
+Firestore,Firestore,,ITEM-00141,39.887,Month,29.915,Month,25%
+Cloud Run,Cloud Run,,ITEM-00142,14.101,Month,10.576,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00143,33.351,Month,25.013,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00144,43.379,Month,32.534,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00145,43.395,Month,32.546,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00146,13.463,Month,10.097,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00147,42.266,Month,31.7,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00148,26.566,Month,19.924,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00149,20.151,Month,15.113,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00150,8.002,Month,6.002,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00151,20.617,Month,15.463,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00152,6.404,Month,4.803,Month,25%
+App Engine,App Engine,,ITEM-00153,17.257,Month,12.943,Month,25%
+Cloud Run,Cloud Run,,ITEM-00154,10.537,Month,7.903,Month,25%
+Workflows,Workflows,,ITEM-00155,31.852,Month,23.889,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00156,41.129,Month,30.847,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00157,24.07,Month,18.053,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00158,12.252,Month,9.189,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00159,37.12,Month,27.84,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00160,2.157,Month,1.618,Month,25%
+Dataflow,Dataflow,,ITEM-00161,26.006,Month,19.505,Month,25%
+Cloud Run,Cloud Run,,ITEM-00162,2.908,Month,2.181,Month,25%
+Compute Engine,Compute Engine,,ITEM-00163,45.077,Month,33.808,Month,25%
+Cloud Build,Cloud Build,,ITEM-00164,30.243,Month,22.682,Month,25%
+App Engine,App Engine,,ITEM-00165,37.292,Month,27.969,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00166,28.952,Month,21.714,Month,25%
+Dataproc,Dataproc,,ITEM-00167,24.679,Month,18.509,Month,25%
+BigQuery,BigQuery,,ITEM-00168,46.275,Month,34.706,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00169,3.637,Month,2.728,Month,25%
+Dataflow,Dataflow,,ITEM-00170,12.921,Month,9.691,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00171,41.435,Month,31.076,Month,25%
+Secret Manager,Secret Manager,,ITEM-00172,44.153,Month,33.115,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00173,9.053,Month,6.79,Month,25%
+VPC Network,VPC Network,,ITEM-00174,29.032,Month,21.774,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00175,2.583,Month,1.937,Month,25%
+App Engine,App Engine,,ITEM-00176,20.716,Month,15.537,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00177,49.292,Month,36.969,Month,25%
+Vertex AI,Vertex AI,,ITEM-00178,30.805,Month,23.104,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00179,44.393,Month,33.295,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00180,44.29,Month,33.218,Month,25%
+Dataproc,Dataproc,,ITEM-00181,14.866,Month,11.149,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00182,36.466,Month,27.349,Month,25%
+Compute Engine,Compute Engine,,ITEM-00183,26.706,Month,20.029,Month,25%
+Cloud Build,Cloud Build,,ITEM-00184,7.274,Month,5.455,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00185,21.863,Month,16.397,Month,25%
+Compute Engine,Compute Engine,,ITEM-00186,6.198,Month,4.649,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00187,39.599,Month,29.699,Month,25%
+Compute Engine,Compute Engine,,ITEM-00188,46.72,Month,35.04,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00189,43.647,Month,32.735,Month,25%
+Dataflow,Dataflow,,ITEM-00190,12.167,Month,9.125,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00191,40.831,Month,30.623,Month,25%
+Cloud Run,Cloud Run,,ITEM-00192,18.478,Month,13.859,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00193,29.236,Month,21.927,Month,25%
+Firestore,Firestore,,ITEM-00194,1.295,Month,0.971,Month,25%
+App Engine,App Engine,,ITEM-00195,5.448,Month,4.086,Month,25%
+Dataflow,Dataflow,,ITEM-00196,14.071,Month,10.553,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00197,44.49,Month,33.367,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00198,18.951,Month,14.213,Month,25%
+VPC Network,VPC Network,,ITEM-00199,47.103,Month,35.327,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00200,7.524,Month,5.643,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00201,16.655,Month,12.491,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00202,0.802,Month,0.602,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00203,14.388,Month,10.791,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00204,33.085,Month,24.814,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00205,47.833,Month,35.875,Month,25%
+Secret Manager,Secret Manager,,ITEM-00206,4.329,Month,3.247,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00207,34.286,Month,25.715,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00208,23.128,Month,17.346,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00209,15.738,Month,11.803,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00210,42.733,Month,32.05,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00211,9.151,Month,6.863,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00212,48.101,Month,36.076,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00213,19.43,Month,14.572,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00214,47.571,Month,35.678,Month,25%
+Cloud Build,Cloud Build,,ITEM-00215,2.803,Month,2.102,Month,25%
+Cloud Run,Cloud Run,,ITEM-00216,36.131,Month,27.098,Month,25%
+Memorystore,Memorystore,,ITEM-00217,17.05,Month,12.788,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00218,26.42,Month,19.815,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00219,18.017,Month,13.513,Month,25%
+Dataflow,Dataflow,,ITEM-00220,8.25,Month,6.188,Month,25%
+Workflows,Workflows,,ITEM-00221,3.188,Month,2.391,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00222,25.12,Month,18.84,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00223,23.004,Month,17.253,Month,25%
+BigQuery,BigQuery,,ITEM-00224,41.708,Month,31.281,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00225,32.739,Month,24.554,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00226,29.958,Month,22.468,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00227,9.133,Month,6.85,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00228,6.559,Month,4.919,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00229,19.069,Month,14.302,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00230,42.518,Month,31.889,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00231,9.67,Month,7.252,Month,25%
+Cloud Run,Cloud Run,,ITEM-00232,6.217,Month,4.663,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00233,8.821,Month,6.616,Month,25%
+Error Reporting,Error Reporting,,ITEM-00234,8.358,Month,6.269,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00235,26.502,Month,19.877,Month,25%
+Firestore,Firestore,,ITEM-00236,12.18,Month,9.135,Month,25%
+App Engine,App Engine,,ITEM-00237,39.79,Month,29.843,Month,25%
+Secret Manager,Secret Manager,,ITEM-00238,18.692,Month,14.019,Month,25%
+Secret Manager,Secret Manager,,ITEM-00239,8.311,Month,6.233,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00240,22.334,Month,16.75,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00241,28.365,Month,21.274,Month,25%
+Error Reporting,Error Reporting,,ITEM-00242,33.43,Month,25.072,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00243,49.78,Month,37.335,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00244,25.88,Month,19.41,Month,25%
+Compute Engine,Compute Engine,,ITEM-00245,22.751,Month,17.063,Month,25%
+Apigee,Apigee,,ITEM-00246,18.38,Month,13.785,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00247,39.97,Month,29.977,Month,25%
+Dataflow,Dataflow,,ITEM-00248,30.832,Month,23.124,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00249,25.949,Month,19.462,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00250,16.904,Month,12.678,Month,25%
+Cloud Build,Cloud Build,,ITEM-00251,5.017,Month,3.763,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00252,22.997,Month,17.248,Month,25%
+Secret Manager,Secret Manager,,ITEM-00253,17.263,Month,12.947,Month,25%
+Workflows,Workflows,,ITEM-00254,47.551,Month,35.663,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00255,37.145,Month,27.859,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00256,0.407,Month,0.305,Month,25%
+App Engine,App Engine,,ITEM-00257,44.63,Month,33.473,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00258,17.689,Month,13.267,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00259,8.749,Month,6.562,Month,25%
+Firestore,Firestore,,ITEM-00260,36.433,Month,27.325,Month,25%
+Cloud Build,Cloud Build,,ITEM-00261,7.775,Month,5.831,Month,25%
+App Engine,App Engine,,ITEM-00262,16.208,Month,12.156,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00263,47.095,Month,35.321,Month,25%
+VPC Network,VPC Network,,ITEM-00264,12.766,Month,9.575,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00265,16.818,Month,12.614,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00266,23.323,Month,17.492,Month,25%
+Compute Engine,Compute Engine,,ITEM-00267,39.05,Month,29.287,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00268,16.338,Month,12.254,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00269,1.046,Month,0.784,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00270,25.902,Month,19.427,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00271,37.793,Month,28.345,Month,25%
+Secret Manager,Secret Manager,,ITEM-00272,43.679,Month,32.759,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00273,24.51,Month,18.383,Month,25%
+Cloud Run,Cloud Run,,ITEM-00274,41.685,Month,31.264,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00275,9.07,Month,6.803,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00276,46.318,Month,34.739,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00277,41.888,Month,31.416,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00278,29.451,Month,22.088,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00279,40.404,Month,30.303,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00280,28.235,Month,21.176,Month,25%
+App Engine,App Engine,,ITEM-00281,26.336,Month,19.752,Month,25%
+Vertex AI,Vertex AI,,ITEM-00282,13.195,Month,9.896,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00283,47.726,Month,35.794,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00284,4.858,Month,3.643,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00285,32.119,Month,24.089,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00286,18.802,Month,14.101,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00287,17.787,Month,13.34,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00288,14.252,Month,10.689,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00289,40.858,Month,30.643,Month,25%
+Secret Manager,Secret Manager,,ITEM-00290,23.39,Month,17.543,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00291,35.908,Month,26.931,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00292,33.28,Month,24.96,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00293,8.133,Month,6.1,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00294,31.827,Month,23.87,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00295,20.852,Month,15.639,Month,25%
+Compute Engine,Compute Engine,,ITEM-00296,39.815,Month,29.861,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00297,8.275,Month,6.206,Month,25%
+Cloud Run,Cloud Run,,ITEM-00298,18.074,Month,13.556,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00299,38.092,Month,28.569,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00300,21.881,Month,16.411,Month,25%
+Cloud Build,Cloud Build,,ITEM-00301,29.253,Month,21.94,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00302,1.956,Month,1.467,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00303,15.587,Month,11.69,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00304,34.168,Month,25.626,Month,25%
+BigQuery,BigQuery,,ITEM-00305,33.174,Month,24.88,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00306,21.801,Month,16.351,Month,25%
+Dataflow,Dataflow,,ITEM-00307,23.054,Month,17.29,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00308,25.91,Month,19.433,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00309,18.403,Month,13.802,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00310,6.757,Month,5.068,Month,25%
+VPC Network,VPC Network,,ITEM-00311,27.565,Month,20.674,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00312,10.674,Month,8.005,Month,25%
+Memorystore,Memorystore,,ITEM-00313,12.85,Month,9.637,Month,25%
+Compute Engine,Compute Engine,,ITEM-00314,35.761,Month,26.821,Month,25%
+Workflows,Workflows,,ITEM-00315,15.177,Month,11.383,Month,25%
+BigQuery,BigQuery,,ITEM-00316,12.905,Month,9.679,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00317,1.119,Month,0.839,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00318,37.833,Month,28.375,Month,25%
+Cloud Run,Cloud Run,,ITEM-00319,36.93,Month,27.697,Month,25%
+BigQuery,BigQuery,,ITEM-00320,9.851,Month,7.388,Month,25%
+VPC Network,VPC Network,,ITEM-00321,45.534,Month,34.151,Month,25%
+App Engine,App Engine,,ITEM-00322,6.338,Month,4.753,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00323,29.355,Month,22.016,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00324,22.837,Month,17.128,Month,25%
+Memorystore,Memorystore,,ITEM-00325,36.696,Month,27.522,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00326,4.209,Month,3.157,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00327,49.427,Month,37.07,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00328,33.863,Month,25.397,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00329,17.29,Month,12.967,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00330,5.509,Month,4.132,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00331,46.598,Month,34.948,Month,25%
+Dataproc,Dataproc,,ITEM-00332,40.683,Month,30.512,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00333,40.0,Month,30.0,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00334,0.575,Month,0.431,Month,25%
+Secret Manager,Secret Manager,,ITEM-00335,42.01,Month,31.508,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00336,4.61,Month,3.458,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00337,15.61,Month,11.707,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00338,10.864,Month,8.148,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00339,42.497,Month,31.873,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00340,41.232,Month,30.924,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00341,10.985,Month,8.239,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00342,23.003,Month,17.252,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00343,25.484,Month,19.113,Month,25%
+BigQuery,BigQuery,,ITEM-00344,8.432,Month,6.324,Month,25%
+Secret Manager,Secret Manager,,ITEM-00345,40.552,Month,30.414,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00346,27.155,Month,20.366,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00347,18.427,Month,13.82,Month,25%
+Workflows,Workflows,,ITEM-00348,32.395,Month,24.296,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00349,23.743,Month,17.807,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00350,24.993,Month,18.745,Month,25%
+VPC Network,VPC Network,,ITEM-00351,20.558,Month,15.418,Month,25%
+Dataproc,Dataproc,,ITEM-00352,30.382,Month,22.787,Month,25%
+Compute Engine,Compute Engine,,ITEM-00353,9.803,Month,7.352,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00354,7.619,Month,5.714,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00355,20.07,Month,15.053,Month,25%
+BigQuery,BigQuery,,ITEM-00356,44.602,Month,33.451,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00357,19.466,Month,14.6,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00358,31.116,Month,23.337,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00359,37.093,Month,27.82,Month,25%
+Apigee,Apigee,,ITEM-00360,4.493,Month,3.37,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00361,33.658,Month,25.244,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00362,4.317,Month,3.238,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00363,46.673,Month,35.005,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00364,17.876,Month,13.407,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00365,33.593,Month,25.195,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00366,41.598,Month,31.198,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00367,34.681,Month,26.011,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00368,12.976,Month,9.732,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00369,12.809,Month,9.607,Month,25%
+Workflows,Workflows,,ITEM-00370,22.565,Month,16.924,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00371,3.407,Month,2.555,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00372,39.518,Month,29.639,Month,25%
+Dataflow,Dataflow,,ITEM-00373,33.494,Month,25.12,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00374,29.595,Month,22.196,Month,25%
+App Engine,App Engine,,ITEM-00375,13.349,Month,10.012,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00376,3.079,Month,2.309,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00377,35.224,Month,26.418,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00378,38.937,Month,29.203,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00379,35.004,Month,26.253,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00380,22.775,Month,17.081,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00381,35.513,Month,26.635,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00382,24.343,Month,18.257,Month,25%
+Firestore,Firestore,,ITEM-00383,34.158,Month,25.619,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00384,32.433,Month,24.325,Month,25%
+Dataproc,Dataproc,,ITEM-00385,15.114,Month,11.335,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00386,17.553,Month,13.165,Month,25%
+App Engine,App Engine,,ITEM-00387,26.64,Month,19.98,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00388,32.981,Month,24.736,Month,25%
+Cloud Build,Cloud Build,,ITEM-00389,39.177,Month,29.383,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00390,17.589,Month,13.192,Month,25%
+Memorystore,Memorystore,,ITEM-00391,3.145,Month,2.359,Month,25%
+Memorystore,Memorystore,,ITEM-00392,33.532,Month,25.149,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00393,8.43,Month,6.322,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00394,4.841,Month,3.631,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00395,47.921,Month,35.941,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00396,3.98,Month,2.985,Month,25%
+App Engine,App Engine,,ITEM-00397,48.052,Month,36.039,Month,25%
+Error Reporting,Error Reporting,,ITEM-00398,3.514,Month,2.635,Month,25%
+BigQuery,BigQuery,,ITEM-00399,38.623,Month,28.967,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00400,32.909,Month,24.682,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00401,20.921,Month,15.691,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00402,12.273,Month,9.205,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00403,45.111,Month,33.833,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00404,4.433,Month,3.325,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00405,41.836,Month,31.377,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00406,24.258,Month,18.194,Month,25%
+Firestore,Firestore,,ITEM-00407,26.925,Month,20.194,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00408,13.628,Month,10.221,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00409,12.491,Month,9.368,Month,25%
+Workflows,Workflows,,ITEM-00410,45.898,Month,34.424,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00411,36.129,Month,27.097,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00412,5.415,Month,4.061,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00413,32.961,Month,24.721,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00414,11.439,Month,8.579,Month,25%
+Secret Manager,Secret Manager,,ITEM-00415,31.527,Month,23.645,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00416,38.579,Month,28.934,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00417,39.683,Month,29.762,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00418,12.953,Month,9.715,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00419,45.964,Month,34.473,Month,25%
+Memorystore,Memorystore,,ITEM-00420,49.44,Month,37.08,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00421,24.045,Month,18.034,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00422,42.735,Month,32.051,Month,25%
+Secret Manager,Secret Manager,,ITEM-00423,49.849,Month,37.387,Month,25%
+Workflows,Workflows,,ITEM-00424,19.857,Month,14.893,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00425,25.268,Month,18.951,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00426,34.01,Month,25.508,Month,25%
+Dataproc,Dataproc,,ITEM-00427,11.823,Month,8.867,Month,25%
+Secret Manager,Secret Manager,,ITEM-00428,7.848,Month,5.886,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00429,35.945,Month,26.959,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00430,7.176,Month,5.382,Month,25%
+VPC Network,VPC Network,,ITEM-00431,12.886,Month,9.665,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00432,26.293,Month,19.72,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00433,21.681,Month,16.261,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00434,34.293,Month,25.72,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00435,14.096,Month,10.572,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00436,27.093,Month,20.32,Month,25%
+BigQuery,BigQuery,,ITEM-00437,28.848,Month,21.636,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00438,13.317,Month,9.988,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00439,39.395,Month,29.546,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00440,15.263,Month,11.447,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00441,19.075,Month,14.306,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00442,45.208,Month,33.906,Month,25%
+Workflows,Workflows,,ITEM-00443,11.404,Month,8.553,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00444,7.112,Month,5.334,Month,25%
+Apigee,Apigee,,ITEM-00445,38.277,Month,28.708,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00446,17.284,Month,12.963,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00447,6.78,Month,5.085,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00448,36.22,Month,27.165,Month,25%
+Error Reporting,Error Reporting,,ITEM-00449,49.419,Month,37.064,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00450,6.186,Month,4.639,Month,25%
+Secret Manager,Secret Manager,,ITEM-00451,43.925,Month,32.944,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00452,15.299,Month,11.474,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00453,41.503,Month,31.127,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00454,27.4,Month,20.55,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00455,2.69,Month,2.018,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00456,43.614,Month,32.71,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00457,48.332,Month,36.249,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00458,10.32,Month,7.74,Month,25%
+Apigee,Apigee,,ITEM-00459,26.016,Month,19.512,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00460,8.298,Month,6.223,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00461,42.019,Month,31.514,Month,25%
+App Engine,App Engine,,ITEM-00462,14.955,Month,11.216,Month,25%
+Cloud Run,Cloud Run,,ITEM-00463,37.497,Month,28.123,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00464,27.12,Month,20.34,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00465,19.453,Month,14.59,Month,25%
+Vertex AI,Vertex AI,,ITEM-00466,2.565,Month,1.924,Month,25%
+Apigee,Apigee,,ITEM-00467,2.325,Month,1.744,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00468,15.021,Month,11.266,Month,25%
+Vertex AI,Vertex AI,,ITEM-00469,19.742,Month,14.806,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00470,11.213,Month,8.41,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00471,31.064,Month,23.298,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00472,28.519,Month,21.389,Month,25%
+VPC Network,VPC Network,,ITEM-00473,33.908,Month,25.431,Month,25%
+Error Reporting,Error Reporting,,ITEM-00474,24.434,Month,18.326,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00475,38.272,Month,28.704,Month,25%
+Apigee,Apigee,,ITEM-00476,33.981,Month,25.486,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00477,33.265,Month,24.949,Month,25%
+Dataflow,Dataflow,,ITEM-00478,42.228,Month,31.671,Month,25%
+Workflows,Workflows,,ITEM-00479,9.577,Month,7.183,Month,25%
+Dataflow,Dataflow,,ITEM-00480,47.531,Month,35.648,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00481,18.514,Month,13.886,Month,25%
+Apigee,Apigee,,ITEM-00482,40.762,Month,30.572,Month,25%
+Error Reporting,Error Reporting,,ITEM-00483,48.409,Month,36.307,Month,25%
+Dataproc,Dataproc,,ITEM-00484,18.817,Month,14.113,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00485,10.889,Month,8.167,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00486,19.45,Month,14.587,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00487,10.379,Month,7.784,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00488,9.614,Month,7.211,Month,25%
+Workflows,Workflows,,ITEM-00489,4.907,Month,3.68,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00490,6.861,Month,5.146,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00491,20.856,Month,15.642,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00492,6.591,Month,4.943,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00493,39.589,Month,29.692,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00494,35.551,Month,26.663,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00495,25.519,Month,19.139,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00496,3.028,Month,2.271,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00497,29.509,Month,22.132,Month,25%
+App Engine,App Engine,,ITEM-00498,48.373,Month,36.28,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00499,33.172,Month,24.879,Month,25%
+Error Reporting,Error Reporting,,ITEM-00500,11.047,Month,8.285,Month,25%
+Apigee,Apigee,,ITEM-00501,30.962,Month,23.221,Month,25%
+Firestore,Firestore,,ITEM-00502,4.74,Month,3.555,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00503,9.026,Month,6.769,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00504,31.499,Month,23.624,Month,25%
+Dataproc,Dataproc,,ITEM-00505,49.875,Month,37.406,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00506,20.136,Month,15.102,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00507,38.012,Month,28.509,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00508,25.075,Month,18.806,Month,25%
+Compute Engine,Compute Engine,,ITEM-00509,4.946,Month,3.709,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00510,34.102,Month,25.576,Month,25%
+Dataproc,Dataproc,,ITEM-00511,2.217,Month,1.663,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00512,38.415,Month,28.811,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00513,25.397,Month,19.048,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00514,2.569,Month,1.927,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00515,8.881,Month,6.661,Month,25%
+Error Reporting,Error Reporting,,ITEM-00516,42.931,Month,32.198,Month,25%
+Cloud Run,Cloud Run,,ITEM-00517,18.123,Month,13.592,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00518,40.268,Month,30.201,Month,25%
+Cloud Build,Cloud Build,,ITEM-00519,4.496,Month,3.372,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00520,13.408,Month,10.056,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00521,15.176,Month,11.382,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00522,36.16,Month,27.12,Month,25%
+Dataflow,Dataflow,,ITEM-00523,10.614,Month,7.961,Month,25%
+Compute Engine,Compute Engine,,ITEM-00524,2.088,Month,1.566,Month,25%
+Cloud Run,Cloud Run,,ITEM-00525,31.628,Month,23.721,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00526,0.638,Month,0.479,Month,25%
+Cloud Build,Cloud Build,,ITEM-00527,21.266,Month,15.949,Month,25%
+App Engine,App Engine,,ITEM-00528,25.899,Month,19.424,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00529,9.697,Month,7.273,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00530,35.029,Month,26.272,Month,25%
+Dataproc,Dataproc,,ITEM-00531,40.351,Month,30.263,Month,25%
+Workflows,Workflows,,ITEM-00532,45.767,Month,34.325,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00533,27.67,Month,20.753,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00534,3.156,Month,2.367,Month,25%
+Compute Engine,Compute Engine,,ITEM-00535,31.989,Month,23.992,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00536,49.682,Month,37.261,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00537,16.344,Month,12.258,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00538,37.701,Month,28.276,Month,25%
+Workflows,Workflows,,ITEM-00539,23.682,Month,17.761,Month,25%
+VPC Network,VPC Network,,ITEM-00540,10.46,Month,7.845,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00541,2.804,Month,2.103,Month,25%
+Workflows,Workflows,,ITEM-00542,15.691,Month,11.768,Month,25%
+Cloud Build,Cloud Build,,ITEM-00543,45.157,Month,33.868,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00544,14.479,Month,10.859,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00545,34.84,Month,26.13,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00546,18.382,Month,13.787,Month,25%
+BigQuery,BigQuery,,ITEM-00547,17.72,Month,13.29,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00548,20.773,Month,15.58,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00549,34.488,Month,25.866,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00550,32.878,Month,24.659,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00551,8.664,Month,6.498,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00552,18.356,Month,13.767,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00553,37.936,Month,28.452,Month,25%
+BigQuery,BigQuery,,ITEM-00554,28.881,Month,21.661,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00555,27.732,Month,20.799,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00556,21.757,Month,16.318,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00557,9.94,Month,7.455,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00558,43.687,Month,32.765,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00559,29.687,Month,22.265,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00560,32.752,Month,24.564,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00561,12.313,Month,9.235,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00562,46.603,Month,34.952,Month,25%
+Apigee,Apigee,,ITEM-00563,1.718,Month,1.288,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00564,34.591,Month,25.943,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00565,37.118,Month,27.839,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00566,29.561,Month,22.171,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00567,38.386,Month,28.79,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00568,2.182,Month,1.636,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00569,4.116,Month,3.087,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00570,19.602,Month,14.701,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00571,46.543,Month,34.907,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00572,17.672,Month,13.254,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00573,4.754,Month,3.565,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00574,13.612,Month,10.209,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00575,9.215,Month,6.911,Month,25%
+Apigee,Apigee,,ITEM-00576,40.302,Month,30.227,Month,25%
+App Engine,App Engine,,ITEM-00577,31.422,Month,23.567,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00578,1.462,Month,1.097,Month,25%
+Dataproc,Dataproc,,ITEM-00579,19.731,Month,14.798,Month,25%
+Cloud Build,Cloud Build,,ITEM-00580,22.822,Month,17.116,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00581,34.809,Month,26.107,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00582,9.568,Month,7.176,Month,25%
+Cloud Run,Cloud Run,,ITEM-00583,40.292,Month,30.219,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00584,45.017,Month,33.763,Month,25%
+Dataflow,Dataflow,,ITEM-00585,11.859,Month,8.894,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00586,42.577,Month,31.933,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00587,41.097,Month,30.823,Month,25%
+Compute Engine,Compute Engine,,ITEM-00588,5.596,Month,4.197,Month,25%
+Apigee,Apigee,,ITEM-00589,11.275,Month,8.456,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00590,8.684,Month,6.513,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00591,5.894,Month,4.421,Month,25%
+VPC Network,VPC Network,,ITEM-00592,23.862,Month,17.896,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00593,42.505,Month,31.879,Month,25%
+VPC Network,VPC Network,,ITEM-00594,4.386,Month,3.29,Month,25%
+Workflows,Workflows,,ITEM-00595,5.371,Month,4.028,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00596,34.915,Month,26.186,Month,25%
+Dataproc,Dataproc,,ITEM-00597,11.906,Month,8.93,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00598,22.77,Month,17.078,Month,25%
+Dataflow,Dataflow,,ITEM-00599,37.885,Month,28.414,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00600,11.696,Month,8.772,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00601,26.827,Month,20.12,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00602,30.798,Month,23.098,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00603,49.793,Month,37.345,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00604,36.279,Month,27.209,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00605,20.626,Month,15.47,Month,25%
+Memorystore,Memorystore,,ITEM-00606,33.823,Month,25.367,Month,25%
+Cloud Run,Cloud Run,,ITEM-00607,36.913,Month,27.685,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00608,45.703,Month,34.277,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00609,22.05,Month,16.538,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00610,24.501,Month,18.376,Month,25%
+BigQuery,BigQuery,,ITEM-00611,31.366,Month,23.524,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00612,4.79,Month,3.593,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00613,17.888,Month,13.416,Month,25%
+Cloud Build,Cloud Build,,ITEM-00614,13.302,Month,9.976,Month,25%
+BigQuery,BigQuery,,ITEM-00615,36.567,Month,27.425,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00616,26.726,Month,20.044,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00617,23.631,Month,17.723,Month,25%
+Dataproc,Dataproc,,ITEM-00618,8.876,Month,6.657,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00619,24.187,Month,18.14,Month,25%
+Secret Manager,Secret Manager,,ITEM-00620,42.799,Month,32.099,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00621,6.19,Month,4.643,Month,25%
+Cloud Build,Cloud Build,,ITEM-00622,26.014,Month,19.511,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00623,12.712,Month,9.534,Month,25%
+Workflows,Workflows,,ITEM-00624,27.888,Month,20.916,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00625,33.968,Month,25.476,Month,25%
+Secret Manager,Secret Manager,,ITEM-00626,34.522,Month,25.892,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00627,32.208,Month,24.156,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00628,45.604,Month,34.203,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00629,9.446,Month,7.085,Month,25%
+Secret Manager,Secret Manager,,ITEM-00630,11.497,Month,8.623,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00631,43.436,Month,32.577,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00632,8.648,Month,6.486,Month,25%
+App Engine,App Engine,,ITEM-00633,26.735,Month,20.051,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00634,25.465,Month,19.099,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00635,3.48,Month,2.61,Month,25%
+Cloud Build,Cloud Build,,ITEM-00636,24.545,Month,18.409,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00637,41.743,Month,31.307,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00638,3.444,Month,2.583,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00639,46.049,Month,34.537,Month,25%
+Dataproc,Dataproc,,ITEM-00640,40.78,Month,30.585,Month,25%
+Firestore,Firestore,,ITEM-00641,32.526,Month,24.395,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00642,27.04,Month,20.28,Month,25%
+Dataproc,Dataproc,,ITEM-00643,22.364,Month,16.773,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00644,0.446,Month,0.335,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00645,33.516,Month,25.137,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00646,30.518,Month,22.889,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00647,10.956,Month,8.217,Month,25%
+Apigee,Apigee,,ITEM-00648,17.824,Month,13.368,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00649,27.09,Month,20.317,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00650,48.479,Month,36.359,Month,25%
+Cloud Run,Cloud Run,,ITEM-00651,30.739,Month,23.054,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00652,45.995,Month,34.496,Month,25%
+Secret Manager,Secret Manager,,ITEM-00653,23.772,Month,17.829,Month,25%
+Cloud Build,Cloud Build,,ITEM-00654,19.324,Month,14.493,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00655,26.565,Month,19.924,Month,25%
+Apigee,Apigee,,ITEM-00656,20.133,Month,15.1,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00657,2.539,Month,1.904,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00658,35.582,Month,26.687,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00659,14.979,Month,11.234,Month,25%
+Memorystore,Memorystore,,ITEM-00660,13.797,Month,10.348,Month,25%
+Cloud Run,Cloud Run,,ITEM-00661,48.539,Month,36.404,Month,25%
+Workflows,Workflows,,ITEM-00662,20.645,Month,15.484,Month,25%
+Vertex AI,Vertex AI,,ITEM-00663,26.924,Month,20.193,Month,25%
+Workflows,Workflows,,ITEM-00664,22.204,Month,16.653,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00665,32.073,Month,24.055,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00666,14.615,Month,10.961,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00667,10.253,Month,7.69,Month,25%
+Vertex AI,Vertex AI,,ITEM-00668,13.146,Month,9.86,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00669,9.766,Month,7.325,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00670,30.118,Month,22.588,Month,25%
+App Engine,App Engine,,ITEM-00671,44.048,Month,33.036,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00672,12.559,Month,9.419,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00673,23.53,Month,17.648,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00674,23.591,Month,17.693,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00675,45.771,Month,34.328,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00676,25.406,Month,19.054,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00677,15.387,Month,11.54,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00678,20.994,Month,15.745,Month,25%
+Cloud Build,Cloud Build,,ITEM-00679,12.06,Month,9.045,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00680,26.157,Month,19.618,Month,25%
+Firestore,Firestore,,ITEM-00681,41.666,Month,31.249,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00682,37.282,Month,27.961,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00683,7.534,Month,5.651,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00684,4.967,Month,3.725,Month,25%
+Cloud Build,Cloud Build,,ITEM-00685,33.04,Month,24.78,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00686,29.291,Month,21.968,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00687,30.536,Month,22.902,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00688,17.777,Month,13.333,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00689,31.306,Month,23.48,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00690,10.761,Month,8.071,Month,25%
+Error Reporting,Error Reporting,,ITEM-00691,29.793,Month,22.345,Month,25%
+Compute Engine,Compute Engine,,ITEM-00692,14.303,Month,10.727,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00693,31.259,Month,23.444,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00694,49.976,Month,37.482,Month,25%
+Memorystore,Memorystore,,ITEM-00695,10.297,Month,7.723,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00696,2.046,Month,1.534,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00697,3.186,Month,2.389,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00698,40.274,Month,30.206,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00699,8.394,Month,6.296,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00700,25.689,Month,19.267,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00701,1.7,Month,1.275,Month,25%
+App Engine,App Engine,,ITEM-00702,19.027,Month,14.27,Month,25%
+Apigee,Apigee,,ITEM-00703,26.62,Month,19.965,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00704,33.652,Month,25.239,Month,25%
+Cloud Build,Cloud Build,,ITEM-00705,1.007,Month,0.755,Month,25%
+Vertex AI,Vertex AI,,ITEM-00706,17.907,Month,13.43,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00707,7.388,Month,5.541,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00708,18.911,Month,14.183,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00709,10.079,Month,7.559,Month,25%
+BigQuery,BigQuery,,ITEM-00710,13.16,Month,9.87,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00711,9.707,Month,7.28,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00712,45.506,Month,34.13,Month,25%
+Dataproc,Dataproc,,ITEM-00713,16.687,Month,12.515,Month,25%
+Dataflow,Dataflow,,ITEM-00714,18.73,Month,14.047,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00715,23.177,Month,17.383,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00716,9.559,Month,7.169,Month,25%
+Workflows,Workflows,,ITEM-00717,5.617,Month,4.213,Month,25%
+Apigee,Apigee,,ITEM-00718,23.933,Month,17.95,Month,25%
+Dataproc,Dataproc,,ITEM-00719,41.765,Month,31.324,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00720,12.84,Month,9.63,Month,25%
+Dataflow,Dataflow,,ITEM-00721,45.566,Month,34.175,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00722,33.388,Month,25.041,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00723,38.674,Month,29.005,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00724,23.628,Month,17.721,Month,25%
+Error Reporting,Error Reporting,,ITEM-00725,5.91,Month,4.433,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00726,19.464,Month,14.598,Month,25%
+VPC Network,VPC Network,,ITEM-00727,45.116,Month,33.837,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00728,46.8,Month,35.1,Month,25%
+Dataproc,Dataproc,,ITEM-00729,8.413,Month,6.31,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00730,32.863,Month,24.647,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00731,45.085,Month,33.814,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00732,38.31,Month,28.733,Month,25%
+Memorystore,Memorystore,,ITEM-00733,28.534,Month,21.401,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00734,6.85,Month,5.137,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00735,42.139,Month,31.604,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00736,3.771,Month,2.828,Month,25%
+Memorystore,Memorystore,,ITEM-00737,35.958,Month,26.968,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00738,27.254,Month,20.441,Month,25%
+Dataproc,Dataproc,,ITEM-00739,46.831,Month,35.123,Month,25%
+Compute Engine,Compute Engine,,ITEM-00740,21.622,Month,16.216,Month,25%
+Secret Manager,Secret Manager,,ITEM-00741,3.318,Month,2.489,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00742,46.163,Month,34.622,Month,25%
+BigQuery,BigQuery,,ITEM-00743,37.83,Month,28.372,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00744,42.365,Month,31.774,Month,25%
+App Engine,App Engine,,ITEM-00745,35.942,Month,26.956,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00746,29.768,Month,22.326,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00747,44.544,Month,33.408,Month,25%
+Apigee,Apigee,,ITEM-00748,27.391,Month,20.543,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00749,48.244,Month,36.183,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00750,25.45,Month,19.087,Month,25%
+Memorystore,Memorystore,,ITEM-00751,19.234,Month,14.426,Month,25%
+Memorystore,Memorystore,,ITEM-00752,35.673,Month,26.755,Month,25%
+Memorystore,Memorystore,,ITEM-00753,35.259,Month,26.444,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00754,9.433,Month,7.075,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00755,42.69,Month,32.017,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00756,10.565,Month,7.924,Month,25%
+Vertex AI,Vertex AI,,ITEM-00757,47.402,Month,35.552,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00758,24.133,Month,18.1,Month,25%
+Dataproc,Dataproc,,ITEM-00759,25.957,Month,19.468,Month,25%
+Dataflow,Dataflow,,ITEM-00760,21.145,Month,15.859,Month,25%
+App Engine,App Engine,,ITEM-00761,24.158,Month,18.119,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00762,25.318,Month,18.989,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00763,7.612,Month,5.709,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00764,9.038,Month,6.779,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00765,37.885,Month,28.414,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00766,28.308,Month,21.231,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00767,6.735,Month,5.051,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00768,0.293,Month,0.22,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00769,41.345,Month,31.009,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00770,7.977,Month,5.983,Month,25%
+Workflows,Workflows,,ITEM-00771,35.779,Month,26.834,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00772,46.027,Month,34.52,Month,25%
+Cloud Run,Cloud Run,,ITEM-00773,6.207,Month,4.655,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00774,31.245,Month,23.434,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00775,1.448,Month,1.086,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00776,37.897,Month,28.423,Month,25%
+Workflows,Workflows,,ITEM-00777,27.424,Month,20.568,Month,25%
+Secret Manager,Secret Manager,,ITEM-00778,16.301,Month,12.226,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00779,16.294,Month,12.221,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00780,26.353,Month,19.765,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00781,22.189,Month,16.642,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00782,0.569,Month,0.427,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00783,37.722,Month,28.291,Month,25%
+Cloud Build,Cloud Build,,ITEM-00784,21.868,Month,16.401,Month,25%
+Cloud Build,Cloud Build,,ITEM-00785,28.983,Month,21.737,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00786,14.532,Month,10.899,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00787,32.693,Month,24.52,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00788,33.374,Month,25.031,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00789,8.159,Month,6.119,Month,25%
+BigQuery,BigQuery,,ITEM-00790,33.714,Month,25.285,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00791,23.2,Month,17.4,Month,25%
+Cloud Build,Cloud Build,,ITEM-00792,28.673,Month,21.505,Month,25%
+Dataproc,Dataproc,,ITEM-00793,4.32,Month,3.24,Month,25%
+Memorystore,Memorystore,,ITEM-00794,20.196,Month,15.147,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00795,12.754,Month,9.566,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00796,48.418,Month,36.313,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00797,22.765,Month,17.074,Month,25%
+App Engine,App Engine,,ITEM-00798,18.53,Month,13.898,Month,25%
+Secret Manager,Secret Manager,,ITEM-00799,33.831,Month,25.373,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00800,19.366,Month,14.524,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00801,47.976,Month,35.982,Month,25%
+Firestore,Firestore,,ITEM-00802,11.911,Month,8.933,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00803,19.34,Month,14.505,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00804,44.88,Month,33.66,Month,25%
+Compute Engine,Compute Engine,,ITEM-00805,23.925,Month,17.944,Month,25%
+Apigee,Apigee,,ITEM-00806,1.749,Month,1.312,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00807,8.563,Month,6.422,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00808,2.133,Month,1.6,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00809,38.155,Month,28.616,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00810,16.539,Month,12.404,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00811,13.766,Month,10.325,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00812,2.687,Month,2.015,Month,25%
+Cloud DNS,Cloud DNS,,ITEM-00813,27.351,Month,20.513,Month,25%
+BigQuery,BigQuery,,ITEM-00814,31.455,Month,23.591,Month,25%
+Dataflow,Dataflow,,ITEM-00815,43.842,Month,32.882,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00816,21.331,Month,15.998,Month,25%
+Workflows,Workflows,,ITEM-00817,4.744,Month,3.558,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00818,35.295,Month,26.471,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00819,45.609,Month,34.207,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00820,27.207,Month,20.405,Month,25%
+Secret Manager,Secret Manager,,ITEM-00821,20.163,Month,15.122,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00822,32.367,Month,24.275,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00823,29.383,Month,22.037,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00824,11.484,Month,8.613,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00825,9.863,Month,7.397,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00826,40.067,Month,30.05,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00827,47.296,Month,35.472,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00828,34.702,Month,26.026,Month,25%
+Cloud Trace,Cloud Trace,,ITEM-00829,24.803,Month,18.602,Month,25%
+Memorystore,Memorystore,,ITEM-00830,47.052,Month,35.289,Month,25%
+BigQuery,BigQuery,,ITEM-00831,12.771,Month,9.578,Month,25%
+Secret Manager,Secret Manager,,ITEM-00832,38.8,Month,29.1,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00833,15.173,Month,11.38,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00834,8.69,Month,6.518,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00835,31.979,Month,23.984,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00836,37.003,Month,27.752,Month,25%
+Cloud Run,Cloud Run,,ITEM-00837,9.526,Month,7.144,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00838,30.398,Month,22.799,Month,25%
+VPC Network,VPC Network,,ITEM-00839,40.152,Month,30.114,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00840,7.61,Month,5.708,Month,25%
+Memorystore,Memorystore,,ITEM-00841,26.335,Month,19.751,Month,25%
+VPC Network,VPC Network,,ITEM-00842,31.883,Month,23.912,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00843,34.843,Month,26.132,Month,25%
+App Engine,App Engine,,ITEM-00844,9.948,Month,7.461,Month,25%
+VPC Network,VPC Network,,ITEM-00845,22.438,Month,16.828,Month,25%
+Vertex AI,Vertex AI,,ITEM-00846,15.734,Month,11.8,Month,25%
+Dataproc,Dataproc,,ITEM-00847,47.449,Month,35.587,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00848,28.321,Month,21.241,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00849,9.514,Month,7.135,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00850,11.997,Month,8.998,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00851,35.987,Month,26.99,Month,25%
+Error Reporting,Error Reporting,,ITEM-00852,17.799,Month,13.349,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00853,17.45,Month,13.087,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00854,6.21,Month,4.657,Month,25%
+Firestore,Firestore,,ITEM-00855,15.507,Month,11.63,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00856,12.02,Month,9.015,Month,25%
+Apigee,Apigee,,ITEM-00857,36.211,Month,27.158,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00858,1.85,Month,1.388,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00859,16.154,Month,12.116,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00860,45.144,Month,33.858,Month,25%
+Cloud Run,Cloud Run,,ITEM-00861,37.097,Month,27.823,Month,25%
+Secret Manager,Secret Manager,,ITEM-00862,33.14,Month,24.855,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00863,49.173,Month,36.88,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00864,8.888,Month,6.666,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00865,19.128,Month,14.346,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00866,17.851,Month,13.388,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00867,47.389,Month,35.542,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00868,0.946,Month,0.71,Month,25%
+Apigee,Apigee,,ITEM-00869,48.743,Month,36.557,Month,25%
+Secret Manager,Secret Manager,,ITEM-00870,4.463,Month,3.347,Month,25%
+Firestore,Firestore,,ITEM-00871,4.299,Month,3.224,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00872,48.435,Month,36.326,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00873,19.755,Month,14.816,Month,25%
+Dataflow,Dataflow,,ITEM-00874,48.67,Month,36.502,Month,25%
+Firestore,Firestore,,ITEM-00875,39.132,Month,29.349,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00876,12.939,Month,9.704,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00877,30.075,Month,22.556,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00878,47.488,Month,35.616,Month,25%
+Apigee,Apigee,,ITEM-00879,1.926,Month,1.444,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00880,49.281,Month,36.961,Month,25%
+Compute Engine,Compute Engine,,ITEM-00881,34.945,Month,26.209,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00882,28.862,Month,21.646,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00883,45.154,Month,33.866,Month,25%
+VPC Network,VPC Network,,ITEM-00884,3.965,Month,2.974,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00885,20.332,Month,15.249,Month,25%
+Memorystore,Memorystore,,ITEM-00886,3.589,Month,2.692,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00887,26.08,Month,19.56,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00888,6.992,Month,5.244,Month,25%
+Apigee,Apigee,,ITEM-00889,22.218,Month,16.663,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00890,12.07,Month,9.053,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00891,23.779,Month,17.834,Month,25%
+Error Reporting,Error Reporting,,ITEM-00892,25.625,Month,19.219,Month,25%
+BigQuery,BigQuery,,ITEM-00893,18.227,Month,13.67,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00894,1.681,Month,1.261,Month,25%
+Firestore,Firestore,,ITEM-00895,30.327,Month,22.745,Month,25%
+Secret Manager,Secret Manager,,ITEM-00896,6.133,Month,4.6,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00897,49.156,Month,36.867,Month,25%
+Dataproc,Dataproc,,ITEM-00898,45.399,Month,34.049,Month,25%
+Cloud Run,Cloud Run,,ITEM-00899,0.844,Month,0.633,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00900,36.532,Month,27.399,Month,25%
+Secret Manager,Secret Manager,,ITEM-00901,33.958,Month,25.468,Month,25%
+Workflows,Workflows,,ITEM-00902,10.287,Month,7.715,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00903,34.54,Month,25.905,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00904,26.815,Month,20.111,Month,25%
+Workflows,Workflows,,ITEM-00905,31.044,Month,23.283,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00906,26.622,Month,19.966,Month,25%
+Cloud Bigtable,Cloud Bigtable,,ITEM-00907,11.122,Month,8.341,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00908,32.056,Month,24.042,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00909,45.705,Month,34.279,Month,25%
+Cloud Run,Cloud Run,,ITEM-00910,37.503,Month,28.127,Month,25%
+Cloud Build,Cloud Build,,ITEM-00911,47.622,Month,35.716,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00912,37.657,Month,28.243,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00913,4.653,Month,3.49,Month,25%
+Secret Manager,Secret Manager,,ITEM-00914,4.903,Month,3.677,Month,25%
+Vertex AI,Vertex AI,,ITEM-00915,45.382,Month,34.036,Month,25%
+Cloud Source Repositories,Cloud Source Repositories,,ITEM-00916,46.868,Month,35.151,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00917,25.386,Month,19.04,Month,25%
+Memorystore,Memorystore,,ITEM-00918,13.224,Month,9.918,Month,25%
+BigQuery,BigQuery,,ITEM-00919,26.89,Month,20.168,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00920,10.963,Month,8.222,Month,25%
+Dataflow,Dataflow,,ITEM-00921,39.563,Month,29.672,Month,25%
+Vertex AI,Vertex AI,,ITEM-00922,30.328,Month,22.746,Month,25%
+App Engine,App Engine,,ITEM-00923,20.071,Month,15.053,Month,25%
+BigQuery,BigQuery,,ITEM-00924,33.788,Month,25.341,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00925,27.426,Month,20.569,Month,25%
+Memorystore,Memorystore,,ITEM-00926,5.487,Month,4.115,Month,25%
+Dataproc,Dataproc,,ITEM-00927,27.362,Month,20.521,Month,25%
+Cloud Tasks,Cloud Tasks,,ITEM-00928,43.028,Month,32.271,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00929,45.702,Month,34.276,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00930,39.577,Month,29.683,Month,25%
+VPC Network,VPC Network,,ITEM-00931,32.424,Month,24.318,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00932,48.195,Month,36.146,Month,25%
+Cloud IAM,Cloud IAM,,ITEM-00933,11.256,Month,8.442,Month,25%
+Apigee,Apigee,,ITEM-00934,32.279,Month,24.209,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00935,47.397,Month,35.548,Month,25%
+VPC Network,VPC Network,,ITEM-00936,40.657,Month,30.493,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00937,49.329,Month,36.997,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00938,1.735,Month,1.301,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00939,7.475,Month,5.606,Month,25%
+Vertex AI,Vertex AI,,ITEM-00940,22.872,Month,17.154,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00941,6.841,Month,5.131,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00942,20.988,Month,15.741,Month,25%
+Cloud Healthcare API,Cloud Healthcare API,,ITEM-00943,32.256,Month,24.192,Month,25%
+Workflows,Workflows,,ITEM-00944,28.204,Month,21.153,Month,25%
+Google Kubernetes Engine (GKE),Google Kubernetes Engine (GKE),,ITEM-00945,9.37,Month,7.027,Month,25%
+Cloud Pub/Sub,Cloud Pub/Sub,,ITEM-00946,38.041,Month,28.531,Month,25%
+Memorystore,Memorystore,,ITEM-00947,41.939,Month,31.454,Month,25%
+BigQuery,BigQuery,,ITEM-00948,10.643,Month,7.982,Month,25%
+Cloud Profiler,Cloud Profiler,,ITEM-00949,27.365,Month,20.524,Month,25%
+Cloud CDN,Cloud CDN,,ITEM-00950,38.597,Month,28.948,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00951,34.23,Month,25.672,Month,25%
+Dataproc,Dataproc,,ITEM-00952,23.177,Month,17.383,Month,25%
+Vertex AI,Vertex AI,,ITEM-00953,11.709,Month,8.782,Month,25%
+Vertex AI,Vertex AI,,ITEM-00954,32.204,Month,24.153,Month,25%
+Cloud Build,Cloud Build,,ITEM-00955,34.1,Month,25.575,Month,25%
+VPC Network,VPC Network,,ITEM-00956,28.993,Month,21.745,Month,25%
+Dataflow,Dataflow,,ITEM-00957,18.728,Month,14.046,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00958,29.459,Month,22.094,Month,25%
+Firestore,Firestore,,ITEM-00959,34.764,Month,26.073,Month,25%
+Vertex AI,Vertex AI,,ITEM-00960,22.867,Month,17.15,Month,25%
+Apigee,Apigee,,ITEM-00961,11.11,Month,8.332,Month,25%
+Firestore,Firestore,,ITEM-00962,9.093,Month,6.82,Month,25%
+BigQuery,BigQuery,,ITEM-00963,27.929,Month,20.947,Month,25%
+Cloud KMS,Cloud KMS,,ITEM-00964,24.43,Month,18.322,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00965,26.172,Month,19.629,Month,25%
+Dataflow,Dataflow,,ITEM-00966,17.498,Month,13.123,Month,25%
+Cloud Identity,Cloud Identity,,ITEM-00967,41.747,Month,31.31,Month,25%
+App Engine,App Engine,,ITEM-00968,40.118,Month,30.089,Month,25%
+Workflows,Workflows,,ITEM-00969,16.611,Month,12.458,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00970,6.107,Month,4.58,Month,25%
+Apigee,Apigee,,ITEM-00971,44.404,Month,33.303,Month,25%
+Error Reporting,Error Reporting,,ITEM-00972,48.44,Month,36.33,Month,25%
+Cloud Spanner,Cloud Spanner,,ITEM-00973,33.054,Month,24.791,Month,25%
+Compute Engine,Compute Engine,,ITEM-00974,34.756,Month,26.067,Month,25%
+Cloud Build,Cloud Build,,ITEM-00975,48.173,Month,36.13,Month,25%
+Secret Manager,Secret Manager,,ITEM-00976,14.976,Month,11.232,Month,25%
+BigQuery,BigQuery,,ITEM-00977,48.086,Month,36.064,Month,25%
+Cloud Deployment Manager,Cloud Deployment Manager,,ITEM-00978,26.71,Month,20.032,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00979,44.327,Month,33.245,Month,25%
+Cloud Monitoring,Cloud Monitoring,,ITEM-00980,40.098,Month,30.073,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-00981,39.673,Month,29.755,Month,25%
+Cloud Armor,Cloud Armor,,ITEM-00982,27.56,Month,20.67,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00983,30.949,Month,23.212,Month,25%
+Dataflow,Dataflow,,ITEM-00984,11.003,Month,8.252,Month,25%
+Dataflow,Dataflow,,ITEM-00985,4.308,Month,3.231,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00986,21.872,Month,16.404,Month,25%
+Memorystore,Memorystore,,ITEM-00987,22.897,Month,17.173,Month,25%
+Artifact Registry,Artifact Registry,,ITEM-00988,10.792,Month,8.094,Month,25%
+Vertex AI,Vertex AI,,ITEM-00989,13.535,Month,10.151,Month,25%
+Secret Manager,Secret Manager,,ITEM-00990,20.162,Month,15.121,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00991,27.844,Month,20.883,Month,25%
+Cloud Logging,Cloud Logging,,ITEM-00992,46.687,Month,35.015,Month,25%
+Cloud SQL,Cloud SQL,,ITEM-00993,21.279,Month,15.959,Month,25%
+Secret Manager,Secret Manager,,ITEM-00994,34.682,Month,26.012,Month,25%
+Cloud Scheduler,Cloud Scheduler,,ITEM-00995,23.865,Month,17.899,Month,25%
+Cloud Storage,Cloud Storage,,ITEM-00996,35.584,Month,26.688,Month,25%
+Dataproc,Dataproc,,ITEM-00997,9.234,Month,6.925,Month,25%
+Cloud Functions,Cloud Functions,,ITEM-00998,46.941,Month,35.206,Month,25%
+Cloud Interconnect,Cloud Interconnect,,ITEM-00999,30.931,Month,23.198,Month,25%
+Cloud Load Balancing,Cloud Load Balancing,,ITEM-01000,40.898,Month,30.674,Month,25%

@@ -1,0 +1,1001 @@
+csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+,Azure Kubernetes Service (AKS),ITEM-00001,azure,,IL4,FALSE
+,Azure DNS,ITEM-00002,azure,,IL2|IL4,FALSE
+,Azure Front Door,ITEM-00003,azure,,IL2,FALSE
+,Azure Key Vault,ITEM-00004,azure,,IL4|IL5|IL6,TRUE
+,Azure Virtual Network,ITEM-00005,azure,,IL4,TRUE
+,Azure Purview,ITEM-00006,azure,,IL2|IL5|IL6,FALSE
+,Azure Backup,ITEM-00007,azure,,IL2|IL4,TRUE
+,Azure Logic Apps,ITEM-00008,azure,,IL2|IL4|IL6,FALSE
+,Azure Machine Learning,ITEM-00009,azure,,IL2,FALSE
+,Azure Virtual Network,ITEM-00010,azure,,IL2|IL5|IL6,FALSE
+,Azure Synapse Analytics,ITEM-00011,azure,,IL4|IL5|IL6,FALSE
+,Azure SQL Database,ITEM-00012,azure,,IL2|IL5|IL6,TRUE
+,Azure Cache for Redis,ITEM-00013,azure,,IL4|IL6,TRUE
+,Azure Cache for Redis,ITEM-00014,azure,,IL2,TRUE
+,Azure Data Factory,ITEM-00015,azure,,IL2,FALSE
+,Azure SignalR Service,ITEM-00016,azure,,IL2|IL5,FALSE
+,Azure Key Vault,ITEM-00017,azure,,IL6,FALSE
+,Azure Stream Analytics,ITEM-00018,azure,,IL2,TRUE
+,Azure Private Link,ITEM-00019,azure,,IL4|IL5,FALSE
+,Azure Virtual Machines,ITEM-00020,azure,,IL2|IL4|IL6,TRUE
+,Azure Advisor,ITEM-00021,azure,,IL4,TRUE
+,Azure Logic Apps,ITEM-00022,azure,,IL2|IL5,TRUE
+,Azure Functions,ITEM-00023,azure,,IL2|IL4|IL6,FALSE
+,Azure Container Instances,ITEM-00024,azure,,IL2|IL4|IL6,FALSE
+,Azure Container Instances,ITEM-00025,azure,,IL4|IL5,FALSE
+,Azure Cache for Redis,ITEM-00026,azure,,IL4|IL5|IL6,FALSE
+,Azure Purview,ITEM-00027,azure,,IL5,FALSE
+,Azure Synapse Analytics,ITEM-00028,azure,,IL2,FALSE
+,Azure SQL Database,ITEM-00029,azure,,IL4|IL6,TRUE
+,Azure DNS,ITEM-00030,azure,,IL2|IL4|IL5,TRUE
+,Azure Spring Apps,ITEM-00031,azure,,IL4,FALSE
+,Azure Spring Apps,ITEM-00032,azure,,IL4|IL5|IL6,FALSE
+,Azure Bastion,ITEM-00033,azure,,IL2|IL4,FALSE
+,Azure API Management,ITEM-00034,azure,,IL2|IL4|IL5,TRUE
+,Azure Purview,ITEM-00035,azure,,IL2|IL5|IL6,TRUE
+,Azure Spring Apps,ITEM-00036,azure,,IL2|IL4|IL6,TRUE
+,Azure Cosmos DB,ITEM-00037,azure,,IL2|IL4|IL5,TRUE
+,Azure Service Bus,ITEM-00038,azure,,IL2|IL5|IL6,TRUE
+,Azure Load Balancer,ITEM-00039,azure,,IL4|IL5|IL6,FALSE
+,Azure Front Door,ITEM-00040,azure,,IL5|IL6,TRUE
+,Azure Logic Apps,ITEM-00041,azure,,IL4|IL5|IL6,FALSE
+,Azure Site Recovery,ITEM-00042,azure,,IL2|IL4|IL6,FALSE
+,Azure Bastion,ITEM-00043,azure,,IL2|IL4|IL6,FALSE
+,Azure Cache for Redis,ITEM-00044,azure,,IL2|IL5|IL6,FALSE
+,Azure Firewall,ITEM-00045,azure,,IL2|IL5|IL6,FALSE
+,Azure ExpressRoute,ITEM-00046,azure,,IL4|IL5,FALSE
+,Azure Data Factory,ITEM-00047,azure,,IL2|IL6,FALSE
+,Azure Synapse Analytics,ITEM-00048,azure,,IL4|IL5|IL6,FALSE
+,Azure Stream Analytics,ITEM-00049,azure,,IL5|IL6,FALSE
+,Azure Cosmos DB,ITEM-00050,azure,,IL2|IL4,TRUE
+,Azure Load Balancer,ITEM-00051,azure,,IL4|IL5,TRUE
+,Azure Key Vault,ITEM-00052,azure,,IL2|IL5,TRUE
+,Azure Site Recovery,ITEM-00053,azure,,IL2,FALSE
+,Azure Spring Apps,ITEM-00054,azure,,IL4|IL6,TRUE
+,Azure Virtual Machines,ITEM-00055,azure,,IL6,FALSE
+,Azure Spring Apps,ITEM-00056,azure,,IL2|IL4|IL6,FALSE
+,Azure Functions,ITEM-00057,azure,,IL4|IL6,FALSE
+,Azure Active Directory,ITEM-00058,azure,,IL2|IL6,FALSE
+,Azure ExpressRoute,ITEM-00059,azure,,IL2|IL5|IL6,TRUE
+,Azure Backup,ITEM-00060,azure,,IL6,TRUE
+,Azure Data Factory,ITEM-00061,azure,,IL2|IL6,FALSE
+,Azure Traffic Manager,ITEM-00062,azure,,IL2|IL5|IL6,FALSE
+,Azure Cosmos DB,ITEM-00063,azure,,IL2|IL5,TRUE
+,Azure Virtual Network,ITEM-00064,azure,,IL4|IL5|IL6,FALSE
+,Azure Active Directory,ITEM-00065,azure,,IL4|IL6,FALSE
+,Azure API Management,ITEM-00066,azure,,IL4|IL5|IL6,FALSE
+,Azure Firewall,ITEM-00067,azure,,IL5|IL6,FALSE
+,Azure DNS,ITEM-00068,azure,,IL4|IL5|IL6,FALSE
+,Azure Front Door,ITEM-00069,azure,,IL2|IL5,TRUE
+,Azure Functions,ITEM-00070,azure,,IL5|IL6,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00071,azure,,IL5,TRUE
+,Azure Monitor,ITEM-00072,azure,,IL2|IL5,TRUE
+,Azure Advisor,ITEM-00073,azure,,IL5,FALSE
+,Azure Cosmos DB,ITEM-00074,azure,,IL2|IL5|IL6,FALSE
+,Azure Data Factory,ITEM-00075,azure,,IL5,FALSE
+,Azure Firewall,ITEM-00076,azure,,IL6,FALSE
+,Azure Key Vault,ITEM-00077,azure,,IL2|IL4|IL5,FALSE
+,Azure Service Bus,ITEM-00078,azure,,IL5|IL6,TRUE
+,Azure DNS,ITEM-00079,azure,,IL4,FALSE
+,Azure Stream Analytics,ITEM-00080,azure,,IL2,FALSE
+,Azure Logic Apps,ITEM-00081,azure,,IL2|IL5|IL6,TRUE
+,Azure Advisor,ITEM-00082,azure,,IL5,TRUE
+,Azure Active Directory,ITEM-00083,azure,,IL2|IL4|IL6,FALSE
+,Azure Key Vault,ITEM-00084,azure,,IL2|IL4|IL6,TRUE
+,Azure Site Recovery,ITEM-00085,azure,,IL4,TRUE
+,Azure Functions,ITEM-00086,azure,,IL2|IL5|IL6,FALSE
+,Azure Functions,ITEM-00087,azure,,IL4|IL6,FALSE
+,Azure Blob Storage,ITEM-00088,azure,,IL4|IL5|IL6,TRUE
+,Azure Active Directory,ITEM-00089,azure,,IL4,FALSE
+,Azure SignalR Service,ITEM-00090,azure,,IL2|IL4|IL5,FALSE
+,Azure Arc,ITEM-00091,azure,,IL4|IL6,FALSE
+,Azure Machine Learning,ITEM-00092,azure,,IL2|IL4|IL6,TRUE
+,Azure Functions,ITEM-00093,azure,,IL5|IL6,TRUE
+,Azure Advisor,ITEM-00094,azure,,IL4,TRUE
+,Azure Site Recovery,ITEM-00095,azure,,IL2|IL4|IL6,FALSE
+,Azure Front Door,ITEM-00096,azure,,IL2|IL4|IL6,TRUE
+,Azure Analysis Services,ITEM-00097,azure,,IL2,FALSE
+,Azure Virtual Network,ITEM-00098,azure,,IL6,TRUE
+,Azure DNS,ITEM-00099,azure,,IL4|IL5,TRUE
+,Azure Stream Analytics,ITEM-00100,azure,,IL2|IL4|IL5,TRUE
+,Azure App Service,ITEM-00101,azure,,IL2|IL5|IL6,TRUE
+,Azure Service Bus,ITEM-00102,azure,,IL2,FALSE
+,Azure Purview,ITEM-00103,azure,,IL6,FALSE
+,Azure App Service,ITEM-00104,azure,,IL2|IL5|IL6,FALSE
+,Azure Blob Storage,ITEM-00105,azure,,IL4|IL6,FALSE
+,Azure Site Recovery,ITEM-00106,azure,,IL2|IL5|IL6,TRUE
+,Azure Functions,ITEM-00107,azure,,IL2|IL5|IL6,FALSE
+,Azure Advisor,ITEM-00108,azure,,IL2|IL4|IL6,FALSE
+,Azure Databricks,ITEM-00109,azure,,IL6,FALSE
+,Azure Front Door,ITEM-00110,azure,,IL5,TRUE
+,Azure Batch,ITEM-00111,azure,,IL2|IL4|IL5,TRUE
+,Azure Spring Apps,ITEM-00112,azure,,IL2|IL5,TRUE
+,Azure Container Instances,ITEM-00113,azure,,IL5|IL6,FALSE
+,Azure Blob Storage,ITEM-00114,azure,,IL4|IL6,TRUE
+,Azure Stream Analytics,ITEM-00115,azure,,IL4|IL5|IL6,TRUE
+,Azure Key Vault,ITEM-00116,azure,,IL4|IL5|IL6,TRUE
+,Azure Event Hubs,ITEM-00117,azure,,IL5|IL6,TRUE
+,Azure Machine Learning,ITEM-00118,azure,,IL2|IL4,FALSE
+,Azure Monitor,ITEM-00119,azure,,IL4,TRUE
+,Azure Active Directory,ITEM-00120,azure,,IL2|IL4|IL5,TRUE
+,Azure Monitor,ITEM-00121,azure,,IL2|IL5|IL6,TRUE
+,Azure Backup,ITEM-00122,azure,,IL2|IL4|IL6,TRUE
+,Azure DNS,ITEM-00123,azure,,IL2,FALSE
+,Azure Cache for Redis,ITEM-00124,azure,,IL2,FALSE
+,Azure Blob Storage,ITEM-00125,azure,,IL4|IL5|IL6,TRUE
+,Azure Key Vault,ITEM-00126,azure,,IL2|IL4|IL5,FALSE
+,Azure ExpressRoute,ITEM-00127,azure,,IL6,TRUE
+,Azure Event Hubs,ITEM-00128,azure,,IL4|IL5,FALSE
+,Azure Batch,ITEM-00129,azure,,IL2|IL4|IL6,TRUE
+,Azure HDInsight,ITEM-00130,azure,,IL4|IL5,TRUE
+,Azure API Management,ITEM-00131,azure,,IL4,TRUE
+,Azure Cosmos DB,ITEM-00132,azure,,IL2|IL6,TRUE
+,Azure Cache for Redis,ITEM-00133,azure,,IL4|IL5,FALSE
+,Azure Key Vault,ITEM-00134,azure,,IL4|IL5,FALSE
+,Azure SQL Database,ITEM-00135,azure,,IL4,TRUE
+,Azure Analysis Services,ITEM-00136,azure,,IL4|IL5,FALSE
+,Azure SignalR Service,ITEM-00137,azure,,IL5|IL6,FALSE
+,Azure Synapse Analytics,ITEM-00138,azure,,IL2|IL4,TRUE
+,Azure Databricks,ITEM-00139,azure,,IL2|IL4,TRUE
+,Azure API Management,ITEM-00140,azure,,IL4|IL5,FALSE
+,Azure Cosmos DB,ITEM-00141,azure,,IL5,FALSE
+,Azure Data Factory,ITEM-00142,azure,,IL2,TRUE
+,Azure Virtual Network,ITEM-00143,azure,,IL2,TRUE
+,Azure Bastion,ITEM-00144,azure,,IL2|IL5,TRUE
+,Azure Front Door,ITEM-00145,azure,,IL6,TRUE
+,Azure Cosmos DB,ITEM-00146,azure,,IL4|IL5,FALSE
+,Azure Analysis Services,ITEM-00147,azure,,IL5|IL6,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00148,azure,,IL2,TRUE
+,Azure Monitor,ITEM-00149,azure,,IL4|IL5|IL6,FALSE
+,Azure Active Directory,ITEM-00150,azure,,IL5|IL6,FALSE
+,Azure Backup,ITEM-00151,azure,,IL4,FALSE
+,Azure Service Bus,ITEM-00152,azure,,IL2|IL4|IL5,TRUE
+,Azure HDInsight,ITEM-00153,azure,,IL2|IL4|IL5,TRUE
+,Azure ExpressRoute,ITEM-00154,azure,,IL2|IL5,FALSE
+,Azure Functions,ITEM-00155,azure,,IL4|IL5|IL6,TRUE
+,Azure Container Instances,ITEM-00156,azure,,IL2|IL6,TRUE
+,Azure Virtual Machines,ITEM-00157,azure,,IL4,TRUE
+,Azure Data Factory,ITEM-00158,azure,,IL6,TRUE
+,Azure Spring Apps,ITEM-00159,azure,,IL4|IL6,TRUE
+,Azure Virtual Machines,ITEM-00160,azure,,IL5,FALSE
+,Azure Active Directory,ITEM-00161,azure,,IL5,TRUE
+,Azure Active Directory,ITEM-00162,azure,,IL2|IL5,FALSE
+,Azure Monitor,ITEM-00163,azure,,IL2|IL4|IL6,TRUE
+,Azure Functions,ITEM-00164,azure,,IL6,FALSE
+,Azure Private Link,ITEM-00165,azure,,IL2|IL5|IL6,TRUE
+,Azure Bastion,ITEM-00166,azure,,IL2|IL4|IL6,FALSE
+,Azure Key Vault,ITEM-00167,azure,,IL5,FALSE
+,Azure App Service,ITEM-00168,azure,,IL4|IL6,FALSE
+,Azure SQL Database,ITEM-00169,azure,,IL5|IL6,FALSE
+,Azure Data Factory,ITEM-00170,azure,,IL4|IL5|IL6,FALSE
+,Azure Functions,ITEM-00171,azure,,IL4|IL5|IL6,FALSE
+,Azure Monitor,ITEM-00172,azure,,IL2|IL6,TRUE
+,Azure Key Vault,ITEM-00173,azure,,IL2|IL6,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00174,azure,,IL4|IL5|IL6,FALSE
+,Azure Event Hubs,ITEM-00175,azure,,IL2|IL4|IL6,TRUE
+,Azure ExpressRoute,ITEM-00176,azure,,IL4,TRUE
+,Azure App Service,ITEM-00177,azure,,IL6,FALSE
+,Azure HDInsight,ITEM-00178,azure,,IL2|IL4|IL5,TRUE
+,Azure Site Recovery,ITEM-00179,azure,,IL2|IL6,TRUE
+,Azure Cosmos DB,ITEM-00180,azure,,IL4|IL5|IL6,TRUE
+,Azure API Management,ITEM-00181,azure,,IL5,TRUE
+,Azure Logic Apps,ITEM-00182,azure,,IL5|IL6,TRUE
+,Azure Traffic Manager,ITEM-00183,azure,,IL4|IL5|IL6,FALSE
+,Azure Analysis Services,ITEM-00184,azure,,IL2,TRUE
+,Azure Event Hubs,ITEM-00185,azure,,IL6,TRUE
+,Azure Key Vault,ITEM-00186,azure,,IL4,FALSE
+,Azure Load Balancer,ITEM-00187,azure,,IL2|IL4|IL5,TRUE
+,Azure Advisor,ITEM-00188,azure,,IL6,TRUE
+,Azure Machine Learning,ITEM-00189,azure,,IL5,FALSE
+,Azure Databricks,ITEM-00190,azure,,IL2|IL6,FALSE
+,Azure Arc,ITEM-00191,azure,,IL4|IL6,FALSE
+,Azure Virtual Machines,ITEM-00192,azure,,IL4|IL5|IL6,TRUE
+,Azure Cache for Redis,ITEM-00193,azure,,IL4|IL5|IL6,FALSE
+,Azure Stream Analytics,ITEM-00194,azure,,IL2|IL6,FALSE
+,Azure Backup,ITEM-00195,azure,,IL4|IL5|IL6,FALSE
+,Azure Analysis Services,ITEM-00196,azure,,IL4,FALSE
+,Azure DNS,ITEM-00197,azure,,IL2|IL4,TRUE
+,Azure Synapse Analytics,ITEM-00198,azure,,IL2,TRUE
+,Azure ExpressRoute,ITEM-00199,azure,,IL6,TRUE
+,Azure Arc,ITEM-00200,azure,,IL2|IL4|IL6,TRUE
+,Azure API Management,ITEM-00201,azure,,IL4|IL5,TRUE
+,Azure Synapse Analytics,ITEM-00202,azure,,IL5|IL6,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00203,azure,,IL5,TRUE
+,Azure Active Directory,ITEM-00204,azure,,IL4|IL6,TRUE
+,Azure Data Factory,ITEM-00205,azure,,IL4|IL5|IL6,FALSE
+,Azure Traffic Manager,ITEM-00206,azure,,IL2,FALSE
+,Azure Site Recovery,ITEM-00207,azure,,IL6,FALSE
+,Azure Site Recovery,ITEM-00208,azure,,IL2,TRUE
+,Azure Batch,ITEM-00209,azure,,IL5,TRUE
+,Azure DNS,ITEM-00210,azure,,IL2,FALSE
+,Azure ExpressRoute,ITEM-00211,azure,,IL2|IL4|IL6,TRUE
+,Azure Site Recovery,ITEM-00212,azure,,IL2,TRUE
+,Azure Private Link,ITEM-00213,azure,,IL2|IL5,TRUE
+,Azure ExpressRoute,ITEM-00214,azure,,IL2|IL4,FALSE
+,Azure HDInsight,ITEM-00215,azure,,IL6,TRUE
+,Azure Load Balancer,ITEM-00216,azure,,IL4|IL5,FALSE
+,Azure Functions,ITEM-00217,azure,,IL4|IL6,TRUE
+,Azure Load Balancer,ITEM-00218,azure,,IL2|IL5,TRUE
+,Azure Arc,ITEM-00219,azure,,IL4|IL5,TRUE
+,Azure Stream Analytics,ITEM-00220,azure,,IL2|IL6,TRUE
+,Azure Blob Storage,ITEM-00221,azure,,IL4|IL5|IL6,TRUE
+,Azure Analysis Services,ITEM-00222,azure,,IL2|IL5|IL6,TRUE
+,Azure Blob Storage,ITEM-00223,azure,,IL2|IL5|IL6,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00224,azure,,IL2|IL4|IL6,TRUE
+,Azure Arc,ITEM-00225,azure,,IL6,TRUE
+,Azure Site Recovery,ITEM-00226,azure,,IL5|IL6,TRUE
+,Azure Synapse Analytics,ITEM-00227,azure,,IL2|IL5|IL6,TRUE
+,Azure Spring Apps,ITEM-00228,azure,,IL2|IL4|IL6,TRUE
+,Azure API Management,ITEM-00229,azure,,IL2|IL5|IL6,TRUE
+,Azure Data Factory,ITEM-00230,azure,,IL2,TRUE
+,Azure Site Recovery,ITEM-00231,azure,,IL2|IL4|IL5,TRUE
+,Azure Service Bus,ITEM-00232,azure,,IL2|IL6,TRUE
+,Azure DNS,ITEM-00233,azure,,IL2|IL4|IL5,TRUE
+,Azure API Management,ITEM-00234,azure,,IL4|IL5|IL6,FALSE
+,Azure Traffic Manager,ITEM-00235,azure,,IL4|IL5|IL6,FALSE
+,Azure Event Hubs,ITEM-00236,azure,,IL2|IL4|IL6,TRUE
+,Azure Batch,ITEM-00237,azure,,IL4,FALSE
+,Azure Service Bus,ITEM-00238,azure,,IL2|IL4|IL6,FALSE
+,Azure ExpressRoute,ITEM-00239,azure,,IL5|IL6,FALSE
+,Azure Cache for Redis,ITEM-00240,azure,,IL2|IL4,FALSE
+,Azure Load Balancer,ITEM-00241,azure,,IL4|IL5|IL6,FALSE
+,Azure Traffic Manager,ITEM-00242,azure,,IL4,FALSE
+,Azure Load Balancer,ITEM-00243,azure,,IL2|IL4|IL5,TRUE
+,Azure Spring Apps,ITEM-00244,azure,,IL6,FALSE
+,Azure Stream Analytics,ITEM-00245,azure,,IL2|IL5|IL6,TRUE
+,Azure Databricks,ITEM-00246,azure,,IL2|IL4|IL5,FALSE
+,Azure Data Factory,ITEM-00247,azure,,IL2|IL4|IL6,TRUE
+,Azure Analysis Services,ITEM-00248,azure,,IL2|IL6,TRUE
+,Azure Event Hubs,ITEM-00249,azure,,IL5|IL6,FALSE
+,Azure Backup,ITEM-00250,azure,,IL2|IL6,TRUE
+,Azure SignalR Service,ITEM-00251,azure,,IL6,TRUE
+,Azure SQL Database,ITEM-00252,azure,,IL5|IL6,FALSE
+,Azure Active Directory,ITEM-00253,azure,,IL2|IL4|IL6,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00254,azure,,IL4,FALSE
+,Azure ExpressRoute,ITEM-00255,azure,,IL2|IL5,FALSE
+,Azure Synapse Analytics,ITEM-00256,azure,,IL2|IL5,FALSE
+,Azure Firewall,ITEM-00257,azure,,IL4|IL5|IL6,FALSE
+,Azure Arc,ITEM-00258,azure,,IL2|IL4|IL6,FALSE
+,Azure Batch,ITEM-00259,azure,,IL4|IL6,TRUE
+,Azure ExpressRoute,ITEM-00260,azure,,IL4|IL5|IL6,FALSE
+,Azure HDInsight,ITEM-00261,azure,,IL2,TRUE
+,Azure Key Vault,ITEM-00262,azure,,IL5|IL6,FALSE
+,Azure SQL Database,ITEM-00263,azure,,IL2|IL4|IL5,FALSE
+,Azure DNS,ITEM-00264,azure,,IL2,FALSE
+,Azure Virtual Machines,ITEM-00265,azure,,IL2|IL5|IL6,FALSE
+,Azure SQL Database,ITEM-00266,azure,,IL4|IL5|IL6,TRUE
+,Azure Monitor,ITEM-00267,azure,,IL2|IL4,TRUE
+,Azure Stream Analytics,ITEM-00268,azure,,IL2|IL4|IL6,TRUE
+,Azure Advisor,ITEM-00269,azure,,IL2|IL4,TRUE
+,Azure Advisor,ITEM-00270,azure,,IL4|IL6,FALSE
+,Azure Stream Analytics,ITEM-00271,azure,,IL6,FALSE
+,Azure Batch,ITEM-00272,azure,,IL2|IL4,FALSE
+,Azure DNS,ITEM-00273,azure,,IL4|IL6,FALSE
+,Azure Private Link,ITEM-00274,azure,,IL4|IL5|IL6,TRUE
+,Azure HDInsight,ITEM-00275,azure,,IL2|IL5|IL6,TRUE
+,Azure Cache for Redis,ITEM-00276,azure,,IL2|IL6,TRUE
+,Azure ExpressRoute,ITEM-00277,azure,,IL2|IL4|IL5,TRUE
+,Azure Stream Analytics,ITEM-00278,azure,,IL4|IL5|IL6,FALSE
+,Azure Cache for Redis,ITEM-00279,azure,,IL2|IL4|IL6,TRUE
+,Azure Private Link,ITEM-00280,azure,,IL5,FALSE
+,Azure Private Link,ITEM-00281,azure,,IL4,TRUE
+,Azure Virtual Machines,ITEM-00282,azure,,IL4,FALSE
+,Azure Spring Apps,ITEM-00283,azure,,IL2,FALSE
+,Azure Traffic Manager,ITEM-00284,azure,,IL2|IL5|IL6,TRUE
+,Azure SignalR Service,ITEM-00285,azure,,IL2|IL4|IL6,TRUE
+,Azure Virtual Network,ITEM-00286,azure,,IL2|IL6,TRUE
+,Azure Data Factory,ITEM-00287,azure,,IL4|IL5|IL6,FALSE
+,Azure SQL Database,ITEM-00288,azure,,IL2|IL4|IL6,TRUE
+,Azure Logic Apps,ITEM-00289,azure,,IL4|IL5|IL6,FALSE
+,Azure Databricks,ITEM-00290,azure,,IL2|IL4|IL5,TRUE
+,Azure Bastion,ITEM-00291,azure,,IL2|IL4|IL6,FALSE
+,Azure Virtual Machines,ITEM-00292,azure,,IL4|IL5|IL6,FALSE
+,Azure SQL Database,ITEM-00293,azure,,IL2,FALSE
+,Azure Virtual Network,ITEM-00294,azure,,IL4|IL5|IL6,TRUE
+,Azure SQL Database,ITEM-00295,azure,,IL2|IL4|IL6,TRUE
+,Azure Private Link,ITEM-00296,azure,,IL4|IL5,TRUE
+,Azure Front Door,ITEM-00297,azure,,IL2|IL4,FALSE
+,Azure Firewall,ITEM-00298,azure,,IL5,FALSE
+,Azure API Management,ITEM-00299,azure,,IL2|IL4|IL6,FALSE
+,Azure Blob Storage,ITEM-00300,azure,,IL4|IL5|IL6,FALSE
+,Azure HDInsight,ITEM-00301,azure,,IL2,TRUE
+,Azure App Service,ITEM-00302,azure,,IL4,TRUE
+,Azure SQL Database,ITEM-00303,azure,,IL5,TRUE
+,Azure Stream Analytics,ITEM-00304,azure,,IL5,FALSE
+,Azure SignalR Service,ITEM-00305,azure,,IL5|IL6,FALSE
+,Azure Key Vault,ITEM-00306,azure,,IL6,TRUE
+,Azure Service Bus,ITEM-00307,azure,,IL2|IL4|IL6,TRUE
+,Azure Cache for Redis,ITEM-00308,azure,,IL2|IL4|IL6,TRUE
+,Azure Synapse Analytics,ITEM-00309,azure,,IL2|IL4|IL5,TRUE
+,Azure App Service,ITEM-00310,azure,,IL2|IL4,TRUE
+,Azure Arc,ITEM-00311,azure,,IL4|IL5|IL6,FALSE
+,Azure API Management,ITEM-00312,azure,,IL4|IL5|IL6,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00313,azure,,IL2|IL4|IL6,TRUE
+,Azure Arc,ITEM-00314,azure,,IL2,TRUE
+,Azure Blob Storage,ITEM-00315,azure,,IL2|IL4|IL6,TRUE
+,Azure Synapse Analytics,ITEM-00316,azure,,IL2|IL4|IL5,TRUE
+,Azure Site Recovery,ITEM-00317,azure,,IL2|IL4|IL6,TRUE
+,Azure Arc,ITEM-00318,azure,,IL4|IL5,FALSE
+,Azure Active Directory,ITEM-00319,azure,,IL2,TRUE
+,Azure SignalR Service,ITEM-00320,azure,,IL2|IL6,FALSE
+,Azure Traffic Manager,ITEM-00321,azure,,IL2|IL4|IL5,FALSE
+,Azure Event Hubs,ITEM-00322,azure,,IL2,FALSE
+,Azure Active Directory,ITEM-00323,azure,,IL4,FALSE
+,Azure Load Balancer,ITEM-00324,azure,,IL2|IL4|IL6,TRUE
+,Azure Cosmos DB,ITEM-00325,azure,,IL4|IL5|IL6,FALSE
+,Azure HDInsight,ITEM-00326,azure,,IL2,FALSE
+,Azure Service Bus,ITEM-00327,azure,,IL4,FALSE
+,Azure Virtual Machines,ITEM-00328,azure,,IL4|IL5,TRUE
+,Azure Arc,ITEM-00329,azure,,IL6,TRUE
+,Azure Databricks,ITEM-00330,azure,,IL2|IL5|IL6,FALSE
+,Azure Monitor,ITEM-00331,azure,,IL2|IL4|IL6,FALSE
+,Azure Monitor,ITEM-00332,azure,,IL2|IL4,FALSE
+,Azure DNS,ITEM-00333,azure,,IL4|IL5|IL6,FALSE
+,Azure Blob Storage,ITEM-00334,azure,,IL2|IL4|IL5,TRUE
+,Azure Firewall,ITEM-00335,azure,,IL5,FALSE
+,Azure Firewall,ITEM-00336,azure,,IL2,FALSE
+,Azure Logic Apps,ITEM-00337,azure,,IL4|IL5|IL6,TRUE
+,Azure App Service,ITEM-00338,azure,,IL4|IL5,TRUE
+,Azure Backup,ITEM-00339,azure,,IL2|IL4|IL5,FALSE
+,Azure API Management,ITEM-00340,azure,,IL2,FALSE
+,Azure API Management,ITEM-00341,azure,,IL4|IL5,TRUE
+,Azure Container Instances,ITEM-00342,azure,,IL2|IL4|IL5,FALSE
+,Azure Event Hubs,ITEM-00343,azure,,IL5,FALSE
+,Azure ExpressRoute,ITEM-00344,azure,,IL2,TRUE
+,Azure Databricks,ITEM-00345,azure,,IL2|IL4|IL6,FALSE
+,Azure Advisor,ITEM-00346,azure,,IL2|IL5,TRUE
+,Azure Load Balancer,ITEM-00347,azure,,IL2|IL6,TRUE
+,Azure Logic Apps,ITEM-00348,azure,,IL2|IL4,FALSE
+,Azure Logic Apps,ITEM-00349,azure,,IL2|IL4|IL6,FALSE
+,Azure Purview,ITEM-00350,azure,,IL2|IL5|IL6,FALSE
+,Azure Stream Analytics,ITEM-00351,azure,,IL2,TRUE
+,Azure SQL Database,ITEM-00352,azure,,IL6,TRUE
+,Azure Analysis Services,ITEM-00353,azure,,IL2|IL5|IL6,FALSE
+,Azure DNS,ITEM-00354,azure,,IL2|IL5|IL6,FALSE
+,Azure Front Door,ITEM-00355,azure,,IL4|IL5,FALSE
+,Azure App Service,ITEM-00356,azure,,IL4,FALSE
+,Azure Firewall,ITEM-00357,azure,,IL2|IL4|IL6,TRUE
+,Azure Front Door,ITEM-00358,azure,,IL6,TRUE
+,Azure Functions,ITEM-00359,azure,,IL2|IL5,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00360,azure,,IL5,TRUE
+,Azure Private Link,ITEM-00361,azure,,IL4,FALSE
+,Azure Site Recovery,ITEM-00362,azure,,IL2,TRUE
+,Azure App Service,ITEM-00363,azure,,IL2|IL4|IL6,TRUE
+,Azure Firewall,ITEM-00364,azure,,IL2|IL5|IL6,FALSE
+,Azure DNS,ITEM-00365,azure,,IL4|IL6,FALSE
+,Azure Batch,ITEM-00366,azure,,IL4,TRUE
+,Azure Virtual Network,ITEM-00367,azure,,IL2|IL5,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00368,azure,,IL2|IL5|IL6,FALSE
+,Azure Databricks,ITEM-00369,azure,,IL2|IL6,TRUE
+,Azure Machine Learning,ITEM-00370,azure,,IL6,TRUE
+,Azure SignalR Service,ITEM-00371,azure,,IL4|IL5,FALSE
+,Azure Blob Storage,ITEM-00372,azure,,IL2,TRUE
+,Azure Databricks,ITEM-00373,azure,,IL2,FALSE
+,Azure Virtual Network,ITEM-00374,azure,,IL4|IL6,TRUE
+,Azure Spring Apps,ITEM-00375,azure,,IL4,FALSE
+,Azure Stream Analytics,ITEM-00376,azure,,IL4|IL6,TRUE
+,Azure Site Recovery,ITEM-00377,azure,,IL2|IL5,FALSE
+,Azure Advisor,ITEM-00378,azure,,IL4|IL5|IL6,FALSE
+,Azure DNS,ITEM-00379,azure,,IL5,FALSE
+,Azure Backup,ITEM-00380,azure,,IL2|IL4|IL6,TRUE
+,Azure Backup,ITEM-00381,azure,,IL2|IL5,FALSE
+,Azure Blob Storage,ITEM-00382,azure,,IL5,TRUE
+,Azure SQL Database,ITEM-00383,azure,,IL2|IL4|IL6,FALSE
+,Azure HDInsight,ITEM-00384,azure,,IL2|IL5,FALSE
+,Azure Firewall,ITEM-00385,azure,,IL4|IL5|IL6,TRUE
+,Azure Backup,ITEM-00386,azure,,IL4|IL5|IL6,TRUE
+,Azure SignalR Service,ITEM-00387,azure,,IL4,TRUE
+,Azure Traffic Manager,ITEM-00388,azure,,IL2,TRUE
+,Azure Service Bus,ITEM-00389,azure,,IL4|IL5|IL6,TRUE
+,Azure Monitor,ITEM-00390,azure,,IL2,FALSE
+,Azure SignalR Service,ITEM-00391,azure,,IL2|IL4|IL5,TRUE
+,Azure Load Balancer,ITEM-00392,azure,,IL2|IL5,TRUE
+,Azure Advisor,ITEM-00393,azure,,IL2|IL5,FALSE
+,Azure Monitor,ITEM-00394,azure,,IL2|IL4|IL5,FALSE
+,Azure Monitor,ITEM-00395,azure,,IL4|IL5|IL6,TRUE
+,Azure Blob Storage,ITEM-00396,azure,,IL4|IL5|IL6,TRUE
+,Azure Site Recovery,ITEM-00397,azure,,IL4|IL5|IL6,TRUE
+,Azure Active Directory,ITEM-00398,azure,,IL6,FALSE
+,Azure Cache for Redis,ITEM-00399,azure,,IL4|IL5|IL6,FALSE
+,Azure Private Link,ITEM-00400,azure,,IL2|IL4|IL6,FALSE
+,Azure Purview,ITEM-00401,azure,,IL2|IL5,TRUE
+,Azure Backup,ITEM-00402,azure,,IL4|IL5|IL6,TRUE
+,Azure Private Link,ITEM-00403,azure,,IL5|IL6,FALSE
+,Azure Virtual Network,ITEM-00404,azure,,IL2|IL4,FALSE
+,Azure Load Balancer,ITEM-00405,azure,,IL4|IL5|IL6,TRUE
+,Azure Private Link,ITEM-00406,azure,,IL5|IL6,FALSE
+,Azure Container Instances,ITEM-00407,azure,,IL2|IL4,FALSE
+,Azure Private Link,ITEM-00408,azure,,IL2|IL5,TRUE
+,Azure SignalR Service,ITEM-00409,azure,,IL5|IL6,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00410,azure,,IL5,FALSE
+,Azure Synapse Analytics,ITEM-00411,azure,,IL4|IL5|IL6,FALSE
+,Azure ExpressRoute,ITEM-00412,azure,,IL2|IL4,FALSE
+,Azure Front Door,ITEM-00413,azure,,IL2|IL4|IL5,FALSE
+,Azure Monitor,ITEM-00414,azure,,IL2|IL4|IL6,FALSE
+,Azure Site Recovery,ITEM-00415,azure,,IL4,FALSE
+,Azure Machine Learning,ITEM-00416,azure,,IL2|IL5|IL6,FALSE
+,Azure Firewall,ITEM-00417,azure,,IL2|IL5|IL6,TRUE
+,Azure ExpressRoute,ITEM-00418,azure,,IL4,FALSE
+,Azure Container Instances,ITEM-00419,azure,,IL5|IL6,TRUE
+,Azure DNS,ITEM-00420,azure,,IL6,FALSE
+,Azure Site Recovery,ITEM-00421,azure,,IL2|IL5|IL6,TRUE
+,Azure Advisor,ITEM-00422,azure,,IL4|IL6,FALSE
+,Azure HDInsight,ITEM-00423,azure,,IL4,TRUE
+,Azure Virtual Machines,ITEM-00424,azure,,IL2|IL5|IL6,TRUE
+,Azure Cache for Redis,ITEM-00425,azure,,IL6,TRUE
+,Azure Data Factory,ITEM-00426,azure,,IL5,FALSE
+,Azure Batch,ITEM-00427,azure,,IL5,FALSE
+,Azure Analysis Services,ITEM-00428,azure,,IL2|IL4|IL5,FALSE
+,Azure Cache for Redis,ITEM-00429,azure,,IL4|IL5|IL6,FALSE
+,Azure Blob Storage,ITEM-00430,azure,,IL2,FALSE
+,Azure Data Factory,ITEM-00431,azure,,IL2|IL4|IL5,FALSE
+,Azure Logic Apps,ITEM-00432,azure,,IL5,TRUE
+,Azure Databricks,ITEM-00433,azure,,IL2|IL4|IL5,TRUE
+,Azure Backup,ITEM-00434,azure,,IL2|IL6,FALSE
+,Azure Front Door,ITEM-00435,azure,,IL2,FALSE
+,Azure Databricks,ITEM-00436,azure,,IL2|IL4|IL6,FALSE
+,Azure Synapse Analytics,ITEM-00437,azure,,IL2,FALSE
+,Azure Spring Apps,ITEM-00438,azure,,IL2|IL4|IL5,FALSE
+,Azure Advisor,ITEM-00439,azure,,IL2|IL4|IL5,FALSE
+,Azure HDInsight,ITEM-00440,azure,,IL2|IL4|IL5,FALSE
+,Azure ExpressRoute,ITEM-00441,azure,,IL2|IL4|IL5,TRUE
+,Azure SignalR Service,ITEM-00442,azure,,IL6,FALSE
+,Azure Monitor,ITEM-00443,azure,,IL2|IL6,TRUE
+,Azure Virtual Machines,ITEM-00444,azure,,IL2|IL4|IL5,FALSE
+,Azure Machine Learning,ITEM-00445,azure,,IL5,TRUE
+,Azure DNS,ITEM-00446,azure,,IL5|IL6,TRUE
+,Azure Blob Storage,ITEM-00447,azure,,IL2|IL5,TRUE
+,Azure Container Instances,ITEM-00448,azure,,IL5,TRUE
+,Azure Bastion,ITEM-00449,azure,,IL5,TRUE
+,Azure Blob Storage,ITEM-00450,azure,,IL2|IL5|IL6,TRUE
+,Azure SQL Database,ITEM-00451,azure,,IL5|IL6,FALSE
+,Azure Bastion,ITEM-00452,azure,,IL2|IL4|IL5,FALSE
+,Azure ExpressRoute,ITEM-00453,azure,,IL2|IL4|IL5,FALSE
+,Azure Data Factory,ITEM-00454,azure,,IL2|IL4|IL5,FALSE
+,Azure Monitor,ITEM-00455,azure,,IL2,TRUE
+,Azure Virtual Machines,ITEM-00456,azure,,IL2|IL5|IL6,FALSE
+,Azure Bastion,ITEM-00457,azure,,IL6,TRUE
+,Azure Site Recovery,ITEM-00458,azure,,IL4,FALSE
+,Azure Databricks,ITEM-00459,azure,,IL4|IL6,TRUE
+,Azure Firewall,ITEM-00460,azure,,IL2|IL5|IL6,TRUE
+,Azure Monitor,ITEM-00461,azure,,IL2|IL4|IL5,TRUE
+,Azure Functions,ITEM-00462,azure,,IL2|IL6,TRUE
+,Azure Traffic Manager,ITEM-00463,azure,,IL2|IL4|IL5,FALSE
+,Azure Front Door,ITEM-00464,azure,,IL4|IL6,FALSE
+,Azure Container Instances,ITEM-00465,azure,,IL2|IL4|IL6,FALSE
+,Azure Virtual Machines,ITEM-00466,azure,,IL4|IL5|IL6,TRUE
+,Azure Service Bus,ITEM-00467,azure,,IL2|IL4,FALSE
+,Azure Machine Learning,ITEM-00468,azure,,IL6,TRUE
+,Azure Backup,ITEM-00469,azure,,IL2|IL4|IL5,TRUE
+,Azure Batch,ITEM-00470,azure,,IL2|IL6,TRUE
+,Azure Virtual Network,ITEM-00471,azure,,IL4|IL6,TRUE
+,Azure App Service,ITEM-00472,azure,,IL2|IL5|IL6,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00473,azure,,IL2|IL6,TRUE
+,Azure Purview,ITEM-00474,azure,,IL5,TRUE
+,Azure Databricks,ITEM-00475,azure,,IL4,FALSE
+,Azure Spring Apps,ITEM-00476,azure,,IL2|IL4,TRUE
+,Azure Machine Learning,ITEM-00477,azure,,IL2|IL5,TRUE
+,Azure Backup,ITEM-00478,azure,,IL2|IL4,FALSE
+,Azure Analysis Services,ITEM-00479,azure,,IL4,FALSE
+,Azure SQL Database,ITEM-00480,azure,,IL6,TRUE
+,Azure SignalR Service,ITEM-00481,azure,,IL5|IL6,TRUE
+,Azure Active Directory,ITEM-00482,azure,,IL4|IL5|IL6,TRUE
+,Azure Traffic Manager,ITEM-00483,azure,,IL2|IL4|IL5,FALSE
+,Azure Batch,ITEM-00484,azure,,IL4|IL5|IL6,TRUE
+,Azure Machine Learning,ITEM-00485,azure,,IL4|IL5,FALSE
+,Azure Container Instances,ITEM-00486,azure,,IL5,FALSE
+,Azure Purview,ITEM-00487,azure,,IL4|IL5,FALSE
+,Azure ExpressRoute,ITEM-00488,azure,,IL2|IL4|IL5,FALSE
+,Azure Arc,ITEM-00489,azure,,IL4|IL5|IL6,TRUE
+,Azure Machine Learning,ITEM-00490,azure,,IL4,FALSE
+,Azure Front Door,ITEM-00491,azure,,IL5,FALSE
+,Azure HDInsight,ITEM-00492,azure,,IL4|IL6,TRUE
+,Azure Purview,ITEM-00493,azure,,IL4|IL5|IL6,TRUE
+,Azure Site Recovery,ITEM-00494,azure,,IL2|IL4|IL6,FALSE
+,Azure Batch,ITEM-00495,azure,,IL2|IL5|IL6,TRUE
+,Azure Analysis Services,ITEM-00496,azure,,IL6,TRUE
+,Azure Logic Apps,ITEM-00497,azure,,IL2,FALSE
+,Azure Private Link,ITEM-00498,azure,,IL2|IL4|IL6,TRUE
+,Azure Cache for Redis,ITEM-00499,azure,,IL2|IL4,TRUE
+,Azure Arc,ITEM-00500,azure,,IL2|IL4,TRUE
+,Azure Analysis Services,ITEM-00501,azure,,IL6,FALSE
+,Azure Blob Storage,ITEM-00502,azure,,IL4,TRUE
+,Azure SignalR Service,ITEM-00503,azure,,IL2|IL4,FALSE
+,Azure API Management,ITEM-00504,azure,,IL2,FALSE
+,Azure DNS,ITEM-00505,azure,,IL2|IL4|IL5,TRUE
+,Azure Firewall,ITEM-00506,azure,,IL2|IL6,FALSE
+,Azure Active Directory,ITEM-00507,azure,,IL5,TRUE
+,Azure Front Door,ITEM-00508,azure,,IL5,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00509,azure,,IL2|IL4|IL5,TRUE
+,Azure ExpressRoute,ITEM-00510,azure,,IL2,FALSE
+,Azure Arc,ITEM-00511,azure,,IL4|IL5|IL6,TRUE
+,Azure Monitor,ITEM-00512,azure,,IL5,FALSE
+,Azure Stream Analytics,ITEM-00513,azure,,IL2|IL5|IL6,FALSE
+,Azure Batch,ITEM-00514,azure,,IL2|IL5|IL6,TRUE
+,Azure App Service,ITEM-00515,azure,,IL4|IL5|IL6,TRUE
+,Azure Purview,ITEM-00516,azure,,IL4,FALSE
+,Azure Monitor,ITEM-00517,azure,,IL4|IL5,TRUE
+,Azure Virtual Machines,ITEM-00518,azure,,IL2|IL5|IL6,FALSE
+,Azure Analysis Services,ITEM-00519,azure,,IL2|IL4|IL5,TRUE
+,Azure Advisor,ITEM-00520,azure,,IL2|IL4|IL6,FALSE
+,Azure Load Balancer,ITEM-00521,azure,,IL2|IL5,TRUE
+,Azure API Management,ITEM-00522,azure,,IL5|IL6,TRUE
+,Azure Synapse Analytics,ITEM-00523,azure,,IL2|IL6,FALSE
+,Azure Backup,ITEM-00524,azure,,IL4|IL5|IL6,FALSE
+,Azure Data Factory,ITEM-00525,azure,,IL5,TRUE
+,Azure DNS,ITEM-00526,azure,,IL4|IL6,TRUE
+,Azure SignalR Service,ITEM-00527,azure,,IL2|IL6,TRUE
+,Azure Virtual Network,ITEM-00528,azure,,IL2|IL4|IL6,FALSE
+,Azure DNS,ITEM-00529,azure,,IL2|IL5|IL6,FALSE
+,Azure Purview,ITEM-00530,azure,,IL2,TRUE
+,Azure Logic Apps,ITEM-00531,azure,,IL4,FALSE
+,Azure Batch,ITEM-00532,azure,,IL2|IL5|IL6,TRUE
+,Azure Load Balancer,ITEM-00533,azure,,IL2|IL4,FALSE
+,Azure Spring Apps,ITEM-00534,azure,,IL5,TRUE
+,Azure Arc,ITEM-00535,azure,,IL4|IL5,TRUE
+,Azure Active Directory,ITEM-00536,azure,,IL2|IL4|IL5,TRUE
+,Azure Site Recovery,ITEM-00537,azure,,IL4|IL6,TRUE
+,Azure Backup,ITEM-00538,azure,,IL2|IL5,FALSE
+,Azure Cache for Redis,ITEM-00539,azure,,IL2|IL4|IL5,FALSE
+,Azure DNS,ITEM-00540,azure,,IL5,TRUE
+,Azure Container Instances,ITEM-00541,azure,,IL2|IL5|IL6,FALSE
+,Azure Firewall,ITEM-00542,azure,,IL4,TRUE
+,Azure Blob Storage,ITEM-00543,azure,,IL6,FALSE
+,Azure Machine Learning,ITEM-00544,azure,,IL5,TRUE
+,Azure Batch,ITEM-00545,azure,,IL2|IL4,TRUE
+,Azure SQL Database,ITEM-00546,azure,,IL4|IL6,FALSE
+,Azure Traffic Manager,ITEM-00547,azure,,IL5,FALSE
+,Azure Purview,ITEM-00548,azure,,IL5,TRUE
+,Azure Firewall,ITEM-00549,azure,,IL2|IL5,TRUE
+,Azure Machine Learning,ITEM-00550,azure,,IL4|IL5,TRUE
+,Azure Traffic Manager,ITEM-00551,azure,,IL2|IL6,FALSE
+,Azure Arc,ITEM-00552,azure,,IL5,TRUE
+,Azure Functions,ITEM-00553,azure,,IL4|IL5,TRUE
+,Azure Logic Apps,ITEM-00554,azure,,IL4|IL5|IL6,TRUE
+,Azure Key Vault,ITEM-00555,azure,,IL2|IL4,FALSE
+,Azure Data Factory,ITEM-00556,azure,,IL2|IL4|IL5,TRUE
+,Azure Cache for Redis,ITEM-00557,azure,,IL2|IL4|IL5,TRUE
+,Azure Traffic Manager,ITEM-00558,azure,,IL2|IL5,TRUE
+,Azure API Management,ITEM-00559,azure,,IL4,TRUE
+,Azure Cache for Redis,ITEM-00560,azure,,IL5,FALSE
+,Azure Analysis Services,ITEM-00561,azure,,IL4|IL5|IL6,TRUE
+,Azure Spring Apps,ITEM-00562,azure,,IL4|IL6,FALSE
+,Azure Purview,ITEM-00563,azure,,IL2|IL4,TRUE
+,Azure HDInsight,ITEM-00564,azure,,IL5,FALSE
+,Azure Stream Analytics,ITEM-00565,azure,,IL2|IL5|IL6,TRUE
+,Azure DNS,ITEM-00566,azure,,IL2|IL5|IL6,FALSE
+,Azure Private Link,ITEM-00567,azure,,IL2|IL4,TRUE
+,Azure Batch,ITEM-00568,azure,,IL4,FALSE
+,Azure Firewall,ITEM-00569,azure,,IL4|IL5,TRUE
+,Azure Spring Apps,ITEM-00570,azure,,IL2|IL5|IL6,TRUE
+,Azure SignalR Service,ITEM-00571,azure,,IL2|IL4|IL6,FALSE
+,Azure Functions,ITEM-00572,azure,,IL2|IL4|IL5,FALSE
+,Azure API Management,ITEM-00573,azure,,IL4|IL5|IL6,TRUE
+,Azure Load Balancer,ITEM-00574,azure,,IL4,FALSE
+,Azure Advisor,ITEM-00575,azure,,IL2|IL5|IL6,FALSE
+,Azure Cache for Redis,ITEM-00576,azure,,IL2|IL4|IL6,FALSE
+,Azure Spring Apps,ITEM-00577,azure,,IL2|IL4|IL6,FALSE
+,Azure Batch,ITEM-00578,azure,,IL2|IL5|IL6,FALSE
+,Azure Active Directory,ITEM-00579,azure,,IL5|IL6,TRUE
+,Azure SQL Database,ITEM-00580,azure,,IL2,TRUE
+,Azure Traffic Manager,ITEM-00581,azure,,IL4,TRUE
+,Azure Machine Learning,ITEM-00582,azure,,IL2,TRUE
+,Azure Private Link,ITEM-00583,azure,,IL4|IL5,FALSE
+,Azure Spring Apps,ITEM-00584,azure,,IL4,TRUE
+,Azure Backup,ITEM-00585,azure,,IL2|IL5|IL6,TRUE
+,Azure Active Directory,ITEM-00586,azure,,IL4|IL5|IL6,TRUE
+,Azure Bastion,ITEM-00587,azure,,IL2|IL5|IL6,FALSE
+,Azure Key Vault,ITEM-00588,azure,,IL2|IL4|IL6,TRUE
+,Azure Batch,ITEM-00589,azure,,IL6,TRUE
+,Azure API Management,ITEM-00590,azure,,IL4,TRUE
+,Azure Data Factory,ITEM-00591,azure,,IL2|IL4|IL5,FALSE
+,Azure Front Door,ITEM-00592,azure,,IL6,TRUE
+,Azure ExpressRoute,ITEM-00593,azure,,IL2|IL4|IL6,FALSE
+,Azure Functions,ITEM-00594,azure,,IL4|IL6,TRUE
+,Azure Backup,ITEM-00595,azure,,IL2|IL5|IL6,FALSE
+,Azure Front Door,ITEM-00596,azure,,IL4,TRUE
+,Azure Firewall,ITEM-00597,azure,,IL2|IL4|IL5,FALSE
+,Azure Firewall,ITEM-00598,azure,,IL2|IL4|IL6,FALSE
+,Azure Advisor,ITEM-00599,azure,,IL5,FALSE
+,Azure ExpressRoute,ITEM-00600,azure,,IL2,TRUE
+,Azure Event Hubs,ITEM-00601,azure,,IL2|IL5,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00602,azure,,IL2,FALSE
+,Azure Container Instances,ITEM-00603,azure,,IL2,TRUE
+,Azure Active Directory,ITEM-00604,azure,,IL5|IL6,FALSE
+,Azure Bastion,ITEM-00605,azure,,IL2|IL6,TRUE
+,Azure Firewall,ITEM-00606,azure,,IL5|IL6,TRUE
+,Azure Virtual Machines,ITEM-00607,azure,,IL2|IL4|IL6,FALSE
+,Azure Databricks,ITEM-00608,azure,,IL2|IL4|IL6,TRUE
+,Azure Service Bus,ITEM-00609,azure,,IL6,FALSE
+,Azure Logic Apps,ITEM-00610,azure,,IL5|IL6,FALSE
+,Azure Data Factory,ITEM-00611,azure,,IL2|IL6,FALSE
+,Azure Analysis Services,ITEM-00612,azure,,IL6,FALSE
+,Azure Monitor,ITEM-00613,azure,,IL4|IL5|IL6,FALSE
+,Azure HDInsight,ITEM-00614,azure,,IL2|IL4,TRUE
+,Azure Active Directory,ITEM-00615,azure,,IL2,FALSE
+,Azure Private Link,ITEM-00616,azure,,IL2|IL4,TRUE
+,Azure Blob Storage,ITEM-00617,azure,,IL4|IL5,TRUE
+,Azure Traffic Manager,ITEM-00618,azure,,IL4,FALSE
+,Azure Container Instances,ITEM-00619,azure,,IL4,TRUE
+,Azure ExpressRoute,ITEM-00620,azure,,IL2|IL5|IL6,TRUE
+,Azure Advisor,ITEM-00621,azure,,IL2,FALSE
+,Azure DNS,ITEM-00622,azure,,IL2|IL5|IL6,TRUE
+,Azure Stream Analytics,ITEM-00623,azure,,IL5|IL6,FALSE
+,Azure Advisor,ITEM-00624,azure,,IL4,FALSE
+,Azure Cosmos DB,ITEM-00625,azure,,IL5|IL6,FALSE
+,Azure Stream Analytics,ITEM-00626,azure,,IL6,FALSE
+,Azure Data Factory,ITEM-00627,azure,,IL2|IL4|IL6,TRUE
+,Azure Backup,ITEM-00628,azure,,IL2|IL5|IL6,TRUE
+,Azure Firewall,ITEM-00629,azure,,IL2|IL5|IL6,FALSE
+,Azure Key Vault,ITEM-00630,azure,,IL5,TRUE
+,Azure Logic Apps,ITEM-00631,azure,,IL2|IL6,FALSE
+,Azure Load Balancer,ITEM-00632,azure,,IL6,TRUE
+,Azure SignalR Service,ITEM-00633,azure,,IL2|IL5,FALSE
+,Azure Backup,ITEM-00634,azure,,IL2|IL5|IL6,FALSE
+,Azure Advisor,ITEM-00635,azure,,IL2|IL4|IL5,FALSE
+,Azure Arc,ITEM-00636,azure,,IL5,FALSE
+,Azure Arc,ITEM-00637,azure,,IL5,FALSE
+,Azure Private Link,ITEM-00638,azure,,IL2|IL5,TRUE
+,Azure Site Recovery,ITEM-00639,azure,,IL2,FALSE
+,Azure Virtual Machines,ITEM-00640,azure,,IL2|IL5,FALSE
+,Azure Blob Storage,ITEM-00641,azure,,IL2|IL4|IL5,FALSE
+,Azure Event Hubs,ITEM-00642,azure,,IL2|IL4,FALSE
+,Azure Stream Analytics,ITEM-00643,azure,,IL5|IL6,TRUE
+,Azure Purview,ITEM-00644,azure,,IL4,FALSE
+,Azure Purview,ITEM-00645,azure,,IL2|IL5,TRUE
+,Azure App Service,ITEM-00646,azure,,IL4|IL6,FALSE
+,Azure Functions,ITEM-00647,azure,,IL4,TRUE
+,Azure Purview,ITEM-00648,azure,,IL2|IL4|IL6,TRUE
+,Azure Cache for Redis,ITEM-00649,azure,,IL2|IL4|IL5,TRUE
+,Azure Private Link,ITEM-00650,azure,,IL2|IL4,TRUE
+,Azure Arc,ITEM-00651,azure,,IL4,TRUE
+,Azure Active Directory,ITEM-00652,azure,,IL5,FALSE
+,Azure API Management,ITEM-00653,azure,,IL2|IL4|IL6,FALSE
+,Azure Firewall,ITEM-00654,azure,,IL6,TRUE
+,Azure Analysis Services,ITEM-00655,azure,,IL4,FALSE
+,Azure Synapse Analytics,ITEM-00656,azure,,IL4,TRUE
+,Azure Logic Apps,ITEM-00657,azure,,IL4|IL5,FALSE
+,Azure Monitor,ITEM-00658,azure,,IL2|IL6,FALSE
+,Azure Virtual Network,ITEM-00659,azure,,IL5,TRUE
+,Azure Cosmos DB,ITEM-00660,azure,,IL2|IL4|IL5,TRUE
+,Azure Functions,ITEM-00661,azure,,IL6,FALSE
+,Azure Firewall,ITEM-00662,azure,,IL2|IL4|IL5,TRUE
+,Azure Service Bus,ITEM-00663,azure,,IL2|IL4|IL6,FALSE
+,Azure Backup,ITEM-00664,azure,,IL2|IL6,FALSE
+,Azure Front Door,ITEM-00665,azure,,IL2|IL6,TRUE
+,Azure Event Hubs,ITEM-00666,azure,,IL4|IL6,TRUE
+,Azure Purview,ITEM-00667,azure,,IL2|IL4,FALSE
+,Azure Monitor,ITEM-00668,azure,,IL2|IL4|IL5,FALSE
+,Azure Functions,ITEM-00669,azure,,IL4,TRUE
+,Azure Functions,ITEM-00670,azure,,IL2,FALSE
+,Azure Purview,ITEM-00671,azure,,IL5|IL6,FALSE
+,Azure Site Recovery,ITEM-00672,azure,,IL6,TRUE
+,Azure Service Bus,ITEM-00673,azure,,IL6,TRUE
+,Azure Virtual Network,ITEM-00674,azure,,IL5|IL6,TRUE
+,Azure Blob Storage,ITEM-00675,azure,,IL4,FALSE
+,Azure Purview,ITEM-00676,azure,,IL6,FALSE
+,Azure Functions,ITEM-00677,azure,,IL4,FALSE
+,Azure Private Link,ITEM-00678,azure,,IL4|IL5|IL6,FALSE
+,Azure Monitor,ITEM-00679,azure,,IL4|IL5,FALSE
+,Azure Machine Learning,ITEM-00680,azure,,IL2|IL5,FALSE
+,Azure Monitor,ITEM-00681,azure,,IL2|IL4,TRUE
+,Azure Virtual Network,ITEM-00682,azure,,IL5,FALSE
+,Azure Blob Storage,ITEM-00683,azure,,IL2|IL6,FALSE
+,Azure Blob Storage,ITEM-00684,azure,,IL2|IL4,FALSE
+,Azure SignalR Service,ITEM-00685,azure,,IL2|IL4|IL5,FALSE
+,Azure Synapse Analytics,ITEM-00686,azure,,IL2|IL4,FALSE
+,Azure Blob Storage,ITEM-00687,azure,,IL2|IL4|IL5,FALSE
+,Azure Site Recovery,ITEM-00688,azure,,IL2,FALSE
+,Azure Databricks,ITEM-00689,azure,,IL2|IL4|IL5,FALSE
+,Azure Stream Analytics,ITEM-00690,azure,,IL2|IL5,FALSE
+,Azure Monitor,ITEM-00691,azure,,IL2,FALSE
+,Azure Arc,ITEM-00692,azure,,IL2|IL5|IL6,FALSE
+,Azure Front Door,ITEM-00693,azure,,IL4|IL6,FALSE
+,Azure DNS,ITEM-00694,azure,,IL4|IL5,TRUE
+,Azure Databricks,ITEM-00695,azure,,IL2|IL4|IL6,TRUE
+,Azure Spring Apps,ITEM-00696,azure,,IL2|IL5|IL6,TRUE
+,Azure SignalR Service,ITEM-00697,azure,,IL5,FALSE
+,Azure Bastion,ITEM-00698,azure,,IL5,TRUE
+,Azure Monitor,ITEM-00699,azure,,IL4|IL5|IL6,FALSE
+,Azure Virtual Network,ITEM-00700,azure,,IL2|IL4|IL5,FALSE
+,Azure Private Link,ITEM-00701,azure,,IL2,FALSE
+,Azure Analysis Services,ITEM-00702,azure,,IL4|IL5,TRUE
+,Azure Active Directory,ITEM-00703,azure,,IL4|IL5|IL6,TRUE
+,Azure Firewall,ITEM-00704,azure,,IL4|IL5|IL6,TRUE
+,Azure Spring Apps,ITEM-00705,azure,,IL6,FALSE
+,Azure Cache for Redis,ITEM-00706,azure,,IL6,TRUE
+,Azure Kubernetes Service (AKS),ITEM-00707,azure,,IL2|IL5|IL6,TRUE
+,Azure DNS,ITEM-00708,azure,,IL6,TRUE
+,Azure Cache for Redis,ITEM-00709,azure,,IL4|IL6,FALSE
+,Azure Traffic Manager,ITEM-00710,azure,,IL4,FALSE
+,Azure Purview,ITEM-00711,azure,,IL2,FALSE
+,Azure Traffic Manager,ITEM-00712,azure,,IL2,FALSE
+,Azure Data Factory,ITEM-00713,azure,,IL5,FALSE
+,Azure Analysis Services,ITEM-00714,azure,,IL2|IL4|IL6,TRUE
+,Azure Batch,ITEM-00715,azure,,IL4|IL5|IL6,TRUE
+,Azure Load Balancer,ITEM-00716,azure,,IL4,TRUE
+,Azure Synapse Analytics,ITEM-00717,azure,,IL2|IL5|IL6,TRUE
+,Azure App Service,ITEM-00718,azure,,IL4,FALSE
+,Azure Service Bus,ITEM-00719,azure,,IL5,FALSE
+,Azure Advisor,ITEM-00720,azure,,IL2|IL4|IL6,FALSE
+,Azure Purview,ITEM-00721,azure,,IL2|IL5|IL6,FALSE
+,Azure Key Vault,ITEM-00722,azure,,IL4,TRUE
+,Azure Virtual Network,ITEM-00723,azure,,IL2|IL5|IL6,FALSE
+,Azure Stream Analytics,ITEM-00724,azure,,IL4|IL5|IL6,TRUE
+,Azure App Service,ITEM-00725,azure,,IL4|IL6,TRUE
+,Azure Bastion,ITEM-00726,azure,,IL4|IL5|IL6,FALSE
+,Azure Logic Apps,ITEM-00727,azure,,IL4|IL5,TRUE
+,Azure API Management,ITEM-00728,azure,,IL4|IL5|IL6,FALSE
+,Azure Data Factory,ITEM-00729,azure,,IL6,FALSE
+,Azure Traffic Manager,ITEM-00730,azure,,IL5|IL6,TRUE
+,Azure Machine Learning,ITEM-00731,azure,,IL2|IL5|IL6,FALSE
+,Azure Blob Storage,ITEM-00732,azure,,IL2|IL4|IL6,TRUE
+,Azure Bastion,ITEM-00733,azure,,IL2|IL4,TRUE
+,Azure HDInsight,ITEM-00734,azure,,IL2|IL5|IL6,TRUE
+,Azure Batch,ITEM-00735,azure,,IL2|IL4|IL6,TRUE
+,Azure HDInsight,ITEM-00736,azure,,IL4|IL5|IL6,FALSE
+,Azure Bastion,ITEM-00737,azure,,IL2|IL4|IL6,TRUE
+,Azure Logic Apps,ITEM-00738,azure,,IL4|IL5|IL6,FALSE
+,Azure Traffic Manager,ITEM-00739,azure,,IL4|IL5|IL6,TRUE
+,Azure Front Door,ITEM-00740,azure,,IL4,TRUE
+,Azure API Management,ITEM-00741,azure,,IL5|IL6,FALSE
+,Azure Active Directory,ITEM-00742,azure,,IL2|IL5|IL6,FALSE
+,Azure Virtual Network,ITEM-00743,azure,,IL2|IL5|IL6,FALSE
+,Azure Key Vault,ITEM-00744,azure,,IL5|IL6,TRUE
+,Azure Key Vault,ITEM-00745,azure,,IL5,FALSE
+,Azure Key Vault,ITEM-00746,azure,,IL2|IL4,TRUE
+,Azure Service Bus,ITEM-00747,azure,,IL2|IL5,FALSE
+,Azure DNS,ITEM-00748,azure,,IL4|IL5,TRUE
+,Azure Virtual Network,ITEM-00749,azure,,IL2|IL5,FALSE
+,Azure Purview,ITEM-00750,azure,,IL2|IL4|IL5,TRUE
+,Azure Firewall,ITEM-00751,azure,,IL2|IL4|IL5,FALSE
+,Azure Arc,ITEM-00752,azure,,IL4|IL5|IL6,FALSE
+,Azure SignalR Service,ITEM-00753,azure,,IL2|IL5|IL6,FALSE
+,Azure Load Balancer,ITEM-00754,azure,,IL2|IL4|IL5,FALSE
+,Azure Container Instances,ITEM-00755,azure,,IL5,FALSE
+,Azure Analysis Services,ITEM-00756,azure,,IL2,TRUE
+,Azure Event Hubs,ITEM-00757,azure,,IL2,FALSE
+,Azure Data Factory,ITEM-00758,azure,,IL2|IL5|IL6,FALSE
+,Azure Advisor,ITEM-00759,azure,,IL2|IL4|IL5,TRUE
+,Azure Active Directory,ITEM-00760,azure,,IL2|IL4,FALSE
+,Azure Logic Apps,ITEM-00761,azure,,IL4,FALSE
+,Azure Cosmos DB,ITEM-00762,azure,,IL4|IL5|IL6,FALSE
+,Azure Synapse Analytics,ITEM-00763,azure,,IL5|IL6,TRUE
+,Azure Container Instances,ITEM-00764,azure,,IL4|IL5|IL6,TRUE
+,Azure Key Vault,ITEM-00765,azure,,IL6,TRUE
+,Azure Purview,ITEM-00766,azure,,IL2|IL5|IL6,TRUE
+,Azure Active Directory,ITEM-00767,azure,,IL4|IL5|IL6,TRUE
+,Azure Private Link,ITEM-00768,azure,,IL2|IL5|IL6,FALSE
+,Azure SignalR Service,ITEM-00769,azure,,IL6,FALSE
+,Azure Active Directory,ITEM-00770,azure,,IL5|IL6,TRUE
+,Azure Databricks,ITEM-00771,azure,,IL2|IL6,TRUE
+,Azure Backup,ITEM-00772,azure,,IL4,TRUE
+,Azure Traffic Manager,ITEM-00773,azure,,IL2|IL4|IL5,FALSE
+,Azure Monitor,ITEM-00774,azure,,IL2,FALSE
+,Azure Machine Learning,ITEM-00775,azure,,IL2|IL5|IL6,FALSE
+,Azure Purview,ITEM-00776,azure,,IL2|IL4,FALSE
+,Azure Virtual Network,ITEM-00777,azure,,IL6,FALSE
+,Azure HDInsight,ITEM-00778,azure,,IL2|IL4|IL5,TRUE
+,Azure Batch,ITEM-00779,azure,,IL5|IL6,FALSE
+,Azure Functions,ITEM-00780,azure,,IL5|IL6,TRUE
+,Azure Analysis Services,ITEM-00781,azure,,IL2|IL5,TRUE
+,Azure SignalR Service,ITEM-00782,azure,,IL6,FALSE
+,Azure Front Door,ITEM-00783,azure,,IL4|IL5,FALSE
+,Azure SignalR Service,ITEM-00784,azure,,IL2|IL4,FALSE
+,Azure Batch,ITEM-00785,azure,,IL4|IL6,TRUE
+,Azure Front Door,ITEM-00786,azure,,IL2|IL4|IL6,FALSE
+,Azure Event Hubs,ITEM-00787,azure,,IL4|IL6,FALSE
+,Azure Cosmos DB,ITEM-00788,azure,,IL2|IL6,FALSE
+,Azure Spring Apps,ITEM-00789,azure,,IL4|IL5,FALSE
+,Azure Purview,ITEM-00790,azure,,IL2,TRUE
+,Azure Arc,ITEM-00791,azure,,IL4|IL5,TRUE
+,Azure Private Link,ITEM-00792,azure,,IL2|IL5|IL6,FALSE
+,Azure Cache for Redis,ITEM-00793,azure,,IL2|IL6,TRUE
+,Azure SQL Database,ITEM-00794,azure,,IL4|IL5|IL6,FALSE
+,Azure DNS,ITEM-00795,azure,,IL6,FALSE
+,Azure Spring Apps,ITEM-00796,azure,,IL4|IL5|IL6,FALSE
+,Azure Batch,ITEM-00797,azure,,IL4|IL5|IL6,FALSE
+,Azure Spring Apps,ITEM-00798,azure,,IL5|IL6,FALSE
+,Azure Virtual Network,ITEM-00799,azure,,IL5|IL6,TRUE
+,Azure Blob Storage,ITEM-00800,azure,,IL2|IL4|IL6,TRUE
+,Azure Cosmos DB,ITEM-00801,azure,,IL2|IL5|IL6,TRUE
+,Azure API Management,ITEM-00802,azure,,IL2|IL4|IL5,TRUE
+,Azure Functions,ITEM-00803,azure,,IL2|IL6,FALSE
+,Azure Advisor,ITEM-00804,azure,,IL5|IL6,TRUE
+,Azure Cosmos DB,ITEM-00805,azure,,IL2|IL6,TRUE
+,Azure Front Door,ITEM-00806,azure,,IL4,TRUE
+,Azure Analysis Services,ITEM-00807,azure,,IL2|IL4|IL5,FALSE
+,Azure App Service,ITEM-00808,azure,,IL4,FALSE
+,Azure Databricks,ITEM-00809,azure,,IL2,FALSE
+,Azure Front Door,ITEM-00810,azure,,IL2|IL5|IL6,FALSE
+,Azure Firewall,ITEM-00811,azure,,IL2|IL4|IL6,TRUE
+,Azure SignalR Service,ITEM-00812,azure,,IL2,FALSE
+,Azure Stream Analytics,ITEM-00813,azure,,IL5|IL6,TRUE
+,Azure Service Bus,ITEM-00814,azure,,IL2|IL4|IL5,FALSE
+,Azure Private Link,ITEM-00815,azure,,IL4|IL5|IL6,FALSE
+,Azure Backup,ITEM-00816,azure,,IL2|IL4,FALSE
+,Azure Machine Learning,ITEM-00817,azure,,IL5|IL6,TRUE
+,Azure Key Vault,ITEM-00818,azure,,IL4|IL5,FALSE
+,Azure Data Factory,ITEM-00819,azure,,IL2|IL4|IL5,TRUE
+,Azure Data Factory,ITEM-00820,azure,,IL2,TRUE
+,Azure Stream Analytics,ITEM-00821,azure,,IL2|IL6,TRUE
+,Azure Active Directory,ITEM-00822,azure,,IL2,TRUE
+,Azure Event Hubs,ITEM-00823,azure,,IL5,TRUE
+,Azure SQL Database,ITEM-00824,azure,,IL2|IL4|IL6,FALSE
+,Azure Key Vault,ITEM-00825,azure,,IL2|IL5|IL6,FALSE
+,Azure Front Door,ITEM-00826,azure,,IL5,FALSE
+,Azure Analysis Services,ITEM-00827,azure,,IL2|IL6,TRUE
+,Azure Data Factory,ITEM-00828,azure,,IL5,FALSE
+,Azure DNS,ITEM-00829,azure,,IL4|IL5,TRUE
+,Azure Machine Learning,ITEM-00830,azure,,IL2|IL4|IL5,FALSE
+,Azure Firewall,ITEM-00831,azure,,IL5|IL6,TRUE
+,Azure Backup,ITEM-00832,azure,,IL5,FALSE
+,Azure Virtual Network,ITEM-00833,azure,,IL2,FALSE
+,Azure Cosmos DB,ITEM-00834,azure,,IL4|IL5|IL6,FALSE
+,Azure Stream Analytics,ITEM-00835,azure,,IL6,TRUE
+,Azure Site Recovery,ITEM-00836,azure,,IL6,TRUE
+,Azure Key Vault,ITEM-00837,azure,,IL2|IL4,TRUE
+,Azure Container Instances,ITEM-00838,azure,,IL2|IL5,TRUE
+,Azure Container Instances,ITEM-00839,azure,,IL2,FALSE
+,Azure Advisor,ITEM-00840,azure,,IL4|IL5|IL6,TRUE
+,Azure Functions,ITEM-00841,azure,,IL4,FALSE
+,Azure SQL Database,ITEM-00842,azure,,IL4|IL5,FALSE
+,Azure Purview,ITEM-00843,azure,,IL4|IL6,TRUE
+,Azure Data Factory,ITEM-00844,azure,,IL4|IL5,TRUE
+,Azure DNS,ITEM-00845,azure,,IL4|IL6,FALSE
+,Azure Purview,ITEM-00846,azure,,IL5|IL6,TRUE
+,Azure Backup,ITEM-00847,azure,,IL5,FALSE
+,Azure Event Hubs,ITEM-00848,azure,,IL2|IL4|IL6,TRUE
+,Azure Site Recovery,ITEM-00849,azure,,IL6,FALSE
+,Azure Private Link,ITEM-00850,azure,,IL6,TRUE
+,Azure Container Instances,ITEM-00851,azure,,IL2|IL5|IL6,FALSE
+,Azure Traffic Manager,ITEM-00852,azure,,IL2|IL4,FALSE
+,Azure Private Link,ITEM-00853,azure,,IL2|IL4|IL5,TRUE
+,Azure Service Bus,ITEM-00854,azure,,IL5,FALSE
+,Azure Stream Analytics,ITEM-00855,azure,,IL5|IL6,TRUE
+,Azure API Management,ITEM-00856,azure,,IL4|IL5|IL6,FALSE
+,Azure Purview,ITEM-00857,azure,,IL2|IL6,TRUE
+,Azure Data Factory,ITEM-00858,azure,,IL2,FALSE
+,Azure Private Link,ITEM-00859,azure,,IL2,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00860,azure,,IL5,FALSE
+,Azure HDInsight,ITEM-00861,azure,,IL2|IL5|IL6,TRUE
+,Azure Purview,ITEM-00862,azure,,IL6,TRUE
+,Azure Machine Learning,ITEM-00863,azure,,IL2,TRUE
+,Azure Load Balancer,ITEM-00864,azure,,IL2|IL4,FALSE
+,Azure DNS,ITEM-00865,azure,,IL2|IL5|IL6,FALSE
+,Azure Batch,ITEM-00866,azure,,IL2|IL5|IL6,FALSE
+,Azure Virtual Machines,ITEM-00867,azure,,IL2|IL4|IL6,TRUE
+,Azure Analysis Services,ITEM-00868,azure,,IL4|IL6,FALSE
+,Azure Load Balancer,ITEM-00869,azure,,IL2|IL4|IL5,TRUE
+,Azure SQL Database,ITEM-00870,azure,,IL4|IL5,TRUE
+,Azure Load Balancer,ITEM-00871,azure,,IL6,FALSE
+,Azure Virtual Network,ITEM-00872,azure,,IL5,TRUE
+,Azure Key Vault,ITEM-00873,azure,,IL4|IL5|IL6,TRUE
+,Azure Blob Storage,ITEM-00874,azure,,IL5,FALSE
+,Azure Virtual Machines,ITEM-00875,azure,,IL2|IL5,TRUE
+,Azure Cache for Redis,ITEM-00876,azure,,IL5|IL6,FALSE
+,Azure Databricks,ITEM-00877,azure,,IL2|IL5|IL6,TRUE
+,Azure Machine Learning,ITEM-00878,azure,,IL2|IL4,TRUE
+,Azure Traffic Manager,ITEM-00879,azure,,IL4|IL5,TRUE
+,Azure SQL Database,ITEM-00880,azure,,IL6,FALSE
+,Azure Databricks,ITEM-00881,azure,,IL4|IL5|IL6,FALSE
+,Azure API Management,ITEM-00882,azure,,IL5,FALSE
+,Azure Cosmos DB,ITEM-00883,azure,,IL2|IL4|IL6,TRUE
+,Azure Advisor,ITEM-00884,azure,,IL6,FALSE
+,Azure Private Link,ITEM-00885,azure,,IL5|IL6,TRUE
+,Azure Batch,ITEM-00886,azure,,IL4|IL6,TRUE
+,Azure Cosmos DB,ITEM-00887,azure,,IL2|IL4|IL5,FALSE
+,Azure Synapse Analytics,ITEM-00888,azure,,IL2|IL5|IL6,TRUE
+,Azure Machine Learning,ITEM-00889,azure,,IL2|IL6,TRUE
+,Azure Cosmos DB,ITEM-00890,azure,,IL2|IL4|IL6,FALSE
+,Azure Monitor,ITEM-00891,azure,,IL2,TRUE
+,Azure Arc,ITEM-00892,azure,,IL4,FALSE
+,Azure Service Bus,ITEM-00893,azure,,IL2|IL5|IL6,TRUE
+,Azure App Service,ITEM-00894,azure,,IL2,FALSE
+,Azure Logic Apps,ITEM-00895,azure,,IL5,FALSE
+,Azure Traffic Manager,ITEM-00896,azure,,IL2|IL4|IL5,FALSE
+,Azure Event Hubs,ITEM-00897,azure,,IL4|IL5|IL6,FALSE
+,Azure Stream Analytics,ITEM-00898,azure,,IL4,FALSE
+,Azure Analysis Services,ITEM-00899,azure,,IL4|IL5|IL6,TRUE
+,Azure Virtual Network,ITEM-00900,azure,,IL2|IL5,TRUE
+,Azure Bastion,ITEM-00901,azure,,IL2,FALSE
+,Azure Container Instances,ITEM-00902,azure,,IL2|IL4|IL6,TRUE
+,Azure Virtual Network,ITEM-00903,azure,,IL4|IL6,FALSE
+,Azure Key Vault,ITEM-00904,azure,,IL2|IL5|IL6,TRUE
+,Azure Event Hubs,ITEM-00905,azure,,IL6,TRUE
+,Azure Purview,ITEM-00906,azure,,IL2|IL5|IL6,FALSE
+,Azure Load Balancer,ITEM-00907,azure,,IL2,FALSE
+,Azure Databricks,ITEM-00908,azure,,IL2|IL5|IL6,TRUE
+,Azure Firewall,ITEM-00909,azure,,IL5|IL6,TRUE
+,Azure ExpressRoute,ITEM-00910,azure,,IL6,TRUE
+,Azure HDInsight,ITEM-00911,azure,,IL5,TRUE
+,Azure Firewall,ITEM-00912,azure,,IL4|IL6,FALSE
+,Azure HDInsight,ITEM-00913,azure,,IL2|IL5|IL6,TRUE
+,Azure Analysis Services,ITEM-00914,azure,,IL2|IL4|IL6,TRUE
+,Azure Purview,ITEM-00915,azure,,IL2|IL4,TRUE
+,Azure Front Door,ITEM-00916,azure,,IL2|IL4|IL6,TRUE
+,Azure Private Link,ITEM-00917,azure,,IL2,TRUE
+,Azure HDInsight,ITEM-00918,azure,,IL2|IL5|IL6,TRUE
+,Azure Traffic Manager,ITEM-00919,azure,,IL2|IL6,FALSE
+,Azure Front Door,ITEM-00920,azure,,IL2|IL6,TRUE
+,Azure Active Directory,ITEM-00921,azure,,IL4,FALSE
+,Azure Machine Learning,ITEM-00922,azure,,IL4|IL5,FALSE
+,Azure Spring Apps,ITEM-00923,azure,,IL2|IL5,FALSE
+,Azure SQL Database,ITEM-00924,azure,,IL2,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00925,azure,,IL5,FALSE
+,Azure Key Vault,ITEM-00926,azure,,IL2|IL5,TRUE
+,Azure Databricks,ITEM-00927,azure,,IL2|IL4|IL5,FALSE
+,Azure Container Instances,ITEM-00928,azure,,IL2,FALSE
+,Azure DNS,ITEM-00929,azure,,IL5,FALSE
+,Azure Firewall,ITEM-00930,azure,,IL2,FALSE
+,Azure Event Hubs,ITEM-00931,azure,,IL4|IL6,FALSE
+,Azure Arc,ITEM-00932,azure,,IL4,TRUE
+,Azure Backup,ITEM-00933,azure,,IL2|IL5|IL6,FALSE
+,Azure Blob Storage,ITEM-00934,azure,,IL5,FALSE
+,Azure Advisor,ITEM-00935,azure,,IL2,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00936,azure,,IL2,TRUE
+,Azure Analysis Services,ITEM-00937,azure,,IL2|IL4|IL6,FALSE
+,Azure Analysis Services,ITEM-00938,azure,,IL4,FALSE
+,Azure Load Balancer,ITEM-00939,azure,,IL2|IL4|IL6,TRUE
+,Azure Purview,ITEM-00940,azure,,IL2,FALSE
+,Azure Cache for Redis,ITEM-00941,azure,,IL6,TRUE
+,Azure HDInsight,ITEM-00942,azure,,IL2,TRUE
+,Azure Functions,ITEM-00943,azure,,IL2|IL6,FALSE
+,Azure Arc,ITEM-00944,azure,,IL4,FALSE
+,Azure HDInsight,ITEM-00945,azure,,IL6,TRUE
+,Azure App Service,ITEM-00946,azure,,IL2|IL5,TRUE
+,Azure Synapse Analytics,ITEM-00947,azure,,IL5,TRUE
+,Azure HDInsight,ITEM-00948,azure,,IL5,FALSE
+,Azure Service Bus,ITEM-00949,azure,,IL6,FALSE
+,Azure Private Link,ITEM-00950,azure,,IL5|IL6,FALSE
+,Azure Batch,ITEM-00951,azure,,IL2|IL6,FALSE
+,Azure SQL Database,ITEM-00952,azure,,IL6,FALSE
+,Azure Container Instances,ITEM-00953,azure,,IL4,TRUE
+,Azure Monitor,ITEM-00954,azure,,IL6,TRUE
+,Azure Spring Apps,ITEM-00955,azure,,IL2|IL5|IL6,TRUE
+,Azure Virtual Machines,ITEM-00956,azure,,IL4,TRUE
+,Azure Functions,ITEM-00957,azure,,IL6,FALSE
+,Azure Traffic Manager,ITEM-00958,azure,,IL4,TRUE
+,Azure Firewall,ITEM-00959,azure,,IL4|IL5|IL6,TRUE
+,Azure SignalR Service,ITEM-00960,azure,,IL5,TRUE
+,Azure Front Door,ITEM-00961,azure,,IL6,TRUE
+,Azure Traffic Manager,ITEM-00962,azure,,IL2|IL5|IL6,FALSE
+,Azure Functions,ITEM-00963,azure,,IL2|IL5,FALSE
+,Azure Machine Learning,ITEM-00964,azure,,IL2|IL4|IL6,FALSE
+,Azure Backup,ITEM-00965,azure,,IL2|IL4|IL5,FALSE
+,Azure DNS,ITEM-00966,azure,,IL2|IL4|IL6,TRUE
+,Azure Private Link,ITEM-00967,azure,,IL4,TRUE
+,Azure Monitor,ITEM-00968,azure,,IL2|IL4,TRUE
+,Azure App Service,ITEM-00969,azure,,IL2|IL5,FALSE
+,Azure Backup,ITEM-00970,azure,,IL2,FALSE
+,Azure Virtual Machines,ITEM-00971,azure,,IL2|IL4|IL6,TRUE
+,Azure API Management,ITEM-00972,azure,,IL2,FALSE
+,Azure Container Instances,ITEM-00973,azure,,IL2|IL4|IL6,TRUE
+,Azure Cache for Redis,ITEM-00974,azure,,IL4,TRUE
+,Azure Service Bus,ITEM-00975,azure,,IL2|IL6,TRUE
+,Azure Key Vault,ITEM-00976,azure,,IL5|IL6,FALSE
+,Azure Bastion,ITEM-00977,azure,,IL4|IL5|IL6,FALSE
+,Azure Traffic Manager,ITEM-00978,azure,,IL2,TRUE
+,Azure Event Hubs,ITEM-00979,azure,,IL2|IL5,FALSE
+,Azure Batch,ITEM-00980,azure,,IL2|IL5,FALSE
+,Azure Firewall,ITEM-00981,azure,,IL2|IL5|IL6,TRUE
+,Azure Spring Apps,ITEM-00982,azure,,IL2|IL4|IL6,FALSE
+,Azure Private Link,ITEM-00983,azure,,IL4,TRUE
+,Azure Data Factory,ITEM-00984,azure,,IL4|IL5,TRUE
+,Azure SQL Database,ITEM-00985,azure,,IL4,TRUE
+,Azure SQL Database,ITEM-00986,azure,,IL4|IL5,FALSE
+,Azure Virtual Machines,ITEM-00987,azure,,IL5|IL6,TRUE
+,Azure Blob Storage,ITEM-00988,azure,,IL5|IL6,FALSE
+,Azure Analysis Services,ITEM-00989,azure,,IL5|IL6,TRUE
+,Azure Monitor,ITEM-00990,azure,,IL6,TRUE
+,Azure Data Factory,ITEM-00991,azure,,IL2|IL4|IL6,TRUE
+,Azure Site Recovery,ITEM-00992,azure,,IL2|IL5|IL6,FALSE
+,Azure Container Instances,ITEM-00993,azure,,IL2,FALSE
+,Azure Cosmos DB,ITEM-00994,azure,,IL2|IL4,FALSE
+,Azure Kubernetes Service (AKS),ITEM-00995,azure,,IL6,FALSE
+,Azure SQL Database,ITEM-00996,azure,,IL2|IL4|IL5,FALSE
+,Azure Event Hubs,ITEM-00997,azure,,IL5|IL6,FALSE
+,Azure Monitor,ITEM-00998,azure,,IL2|IL4,FALSE
+,Azure Front Door,ITEM-00999,azure,,IL2|IL4|IL6,TRUE
+,Azure Cosmos DB,ITEM-01000,azure,,IL6,TRUE

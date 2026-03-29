@@ -1,3 +1,0 @@
-ExceptionuniqueID,csoshortname,impactlevel,ExceptionStatus,ExceptionPwsRequirement,ExceptionBasisForRequest,ExceptionSecurity
-"E-GCP-003","AI/ML","IL5","Approved","Section 4.2.1","Generative AI exception for secure workloads","Moderate"
-"E-GCP-301","Cloud Interconnect","IL4","Approved","Section 5.1","Direct connectivity for hybrid cloud","Moderate"

@@ -1,0 +1,1001 @@
+title,csoshortname,description,catalogitemNumber,commercialUnitPrice,commercialUnitOfIssue,customerUnitPrice,customerUnitOfIssue,discountpremiumfee
+Amazon Elasticache,Amazon Elasticache,,ITEM-00001,13.329,Month,9.997,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00002,28.002,Month,21.002,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00003,41.111,Month,30.833,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00004,29.934,Month,22.451,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00005,45.981,Month,34.486,Month,25%
+AWS Batch,AWS Batch,,ITEM-00006,32.778,Month,24.584,Month,25%
+AWS Glue,AWS Glue,,ITEM-00007,2.788,Month,2.091,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00008,41.216,Month,30.912,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00009,41.299,Month,30.974,Month,25%
+AWS Batch,AWS Batch,,ITEM-00010,30.832,Month,23.124,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00011,18.473,Month,13.855,Month,25%
+AWS IAM,AWS IAM,,ITEM-00012,19.978,Month,14.984,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00013,34.075,Month,25.556,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00014,15.428,Month,11.571,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00015,14.228,Month,10.671,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00016,19.843,Month,14.882,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00017,14.162,Month,10.622,Month,25%
+AWS Batch,AWS Batch,,ITEM-00018,5.137,Month,3.853,Month,25%
+AWS WAF,AWS WAF,,ITEM-00019,46.658,Month,34.993,Month,25%
+Amazon S3,Amazon S3,,ITEM-00020,23.252,Month,17.439,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00021,10.276,Month,7.707,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00022,34.957,Month,26.218,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00023,0.897,Month,0.673,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00024,13.019,Month,9.764,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00025,18.557,Month,13.918,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00026,45.153,Month,33.865,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00027,3.07,Month,2.302,Month,25%
+AWS Glue,AWS Glue,,ITEM-00028,1.694,Month,1.27,Month,25%
+AWS WAF,AWS WAF,,ITEM-00029,43.485,Month,32.614,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00030,46.517,Month,34.888,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00031,2.429,Month,1.822,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00032,16.726,Month,12.544,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00033,22.698,Month,17.023,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00034,32.105,Month,24.079,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00035,40.84,Month,30.63,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00036,15.191,Month,11.393,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00037,39.698,Month,29.773,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00038,38.67,Month,29.003,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00039,22.448,Month,16.836,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00040,25.659,Month,19.244,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00041,26.363,Month,19.772,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00042,12.444,Month,9.333,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00043,44.225,Month,33.169,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00044,0.618,Month,0.464,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00045,32.138,Month,24.103,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00046,3.257,Month,2.443,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00047,25.136,Month,18.852,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00048,6.196,Month,4.647,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00049,31.433,Month,23.575,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00050,44.67,Month,33.502,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00051,17.032,Month,12.774,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00052,18.988,Month,14.241,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00053,42.61,Month,31.957,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00054,14.443,Month,10.832,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00055,3.724,Month,2.793,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00056,25.088,Month,18.816,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00057,33.846,Month,25.384,Month,25%
+Amazon S3,Amazon S3,,ITEM-00058,21.462,Month,16.096,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00059,7.029,Month,5.272,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00060,7.615,Month,5.711,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00061,41.218,Month,30.914,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00062,7.916,Month,5.937,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00063,18.881,Month,14.161,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00064,44.219,Month,33.164,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00065,5.059,Month,3.794,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00066,49.762,Month,37.322,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00067,38.438,Month,28.829,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00068,47.362,Month,35.522,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00069,34.302,Month,25.727,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00070,21.717,Month,16.288,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00071,18.222,Month,13.667,Month,25%
+AWS WAF,AWS WAF,,ITEM-00072,36.863,Month,27.647,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00073,37.807,Month,28.355,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00074,26.202,Month,19.652,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00075,22.963,Month,17.222,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00076,12.025,Month,9.019,Month,25%
+Amazon S3,Amazon S3,,ITEM-00077,36.642,Month,27.482,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00078,46.343,Month,34.757,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00079,4.892,Month,3.669,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00080,34.823,Month,26.117,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00081,5.946,Month,4.46,Month,25%
+AWS KMS,AWS KMS,,ITEM-00082,48.453,Month,36.34,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00083,37.944,Month,28.458,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00084,0.159,Month,0.119,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00085,17.753,Month,13.315,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00086,18.183,Month,13.637,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00087,33.804,Month,25.353,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00088,9.106,Month,6.829,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00089,11.583,Month,8.687,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00090,2.062,Month,1.546,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00091,5.168,Month,3.876,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00092,31.8,Month,23.85,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00093,34.661,Month,25.996,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00094,35.042,Month,26.282,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00095,26.745,Month,20.059,Month,25%
+AWS WAF,AWS WAF,,ITEM-00096,6.483,Month,4.862,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00097,29.627,Month,22.22,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00098,16.729,Month,12.547,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00099,1.524,Month,1.143,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00100,1.532,Month,1.149,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00101,7.335,Month,5.501,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00102,42.033,Month,31.525,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00103,9.673,Month,7.255,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00104,41.082,Month,30.812,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00105,37.743,Month,28.307,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00106,22.089,Month,16.567,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00107,22.27,Month,16.703,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00108,20.722,Month,15.542,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00109,3.593,Month,2.695,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00110,45.465,Month,34.099,Month,25%
+AWS Batch,AWS Batch,,ITEM-00111,31.976,Month,23.982,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00112,47.313,Month,35.485,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00113,20.404,Month,15.303,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00114,40.934,Month,30.7,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00115,0.739,Month,0.554,Month,25%
+AWS Batch,AWS Batch,,ITEM-00116,13.263,Month,9.947,Month,25%
+AWS IAM,AWS IAM,,ITEM-00117,41.524,Month,31.143,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00118,43.097,Month,32.323,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00119,37.236,Month,27.927,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00120,43.068,Month,32.301,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00121,19.123,Month,14.342,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00122,11.651,Month,8.738,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00123,23.406,Month,17.554,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00124,49.783,Month,37.337,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00125,36.214,Month,27.16,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00126,20.999,Month,15.749,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00127,40.946,Month,30.709,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00128,2.729,Month,2.047,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00129,38.895,Month,29.171,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00130,18.662,Month,13.996,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00131,11.903,Month,8.927,Month,25%
+AWS Batch,AWS Batch,,ITEM-00132,19.852,Month,14.889,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00133,37.954,Month,28.465,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00134,41.419,Month,31.064,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00135,43.436,Month,32.577,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00136,12.23,Month,9.172,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00137,2.312,Month,1.734,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00138,44.983,Month,33.737,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00139,31.266,Month,23.45,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00140,44.676,Month,33.507,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00141,12.685,Month,9.514,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00142,11.321,Month,8.491,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00143,6.982,Month,5.237,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00144,28.212,Month,21.159,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00145,2.263,Month,1.697,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00146,4.33,Month,3.248,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00147,3.477,Month,2.608,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00148,31.442,Month,23.581,Month,25%
+AWS KMS,AWS KMS,,ITEM-00149,8.706,Month,6.529,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00150,42.231,Month,31.673,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00151,25.715,Month,19.286,Month,25%
+Amazon S3,Amazon S3,,ITEM-00152,45.969,Month,34.477,Month,25%
+AWS IAM,AWS IAM,,ITEM-00153,24.377,Month,18.283,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00154,49.763,Month,37.322,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00155,4.719,Month,3.539,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00156,16.054,Month,12.04,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00157,17.712,Month,13.284,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00158,47.248,Month,35.436,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00159,35.633,Month,26.725,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00160,1.405,Month,1.054,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00161,20.451,Month,15.338,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00162,2.206,Month,1.655,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00163,28.57,Month,21.428,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00164,26.655,Month,19.991,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00165,25.585,Month,19.189,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00166,32.943,Month,24.707,Month,25%
+AWS IAM,AWS IAM,,ITEM-00167,19.609,Month,14.707,Month,25%
+AWS Glue,AWS Glue,,ITEM-00168,47.719,Month,35.789,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00169,33.927,Month,25.445,Month,25%
+Amazon S3,Amazon S3,,ITEM-00170,26.05,Month,19.538,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00171,41.571,Month,31.178,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00172,49.653,Month,37.24,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00173,15.476,Month,11.607,Month,25%
+AWS Glue,AWS Glue,,ITEM-00174,12.232,Month,9.174,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00175,13.829,Month,10.372,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00176,44.373,Month,33.28,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00177,18.935,Month,14.201,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00178,4.981,Month,3.736,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00179,13.276,Month,9.957,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00180,38.092,Month,28.569,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00181,31.864,Month,23.898,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00182,31.625,Month,23.719,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00183,44.011,Month,33.008,Month,25%
+AWS WAF,AWS WAF,,ITEM-00184,31.935,Month,23.951,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00185,20.667,Month,15.5,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00186,8.687,Month,6.515,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00187,18.468,Month,13.851,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00188,37.457,Month,28.093,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00189,49.166,Month,36.874,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00190,36.343,Month,27.257,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00191,37.769,Month,28.327,Month,25%
+AWS Glue,AWS Glue,,ITEM-00192,6.019,Month,4.514,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00193,37.793,Month,28.345,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00194,7.836,Month,5.877,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00195,12.071,Month,9.053,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00196,32.672,Month,24.504,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00197,38.388,Month,28.791,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00198,12.938,Month,9.704,Month,25%
+AWS WAF,AWS WAF,,ITEM-00199,46.672,Month,35.004,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00200,47.679,Month,35.759,Month,25%
+AWS KMS,AWS KMS,,ITEM-00201,49.708,Month,37.281,Month,25%
+AWS Glue,AWS Glue,,ITEM-00202,6.004,Month,4.503,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00203,34.573,Month,25.93,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00204,45.352,Month,34.014,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00205,24.438,Month,18.328,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00206,4.345,Month,3.259,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00207,6.599,Month,4.949,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00208,14.233,Month,10.675,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00209,43.659,Month,32.744,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00210,42.326,Month,31.745,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00211,36.643,Month,27.482,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00212,43.776,Month,32.832,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00213,2.252,Month,1.689,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00214,25.129,Month,18.847,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00215,22.898,Month,17.174,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00216,19.252,Month,14.439,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00217,29.533,Month,22.15,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00218,19.584,Month,14.688,Month,25%
+AWS Batch,AWS Batch,,ITEM-00219,6.258,Month,4.694,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00220,34.46,Month,25.845,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00221,0.99,Month,0.742,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00222,49.014,Month,36.761,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00223,27.605,Month,20.704,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00224,4.597,Month,3.448,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00225,11.473,Month,8.605,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00226,13.795,Month,10.346,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00227,17.58,Month,13.185,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00228,3.041,Month,2.281,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00229,40.017,Month,30.013,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00230,2.944,Month,2.208,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00231,10.765,Month,8.074,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00232,45.701,Month,34.276,Month,25%
+AWS IAM,AWS IAM,,ITEM-00233,35.806,Month,26.854,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00234,6.967,Month,5.225,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00235,48.628,Month,36.471,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00236,33.383,Month,25.037,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00237,30.846,Month,23.134,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00238,14.614,Month,10.96,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00239,40.067,Month,30.05,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00240,36.936,Month,27.702,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00241,1.489,Month,1.117,Month,25%
+AWS KMS,AWS KMS,,ITEM-00242,14.292,Month,10.719,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00243,33.395,Month,25.046,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00244,45.209,Month,33.907,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00245,11.937,Month,8.953,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00246,39.095,Month,29.321,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00247,38.051,Month,28.538,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00248,1.507,Month,1.13,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00249,48.025,Month,36.019,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00250,42.884,Month,32.163,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00251,24.099,Month,18.074,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00252,39.855,Month,29.891,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00253,36.206,Month,27.155,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00254,29.831,Month,22.373,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00255,28.945,Month,21.709,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00256,41.795,Month,31.346,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00257,20.207,Month,15.155,Month,25%
+AWS Batch,AWS Batch,,ITEM-00258,14.483,Month,10.862,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00259,49.511,Month,37.133,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00260,34.857,Month,26.143,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00261,38.842,Month,29.131,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00262,6.098,Month,4.574,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00263,5.173,Month,3.88,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00264,11.506,Month,8.63,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00265,47.018,Month,35.264,Month,25%
+Amazon S3,Amazon S3,,ITEM-00266,37.186,Month,27.889,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00267,22.853,Month,17.14,Month,25%
+AWS Glue,AWS Glue,,ITEM-00268,7.29,Month,5.468,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00269,6.165,Month,4.624,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00270,0.546,Month,0.41,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00271,47.374,Month,35.531,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00272,17.553,Month,13.165,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00273,40.408,Month,30.306,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00274,2.423,Month,1.817,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00275,31.213,Month,23.41,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00276,44.073,Month,33.055,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00277,9.84,Month,7.38,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00278,16.212,Month,12.159,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00279,13.56,Month,10.17,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00280,7.816,Month,5.862,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00281,44.361,Month,33.271,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00282,11.298,Month,8.473,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00283,5.144,Month,3.858,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00284,27.817,Month,20.863,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00285,48.22,Month,36.165,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00286,36.209,Month,27.157,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00287,42.803,Month,32.102,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00288,8.669,Month,6.502,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00289,7.069,Month,5.302,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00290,4.612,Month,3.459,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00291,15.296,Month,11.472,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00292,25.559,Month,19.169,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00293,25.136,Month,18.852,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00294,9.335,Month,7.001,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00295,1.147,Month,0.86,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00296,29.835,Month,22.376,Month,25%
+AWS Batch,AWS Batch,,ITEM-00297,16.008,Month,12.006,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00298,38.381,Month,28.786,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00299,31.384,Month,23.538,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00300,18.163,Month,13.622,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00301,48.941,Month,36.706,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00302,35.227,Month,26.42,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00303,29.915,Month,22.436,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00304,34.822,Month,26.117,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00305,13.431,Month,10.073,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00306,7.363,Month,5.522,Month,25%
+AWS Batch,AWS Batch,,ITEM-00307,35.223,Month,26.417,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00308,29.913,Month,22.435,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00309,27.249,Month,20.437,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00310,13.737,Month,10.303,Month,25%
+Amazon S3,Amazon S3,,ITEM-00311,39.757,Month,29.818,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00312,13.134,Month,9.851,Month,25%
+AWS IAM,AWS IAM,,ITEM-00313,1.725,Month,1.294,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00314,46.553,Month,34.915,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00315,7.153,Month,5.365,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00316,47.954,Month,35.965,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00317,37.819,Month,28.364,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00318,42.722,Month,32.041,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00319,8.425,Month,6.319,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00320,46.402,Month,34.802,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00321,11.47,Month,8.603,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00322,46.793,Month,35.095,Month,25%
+AWS Glue,AWS Glue,,ITEM-00323,5.394,Month,4.046,Month,25%
+AWS Batch,AWS Batch,,ITEM-00324,2.473,Month,1.855,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00325,34.36,Month,25.77,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00326,41.331,Month,30.998,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00327,33.764,Month,25.323,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00328,11.895,Month,8.921,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00329,26.867,Month,20.15,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00330,39.752,Month,29.814,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00331,46.215,Month,34.661,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00332,11.358,Month,8.518,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00333,2.894,Month,2.171,Month,25%
+AWS WAF,AWS WAF,,ITEM-00334,9.214,Month,6.911,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00335,29.695,Month,22.271,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00336,14.058,Month,10.543,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00337,34.984,Month,26.238,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00338,31.25,Month,23.438,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00339,27.648,Month,20.736,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00340,4.449,Month,3.337,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00341,39.023,Month,29.267,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00342,10.481,Month,7.861,Month,25%
+AWS WAF,AWS WAF,,ITEM-00343,4.213,Month,3.16,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00344,31.844,Month,23.883,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00345,32.911,Month,24.683,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00346,17.687,Month,13.265,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00347,36.156,Month,27.117,Month,25%
+AWS IAM,AWS IAM,,ITEM-00348,10.406,Month,7.805,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00349,15.886,Month,11.915,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00350,39.257,Month,29.443,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00351,7.136,Month,5.352,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00352,38.2,Month,28.65,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00353,25.091,Month,18.818,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00354,29.07,Month,21.803,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00355,49.41,Month,37.057,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00356,2.198,Month,1.648,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00357,37.147,Month,27.86,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00358,33.246,Month,24.934,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00359,3.351,Month,2.513,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00360,6.768,Month,5.076,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00361,47.959,Month,35.969,Month,25%
+AWS Glue,AWS Glue,,ITEM-00362,20.417,Month,15.313,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00363,29.041,Month,21.781,Month,25%
+AWS WAF,AWS WAF,,ITEM-00364,1.676,Month,1.257,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00365,46.499,Month,34.874,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00366,14.956,Month,11.217,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00367,35.376,Month,26.532,Month,25%
+AWS KMS,AWS KMS,,ITEM-00368,22.562,Month,16.922,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00369,29.173,Month,21.88,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00370,4.571,Month,3.428,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00371,12.887,Month,9.665,Month,25%
+AWS IAM,AWS IAM,,ITEM-00372,34.683,Month,26.012,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00373,43.896,Month,32.922,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00374,38.074,Month,28.555,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00375,17.832,Month,13.374,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00376,17.545,Month,13.159,Month,25%
+AWS Batch,AWS Batch,,ITEM-00377,23.845,Month,17.884,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00378,34.795,Month,26.096,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00379,39.845,Month,29.884,Month,25%
+AWS Batch,AWS Batch,,ITEM-00380,5.174,Month,3.881,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00381,45.346,Month,34.009,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00382,9.071,Month,6.803,Month,25%
+AWS Glue,AWS Glue,,ITEM-00383,30.37,Month,22.777,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00384,23.622,Month,17.716,Month,25%
+Amazon S3,Amazon S3,,ITEM-00385,39.603,Month,29.702,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00386,34.579,Month,25.934,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00387,45.473,Month,34.105,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00388,40.321,Month,30.241,Month,25%
+AWS Batch,AWS Batch,,ITEM-00389,49.057,Month,36.793,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00390,42.501,Month,31.876,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00391,40.549,Month,30.412,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00392,27.041,Month,20.281,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00393,2.079,Month,1.559,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00394,10.393,Month,7.795,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00395,20.896,Month,15.672,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00396,36.127,Month,27.095,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00397,34.477,Month,25.858,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00398,48.622,Month,36.466,Month,25%
+Amazon S3,Amazon S3,,ITEM-00399,37.545,Month,28.159,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00400,34.818,Month,26.113,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00401,27.716,Month,20.787,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00402,20.604,Month,15.453,Month,25%
+AWS IAM,AWS IAM,,ITEM-00403,42.875,Month,32.156,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00404,26.04,Month,19.53,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00405,43.975,Month,32.981,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00406,30.043,Month,22.532,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00407,28.385,Month,21.289,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00408,47.397,Month,35.548,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00409,22.014,Month,16.511,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00410,19.448,Month,14.586,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00411,14.014,Month,10.511,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00412,11.857,Month,8.893,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00413,2.951,Month,2.213,Month,25%
+AWS Glue,AWS Glue,,ITEM-00414,13.729,Month,10.297,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00415,14.867,Month,11.15,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00416,9.851,Month,7.388,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00417,9.924,Month,7.443,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00418,7.816,Month,5.862,Month,25%
+AWS IAM,AWS IAM,,ITEM-00419,3.017,Month,2.263,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00420,5.293,Month,3.97,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00421,11.583,Month,8.687,Month,25%
+AWS Batch,AWS Batch,,ITEM-00422,46.559,Month,34.919,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00423,1.566,Month,1.175,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00424,31.813,Month,23.86,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00425,45.432,Month,34.074,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00426,37.327,Month,27.995,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00427,39.664,Month,29.748,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00428,42.956,Month,32.217,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00429,37.479,Month,28.109,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00430,42.972,Month,32.229,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00431,22.165,Month,16.624,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00432,21.328,Month,15.996,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00433,1.517,Month,1.138,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00434,43.369,Month,32.527,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00435,41.544,Month,31.158,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00436,22.295,Month,16.721,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00437,36.474,Month,27.355,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00438,11.906,Month,8.93,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00439,13.096,Month,9.822,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00440,15.556,Month,11.667,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00441,7.693,Month,5.77,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00442,45.33,Month,33.998,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00443,30.623,Month,22.967,Month,25%
+Amazon S3,Amazon S3,,ITEM-00444,2.527,Month,1.895,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00445,9.43,Month,7.072,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00446,24.324,Month,18.243,Month,25%
+Amazon S3,Amazon S3,,ITEM-00447,41.255,Month,30.941,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00448,21.548,Month,16.161,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00449,28.052,Month,21.039,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00450,39.365,Month,29.524,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00451,10.174,Month,7.63,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00452,42.57,Month,31.928,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00453,30.655,Month,22.991,Month,25%
+AWS WAF,AWS WAF,,ITEM-00454,13.378,Month,10.034,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00455,27.704,Month,20.778,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00456,26.184,Month,19.638,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00457,36.036,Month,27.027,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00458,46.494,Month,34.87,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00459,34.373,Month,25.78,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00460,10.5,Month,7.875,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00461,21.982,Month,16.486,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00462,1.871,Month,1.403,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00463,14.899,Month,11.174,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00464,13.705,Month,10.279,Month,25%
+AWS KMS,AWS KMS,,ITEM-00465,11.453,Month,8.59,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00466,29.382,Month,22.037,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00467,25.758,Month,19.319,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00468,42.138,Month,31.603,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00469,2.312,Month,1.734,Month,25%
+Amazon S3,Amazon S3,,ITEM-00470,25.58,Month,19.185,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00471,25.045,Month,18.784,Month,25%
+AWS Batch,AWS Batch,,ITEM-00472,21.226,Month,15.919,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00473,39.107,Month,29.33,Month,25%
+AWS IAM,AWS IAM,,ITEM-00474,31.975,Month,23.981,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00475,23.938,Month,17.953,Month,25%
+Amazon S3,Amazon S3,,ITEM-00476,38.822,Month,29.117,Month,25%
+AWS WAF,AWS WAF,,ITEM-00477,33.067,Month,24.8,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00478,21.087,Month,15.815,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00479,7.945,Month,5.959,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00480,11.627,Month,8.72,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00481,9.152,Month,6.864,Month,25%
+AWS Batch,AWS Batch,,ITEM-00482,16.583,Month,12.437,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00483,5.962,Month,4.471,Month,25%
+AWS WAF,AWS WAF,,ITEM-00484,38.874,Month,29.156,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00485,35.567,Month,26.675,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00486,49.348,Month,37.011,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00487,26.739,Month,20.054,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00488,23.041,Month,17.281,Month,25%
+Amazon S3,Amazon S3,,ITEM-00489,21.296,Month,15.972,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00490,30.898,Month,23.174,Month,25%
+AWS KMS,AWS KMS,,ITEM-00491,9.917,Month,7.438,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00492,18.345,Month,13.759,Month,25%
+Amazon S3,Amazon S3,,ITEM-00493,1.466,Month,1.099,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00494,41.918,Month,31.438,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00495,33.427,Month,25.07,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00496,26.166,Month,19.625,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00497,28.13,Month,21.098,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00498,5.602,Month,4.202,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00499,44.235,Month,33.176,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00500,4.855,Month,3.641,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00501,46.93,Month,35.197,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00502,40.593,Month,30.445,Month,25%
+AWS KMS,AWS KMS,,ITEM-00503,20.553,Month,15.415,Month,25%
+AWS Glue,AWS Glue,,ITEM-00504,32.291,Month,24.218,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00505,30.745,Month,23.059,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00506,44.368,Month,33.276,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00507,13.741,Month,10.306,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00508,34.015,Month,25.511,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00509,41.29,Month,30.968,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00510,7.79,Month,5.843,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00511,34.874,Month,26.156,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00512,26.414,Month,19.811,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00513,20.375,Month,15.281,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00514,13.092,Month,9.819,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00515,47.068,Month,35.301,Month,25%
+AWS Batch,AWS Batch,,ITEM-00516,36.659,Month,27.494,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00517,47.943,Month,35.957,Month,25%
+AWS IAM,AWS IAM,,ITEM-00518,34.665,Month,25.999,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00519,35.271,Month,26.453,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00520,28.695,Month,21.521,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00521,7.188,Month,5.391,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00522,33.154,Month,24.866,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00523,35.486,Month,26.614,Month,25%
+AWS Glue,AWS Glue,,ITEM-00524,35.514,Month,26.636,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00525,12.111,Month,9.083,Month,25%
+AWS IAM,AWS IAM,,ITEM-00526,42.762,Month,32.072,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00527,17.379,Month,13.034,Month,25%
+AWS Batch,AWS Batch,,ITEM-00528,15.642,Month,11.732,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00529,48.897,Month,36.673,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00530,14.842,Month,11.132,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00531,41.006,Month,30.755,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00532,41.297,Month,30.973,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00533,31.951,Month,23.963,Month,25%
+AWS Batch,AWS Batch,,ITEM-00534,26.449,Month,19.837,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00535,31.466,Month,23.599,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00536,22.121,Month,16.591,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00537,27.949,Month,20.962,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00538,39.576,Month,29.682,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00539,43.035,Month,32.276,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00540,31.144,Month,23.358,Month,25%
+AWS KMS,AWS KMS,,ITEM-00541,19.629,Month,14.722,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00542,29.135,Month,21.851,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00543,34.662,Month,25.996,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00544,37.189,Month,27.892,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00545,22.037,Month,16.528,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00546,14.789,Month,11.092,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00547,46.15,Month,34.612,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00548,48.973,Month,36.73,Month,25%
+AWS WAF,AWS WAF,,ITEM-00549,39.915,Month,29.936,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00550,40.303,Month,30.227,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00551,28.752,Month,21.564,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00552,40.109,Month,30.082,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00553,23.265,Month,17.449,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00554,38.264,Month,28.698,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00555,15.668,Month,11.751,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00556,30.321,Month,22.741,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00557,27.468,Month,20.601,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00558,28.74,Month,21.555,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00559,42.024,Month,31.518,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00560,21.606,Month,16.205,Month,25%
+AWS KMS,AWS KMS,,ITEM-00561,44.812,Month,33.609,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00562,20.407,Month,15.305,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00563,5.473,Month,4.105,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00564,21.958,Month,16.468,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00565,34.703,Month,26.027,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00566,43.142,Month,32.357,Month,25%
+AWS IAM,AWS IAM,,ITEM-00567,0.896,Month,0.672,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00568,40.509,Month,30.382,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00569,22.858,Month,17.143,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00570,44.895,Month,33.671,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00571,19.873,Month,14.905,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00572,39.67,Month,29.753,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00573,8.883,Month,6.662,Month,25%
+AWS KMS,AWS KMS,,ITEM-00574,11.801,Month,8.851,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00575,12.676,Month,9.507,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00576,5.632,Month,4.224,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00577,44.466,Month,33.349,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00578,34.126,Month,25.594,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00579,5.653,Month,4.24,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00580,33.133,Month,24.85,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00581,35.979,Month,26.984,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00582,12.248,Month,9.186,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00583,41.484,Month,31.113,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00584,0.133,Month,0.1,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00585,37.606,Month,28.205,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00586,34.65,Month,25.987,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00587,11.918,Month,8.938,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00588,12.43,Month,9.322,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00589,40.861,Month,30.646,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00590,48.258,Month,36.194,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00591,38.331,Month,28.748,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00592,42.729,Month,32.047,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00593,20.337,Month,15.253,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00594,15.3,Month,11.475,Month,25%
+AWS IAM,AWS IAM,,ITEM-00595,33.262,Month,24.947,Month,25%
+Amazon S3,Amazon S3,,ITEM-00596,49.247,Month,36.935,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00597,12.386,Month,9.29,Month,25%
+AWS Glue,AWS Glue,,ITEM-00598,44.059,Month,33.044,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00599,35.147,Month,26.36,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00600,9.092,Month,6.819,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00601,25.158,Month,18.869,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00602,38.008,Month,28.506,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00603,11.635,Month,8.726,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00604,24.918,Month,18.688,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00605,31.952,Month,23.964,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00606,48.452,Month,36.339,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00607,5.473,Month,4.105,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00608,28.48,Month,21.36,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00609,15.553,Month,11.665,Month,25%
+AWS KMS,AWS KMS,,ITEM-00610,30.561,Month,22.921,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00611,15.716,Month,11.787,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00612,36.798,Month,27.599,Month,25%
+AWS WAF,AWS WAF,,ITEM-00613,28.232,Month,21.174,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00614,8.687,Month,6.515,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00615,20.312,Month,15.234,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00616,12.96,Month,9.72,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00617,45.266,Month,33.95,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00618,0.888,Month,0.666,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00619,32.585,Month,24.439,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00620,13.251,Month,9.938,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00621,35.404,Month,26.553,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00622,32.228,Month,24.171,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00623,41.572,Month,31.179,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00624,13.531,Month,10.148,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00625,48.918,Month,36.688,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00626,9.909,Month,7.432,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00627,12.636,Month,9.477,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00628,43.281,Month,32.461,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00629,49.244,Month,36.933,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00630,31.621,Month,23.716,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00631,32.746,Month,24.559,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00632,12.663,Month,9.497,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00633,34.783,Month,26.087,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00634,19.753,Month,14.815,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00635,31.496,Month,23.622,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00636,22.659,Month,16.994,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00637,48.883,Month,36.662,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00638,46.616,Month,34.962,Month,25%
+AWS WAF,AWS WAF,,ITEM-00639,8.052,Month,6.039,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00640,38.657,Month,28.993,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00641,14.135,Month,10.601,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00642,1.538,Month,1.153,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00643,24.291,Month,18.218,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00644,3.561,Month,2.671,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00645,38.957,Month,29.218,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00646,5.958,Month,4.469,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00647,2.31,Month,1.732,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00648,27.548,Month,20.661,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00649,41.626,Month,31.219,Month,25%
+AWS IAM,AWS IAM,,ITEM-00650,9.628,Month,7.221,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00651,13.838,Month,10.378,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00652,15.47,Month,11.603,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00653,33.409,Month,25.057,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00654,33.42,Month,25.065,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00655,9.587,Month,7.19,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00656,38.637,Month,28.978,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00657,5.763,Month,4.322,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00658,47.402,Month,35.552,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00659,28.454,Month,21.34,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00660,45.706,Month,34.279,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00661,33.742,Month,25.306,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00662,13.959,Month,10.469,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00663,25.299,Month,18.974,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00664,46.634,Month,34.975,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00665,36.216,Month,27.162,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00666,32.725,Month,24.544,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00667,13.459,Month,10.094,Month,25%
+AWS KMS,AWS KMS,,ITEM-00668,5.979,Month,4.484,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00669,33.69,Month,25.267,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00670,26.356,Month,19.767,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00671,25.792,Month,19.344,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00672,2.777,Month,2.083,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00673,34.88,Month,26.16,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00674,47.926,Month,35.945,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00675,34.284,Month,25.713,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00676,32.752,Month,24.564,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00677,16.541,Month,12.406,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00678,33.422,Month,25.066,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00679,6.582,Month,4.936,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00680,25.969,Month,19.477,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00681,16.312,Month,12.234,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00682,20.565,Month,15.424,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00683,0.39,Month,0.292,Month,25%
+AWS KMS,AWS KMS,,ITEM-00684,15.725,Month,11.794,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00685,30.005,Month,22.504,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00686,42.363,Month,31.772,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00687,30.227,Month,22.67,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00688,19.031,Month,14.273,Month,25%
+AWS Glue,AWS Glue,,ITEM-00689,11.202,Month,8.402,Month,25%
+Amazon S3,Amazon S3,,ITEM-00690,45.454,Month,34.09,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00691,8.038,Month,6.029,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00692,4.854,Month,3.641,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00693,31.086,Month,23.314,Month,25%
+AWS KMS,AWS KMS,,ITEM-00694,30.17,Month,22.628,Month,25%
+AWS Batch,AWS Batch,,ITEM-00695,43.01,Month,32.258,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00696,12.128,Month,9.096,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00697,39.76,Month,29.82,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00698,1.377,Month,1.033,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00699,16.321,Month,12.241,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00700,32.406,Month,24.304,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00701,38.505,Month,28.879,Month,25%
+AWS WAF,AWS WAF,,ITEM-00702,14.952,Month,11.214,Month,25%
+AWS WAF,AWS WAF,,ITEM-00703,1.864,Month,1.398,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00704,32.567,Month,24.425,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00705,3.083,Month,2.312,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00706,30.701,Month,23.026,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00707,37.94,Month,28.455,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00708,30.412,Month,22.809,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00709,17.564,Month,13.173,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00710,49.247,Month,36.935,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00711,26.813,Month,20.11,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00712,46.882,Month,35.161,Month,25%
+AWS WAF,AWS WAF,,ITEM-00713,49.449,Month,37.087,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00714,29.715,Month,22.286,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00715,35.032,Month,26.274,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00716,41.409,Month,31.057,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00717,1.682,Month,1.261,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00718,3.252,Month,2.439,Month,25%
+AWS IAM,AWS IAM,,ITEM-00719,19.587,Month,14.69,Month,25%
+AWS Glue,AWS Glue,,ITEM-00720,6.115,Month,4.586,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00721,44.883,Month,33.662,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00722,34.466,Month,25.849,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00723,44.675,Month,33.506,Month,25%
+AWS WAF,AWS WAF,,ITEM-00724,20.766,Month,15.574,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00725,1.687,Month,1.265,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00726,20.329,Month,15.247,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00727,9.551,Month,7.163,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00728,14.701,Month,11.026,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00729,1.348,Month,1.011,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00730,12.277,Month,9.208,Month,25%
+AWS IAM,AWS IAM,,ITEM-00731,35.735,Month,26.801,Month,25%
+Amazon S3,Amazon S3,,ITEM-00732,2.13,Month,1.597,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00733,30.94,Month,23.205,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00734,39.656,Month,29.742,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00735,7.264,Month,5.448,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00736,20.406,Month,15.304,Month,25%
+AWS Batch,AWS Batch,,ITEM-00737,28.985,Month,21.739,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00738,27.651,Month,20.738,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00739,43.032,Month,32.274,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00740,30.133,Month,22.6,Month,25%
+AWS Glue,AWS Glue,,ITEM-00741,7.262,Month,5.446,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00742,15.905,Month,11.929,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00743,24.288,Month,18.216,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00744,38.603,Month,28.952,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00745,17.783,Month,13.337,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00746,4.59,Month,3.442,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00747,37.914,Month,28.436,Month,25%
+AWS IAM,AWS IAM,,ITEM-00748,3.57,Month,2.677,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00749,40.645,Month,30.484,Month,25%
+AWS Batch,AWS Batch,,ITEM-00750,35.467,Month,26.6,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00751,29.914,Month,22.436,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00752,13.45,Month,10.087,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00753,10.331,Month,7.748,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00754,7.61,Month,5.708,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00755,37.998,Month,28.498,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00756,25.237,Month,18.928,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00757,6.086,Month,4.565,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00758,40.265,Month,30.199,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00759,4.431,Month,3.323,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00760,4.547,Month,3.41,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00761,41.065,Month,30.799,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00762,22.693,Month,17.02,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00763,37.493,Month,28.12,Month,25%
+AWS Batch,AWS Batch,,ITEM-00764,15.728,Month,11.796,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00765,45.192,Month,33.894,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00766,34.13,Month,25.598,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00767,5.026,Month,3.769,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00768,42.33,Month,31.747,Month,25%
+AWS IAM,AWS IAM,,ITEM-00769,40.981,Month,30.736,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00770,0.271,Month,0.203,Month,25%
+AWS Batch,AWS Batch,,ITEM-00771,45.07,Month,33.803,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00772,1.106,Month,0.83,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00773,17.259,Month,12.944,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00774,48.224,Month,36.168,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00775,20.805,Month,15.604,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00776,38.15,Month,28.612,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00777,1.7,Month,1.275,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00778,39.009,Month,29.257,Month,25%
+Amazon S3,Amazon S3,,ITEM-00779,5.389,Month,4.042,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00780,20.029,Month,15.022,Month,25%
+AWS IAM,AWS IAM,,ITEM-00781,14.401,Month,10.801,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00782,36.807,Month,27.605,Month,25%
+AWS Glue,AWS Glue,,ITEM-00783,23.572,Month,17.679,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00784,41.183,Month,30.887,Month,25%
+AWS WAF,AWS WAF,,ITEM-00785,25.595,Month,19.196,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00786,20.606,Month,15.455,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00787,47.442,Month,35.581,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00788,15.499,Month,11.624,Month,25%
+AWS KMS,AWS KMS,,ITEM-00789,32.153,Month,24.115,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00790,13.454,Month,10.091,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00791,27.423,Month,20.567,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00792,2.969,Month,2.227,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00793,34.339,Month,25.754,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00794,15.21,Month,11.408,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00795,32.521,Month,24.391,Month,25%
+AWS Glue,AWS Glue,,ITEM-00796,30.561,Month,22.921,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00797,46.408,Month,34.806,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00798,49.858,Month,37.393,Month,25%
+AWS Batch,AWS Batch,,ITEM-00799,7.041,Month,5.281,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00800,13.525,Month,10.144,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00801,23.525,Month,17.644,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00802,6.787,Month,5.09,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00803,5.976,Month,4.482,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00804,15.175,Month,11.381,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00805,9.099,Month,6.824,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00806,25.453,Month,19.09,Month,25%
+AWS Glue,AWS Glue,,ITEM-00807,20.387,Month,15.29,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00808,33.895,Month,25.421,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00809,26.965,Month,20.224,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00810,45.986,Month,34.489,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00811,38.01,Month,28.508,Month,25%
+AWS Batch,AWS Batch,,ITEM-00812,8.495,Month,6.371,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00813,36.306,Month,27.229,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00814,32.494,Month,24.37,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00815,18.317,Month,13.738,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00816,8.315,Month,6.236,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00817,26.996,Month,20.247,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00818,49.41,Month,37.057,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00819,29.024,Month,21.768,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00820,49.892,Month,37.419,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00821,12.15,Month,9.113,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00822,13.217,Month,9.913,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00823,14.571,Month,10.928,Month,25%
+AWS IAM,AWS IAM,,ITEM-00824,37.225,Month,27.919,Month,25%
+AWS Glue,AWS Glue,,ITEM-00825,19.607,Month,14.705,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00826,31.963,Month,23.972,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00827,17.053,Month,12.79,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00828,44.204,Month,33.153,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00829,3.266,Month,2.45,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00830,1.481,Month,1.111,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00831,6.26,Month,4.695,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00832,43.521,Month,32.641,Month,25%
+AWS Direct Connect,AWS Direct Connect,,ITEM-00833,33.355,Month,25.016,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00834,28.658,Month,21.494,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00835,25.466,Month,19.099,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00836,40.305,Month,30.229,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00837,24.527,Month,18.395,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00838,26.041,Month,19.531,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00839,36.079,Month,27.059,Month,25%
+AWS IAM,AWS IAM,,ITEM-00840,5.985,Month,4.489,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00841,20.154,Month,15.116,Month,25%
+AWS Batch,AWS Batch,,ITEM-00842,0.667,Month,0.5,Month,25%
+AWS KMS,AWS KMS,,ITEM-00843,43.101,Month,32.326,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00844,27.673,Month,20.755,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00845,15.048,Month,11.286,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00846,3.399,Month,2.549,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00847,22.829,Month,17.122,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00848,8.278,Month,6.209,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00849,3.85,Month,2.888,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00850,3.517,Month,2.638,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00851,35.12,Month,26.34,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00852,24.47,Month,18.352,Month,25%
+AWS Glue,AWS Glue,,ITEM-00853,27.077,Month,20.308,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00854,16.924,Month,12.693,Month,25%
+AWS Batch,AWS Batch,,ITEM-00855,42.204,Month,31.653,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00856,37.777,Month,28.333,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00857,40.846,Month,30.634,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00858,45.755,Month,34.316,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00859,8.929,Month,6.697,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00860,20.319,Month,15.239,Month,25%
+Amazon Aurora,Amazon Aurora,,ITEM-00861,42.663,Month,31.997,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00862,43.715,Month,32.786,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00863,7.773,Month,5.83,Month,25%
+AWS Glue,AWS Glue,,ITEM-00864,47.763,Month,35.822,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00865,40.352,Month,30.264,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00866,1.517,Month,1.138,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00867,41.655,Month,31.241,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00868,4.885,Month,3.664,Month,25%
+AWS IAM,AWS IAM,,ITEM-00869,46.797,Month,35.098,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00870,37.662,Month,28.246,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00871,39.828,Month,29.871,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00872,28.494,Month,21.37,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00873,16.918,Month,12.688,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00874,39.723,Month,29.792,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00875,14.175,Month,10.631,Month,25%
+Amazon S3,Amazon S3,,ITEM-00876,47.112,Month,35.334,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00877,28.096,Month,21.072,Month,25%
+AWS Glue,AWS Glue,,ITEM-00878,30.847,Month,23.135,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00879,49.933,Month,37.45,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00880,37.16,Month,27.87,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00881,47.006,Month,35.255,Month,25%
+Amazon CloudFront,Amazon CloudFront,,ITEM-00882,24.884,Month,18.663,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00883,30.071,Month,22.553,Month,25%
+AWS IAM,AWS IAM,,ITEM-00884,42.971,Month,32.228,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00885,36.05,Month,27.037,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00886,46.874,Month,35.156,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00887,43.862,Month,32.897,Month,25%
+AWS WAF,AWS WAF,,ITEM-00888,42.013,Month,31.51,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00889,0.421,Month,0.316,Month,25%
+AWS KMS,AWS KMS,,ITEM-00890,46.221,Month,34.666,Month,25%
+AWS Batch,AWS Batch,,ITEM-00891,10.151,Month,7.613,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00892,9.066,Month,6.8,Month,25%
+Amazon DynamoDB,Amazon DynamoDB,,ITEM-00893,40.649,Month,30.487,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00894,5.819,Month,4.364,Month,25%
+Amazon S3,Amazon S3,,ITEM-00895,28.575,Month,21.431,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00896,36.566,Month,27.425,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00897,47.913,Month,35.935,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00898,32.782,Month,24.586,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00899,32.077,Month,24.058,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00900,22.116,Month,16.587,Month,25%
+AWS Batch,AWS Batch,,ITEM-00901,39.959,Month,29.969,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00902,28.091,Month,21.068,Month,25%
+AWS WAF,AWS WAF,,ITEM-00903,39.139,Month,29.354,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00904,4.15,Month,3.113,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00905,11.226,Month,8.42,Month,25%
+AWS KMS,AWS KMS,,ITEM-00906,12.568,Month,9.426,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00907,35.221,Month,26.416,Month,25%
+AWS Batch,AWS Batch,,ITEM-00908,49.916,Month,37.437,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00909,0.639,Month,0.479,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00910,38.726,Month,29.044,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00911,48.482,Month,36.361,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00912,1.569,Month,1.177,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00913,38.96,Month,29.22,Month,25%
+AWS IAM,AWS IAM,,ITEM-00914,46.985,Month,35.239,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00915,35.694,Month,26.771,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00916,19.272,Month,14.454,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00917,22.995,Month,17.246,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00918,24.35,Month,18.263,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00919,8.017,Month,6.013,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00920,27.12,Month,20.34,Month,25%
+AWS WAF,AWS WAF,,ITEM-00921,29.967,Month,22.475,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00922,19.236,Month,14.427,Month,25%
+Amazon S3,Amazon S3,,ITEM-00923,41.447,Month,31.085,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00924,33.704,Month,25.278,Month,25%
+AWS Glue,AWS Glue,,ITEM-00925,22.56,Month,16.92,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00926,7.404,Month,5.553,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00927,34.951,Month,26.213,Month,25%
+Amazon WorkSpaces,Amazon WorkSpaces,,ITEM-00928,1.358,Month,1.018,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00929,8.527,Month,6.395,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00930,30.185,Month,22.639,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00931,25.052,Month,18.789,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00932,39.696,Month,29.772,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00933,27.059,Month,20.294,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00934,33.655,Month,25.241,Month,25%
+AWS IAM,AWS IAM,,ITEM-00935,2.71,Month,2.032,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00936,8.826,Month,6.62,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00937,40.738,Month,30.553,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00938,33.747,Month,25.31,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00939,13.927,Month,10.445,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00940,48.106,Month,36.08,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00941,38.031,Month,28.523,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00942,37.726,Month,28.294,Month,25%
+AWS Glue DataBrew,AWS Glue DataBrew,,ITEM-00943,26.592,Month,19.944,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00944,31.301,Month,23.476,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00945,22.165,Month,16.624,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00946,21.031,Month,15.773,Month,25%
+AWS Step Functions,AWS Step Functions,,ITEM-00947,7.008,Month,5.256,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00948,46.949,Month,35.212,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00949,34.367,Month,25.775,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00950,0.663,Month,0.497,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00951,5.394,Month,4.046,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00952,29.306,Month,21.98,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00953,26.448,Month,19.836,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00954,48.141,Month,36.106,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00955,37.733,Month,28.3,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00956,43.285,Month,32.464,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00957,34.2,Month,25.65,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00958,17.004,Month,12.753,Month,25%
+Amazon EKS,Amazon EKS,,ITEM-00959,41.282,Month,30.961,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-00960,10.304,Month,7.728,Month,25%
+Amazon RDS,Amazon RDS,,ITEM-00961,6.794,Month,5.095,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00962,27.835,Month,20.876,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00963,29.803,Month,22.352,Month,25%
+AWS Batch,AWS Batch,,ITEM-00964,4.834,Month,3.625,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00965,13.737,Month,10.303,Month,25%
+Amazon Neptune,Amazon Neptune,,ITEM-00966,4.983,Month,3.737,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00967,17.188,Month,12.891,Month,25%
+Amazon SQS,Amazon SQS,,ITEM-00968,24.486,Month,18.364,Month,25%
+Amazon Athena,Amazon Athena,,ITEM-00969,16.627,Month,12.47,Month,25%
+AWS Amplify,AWS Amplify,,ITEM-00970,6.618,Month,4.963,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00971,31.376,Month,23.532,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00972,13.861,Month,10.396,Month,25%
+Amazon Elasticache,Amazon Elasticache,,ITEM-00973,39.864,Month,29.898,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00974,47.056,Month,35.292,Month,25%
+Amazon S3,Amazon S3,,ITEM-00975,49.075,Month,36.806,Month,25%
+AWS Fargate,AWS Fargate,,ITEM-00976,20.152,Month,15.114,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00977,14.304,Month,10.728,Month,25%
+Amazon Route 53,Amazon Route 53,,ITEM-00978,27.044,Month,20.283,Month,25%
+AWS Glue,AWS Glue,,ITEM-00979,44.436,Month,33.327,Month,25%
+Amazon Lightsail,Amazon Lightsail,,ITEM-00980,40.025,Month,30.019,Month,25%
+Amazon ECS,Amazon ECS,,ITEM-00981,45.688,Month,34.266,Month,25%
+Amazon SNS,Amazon SNS,,ITEM-00982,46.458,Month,34.843,Month,25%
+Amazon AppStream 2.0,Amazon AppStream 2.0,,ITEM-00983,29.377,Month,22.033,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00984,44.839,Month,33.629,Month,25%
+Amazon EC2,Amazon EC2,,ITEM-00985,39.723,Month,29.792,Month,25%
+Amazon API Gateway,Amazon API Gateway,,ITEM-00986,29.906,Month,22.429,Month,25%
+Amazon QuickSight,Amazon QuickSight,,ITEM-00987,8.814,Month,6.611,Month,25%
+Amazon SageMaker,Amazon SageMaker,,ITEM-00988,35.436,Month,26.577,Month,25%
+AWS Elastic Beanstalk,AWS Elastic Beanstalk,,ITEM-00989,5.749,Month,4.312,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00990,32.7,Month,24.525,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00991,0.29,Month,0.217,Month,25%
+Amazon DocumentDB,Amazon DocumentDB,,ITEM-00992,33.312,Month,24.984,Month,25%
+Amazon CloudWatch,Amazon CloudWatch,,ITEM-00993,36.387,Month,27.29,Month,25%
+Amazon VPC,Amazon VPC,,ITEM-00994,10.584,Month,7.938,Month,25%
+Amazon Redshift,Amazon Redshift,,ITEM-00995,24.994,Month,18.745,Month,25%
+AWS AppSync,AWS AppSync,,ITEM-00996,35.926,Month,26.945,Month,25%
+AWS Lambda,AWS Lambda,,ITEM-00997,9.939,Month,7.454,Month,25%
+Amazon Kinesis,Amazon Kinesis,,ITEM-00998,32.458,Month,24.343,Month,25%
+Amazon MQ,Amazon MQ,,ITEM-00999,25.515,Month,19.136,Month,25%
+AWS Lake Formation,AWS Lake Formation,,ITEM-01000,8.126,Month,6.095,Month,25%

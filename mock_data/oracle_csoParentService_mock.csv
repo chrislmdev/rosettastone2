@@ -1,0 +1,1001 @@
+csOParentService,csoShortName,catalogitemNumber,csp,category,impactlevel,newService
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00001,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00002,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00003,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00004,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00005,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00006,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00007,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00008,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00009,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00010,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00011,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00012,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00013,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00014,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00015,oracle,,IL4|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00016,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00017,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00018,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00019,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00020,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00021,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00022,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00023,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00024,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00025,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00026,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00027,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00028,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00029,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00030,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00031,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00032,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00033,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00034,oracle,,IL2|IL4|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00035,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00036,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00037,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00038,oracle,,IL4|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00039,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00040,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00041,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00042,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00043,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00044,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00045,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00046,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00047,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00048,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00049,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00050,oracle,,IL2,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00051,oracle,,IL5|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00052,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00053,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00054,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00055,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00056,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00057,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00058,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00059,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00060,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00061,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00062,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00063,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00064,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00065,oracle,,IL4|IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00066,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00067,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00068,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00069,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00070,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00071,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00072,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00073,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00074,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00075,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00076,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00077,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00078,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00079,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00080,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00081,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00082,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00083,oracle,,IL2|IL4,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00084,oracle,,IL4|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00085,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00086,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00087,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00088,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00089,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00090,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00091,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00092,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00093,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00094,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00095,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00096,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00097,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00098,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00099,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00100,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00101,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00102,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00103,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00104,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00105,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00106,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00107,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00108,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00109,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00110,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00111,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00112,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00113,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00114,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00115,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00116,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00117,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00118,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00119,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00120,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00121,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00122,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00123,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00124,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00125,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00126,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00127,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00128,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00129,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00130,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00131,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00132,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00133,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00134,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00135,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00136,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00137,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00138,oracle,,IL2|IL4|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00139,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00140,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00141,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00142,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00143,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00144,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00145,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00146,oracle,,IL2|IL4,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00147,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00148,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00149,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00150,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00151,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00152,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00153,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00154,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00155,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00156,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00157,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00158,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00159,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00160,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00161,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00162,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00163,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00164,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00165,oracle,,IL5|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00166,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00167,oracle,,IL5|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00168,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00169,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00170,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00171,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00172,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00173,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00174,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00175,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00176,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00177,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00178,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00179,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00180,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00181,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00182,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00183,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00184,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00185,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00186,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00187,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00188,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00189,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00190,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00191,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00192,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00193,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00194,oracle,,IL2|IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00195,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00196,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00197,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00198,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00199,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00200,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00201,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00202,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00203,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00204,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00205,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00206,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00207,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00208,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00209,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00210,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00211,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00212,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00213,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00214,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00215,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00216,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00217,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00218,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00219,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00220,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00221,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00222,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00223,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00224,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00225,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00226,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00227,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00228,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00229,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00230,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00231,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00232,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00233,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00234,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00235,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00236,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00237,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00238,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00239,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00240,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00241,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00242,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00243,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00244,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00245,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00246,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00247,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00248,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00249,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00250,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00251,oracle,,IL2|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00252,oracle,,IL5|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00253,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00254,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00255,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00256,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00257,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00258,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00259,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00260,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00261,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00262,oracle,,IL2|IL4|IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00263,oracle,,IL2|IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00264,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00265,oracle,,IL4,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00266,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00267,oracle,,IL2|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00268,oracle,,IL4|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00269,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00270,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00271,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00272,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00273,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00274,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00275,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00276,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00277,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00278,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00279,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00280,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00281,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00282,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00283,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00284,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00285,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00286,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00287,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00288,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00289,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00290,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00291,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00292,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00293,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00294,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00295,oracle,,IL4|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00296,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00297,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00298,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00299,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00300,oracle,,IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00301,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00302,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00303,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00304,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00305,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00306,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00307,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00308,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00309,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00310,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00311,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00312,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00313,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00314,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00315,oracle,,IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00316,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00317,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00318,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00319,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00320,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00321,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00322,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00323,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00324,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00325,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00326,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00327,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00328,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00329,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00330,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00331,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00332,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00333,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00334,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00335,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00336,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00337,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00338,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00339,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00340,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00341,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00342,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00343,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00344,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00345,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00346,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00347,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00348,oracle,,IL2|IL4,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00349,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00350,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00351,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00352,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00353,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00354,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00355,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00356,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00357,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00358,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00359,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00360,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00361,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00362,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00363,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00364,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00365,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00366,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00367,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00368,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00369,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00370,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00371,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00372,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00373,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00374,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00375,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00376,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00377,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00378,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00379,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00380,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00381,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00382,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00383,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00384,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00385,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00386,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00387,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00388,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00389,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00390,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00391,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00392,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00393,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00394,oracle,,IL2|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00395,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00396,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00397,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00398,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00399,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00400,oracle,,IL2|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00401,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00402,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00403,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00404,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00405,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00406,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00407,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00408,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00409,oracle,,IL2|IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00410,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00411,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00412,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00413,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00414,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00415,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00416,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00417,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00418,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00419,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00420,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00421,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00422,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00423,oracle,,IL2|IL4|IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00424,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00425,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00426,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00427,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00428,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00429,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00430,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00431,oracle,,IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00432,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00433,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00434,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00435,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00436,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00437,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00438,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00439,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00440,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00441,oracle,,IL2|IL4|IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00442,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00443,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00444,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00445,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00446,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00447,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00448,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00449,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00450,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00451,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00452,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00453,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00454,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00455,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00456,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00457,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00458,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00459,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00460,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00461,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00462,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00463,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00464,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00465,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00466,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00467,oracle,,IL4|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00468,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00469,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00470,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00471,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00472,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00473,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00474,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00475,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00476,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00477,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00478,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00479,oracle,,IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00480,oracle,,IL5,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00481,oracle,,IL2,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00482,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00483,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00484,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00485,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00486,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00487,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00488,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00489,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00490,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00491,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00492,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00493,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00494,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00495,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00496,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00497,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00498,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00499,oracle,,IL2|IL4,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00500,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00501,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00502,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00503,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00504,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00505,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00506,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00507,oracle,,IL4,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00508,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00509,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00510,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00511,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00512,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00513,oracle,,IL2|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00514,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00515,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00516,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00517,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00518,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00519,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00520,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00521,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00522,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00523,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00524,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00525,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00526,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00527,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00528,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00529,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00530,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00531,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00532,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00533,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00534,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00535,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00536,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00537,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00538,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00539,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00540,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00541,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00542,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00543,oracle,,IL4|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00544,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00545,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00546,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00547,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00548,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00549,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00550,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00551,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00552,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00553,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00554,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00555,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00556,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00557,oracle,,IL4|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00558,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00559,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00560,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00561,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00562,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00563,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00564,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00565,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00566,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00567,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00568,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00569,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00570,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00571,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00572,oracle,,IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00573,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00574,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00575,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00576,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00577,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00578,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00579,oracle,,IL2|IL4,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00580,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00581,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00582,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00583,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00584,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00585,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00586,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00587,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00588,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00589,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00590,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00591,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00592,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00593,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00594,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00595,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00596,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00597,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00598,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00599,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00600,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00601,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00602,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00603,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00604,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00605,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00606,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00607,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00608,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00609,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00610,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00611,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00612,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00613,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00614,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00615,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00616,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00617,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00618,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00619,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00620,oracle,,IL2|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00621,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00622,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00623,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00624,oracle,,IL4|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00625,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00626,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00627,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00628,oracle,,IL2|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00629,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00630,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00631,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00632,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00633,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00634,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00635,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00636,oracle,,IL4|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00637,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00638,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00639,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00640,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00641,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00642,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00643,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00644,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00645,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00646,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00647,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00648,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00649,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00650,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00651,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00652,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00653,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00654,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00655,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00656,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00657,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00658,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00659,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00660,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00661,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00662,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00663,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00664,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00665,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00666,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00667,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00668,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00669,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00670,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00671,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00672,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00673,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00674,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00675,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00676,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00677,oracle,,IL2|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00678,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00679,oracle,,IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00680,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00681,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00682,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00683,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00684,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00685,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00686,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00687,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00688,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00689,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00690,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00691,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00692,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00693,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00694,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00695,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00696,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00697,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00698,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00699,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00700,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00701,oracle,,IL2|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00702,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00703,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00704,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00705,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00706,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00707,oracle,,IL5|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00708,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00709,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00710,oracle,,IL2|IL4|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00711,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00712,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00713,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00714,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00715,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00716,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00717,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00718,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00719,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00720,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00721,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00722,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00723,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00724,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00725,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00726,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00727,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00728,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00729,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00730,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00731,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00732,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00733,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00734,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00735,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00736,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00737,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00738,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00739,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00740,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00741,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00742,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00743,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00744,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00745,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00746,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00747,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00748,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00749,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00750,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00751,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00752,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00753,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00754,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00755,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00756,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00757,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00758,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00759,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00760,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00761,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00762,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00763,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00764,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00765,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00766,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00767,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00768,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00769,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00770,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00771,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00772,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00773,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00774,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00775,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00776,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00777,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00778,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00779,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00780,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00781,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00782,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00783,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00784,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00785,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00786,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00787,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00788,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00789,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00790,oracle,,IL2|IL4|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00791,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00792,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00793,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00794,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00795,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00796,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00797,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00798,oracle,,IL4,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00799,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00800,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00801,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00802,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00803,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00804,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00805,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00806,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00807,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00808,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00809,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00810,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00811,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00812,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00813,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00814,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00815,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00816,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00817,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00818,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00819,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00820,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00821,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00822,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00823,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00824,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00825,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00826,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00827,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00828,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00829,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00830,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00831,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00832,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00833,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00834,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00835,oracle,,IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00836,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00837,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00838,oracle,,IL2|IL4,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00839,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00840,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00841,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00842,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00843,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00844,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00845,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00846,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00847,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00848,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00849,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00850,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00851,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00852,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00853,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00854,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00855,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00856,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00857,oracle,,IL2|IL4,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00858,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00859,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00860,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00861,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00862,oracle,,IL2|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00863,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00864,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00865,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00866,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00867,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00868,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00869,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00870,oracle,,IL4|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00871,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00872,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00873,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00874,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00875,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00876,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00877,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00878,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00879,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00880,oracle,,IL2|IL4|IL5,TRUE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00881,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00882,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00883,oracle,,IL4|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Functions,Functions,ITEM-ORCL-00884,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00885,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00886,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00887,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00888,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00889,oracle,,IL4|IL5|IL6,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00890,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00891,oracle,,IL4|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00892,oracle,,IL2|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00893,oracle,,IL4|IL5|IL6,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00894,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00895,oracle,,IL4,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00896,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00897,oracle,,IL4|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00898,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00899,oracle,,IL2|IL4|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00900,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00901,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00902,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00903,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00904,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00905,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00906,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00907,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00908,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00909,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00910,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00911,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00912,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00913,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00914,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00915,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00916,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00917,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00918,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Key Management,KMS,ITEM-ORCL-00919,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00920,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00921,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00922,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00923,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00924,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00925,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00926,oracle,,IL4|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00927,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00928,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00929,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00930,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00931,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00932,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00933,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00934,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00935,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00936,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00937,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00938,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00939,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00940,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00941,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00942,oracle,,IL6,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00943,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00944,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00945,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure FastConnect,FastConnect,ITEM-ORCL-00946,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00947,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00948,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00949,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00950,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00951,oracle,,IL2,FALSE
+Oracle Cloud Infrastructure Logging,Logging,ITEM-ORCL-00952,oracle,,IL2|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00953,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00954,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00955,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00956,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00957,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00958,oracle,,IL4|IL6,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00959,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00960,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00961,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00962,oracle,,IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00963,oracle,,IL4|IL5,FALSE
+Oracle Cloud Infrastructure Big Data Service,Big Data Service,ITEM-ORCL-00964,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00965,oracle,,IL2|IL5,FALSE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00966,oracle,,IL2|IL4,FALSE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00967,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00968,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00969,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00970,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00971,oracle,,IL2|IL5,TRUE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00972,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00973,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00974,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Identity and Access Management,IAM,ITEM-ORCL-00975,oracle,,IL5,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00976,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00977,oracle,,IL2,TRUE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00978,oracle,,IL4,TRUE
+Oracle Cloud Infrastructure API Gateway,API Gateway,ITEM-ORCL-00979,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Virtual Cloud Network,VCN,ITEM-ORCL-00980,oracle,,IL5,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00981,oracle,,IL2|IL5,FALSE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00982,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Object Storage,Object Storage,ITEM-ORCL-00983,oracle,,IL2|IL4|IL6,FALSE
+Oracle Cloud Infrastructure Streaming,Streaming,ITEM-ORCL-00984,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-00985,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Monitoring,Monitoring,ITEM-ORCL-00986,oracle,,IL2|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Data Safe,Data Safe,ITEM-ORCL-00987,oracle,,IL4,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00988,oracle,,IL4,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00989,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Web Application Firewall,WAF,ITEM-ORCL-00990,oracle,,IL5|IL6,FALSE
+Oracle Cloud Infrastructure Compute,Compute,ITEM-ORCL-00991,oracle,,IL2,TRUE
+Oracle Autonomous Database,Autonomous Database,ITEM-ORCL-00992,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00993,oracle,,IL2|IL4|IL5,FALSE
+Oracle Cloud Infrastructure Data Flow,Data Flow,ITEM-ORCL-00994,oracle,,IL4|IL5|IL6,FALSE
+Oracle Cloud Infrastructure Container Engine for Kubernetes,OKE,ITEM-ORCL-00995,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00996,oracle,,IL2|IL5|IL6,TRUE
+Oracle Cloud Infrastructure Block Volumes,Block Volume,ITEM-ORCL-00997,oracle,,IL5|IL6,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00998,oracle,,IL4|IL5,TRUE
+Oracle Cloud Infrastructure Load Balancing,Load Balancer,ITEM-ORCL-00999,oracle,,IL6,TRUE
+Oracle Cloud Infrastructure Exadata Cloud Service,Exadata,ITEM-ORCL-01000,oracle,,IL2|IL4|IL5,FALSE
