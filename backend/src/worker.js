@@ -17,56 +17,16 @@ import { parse } from "csv-parse";
 import { createReadStream } from "fs";
 import pkg from "pg";
 import IORedis from "ioredis";
+import {
+  resolvePricingFocusCategory,
+  resolveParentFocusCategory,
+} from "./focusInference.js";
 
 const { Pool } = pkg;
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 const redisUrl = process.env.REDIS_URL || "redis://localhost:6379";
 const connection = new IORedis(redisUrl, { maxRetriesPerRequest: null });
-
-// ── FinOps FOCUS 1.3 category map ──────────────────────────
-const FOCUS_CATEGORY_MAP = {
-  "compute":              "Compute",
-  "storage":              "Storage",
-  "database":             "Database",
-  "networking":           "Networking",
-  "network":              "Networking",
-  "security":             "Security",
-  "identity":             "Security",
-  "ai":                   "AI and Machine Learning",
-  "machine learning":     "AI and Machine Learning",
-  "ml":                   "AI and Machine Learning",
-  "analytics":            "Analytics",
-  "big data":             "Analytics",
-  "developer tools":      "Developer Tools",
-  "devops":               "Developer Tools",
-  "management":           "Management and Governance",
-  "governance":           "Management and Governance",
-  "monitoring":           "Management and Governance",
-  "serverless":           "Compute",
-  "containers":           "Compute",
-  "web":                  "Web and Mobile",
-  "mobile":               "Web and Mobile",
-  "iot":                  "Internet of Things",
-  "integration":          "Integration",
-  "messaging":            "Integration",
-  "media":                "Media Services",
-  "migration":            "Migration and Transfer",
-  "transfer":             "Migration and Transfer",
-  "end user computing":   "End User Computing",
-  "desktop":              "End User Computing",
-  "professional services":"Professional Services",
-  "pro services":         "Professional Services",
-};
-
-function normalizeFocusCategory(rawCategory) {
-  if (!rawCategory) return "Other";
-  const lower = rawCategory.toLowerCase();
-  for (const [key, val] of Object.entries(FOCUS_CATEGORY_MAP)) {
-    if (lower.includes(key)) return val;
-  }
-  return rawCategory; // keep original if no match
-}
 
 // ── Normalize CSV header keys ───────────────────────────────
 function normalizeHeaders(record) {
@@ -113,9 +73,13 @@ async function processPricing(filePath, csp, importId, client) {
 
     const rawCommPrice = parseFloat(row.commercialunitprice) || null;
     const rawJwccPrice = parseFloat(row.customerunitprice) || null;
-    const focusCat = normalizeFocusCategory(
-      row.category || row.service_category || ""
-    );
+    const focusCat = resolvePricingFocusCategory({
+      category: row.category || "",
+      service_category: row.service_category || "",
+      title,
+      shortname,
+      description: row.description || "",
+    });
 
     await client.query(
       `insert into pricing_item (
@@ -161,7 +125,11 @@ async function processPricing(filePath, csp, importId, client) {
 async function processParent(filePath, csp, importId, client) {
   let count = 0;
   for await (const row of streamCsv(filePath)) {
-    const focusCat = normalizeFocusCategory(row.category || "");
+    const focusCat = resolveParentFocusCategory({
+      category: row.category || "",
+      csoparentservice: row.csoparentservice || row.cso_parent_service || "",
+      csoshortname: row.csoshortname || row.cso_short_name || "",
+    });
     await client.query(
       `insert into parent_service (
         import_id, csp, catalogitemnumber,

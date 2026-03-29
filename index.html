@@ -2794,7 +2794,7 @@
   <div class="page active" id="page-services">
     <div class="svc-page-intro">
       <h2 class="svc-page-title">Cloud service offerings comparison</h2>
-      <p class="svc-page-sub">Crosswalk by FOCUS 1.3 category and CSP. Subcategory shows the service short name; category bands group each section.</p>
+      <p class="svc-page-sub">Crosswalk by FOCUS 1.3 category and CSP. <strong>Subcategory</strong> is the service short name; <strong>AWS / Azure / GCP / Oracle</strong> columns show the CSO parent offering name; <strong>Description</strong> uses pricing text when catalog numbers match, otherwise the parent or short name.</p>
     </div>
     <div class="toolbar">
       <div class="toolbar-inner">
@@ -3716,6 +3716,7 @@
     </div>
   </footer>
 
+  <script src="src/data/focusInference.js"></script>
   <script src="src/data/taxonomy.js"></script>
   <script src="src/data/diff.js"></script>
   <script src="src/app/exceptions.js"></script>
@@ -4370,6 +4371,39 @@
     // ════════════════════════════════════════════════════════════
     let svcSortCol = 'category', svcSortDir = 1;
 
+    function resolveServiceCatalogGroupDescription(g) {
+      const pricing = Array.isArray(csoPricingData) ? csoPricingData : [];
+      const normC = v => String(v || '').toLowerCase().trim();
+      if (pricing.length) {
+        for (const csp of ['aws', 'azure', 'gcp', 'oracle']) {
+          const rows = g[csp];
+          if (!rows || !rows.length) continue;
+          for (const s of rows) {
+            const num = String(s.catalogitemnumber || s.catalogitemNumber || '').trim();
+            const c = normC(s.csp_injected || s.csp);
+            if (!num || !c) continue;
+            const pr = pricing.find(
+              p => normC(p.csp_injected || p.csp) === c && String(p.catalogitemnumber || '').trim() === num
+            );
+            if (pr) {
+              const d = String(pr.description || '').trim();
+              if (d) return d;
+              const t = String(pr.title || '').trim();
+              if (t) return t;
+            }
+          }
+        }
+      }
+      const all = [...(g.aws || []), ...(g.azure || []), ...(g.gcp || []), ...(g.oracle || [])];
+      const any = all[0];
+      if (!any) return '—';
+      const p = String(any.csoparentservice || any.csOParentService || '').trim();
+      if (p) return p;
+      const sh = String(any.csoshortname || any.csoShortName || '').trim();
+      if (sh) return sh;
+      return '—';
+    }
+
     function buildBadges(svcs) {
       if (!svcs || !svcs.length) return '<span class="none-ind">—</span>';
       return svcs.map(s => {
@@ -4411,7 +4445,7 @@
             category: cat,
             parentName: parent,
             subcategoryLabel: '',
-            description: s.description || s.Description || 'Monthly CSP Service Offering Mapping',
+            description: '',
             aws: [], azure: [], gcp: [], oracle: []
           };
         }
@@ -4423,6 +4457,10 @@
         if (provider && grouped[key][provider]) {
           grouped[key][provider].push(s);
         }
+      });
+
+      Object.values(grouped).forEach(g => {
+        g.description = resolveServiceCatalogGroupDescription(g);
       });
 
       const flat = Object.values(grouped);
@@ -4502,14 +4540,19 @@
     function mergeServiceRowsForCell(svcs) {
       const byKey = new Map();
       for (const s of svcs) {
-        const label = String(s.csoshortname || s.csoShortName || s.csoparentservice || s.csOParentService || s.title || s.name || 'Unknown').trim();
+        const parentSvc = String(s.csoparentservice || s.csOParentService || '').trim();
+        const shortN = String(s.csoshortname || s.csoShortName || '').trim();
+        const displayTitle =
+          parentSvc ||
+          shortN ||
+          String(s.title || s.name || 'Unknown').trim();
         const catNum = (s.catalogitemnumber || s.catalogitemNumber || '').toString().trim();
-        const key = (catNum || label).toLowerCase();
+        const key = (catNum || parentSvc || shortN || displayTitle).toLowerCase();
         const rawIL = s.impactlevel || s.ImpactLevel || '';
         const levels = String(rawIL).split('|').map(l => l.trim().toUpperCase()).filter(Boolean);
         const ns = !!(s.newservice || s.newService);
         if (!byKey.has(key)) {
-          byKey.set(key, { name: label, ils: new Set(), newService: false });
+          byKey.set(key, { name: displayTitle, ils: new Set(), newService: false });
         }
         const g = byKey.get(key);
         levels.forEach(l => g.ils.add(l));

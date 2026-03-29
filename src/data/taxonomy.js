@@ -10,7 +10,11 @@
     'Developer Tools',
     'Management and Governance',
     'Integration',
+    'Migration and Transfer',
     'Migration',
+    'Web and Mobile',
+    'Media Services',
+    'Internet of Things',
     'End User Computing',
     'Professional Services',
     'Other'
@@ -37,19 +41,32 @@
     return 'Other';
   }
 
+  function parentRowCategory(p) {
+    const fc = String(p.focus_category || '').trim();
+    const cat = String(p.category || '').trim();
+    if (fc && fc.toLowerCase() !== 'other') return fc;
+    return cat || '';
+  }
+
   function mapFromParentService(pricingRow, parentRows) {
     const catalog = normalize(pricingRow.catalogitemnumber || pricingRow.catalognum);
     const csp = normalize(pricingRow.csp_injected || pricingRow.cspname || pricingRow.csp);
     const short = normalizeText(pricingRow.csoshortname || pricingRow.shortname);
     const title = normalizeText(pricingRow.title);
 
+    const apiFc = String(pricingRow.focus_category || '').trim();
+    if (apiFc && apiFc.toLowerCase() !== 'other') {
+      return { category: apiFc, confidence: 'high', source: 'api_focus' };
+    }
+
     let direct = parentRows.find(p => {
       const pCatalog = normalize(p.catalogitemnumber || p.catalognum);
       const pCsp = normalize(p.csp_injected || p.csp || p.cspname);
       return pCatalog && pCatalog === catalog && (!csp || !pCsp || pCsp === csp);
     });
-    if (direct && direct.category) {
-      return { category: direct.category, confidence: 'high', source: 'catalog_match' };
+    if (direct) {
+      const pc = parentRowCategory(direct);
+      if (pc) return { category: pc, confidence: 'high', source: 'catalog_match' };
     }
 
     let byName = parentRows.find(p => {
@@ -57,11 +74,16 @@
       const pCsp = normalize(p.csp_injected || p.csp || p.cspname);
       return pShort && (pShort === short || pShort === title) && (!csp || !pCsp || pCsp === csp);
     });
-    if (byName && byName.category) {
-      return { category: byName.category, confidence: 'medium', source: 'name_match' };
+    if (byName) {
+      const pc = parentRowCategory(byName);
+      if (pc) return { category: pc, confidence: 'medium', source: 'name_match' };
     }
 
-    const inferred = inferCategory(`${title} ${short} ${normalizeText(pricingRow.description)}`);
+    const blob = `${title} ${short} ${normalizeText(pricingRow.description)}`;
+    const inferred =
+      typeof window !== 'undefined' && window.inferFocusCategoryFromText
+        ? window.inferFocusCategoryFromText(blob)
+        : inferCategory(blob);
     return { category: inferred, confidence: inferred === 'Other' ? 'low' : 'medium', source: 'keyword' };
   }
 
