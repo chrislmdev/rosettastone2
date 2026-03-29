@@ -6,7 +6,7 @@
  *
  * Key behaviors:
  *  - Streaming parse (handles 80MB files without OOM)
- *  - CSP injected from job metadata (not from CSV filename)
+ *  - CSP: job metadata from batch/single import; row `csp` column overrides when valid
  *  - Title lookup: csoPricing missing title → resolved from parent_service
  *  - JWCC column mapping: customerunitprice → jwccunitprice
  *  - FinOps FOCUS 1.3 category normalization
@@ -47,25 +47,42 @@ async function* streamCsv(filePath) {
   }
 }
 
+const ALLOWED_JOB_CSP = new Set(["aws", "azure", "gcp", "oracle"]);
+
+function pickEffectiveCsp(row, jobCsp) {
+  const v = String(row.csp || row.csp_injected || "")
+    .toLowerCase()
+    .trim();
+  if (ALLOWED_JOB_CSP.has(v)) return v;
+  return String(jobCsp || "").toLowerCase();
+}
+
 // ── Process: pricing CSV ────────────────────────────────────
 async function processPricing(filePath, csp, importId, client) {
-  // Build shortname→title lookup from the latest parent_service for this CSP
-  const { rows: parents } = await client.query(
-    `select csoshortname, csoparentservice
-     from parent_service
-     where csp = $1
-     order by id desc`,
-    [csp]
-  );
-  const titleMap = {};
-  for (const p of parents) {
-    if (p.csoshortname && p.csoparentservice) {
-      titleMap[p.csoshortname.toLowerCase()] = p.csoparentservice;
+  const titleMapCache = new Map();
+  async function getTitleMap(forCsp) {
+    if (titleMapCache.has(forCsp)) return titleMapCache.get(forCsp);
+    const { rows: parents } = await client.query(
+      `select csoshortname, csoparentservice
+       from parent_service
+       where csp = $1
+       order by id desc`,
+      [forCsp]
+    );
+    const titleMap = {};
+    for (const p of parents) {
+      if (p.csoshortname && p.csoparentservice) {
+        titleMap[p.csoshortname.toLowerCase()] = p.csoparentservice;
+      }
     }
+    titleMapCache.set(forCsp, titleMap);
+    return titleMap;
   }
 
   let count = 0;
   for await (const row of streamCsv(filePath)) {
+    const effectiveCsp = pickEffectiveCsp(row, csp);
+    const titleMap = await getTitleMap(effectiveCsp);
     const shortname = row.csoshortname || row.cso_short_name || "";
     // Resolve title: use CSV title if present, else look up from parent
     const title = row.title || row.csoparentservice ||
@@ -98,7 +115,7 @@ async function processPricing(filePath, csp, importId, client) {
         $15,$16,$17
       )`,
       [
-        importId, csp,
+        importId, effectiveCsp,
         row.catalogitemnumber || row.catalog_item_number || "",
         title,
         shortname,
@@ -125,6 +142,7 @@ async function processPricing(filePath, csp, importId, client) {
 async function processParent(filePath, csp, importId, client) {
   let count = 0;
   for await (const row of streamCsv(filePath)) {
+    const effectiveCsp = pickEffectiveCsp(row, csp);
     const focusCat = resolveParentFocusCategory({
       category: row.category || "",
       csoparentservice: row.csoparentservice || row.cso_parent_service || "",
@@ -137,7 +155,7 @@ async function processParent(filePath, csp, importId, client) {
         category, focus_category, impactlevel, newservice
       ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9)`,
       [
-        importId, csp,
+        importId, effectiveCsp,
         row.catalogitemnumber || row.catalog_item_number || "",
         row.csoparentservice || row.cso_parent_service || "",
         row.csoshortname || row.cso_short_name || "",
@@ -154,19 +172,24 @@ async function processParent(filePath, csp, importId, client) {
 
 // ── Process: exception CSV ──────────────────────────────────
 async function processException(filePath, csp, importId, client) {
-  // Load previous exceptions for this CSP to diff
-  const { rows: prev } = await client.query(
-    `select e.*
-     from exception_item e
-     join catalog_import ci on ci.id = e.import_id
-     where e.csp = $1
-     order by ci.imported_at desc
-     limit 5000`,
-    [csp]
-  );
-  const prevMap = {};
-  for (const p of prev) {
-    if (p.exceptionuniqueid) prevMap[p.exceptionuniqueid] = p;
+  const prevMapCache = new Map();
+  async function getPrevMap(forCsp) {
+    if (prevMapCache.has(forCsp)) return prevMapCache.get(forCsp);
+    const { rows: prev } = await client.query(
+      `select e.*
+       from exception_item e
+       join catalog_import ci on ci.id = e.import_id
+       where e.csp = $1
+       order by ci.imported_at desc
+       limit 5000`,
+      [forCsp]
+    );
+    const prevMap = {};
+    for (const p of prev) {
+      if (p.exceptionuniqueid) prevMap[p.exceptionuniqueid] = p;
+    }
+    prevMapCache.set(forCsp, prevMap);
+    return prevMap;
   }
 
   const TRACKED_FIELDS = [
@@ -176,6 +199,8 @@ async function processException(filePath, csp, importId, client) {
 
   let count = 0;
   for await (const row of streamCsv(filePath)) {
+    const effectiveCsp = pickEffectiveCsp(row, csp);
+    const prevMap = await getPrevMap(effectiveCsp);
     const uid = row.exceptionuniqueid || row.exception_unique_id || "";
     await client.query(
       `insert into exception_item (
@@ -184,7 +209,7 @@ async function processException(filePath, csp, importId, client) {
         exceptionpwsrequirement, exceptionbasisforrequest, exceptionsecurity
       ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9)`,
       [
-        importId, csp, uid,
+        importId, effectiveCsp, uid,
         row.csoshortname || row.cso_short_name || "",
         row.impactlevel || row.impact_level || "",
         row.exceptionstatus || row.exception_status || "",
@@ -205,7 +230,7 @@ async function processException(filePath, csp, importId, client) {
             `insert into exception_change_log
                (import_id, csp, exceptionuniqueid, field_name, old_value, new_value)
              values ($1,$2,$3,$4,$5,$6)`,
-            [importId, csp, uid, field, oldVal, newVal]
+            [importId, effectiveCsp, uid, field, oldVal, newVal]
           );
         }
       }

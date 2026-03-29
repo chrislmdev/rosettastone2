@@ -10,6 +10,7 @@ import pkg from "pg";
 import { loginHandler, requireAuth, createUserHandler } from "./auth.js";
 import { enqueueImport } from "./queue.js";
 import { resolveImportSpec } from "./importInference.js";
+import { peekConsistentCspFromCsvFile } from "./csvCspPeek.js";
 
 const { Pool } = pkg;
 const app = express();
@@ -131,11 +132,27 @@ app.post("/api/import/batch", upload.array("files", BATCH_MAX_FILES), async (req
   const fsPromises = await import("fs/promises");
 
   for (const file of files) {
-    const spec = resolveImportSpec(file.originalname, manifest);
+    const manifestEntry = manifest && manifest[file.originalname];
+    const hasFullManifest =
+      manifestEntry &&
+      String(manifestEntry.csp || "").trim() &&
+      String(manifestEntry.fileType || "").trim();
+
+    let spec = resolveImportSpec(file.originalname, manifest);
     if (spec.error) {
       errors.push({ filename: file.originalname, error: spec.error });
       continue;
     }
+
+    if (!hasFullManifest) {
+      try {
+        const csvCsp = await peekConsistentCspFromCsvFile(file.path);
+        if (csvCsp) spec = { ...spec, csp: csvCsp };
+      } catch (peekErr) {
+        console.warn("batch import csp peek:", file.originalname, peekErr.message);
+      }
+    }
+
     const { csp, fileType } = spec;
 
     try {

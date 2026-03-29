@@ -1099,19 +1099,62 @@
       max-height: 100%
     }
 
-    .admin-api-panel {
-      margin-top: 28px;
-      padding: 16px;
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius)
+    .admin-batch-section {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border)
     }
-    .admin-api-panel h3 {
+    .admin-batch-section h3 {
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       color: var(--text-muted);
-      margin-bottom: 12px
+      margin: 0 0 10px
+    }
+    .admin-batch-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      gap: 10px
+    }
+    .batch-dropzone-compact {
+      flex: 1 1 200px;
+      max-width: 360px;
+      padding: 12px 14px;
+      margin-bottom: 0;
+      font-size: 11px
+    }
+    .admin-batch-actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px
+    }
+    .admin-advanced {
+      margin-top: 14px;
+      font-size: 11px;
+      color: var(--text-muted)
+    }
+    .admin-advanced summary {
+      cursor: pointer;
+      user-select: none;
+      color: var(--text-muted)
+    }
+    .admin-advanced .adv-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: flex-end;
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius)
+    }
+    #batchStagedChips .batch-chip-row {
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      font-size: 10px
     }
     .bulk-progress-track {
       height: 6px;
@@ -3065,58 +3108,55 @@
         </div>
       </div>
 
-      <div class="admin-api-panel">
-        <h3>API, persistence &amp; queue import</h3>
-        <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;max-width:720px">
-          Set the CloudPrism API base URL (e.g. <code style="font-size:10px">http://localhost:3001</code>).
-          Catalog data is kept in memory; use <strong>Restore snapshot</strong> after refresh to reload the last session from this browser, or <strong>Load from API</strong> to pull from the database.
-          CSV queue import uses <code style="font-size:10px">POST /api/import/batch</code> and does not send a Bearer token.
+      <div class="admin-batch-section">
+        <h3>Import CSVs to server</h3>
+        <p style="font-size:11px;color:var(--text-muted);margin:0 0 10px;max-width:640px">
+          Filenames should include CSP and type (e.g. <code style="font-size:10px">oci_pricing.csv</code>, <code style="font-size:10px">aws_parent_mapping.csv</code>). Set <strong>Import month</strong> above, add files, then <strong>Process all</strong> — uploads, waits for processing, and reloads catalogs from the backend.
         </p>
-        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin-bottom:12px">
-          <div style="display:flex;flex-direction:column;gap:4px">
-            <label style="font-size:10px;color:var(--text-muted)">API base URL</label>
-            <input type="text" id="apiBaseUrl" placeholder="http://localhost:3001" class="form-input" style="width:220px;font-size:11px;padding:6px 8px" onchange="persistApiBaseUrl()">
-          </div>
-          <div style="display:flex;flex-direction:column;gap:4px;max-width:320px">
-            <label style="font-size:10px;color:var(--text-muted)">Admin JWT (optional)</label>
-            <input type="password" id="apiAuthToken" placeholder="For Load from API if required; not used for CSV import" class="form-input" style="width:260px;font-size:11px;padding:6px 8px" onchange="persistApiToken()">
-            <span style="font-size:10px;color:var(--text-muted);line-height:1.4">Not used for CSV import. Use <code style="font-size:9px">POST /api/login</code> as an <strong>admin</strong> user if you need a token for other calls (e.g. <code style="font-size:9px">POST /api/users</code>).</span>
-          </div>
-          <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="loadCatalogsFromApi()">Load from API</button>
-          <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="restoreCatalogSnapshot()">Restore snapshot</button>
-          <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="clearCatalogSnapshot()">Clear snapshot</button>
-        </div>
-        <div style="border-top:1px solid var(--border);padding-top:14px;margin-top:8px">
-          <p style="font-size:11px;color:var(--text-muted);margin-bottom:10px;max-width:720px">
-            <strong>Batch import:</strong> drop CSVs or click the zone below. Names are inferred from keywords (e.g. <code style="font-size:10px">AWS_Monthly_Pricing.csv</code>, <code style="font-size:10px">azure_parent_services.csv</code>) or strict patterns like <code style="font-size:10px">pricing_aws.csv</code>.
-            Set <strong>Import month</strong> (YYYY-MM) at the top. Use optional manifest JSON to override inference per exact filename.
-          </p>
-          <div id="batchDropzone" class="batch-dropzone" role="button" tabindex="0"
+        <div class="admin-batch-bar">
+          <div id="batchDropzone" class="batch-dropzone batch-dropzone-compact" role="button" tabindex="0"
             onclick="document.getElementById('batchDropzoneInput').click()"
             onkeydown="if (event.key==='Enter'||event.key===' ') { event.preventDefault(); document.getElementById('batchDropzoneInput').click(); }"
             ondragover="batchDropzoneDragOver(event)"
             ondragleave="batchDropzoneDragLeave(event)"
             ondrop="batchDropzoneDrop(event)">
-            <strong style="color:var(--text)">Drop CSV files here</strong><br>
-            <span>or click to add files</span>
+            <strong style="color:var(--text)">Drop CSVs</strong> or click to add
           </div>
-          <input type="file" id="batchDropzoneInput" multiple accept=".csv,text/csv" style="display:none" onchange="onBatchDropzoneFilesSelected(this)">
-          <div id="batchStagedChips"></div>
-          <details style="margin-top:10px;margin-bottom:12px">
-            <summary style="font-size:11px;cursor:pointer;color:var(--text-muted)">Manifest overrides (JSON, optional)</summary>
-            <p style="font-size:10px;color:var(--text-muted);margin:8px 0 6px">Keys must match uploaded filenames exactly, e.g. <code style="font-size:9px">{"weird.csv":{"csp":"aws","fileType":"pricing"}}</code></p>
-            <textarea id="batchImportManifest" class="form-input" style="width:100%;max-width:640px;min-height:72px;font-size:11px;font-family:var(--mono);padding:8px" placeholder="{}" oninput="renderBatchStagedChips()"></textarea>
-          </details>
-          <button type="button" id="batchProcessAllBtn" class="btn btn-primary" style="font-size:11px" disabled onclick="runBatchImport()">Process all</button>
-          <div id="bulkImportPanel" style="display:none;margin-top:14px">
-            <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px">
-              <span id="bulkProgressLabel">—</span>
-              <span id="bulkProgressFrac" style="font-family:var(--mono);color:var(--text-muted)">0 / 0</span>
-            </div>
-            <div class="bulk-progress-track"><div class="bulk-progress-fill" id="bulkProgressFill"></div></div>
-            <div id="bulkImportRows" style="margin-top:10px;max-height:220px;overflow-y:auto"></div>
+          <div class="admin-batch-actions">
+            <button type="button" id="batchProcessAllBtn" class="btn btn-primary" style="font-size:12px;padding:8px 16px" disabled onclick="runBatchImport()">Process all</button>
           </div>
         </div>
+        <input type="file" id="batchDropzoneInput" multiple accept=".csv,text/csv" style="display:none" onchange="onBatchDropzoneFilesSelected(this)">
+        <div id="batchStagedChips" style="margin-top:8px"></div>
+        <details style="margin-top:8px">
+          <summary style="font-size:11px;cursor:pointer;color:var(--text-muted)">Manifest overrides (JSON, optional)</summary>
+          <p style="font-size:10px;color:var(--text-muted);margin:8px 0 6px">Keys = exact filenames, e.g. <code style="font-size:9px">{"weird.csv":{"csp":"aws","fileType":"pricing"}}</code></p>
+          <textarea id="batchImportManifest" class="form-input" style="width:100%;max-width:640px;min-height:64px;font-size:11px;font-family:var(--mono);padding:8px" placeholder="{}" oninput="renderBatchStagedChips()"></textarea>
+        </details>
+        <div id="bulkImportPanel" style="display:none;margin-top:12px">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px">
+            <span id="bulkProgressLabel">—</span>
+            <span id="bulkProgressFrac" style="font-family:var(--mono);color:var(--text-muted)">0 / 0</span>
+          </div>
+          <div class="bulk-progress-track"><div class="bulk-progress-fill" id="bulkProgressFill"></div></div>
+          <div id="bulkImportRows" style="margin-top:10px;max-height:200px;overflow-y:auto"></div>
+        </div>
+        <details class="admin-advanced">
+          <summary>Advanced — backend URL, reload, snapshot</summary>
+          <div class="adv-grid">
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <label style="font-size:10px;color:var(--text-muted)">Backend URL</label>
+              <input type="text" id="apiBaseUrl" placeholder="http://localhost:3001" class="form-input" style="width:220px;font-size:11px;padding:6px 8px" onchange="persistApiBaseUrl()" title="Leave empty to use localhost:3001">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <label style="font-size:10px;color:var(--text-muted)">Bearer token (optional)</label>
+              <input type="password" id="apiAuthToken" placeholder="If GET /pricing requires auth" class="form-input" style="width:220px;font-size:11px;padding:6px 8px" onchange="persistApiToken()">
+            </div>
+            <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="loadCatalogsFromApi()">Reload from API</button>
+            <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="restoreCatalogSnapshot()">Restore snapshot</button>
+            <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="clearCatalogSnapshot()">Clear snapshot</button>
+          </div>
+        </details>
       </div>
 
     </div>
@@ -3144,7 +3184,7 @@
       <p style="margin-bottom:16px;font-family:var(--mono);font-size:11px;color:var(--text-muted)">Pricing data is
         managed via the <button class="btn btn-ghost" style="padding:2px 6px;font-size:10px"
           onclick="switchPage('admin', document.querySelector('[data-page=admin]'))">Admin</button> tab.
-        After refresh, use Admin → <strong>Restore snapshot</strong> or <strong>Load from API</strong> to reload catalogs.</p>
+        After refresh, use Admin → <strong>Advanced</strong> → Restore snapshot or Reload from API.</p>
 
       <!-- Pricing toolbar -->
       <div class="p-toolbar">
@@ -3745,6 +3785,7 @@
     const CATALOG_SNAPSHOT_KEY = 'cloudprism_catalog_snapshot_v1';
     const API_BASE_LS = 'cloudprism_api_base';
     const API_TOKEN_LS = 'cloudprism_api_token';
+    const DEFAULT_API_BASE = 'http://localhost:3001';
 
     function persistApiBaseUrl() {
       const v = (document.getElementById('apiBaseUrl')?.value || '').trim().replace(/\/$/, '');
@@ -3759,7 +3800,9 @@
     function getApiBase() {
       const fromInput = (document.getElementById('apiBaseUrl')?.value || '').trim().replace(/\/$/, '');
       if (fromInput) return fromInput;
-      return (localStorage.getItem(API_BASE_LS) || '').trim().replace(/\/$/, '');
+      const ls = (localStorage.getItem(API_BASE_LS) || '').trim().replace(/\/$/, '');
+      if (ls) return ls;
+      return DEFAULT_API_BASE;
     }
     function getApiToken() {
       const fromInput = (document.getElementById('apiAuthToken')?.value || '').trim();
@@ -3864,29 +3907,40 @@
       };
     }
 
-    async function loadCatalogsFromApi() {
+    async function fetchCatalogsFromApiCore() {
       const base = getApiBase();
-      if (!base) { showToast('Set API base URL in Admin', 'error'); return; }
       persistApiBaseUrl();
       const token = getApiToken();
       const headers = { Accept: 'application/json' };
       if (token) headers['Authorization'] = 'Bearer ' + token;
+      const [pr, ex, pa] = await Promise.all([
+        fetch(`${base}/pricing`, { headers }),
+        fetch(`${base}/exceptions`, { headers }),
+        fetch(`${base}/parent-services`, { headers }),
+      ]);
+      if (!pr.ok) throw new Error(`pricing HTTP ${pr.status}`);
+      if (!ex.ok) throw new Error(`exceptions HTTP ${ex.status}`);
+      if (!pa.ok) throw new Error(`parent-services HTTP ${pa.status}`);
+      const [pricingJson, exJson, paJson] = await Promise.all([pr.json(), ex.json(), pa.json()]);
+      csoPricingData = (pricingJson || []).map(mapPricingRowFromApi);
+      csoExceptionData = (exJson || []).map(mapExceptionRowFromApi);
+      csOParentServiceData = (paJson || []).map(mapParentRowFromApi);
+      return {
+        nPricing: csoPricingData.length,
+        nParent: csOParentServiceData.length,
+        nEx: csoExceptionData.length,
+      };
+    }
+
+    async function loadCatalogsFromApi() {
       try {
-        const [pr, ex, pa] = await Promise.all([
-          fetch(`${base}/pricing`, { headers }),
-          fetch(`${base}/exceptions`, { headers }),
-          fetch(`${base}/parent-services`, { headers }),
-        ]);
-        if (!pr.ok) throw new Error(`pricing HTTP ${pr.status}`);
-        if (!ex.ok) throw new Error(`exceptions HTTP ${ex.status}`);
-        if (!pa.ok) throw new Error(`parent-services HTTP ${pa.status}`);
-        const [pricingJson, exJson, paJson] = await Promise.all([pr.json(), ex.json(), pa.json()]);
-        csoPricingData = (pricingJson || []).map(mapPricingRowFromApi);
-        csoExceptionData = (exJson || []).map(mapExceptionRowFromApi);
-        csOParentServiceData = (paJson || []).map(mapParentRowFromApi);
+        const c = await fetchCatalogsFromApiCore();
         persistCatalogSnapshot();
         refreshAllViewsAfterDataLoad();
-        showToast(`✓ Loaded API data (${csoPricingData.length} pricing, ${csOParentServiceData.length} mapping, ${csoExceptionData.length} exceptions)`, 'success');
+        showToast(
+          `✓ Loaded API data (${c.nPricing} pricing, ${c.nParent} mapping, ${c.nEx} exceptions)`,
+          'success'
+        );
       } catch (err) {
         showToast('API load failed: ' + (err.message || err), 'error');
       }
@@ -3896,10 +3950,53 @@
     let batchStagedFiles = [];
 
     function inferImportFromFilename(originalName) {
-      const base = String(originalName || '').split(/[/\\]/).pop() || '';
-      const stem = base.replace(/\.[^/.]+$/, '').toLowerCase().replace(/-/g, '_');
       const FILE_TYPES = { pricing: 'pricing', parent: 'parent', exceptions: 'exceptions' };
       const CSPS = ['aws', 'azure', 'gcp', 'oracle'];
+      function cspFromToken(t) {
+        if (!t) return null;
+        if (t === 'aws' || t === 'amazon') return 'aws';
+        if (t === 'azure' || t === 'microsoft' || t === 'az') return 'azure';
+        if (t === 'gcp' || t === 'google') return 'gcp';
+        if (t === 'oracle' || t === 'oci') return 'oracle';
+        return null;
+      }
+      function collectCspHits(stemUnderscored, nSpaced) {
+        const hits = new Set();
+        for (const part of stemUnderscored.split('_')) {
+          const c = cspFromToken(part);
+          if (c) hits.add(c);
+        }
+        if (/\b(aws|amazon)\b/.test(nSpaced)) hits.add('aws');
+        if (/\b(azure|microsoft)\b/.test(nSpaced)) hits.add('azure');
+        if (/\b(gcp|google)\b/.test(nSpaced)) hits.add('gcp');
+        if (/\b(oracle|oci)\b/.test(nSpaced)) hits.add('oracle');
+        if (/\baz\b/.test(nSpaced)) hits.add('azure');
+        return [...hits];
+      }
+      function cspFromLeadingCode(stem) {
+        const ordered = [
+          'amazon',
+          'microsoft',
+          'google',
+          'azure',
+          'oracle',
+          'aws',
+          'gcp',
+          'oci',
+          'az',
+        ];
+        for (const code of ordered) {
+          if (!stem.startsWith(code)) continue;
+          if (stem.length === code.length) return cspFromToken(code);
+          const next = stem.charAt(code.length);
+          if (next === '_' || /[a-z0-9]/.test(next)) return cspFromToken(code);
+        }
+        return null;
+      }
+
+      const base = String(originalName || '').split(/[/\\]/).pop() || '';
+      const stem = base.replace(/\.[^/.]+$/, '').toLowerCase().replace(/-/g, '_');
+
       for (const t of Object.keys(FILE_TYPES)) {
         for (const c of CSPS) {
           if (stem === `${t}_${c}` || stem === `${c}_${t}`) {
@@ -3907,29 +4004,35 @@
           }
         }
       }
+
       const n = base
         .replace(/\.[^/.]+$/, '')
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, ' ')
         .trim();
-      const cspHits = [];
-      if (/\b(aws|amazon)\b/.test(n)) cspHits.push('aws');
-      if (/\b(azure|microsoft)\b/.test(n)) cspHits.push('azure');
-      if (/\b(gcp|google)\b/.test(n)) cspHits.push('gcp');
-      if (/\b(oracle|oci)\b/.test(n)) cspHits.push('oracle');
-      const uniqueCsp = [...new Set(cspHits)];
+
+      let uniqueCsp = collectCspHits(stem, n);
       if (uniqueCsp.length === 0) {
-        return { error: 'No CSP keyword in filename (aws, azure, gcp, oracle, amazon, …)' };
+        const lead = cspFromLeadingCode(stem);
+        if (lead) uniqueCsp = [lead];
+      }
+      if (uniqueCsp.length === 0) {
+        return {
+          error:
+            'No CSP in filename. Use a token: aws, az, azure, gcp, google, oci, oracle, amazon, … (separate with _ or -), e.g. oci_pricing_mar2026.csv',
+        };
       }
       if (uniqueCsp.length > 1) {
         return { error: `Multiple CSP keywords in filename: ${uniqueCsp.join(', ')}` };
       }
+
       const typeHits = new Set();
       if (/\b(exceptions?|exemptions?)\b/.test(n)) typeHits.add('exceptions');
       if (/\b(parent|mapping|mappings|csoparent|parentservice)\b/.test(n)) typeHits.add('parent');
       if (/\bservice\s*map\b/.test(n)) typeHits.add('parent');
       if (/\bpricing\b|\bcatalog\b/.test(n)) typeHits.add('pricing');
       else if (/\bprice\b/.test(n)) typeHits.add('pricing');
+
       if (typeHits.size === 0) {
         return {
           error:
@@ -4062,10 +4165,6 @@
 
     async function runBatchImport() {
       const base = getApiBase();
-      if (!base) {
-        showToast('Set API base URL', 'error');
-        return;
-      }
       const man = readBatchManifestObject();
       if (!man.ok) {
         showToast(man.error, 'error');
@@ -4211,7 +4310,26 @@
       }
 
       if (labelEl) labelEl.textContent = 'Batch finished';
-      showToast('Batch import finished — use Load from API to refresh catalogs', 'success');
+
+      const serverAccepted = (body.results || []).length > 0;
+      if (serverAccepted) {
+        try {
+          const c = await fetchCatalogsFromApiCore();
+          persistCatalogSnapshot();
+          refreshAllViewsAfterDataLoad();
+          showToast(
+            `Import complete — refreshed catalogs (${c.nPricing} pricing, ${c.nParent} mapping, ${c.nEx} exceptions)`,
+            'success'
+          );
+        } catch (e) {
+          showToast(
+            'Imports queued on server; could not reload catalogs: ' + (e.message || e),
+            'error'
+          );
+        }
+      } else {
+        showToast('No files were accepted — fix errors and try again', 'error');
+      }
     }
 
     // ════════════════════════════════════════════════════════════
