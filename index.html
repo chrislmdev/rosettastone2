@@ -3964,15 +3964,38 @@
       const token = getApiToken();
       const headers = { Accept: 'application/json' };
       if (token) headers['Authorization'] = 'Bearer ' + token;
-      const [pr, ex, pa] = await Promise.all([
-        fetch(`${base}/pricing`, { headers }),
-        fetch(`${base}/exceptions`, { headers }),
-        fetch(`${base}/parent-services`, { headers }),
+      const csps = ['aws', 'azure', 'gcp', 'oracle'];
+      /**
+       * Per-request page size; must be <= backend CATALOG_API_MAX_LIMIT (default 100000).
+       * If you lower the server max without changing this, reload may truncate early.
+       */
+      const CATALOG_FETCH_PAGE_SIZE = 100000;
+      async function fetchCspPaged(path, csp, label) {
+        const out = [];
+        let offset = 0;
+        const sep = path.includes('?') ? '&' : '?';
+        for (;;) {
+          const url = `${base}${path}${sep}csp=${encodeURIComponent(csp)}&limit=${CATALOG_FETCH_PAGE_SIZE}&offset=${offset}`;
+          const res = await fetch(url, { headers });
+          if (!res.ok) throw new Error(`${label} (${csp}) HTTP ${res.status}`);
+          const chunk = await res.json();
+          const arr = Array.isArray(chunk) ? chunk : [];
+          if (!arr.length) break;
+          out.push(...arr);
+          if (arr.length < CATALOG_FETCH_PAGE_SIZE) break;
+          offset += arr.length;
+        }
+        return out;
+      }
+      async function fetchAllCsp(path, label) {
+        const chunks = await Promise.all(csps.map(csp => fetchCspPaged(path, csp, label)));
+        return chunks.flat();
+      }
+      const [pricingJson, exJson, paJson] = await Promise.all([
+        fetchAllCsp('/pricing', 'pricing'),
+        fetchAllCsp('/exceptions', 'exceptions'),
+        fetchAllCsp('/parent-services', 'parent-services'),
       ]);
-      if (!pr.ok) throw new Error(`pricing HTTP ${pr.status}`);
-      if (!ex.ok) throw new Error(`exceptions HTTP ${ex.status}`);
-      if (!pa.ok) throw new Error(`parent-services HTTP ${pa.status}`);
-      const [pricingJson, exJson, paJson] = await Promise.all([pr.json(), ex.json(), pa.json()]);
       csoPricingData = (pricingJson || []).map(mapPricingRowFromApi);
       csoExceptionData = (exJson || []).map(mapExceptionRowFromApi);
       csOParentServiceData = (paJson || []).map(mapParentRowFromApi);

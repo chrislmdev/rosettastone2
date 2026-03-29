@@ -19,10 +19,36 @@ app.use(express.json({ limit: "2mb" }));
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
-// Multer: store uploads in shared volume, max 200MB
+/** GET /pricing, /exceptions, /parent-services — rows per page (query ?limit=&offset=) */
+const CATALOG_API_DEFAULT_LIMIT = Math.max(
+  1,
+  parseInt(process.env.CATALOG_API_DEFAULT_LIMIT || "2000", 10)
+);
+const CATALOG_API_MAX_LIMIT = Math.max(
+  CATALOG_API_DEFAULT_LIMIT,
+  Math.min(
+    parseInt(process.env.CATALOG_API_MAX_LIMIT || "100000", 10),
+    500000
+  )
+);
+
+function parseCatalogPaging(req) {
+  let limit = parseInt(String(req.query.limit ?? ""), 10);
+  if (!Number.isFinite(limit) || limit < 1) limit = CATALOG_API_DEFAULT_LIMIT;
+  limit = Math.min(limit, CATALOG_API_MAX_LIMIT);
+  let offset = parseInt(String(req.query.offset ?? ""), 10);
+  if (!Number.isFinite(offset) || offset < 0) offset = 0;
+  return { limit, offset };
+}
+
+// Multer: store uploads in shared volume (raise UPLOAD_MAX_FILE_MB for very large CSVs, e.g. ~1M rows)
+const uploadMaxBytes = Math.max(
+  1,
+  parseInt(process.env.UPLOAD_MAX_FILE_MB || "200", 10)
+) * 1024 * 1024;
 const upload = multer({
   dest: process.env.UPLOAD_DIR || "/tmp/cloudprism-uploads",
-  limits: { fileSize: 200 * 1024 * 1024 },
+  limits: { fileSize: uploadMaxBytes },
 });
 
 // ── Health ────────────────────────────────────────────────────
@@ -237,6 +263,11 @@ app.get("/pricing", async (req, res) => {
     where.push(`lower(p.focus_category) like $${params.length}`);
   }
 
+  const page = parseCatalogPaging(req);
+  const limIdx = params.length + 1;
+  const offIdx = params.length + 2;
+  params.push(page.limit, page.offset);
+
   const sql = `
     select p.csp, p.catalogitemnumber, p.title, p.csoshortname, p.description,
            p.list_unit_price, p.pricing_unit,
@@ -245,7 +276,7 @@ app.get("/pricing", async (req, res) => {
     from pricing_item p
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by p.csp, p.catalogitemnumber
-    limit 2000
+    limit $${limIdx} offset $${offIdx}
   `;
   const { rows } = await pool.query(sql, params);
   res.json(rows);
@@ -277,12 +308,17 @@ app.get("/exceptions", async (req, res) => {
     where.push(`lower(e.csoshortname) like $${params.length}`);
   }
 
+  const page = parseCatalogPaging(req);
+  const limIdx = params.length + 1;
+  const offIdx = params.length + 2;
+  params.push(page.limit, page.offset);
+
   const sql = `
     select e.*
     from exception_item e
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by e.csp, e.exceptionuniqueid
-    limit 2000
+    limit $${limIdx} offset $${offIdx}
   `;
   const { rows } = await pool.query(sql, params);
   res.json(rows);
@@ -338,6 +374,12 @@ app.get("/parent-services", async (req, res) => {
     params.push(csp);
     where.push(`ps.csp = $${params.length}`);
   }
+
+  const page = parseCatalogPaging(req);
+  const limIdx = params.length + 1;
+  const offIdx = params.length + 2;
+  params.push(page.limit, page.offset);
+
   const sql = `
     select ps.csp, ps.catalogitemnumber, ps.csoparentservice,
            ps.csoshortname, ps.category, ps.focus_category,
@@ -345,7 +387,7 @@ app.get("/parent-services", async (req, res) => {
     from parent_service ps
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by ps.csp, ps.csoshortname
-    limit 2000
+    limit $${limIdx} offset $${offIdx}
   `;
   const { rows } = await pool.query(sql, params);
   res.json(rows);
