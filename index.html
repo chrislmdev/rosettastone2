@@ -1142,6 +1142,46 @@
     .bulk-st-done { color: var(--il2) }
     .bulk-st-error { color: var(--il6) }
 
+    .batch-dropzone {
+      border: 2px dashed var(--border);
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color .15s ease, background .15s ease;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 12px
+    }
+    .batch-dropzone:hover,
+    .batch-dropzone.batch-drag-active {
+      border-color: var(--accent);
+      background: rgba(0, 0, 0, .03)
+    }
+    .batch-chip-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 8px 10px;
+      margin-bottom: 6px;
+      border-radius: 8px;
+      background: var(--surface2);
+      font-size: 11px;
+      font-family: var(--mono)
+    }
+    .batch-chip-remove {
+      margin-left: auto;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+      padding: 2px 6px
+    }
+    .batch-chip-remove:hover { color: var(--il6) }
+
     .pt-csp-badge {
       display: inline-flex;
       align-items: center;
@@ -2904,7 +2944,7 @@
         </div>
         <div style="display:flex;gap:8px;align-items:center">
           <label style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">Import Month</label>
-          <input type="month" id="importMonth" style="padding:6px 8px;border-radius:8px;border:1px solid var(--border)" />
+          <input type="month" id="importMonth" style="padding:6px 8px;border-radius:8px;border:1px solid var(--border)" onchange="renderBatchStagedChips()" />
           <button class="btn btn-ghost" onclick="loadSampleAdminData()">⬇ Load All Mock Data</button>
         </div>
       </div>
@@ -3030,7 +3070,7 @@
         <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;max-width:720px">
           Set the CloudPrism API base URL (e.g. <code style="font-size:10px">http://localhost:3001</code>).
           Catalog data is kept in memory; use <strong>Restore snapshot</strong> after refresh to reload the last session from this browser, or <strong>Load from API</strong> to pull from the database.
-          Admin JWT is required for <strong>Queue CSV import</strong> only.
+          CSV queue import uses <code style="font-size:10px">POST /api/import/batch</code> and does not send a Bearer token.
         </p>
         <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin-bottom:12px">
           <div style="display:flex;flex-direction:column;gap:4px">
@@ -3038,21 +3078,36 @@
             <input type="text" id="apiBaseUrl" placeholder="http://localhost:3001" class="form-input" style="width:220px;font-size:11px;padding:6px 8px" onchange="persistApiBaseUrl()">
           </div>
           <div style="display:flex;flex-direction:column;gap:4px;max-width:320px">
-            <label style="font-size:10px;color:var(--text-muted)">Admin JWT (queue import)</label>
-            <input type="password" id="apiAuthToken" placeholder="Paste token from login response" class="form-input" style="width:200px;font-size:11px;padding:6px 8px" onchange="persistApiToken()">
-            <span style="font-size:10px;color:var(--text-muted);line-height:1.4">No default token. Obtain one with <code style="font-size:9px">POST /api/login</code> JSON <code style="font-size:9px">{"username","password"}</code> as a user with <strong>admin</strong> role; paste the <code style="font-size:9px">token</code> field only (the app sends <code style="font-size:9px">Authorization: Bearer …</code>). Expires per server config (often 24h).</span>
+            <label style="font-size:10px;color:var(--text-muted)">Admin JWT (optional)</label>
+            <input type="password" id="apiAuthToken" placeholder="For Load from API if required; not used for CSV import" class="form-input" style="width:260px;font-size:11px;padding:6px 8px" onchange="persistApiToken()">
+            <span style="font-size:10px;color:var(--text-muted);line-height:1.4">Not used for CSV import. Use <code style="font-size:9px">POST /api/login</code> as an <strong>admin</strong> user if you need a token for other calls (e.g. <code style="font-size:9px">POST /api/users</code>).</span>
           </div>
           <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="loadCatalogsFromApi()">Load from API</button>
           <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="restoreCatalogSnapshot()">Restore snapshot</button>
           <button type="button" class="btn btn-ghost" style="font-size:11px" onclick="clearCatalogSnapshot()">Clear snapshot</button>
         </div>
         <div style="border-top:1px solid var(--border);padding-top:14px;margin-top:8px">
-          <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px">
-            <strong>Queue import:</strong> select multiple CSVs named <code style="font-size:10px">pricing_aws.csv</code>, <code style="font-size:10px">parent_gcp.csv</code>, <code style="font-size:10px">exceptions_oracle.csv</code> (or <code style="font-size:10px">aws_pricing.csv</code>).
-            Uses import month above. Requires API + JWT.
+          <p style="font-size:11px;color:var(--text-muted);margin-bottom:10px;max-width:720px">
+            <strong>Batch import:</strong> drop CSVs or click the zone below. Names are inferred from keywords (e.g. <code style="font-size:10px">AWS_Monthly_Pricing.csv</code>, <code style="font-size:10px">azure_parent_services.csv</code>) or strict patterns like <code style="font-size:10px">pricing_aws.csv</code>.
+            Set <strong>Import month</strong> (YYYY-MM) at the top. Use optional manifest JSON to override inference per exact filename.
           </p>
-          <input type="file" id="bulkImportFiles" multiple accept=".csv,text/csv" style="display:none" onchange="onBulkImportFilesPicked(this)">
-          <button type="button" class="btn btn-primary" style="font-size:11px" onclick="document.getElementById('bulkImportFiles').click()">Queue CSV batch…</button>
+          <div id="batchDropzone" class="batch-dropzone" role="button" tabindex="0"
+            onclick="document.getElementById('batchDropzoneInput').click()"
+            onkeydown="if (event.key==='Enter'||event.key===' ') { event.preventDefault(); document.getElementById('batchDropzoneInput').click(); }"
+            ondragover="batchDropzoneDragOver(event)"
+            ondragleave="batchDropzoneDragLeave(event)"
+            ondrop="batchDropzoneDrop(event)">
+            <strong style="color:var(--text)">Drop CSV files here</strong><br>
+            <span>or click to add files</span>
+          </div>
+          <input type="file" id="batchDropzoneInput" multiple accept=".csv,text/csv" style="display:none" onchange="onBatchDropzoneFilesSelected(this)">
+          <div id="batchStagedChips"></div>
+          <details style="margin-top:10px;margin-bottom:12px">
+            <summary style="font-size:11px;cursor:pointer;color:var(--text-muted)">Manifest overrides (JSON, optional)</summary>
+            <p style="font-size:10px;color:var(--text-muted);margin:8px 0 6px">Keys must match uploaded filenames exactly, e.g. <code style="font-size:9px">{"weird.csv":{"csp":"aws","fileType":"pricing"}}</code></p>
+            <textarea id="batchImportManifest" class="form-input" style="width:100%;max-width:640px;min-height:72px;font-size:11px;font-family:var(--mono);padding:8px" placeholder="{}" oninput="renderBatchStagedChips()"></textarea>
+          </details>
+          <button type="button" id="batchProcessAllBtn" class="btn btn-primary" style="font-size:11px" disabled onclick="runBatchImport()">Process all</button>
           <div id="bulkImportPanel" style="display:none;margin-top:14px">
             <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px">
               <span id="bulkProgressLabel">—</span>
@@ -3836,22 +3891,164 @@
       }
     }
 
-    function parseBulkImportFilename(name) {
-      const stem = name.replace(/\.[^/.]+$/, '').toLowerCase().replace(/-/g, '_');
-      const types = { pricing: 'pricing', parent: 'parent', exceptions: 'exceptions' };
-      const csps = ['aws', 'azure', 'gcp', 'oracle'];
-      for (const t of Object.keys(types)) {
-        for (const c of csps) {
-          if (stem === `${t}_${c}` || stem === `${c}_${t}`) return { fileType: types[t], csp: c };
+    /** Keep keyword rules in sync with backend/src/importInference.js */
+    let batchStagedFiles = [];
+
+    function inferImportFromFilename(originalName) {
+      const base = String(originalName || '').split(/[/\\]/).pop() || '';
+      const stem = base.replace(/\.[^/.]+$/, '').toLowerCase().replace(/-/g, '_');
+      const FILE_TYPES = { pricing: 'pricing', parent: 'parent', exceptions: 'exceptions' };
+      const CSPS = ['aws', 'azure', 'gcp', 'oracle'];
+      for (const t of Object.keys(FILE_TYPES)) {
+        for (const c of CSPS) {
+          if (stem === `${t}_${c}` || stem === `${c}_${t}`) {
+            return { csp: c, fileType: FILE_TYPES[t] };
+          }
         }
       }
-      return null;
+      const n = base
+        .replace(/\.[^/.]+$/, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim();
+      const cspHits = [];
+      if (/\b(aws|amazon)\b/.test(n)) cspHits.push('aws');
+      if (/\b(azure|microsoft)\b/.test(n)) cspHits.push('azure');
+      if (/\b(gcp|google)\b/.test(n)) cspHits.push('gcp');
+      if (/\b(oracle|oci)\b/.test(n)) cspHits.push('oracle');
+      const uniqueCsp = [...new Set(cspHits)];
+      if (uniqueCsp.length === 0) {
+        return { error: 'No CSP keyword in filename (aws, azure, gcp, oracle, amazon, …)' };
+      }
+      if (uniqueCsp.length > 1) {
+        return { error: `Multiple CSP keywords in filename: ${uniqueCsp.join(', ')}` };
+      }
+      const typeHits = new Set();
+      if (/\b(exceptions?|exemptions?)\b/.test(n)) typeHits.add('exceptions');
+      if (/\b(parent|mapping|mappings|csoparent|parentservice)\b/.test(n)) typeHits.add('parent');
+      if (/\bservice\s*map\b/.test(n)) typeHits.add('parent');
+      if (/\bpricing\b|\bcatalog\b/.test(n)) typeHits.add('pricing');
+      else if (/\bprice\b/.test(n)) typeHits.add('pricing');
+      if (typeHits.size === 0) {
+        return {
+          error:
+            'No import type keyword (pricing, price, catalog, parent, mapping, exception, exemption, …)',
+        };
+      }
+      if (typeHits.size > 1) {
+        return { error: `Ambiguous import type: ${[...typeHits].join(', ')}` };
+      }
+      return { csp: uniqueCsp[0], fileType: [...typeHits][0] };
     }
 
-    async function pollImportUntilTerminal(base, token, importId) {
+    function resolveImportSpecForFile(originalName, manifest) {
+      const m = manifest && manifest[originalName];
+      if (m && m.csp && m.fileType) {
+        const csp = String(m.csp).toLowerCase();
+        const fileType = String(m.fileType).toLowerCase();
+        const CSPS = ['aws', 'azure', 'gcp', 'oracle'];
+        const FTS = ['pricing', 'parent', 'exceptions'];
+        if (!CSPS.includes(csp)) return { error: `Manifest: invalid csp "${m.csp}"` };
+        if (!FTS.includes(fileType)) return { error: `Manifest: invalid fileType "${m.fileType}"` };
+        return { csp, fileType };
+      }
+      return inferImportFromFilename(originalName);
+    }
+
+    function readBatchManifestObject() {
+      const ta = document.getElementById('batchImportManifest');
+      const raw = ta && String(ta.value || '').trim();
+      if (!raw) return { ok: true, obj: {} };
+      try {
+        const o = JSON.parse(raw);
+        if (o === null || typeof o !== 'object' || Array.isArray(o)) {
+          return { ok: false, error: 'Manifest must be a JSON object keyed by filename' };
+        }
+        return { ok: true, obj: o };
+      } catch {
+        return { ok: false, error: 'Manifest must be valid JSON' };
+      }
+    }
+
+    function batchDropzoneDragOver(e) {
+      e.preventDefault();
+      const z = document.getElementById('batchDropzone');
+      if (z) z.classList.add('batch-drag-active');
+    }
+    function batchDropzoneDragLeave(e) {
+      e.preventDefault();
+      const z = document.getElementById('batchDropzone');
+      if (z) z.classList.remove('batch-drag-active');
+    }
+    function batchDropzoneDrop(e) {
+      e.preventDefault();
+      const z = document.getElementById('batchDropzone');
+      if (z) z.classList.remove('batch-drag-active');
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length) {
+        batchStagedAddFiles(e.dataTransfer.files);
+      }
+    }
+
+    function batchStagedAddFiles(fileList) {
+      const arr = Array.from(fileList || []).filter(
+        f => /\.csv$/i.test(f.name) || (f.type && String(f.type).indexOf('csv') >= 0)
+      );
+      for (const f of arr) {
+        const dup = batchStagedFiles.some(
+          x => x.name === f.name && x.size === f.size && x.lastModified === f.lastModified
+        );
+        if (!dup) batchStagedFiles.push(f);
+      }
+      renderBatchStagedChips();
+    }
+
+    function onBatchDropzoneFilesSelected(input) {
+      if (input && input.files && input.files.length) batchStagedAddFiles(input.files);
+      input.value = '';
+    }
+
+    function removeBatchStagedFile(index) {
+      batchStagedFiles.splice(index, 1);
+      renderBatchStagedChips();
+    }
+
+    function renderBatchStagedChips() {
+      const wrap = document.getElementById('batchStagedChips');
+      const btn = document.getElementById('batchProcessAllBtn');
+      const man = readBatchManifestObject();
+      const monthEl = document.getElementById('importMonth');
+      const importMonth = monthEl && monthEl.value ? monthEl.value : '';
+      const monthOk = importMonth && /^\d{4}-\d{2}$/.test(importMonth);
+
+      let html = '';
+      if (!man.ok) {
+        html += `<p style="font-size:11px;color:var(--il6);margin:0 0 8px">${man.error}</p>`;
+      }
+      batchStagedFiles.forEach((f, i) => {
+        const spec = man.ok ? resolveImportSpecForFile(f.name, man.obj) : inferImportFromFilename(f.name);
+        const meta = spec.error
+          ? `<span style="color:var(--il6)">${spec.error}</span>`
+          : `<span style="color:var(--text-muted)">${spec.csp} · ${spec.fileType}</span>`;
+        html += `<div class="batch-chip-row"><span style="flex:1;min-width:100px;word-break:break-all">${f.name}</span>${meta}<button type="button" class="batch-chip-remove" onclick="event.stopPropagation();removeBatchStagedFile(${i})" title="Remove">×</button></div>`;
+      });
+      if (wrap) wrap.innerHTML = html;
+
+      let allResolved = man.ok && batchStagedFiles.length > 0;
+      if (allResolved) {
+        for (const f of batchStagedFiles) {
+          const r = resolveImportSpecForFile(f.name, man.obj);
+          if (r.error) {
+            allResolved = false;
+            break;
+          }
+        }
+      }
+      if (btn) btn.disabled = !(monthOk && allResolved);
+    }
+
+    async function pollImportUntilTerminal(base, importId) {
       let delay = 500;
       const headers = { Accept: 'application/json' };
-      if (token) headers['Authorization'] = 'Bearer ' + token;
       for (;;) {
         const res = await fetch(`${base}/api/import/status/${importId}`, { headers });
         if (!res.ok) throw new Error(`status ${res.status}`);
@@ -3862,30 +4059,28 @@
       }
     }
 
-    async function onBulkImportFilesPicked(input) {
-      const files = input.files ? Array.from(input.files) : [];
-      input.value = '';
-      if (!files.length) return;
-
+    async function runBatchImport() {
       const base = getApiBase();
-      const token = getApiToken();
-      if (!base) { showToast('Set API base URL', 'error'); return; }
-      if (!token) { showToast('Admin JWT required for queue import', 'error'); return; }
-
+      if (!base) {
+        showToast('Set API base URL', 'error');
+        return;
+      }
+      const man = readBatchManifestObject();
+      if (!man.ok) {
+        showToast(man.error, 'error');
+        return;
+      }
       const monthEl = document.getElementById('importMonth');
       const importMonth = monthEl && monthEl.value ? monthEl.value : '';
       if (!importMonth || !/^\d{4}-\d{2}$/.test(importMonth)) {
-        showToast('Set Import Month (YYYY-MM) before queue import', 'error');
+        showToast('Set Import Month (YYYY-MM) before batch import', 'error');
         return;
       }
-
-      const jobs = [];
-      for (const f of files) {
-        const parsed = parseBulkImportFilename(f.name);
-        if (!parsed) {
-          jobs.push({ file: f, ok: false, err: 'Unrecognized name; use e.g. pricing_aws.csv' });
-        } else {
-          jobs.push({ file: f, ok: true, fileType: parsed.fileType, csp: parsed.csp });
+      for (const f of batchStagedFiles) {
+        const r = resolveImportSpecForFile(f.name, man.obj);
+        if (r.error) {
+          showToast(`${f.name}: ${r.error}`, 'error');
+          return;
         }
       }
 
@@ -3895,53 +4090,107 @@
       const fracEl = document.getElementById('bulkProgressFrac');
       const fillEl = document.getElementById('bulkProgressFill');
       if (panel) panel.style.display = 'block';
+
+      const jobs = batchStagedFiles.map((file, i) => {
+        const spec = resolveImportSpecForFile(file.name, man.obj);
+        const meta = `${spec.csp} · ${spec.fileType}`;
+        return { file, i, meta };
+      });
       if (rowsEl) {
-        rowsEl.innerHTML = jobs.map((j, i) => {
-          const meta = j.ok ? `${j.fileType} · ${j.csp}` : j.err;
-          return `<div class="bulk-row" id="bulk-row-${i}"><span style="flex:1;min-width:120px">${j.file.name}</span><span style="color:var(--text-muted)">${meta}</span><span class="bulk-st-pending" id="bulk-st-${i}">${j.ok ? 'queued' : 'skip'}</span></div>`;
-        }).join('');
+        rowsEl.innerHTML = jobs
+          .map(
+            j =>
+              `<div class="bulk-row" id="bulk-row-${j.i}"><span style="flex:1;min-width:120px">${j.file.name}</span><span style="color:var(--text-muted)">${j.meta}</span><span class="bulk-st-pending" id="bulk-st-${j.i}">uploading…</span></div>`
+          )
+          .join('');
       }
 
-      const valid = jobs.filter(j => j.ok);
-      const total = valid.length;
+      const total = jobs.length;
       let completed = 0;
-
       function setProgress() {
         const pct = total ? Math.round((completed / total) * 100) : 0;
         if (fillEl) fillEl.style.width = pct + '%';
         if (fracEl) fracEl.textContent = `${completed} / ${total}`;
-        if (labelEl) labelEl.textContent = total ? `Processing queue…` : 'No valid files';
+        if (labelEl) labelEl.textContent = total ? 'Processing batch…' : '—';
       }
       setProgress();
 
+      const fd = new FormData();
+      for (const j of jobs) fd.append('files', j.file);
+      fd.append('importMonth', importMonth);
+      const rawManifest = document.getElementById('batchImportManifest');
+      const mraw = rawManifest && String(rawManifest.value || '').trim();
+      if (mraw) fd.append('manifest', mraw);
+
+      let body;
+      try {
+        const res = await fetch(`${base}/api/import/batch`, { method: 'POST', body: fd });
+        body = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(body.error || res.statusText);
+      } catch (e) {
+        if (labelEl) labelEl.textContent = 'Batch failed';
+        for (let i = 0; i < jobs.length; i++) {
+          const stEl = document.getElementById('bulk-st-' + i);
+          if (stEl) {
+            stEl.textContent = 'error';
+            stEl.className = 'bulk-st-error';
+            stEl.title = String(e.message || e);
+          }
+        }
+        showToast('Batch import failed: ' + (e.message || e), 'error');
+        return;
+      }
+
+      const errByName = {};
+      (body.errors || []).forEach(e => {
+        errByName[e.filename] = e.error;
+      });
+      const resultByName = {};
+      (body.results || []).forEach(r => {
+        resultByName[r.filename] = r;
+      });
+
       for (let i = 0; i < jobs.length; i++) {
         const job = jobs[i];
+        const name = job.file.name;
         const stEl = document.getElementById('bulk-st-' + i);
-        if (!job.ok) {
-          if (stEl) { stEl.textContent = 'skipped'; stEl.className = 'bulk-st-error'; }
+        if (errByName[name]) {
+          completed++;
+          setProgress();
+          if (stEl) {
+            stEl.textContent = 'error';
+            stEl.className = 'bulk-st-error';
+            stEl.title = errByName[name];
+          }
+          showToast(`${name}: ${errByName[name]}`, 'error');
           continue;
         }
-        if (stEl) { stEl.textContent = 'uploading…'; stEl.className = 'bulk-st-uploading'; }
-        const fd = new FormData();
-        fd.append('file', job.file);
-        fd.append('csp', job.csp);
-        fd.append('importMonth', importMonth);
-        fd.append('fileType', job.fileType);
+        const r = resultByName[name];
+        if (!r || r.importId == null) {
+          completed++;
+          setProgress();
+          if (stEl) {
+            stEl.textContent = 'error';
+            stEl.className = 'bulk-st-error';
+            stEl.title = 'No result from server';
+          }
+          continue;
+        }
+        if (stEl) {
+          stEl.textContent = 'processing…';
+          stEl.className = 'bulk-st-processing';
+        }
         try {
-          const res = await fetch(`${base}/api/import`, {
-            method: 'POST',
-            headers: token ? { Authorization: 'Bearer ' + token } : {},
-            body: fd,
-          });
-          const body = await res.json().catch(() => ({}));
-          if (!res.ok) throw new Error(body.error || res.statusText);
-          if (stEl) { stEl.textContent = 'processing…'; stEl.className = 'bulk-st-processing'; }
-          const status = await pollImportUntilTerminal(base, token, body.importId);
+          const status = await pollImportUntilTerminal(base, r.importId);
           completed++;
           setProgress();
           if (status.status === 'error') {
-            if (stEl) { stEl.textContent = 'error'; stEl.className = 'bulk-st-error'; stEl.title = status.error_message || ''; }
-            showToast(`${job.file.name}: ${status.error_message || 'error'}`, 'error');
+            if (stEl) {
+              stEl.textContent = 'error';
+              stEl.className = 'bulk-st-error';
+              stEl.title = status.error_message || '';
+            }
+            showToast(`${name}: ${status.error_message || 'error'}`, 'error');
           } else {
             if (stEl) {
               stEl.textContent = 'done' + (status.row_count != null ? ` (${status.row_count})` : '');
@@ -3951,13 +4200,17 @@
         } catch (e) {
           completed++;
           setProgress();
-          if (stEl) { stEl.textContent = 'error'; stEl.className = 'bulk-st-error'; stEl.title = String(e.message || e); }
-          showToast(`${job.file.name}: ${e.message || e}`, 'error');
+          if (stEl) {
+            stEl.textContent = 'error';
+            stEl.className = 'bulk-st-error';
+            stEl.title = String(e.message || e);
+          }
+          showToast(`${name}: ${e.message || e}`, 'error');
         }
       }
 
-      if (labelEl) labelEl.textContent = 'Queue finished';
-      showToast('Queue import batch finished — use Load from API to refresh catalogs', 'success');
+      if (labelEl) labelEl.textContent = 'Batch finished';
+      showToast('Batch import finished — use Load from API to refresh catalogs', 'success');
     }
 
     // ════════════════════════════════════════════════════════════

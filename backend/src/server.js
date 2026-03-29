@@ -9,6 +9,7 @@ import { stat } from "fs/promises";
 import pkg from "pg";
 import { loginHandler, requireAuth, createUserHandler } from "./auth.js";
 import { enqueueImport } from "./queue.js";
+import { resolveImportSpec } from "./importInference.js";
 
 const { Pool } = pkg;
 const app = express();
@@ -40,13 +41,13 @@ app.post("/api/login", loginHandler);
 app.post("/api/users", requireAuth("admin"), createUserHandler);
 
 // ── Import endpoints ──────────────────────────────────────────
+// SECURITY: POST /api/import, POST /api/import/batch, and GET /api/import/status are
+// intentionally unauthenticated for local/trusted-network batch workflows. Re-enable
+// requireAuth before any public or internet-facing deploy. POST /api/users stays admin-only.
+
 // POST /api/import — upload a CSV and queue processing
 // Fields: file, csp (string), importMonth (YYYY-MM), fileType (pricing|parent|exceptions)
-app.post(
-  "/api/import",
-  requireAuth("admin"),
-  upload.single("file"),
-  async (req, res) => {
+app.post("/api/import", upload.single("file"), async (req, res) => {
     const { csp, importMonth, fileType } = req.body || {};
     const file = req.file;
 
@@ -78,7 +79,7 @@ app.post(
           fileType,
           file.originalname,
           checksum,
-          req.user?.username || "system",
+          req.user?.username || "anonymous-upload",
         ]
       );
       const importId = rows[0].id;
@@ -97,11 +98,84 @@ app.post(
       console.error("import error:", err);
       res.status(500).json({ error: err.message });
     }
+});
+
+const BATCH_MAX_FILES = 50;
+
+// POST /api/import/batch — multipart: files[] (same field name "files"), importMonth, optional manifest JSON
+app.post("/api/import/batch", upload.array("files", BATCH_MAX_FILES), async (req, res) => {
+  const importMonth = req.body?.importMonth;
+  if (!importMonth || !/^\d{4}-\d{2}$/.test(importMonth)) {
+    return res.status(400).json({ error: "importMonth must be YYYY-MM" });
   }
-);
+
+  let manifest = {};
+  if (req.body?.manifest != null && String(req.body.manifest).trim() !== "") {
+    try {
+      manifest = JSON.parse(String(req.body.manifest));
+      if (manifest === null || typeof manifest !== "object" || Array.isArray(manifest)) {
+        return res.status(400).json({ error: "manifest must be a JSON object keyed by filename" });
+      }
+    } catch {
+      return res.status(400).json({ error: "manifest must be valid JSON" });
+    }
+  }
+
+  const files = req.files || [];
+  if (!files.length) {
+    return res.status(400).json({ error: "No files uploaded (field name: files)" });
+  }
+
+  const results = [];
+  const errors = [];
+  const fsPromises = await import("fs/promises");
+
+  for (const file of files) {
+    const spec = resolveImportSpec(file.originalname, manifest);
+    if (spec.error) {
+      errors.push({ filename: file.originalname, error: spec.error });
+      continue;
+    }
+    const { csp, fileType } = spec;
+
+    try {
+      const buf = await fsPromises.readFile(file.path);
+      const checksum = createHash("sha256").update(buf).digest("hex");
+
+      const { rows } = await pool.query(
+        `insert into catalog_import
+           (import_month, csp, schema_name, source_file, checksum, status, imported_by)
+         values ($1, $2, $3, $4, $5, 'pending', $6)
+         returning id`,
+        [
+          importMonth,
+          csp,
+          fileType,
+          file.originalname,
+          checksum,
+          req.user?.username || "batch-upload",
+        ]
+      );
+      const importId = rows[0].id;
+      const jobId = await enqueueImport({
+        importId,
+        filePath: file.path,
+        csp,
+        fileType,
+        importMonth,
+      });
+      results.push({ filename: file.originalname, importId, jobId });
+    } catch (err) {
+      console.error("batch import file error:", file.originalname, err);
+      errors.push({ filename: file.originalname, error: err.message || String(err) });
+    }
+  }
+
+  res.json({ ok: true, results, errors });
+});
 
 // GET /api/import/status/:importId — poll import progress
-app.get("/api/import/status/:importId", requireAuth("viewer"), async (req, res) => {
+app.get("/api/import/status/:importId", async (req, res) => {
   const { rows } = await pool.query(
     "select id, status, row_count, error_message, imported_at from catalog_import where id=$1",
     [req.params.importId]
