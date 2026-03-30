@@ -2844,7 +2844,7 @@
   <div class="page active" id="page-services">
     <div class="svc-page-intro">
       <h2 class="svc-page-title">Cloud service offerings comparison</h2>
-      <p class="svc-page-sub">Crosswalk by FOCUS 1.3 category and CSP. <strong>Subcategory</strong> is the service short name; <strong>AWS / Azure / GCP / Oracle</strong> columns show the CSO parent offering name; <strong>Description</strong> uses pricing text when catalog numbers match, otherwise the parent or short name.</p>
+      <p class="svc-page-sub"><strong>Category</strong> is the FinOps FOCUS 1.3 service category (from mapping <code>focus_category</code> or inferred). <strong>Subcategory</strong> is a contract comparison bucket (e.g. Containers, Virtual Machines)—set column <code>comparison_subcategory</code> on parent CSV to override inference. One row per category + subcategory; CSP columns list matching offerings and impact levels. <strong>Description</strong> prefers pricing text when catalog numbers align, else parent or short name.</p>
     </div>
     <div class="toolbar">
       <div class="toolbar-inner">
@@ -3765,6 +3765,7 @@
   </footer>
 
   <script src="src/data/focusInference.js"></script>
+  <script src="src/data/serviceComparisonSubcategories.js"></script>
   <script src="src/data/taxonomy.js"></script>
   <script src="src/data/diff.js"></script>
   <script src="src/app/exceptions.js"></script>
@@ -3944,6 +3945,7 @@
         csoshortname: r.csoshortname,
         category: r.category,
         focus_category: r.focus_category,
+        comparison_subcategory: r.comparison_subcategory,
         impactlevel: r.impactlevel,
         newservice: r.newservice,
       };
@@ -4634,26 +4636,34 @@
         return;
       }
 
+      const resolveFocus = s =>
+        typeof window.resolveServiceCatalogFocusCategory === 'function'
+          ? window.resolveServiceCatalogFocusCategory(s)
+          : String(s.focus_category || s.category || s.Category || 'Other').trim() || 'Other';
+      const resolveSub = s =>
+        typeof window.comparisonSubcategoryFromRow === 'function'
+          ? window.comparisonSubcategoryFromRow(s)
+          : String(s.csoshortname || s.csoShortName || s.csoparentservice || s.csOParentService || 'Other offerings').trim() ||
+            'Other offerings';
+
       const grouped = {};
       data.forEach(s => {
-        // Robust property access regardless of original CSV casing
-        const cat = s.category || s.Category || 'Other';
-        const parent = s.csoparentservice || s.csOParentService || s.csoshortname || s.csoShortName || 'Other';
-        const key = (cat + '|' + parent).toLowerCase().trim();
+        const cat = resolveFocus(s);
+        const sub = resolveSub(s);
+        const key = (cat + '|' + sub).toLowerCase().trim();
 
         if (!grouped[key]) {
           grouped[key] = {
             category: cat,
-            parentName: parent,
-            subcategoryLabel: '',
+            subcategoryLabel: sub,
             description: '',
-            aws: [], azure: [], gcp: [], oracle: []
+            aws: [],
+            azure: [],
+            gcp: [],
+            oracle: [],
           };
         }
-        const shortN = String(s.csoshortname || s.csoShortName || '').trim();
-        if (shortN && !grouped[key].subcategoryLabel) grouped[key].subcategoryLabel = shortN;
 
-        // Find which CSP this row belongs to
         const provider = (s.csp_injected || s.csp || '').toLowerCase().trim();
         if (provider && grouped[key][provider]) {
           grouped[key][provider].push(s);
@@ -4668,13 +4678,23 @@
       const svcEmpty = document.getElementById('svcEmpty');
       const filtered = flat.filter(g => {
         const qLower = query.toLowerCase();
-        const subLbl = (g.subcategoryLabel || g.parentName || '').toLowerCase();
+        const subLbl = (g.subcategoryLabel || '').toLowerCase();
         const descL = (g.description || '').toLowerCase();
-        const matchQuery = !query ||
-          g.parentName.toLowerCase().includes(qLower) ||
+        const nameBlob = ['aws', 'azure', 'gcp', 'oracle']
+          .flatMap(csp =>
+            (g[csp] || []).map(
+              r =>
+                `${r.csoparentservice || r.csOParentService || ''} ${r.csoshortname || r.csoShortName || ''}`
+            )
+          )
+          .join(' ')
+          .toLowerCase();
+        const matchQuery =
+          !query ||
           g.category.toLowerCase().includes(qLower) ||
           subLbl.includes(qLower) ||
-          descL.includes(qLower);
+          descL.includes(qLower) ||
+          nameBlob.includes(qLower);
         const matchCat = msState.cat.size === 0 || msState.cat.has(g.category);
         
         const matchIL = msState.il.size === 0 || ['aws', 'azure', 'gcp', 'oracle'].some(csp => 
@@ -4696,7 +4716,7 @@
       }
       if (svcEmpty) svcEmpty.style.display = 'none';
 
-      const subDisp = g => g.subcategoryLabel || g.parentName;
+      const subDisp = g => g.subcategoryLabel || '—';
       const byCat = {};
       filtered.forEach(g => {
         if (!byCat[g.category]) byCat[g.category] = [];
@@ -4733,7 +4753,7 @@
       }
       body.innerHTML = rowsHtml.join('');
 
-      if (meta) meta.innerHTML = `Showing <strong>${filtered.length}</strong> offering rows in <strong>${new Set(filtered.map(x => x.category)).size}</strong> categories (${flat.length} total groups)`;
+      if (meta) meta.innerHTML = `Showing <strong>${filtered.length}</strong> comparison rows in <strong>${new Set(filtered.map(x => x.category)).size}</strong> FOCUS categories (${flat.length} total groups)`;
     }
 
     const SVC_IL_ORDER = ['IL2', 'IL3', 'IL4', 'IL5', 'IL6'];
@@ -4776,7 +4796,14 @@
 
     function populateCats() {
       const data = csOParentServiceData.length > 0 ? csOParentServiceData : [];
-      const cats = [...new Set(data.map(s => s.category || s.Category || 'Other'))].sort();
+      const fn = window.resolveServiceCatalogFocusCategory;
+      const cats = [
+        ...new Set(
+          data.map(s =>
+            typeof fn === 'function' ? fn(s) : String(s.focus_category || s.category || s.Category || 'Other').trim() || 'Other'
+          )
+        ),
+      ].sort();
       const container = document.getElementById('ms-cat-opts');
       container.innerHTML = cats.map(c => `
     <div class="ms-option" data-ms="cat" data-val="${c}" onclick="toggleMsOpt('cat','${c}',this)">

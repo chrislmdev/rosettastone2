@@ -58,11 +58,15 @@ create table if not exists parent_service (
   csoshortname text,
   category text,
   focus_category text,   -- normalized FinOps FOCUS 1.3 category
+  comparison_subcategory text,  -- contract Services-catalog bucket; optional CSV column
   impactlevel text,
   newservice boolean
 );
 
 create index if not exists idx_parent_service_shortname on parent_service(csp, csoshortname);
+
+-- Existing deployments: add column if missing
+alter table parent_service add column if not exists comparison_subcategory text;
 
 -- Exception items
 create table if not exists exception_item (

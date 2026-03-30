@@ -383,6 +383,7 @@ app.get("/parent-services", async (req, res) => {
   const sql = `
     select ps.csp, ps.catalogitemnumber, ps.csoparentservice,
            ps.csoshortname, ps.category, ps.focus_category,
+           ps.comparison_subcategory,
            ps.impactlevel, ps.newservice
     from parent_service ps
     ${where.length ? `where ${where.join(" and ")}` : ""}

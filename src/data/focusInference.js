@@ -85,7 +85,14 @@
     return inferFocusCategoryFromText(`${title} ${shortname} ${description}`);
   }
 
+  function resolveParentFocusCategory({ category, csoparentservice, csoshortname }) {
+    const fromCsv = normalizeFocusCategory(category || "");
+    if (fromCsv !== "Other") return fromCsv;
+    return inferFocusCategoryFromText(`${csoparentservice} ${csoshortname}`);
+  }
+
   window.normalizeFocusCategory = normalizeFocusCategory;
   window.inferFocusCategoryFromText = inferFocusCategoryFromText;
   window.resolvePricingFocusCategory = resolvePricingFocusCategory;
+  window.resolveParentFocusCategory = resolveParentFocusCategory;
 })();

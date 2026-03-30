@@ -152,8 +152,8 @@ async function processParent(filePath, csp, importId, client) {
       `insert into parent_service (
         import_id, csp, catalogitemnumber,
         csoparentservice, csoshortname,
-        category, focus_category, impactlevel, newservice
-      ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9)`,
+        category, focus_category, comparison_subcategory, impactlevel, newservice
+      ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)`,
       [
         importId, effectiveCsp,
         row.catalogitemnumber || row.catalog_item_number || "",
@@ -161,6 +161,7 @@ async function processParent(filePath, csp, importId, client) {
         row.csoshortname || row.cso_short_name || "",
         row.category || "",
         focusCat,
+        (row.comparison_subcategory || row.comparisonsubcategory || "").trim() || null,
         row.impactlevel || row.impact_level || "",
         (row.newservice || row.new_service || "").toLowerCase() === "true",
       ]
