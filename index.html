@@ -4432,44 +4432,44 @@
     // ════════════════════════════════════════════════════════════
     const SAMPLE_DATA = {
       aws: [
-        { category: "Compute", title: "Amazon EC2 On-Demand (c6i.large)", shortName: "EC2", description: "2 vCPU / 4 GiB RAM compute instance", catalogNum: "AWS-EC2-C6I-001", commUnitPrice: "0.0850", commUnitIssue: "Hour", jwccUnitprice: "0.0765", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "Compute", title: "Amazon EC2 On-Demand (m6i.xlarge)", shortName: "EC2", description: "4 vCPU / 16 GiB RAM compute instance", catalogNum: "AWS-EC2-M6I-001", commUnitPrice: "0.1920", commUnitIssue: "Hour", jwccUnitprice: "0.1728", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "Storage", title: "Amazon S3 Standard Storage", shortName: "S3", description: "Object storage – first 50 TB/month", catalogNum: "AWS-S3-STD-001", commUnitPrice: "0.0230", commUnitIssue: "GB/Month", jwccUnitprice: "0.0207", custUnitIssue: "GB/Month", discountFee: "-10%" },
-        { category: "Storage", title: "Amazon S3 Glacier Instant Retrieval", shortName: "S3 Glacier", description: "Archive storage with millisecond retrieval", catalogNum: "AWS-S3-GIR-001", commUnitPrice: "0.0040", commUnitIssue: "GB/Month", jwccUnitprice: "0.0036", custUnitIssue: "GB/Month", discountFee: "-10%" },
-        { category: "Database", title: "Amazon RDS MySQL (db.r6g.large)", shortName: "RDS", description: "Managed MySQL relational database", catalogNum: "AWS-RDS-MYS-001", commUnitPrice: "0.2400", commUnitIssue: "Hour", jwccUnitprice: "0.2160", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "Compute", title: "AWS Lambda Requests", shortName: "Lambda", description: "Per-request charge for Lambda invocations", catalogNum: "AWS-LAM-REQ-001", commUnitPrice: "0.2000", commUnitIssue: "1,000,000 Requests/Month", jwccUnitprice: "0.1800", custUnitIssue: "1,000,000 Requests/Month", discountFee: "-10%" },
-        { category: "AI and Machine Learning", title: "Amazon Bedrock (Claude 3 Sonnet Input)", shortName: "Bedrock", description: "Input token pricing for Claude 3 Sonnet", catalogNum: "AWS-BDR-CLS-001", commUnitPrice: "3.0000", commUnitIssue: "1,000,000 Input Tokens", jwccUnitprice: "2.7000", custUnitIssue: "1,000,000 Input Tokens", discountFee: "-10%" },
-        { category: "Networking", title: "Amazon CloudFront – Data Transfer", shortName: "CloudFront", description: "Data transferred out to internet", catalogNum: "AWS-CF-DT-001", commUnitPrice: "0.0850", commUnitIssue: "GB", jwccUnitprice: "0.0765", custUnitIssue: "GB", discountFee: "-10%" },
-        { category: "Security", title: "Amazon GuardDuty", shortName: "GuardDuty", description: "Threat detection service per GB analyzed", catalogNum: "AWS-GD-001", commUnitPrice: "4.0000", commUnitIssue: "1,000,000 Events Analyzed", jwccUnitprice: "3.6000", custUnitIssue: "1,000,000 Events Analyzed", discountFee: "-10%" },
-        { category: "Security", title: "AWS KMS Customer Managed Keys", shortName: "KMS", description: "Per key per month storage charge", catalogNum: "AWS-KMS-CMK-001", commUnitPrice: "1.0000", commUnitIssue: "Key/Month", jwccUnitprice: "0.9000", custUnitIssue: "Key/Month", discountFee: "-10%" },
+        { category: "Compute", title: "Amazon EC2 On-Demand (c6i.large)", shortName: "EC2", description: "2 vCPU / 4 GiB RAM compute instance", catalogNum: "AWS-EC2-C6I-001", commUnitPrice: "0.0850", commUnitIssue: "Hour", jwccUnitprice: "0.0765", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Compute", title: "Amazon EC2 On-Demand (m6i.xlarge)", shortName: "EC2", description: "4 vCPU / 16 GiB RAM compute instance", catalogNum: "AWS-EC2-M6I-001", commUnitPrice: "0.1920", commUnitIssue: "Hour", jwccUnitprice: "0.1728", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Storage", title: "Amazon S3 Standard Storage", shortName: "S3", description: "Object storage – first 50 TB/month", catalogNum: "AWS-S3-STD-001", commUnitPrice: "0.0230", commUnitIssue: "GB/Month", jwccUnitprice: "0.0207", jwccUnitIssue: "GB/Month", discountFee: "-10%" },
+        { category: "Storage", title: "Amazon S3 Glacier Instant Retrieval", shortName: "S3 Glacier", description: "Archive storage with millisecond retrieval", catalogNum: "AWS-S3-GIR-001", commUnitPrice: "0.0040", commUnitIssue: "GB/Month", jwccUnitprice: "0.0036", jwccUnitIssue: "GB/Month", discountFee: "-10%" },
+        { category: "Database", title: "Amazon RDS MySQL (db.r6g.large)", shortName: "RDS", description: "Managed MySQL relational database", catalogNum: "AWS-RDS-MYS-001", commUnitPrice: "0.2400", commUnitIssue: "Hour", jwccUnitprice: "0.2160", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Compute", title: "AWS Lambda Requests", shortName: "Lambda", description: "Per-request charge for Lambda invocations", catalogNum: "AWS-LAM-REQ-001", commUnitPrice: "0.2000", commUnitIssue: "1,000,000 Requests/Month", jwccUnitprice: "0.1800", jwccUnitIssue: "1,000,000 Requests/Month", discountFee: "-10%" },
+        { category: "AI and Machine Learning", title: "Amazon Bedrock (Claude 3 Sonnet Input)", shortName: "Bedrock", description: "Input token pricing for Claude 3 Sonnet", catalogNum: "AWS-BDR-CLS-001", commUnitPrice: "3.0000", commUnitIssue: "1,000,000 Input Tokens", jwccUnitprice: "2.7000", jwccUnitIssue: "1,000,000 Input Tokens", discountFee: "-10%" },
+        { category: "Networking", title: "Amazon CloudFront – Data Transfer", shortName: "CloudFront", description: "Data transferred out to internet", catalogNum: "AWS-CF-DT-001", commUnitPrice: "0.0850", commUnitIssue: "GB", jwccUnitprice: "0.0765", jwccUnitIssue: "GB", discountFee: "-10%" },
+        { category: "Security", title: "Amazon GuardDuty", shortName: "GuardDuty", description: "Threat detection service per GB analyzed", catalogNum: "AWS-GD-001", commUnitPrice: "4.0000", commUnitIssue: "1,000,000 Events Analyzed", jwccUnitprice: "3.6000", jwccUnitIssue: "1,000,000 Events Analyzed", discountFee: "-10%" },
+        { category: "Security", title: "AWS KMS Customer Managed Keys", shortName: "KMS", description: "Per key per month storage charge", catalogNum: "AWS-KMS-CMK-001", commUnitPrice: "1.0000", commUnitIssue: "Key/Month", jwccUnitprice: "0.9000", jwccUnitIssue: "Key/Month", discountFee: "-10%" },
       ],
       azure: [
-        { category: "Compute", title: "Azure Virtual Machine (D4s v5)", shortName: "Virtual Machines", description: "4 vCPU / 16 GiB RAM D-series VM", catalogNum: "AZ-VM-D4S-001", commUnitPrice: "0.1920", commUnitIssue: "Hour", jwccUnitprice: "0.1728", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "Storage", title: "Azure Blob Storage (LRS)", shortName: "Blob Storage", description: "Locally redundant object storage", catalogNum: "AZ-BLOB-LRS-001", commUnitPrice: "0.0200", commUnitIssue: "GB/Month", jwccUnitprice: "0.0180", custUnitIssue: "GB/Month", discountFee: "-10%" },
-        { category: "Database", title: "Azure SQL Database (General Purpose 4 vCores)", shortName: "SQL Database", description: "Managed SQL relational database", catalogNum: "AZ-SQL-GP4-001", commUnitPrice: "0.7242", commUnitIssue: "Hour", jwccUnitprice: "0.6518", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "Compute", title: "Azure Kubernetes Service – Worker Nodes", shortName: "AKS", description: "D2s v3 AKS worker node", catalogNum: "AZ-AKS-D2S-001", commUnitPrice: "0.0960", commUnitIssue: "Hour", jwccUnitprice: "0.0864", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "AI and Machine Learning", title: "Azure OpenAI Service – GPT-4o Input", shortName: "Azure OpenAI", description: "Input token pricing for GPT-4o", catalogNum: "AZ-AOAI-GPT4O-001", commUnitPrice: "5.0000", commUnitIssue: "1,000,000 Input Tokens", jwccUnitprice: "4.5000", custUnitIssue: "1,000,000 Input Tokens", discountFee: "-10%" },
-        { category: "Compute", title: "Azure Functions Consumption Plan", shortName: "Functions", description: "Per execution and per GB-second", catalogNum: "AZ-FUNC-001", commUnitPrice: "0.2000", commUnitIssue: "1,000,000 Executions", jwccUnitprice: "0.1800", custUnitIssue: "1,000,000 Executions", discountFee: "-10%" },
-        { category: "Security", title: "Microsoft Sentinel – Data Ingestion", shortName: "Sentinel", description: "Log analytics data ingestion", catalogNum: "AZ-SENT-001", commUnitPrice: "2.4600", commUnitIssue: "GB Ingested", jwccUnitprice: "2.2140", custUnitIssue: "GB Ingested", discountFee: "-10%" },
-        { category: "End User Computing", title: "Azure Virtual Desktop – D2s v5", shortName: "AVD", description: "Per VM hour for pooled desktops", catalogNum: "AZ-AVD-D2S-001", commUnitPrice: "0.0960", commUnitIssue: "Hour", jwccUnitprice: "0.0864", custUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Compute", title: "Azure Virtual Machine (D4s v5)", shortName: "Virtual Machines", description: "4 vCPU / 16 GiB RAM D-series VM", catalogNum: "AZ-VM-D4S-001", commUnitPrice: "0.1920", commUnitIssue: "Hour", jwccUnitprice: "0.1728", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Storage", title: "Azure Blob Storage (LRS)", shortName: "Blob Storage", description: "Locally redundant object storage", catalogNum: "AZ-BLOB-LRS-001", commUnitPrice: "0.0200", commUnitIssue: "GB/Month", jwccUnitprice: "0.0180", jwccUnitIssue: "GB/Month", discountFee: "-10%" },
+        { category: "Database", title: "Azure SQL Database (General Purpose 4 vCores)", shortName: "SQL Database", description: "Managed SQL relational database", catalogNum: "AZ-SQL-GP4-001", commUnitPrice: "0.7242", commUnitIssue: "Hour", jwccUnitprice: "0.6518", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Compute", title: "Azure Kubernetes Service – Worker Nodes", shortName: "AKS", description: "D2s v3 AKS worker node", catalogNum: "AZ-AKS-D2S-001", commUnitPrice: "0.0960", commUnitIssue: "Hour", jwccUnitprice: "0.0864", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "AI and Machine Learning", title: "Azure OpenAI Service – GPT-4o Input", shortName: "Azure OpenAI", description: "Input token pricing for GPT-4o", catalogNum: "AZ-AOAI-GPT4O-001", commUnitPrice: "5.0000", commUnitIssue: "1,000,000 Input Tokens", jwccUnitprice: "4.5000", jwccUnitIssue: "1,000,000 Input Tokens", discountFee: "-10%" },
+        { category: "Compute", title: "Azure Functions Consumption Plan", shortName: "Functions", description: "Per execution and per GB-second", catalogNum: "AZ-FUNC-001", commUnitPrice: "0.2000", commUnitIssue: "1,000,000 Executions", jwccUnitprice: "0.1800", jwccUnitIssue: "1,000,000 Executions", discountFee: "-10%" },
+        { category: "Security", title: "Microsoft Sentinel – Data Ingestion", shortName: "Sentinel", description: "Log analytics data ingestion", catalogNum: "AZ-SENT-001", commUnitPrice: "2.4600", commUnitIssue: "GB Ingested", jwccUnitprice: "2.2140", jwccUnitIssue: "GB Ingested", discountFee: "-10%" },
+        { category: "End User Computing", title: "Azure Virtual Desktop – D2s v5", shortName: "AVD", description: "Per VM hour for pooled desktops", catalogNum: "AZ-AVD-D2S-001", commUnitPrice: "0.0960", commUnitIssue: "Hour", jwccUnitprice: "0.0864", jwccUnitIssue: "Hour", discountFee: "-10%" },
       ],
       gcp: [
-        { category: "Compute", title: "Compute Engine – n2-standard-4", shortName: "Compute Engine", description: "4 vCPU / 16 GiB RAM N2 instance", catalogNum: "GCP-CE-N2S4-001", commUnitPrice: "0.1937", commUnitIssue: "Hour", jwccUnitprice: "0.1743", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "Storage", title: "Cloud Storage Standard (Multi-Region)", shortName: "Cloud Storage", description: "Multi-region object storage", catalogNum: "GCP-CS-MR-001", commUnitPrice: "0.0260", commUnitIssue: "GB/Month", jwccUnitprice: "0.0234", custUnitIssue: "GB/Month", discountFee: "-10%" },
-        { category: "Analytics", title: "BigQuery On-Demand Queries", shortName: "BigQuery", description: "Per TB of data processed", catalogNum: "GCP-BQ-OD-001", commUnitPrice: "6.2500", commUnitIssue: "TB Processed", jwccUnitprice: "5.6250", custUnitIssue: "TB Processed", discountFee: "-10%" },
-        { category: "Compute", title: "Google Kubernetes Engine – Standard", shortName: "GKE", description: "Cluster management fee per cluster", catalogNum: "GCP-GKE-STD-001", commUnitPrice: "0.1000", commUnitIssue: "Hour", jwccUnitprice: "0.0900", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "AI and Machine Learning", title: "Vertex AI – Text Embedding", shortName: "Vertex AI", description: "Per 1K characters embedded", catalogNum: "GCP-VAI-EMB-001", commUnitPrice: "0.0001", commUnitIssue: "1,000 Characters", jwccUnitprice: "0.0001", custUnitIssue: "1,000 Characters", discountFee: "0%" },
-        { category: "Compute", title: "Cloud Run – CPU Allocation", shortName: "Cloud Run", description: "Per vCPU-second allocated", catalogNum: "GCP-CR-CPU-001", commUnitPrice: "0.0000240", commUnitIssue: "vCPU-Second", jwccUnitprice: "0.0000216", custUnitIssue: "vCPU-Second", discountFee: "-10%" },
-        { category: "Security", title: "Cloud Armor – Policy", shortName: "Cloud Armor", description: "Per security policy per month", catalogNum: "GCP-CA-POL-001", commUnitPrice: "5.0000", commUnitIssue: "Policy/Month", jwccUnitprice: "4.5000", custUnitIssue: "Policy/Month", discountFee: "-10%" },
+        { category: "Compute", title: "Compute Engine – n2-standard-4", shortName: "Compute Engine", description: "4 vCPU / 16 GiB RAM N2 instance", catalogNum: "GCP-CE-N2S4-001", commUnitPrice: "0.1937", commUnitIssue: "Hour", jwccUnitprice: "0.1743", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Storage", title: "Cloud Storage Standard (Multi-Region)", shortName: "Cloud Storage", description: "Multi-region object storage", catalogNum: "GCP-CS-MR-001", commUnitPrice: "0.0260", commUnitIssue: "GB/Month", jwccUnitprice: "0.0234", jwccUnitIssue: "GB/Month", discountFee: "-10%" },
+        { category: "Analytics", title: "BigQuery On-Demand Queries", shortName: "BigQuery", description: "Per TB of data processed", catalogNum: "GCP-BQ-OD-001", commUnitPrice: "6.2500", commUnitIssue: "TB Processed", jwccUnitprice: "5.6250", jwccUnitIssue: "TB Processed", discountFee: "-10%" },
+        { category: "Compute", title: "Google Kubernetes Engine – Standard", shortName: "GKE", description: "Cluster management fee per cluster", catalogNum: "GCP-GKE-STD-001", commUnitPrice: "0.1000", commUnitIssue: "Hour", jwccUnitprice: "0.0900", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "AI and Machine Learning", title: "Vertex AI – Text Embedding", shortName: "Vertex AI", description: "Per 1K characters embedded", catalogNum: "GCP-VAI-EMB-001", commUnitPrice: "0.0001", commUnitIssue: "1,000 Characters", jwccUnitprice: "0.0001", jwccUnitIssue: "1,000 Characters", discountFee: "0%" },
+        { category: "Compute", title: "Cloud Run – CPU Allocation", shortName: "Cloud Run", description: "Per vCPU-second allocated", catalogNum: "GCP-CR-CPU-001", commUnitPrice: "0.0000240", commUnitIssue: "vCPU-Second", jwccUnitprice: "0.0000216", jwccUnitIssue: "vCPU-Second", discountFee: "-10%" },
+        { category: "Security", title: "Cloud Armor – Policy", shortName: "Cloud Armor", description: "Per security policy per month", catalogNum: "GCP-CA-POL-001", commUnitPrice: "5.0000", commUnitIssue: "Policy/Month", jwccUnitprice: "4.5000", jwccUnitIssue: "Policy/Month", discountFee: "-10%" },
       ],
       oracle: [
-        { category: "Compute", title: "OCI Compute – VM.Standard.E4.Flex (4 OCPU)", shortName: "Compute", description: "4 OCPU / 64 GiB flexible instance", catalogNum: "OCI-COMP-E4F-001", commUnitPrice: "0.1280", commUnitIssue: "OCPU/Hour", jwccUnitprice: "0.1152", custUnitIssue: "OCPU/Hour", discountFee: "-10%" },
-        { category: "Storage", title: "OCI Object Storage", shortName: "Object Storage", description: "Object storage per GB stored", catalogNum: "OCI-OBJ-001", commUnitPrice: "0.0255", commUnitIssue: "GB/Month", jwccUnitprice: "0.0230", custUnitIssue: "GB/Month", discountFee: "-10%" },
-        { category: "Database", title: "OCI Autonomous Database (ECPU/Hour)", shortName: "Autonomous Database", description: "ECPU compute for Autonomous Database", catalogNum: "OCI-ADB-ECPU-001", commUnitPrice: "0.2188", commUnitIssue: "ECPU/Hour", jwccUnitprice: "0.1969", custUnitIssue: "ECPU/Hour", discountFee: "-10%" },
-        { category: "AI and Machine Learning", title: "OCI Generative AI – Cohere Command", shortName: "OCI GenAI", description: "Per 1M tokens generated", catalogNum: "OCI-GENAI-COH-001", commUnitPrice: "1.0200", commUnitIssue: "1,000,000 Tokens", jwccUnitprice: "0.9180", custUnitIssue: "1,000,000 Tokens", discountFee: "-10%" },
-        { category: "Storage", title: "OCI Block Volume – Performance Units", shortName: "Block Volumes", description: "Per VPU (volume performance unit)", catalogNum: "OCI-BV-VPU-001", commUnitPrice: "0.0017", commUnitIssue: "GB/Month", jwccUnitprice: "0.0015", custUnitIssue: "GB/Month", discountFee: "-10%" },
-        { category: "Compute", title: "OCI Kubernetes Engine (OKE)", shortName: "OKE", description: "Cluster management fee per hour", catalogNum: "OCI-OKE-001", commUnitPrice: "0.0480", commUnitIssue: "Hour", jwccUnitprice: "0.0432", custUnitIssue: "Hour", discountFee: "-10%" },
-        { category: "Database", title: "OCI MySQL HeatWave – ECPU", shortName: "MySQL HeatWave", description: "Per ECPU/Hour for HeatWave", catalogNum: "OCI-MYS-ECPU-001", commUnitPrice: "0.2188", commUnitIssue: "ECPU/Hour", jwccUnitprice: "0.1969", custUnitIssue: "ECPU/Hour", discountFee: "-10%" },
+        { category: "Compute", title: "OCI Compute – VM.Standard.E4.Flex (4 OCPU)", shortName: "Compute", description: "4 OCPU / 64 GiB flexible instance", catalogNum: "OCI-COMP-E4F-001", commUnitPrice: "0.1280", commUnitIssue: "OCPU/Hour", jwccUnitprice: "0.1152", jwccUnitIssue: "OCPU/Hour", discountFee: "-10%" },
+        { category: "Storage", title: "OCI Object Storage", shortName: "Object Storage", description: "Object storage per GB stored", catalogNum: "OCI-OBJ-001", commUnitPrice: "0.0255", commUnitIssue: "GB/Month", jwccUnitprice: "0.0230", jwccUnitIssue: "GB/Month", discountFee: "-10%" },
+        { category: "Database", title: "OCI Autonomous Database (ECPU/Hour)", shortName: "Autonomous Database", description: "ECPU compute for Autonomous Database", catalogNum: "OCI-ADB-ECPU-001", commUnitPrice: "0.2188", commUnitIssue: "ECPU/Hour", jwccUnitprice: "0.1969", jwccUnitIssue: "ECPU/Hour", discountFee: "-10%" },
+        { category: "AI and Machine Learning", title: "OCI Generative AI – Cohere Command", shortName: "OCI GenAI", description: "Per 1M tokens generated", catalogNum: "OCI-GENAI-COH-001", commUnitPrice: "1.0200", commUnitIssue: "1,000,000 Tokens", jwccUnitprice: "0.9180", jwccUnitIssue: "1,000,000 Tokens", discountFee: "-10%" },
+        { category: "Storage", title: "OCI Block Volume – Performance Units", shortName: "Block Volumes", description: "Per VPU (volume performance unit)", catalogNum: "OCI-BV-VPU-001", commUnitPrice: "0.0017", commUnitIssue: "GB/Month", jwccUnitprice: "0.0015", jwccUnitIssue: "GB/Month", discountFee: "-10%" },
+        { category: "Compute", title: "OCI Kubernetes Engine (OKE)", shortName: "OKE", description: "Cluster management fee per hour", catalogNum: "OCI-OKE-001", commUnitPrice: "0.0480", commUnitIssue: "Hour", jwccUnitprice: "0.0432", jwccUnitIssue: "Hour", discountFee: "-10%" },
+        { category: "Database", title: "OCI MySQL HeatWave – ECPU", shortName: "MySQL HeatWave", description: "Per ECPU/Hour for HeatWave", catalogNum: "OCI-MYS-ECPU-001", commUnitPrice: "0.2188", commUnitIssue: "ECPU/Hour", jwccUnitprice: "0.1969", jwccUnitIssue: "ECPU/Hour", discountFee: "-10%" },
       ]
     };
 
@@ -4913,7 +4913,7 @@
       <td class="price-val">$${parseFloat(r.commercialunitprice || r.commUnitPrice || r.list_unit_price || 0).toFixed(4)}</td>
       <td class="uoi">${r.commercialunitofissue || r.commUnitIssue || r.pricing_unit || ''}</td>
       <td class="price-val"><strong>$${parseFloat(r.jwccunitprice || r.jwccUnitprice || 0).toFixed(4)}</strong></td>
-      <td class="uoi">${r.jwccunitofissue || r.custUnitIssue || ''}</td>
+      <td class="uoi">${r.jwccunitofissue || r.jwccUnitIssue || ''}</td>
       <td class="${isNeg ? 'price-disc-neg' : 'price-disc'}">${disc}</td>
       <td>
         <button class="btn btn-ghost" style="padding:2px 4px" title="Edit" onclick="openEditModal('${r.catalogitemnumber}')">✎</button>
@@ -4959,7 +4959,7 @@
             commUnitPrice: cols[5] || '',
             commUnitIssue: cols[6] || '',
             jwccUnitprice: cols[7] || '',
-            custUnitIssue: cols[8] || '',
+            jwccUnitIssue: cols[8] || '',
             discountFee: cols[9] || ''
           });
         } else {
@@ -4972,7 +4972,7 @@
             commUnitPrice: cols[4] || '',
             commUnitIssue: cols[5] || '',
             jwccUnitprice: cols[6] || '',
-            custUnitIssue: cols[7] || '',
+            jwccUnitIssue: cols[7] || '',
             discountFee: cols[8] || ''
           });
         }
@@ -5087,7 +5087,7 @@
       document.getElementById('m-cup').value = r.commercialunitprice || r.commUnitPrice || r.list_unit_price || '';
       document.getElementById('m-cui').value = r.commercialunitofissue || r.commUnitIssue || r.pricing_unit || '';
       document.getElementById('m-kusp').value = r.jwccunitprice || r.jwccUnitprice || '';
-      document.getElementById('m-kusi').value = r.jwccunitofissue || r.custUnitIssue || '';
+      document.getElementById('m-kusi').value = r.jwccunitofissue || r.jwccUnitIssue || '';
       document.getElementById('m-dpf').value = r.discountpremiumfee || '';
       document.getElementById('rowModal').classList.add('open');
     }
