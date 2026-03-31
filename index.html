@@ -3529,32 +3529,60 @@
           <span class="search-icon">🔍</span>
           <input type="text" id="excSearch" placeholder="Search exceptions..." oninput="renderExceptions()">
         </div>
-        <div class="select-wrap">
-          <select id="excCspFilter" onchange="renderExceptions()">
-            <option value="">CSP: All</option>
-            <option value="aws">AWS</option>
-            <option value="azure">Azure</option>
-            <option value="gcp">GCP</option>
-            <option value="oracle">Oracle</option>
-          </select>
-          <span class="select-arrow">▾</span>
+        <button class="csp-filter-btn aws active" id="exc-pf-aws" type="button" onclick="toggleExcCspFilter('aws')"><svg width="13"
+            height="13">
+            <use href="#logo-aws" />
+          </svg> AWS</button>
+        <button class="csp-filter-btn azure active" id="exc-pf-azure" type="button" onclick="toggleExcCspFilter('azure')"><svg width="13"
+            height="13">
+            <use href="#logo-azure" />
+          </svg> Azure</button>
+        <button class="csp-filter-btn gcp active" id="exc-pf-gcp" type="button" onclick="toggleExcCspFilter('gcp')"><svg width="13"
+            height="13">
+            <use href="#logo-gcp" />
+          </svg> GCP</button>
+        <button class="csp-filter-btn oracle active" id="exc-pf-oracle" type="button" onclick="toggleExcCspFilter('oracle')"><svg
+            width="13" height="13">
+            <use href="#logo-oracle" />
+          </svg> Oracle</button>
+        <div class="toolbar-sep"></div>
+        <div class="ms-wrap" id="ms-exstat-wrap">
+          <div class="ms-btn" id="ms-exstat-btn" onclick="toggleMs('exstat')">
+            <span id="ms-exstat-label">All statuses</span>
+            <span class="ms-arrow">▾</span>
+          </div>
+          <div class="ms-dropdown" id="ms-exstat-drop">
+            <div class="ms-clear" onclick="clearMs('exstat')">Clear all</div>
+            <div class="ms-sep"></div>
+            <div id="ms-exstat-opts"></div>
+          </div>
         </div>
-        <div class="select-wrap">
-          <select id="excStatusFilter" onchange="renderExceptions()">
-            <option value="">Status: All</option>
-          </select>
-          <span class="select-arrow">▾</span>
-        </div>
-        <div class="select-wrap">
-          <select id="excImpactFilter" onchange="renderExceptions()">
-            <option value="">Impact: All</option>
-            <option value="il2">IL2</option>
-            <option value="il3">IL3</option>
-            <option value="il4">IL4</option>
-            <option value="il5">IL5</option>
-            <option value="il6">IL6</option>
-          </select>
-          <span class="select-arrow">▾</span>
+        <div class="ms-wrap" id="ms-exil-wrap">
+          <div class="ms-btn" id="ms-exil-btn" onclick="toggleMs('exil')">
+            <span id="ms-exil-label">All levels</span>
+            <span class="ms-arrow">▾</span>
+          </div>
+          <div class="ms-dropdown" id="ms-exil-drop">
+            <div class="ms-clear" onclick="clearMs('exil')">Clear all</div>
+            <div class="ms-sep"></div>
+            <div id="ms-exil-opts">
+              <div class="ms-option" data-ms="exil" data-val="IL2" onclick="toggleMsOpt('exil','IL2',this)">
+                <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il2)"></span>IL2
+              </div>
+              <div class="ms-option" data-ms="exil" data-val="IL3" onclick="toggleMsOpt('exil','IL3',this)">
+                <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--accent2)"></span>IL3
+              </div>
+              <div class="ms-option" data-ms="exil" data-val="IL4" onclick="toggleMsOpt('exil','IL4',this)">
+                <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il4)"></span>IL4
+              </div>
+              <div class="ms-option" data-ms="exil" data-val="IL5" onclick="toggleMsOpt('exil','IL5',this)">
+                <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il5)"></span>IL5
+              </div>
+              <div class="ms-option" data-ms="exil" data-val="IL6" onclick="toggleMsOpt('exil','IL6',this)">
+                <span class="ms-check"></span><span class="ms-option-dot" style="background:var(--il6)"></span>IL6
+              </div>
+            </div>
+          </div>
         </div>
         <div class="select-wrap">
           <select id="excServiceFilter" onchange="renderExceptions()">
@@ -4423,6 +4451,8 @@
     let pricingData = { aws: [], azure: [], gcp: [], oracle: [] };
     let editingRow = null; // {csp, idx} or null
     let priceFilters = { aws: true, azure: true, gcp: true, oracle: true };
+    let excCspFilters = { aws: true, azure: true, gcp: true, oracle: true };
+    window.excCspFilters = excCspFilters;
 
     // CSV column order (0-indexed)
     const CSV_COLS = ["title", "shortName", "description", "catalogNum", "commUnitPrice", "commUnitIssue", "jwccUnitPrice", "jwccUnitIssue", "discountFee"];
@@ -4507,13 +4537,16 @@
     // ════════════════════════════════════════════════════════════
     // MULTI-SELECT FILTER STATE
     // ════════════════════════════════════════════════════════════
-    const msState = { cat: new Set(), il: new Set(), csp: new Set(), pcat: new Set() };
+    const msState = { cat: new Set(), il: new Set(), csp: new Set(), pcat: new Set(), exstat: new Set(), exil: new Set() };
+    window.msState = msState;
 
     const msLabels = {
       cat: { default: 'All categories', plural: 'Categories' },
       il: { default: 'All levels', plural: 'Impact levels' },
       csp: { default: 'All CSPs', plural: 'CSPs' },
-      pcat: { default: 'Category', plural: 'Categories' }
+      pcat: { default: 'Category', plural: 'Categories' },
+      exstat: { default: 'All statuses', plural: 'Statuses' },
+      exil: { default: 'All levels', plural: 'Impact levels' }
     };
 
     function toggleMs(key) {
@@ -4531,7 +4564,9 @@
       else msState[key].add(val);
       el.classList.toggle('selected', msState[key].has(val));
       updateMsLabel(key);
-      if (key === 'cat' || key === 'il' || key === 'csp') renderServices();
+      if (key === 'exstat' || key === 'exil') {
+        if (typeof renderExceptions === 'function') renderExceptions();
+      } else if (key === 'cat' || key === 'il' || key === 'csp') renderServices();
       else renderPricing();
     }
 
@@ -4539,7 +4574,9 @@
       msState[key].clear();
       document.querySelectorAll(`[data-ms="${key}"]`).forEach(el => el.classList.remove('selected'));
       updateMsLabel(key);
-      if (key === 'cat' || key === 'il' || key === 'csp') renderServices();
+      if (key === 'exstat' || key === 'exil') {
+        if (typeof renderExceptions === 'function') renderExceptions();
+      } else if (key === 'cat' || key === 'il' || key === 'csp') renderServices();
       else renderPricing();
     }
 
@@ -5020,6 +5057,16 @@
       if (priceFilters[csp]) btn.classList.add('active');
       else btn.classList.remove('active');
       renderPricing();
+    }
+
+    function toggleExcCspFilter(csp) {
+      excCspFilters[csp] = !excCspFilters[csp];
+      const btn = document.getElementById('exc-pf-' + csp);
+      if (btn) {
+        if (excCspFilters[csp]) btn.classList.add('active');
+        else btn.classList.remove('active');
+      }
+      if (typeof renderExceptions === 'function') renderExceptions();
     }
 
     // ════════════════════════════════════════════════════════════

@@ -217,15 +217,24 @@
       return;
     }
     const q = String(document.getElementById('excSearch')?.value || '').trim();
-    const csp = String(document.getElementById('excCspFilter')?.value || '');
-    const status = String(document.getElementById('excStatusFilter')?.value || '');
-    const impact = String(document.getElementById('excImpactFilter')?.value || '');
     const service = String(document.getElementById('excServiceFilter')?.value || '');
+    const excCsp = typeof window.excCspFilters === 'object' && window.excCspFilters ? window.excCspFilters : null;
+    const ms = typeof window.msState === 'object' && window.msState ? window.msState : null;
+    const cspKeys = ['aws', 'azure', 'gcp', 'oracle'];
+    let cspLine = '';
+    if (excCsp) {
+      const on = cspKeys.filter(k => excCsp[k]);
+      if (on.length && on.length < cspKeys.length) cspLine = `CSP: ${on.map(k => k.toUpperCase()).join(', ')}`;
+    }
+    let statusLine = '';
+    if (ms && ms.exstat && ms.exstat.size) statusLine = `Status: ${[...ms.exstat].sort().join(', ')}`;
+    let impactLine = '';
+    if (ms && ms.exil && ms.exil.size) impactLine = `Impact: ${[...ms.exil].sort().join(', ')}`;
     const filtLines = [
       `Records: ${rows.length}`,
-      csp && `CSP: ${csp}`,
-      status && `Status: ${status}`,
-      impact && `Impact: ${impact}`,
+      cspLine || null,
+      statusLine || null,
+      impactLine || null,
       service && `Service: ${service}`,
       q && `Search: ${q}`,
     ].filter(Boolean);
@@ -342,18 +351,48 @@
     if (!Array.isArray(window.csoExceptionData)) return;
     const data = window.csoExceptionData;
 
-    const statusEl = document.getElementById('excStatusFilter');
-    if (statusEl) {
+    const excCsp = typeof window.excCspFilters === 'object' && window.excCspFilters ? window.excCspFilters : null;
+    if (excCsp) {
+      ['aws', 'azure', 'gcp', 'oracle'].forEach(c => { excCsp[c] = true; });
+      ['aws', 'azure', 'gcp', 'oracle'].forEach(c => {
+        const btn = document.getElementById(`exc-pf-${c}`);
+        if (btn) btn.classList.add('active');
+      });
+    }
+
+    const ms = typeof window.msState === 'object' && window.msState ? window.msState : null;
+    if (ms) {
+      if (ms.exstat) ms.exstat.clear();
+      if (ms.exil) ms.exil.clear();
+      document.querySelectorAll('[data-ms="exstat"], [data-ms="exil"]').forEach(el => el.classList.remove('selected'));
+      if (typeof updateMsLabel === 'function') {
+        updateMsLabel('exstat');
+        updateMsLabel('exil');
+      }
+    }
+
+    const exstatOpts = document.getElementById('ms-exstat-opts');
+    if (exstatOpts) {
+      exstatOpts.innerHTML = '';
       const vals = [...new Set(data.map(r => (r.exceptionstatus || r.status || '').trim()).filter(Boolean))].sort();
-      statusEl.innerHTML = '<option value="">Status: All</option>' +
-        vals.map(v => `<option value="${v}">${v}</option>`).join('');
+      vals.forEach(v => {
+        const div = document.createElement('div');
+        div.className = 'ms-option';
+        div.setAttribute('data-ms', 'exstat');
+        div.setAttribute('data-val', v);
+        div.innerHTML = `<span class="ms-check"></span><span>${escHtml(v)}</span>`;
+        div.addEventListener('click', function onExstatClick() {
+          if (typeof toggleMsOpt === 'function') toggleMsOpt('exstat', v, div);
+        });
+        exstatOpts.appendChild(div);
+      });
     }
 
     const svcEl = document.getElementById('excServiceFilter');
     if (svcEl) {
       const vals = [...new Set(data.map(r => (r.csoshortname || r.shortname || '').trim()).filter(Boolean))].sort();
       svcEl.innerHTML = '<option value="">Service: All</option>' +
-        vals.map(v => `<option value="${v}">${v}</option>`).join('');
+        vals.map(v => `<option value="${escHtml(v)}">${escHtml(v)}</option>`).join('');
     }
   }
 
@@ -363,33 +402,39 @@
     const count = document.getElementById('excCount');
     if (!body) return;
 
-    const q       = String(document.getElementById('excSearch')?.value || '').toLowerCase().trim();
-    const csp     = String(document.getElementById('excCspFilter')?.value || '').toLowerCase().trim();
-    const status  = String(document.getElementById('excStatusFilter')?.value || '').trim();
-    const impact  = String(document.getElementById('excImpactFilter')?.value || '').toLowerCase().trim();
+    const q = String(document.getElementById('excSearch')?.value || '').toLowerCase().trim();
     const service = String(document.getElementById('excServiceFilter')?.value || '').trim();
+    const excCsp = typeof window.excCspFilters === 'object' && window.excCspFilters ? window.excCspFilters : null;
+    const ms = typeof window.msState === 'object' && window.msState ? window.msState : null;
+    const exstat = ms && ms.exstat ? ms.exstat : null;
+    const exil = ms && ms.exil ? ms.exil : null;
 
     const rows = (window.csoExceptionData || []).filter(r => {
-      const rowCsp     = String(r.csp_injected || r.csp || '').toLowerCase();
-      const rowStatus  = String(r.exceptionstatus || r.status || '');
-      const rowImpact  = String(r.impactlevel || '').toLowerCase();
+      const rowCsp = String(r.csp_injected || r.csp || '').toLowerCase().trim();
+      const rowStatus = String(r.exceptionstatus || r.status || '');
+      const rowImpactRaw = String(r.impactlevel || '');
       const rowService = String(r.csoshortname || r.shortname || '');
       const blob = [
         r.exceptionuniqueid || r.uniqueid,
         rowService,
-        rowImpact,
+        rowImpactRaw,
         rowStatus,
         r.exceptionpwsrequirement,
         r.exceptionbasisforrequest,
         r.exceptionsecurityconsiderations || r.exceptionsecurity,
       ].join(' ').toLowerCase();
 
+      const cspOk = !excCsp || excCsp[rowCsp] || rowCsp === '—';
+      const statusOk = !exstat || exstat.size === 0 || exstat.has(rowStatus);
+      const levels = rowImpactRaw.split('|').map(l => l.trim().toUpperCase()).filter(Boolean);
+      const impactOk = !exil || exil.size === 0 || levels.some(lv => exil.has(lv));
+
       return (
-        (!csp     || rowCsp === csp) &&
-        (!status  || rowStatus === status) &&
-        (!impact  || rowImpact === impact) &&
+        cspOk &&
+        statusOk &&
+        impactOk &&
         (!service || rowService === service) &&
-        (!q       || blob.includes(q))
+        (!q || blob.includes(q))
       );
     });
 
