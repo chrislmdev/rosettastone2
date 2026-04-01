@@ -1049,18 +1049,26 @@
     }
 
     /* Column widths for pricing catalog */
-    #priceTable th:nth-child(1) { width: 5% }   /* CSP */
-    #priceTable th:nth-child(2) { width: 9% }   /* Category */
-    #priceTable th:nth-child(3) { width: 12% }  /* Title */
-    #priceTable th:nth-child(4) { width: 9% }   /* Short Name */
-    #priceTable th:nth-child(5) { width: 18% }  /* Description */
-    #priceTable th:nth-child(6) { width: 9% }   /* Catalog # */
-    #priceTable th:nth-child(7) { width: 8% }   /* Comm. Unit Price */
-    #priceTable th:nth-child(8) { width: 7% }   /* Comm. Unit of Issue */
-    #priceTable th:nth-child(9) { width: 8% }   /* jwccunitprice */
-    #priceTable th:nth-child(10) { width: 7% }  /* jwccunitofissue */
-    #priceTable th:nth-child(11) { width: 8% }  /* Discount/Premium */
-    #priceTable th:nth-child(12) { width: 5% }  /* Actions */
+    #priceTable th:nth-child(1),
+    #priceTable td:nth-child(1) {
+      min-width: 5.25rem;
+      width: 6%;
+      white-space: nowrap;
+      word-break: normal;
+    }
+    #priceTable td:nth-child(1) .pt-csp-badge { white-space: nowrap; }
+    #priceTable th:nth-child(2) { width: 8% }   /* Category */
+    #priceTable th:nth-child(3) { width: 11% }  /* Title */
+    #priceTable th:nth-child(4) { width: 8% }   /* Short Name */
+    #priceTable th:nth-child(5) { width: 17% }  /* Description */
+    #priceTable th:nth-child(6) { width: 8% }   /* Catalog # */
+    #priceTable th:nth-child(7) { width: 7% }   /* Comm. Unit Price */
+    #priceTable th:nth-child(8) { width: 6% }   /* Comm. Unit of Issue */
+    #priceTable th:nth-child(9) { width: 7% }   /* JWCC price */
+    #priceTable th:nth-child(10) { width: 6% }  /* JWCC UoI */
+    #priceTable th:nth-child(11) { width: 7% }  /* Discount/Premium */
+    #priceTable th:nth-child(12) { width: 7% }  /* Import month */
+    #priceTable th:nth-child(13) { width: 56px }  /* Actions */
 
     /* Exception charts grid — fixed-height canvas boxes prevent runaway vertical growth */
     .exc-charts-grid {
@@ -3184,7 +3192,6 @@
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
           <button class="btn btn-ghost" onclick="exportPricingCSV()">↓ Export All</button>
-          <button class="btn btn-ghost" onclick="downloadSampleCSV()">⬇ Sample CSV</button>
           <button class="btn btn-primary" onclick="openAddModal()">+ Add Row</button>
         </div>
       </div>
@@ -3198,7 +3205,7 @@
       <div class="p-toolbar">
         <div class="p-search search-wrap">
           <span class="search-icon">🔍</span>
-          <input type="text" id="priceSearch" placeholder="Search…" oninput="renderPricing()">
+          <input type="text" id="priceSearch" placeholder="Search…" oninput="onPriceSearchInput()">
         </div>
         <button class="csp-filter-btn aws active" id="pf-aws" onclick="togglePriceFilter('aws')"><svg width="13"
             height="13">
@@ -3231,7 +3238,7 @@
           </div>
         </div>
         <div class="select-wrap">
-          <select id="priceSort" onchange="renderPricing()" style="font-size:11px">
+          <select id="priceSort" onchange="priceTablePage=0;renderPricing()" style="font-size:11px">
             <option value="csp">Sort: CSP</option>
             <option value="category">Sort: Category</option>
             <option value="title">Sort: Title</option>
@@ -3242,6 +3249,11 @@
         </div>
         <span id="priceCount"
           style="font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-left:auto"></span>
+        <div id="pricePager" class="price-pager" style="display:none;align-items:center;gap:6px;margin-left:8px">
+          <button type="button" class="btn btn-ghost" style="font-size:10px;padding:4px 8px" onclick="priceTablePrevPage()">Prev</button>
+          <span id="pricePagerLabel" style="font-family:var(--mono);font-size:10px;color:var(--text-muted)"></span>
+          <button type="button" class="btn btn-ghost" style="font-size:10px;padding:4px 8px" onclick="priceTableNextPage()">Next</button>
+        </div>
       </div>
 
       <!-- Pricing table -->
@@ -3260,14 +3272,15 @@
               <th>JWCC Unit Price</th>
               <th>JWCC Unit of Issue</th>
               <th>Discount / Premium / Fee</th>
-              <th style="width:60px">Actions</th>
+              <th>Import</th>
+              <th style="width:56px">Actions</th>
             </tr>
           </thead>
           <tbody id="priceBody"></tbody>
         </table>
         <div id="priceEmpty" class="empty-state" style="display:none">
           <div class="es-icon">💰</div>
-          <p>No pricing data loaded. Upload a CSV or click "Load Sample" on any CSP card above.</p>
+          <p>No pricing data loaded. Use <strong>Admin</strong> to import catalogs or reload from the API.</p>
         </div>
       </div>
     </div>
@@ -3960,6 +3973,9 @@
         discountpremiumfee: r.discountpremiumfee || '',
         service_category: r.service_category,
         focus_category: r.focus_category,
+        import_month: r.import_month || '',
+        imported_at: r.imported_at || '',
+        import_source_file: r.import_source_file || '',
       };
     }
 
@@ -3976,6 +3992,9 @@
         comparison_subcategory: r.comparison_subcategory,
         impactlevel: r.impactlevel,
         newservice: r.newservice,
+        import_month: r.import_month || '',
+        imported_at: r.imported_at || '',
+        import_source_file: r.import_source_file || '',
       };
     }
 
@@ -4451,6 +4470,9 @@
     let pricingData = { aws: [], azure: [], gcp: [], oracle: [] };
     let editingRow = null; // {csp, idx} or null
     let priceFilters = { aws: true, azure: true, gcp: true, oracle: true };
+    /** Client-side pricing table paging (avoids 90k+ DOM rows). */
+    let priceTablePage = 0;
+    const PRICING_PAGE_SIZE = 400;
     let excCspFilters = { aws: true, azure: true, gcp: true, oracle: true };
     window.excCspFilters = excCspFilters;
 
@@ -4564,6 +4586,7 @@
       else msState[key].add(val);
       el.classList.toggle('selected', msState[key].has(val));
       updateMsLabel(key);
+      if (key === 'pcat') priceTablePage = 0;
       if (key === 'exstat' || key === 'exil') {
         if (typeof renderExceptions === 'function') renderExceptions();
       } else if (key === 'cat' || key === 'il' || key === 'csp') renderServices();
@@ -4574,6 +4597,7 @@
       msState[key].clear();
       document.querySelectorAll(`[data-ms="${key}"]`).forEach(el => el.classList.remove('selected'));
       updateMsLabel(key);
+      if (key === 'pcat') priceTablePage = 0;
       if (key === 'exstat' || key === 'exil') {
         if (typeof renderExceptions === 'function') renderExceptions();
       } else if (key === 'cat' || key === 'il' || key === 'csp') renderServices();
@@ -4658,13 +4682,28 @@
     }
     // Duplicate renderPricing removed from here to consolidate with the primary renderer.
 
+    function dedupeParentServiceRows(arr) {
+      const seen = new Set();
+      const out = [];
+      for (const s of arr) {
+        const csp = String(s.csp_injected || s.csp || '').toLowerCase().trim();
+        const cat = String(s.catalogitemnumber || '').trim();
+        const sn = String(s.csoshortname || s.csoShortName || '').trim().toLowerCase();
+        const k = `${csp}|${cat}|${sn}`;
+        if (seen.has(k)) continue;
+        seen.add(k);
+        out.push(s);
+      }
+      return out;
+    }
+
     function renderServices() {
       const query = document.getElementById('svcSearch')?.value.toLowerCase() || '';
       const body = document.getElementById('svcBody');
       const meta = document.getElementById('svcMeta');
       if (!body) return;
 
-      const data = csOParentServiceData.length > 0 ? csOParentServiceData : [];
+      const data = csOParentServiceData.length > 0 ? dedupeParentServiceRows(csOParentServiceData) : [];
       if (!data.length) {
         body.innerHTML = '';
         const svcEmpty = document.getElementById('svcEmpty');
@@ -4893,10 +4932,28 @@
       } else {
         csoPricingEnriched = csoPricingData.map(r => ({ ...r, mapped_category: 'Other', classificationConfidence: 'low', classificationSource: 'fallback' }));
       }
+      priceTablePage = 0;
       syncSharedState();
       if (window.populatePricingCategoryOptions) {
         window.populatePricingCategoryOptions(msState);
       }
+    }
+
+    function onPriceSearchInput() {
+      priceTablePage = 0;
+      renderPricing();
+    }
+
+    function priceTablePrevPage() {
+      if (priceTablePage > 0) {
+        priceTablePage--;
+        renderPricing();
+      }
+    }
+
+    function priceTableNextPage() {
+      priceTablePage++;
+      renderPricing();
     }
 
     function renderPricing() {
@@ -4906,12 +4963,12 @@
       const tbody = document.getElementById('priceBody');
       const empty = document.getElementById('priceEmpty');
       const meta = document.getElementById('priceCount');
+      const pager = document.getElementById('pricePager');
+      const pagerLbl = document.getElementById('pricePagerLabel');
       if (!tbody) return;
 
-      // Use Dynamic csoPricingData with Smart Categorization
       let rows = csoPricingEnriched.map(r => ({ ...r, csp: normalizeCspValue(r.csp_injected || r.csp || 'unknown') }));
 
-      // Filters
       rows = rows.filter(r => (priceFilters[r.csp] || r.csp === '—'));
       if (pcats.size) rows = rows.filter(r => pcats.has(r.mapped_category));
       if (q) {
@@ -4923,23 +4980,33 @@
         );
       }
 
-      // Sorting
-      if (sortVal === 'title') rows.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+      if (sortVal === 'csp') rows.sort((a, b) => (a.csp || '').localeCompare(b.csp || '') || (a.title || '').localeCompare(b.title || ''));
+      else if (sortVal === 'title') rows.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
       else if (sortVal === 'category') rows.sort((a, b) => (a.mapped_category || '').localeCompare(b.mapped_category || ''));
       else if (sortVal === 'price-asc') rows.sort((a, b) => parseFloat(a.jwccunitprice || 0) - parseFloat(b.jwccunitprice || 0));
       else if (sortVal === 'price-desc') rows.sort((a, b) => parseFloat(b.jwccunitprice || 0) - parseFloat(a.jwccunitprice || 0));
 
-      if (!rows.length) {
+      const totalFiltered = rows.length;
+      const maxPage = Math.max(0, Math.ceil(totalFiltered / PRICING_PAGE_SIZE) - 1);
+      if (priceTablePage > maxPage) priceTablePage = maxPage;
+      if (priceTablePage < 0) priceTablePage = 0;
+      const start = priceTablePage * PRICING_PAGE_SIZE;
+      const pageRows = rows.slice(start, start + PRICING_PAGE_SIZE);
+
+      if (!totalFiltered) {
         tbody.innerHTML = '';
         if (empty) empty.style.display = 'block';
         if (meta) meta.innerHTML = '0 items';
+        if (pager) pager.style.display = 'none';
         return;
       }
       if (empty) empty.style.display = 'none';
 
-      tbody.innerHTML = rows.map(r => {
+      tbody.innerHTML = pageRows.map(r => {
         const disc = r.discountpremiumfee || '0%';
         const isNeg = disc.startsWith('-') || disc.includes('premium');
+        const imp = r.import_month || (r.imported_at ? String(r.imported_at).slice(0, 10) : '');
+        const catNumJs = JSON.stringify(r.catalogitemnumber || '');
         return `<tr>
       <td><span class="pt-csp-badge ${r.csp}">${r.csp.toUpperCase()}</span></td>
       <td class="td-cat">${r.mapped_category}</td>
@@ -4952,13 +5019,25 @@
       <td class="price-val"><strong>$${parseFloat(r.jwccunitprice || r.jwccUnitprice || 0).toFixed(4)}</strong></td>
       <td class="uoi">${r.jwccunitofissue || r.jwccUnitIssue || ''}</td>
       <td class="${isNeg ? 'price-disc-neg' : 'price-disc'}">${disc}</td>
+      <td class="td-imp" style="font-size:10px;color:var(--text-muted)">${imp || '—'}</td>
       <td>
-        <button class="btn btn-ghost" style="padding:2px 4px" title="Edit" onclick="openEditModal('${r.catalogitemnumber}')">✎</button>
+        <button class="btn btn-ghost" style="padding:2px 4px" title="Edit" onclick="openEditModal(${catNumJs})">✎</button>
       </td>
     </tr>`;
       }).join('');
 
-      if (meta) meta.innerHTML = `Showing <strong>${rows.length}</strong> of <strong>${csoPricingEnriched.length}</strong> items`;
+      if (meta) {
+        const end = Math.min(start + pageRows.length, totalFiltered);
+        meta.innerHTML = `Page <strong>${priceTablePage + 1}</strong> / <strong>${maxPage + 1}</strong> · rows <strong>${start + 1}–${end}</strong> of <strong>${totalFiltered}</strong> <span style="opacity:0.75">(catalog ${csoPricingEnriched.length})</span>`;
+      }
+      if (pager && pagerLbl) {
+        if (maxPage > 0) {
+          pager.style.display = 'flex';
+          pagerLbl.textContent = `${priceTablePage + 1} / ${maxPage + 1}`;
+        } else {
+          pager.style.display = 'none';
+        }
+      }
     }
 
     function updateMeta(csp) {
@@ -5052,6 +5131,7 @@
     }
 
     function togglePriceFilter(csp) {
+      priceTablePage = 0;
       priceFilters[csp] = !priceFilters[csp];
       const btn = document.getElementById('pf-' + csp);
       if (priceFilters[csp]) btn.classList.add('active');
@@ -5070,25 +5150,54 @@
     }
 
     // ════════════════════════════════════════════════════════════
-    // EXPORT / SAMPLE CSV
+    // EXPORT PRICING CSV (API-backed csoPricingEnriched)
     // ════════════════════════════════════════════════════════════
     function exportPricingCSV() {
-      let lines = ['CSP,Category,Title,Short Name,Description,Catalog #,Commercial Unit Price,Commercial Unit of Issue,JWCC Unit Price,JWCC Unit of Issue,Discount/Premium/Fee'];
-      ['aws', 'azure', 'gcp', 'oracle'].forEach(csp => {
-        pricingData[csp].forEach(r => {
-          lines.push([csp.toUpperCase(), r.category, r.title, r.shortName, r.description, r.catalogNum, r.commUnitPrice, r.commUnitIssue, r.jwccUnitPrice, r.jwccUnitIssue, r.discountFee].map(v => `"${String(v || '').replace(/"/g, '""')}"`).join(','));
-        });
-      });
-      downloadBlob(lines.join('\n'), 'cloudprism-pricing-export.csv', 'text/csv');
-      showToast('✓ Exported pricing data', 'success');
-    }
-
-    function downloadSampleCSV() {
-      let lines = ['Category,Title,Short Name,Description,Catalog #,Commercial Unit Price,Commercial Unit of Issue,JWCC Unit Price,JWCC Unit of Issue,Discount/Premium/Fee'];
-      lines.push('"Compute","Amazon EC2 On-Demand (c6i.large)","EC2","2 vCPU / 4 GiB compute instance","AWS-EC2-001","0.0850","Hour","0.0765","Hour","-10%"');
-      lines.push('"Storage","Amazon S3 Standard Storage","S3","Object storage – first 50 TB/month","AWS-S3-001","0.0230","GB/Month","0.0207","GB/Month","-10%"');
-      downloadBlob(lines.join('\n'), 'cloudprism-sample.csv', 'text/csv');
-      showToast('✓ Sample CSV downloaded');
+      const src = Array.isArray(csoPricingEnriched) && csoPricingEnriched.length
+        ? csoPricingEnriched
+        : csoPricingData;
+      if (!src.length) {
+        showToast('No pricing data to export', 'error');
+        return;
+      }
+      showToast('Preparing export…', 'success');
+      const header = 'CSP,Mapped Category,Title,Short Name,Description,Catalog #,Commercial Unit Price,Commercial Unit of Issue,JWCC Unit Price,JWCC Unit of Issue,Discount/Premium/Fee,Import Month';
+      const esc = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
+      const CHUNK = 4000;
+      const lines = [header];
+      let i = 0;
+      function rowLine(r) {
+        const csp = String(r.csp_injected || r.csp || '').toUpperCase();
+        const cup = r.commercialunitprice ?? r.list_unit_price ?? '';
+        const cui = r.commercialunitofissue ?? r.pricing_unit ?? '';
+        const jwp = r.jwccunitprice ?? '';
+        const jwi = r.jwccunitofissue ?? '';
+        return [
+          csp,
+          r.mapped_category || r.focus_category || '',
+          r.title || '',
+          r.csoshortname || r.shortName || '',
+          r.description || '',
+          r.catalogitemnumber || r.catalogNum || '',
+          cup,
+          cui,
+          jwp,
+          jwi,
+          r.discountpremiumfee || r.discountFee || '',
+          r.import_month || '',
+        ].map(esc).join(',');
+      }
+      function step() {
+        const end = Math.min(i + CHUNK, src.length);
+        for (; i < end; i++) lines.push(rowLine(src[i]));
+        if (i < src.length) {
+          setTimeout(step, 0);
+        } else {
+          downloadBlob(lines.join('\n'), 'cloudprism-pricing-export.csv', 'text/csv');
+          showToast(`✓ Exported ${src.length} pricing rows`, 'success');
+        }
+      }
+      setTimeout(step, 0);
     }
 
     function downloadBlob(content, filename, type) {

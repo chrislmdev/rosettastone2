@@ -6,7 +6,7 @@ This repository ships a **static SPA** plus an **Express API**, **PostgreSQL**, 
 
 | Layer | Role |
 |--------|------|
-| **web** | Nginx serves the repo root (`index.html`, `src/`, assets) on port **8080**. |
+| **web** | Nginx serves the repo root (`index.html`, `src/`, assets) on port **8080**. Config: [`infra/nginx/default.conf`](infra/nginx/default.conf) sets **`client_max_body_size 100m`** (mounted in Compose). |
 | **api** | Express on port **3001**: health, auth, read APIs, CSV upload → queue. |
 | **worker** | Node process: BullMQ consumer; parses CSVs, writes Postgres, enqueues follow-up work. |
 | **db** | PostgreSQL 16; catalog and auth tables (see below). |
@@ -69,9 +69,9 @@ Shared query parameters where supported:
 | Method | Path | Query (examples) |
 |--------|------|------------------|
 | `GET` | `/imports` | — (last 200 imports) |
-| `GET` | `/pricing` | `csp`, `q`, `focus_category`, `limit`, `offset` |
-| `GET` | `/exceptions` | `csp`, `status`, `impact_level`, `service`, `limit`, `offset` |
-| `GET` | `/parent-services` | `csp`, `limit`, `offset` |
+| `GET` | `/pricing` | `csp`, `q`, `focus_category`, `limit`, `offset` — rows include **`import_month`**, **`imported_at`**, **`import_source_file`** (from `catalog_import`). |
+| `GET` | `/exceptions` | `csp`, `status`, `impact_level`, `service`, `limit`, `offset` — same import provenance fields as pricing. |
+| `GET` | `/parent-services` | `csp`, `limit`, `offset` — same import provenance fields as pricing. |
 | `GET` | `/changes` | `csp` (limit 1000) |
 | `GET` | `/exception-changes` | `csp` (limit 1000) |
 
@@ -114,6 +114,7 @@ Shared UI patterns:
 | `UPLOAD_DIR` | Writable directory for uploaded CSVs (default under `/tmp/...` in container). |
 | `UPLOAD_MAX_FILE_MB` | Per-file upload size cap. |
 | `CATALOG_API_DEFAULT_LIMIT` / `CATALOG_API_MAX_LIMIT` | Page size bounds for catalog GET endpoints. |
+| `PRICING_INSERT_BATCH_SIZE` | Worker: rows per batched `INSERT` for pricing CSV (default **1000**, max 5000). |
 
 ## Intranet deployment
 

@@ -41,12 +41,21 @@ export const FOCUS_CATEGORY_MAP = {
 
 export function normalizeFocusCategory(rawCategory) {
   if (!rawCategory) return "Other";
-  const lower = String(rawCategory).toLowerCase();
+  const raw = String(rawCategory).trim();
+  const lower = raw.toLowerCase();
+  // Contract / vendor labels that are not FOCUS names — map to FOCUS buckets (interim; refine with stakeholders).
+  if (lower === "all" || lower === "any" || lower === "*" || lower === "n/a" || lower === "na") return "Other";
+  if (lower === "te" || lower === "t&e" || lower === "t and e") return "Other";
+  const squish = lower.replace(/[^a-z0-9]+/g, " ").trim();
+  if (squish === "iaas" || /\biaas\b/.test(lower)) return "Compute";
+  if (squish === "paas" || /\bpaas\b/.test(lower)) return "Compute";
+  if (squish === "saas" || /\bsaas\b/.test(lower)) return "Web and Mobile";
+
   const entries = Object.entries(FOCUS_CATEGORY_MAP).sort((a, b) => b[0].length - a[0].length);
   for (const [key, val] of entries) {
     if (lower.includes(key)) return val;
   }
-  return String(rawCategory).trim() || "Other";
+  return raw || "Other";
 }
 
 /**

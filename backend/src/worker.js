@@ -57,6 +57,95 @@ function pickEffectiveCsp(row, jobCsp) {
   return String(jobCsp || "").toLowerCase();
 }
 
+/** Strip currency formatting; null if not a finite number. */
+function parseMoneyLike(s) {
+  if (s == null) return null;
+  const t = String(s).replace(/,/g, "").replace(/\$/g, "").trim();
+  if (!t) return null;
+  const n = parseFloat(t);
+  return Number.isFinite(n) ? n : null;
+}
+
+function firstNonEmptyStr(row, keys) {
+  for (const k of keys) {
+    const v = row[k];
+    if (v != null && String(v).trim() !== "") return String(v).trim();
+  }
+  return "";
+}
+
+function pickCommercialPrice(row) {
+  return parseMoneyLike(
+    firstNonEmptyStr(row, [
+      "commercialunitprice",
+      "commercial_unit_price",
+      "list_unit_price",
+      "listunitprice",
+    ])
+  );
+}
+
+function pickJwccPrice(row) {
+  return parseMoneyLike(
+    firstNonEmptyStr(row, [
+      "jwccunitprice",
+      "jwcc_unit_price",
+      "customerunitprice",
+      "customer_unit_price",
+    ])
+  );
+}
+
+function pickCommercialUnit(row) {
+  return firstNonEmptyStr(row, [
+    "commercialunitofissue",
+    "commercial_unit_of_issue",
+    "pricing_unit",
+    "pricingunit",
+    "commercialunit",
+  ]);
+}
+
+function pickJwccUnit(row) {
+  return firstNonEmptyStr(row, [
+    "jwccunitofissue",
+    "jwcc_unit_of_issue",
+    "customerunitofissue",
+    "customer_unit_of_issue",
+  ]);
+}
+
+const PRICING_INSERT_BATCH_SIZE = Math.max(
+  50,
+  Math.min(parseInt(process.env.PRICING_INSERT_BATCH_SIZE || "1000", 10) || 1000, 5000)
+);
+
+async function flushPricingInsertBatch(client, batch) {
+  if (!batch.length) return;
+  const placeholders = [];
+  const params = [];
+  let pi = 1;
+  for (const b of batch) {
+    const ph = [];
+    for (let j = 0; j < 17; j++) {
+      ph.push(`$${pi++}`);
+    }
+    placeholders.push(`(${ph.join(",")})`);
+    params.push(...b);
+  }
+  await client.query(
+    `insert into pricing_item (
+      import_id, csp, catalogitemnumber, title, csoshortname, description,
+      list_unit_price, pricing_unit,
+      jwccunitprice, jwccunitofissue,
+      commercialunitprice, commercialunitofissue,
+      customerunitprice, customerunitofissue,
+      discountpremiumfee, service_category, focus_category
+    ) values ${placeholders.join(",")}`,
+    params
+  );
+}
+
 // ── Process: pricing CSV ────────────────────────────────────
 async function processPricing(filePath, csp, importId, client) {
   const titleMapCache = new Map();
@@ -80,16 +169,18 @@ async function processPricing(filePath, csp, importId, client) {
   }
 
   let count = 0;
+  const batch = [];
   for await (const row of streamCsv(filePath)) {
     const effectiveCsp = pickEffectiveCsp(row, csp);
     const titleMap = await getTitleMap(effectiveCsp);
     const shortname = row.csoshortname || row.cso_short_name || "";
-    // Resolve title: use CSV title if present, else look up from parent
     const title = row.title || row.csoparentservice ||
       titleMap[shortname.toLowerCase()] || shortname;
 
-    const rawCommPrice = parseFloat(row.commercialunitprice) || null;
-    const rawJwccPrice = parseFloat(row.customerunitprice) || null;
+    const rawCommPrice = pickCommercialPrice(row);
+    const rawJwccPrice = pickJwccPrice(row);
+    const commUnit = pickCommercialUnit(row);
+    const jwccUnit = pickJwccUnit(row);
     const focusCat = resolvePricingFocusCategory({
       category: row.category || "",
       service_category: row.service_category || "",
@@ -98,43 +189,32 @@ async function processPricing(filePath, csp, importId, client) {
       description: row.description || "",
     });
 
-    await client.query(
-      `insert into pricing_item (
-        import_id, csp, catalogitemnumber, title, csoshortname, description,
-        list_unit_price, pricing_unit,
-        jwccunitprice, jwccunitofissue,
-        commercialunitprice, commercialunitofissue,
-        customerunitprice, customerunitofissue,
-        discountpremiumfee, service_category, focus_category
-      ) values (
-        $1,$2,$3,$4,$5,$6,
-        $7,$8,
-        $9,$10,
-        $11,$12,
-        $13,$14,
-        $15,$16,$17
-      )`,
-      [
-        importId, effectiveCsp,
-        row.catalogitemnumber || row.catalog_item_number || "",
-        title,
-        shortname,
-        row.description || "",
-        rawCommPrice,
-        row.commercialunitofissue || "",
-        rawJwccPrice,
-        row.customerunitofissue || "",
-        rawCommPrice,
-        row.commercialunitofissue || "",
-        rawJwccPrice,
-        row.customerunitofissue || "",
-        row.discountpremiumfee || "",
-        row.category || "",
-        focusCat,
-      ]
-    );
+    batch.push([
+      importId, effectiveCsp,
+      row.catalogitemnumber || row.catalog_item_number || "",
+      title,
+      shortname,
+      row.description || "",
+      rawCommPrice,
+      commUnit,
+      rawJwccPrice,
+      jwccUnit,
+      rawCommPrice,
+      commUnit,
+      rawJwccPrice,
+      jwccUnit,
+      row.discountpremiumfee || "",
+      row.category || "",
+      focusCat,
+    ]);
     count++;
+
+    if (batch.length >= PRICING_INSERT_BATCH_SIZE) {
+      await flushPricingInsertBatch(client, batch);
+      batch.length = 0;
+    }
   }
+  if (batch.length) await flushPricingInsertBatch(client, batch);
   return count;
 }
 

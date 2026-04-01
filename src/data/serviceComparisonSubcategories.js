@@ -90,10 +90,18 @@
 
   function resolveServiceCatalogFocusCategory(s) {
     const fcStr = String(s.focus_category || "").trim();
-    if (fcStr && fcStr.toLowerCase() !== "other") return fcStr;
+    const catStr = String(s.category || s.Category || "").trim();
+    const norm = typeof window.normalizeFocusCategory === "function" ? window.normalizeFocusCategory : null;
+    const normFc = norm ? norm(fcStr) : fcStr;
+    const normCat = norm ? norm(catStr) : catStr;
+
+    const pick = v => v && String(v).trim() && String(v).toLowerCase() !== "other";
+    if (pick(normFc)) return normFc;
+    if (pick(normCat)) return normCat;
+
     if (typeof window.resolveParentFocusCategory === "function") {
       return window.resolveParentFocusCategory({
-        category: s.category || s.Category || "",
+        category: catStr,
         csoparentservice: s.csoparentservice || s.csOParentService || "",
         csoshortname: s.csoshortname || s.csoShortName || "",
       });

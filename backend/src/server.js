@@ -272,8 +272,12 @@ app.get("/pricing", async (req, res) => {
     select p.csp, p.catalogitemnumber, p.title, p.csoshortname, p.description,
            p.list_unit_price, p.pricing_unit,
            p.jwccunitprice, p.jwccunitofissue,
-           p.discountpremiumfee, p.service_category, p.focus_category
+           p.discountpremiumfee, p.service_category, p.focus_category,
+           ci.import_month as import_month,
+           ci.imported_at as imported_at,
+           ci.source_file as import_source_file
     from pricing_item p
+    left join catalog_import ci on ci.id = p.import_id
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by p.csp, p.catalogitemnumber
     limit $${limIdx} offset $${offIdx}
@@ -314,8 +318,12 @@ app.get("/exceptions", async (req, res) => {
   params.push(page.limit, page.offset);
 
   const sql = `
-    select e.*
+    select e.*,
+           ci.import_month as import_month,
+           ci.imported_at as imported_at,
+           ci.source_file as import_source_file
     from exception_item e
+    left join catalog_import ci on ci.id = e.import_id
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by e.csp, e.exceptionuniqueid
     limit $${limIdx} offset $${offIdx}
@@ -384,8 +392,12 @@ app.get("/parent-services", async (req, res) => {
     select ps.csp, ps.catalogitemnumber, ps.csoparentservice,
            ps.csoshortname, ps.category, ps.focus_category,
            ps.comparison_subcategory,
-           ps.impactlevel, ps.newservice
+           ps.impactlevel, ps.newservice,
+           ci.import_month as import_month,
+           ci.imported_at as imported_at,
+           ci.source_file as import_source_file
     from parent_service ps
+    left join catalog_import ci on ci.id = ps.import_id
     ${where.length ? `where ${where.join(" and ")}` : ""}
     order by ps.csp, ps.csoshortname
     limit $${limIdx} offset $${offIdx}
