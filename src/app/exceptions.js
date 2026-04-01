@@ -168,13 +168,19 @@
       .replace(/"/g, '&quot;');
   }
 
+  function formatExcImportedAt(iso) {
+    if (!iso) return '—';
+    const d = new Date(iso);
+    return Number.isNaN(d.getTime()) ? String(iso) : d.toLocaleString();
+  }
+
   function exportExceptionsCsv() {
     const rows = window.__excFilteredRows || [];
     if (!rows.length) {
       if (typeof showToast === 'function') showToast('No rows to export', 'error');
       return;
     }
-    const headers = ['csp', 'exceptionuniqueid', 'csoshortname', 'impactlevel', 'exceptionstatus',
+    const headers = ['csp', 'import_month', 'imported_at', 'exceptionuniqueid', 'csoshortname', 'impactlevel', 'exceptionstatus',
       'exceptionpwsrequirement', 'exceptionbasisforrequest', 'exceptionsecurityconsiderations'];
     const lines = [headers.join(',')];
     rows.forEach(r => {
@@ -182,6 +188,8 @@
         let v = r[h];
         if (v === undefined || v === null) {
           if (h === 'csp') v = r.csp_injected || r.csp || '';
+          else if (h === 'import_month') v = r.import_month || '';
+          else if (h === 'imported_at') v = r.imported_at || '';
           else if (h === 'exceptionuniqueid') v = r.uniqueid || '';
           else if (h === 'csoshortname') v = r.shortname || '';
           else if (h === 'exceptionstatus') v = r.status || '';
@@ -280,6 +288,8 @@
 
     const tableRows = rows.slice(0, 500).map(r => `<tr>
       <td>${escHtml(r.csp_injected || r.csp)}</td>
+      <td>${escHtml(r.import_month || '—')}</td>
+      <td>${escHtml(formatExcImportedAt(r.imported_at))}</td>
       <td>${escHtml(r.exceptionuniqueid || r.uniqueid)}</td>
       <td>${escHtml(r.csoshortname || r.shortname)}</td>
       <td>${escHtml(r.impactlevel)}</td>
@@ -328,7 +338,7 @@
       <section class="detail-section">
         <h2>Exception records</h2>
         <table><thead><tr>
-          <th>CSP</th><th>Exception ID</th><th>Short name</th><th>Impact</th><th>Status</th>
+          <th>CSP</th><th>Import month</th><th>Imported at</th><th>Exception ID</th><th>Short name</th><th>Impact</th><th>Status</th>
           <th>PWS requirement</th><th>Basis</th>
         </tr></thead><tbody>${tableRows}</tbody></table>
         ${more}
@@ -452,6 +462,8 @@
     body.innerHTML = rows.map(r => `
       <tr>
         <td><span class="pt-csp-badge ${(r.csp_injected || r.csp || '').toLowerCase()}">${String(r.csp_injected || r.csp || 'CSO').toUpperCase()}</span></td>
+        <td>${r.import_month || '—'}</td>
+        <td>${formatExcImportedAt(r.imported_at)}</td>
         <td>${r.exceptionuniqueid || r.uniqueid || '—'}</td>
         <td>${r.csoshortname || r.shortname || '—'}</td>
         <td>${r.impactlevel || '—'}</td>

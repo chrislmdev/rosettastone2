@@ -47,6 +47,8 @@ create table if not exists pricing_item (
 
 create index if not exists idx_pricing_item_csp_catalog on pricing_item(csp, catalogitemnumber);
 create index if not exists idx_pricing_item_csp on pricing_item(csp);
+create index if not exists idx_pricing_item_import_id on pricing_item(import_id);
+create index if not exists idx_catalog_import_month_schema on catalog_import(import_month, schema_name);
 
 -- Parent service (source-of-truth for title lookup and category)
 create table if not exists parent_service (

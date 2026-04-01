@@ -32,10 +32,29 @@ const CATALOG_API_MAX_LIMIT = Math.max(
   )
 );
 
+/** Paginated GET /pricing/changes — default page size (cap with PRICING_CHANGES_MAX_LIMIT) */
+const PRICING_CHANGES_DEFAULT_LIMIT = Math.max(
+  1,
+  parseInt(process.env.PRICING_CHANGES_DEFAULT_LIMIT || "1000", 10)
+);
+const PRICING_CHANGES_MAX_LIMIT = Math.max(
+  PRICING_CHANGES_DEFAULT_LIMIT,
+  Math.min(parseInt(process.env.PRICING_CHANGES_MAX_LIMIT || "5000", 10), 25000)
+);
+
 function parseCatalogPaging(req) {
   let limit = parseInt(String(req.query.limit ?? ""), 10);
   if (!Number.isFinite(limit) || limit < 1) limit = CATALOG_API_DEFAULT_LIMIT;
   limit = Math.min(limit, CATALOG_API_MAX_LIMIT);
+  let offset = parseInt(String(req.query.offset ?? ""), 10);
+  if (!Number.isFinite(offset) || offset < 0) offset = 0;
+  return { limit, offset };
+}
+
+function parsePricingChangesPaging(req) {
+  let limit = parseInt(String(req.query.limit ?? ""), 10);
+  if (!Number.isFinite(limit) || limit < 1) limit = PRICING_CHANGES_DEFAULT_LIMIT;
+  limit = Math.min(limit, PRICING_CHANGES_MAX_LIMIT);
   let offset = parseInt(String(req.query.offset ?? ""), 10);
   if (!Number.isFinite(offset) || offset < 0) offset = 0;
   return { limit, offset };
@@ -263,6 +282,12 @@ app.get("/pricing", async (req, res) => {
     where.push(`lower(p.focus_category) like $${params.length}`);
   }
 
+  const importMonth = String(req.query.import_month || "").trim();
+  if (importMonth && /^\d{4}-\d{2}$/.test(importMonth)) {
+    params.push(importMonth);
+    where.push(`ci.import_month = $${params.length}`);
+  }
+
   const page = parseCatalogPaging(req);
   const limIdx = params.length + 1;
   const offIdx = params.length + 2;
@@ -284,6 +309,182 @@ app.get("/pricing", async (req, res) => {
   `;
   const { rows } = await pool.query(sql, params);
   res.json(rows);
+});
+
+/**
+ * GET /pricing/changes?from=YYYY-MM&to=YYYY-MM&csp=&change_type=&limit=&offset=
+ * Month-over-month pricing diff (JWCC + commercial/list), paginated.
+ */
+app.get("/pricing/changes", async (req, res) => {
+  const fromM = String(req.query.from || "").trim();
+  const toM = String(req.query.to || "").trim();
+  if (!/^\d{4}-\d{2}$/.test(fromM) || !/^\d{4}-\d{2}$/.test(toM)) {
+    return res
+      .status(400)
+      .json({ error: "Query params from and to are required (YYYY-MM)" });
+  }
+  if (fromM === toM) {
+    return res.status(400).json({ error: "from and to must be different months" });
+  }
+
+  const cspFilter = String(req.query.csp || "").toLowerCase().trim() || null;
+  const changeType = String(req.query.change_type || "")
+    .toLowerCase()
+    .trim();
+  const ctypeParam =
+    changeType && ["added", "removed", "updated"].includes(changeType)
+      ? changeType
+      : null;
+
+  const page = parsePricingChangesPaging(req);
+  const params = [fromM, toM, cspFilter, ctypeParam, page.limit, page.offset];
+
+  const pricingChangesSqlBody = `
+    prev_rows AS (
+      SELECT DISTINCT ON (p.csp, p.catalogitemnumber)
+        p.csp,
+        p.catalogitemnumber,
+        p.title,
+        COALESCE(p.jwccunitprice, p.customerunitprice) AS jwcc_pric,
+        COALESCE(p.list_unit_price, p.commercialunitprice) AS comm_pric,
+        COALESCE(p.discountpremiumfee, '') AS disc,
+        trim(COALESCE(p.jwccunitofissue, p.customerunitofissue, '')) AS jwcc_u,
+        trim(COALESCE(p.pricing_unit, p.commercialunitofissue, '')) AS comm_u
+      FROM pricing_item p
+      INNER JOIN catalog_import ci ON ci.id = p.import_id
+        AND ci.import_month = $1::varchar
+        AND ci.schema_name = 'pricing'
+      WHERE ($3::text IS NULL OR p.csp = $3)
+      ORDER BY p.csp, p.catalogitemnumber, ci.imported_at DESC NULLS LAST, p.id DESC
+    ),
+    curr_rows AS (
+      SELECT DISTINCT ON (p.csp, p.catalogitemnumber)
+        p.csp,
+        p.catalogitemnumber,
+        p.title,
+        COALESCE(p.jwccunitprice, p.customerunitprice) AS jwcc_pric,
+        COALESCE(p.list_unit_price, p.commercialunitprice) AS comm_pric,
+        COALESCE(p.discountpremiumfee, '') AS disc,
+        trim(COALESCE(p.jwccunitofissue, p.customerunitofissue, '')) AS jwcc_u,
+        trim(COALESCE(p.pricing_unit, p.commercialunitofissue, '')) AS comm_u
+      FROM pricing_item p
+      INNER JOIN catalog_import ci ON ci.id = p.import_id
+        AND ci.import_month = $2::varchar
+        AND ci.schema_name = 'pricing'
+      WHERE ($3::text IS NULL OR p.csp = $3)
+      ORDER BY p.csp, p.catalogitemnumber, ci.imported_at DESC NULLS LAST, p.id DESC
+    ),
+    joined AS (
+      SELECT
+        CASE
+          WHEN pr.csp IS NULL THEN 'added'
+          WHEN cr.csp IS NULL THEN 'removed'
+          ELSE 'updated'
+        END AS change_type,
+        COALESCE(cr.csp, pr.csp) AS csp,
+        COALESCE(cr.catalogitemnumber, pr.catalogitemnumber) AS catalogitemnumber,
+        COALESCE(cr.title, pr.title) AS title,
+        pr.jwcc_pric AS prev_jwcc,
+        cr.jwcc_pric AS curr_jwcc,
+        pr.comm_pric AS prev_comm,
+        cr.comm_pric AS curr_comm
+      FROM prev_rows pr
+      FULL OUTER JOIN curr_rows cr
+        ON pr.csp = cr.csp AND pr.catalogitemnumber = cr.catalogitemnumber
+      WHERE
+        pr.csp IS NULL OR cr.csp IS NULL
+        OR pr.jwcc_pric IS DISTINCT FROM cr.jwcc_pric
+        OR pr.comm_pric IS DISTINCT FROM cr.comm_pric
+        OR pr.disc IS DISTINCT FROM cr.disc
+        OR pr.jwcc_u IS DISTINCT FROM cr.jwcc_u
+        OR pr.comm_u IS DISTINCT FROM cr.comm_u
+    ),
+    shaped AS (
+      SELECT
+        $1::varchar AS month_from,
+        $2::varchar AS month_to,
+        j.change_type,
+        j.csp,
+        j.catalogitemnumber,
+        j.title,
+        CASE j.change_type
+          WHEN 'added' THEN COALESCE(j.curr_jwcc, 0)::double precision
+          WHEN 'removed' THEN -COALESCE(j.prev_jwcc, 0)::double precision
+          ELSE (COALESCE(j.curr_jwcc, 0) - COALESCE(j.prev_jwcc, 0))::double precision
+        END AS cust_delta,
+        CASE j.change_type
+          WHEN 'updated' THEN
+            CASE
+              WHEN j.prev_jwcc IS NOT NULL AND j.prev_jwcc::numeric <> 0 THEN
+                (100.0 * (COALESCE(j.curr_jwcc, 0) - COALESCE(j.prev_jwcc, 0))::double precision
+                  / j.prev_jwcc::double precision)
+            END
+          ELSE NULL
+        END AS cust_delta_pct,
+        CASE j.change_type
+          WHEN 'added' THEN COALESCE(j.curr_comm, 0)::double precision
+          WHEN 'removed' THEN -COALESCE(j.prev_comm, 0)::double precision
+          ELSE (COALESCE(j.curr_comm, 0) - COALESCE(j.prev_comm, 0))::double precision
+        END AS comm_delta,
+        CASE j.change_type
+          WHEN 'updated' THEN
+            CASE
+              WHEN j.prev_comm IS NOT NULL AND j.prev_comm::numeric <> 0 THEN
+                (100.0 * (COALESCE(j.curr_comm, 0) - COALESCE(j.prev_comm, 0))::double precision
+                  / j.prev_comm::double precision)
+            END
+          ELSE NULL
+        END AS comm_delta_pct
+      FROM joined j
+    )
+  `;
+
+  const countSql = `WITH ${pricingChangesSqlBody}
+    SELECT count(*)::bigint AS n FROM shaped s
+    WHERE ($4::text IS NULL OR s.change_type = $4)`;
+
+  const dataSql = `WITH ${pricingChangesSqlBody}
+    SELECT * FROM shaped s
+    WHERE ($4::text IS NULL OR s.change_type = $4)
+    ORDER BY s.csp, s.catalogitemnumber
+    LIMIT $5 OFFSET $6`;
+
+  try {
+    const metaFrom = await pool.query(
+      `select max(imported_at) as imported_at
+       from catalog_import
+       where import_month = $1 and schema_name = 'pricing'`,
+      [fromM]
+    );
+    const metaTo = await pool.query(
+      `select max(imported_at) as imported_at
+       from catalog_import
+       where import_month = $1 and schema_name = 'pricing'`,
+      [toM]
+    );
+
+    const countParams = [fromM, toM, cspFilter, ctypeParam];
+    const { rows: countRows } = await pool.query(countSql, countParams);
+    const total = Number(countRows[0]?.n || 0);
+
+    const { rows } = await pool.query(dataSql, params);
+
+    res.json({
+      meta: {
+        month_from: fromM,
+        month_to: toM,
+        imported_at_from: metaFrom.rows[0]?.imported_at ?? null,
+        imported_at_to: metaTo.rows[0]?.imported_at ?? null,
+        total,
+        limit: page.limit,
+        offset: page.offset,
+      },
+      rows,
+    });
+  } catch (err) {
+    console.error("pricing/changes error:", err);
+    res.status(500).json({ error: err.message || String(err) });
+  }
 });
 
 // ── Exceptions ────────────────────────────────────────────────

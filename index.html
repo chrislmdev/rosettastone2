@@ -3627,6 +3627,8 @@
           <thead>
             <tr>
               <th>CSP</th>
+              <th>Import month</th>
+              <th>Imported at</th>
               <th>Exception ID</th>
               <th>Short Name</th>
               <th>Impact Level</th>
@@ -3654,11 +3656,12 @@
         <div>
           <h2>Catalog Change Report</h2>
           <p>Track adds/removes/updates and monthly price fluctuations keyed by CSP + Catalog Item #.</p>
+          <p id="chgCompareBanner" class="chg-compare-banner" style="display:none;margin:8px 0 0;font-size:12px;color:var(--text-muted);font-family:var(--mono)"></p>
         </div>
       </div>
       <div class="p-toolbar">
         <div class="select-wrap">
-          <select id="chgCspFilter" onchange="renderCatalogChanges()">
+          <select id="chgCspFilter" onchange="onCatalogChangesFilterChange()">
             <option value="">CSP: All</option>
             <option value="aws">AWS</option>
             <option value="azure">Azure</option>
@@ -3668,7 +3671,7 @@
           <span class="select-arrow">▾</span>
         </div>
         <div class="select-wrap">
-          <select id="chgTypeFilter" onchange="renderCatalogChanges()">
+          <select id="chgTypeFilter" onchange="onCatalogChangesFilterChange()">
             <option value="">Change Type: All</option>
             <option value="added">Added</option>
             <option value="removed">Removed</option>
@@ -3676,6 +3679,9 @@
           </select>
           <span class="select-arrow">▾</span>
         </div>
+        <span id="chgLoading" style="display:none;font-size:11px;color:var(--text-muted)">Loading…</span>
+        <button type="button" class="btn btn-ghost" id="chgBtnPrev" style="font-size:11px;padding:4px 10px" onclick="chgPrevPage()">Prev</button>
+        <button type="button" class="btn btn-ghost" id="chgBtnNext" style="font-size:11px;padding:4px 10px" onclick="chgNextPage()">Next</button>
         <span id="chgCount" style="font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-left:auto"></span>
       </div>
       <div class="pricing-table-wrap">
@@ -3696,7 +3702,7 @@
         </table>
         <div id="chgEmpty" class="empty-state" style="display:none">
           <div class="es-icon">Δ</div>
-          <p>No change data yet. Load a month and compare against prior month.</p>
+          <p>No change data yet. Import pricing for at least two distinct <strong>import months</strong> via the API, then open this tab (or use Admin CSV uploads with import months for a browser-only comparison).</p>
         </div>
       </div>
     </div>
@@ -3820,6 +3826,18 @@
     let csoPricingEnriched = [];
     let catalogHistoryByMonth = {};
     let catalogChanges = [];
+    /** @type {{ month_from?: string, month_to?: string, imported_at_from?: string, imported_at_to?: string, total?: number, limit?: number, offset?: number } | null} */
+    let catalogChangesMeta = null;
+    /** 'none' | 'client' (browser CSV history) | 'api' (GET /pricing/changes) */
+    let catalogChangesSource = 'none';
+    let catalogChangesOffset = 0;
+    const CATALOG_CHANGES_PAGE_LIMIT = 1000;
+
+    function currentChgLimit() {
+      return catalogChangesMeta && catalogChangesMeta.limit > 0
+        ? catalogChangesMeta.limit
+        : CATALOG_CHANGES_PAGE_LIMIT;
+    }
 
     function syncSharedState() {
       window.csoPricingData = csoPricingData;
@@ -3828,6 +3846,8 @@
       window.csoPricingEnriched = csoPricingEnriched;
       window.catalogChanges = catalogChanges;
       window.catalogHistoryByMonth = catalogHistoryByMonth;
+      window.catalogChangesMeta = catalogChangesMeta;
+      window.catalogChangesSource = catalogChangesSource;
     }
     syncSharedState();
 
@@ -3910,6 +3930,7 @@
           csoPricingData,
           csoExceptionData,
           csOParentServiceData,
+          // catalogHistoryByMonth is intentionally omitted — multi-month full catalogs exceed quota.
         }));
       } catch (e) {
         console.warn('Catalog snapshot save failed', e);
@@ -3928,9 +3949,29 @@
       updateAdminMeta('csoException');
       updateAdminMeta('csOParentService');
       if (typeof calcRun === 'function') calcRun();
-      if (window.computeCatalogChanges) catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth);
+
+      const monthKeys = Object.keys(catalogHistoryByMonth || {}).filter(
+        k => Array.isArray(catalogHistoryByMonth[k]) && catalogHistoryByMonth[k].length
+      ).sort();
+      if (monthKeys.length >= 2 && window.computeCatalogChanges) {
+        catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth);
+        catalogChangesSource = 'client';
+        catalogChangesMeta = {
+          month_from: monthKeys[monthKeys.length - 2],
+          month_to: monthKeys[monthKeys.length - 1],
+          total: catalogChanges.length,
+          limit: catalogChanges.length,
+          offset: 0,
+        };
+      } else {
+        catalogChanges = [];
+        catalogChangesSource = 'none';
+        catalogChangesMeta = null;
+        catalogChangesOffset = 0;
+      }
       syncSharedState();
       if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+      if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
     }
 
     function restoreCatalogSnapshot() {
@@ -3942,6 +3983,7 @@
         csoPricingData = p.csoPricingData;
         csoExceptionData = Array.isArray(p.csoExceptionData) ? p.csoExceptionData : [];
         csOParentServiceData = Array.isArray(p.csOParentServiceData) ? p.csOParentServiceData : [];
+        catalogHistoryByMonth = {};
         refreshAllViewsAfterDataLoad();
         showToast('✓ Restored catalog snapshot', 'success');
       } catch (e) {
@@ -3968,6 +4010,7 @@
         pricing_unit: r.pricing_unit,
         commercialunitofissue: r.pricing_unit,
         jwccunitprice: r.jwccunitprice,
+        customerunitprice: r.jwccunitprice ?? r.customerunitprice,
         jwccunitofissue: r.jwccunitofissue,
         discountpremiumfee: r.discountpremiumfee || '',
         service_category: r.service_category,
@@ -4039,6 +4082,7 @@
         const chunks = await Promise.all(csps.map(csp => fetchCspPaged(path, csp, label)));
         return chunks.flat();
       }
+      catalogHistoryByMonth = {};
       const [pricingJson, exJson, paJson] = await Promise.all([
         fetchAllCsp('/pricing', 'pricing'),
         fetchAllCsp('/exceptions', 'exceptions'),
@@ -4066,6 +4110,117 @@
       } catch (err) {
         showToast('API load failed: ' + formatFetchError(err, getApiBase()), 'error');
       }
+    }
+
+    function onCatalogChangesFilterChange() {
+      if (catalogChangesSource === 'client') {
+        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+        return;
+      }
+      loadCatalogPricingChangesFromApi(true);
+    }
+
+    function chgPrevPage() {
+      if (catalogChangesSource !== 'api' || catalogChangesOffset <= 0) return;
+      const lim = currentChgLimit();
+      catalogChangesOffset = Math.max(0, catalogChangesOffset - lim);
+      loadCatalogPricingChangesFromApi(false);
+    }
+
+    function chgNextPage() {
+      if (catalogChangesSource !== 'api' || !catalogChangesMeta) return;
+      const lim = currentChgLimit();
+      const next = catalogChangesOffset + lim;
+      if (next >= (catalogChangesMeta.total || 0)) return;
+      catalogChangesOffset = next;
+      loadCatalogPricingChangesFromApi(false);
+    }
+
+    /** Load paginated pricing deltas from API (Catalog Changes tab). Skips when browser CSV history drives the tab. */
+    async function loadCatalogPricingChangesFromApi(resetOffset) {
+      if (catalogChangesSource === 'client') return;
+      if (resetOffset) catalogChangesOffset = 0;
+
+      const base = getApiBase();
+      const token = getApiToken();
+      const headers = { Accept: 'application/json' };
+      if (token) headers['Authorization'] = 'Bearer ' + token;
+
+      const loadEl = document.getElementById('chgLoading');
+      if (loadEl) loadEl.style.display = 'inline';
+
+      try {
+        const impRes = await fetch(`${base}/imports`, { headers });
+        if (!impRes.ok) throw new Error(`imports HTTP ${impRes.status}`);
+        const imports = await impRes.json();
+        const months = [
+          ...new Set(
+            (imports || [])
+              .filter(r => String(r.schema_name || '').toLowerCase() === 'pricing')
+              .map(r => r.import_month)
+              .filter(Boolean)
+          ),
+        ].sort();
+        if (months.length < 2) {
+          catalogChanges = [];
+          catalogChangesMeta = null;
+          catalogChangesSource = 'none';
+          syncSharedState();
+          if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+          if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+          return;
+        }
+        const fromM = months[months.length - 2];
+        const toM = months[months.length - 1];
+        const csp = String(document.getElementById('chgCspFilter')?.value || '')
+          .toLowerCase()
+          .trim();
+        const ctype = String(document.getElementById('chgTypeFilter')?.value || '')
+          .toLowerCase()
+          .trim();
+        const qs = new URLSearchParams({
+          from: fromM,
+          to: toM,
+          limit: String(currentChgLimit()),
+          offset: String(catalogChangesOffset),
+        });
+        if (csp) qs.set('csp', csp);
+        if (ctype) qs.set('change_type', ctype);
+
+        const res = await fetch(`${base}/pricing/changes?${qs}`, { headers });
+        if (!res.ok) {
+          const t = await res.text();
+          throw new Error(t || `pricing/changes HTTP ${res.status}`);
+        }
+        const payload = await res.json();
+        catalogChanges = Array.isArray(payload.rows) ? payload.rows : [];
+        catalogChangesMeta = payload.meta || null;
+        catalogChangesSource = 'api';
+        syncSharedState();
+        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+        if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+      } catch (err) {
+        console.warn('Catalog changes API:', err);
+        catalogChanges = [];
+        catalogChangesMeta = null;
+        catalogChangesSource = 'none';
+        syncSharedState();
+        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+        if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+        if (typeof showToast === 'function') {
+          showToast('Catalog changes: ' + formatFetchError(err, getApiBase()), 'error');
+        }
+      } finally {
+        if (loadEl) loadEl.style.display = 'none';
+      }
+    }
+
+    function ensureCatalogChangesWhenTabVisible() {
+      if (catalogChangesSource === 'client') {
+        if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+        return;
+      }
+      loadCatalogPricingChangesFromApi(catalogChangesSource !== 'api');
     }
 
     /** Keep keyword rules in sync with backend/src/importInference.js */
@@ -5325,6 +5480,7 @@
       document.getElementById('page-' + name).classList.add('active');
       if (btn) btn.classList.add('active');
       if (name === 'admin') updateAdminBatchBackendHint();
+      if (name === 'changes') ensureCatalogChangesWhenTabVisible();
     }
 
     // ── ADMIN LOGIC ──────────────────────────────────────────────
@@ -5471,9 +5627,26 @@
           catalogHistoryByMonth[monthKey] = catalogHistoryByMonth[monthKey].filter(r => (r.csp_injected || '') !== (injectedCSP || '').toLowerCase());
           catalogHistoryByMonth[monthKey].push(...forCsp);
         }
-        if (window.computeCatalogChanges) catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth);
+        if (window.computeCatalogChanges) {
+          catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth);
+          const mk = Object.keys(catalogHistoryByMonth || {}).filter(
+            k => Array.isArray(catalogHistoryByMonth[k]) && catalogHistoryByMonth[k].length
+          ).sort();
+          catalogChangesSource = 'client';
+          catalogChangesMeta =
+            mk.length >= 2
+              ? {
+                  month_from: mk[mk.length - 2],
+                  month_to: mk[mk.length - 1],
+                  total: catalogChanges.length,
+                  limit: catalogChanges.length,
+                  offset: 0,
+                }
+              : null;
+        }
         syncSharedState();
         if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+        if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
       }
       if (typeof calcRun === 'function') calcRun();
       persistCatalogSnapshot();

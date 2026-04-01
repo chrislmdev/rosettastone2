@@ -6,13 +6,13 @@ This repository ships a **static SPA** plus an **Express API**, **PostgreSQL**, 
 
 | Layer | Role |
 |--------|------|
-| **web** | Nginx serves the repo root (`index.html`, `src/`, assets) on port **8080**. Config: [`infra/nginx/default.conf`](infra/nginx/default.conf) sets **`client_max_body_size 100m`** (mounted in Compose). |
+| **web** | Nginx serves the repo root (`index.html`, `src/`, assets) on port **8080**. Config: [`infra/nginx/default.conf`](infra/nginx/default.conf) sets **`client_max_body_size 100m`** (mounted in Compose). Raise this if you upload very large pricing CSVs through the UI. |
 | **api** | Express on port **3001**: health, auth, read APIs, CSV upload → queue. |
 | **worker** | Node process: BullMQ consumer; parses CSVs, writes Postgres, enqueues follow-up work. |
 | **db** | PostgreSQL 16; catalog and auth tables (see below). |
 | **redis** | BullMQ job queue and coordination. |
 
-The browser loads data via `fetch` to the API (Admin → backend URL defaults to `http://localhost:3001`) and can persist a **local snapshot** of catalogs in `localStorage` for offline-ish reload.
+The browser loads data via `fetch` to the API (Admin → backend URL defaults to `http://localhost:3001`) and can persist a **local snapshot** of catalogs in `localStorage` for offline-ish reload. Snapshots **do not** include multi-month **`catalogHistoryByMonth`** (would exceed quota for large catalogs). The **Catalog Changes** tab loads **`GET /pricing/changes`** on first visit after an API catalog load (lazy), not during the main pricing fetch.
 
 ## Dependencies (runtime)
 
@@ -69,7 +69,8 @@ Shared query parameters where supported:
 | Method | Path | Query (examples) |
 |--------|------|------------------|
 | `GET` | `/imports` | — (last 200 imports) |
-| `GET` | `/pricing` | `csp`, `q`, `focus_category`, `limit`, `offset` — rows include **`import_month`**, **`imported_at`**, **`import_source_file`** (from `catalog_import`). |
+| `GET` | `/pricing` | `csp`, `q`, `focus_category`, **`import_month`** (`YYYY-MM`, optional — narrows rows to that pricing import month), `limit`, `offset` — rows include **`import_month`**, **`imported_at`**, **`import_source_file`** (from `catalog_import`). |
+| `GET` | **`/pricing/changes`** | **`from`**, **`to`** (required `YYYY-MM`, distinct) — month-over-month diff over `pricing_item` + `catalog_import` (`schema_name = 'pricing'`). Optional: **`csp`**, **`change_type`** (`added` \| `removed` \| `updated`), **`limit`**, **`offset`**. Response: **`{ meta, rows }`** where **`meta`** has **`month_from`**, **`month_to`**, **`imported_at_from`**, **`imported_at_to`**, **`total`**, **`limit`**, **`offset`**; each row matches client diff shape (`change_type`, `csp`, `catalogitemnumber`, `title`, `cust_delta`, `cust_delta_pct`, `comm_delta`, `comm_delta_pct`, `month_from`, `month_to`). Uses latest `imported_at` per SKU within each month (`DISTINCT ON`). |
 | `GET` | `/exceptions` | `csp`, `status`, `impact_level`, `service`, `limit`, `offset` — same import provenance fields as pricing. |
 | `GET` | `/parent-services` | `csp`, `limit`, `offset` — same import provenance fields as pricing. |
 | `GET` | `/changes` | `csp` (limit 1000) |
@@ -114,6 +115,7 @@ Shared UI patterns:
 | `UPLOAD_DIR` | Writable directory for uploaded CSVs (default under `/tmp/...` in container). |
 | `UPLOAD_MAX_FILE_MB` | Per-file upload size cap. |
 | `CATALOG_API_DEFAULT_LIMIT` / `CATALOG_API_MAX_LIMIT` | Page size bounds for catalog GET endpoints. |
+| `PRICING_CHANGES_DEFAULT_LIMIT` / `PRICING_CHANGES_MAX_LIMIT` | Page size bounds for **`GET /pricing/changes`** (defaults **1000** / **5000**). |
 | `PRICING_INSERT_BATCH_SIZE` | Worker: rows per batched `INSERT` for pricing CSV (default **1000**, max 5000). |
 
 ## Intranet deployment

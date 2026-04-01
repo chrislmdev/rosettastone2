@@ -4,6 +4,32 @@
     return Number.isFinite(n) ? n : 0;
   }
 
+  /** JWCC / contracted side (API: jwccunitprice; legacy CSV: customerunitprice). */
+  function jwccPrice(r) {
+    return toNum(
+      r.jwccunitprice ?? r.customerunitprice ?? r.custunitprice
+    );
+  }
+
+  /** Commercial / list side (API: list_unit_price; legacy: commercialunitprice). */
+  function commPrice(r) {
+    return toNum(
+      r.list_unit_price ?? r.commercialunitprice ?? r.communitprice
+    );
+  }
+
+  function jwccUnit(r) {
+    return String(
+      r.jwccunitofissue ?? r.customerunitofissue ?? r.custunitofissue ?? ''
+    ).trim();
+  }
+
+  function commUnit(r) {
+    return String(
+      r.pricing_unit ?? r.commercialunitofissue ?? r.communitofissue ?? ''
+    ).trim();
+  }
+
   function buildKey(r) {
     return `${(r.csp_injected || r.csp || '').toLowerCase()}|${(r.catalogitemnumber || r.catalognum || '').toLowerCase()}`;
   }
@@ -28,6 +54,8 @@
       const prev = prevMap.get(key);
       const curr = currMap.get(key);
       if (!prev && curr) {
+        const jc = jwccPrice(curr);
+        const cc = commPrice(curr);
         out.push({
           month_from: previous,
           month_to: current,
@@ -35,14 +63,16 @@
           csp: (curr.csp_injected || curr.csp || '').toLowerCase(),
           catalogitemnumber: curr.catalogitemnumber || curr.catalognum || '',
           title: curr.title || '',
-          cust_delta: toNum(curr.customerunitprice || curr.custunitprice),
+          cust_delta: jc,
           cust_delta_pct: null,
-          comm_delta: toNum(curr.commercialunitprice || curr.communitprice),
+          comm_delta: cc,
           comm_delta_pct: null
         });
         return;
       }
       if (prev && !curr) {
+        const jp = jwccPrice(prev);
+        const cp = commPrice(prev);
         out.push({
           month_from: previous,
           month_to: current,
@@ -50,24 +80,24 @@
           csp: (prev.csp_injected || prev.csp || '').toLowerCase(),
           catalogitemnumber: prev.catalogitemnumber || prev.catalognum || '',
           title: prev.title || '',
-          cust_delta: -toNum(prev.customerunitprice || prev.custunitprice),
+          cust_delta: -jp,
           cust_delta_pct: null,
-          comm_delta: -toNum(prev.commercialunitprice || prev.communitprice),
+          comm_delta: -cp,
           comm_delta_pct: null
         });
         return;
       }
 
-      const prevCust = toNum(prev.customerunitprice || prev.custunitprice);
-      const currCust = toNum(curr.customerunitprice || curr.custunitprice);
-      const prevComm = toNum(prev.commercialunitprice || prev.communitprice);
-      const currComm = toNum(curr.commercialunitprice || curr.communitprice);
+      const prevCust = jwccPrice(prev);
+      const currCust = jwccPrice(curr);
+      const prevComm = commPrice(prev);
+      const currComm = commPrice(curr);
       const custDelta = currCust - prevCust;
       const commDelta = currComm - prevComm;
       const changed = custDelta !== 0 || commDelta !== 0 ||
         (prev.discountpremiumfee || '') !== (curr.discountpremiumfee || '') ||
-        (prev.customerunitofissue || '') !== (curr.customerunitofissue || '') ||
-        (prev.commercialunitofissue || '') !== (curr.commercialunitofissue || '');
+        jwccUnit(prev) !== jwccUnit(curr) ||
+        commUnit(prev) !== commUnit(curr);
 
       if (changed) {
         out.push({
