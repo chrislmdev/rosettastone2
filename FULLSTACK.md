@@ -97,12 +97,14 @@ Schema source: `infra/db/init.sql`.
 - **`index.html`** — Shell, styles, inline app logic (navigation, Services, Pricing, Admin, calculator, shared multi-select state).
 - **`src/app/exceptions.js`** — Exceptions table, charts, CSV/PDF export, `renderExceptions` / `initExceptionsPage`.
 - **`src/app/changes.js`** — Catalog change views where applicable.
+- **`src/app/reports.js`** — **Reports** menu in the nav: runs built-in reports and opens a **print** window (user chooses **Save as PDF** in the browser), using the same pattern as Exceptions PDF export. Entry points: **`window.runCloudPrismReport(id)`**, extensibility via **`window.CLOUDPRISM_REPORTS_REGISTRY`**. **Exceptions library** delegates to **`exportExceptionsPdf`**. **Catalog changes summary** builds Chart.js figures from **`window.catalogChanges`** / **`window.catalogChangesMeta`** only (for API-backed changes, charts reflect the **current paginated page**, not the full multi-hundred-thousand-row diff).
 - **`src/data/*.js`** — Taxonomy / inference helpers loaded as scripts.
 
 Shared UI patterns:
 
 - **Pricing** CSP filter: `priceFilters` + `pf-aws` … `pf-oracle` buttons.
 - **Exceptions** CSP filter: `excCspFilters` + `exc-pf-*` buttons (same visual pattern, separate state so tabs do not clash).
+- **Reports** dropdown (nav): on-demand reports; the browser must allow pop-ups for the print / Save as PDF flow.
 
 ## Environment variables (API / worker)
 

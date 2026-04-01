@@ -154,6 +154,37 @@
       opacity: 1
     }
 
+    .nav-reports-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 12px;
+      border-left: 1px solid var(--border2);
+      margin-left: 4px;
+      height: 100%;
+    }
+
+    .nav-reports-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .nav-reports-select {
+      font-family: var(--mono);
+      font-size: 10px;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border2);
+      border-radius: 4px;
+      padding: 5px 8px;
+      max-width: 260px;
+      cursor: pointer;
+    }
+
     .nav-right {
       margin-left: auto;
       display: flex;
@@ -2834,6 +2865,15 @@
           </svg>
           <span>Admin</span>
         </button>
+        <div class="nav-reports-wrap">
+          <label class="nav-reports-label" for="navReportsSelect">Reports</label>
+          <select id="navReportsSelect" class="nav-reports-select" title="Run a report and print to PDF"
+            onchange="onNavReportChange(this)">
+            <option value="">Select…</option>
+            <option value="exceptions_library">Exceptions library (PDF)</option>
+            <option value="catalog_changes_summary">Catalog changes summary (PDF)</option>
+          </select>
+        </div>
       </div>
       <div class="nav-right">
         <span class="focus-pill">FOCUS 1.3 · <a href="https://focus.finops.org/focus-specification/v1-3/"
@@ -3801,6 +3841,13 @@
     </div>
   </div>
 
+  <div id="reportChartHost" aria-hidden="true"
+    style="position:fixed;left:-9999px;top:0;width:400px;height:800px;overflow:hidden;opacity:0;pointer-events:none">
+    <canvas id="repChartType" width="380" height="240"></canvas>
+    <canvas id="repChartCsp" width="380" height="240"></canvas>
+    <canvas id="repChartJwcc" width="380" height="240"></canvas>
+  </div>
+
   <footer>
     <div class="footer-inner">
       <span>Service data based on public documentation. Categories aligned to <a
@@ -3816,6 +3863,7 @@
   <script src="src/data/diff.js"></script>
   <script src="src/app/exceptions.js"></script>
   <script src="src/app/changes.js"></script>
+  <script src="src/app/reports.js"></script>
   <script>
     // ════════════════════════════════════════════════════════════
     // DYNAMIC DATA MODELS (Modernized)
@@ -4837,13 +4885,24 @@
     // Duplicate renderPricing removed from here to consolidate with the primary renderer.
 
     function dedupeParentServiceRows(arr) {
+      const norm = t => String(t || '').toLowerCase().replace(/\s+/g, ' ').trim();
       const seen = new Set();
       const out = [];
+      let anon = 0;
       for (const s of arr) {
         const csp = String(s.csp_injected || s.csp || '').toLowerCase().trim();
         const cat = String(s.catalogitemnumber || '').trim();
-        const sn = String(s.csoshortname || s.csoShortName || '').trim().toLowerCase();
-        const k = `${csp}|${cat}|${sn}`;
+        const shortN = norm(s.csoshortname || s.csoShortName || '');
+        const parent = norm(s.csoparentservice || s.csOParentService || '');
+        let k;
+        if (cat) {
+          k = `${csp}|cat:${cat.toLowerCase()}`;
+        } else {
+          const pair = [shortN, parent].filter(Boolean).sort();
+          if (pair.length >= 2) k = `${csp}|nm:${pair[0]}|${pair[1]}`;
+          else if (pair.length === 1) k = `${csp}|nm:${pair[0]}`;
+          else k = `${csp}|row:${anon++}`;
+        }
         if (seen.has(k)) continue;
         seen.add(k);
         out.push(s);
@@ -4991,6 +5050,7 @@
     function mergeServiceRowsForCell(svcs) {
       const normKey = t => String(t || '').toLowerCase().replace(/\s+/g, ' ').trim();
       const byKey = new Map();
+      let anon = 0;
       for (const s of svcs) {
         const parentSvc = String(s.csoparentservice || s.csOParentService || '').trim();
         const shortN = String(s.csoshortname || s.csoShortName || '').trim();
@@ -4999,10 +5059,22 @@
           shortN ||
           String(s.title || s.name || 'Unknown').trim();
         const catNum = (s.catalogitemnumber || s.catalogitemNumber || '').toString().trim();
-        let key = normKey(parentSvc || shortN);
-        if (!key) key = normKey(catNum);
-        if (!key) key = normKey(displayTitle);
-        if (!key) key = `__row_${byKey.size}`;
+
+        let key;
+        if (catNum) {
+          key = `n:${catNum.toLowerCase()}`;
+        } else {
+          const a = normKey(shortN);
+          const b = normKey(parentSvc);
+          const pair = [a, b].filter(Boolean).sort();
+          if (pair.length >= 2) key = `s:${pair[0]}|${pair[1]}`;
+          else if (pair.length === 1) key = `s:${pair[0]}`;
+          else {
+            const t = normKey(displayTitle);
+            key = t ? `t:${t}` : `__row_${anon++}`;
+          }
+        }
+
         const rawIL = s.impactlevel || s.ImpactLevel || '';
         const levels = String(rawIL).split('|').map(l => l.trim().toUpperCase()).filter(Boolean);
         const ns = !!(s.newservice || s.newService);
@@ -5027,14 +5099,34 @@
         const rest = [...set].filter(x => !SVC_IL_ORDER.includes(x)).sort();
         return [...ordered, ...rest];
       };
-      return [...byKey.values()]
-        .map(g => ({
-          name: g.name,
-          il: sortIl(g.ils),
-          newService: g.newService,
-          newlyAuthorizedIL5: g.newlyAuthorizedIL5,
-        }))
-        .sort((a, b) => a.name.localeCompare(b.name));
+
+      const preliminary = [...byKey.values()].map(g => ({
+        name: g.name,
+        il: sortIl(g.ils),
+        newService: g.newService,
+        newlyAuthorizedIL5: g.newlyAuthorizedIL5,
+      }));
+
+      const byDisplay = new Map();
+      for (const row of preliminary) {
+        const dk = normKey(row.name);
+        if (!dk) {
+          byDisplay.set(`__empty_${byDisplay.size}`, row);
+          continue;
+        }
+        if (!byDisplay.has(dk)) {
+          byDisplay.set(dk, { ...row, il: [...row.il] });
+        } else {
+          const t = byDisplay.get(dk);
+          const merged = new Set([...(t.il || []), ...(row.il || [])]);
+          t.il = sortIl(merged);
+          if (row.newService) t.newService = true;
+          if (row.newlyAuthorizedIL5) t.newlyAuthorizedIL5 = true;
+          if ((row.name || '').length > (t.name || '').length) t.name = row.name;
+        }
+      }
+
+      return [...byDisplay.values()].sort((a, b) => a.name.localeCompare(b.name));
     }
 
     function renderCspCellGroup(svcs) {
@@ -5470,6 +5562,17 @@
     // ════════════════════════════════════════════════════════════
     // PAGE SWITCHING
     // ════════════════════════════════════════════════════════════
+    function onNavReportChange(sel) {
+      const v = sel && sel.value;
+      if (!v) return;
+      sel.value = '';
+      if (typeof window.runCloudPrismReport !== 'function') {
+        showToast('Reports module not loaded', 'error');
+        return;
+      }
+      Promise.resolve(window.runCloudPrismReport(v)).catch(() => {});
+    }
+
     function switchPage(name, btn) {
       if (name === 'igce') {
         showToast('IGCE builder moved to a separate app', 'error');
