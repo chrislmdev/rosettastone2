@@ -3633,7 +3633,6 @@
               <th>Status</th>
               <th>PWS Requirement</th>
               <th>Basis</th>
-              <th>Security</th>
             </tr>
           </thead>
           <tbody id="excBody"></tbody>
@@ -4835,6 +4834,7 @@
     const SVC_IL_ORDER = ['IL2', 'IL3', 'IL4', 'IL5', 'IL6'];
 
     function mergeServiceRowsForCell(svcs) {
+      const normKey = t => String(t || '').toLowerCase().replace(/\s+/g, ' ').trim();
       const byKey = new Map();
       for (const s of svcs) {
         const parentSvc = String(s.csoparentservice || s.csOParentService || '').trim();
@@ -4844,16 +4844,28 @@
           shortN ||
           String(s.title || s.name || 'Unknown').trim();
         const catNum = (s.catalogitemnumber || s.catalogitemNumber || '').toString().trim();
-        const key = (catNum || parentSvc || shortN || displayTitle).toLowerCase();
+        let key = normKey(parentSvc || shortN);
+        if (!key) key = normKey(catNum);
+        if (!key) key = normKey(displayTitle);
+        if (!key) key = `__row_${byKey.size}`;
         const rawIL = s.impactlevel || s.ImpactLevel || '';
         const levels = String(rawIL).split('|').map(l => l.trim().toUpperCase()).filter(Boolean);
         const ns = !!(s.newservice || s.newService);
+        const il5New = !!(s.newlyauthorizedil5 || s.newlyAuthorizedIL5);
         if (!byKey.has(key)) {
-          byKey.set(key, { name: displayTitle, ils: new Set(), newService: false });
+          byKey.set(key, {
+            name: displayTitle,
+            ils: new Set(),
+            newService: false,
+            newlyAuthorizedIL5: false,
+          });
         }
         const g = byKey.get(key);
+        if (parentSvc && parentSvc.length > (g.name || '').length) g.name = parentSvc;
+        else if (!g.name || g.name === 'Unknown') g.name = displayTitle;
         levels.forEach(l => g.ils.add(l));
         if (ns) g.newService = true;
+        if (il5New) g.newlyAuthorizedIL5 = true;
       }
       const sortIl = set => {
         const ordered = SVC_IL_ORDER.filter(x => set.has(x));
@@ -4861,7 +4873,12 @@
         return [...ordered, ...rest];
       };
       return [...byKey.values()]
-        .map(g => ({ name: g.name, il: sortIl(g.ils), newService: g.newService }))
+        .map(g => ({
+          name: g.name,
+          il: sortIl(g.ils),
+          newService: g.newService,
+          newlyAuthorizedIL5: g.newlyAuthorizedIL5,
+        }))
         .sort((a, b) => a.name.localeCompare(b.name));
     }
 

@@ -286,7 +286,6 @@
       <td>${escHtml(r.exceptionstatus || r.status)}</td>
       <td>${escHtml(r.exceptionpwsrequirement)}</td>
       <td>${escHtml(r.exceptionbasisforrequest)}</td>
-      <td>${escHtml(r.exceptionsecurityconsiderations || r.exceptionsecurity)}</td>
     </tr>`).join('');
 
     const more = rows.length > 500 ? `<p class="note">First 500 of ${rows.length} rows shown. Use CSV export for the full dataset.</p>` : '';
@@ -330,7 +329,7 @@
         <h2>Exception records</h2>
         <table><thead><tr>
           <th>CSP</th><th>Exception ID</th><th>Short name</th><th>Impact</th><th>Status</th>
-          <th>PWS requirement</th><th>Basis</th><th>Security</th>
+          <th>PWS requirement</th><th>Basis</th>
         </tr></thead><tbody>${tableRows}</tbody></table>
         ${more}
       </section>
@@ -459,7 +458,6 @@
         <td>${r.exceptionstatus || r.status || '—'}</td>
         <td>${r.exceptionpwsrequirement || '—'}</td>
         <td>${r.exceptionbasisforrequest || '—'}</td>
-        <td>${r.exceptionsecurityconsiderations || r.exceptionsecurity || '—'}</td>
       </tr>
     `).join('');
 
