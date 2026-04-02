@@ -23,6 +23,13 @@
     return `${sign}${n.toFixed(2)}%`;
   }
 
+  function fmtChgPrice(v) {
+    if (v === null || v === undefined) return '—';
+    const n = Number(v);
+    if (!Number.isFinite(n)) return '—';
+    return `$${n.toFixed(4)}`;
+  }
+
   function destroyReportCharts() {
     reportChartInstances.forEach(c => {
       try {
@@ -298,8 +305,12 @@
         <td>${escHtml(r.title)}</td>
         <td>${escHtml(r.change_type)}</td>
         <td>${escHtml(noteFn(r))}</td>
+        <td>${escHtml(fmtChgPrice(r.prev_jwcc))}</td>
+        <td>${escHtml(fmtChgPrice(r.curr_jwcc))}</td>
         <td>${escHtml(fmtDelta(r.cust_delta))}</td>
         <td>${escHtml(fmtPct(r.cust_delta_pct))}</td>
+        <td>${escHtml(fmtChgPrice(r.prev_comm))}</td>
+        <td>${escHtml(fmtChgPrice(r.curr_comm))}</td>
         <td>${escHtml(fmtDelta(r.comm_delta))}</td>
         <td>${escHtml(fmtPct(r.comm_delta_pct))}</td>
       </tr>`
@@ -315,7 +326,8 @@
         <h2>Change records (sample)</h2>
         <table><thead><tr>
           <th>CSP</th><th>Catalog #</th><th>Title</th><th>Type</th><th>Notes</th>
-          <th>JWCC Δ</th><th>JWCC Δ%</th><th>Comm Δ</th><th>Comm Δ%</th>
+          <th>JWCC (from)</th><th>JWCC (to)</th><th>JWCC Δ</th><th>JWCC Δ%</th>
+          <th>Comm (from)</th><th>Comm (to)</th><th>Comm Δ</th><th>Comm Δ%</th>
         </tr></thead><tbody>${tableRows}</tbody></table>
         ${more}
       </section>`;

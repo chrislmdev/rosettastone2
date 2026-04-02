@@ -407,6 +407,10 @@ app.get("/pricing/changes", async (req, res) => {
         j.csp,
         j.catalogitemnumber,
         j.title,
+        j.prev_jwcc,
+        j.curr_jwcc,
+        j.prev_comm,
+        j.curr_comm,
         CASE j.change_type
           WHEN 'added' THEN COALESCE(j.curr_jwcc, 0)::double precision
           WHEN 'removed' THEN -COALESCE(j.prev_jwcc, 0)::double precision

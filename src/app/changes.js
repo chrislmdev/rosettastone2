@@ -13,6 +13,13 @@
     return `${sign}${n.toFixed(2)}%`;
   }
 
+  function fmtChgPrice(v) {
+    if (v === null || v === undefined) return '—';
+    const n = Number(v);
+    if (!Number.isFinite(n)) return '—';
+    return `$${n.toFixed(4)}`;
+  }
+
   function escHtml(s) {
     return String(s ?? '')
       .replace(/&/g, '&amp;')
@@ -188,8 +195,12 @@
         <td>${escHtml(r.title || '—')}</td>
         <td>${escHtml(r.change_type)}</td>
         <td>${escHtml(formatCatalogChangeNotes(r))}</td>
+        <td>${escHtml(fmtChgPrice(r.prev_jwcc))}</td>
+        <td>${escHtml(fmtChgPrice(r.curr_jwcc))}</td>
         <td>${fmtDelta(r.cust_delta)}</td>
         <td>${fmtPct(r.cust_delta_pct)}</td>
+        <td>${escHtml(fmtChgPrice(r.prev_comm))}</td>
+        <td>${escHtml(fmtChgPrice(r.curr_comm))}</td>
         <td>${fmtDelta(r.comm_delta)}</td>
         <td>${fmtPct(r.comm_delta_pct)}</td>
       </tr>
