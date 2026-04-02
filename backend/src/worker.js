@@ -254,20 +254,24 @@ async function processParent(filePath, csp, importId, client) {
 // ── Process: exception CSV ──────────────────────────────────
 async function processException(filePath, csp, importId, client) {
   const prevMapCache = new Map();
+  const seenUidsByCsp = new Map();
+
   async function getPrevMap(forCsp) {
     if (prevMapCache.has(forCsp)) return prevMapCache.get(forCsp);
     const { rows: prev } = await client.query(
-      `select e.*
+      `select distinct on (e.csp, coalesce(nullif(trim(e.exceptionuniqueid), ''), chr(1)))
+         e.csp, e.exceptionuniqueid, e.csoshortname, e.impactlevel, e.exceptionstatus,
+         e.exceptionpwsrequirement, e.exceptionbasisforrequest, e.exceptionsecurity
        from exception_item e
        join catalog_import ci on ci.id = e.import_id
-       where e.csp = $1
-       order by ci.imported_at desc
-       limit 5000`,
-      [forCsp]
+       where e.csp = $1 and ci.id < $2
+       order by e.csp, coalesce(nullif(trim(e.exceptionuniqueid), ''), chr(1)), ci.imported_at desc nulls last, e.id desc`,
+      [forCsp, importId]
     );
     const prevMap = {};
     for (const p of prev) {
-      if (p.exceptionuniqueid) prevMap[p.exceptionuniqueid] = p;
+      const u = (p.exceptionuniqueid || "").trim();
+      if (u) prevMap[u] = p;
     }
     prevMapCache.set(forCsp, prevMap);
     return prevMap;
@@ -282,7 +286,12 @@ async function processException(filePath, csp, importId, client) {
   for await (const row of streamCsv(filePath)) {
     const effectiveCsp = pickEffectiveCsp(row, csp);
     const prevMap = await getPrevMap(effectiveCsp);
-    const uid = row.exceptionuniqueid || row.exception_unique_id || "";
+    const uid = (row.exceptionuniqueid || row.exception_unique_id || "").trim();
+    if (uid) {
+      if (!seenUidsByCsp.has(effectiveCsp)) seenUidsByCsp.set(effectiveCsp, new Set());
+      seenUidsByCsp.get(effectiveCsp).add(uid);
+    }
+
     await client.query(
       `insert into exception_item (
         import_id, csp, exceptionuniqueid, csoshortname,
@@ -300,7 +309,15 @@ async function processException(filePath, csp, importId, client) {
       ]
     );
 
-    // Write field-level diff if we have a previous record
+    if (uid && !prevMap[uid]) {
+      await client.query(
+        `insert into exception_change_log
+           (import_id, csp, exceptionuniqueid, field_name, old_value, new_value)
+         values ($1,$2,$3,$4,$5,$6)`,
+        [importId, effectiveCsp, uid, "__record__", "", "added"]
+      );
+    }
+
     if (uid && prevMap[uid]) {
       const old = prevMap[uid];
       for (const field of TRACKED_FIELDS) {
@@ -318,6 +335,21 @@ async function processException(filePath, csp, importId, client) {
     }
     count++;
   }
+
+  for (const [forCsp, prevMap] of prevMapCache) {
+    const seen = seenUidsByCsp.get(forCsp) || new Set();
+    for (const uid of Object.keys(prevMap)) {
+      if (!seen.has(uid)) {
+        await client.query(
+          `insert into exception_change_log
+             (import_id, csp, exceptionuniqueid, field_name, old_value, new_value)
+           values ($1,$2,$3,$4,$5,$6)`,
+          [importId, forCsp, uid, "__record__", "present", "removed"]
+        );
+      }
+    }
+  }
+
   return count;
 }
 

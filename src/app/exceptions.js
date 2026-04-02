@@ -15,6 +15,16 @@
     il6: '#ef4444',
   };
 
+  function chartTheme() {
+    const light = document.documentElement.getAttribute('data-theme') === 'light';
+    return {
+      tick: light ? '#64748b' : '#94a3b8',
+      grid: light ? '#e2e8f0' : '#1e2535',
+      doughnutBorder: light ? '#ffffff' : '#0f1219',
+      legend: light ? '#64748b' : '#94a3b8',
+    };
+  }
+
   function renderExceptionCharts(rows) {
     const grid = document.getElementById('excChartsGrid');
     if (!grid) return;
@@ -23,7 +33,8 @@
     if (!rows.length) { grid.style.display = 'none'; return; }
     grid.style.display = 'grid';
 
-    Chart.defaults.color = '#94a3b8';
+    const ct = chartTheme();
+    Chart.defaults.color = ct.tick;
     Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
     Chart.defaults.font.size = 9;
 
@@ -58,8 +69,8 @@
           maintainAspectRatio: false,
           plugins: { legend: { display: false } },
           scales: {
-            x: { grid: { color: '#1e2535' }, ticks: { color: '#94a3b8', font: { size: 8 } } },
-            y: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 8 }, maxRotation: 0 } },
+            x: { grid: { color: ct.grid }, ticks: { color: ct.tick, font: { size: 8 } } },
+            y: { grid: { display: false }, ticks: { color: ct.tick, font: { size: 8 }, maxRotation: 0 } },
           },
         },
       });
@@ -83,7 +94,7 @@
             data: labels.map(l => statusMap[l]),
             backgroundColor: labels.map(l => STATUS_COLORS[l] || '#3b82f6'),
             borderWidth: 1,
-            borderColor: '#0f1219',
+            borderColor: ct.doughnutBorder,
           }],
         },
         options: {
@@ -95,7 +106,7 @@
           plugins: {
             legend: {
               position: 'bottom',
-              labels: { color: '#94a3b8', boxWidth: 10, padding: 6, font: { size: 8 } },
+              labels: { color: ct.legend, boxWidth: 10, padding: 6, font: { size: 8 } },
             },
           },
         },
@@ -134,8 +145,8 @@
             },
           },
           scales: {
-            x: { stacked: true, grid: { color: '#1e2535' }, ticks: { color: '#94a3b8', font: { size: 8 } } },
-            y: { stacked: true, grid: { color: '#1e2535' }, ticks: { color: '#94a3b8', font: { size: 8 } } },
+            x: { stacked: true, grid: { color: ct.grid }, ticks: { color: ct.tick, font: { size: 8 } } },
+            y: { stacked: true, grid: { color: ct.grid }, ticks: { color: ct.tick, font: { size: 8 } } },
           },
         },
       });
@@ -481,4 +492,8 @@
   window.renderExceptionCharts = renderExceptionCharts;
   window.exportExceptionsCsv = exportExceptionsCsv;
   window.exportExceptionsPdf = exportExceptionsPdf;
+
+  window.addEventListener('cloudprism-theme', () => {
+    if (typeof window.renderExceptions === 'function') window.renderExceptions();
+  });
 })();

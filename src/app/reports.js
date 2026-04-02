@@ -289,6 +289,7 @@
       </section>`;
 
     const cap = 500;
+    const noteFn = typeof window.formatCatalogChangeNotes === 'function' ? window.formatCatalogChangeNotes : () => '';
     const tableRows = rows.slice(0, cap)
       .map(
         r => `<tr>
@@ -296,6 +297,7 @@
         <td>${escHtml(r.catalogitemnumber)}</td>
         <td>${escHtml(r.title)}</td>
         <td>${escHtml(r.change_type)}</td>
+        <td>${escHtml(noteFn(r))}</td>
         <td>${escHtml(fmtDelta(r.cust_delta))}</td>
         <td>${escHtml(fmtPct(r.cust_delta_pct))}</td>
         <td>${escHtml(fmtDelta(r.comm_delta))}</td>
@@ -312,7 +314,7 @@
       <section class="detail-section">
         <h2>Change records (sample)</h2>
         <table><thead><tr>
-          <th>CSP</th><th>Catalog #</th><th>Title</th><th>Type</th>
+          <th>CSP</th><th>Catalog #</th><th>Title</th><th>Type</th><th>Notes</th>
           <th>JWCC Δ</th><th>JWCC Δ%</th><th>Comm Δ</th><th>Comm Δ%</th>
         </tr></thead><tbody>${tableRows}</tbody></table>
         ${more}
@@ -327,9 +329,187 @@
     );
   }
 
+  async function runExceptionChangesSummaryReport() {
+    const rows = window.exceptionChanges || [];
+    if (!rows.length) {
+      if (typeof showToast === 'function') {
+        showToast(
+          'No exception changes loaded. Open Catalog Changes → Exception deltas (API) first.',
+          'error'
+        );
+      }
+      return;
+    }
+
+    const meta = window.exceptionChangesMeta || {};
+    const ChartCtor = typeof Chart !== 'undefined' ? Chart : null;
+    if (!ChartCtor) {
+      if (typeof showToast === 'function') showToast('Chart.js not loaded', 'error');
+      return;
+    }
+
+    destroyReportCharts();
+    ChartCtor.defaults.color = '#475569';
+    ChartCtor.defaults.font.family = "'IBM Plex Sans', sans-serif";
+    ChartCtor.defaults.font.size = 9;
+
+    const compact = { layout: { padding: { top: 4, right: 6, bottom: 4, left: 6 } } };
+    const axisLight = {
+      ticks: { color: '#475569', font: { size: 8 } },
+      grid: { color: '#e2e8f0' },
+    };
+
+    const typeMap = {};
+    const cspMap = {};
+    rows.forEach(r => {
+      const t = String(r.change_type || 'unknown').toLowerCase();
+      typeMap[t] = (typeMap[t] || 0) + 1;
+      const c = String(r.csp || '—').toLowerCase();
+      cspMap[c] = (cspMap[c] || 0) + 1;
+    });
+
+    const typeLabels = Object.keys(typeMap).sort();
+    const typeColors = {
+      added: '#22c55e',
+      removed: '#ef4444',
+      updated: '#3b82f6',
+      unknown: '#94a3b8',
+    };
+
+    const ctxType = document.getElementById('repChartType')?.getContext('2d');
+    if (ctxType) {
+      const ch = new ChartCtor(ctxType, {
+        type: 'doughnut',
+        data: {
+          labels: typeLabels.map(l => l.charAt(0).toUpperCase() + l.slice(1)),
+          datasets: [{
+            data: typeLabels.map(l => typeMap[l]),
+            backgroundColor: typeLabels.map(l => typeColors[l] || '#6366f1'),
+            borderWidth: 1,
+            borderColor: '#fff',
+          }],
+        },
+        options: {
+          ...compact,
+          animation: false,
+          responsive: false,
+          maintainAspectRatio: false,
+          cutout: '55%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#334155', boxWidth: 10, padding: 6, font: { size: 8 } },
+            },
+          },
+        },
+      });
+      reportChartInstances.push(ch);
+    }
+
+    const cspLabels = Object.keys(cspMap).sort();
+    const ctxCsp = document.getElementById('repChartCsp')?.getContext('2d');
+    if (ctxCsp) {
+      const ch = new ChartCtor(ctxCsp, {
+        type: 'bar',
+        data: {
+          labels: cspLabels.map(c => c.toUpperCase()),
+          datasets: [{
+            label: 'Changes',
+            data: cspLabels.map(c => cspMap[c]),
+            backgroundColor: '#0ea5e9',
+            borderRadius: 3,
+          }],
+        },
+        options: {
+          ...compact,
+          animation: false,
+          responsive: false,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ...axisLight, beginAtZero: true },
+            y: { ...axisLight, grid: { display: false } },
+          },
+        },
+      });
+      reportChartInstances.push(ch);
+    }
+
+    await new Promise(r => {
+      requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(r, 120)));
+    });
+
+    const img1 = canvasToPng('repChartType');
+    const img2 = canvasToPng('repChartCsp');
+
+    destroyReportCharts();
+
+    const metaLines = [
+      `Rows in this sample: ${rows.length}`,
+      meta.month_from && meta.month_to
+        ? `Comparing import month ${meta.month_from} → ${meta.month_to}`
+        : null,
+      meta.total != null && meta.offset != null
+        ? `Sample position: ${meta.offset + 1}–${meta.offset + rows.length} of ${meta.total} total (paginated API)`
+        : meta.total != null
+          ? `Total changes: ${meta.total}`
+          : null,
+    ];
+
+    const chartsSection = `
+      <section class="charts-section">
+        <h2>Analytics overview</h2>
+        <p class="charts-lead">Aggregates reflect the currently loaded exception change rows only.</p>
+        <div class="charts-grid">
+          ${chartBlock('Changes by type', img1)}
+          ${chartBlock('Changes by CSP', img2)}
+        </div>
+      </section>`;
+
+    const cap = 500;
+    const noteFn = typeof window.formatExceptionChangeNotes === 'function' ? window.formatExceptionChangeNotes : () => '';
+    const tableRows = rows.slice(0, cap)
+      .map(
+        r => `<tr>
+        <td>${escHtml(r.csp)}</td>
+        <td>${escHtml(r.exceptionuniqueid)}</td>
+        <td>${escHtml(r.csoshortname)}</td>
+        <td>${escHtml(r.change_type)}</td>
+        <td>${escHtml(noteFn(r))}</td>
+        <td>${escHtml(r.exceptionstatus_prev || '—')} → ${escHtml(r.exceptionstatus_curr || '—')}</td>
+        <td>${escHtml(r.impactlevel_prev || '—')} → ${escHtml(r.impactlevel_curr || '—')}</td>
+      </tr>`
+      )
+      .join('');
+    const more =
+      rows.length > cap
+        ? `<p class="note">First ${cap} of ${rows.length} loaded rows shown.</p>`
+        : '';
+
+    const tableSection = `
+      <section class="detail-section">
+        <h2>Exception change records (sample)</h2>
+        <table><thead><tr>
+          <th>CSP</th><th>Exception ID</th><th>Short name</th><th>Type</th><th>Notes</th>
+          <th>Status prev → curr</th><th>Impact prev → curr</th>
+        </tr></thead><tbody>${tableRows}</tbody></table>
+        ${more}
+      </section>`;
+
+    openPrintDocument(
+      'Exception changes report',
+      'Exception library changes summary',
+      metaLines,
+      chartsSection,
+      tableSection
+    );
+  }
+
   const REPORTS_REGISTRY = [
     { id: 'exceptions_library', label: 'Exceptions library (PDF)', run: runExceptionsLibraryReport },
     { id: 'catalog_changes_summary', label: 'Catalog changes summary (PDF)', run: runCatalogChangesSummaryReport },
+    { id: 'exception_changes_summary', label: 'Exception changes summary (PDF)', run: runExceptionChangesSummaryReport },
   ];
 
   function runCloudPrismReport(id) {

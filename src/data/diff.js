@@ -40,9 +40,16 @@
     return { previous: months[months.length - 2], current: months[months.length - 1] };
   }
 
-  function computeCatalogChanges(historyByMonth) {
-    const { previous, current } = pickMonths(historyByMonth);
-    if (!previous || !current) return [];
+  function computeCatalogChanges(historyByMonth, monthFromOpt, monthToOpt) {
+    const months = Object.keys(historyByMonth || {}).sort();
+    let previous = monthFromOpt && historyByMonth[monthFromOpt] ? monthFromOpt : null;
+    let current = monthToOpt && historyByMonth[monthToOpt] ? monthToOpt : null;
+    if (!previous || !current) {
+      const picked = pickMonths(historyByMonth);
+      previous = picked.previous;
+      current = picked.current;
+    }
+    if (!previous || !current || previous === current) return [];
     const prevRows = historyByMonth[previous] || [];
     const currRows = historyByMonth[current] || [];
     const prevMap = new Map(prevRows.map(r => [buildKey(r), r]));

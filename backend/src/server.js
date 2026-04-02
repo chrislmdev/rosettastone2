@@ -487,6 +487,173 @@ app.get("/pricing/changes", async (req, res) => {
   }
 });
 
+/**
+ * GET /exceptions/changes?from=YYYY-MM&to=YYYY-MM&csp=&change_type=&limit=&offset=
+ * Month-over-month exception library diff (added / removed / field updates).
+ */
+app.get("/exceptions/changes", async (req, res) => {
+  const fromM = String(req.query.from || "").trim();
+  const toM = String(req.query.to || "").trim();
+  if (!/^\d{4}-\d{2}$/.test(fromM) || !/^\d{4}-\d{2}$/.test(toM)) {
+    return res
+      .status(400)
+      .json({ error: "Query params from and to are required (YYYY-MM)" });
+  }
+  if (fromM === toM) {
+    return res.status(400).json({ error: "from and to must be different months" });
+  }
+
+  const cspFilter = String(req.query.csp || "").toLowerCase().trim() || null;
+  const changeType = String(req.query.change_type || "")
+    .toLowerCase()
+    .trim();
+  const ctypeParam =
+    changeType && ["added", "removed", "updated"].includes(changeType)
+      ? changeType
+      : null;
+
+  const page = parsePricingChangesPaging(req);
+  const params = [fromM, toM, cspFilter, ctypeParam, page.limit, page.offset];
+
+  const exceptionChangesSqlBody = `
+    prev_rows AS (
+      SELECT DISTINCT ON (e.csp, COALESCE(NULLIF(trim(e.exceptionuniqueid), ''), chr(1)))
+        e.csp,
+        COALESCE(NULLIF(trim(e.exceptionuniqueid), ''), '') AS exceptionuniqueid,
+        e.csoshortname,
+        COALESCE(e.impactlevel, '') AS impactlevel,
+        COALESCE(e.exceptionstatus, '') AS exceptionstatus,
+        COALESCE(e.exceptionpwsrequirement, '') AS exceptionpwsrequirement,
+        COALESCE(e.exceptionbasisforrequest, '') AS exceptionbasisforrequest,
+        COALESCE(e.exceptionsecurity, '') AS exceptionsecurity
+      FROM exception_item e
+      INNER JOIN catalog_import ci ON ci.id = e.import_id
+        AND ci.import_month = $1::varchar
+        AND ci.schema_name = 'exceptions'
+      WHERE ($3::text IS NULL OR e.csp = $3)
+      ORDER BY e.csp, COALESCE(NULLIF(trim(e.exceptionuniqueid), ''), chr(1)), ci.imported_at DESC NULLS LAST, e.id DESC
+    ),
+    curr_rows AS (
+      SELECT DISTINCT ON (e.csp, COALESCE(NULLIF(trim(e.exceptionuniqueid), ''), chr(1)))
+        e.csp,
+        COALESCE(NULLIF(trim(e.exceptionuniqueid), ''), '') AS exceptionuniqueid,
+        e.csoshortname,
+        COALESCE(e.impactlevel, '') AS impactlevel,
+        COALESCE(e.exceptionstatus, '') AS exceptionstatus,
+        COALESCE(e.exceptionpwsrequirement, '') AS exceptionpwsrequirement,
+        COALESCE(e.exceptionbasisforrequest, '') AS exceptionbasisforrequest,
+        COALESCE(e.exceptionsecurity, '') AS exceptionsecurity
+      FROM exception_item e
+      INNER JOIN catalog_import ci ON ci.id = e.import_id
+        AND ci.import_month = $2::varchar
+        AND ci.schema_name = 'exceptions'
+      WHERE ($3::text IS NULL OR e.csp = $3)
+      ORDER BY e.csp, COALESCE(NULLIF(trim(e.exceptionuniqueid), ''), chr(1)), ci.imported_at DESC NULLS LAST, e.id DESC
+    ),
+    joined AS (
+      SELECT
+        CASE
+          WHEN pr.csp IS NULL THEN 'added'
+          WHEN cr.csp IS NULL THEN 'removed'
+          ELSE 'updated'
+        END AS change_type,
+        COALESCE(cr.csp, pr.csp) AS csp,
+        COALESCE(NULLIF(cr.exceptionuniqueid, ''), NULLIF(pr.exceptionuniqueid, ''), '') AS exceptionuniqueid,
+        COALESCE(NULLIF(cr.csoshortname, ''), NULLIF(pr.csoshortname, ''), '') AS csoshortname,
+        pr.impactlevel AS impactlevel_prev,
+        cr.impactlevel AS impactlevel_curr,
+        pr.exceptionstatus AS exceptionstatus_prev,
+        cr.exceptionstatus AS exceptionstatus_curr,
+        pr.exceptionpwsrequirement AS exceptionpwsrequirement_prev,
+        cr.exceptionpwsrequirement AS exceptionpwsrequirement_curr,
+        pr.exceptionbasisforrequest AS exceptionbasisforrequest_prev,
+        cr.exceptionbasisforrequest AS exceptionbasisforrequest_curr,
+        pr.exceptionsecurity AS exceptionsecurity_prev,
+        cr.exceptionsecurity AS exceptionsecurity_curr
+      FROM prev_rows pr
+      FULL OUTER JOIN curr_rows cr
+        ON pr.csp = cr.csp AND pr.exceptionuniqueid = cr.exceptionuniqueid
+      WHERE
+        pr.csp IS NULL OR cr.csp IS NULL
+        OR pr.impactlevel IS DISTINCT FROM cr.impactlevel
+        OR pr.exceptionstatus IS DISTINCT FROM cr.exceptionstatus
+        OR pr.exceptionpwsrequirement IS DISTINCT FROM cr.exceptionpwsrequirement
+        OR pr.exceptionbasisforrequest IS DISTINCT FROM cr.exceptionbasisforrequest
+        OR pr.exceptionsecurity IS DISTINCT FROM cr.exceptionsecurity
+        OR pr.csoshortname IS DISTINCT FROM cr.csoshortname
+    ),
+    shaped AS (
+      SELECT
+        $1::varchar AS month_from,
+        $2::varchar AS month_to,
+        j.change_type,
+        j.csp,
+        NULLIF(j.exceptionuniqueid, '') AS exceptionuniqueid,
+        NULLIF(j.csoshortname, '') AS csoshortname,
+        NULLIF(j.impactlevel_prev, '') AS impactlevel_prev,
+        NULLIF(j.impactlevel_curr, '') AS impactlevel_curr,
+        NULLIF(j.exceptionstatus_prev, '') AS exceptionstatus_prev,
+        NULLIF(j.exceptionstatus_curr, '') AS exceptionstatus_curr,
+        jsonb_strip_nulls(jsonb_build_object(
+          'exceptionpwsrequirement_prev', NULLIF(j.exceptionpwsrequirement_prev, ''),
+          'exceptionpwsrequirement_curr', NULLIF(j.exceptionpwsrequirement_curr, ''),
+          'exceptionbasisforrequest_prev', NULLIF(j.exceptionbasisforrequest_prev, ''),
+          'exceptionbasisforrequest_curr', NULLIF(j.exceptionbasisforrequest_curr, ''),
+          'exceptionsecurity_prev', NULLIF(j.exceptionsecurity_prev, ''),
+          'exceptionsecurity_curr', NULLIF(j.exceptionsecurity_curr, '')
+        )) AS detail_json
+      FROM joined j
+    )
+  `;
+
+  const countSql = `WITH ${exceptionChangesSqlBody}
+    SELECT count(*)::bigint AS n FROM shaped s
+    WHERE ($4::text IS NULL OR s.change_type = $4)`;
+
+  const dataSql = `WITH ${exceptionChangesSqlBody}
+    SELECT * FROM shaped s
+    WHERE ($4::text IS NULL OR s.change_type = $4)
+    ORDER BY s.csp, COALESCE(s.exceptionuniqueid, ''), s.csoshortname
+    LIMIT $5 OFFSET $6`;
+
+  try {
+    const metaFrom = await pool.query(
+      `select max(imported_at) as imported_at
+       from catalog_import
+       where import_month = $1 and schema_name = 'exceptions'`,
+      [fromM]
+    );
+    const metaTo = await pool.query(
+      `select max(imported_at) as imported_at
+       from catalog_import
+       where import_month = $1 and schema_name = 'exceptions'`,
+      [toM]
+    );
+
+    const countParams = [fromM, toM, cspFilter, ctypeParam];
+    const { rows: countRows } = await pool.query(countSql, countParams);
+    const total = Number(countRows[0]?.n || 0);
+
+    const { rows } = await pool.query(dataSql, params);
+
+    res.json({
+      meta: {
+        month_from: fromM,
+        month_to: toM,
+        imported_at_from: metaFrom.rows[0]?.imported_at ?? null,
+        imported_at_to: metaTo.rows[0]?.imported_at ?? null,
+        total,
+        limit: page.limit,
+        offset: page.offset,
+      },
+      rows,
+    });
+  } catch (err) {
+    console.error("exceptions/changes error:", err);
+    res.status(500).json({ error: err.message || String(err) });
+  }
+});
+
 // ── Exceptions ────────────────────────────────────────────────
 app.get("/exceptions", async (req, res) => {
   const csp = String(req.query.csp || "").toLowerCase();

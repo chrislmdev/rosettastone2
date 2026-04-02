@@ -133,7 +133,7 @@ flowchart TD
   restore --> arrays2[Reload arrays]
 ```
 
-Snapshot stores **pricing, exceptions, parent** arrays only — not full multi-month history (quota).
+Snapshot stores **pricing, exceptions, parent** arrays only — not full multi-month history (quota). **Exception month-over-month** deltas in the UI are **API-backed** (`GET /exceptions/changes`); the snapshot alone does not retain per-month exception snapshots for diffing.
 
 ---
 

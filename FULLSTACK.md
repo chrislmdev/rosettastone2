@@ -12,7 +12,7 @@ This repository ships a **static SPA** plus an **Express API**, **PostgreSQL**, 
 | **db** | PostgreSQL 16; catalog and auth tables (see below). |
 | **redis** | BullMQ job queue and coordination. |
 
-The browser loads data via `fetch` to the API (Admin → backend URL defaults to `http://localhost:3001`) and can persist a **local snapshot** of catalogs in `localStorage` for offline-ish reload. Snapshots **do not** include multi-month **`catalogHistoryByMonth`** (would exceed quota for large catalogs). The **Catalog Changes** tab loads **`GET /pricing/changes`** on first visit after an API catalog load (lazy), not during the main pricing fetch.
+The browser loads data via `fetch` to the API (Admin → backend URL defaults to `http://localhost:3001`) and can persist a **local snapshot** of catalogs in `localStorage` for offline-ish reload. Snapshots **do not** include multi-month **`catalogHistoryByMonth`** (would exceed quota for large catalogs). The **Catalog Changes** tab loads **`GET /pricing/changes`** or **`GET /exceptions/changes`** (lazy when that tab is opened), with **From / To** import months and CSP filters in the UI — not during the main catalog fetch.
 
 ## Dependencies (runtime)
 
@@ -71,6 +71,7 @@ Shared query parameters where supported:
 | `GET` | `/imports` | — (last 200 imports) |
 | `GET` | `/pricing` | `csp`, `q`, `focus_category`, **`import_month`** (`YYYY-MM`, optional — narrows rows to that pricing import month), `limit`, `offset` — rows include **`import_month`**, **`imported_at`**, **`import_source_file`** (from `catalog_import`). |
 | `GET` | **`/pricing/changes`** | **`from`**, **`to`** (required `YYYY-MM`, distinct) — month-over-month diff over `pricing_item` + `catalog_import` (`schema_name = 'pricing'`). Optional: **`csp`**, **`change_type`** (`added` \| `removed` \| `updated`), **`limit`**, **`offset`**. Response: **`{ meta, rows }`** where **`meta`** has **`month_from`**, **`month_to`**, **`imported_at_from`**, **`imported_at_to`**, **`total`**, **`limit`**, **`offset`**; each row matches client diff shape (`change_type`, `csp`, `catalogitemnumber`, `title`, `cust_delta`, `cust_delta_pct`, `comm_delta`, `comm_delta_pct`, `month_from`, `month_to`). Uses latest `imported_at` per SKU within each month (`DISTINCT ON`). |
+| `GET` | **`/exceptions/changes`** | Same query contract as **`/pricing/changes`**, over **`exception_item`** + **`catalog_import`** (`schema_name = 'exceptions'`). Rows include **`exceptionuniqueid`**, **`csoshortname`**, **`impactlevel_prev`**, **`impactlevel_curr`**, **`exceptionstatus_prev`**, **`exceptionstatus_curr`**, **`detail_json`** (other text-field pairs), plus **`month_from`** / **`month_to`**. |
 | `GET` | `/exceptions` | `csp`, `status`, `impact_level`, `service`, `limit`, `offset` — same import provenance fields as pricing. |
 | `GET` | `/parent-services` | `csp`, `limit`, `offset` — same import provenance fields as pricing. |
 | `GET` | `/changes` | `csp` (limit 1000) |
@@ -97,12 +98,13 @@ Schema source: `infra/db/init.sql`.
 - **`index.html`** — Shell, styles, inline app logic (navigation, Services, Pricing, Admin, calculator, shared multi-select state).
 - **`src/app/exceptions.js`** — Exceptions table, charts, CSV/PDF export, `renderExceptions` / `initExceptionsPage`.
 - **`src/app/changes.js`** — Catalog change views where applicable.
-- **`src/app/reports.js`** — **Reports** menu in the nav: runs built-in reports and opens a **print** window (user chooses **Save as PDF** in the browser), using the same pattern as Exceptions PDF export. Entry points: **`window.runCloudPrismReport(id)`**, extensibility via **`window.CLOUDPRISM_REPORTS_REGISTRY`**. **Exceptions library** delegates to **`exportExceptionsPdf`**. **Catalog changes summary** builds Chart.js figures from **`window.catalogChanges`** / **`window.catalogChangesMeta`** only (for API-backed changes, charts reflect the **current paginated page**, not the full multi-hundred-thousand-row diff).
+- **`src/app/reports.js`** — **Reports** menu in the nav: runs built-in reports and opens a **print** window (user chooses **Save as PDF** in the browser), using the same pattern as Exceptions PDF export. Entry points: **`window.runCloudPrismReport(id)`**, extensibility via **`window.CLOUDPRISM_REPORTS_REGISTRY`**. **Exceptions library** delegates to **`exportExceptionsPdf`**. **Catalog changes summary** uses **`window.catalogChanges`** / **`window.catalogChangesMeta`**; **Exception changes summary** uses **`window.exceptionChanges`** / **`window.exceptionChangesMeta`**. For API-backed changes, charts reflect the **current paginated page** only.
 - **`src/data/*.js`** — Taxonomy / inference helpers loaded as scripts.
 
 Shared UI patterns:
 
 - **Pricing** CSP filter: `priceFilters` + `pf-aws` … `pf-oracle` buttons.
+- **Catalog Changes** CSP filter: **All** + `chgCsp*` buttons (same visual pattern as Pricing; drives hidden `#chgCspFilter` for API query params).
 - **Exceptions** CSP filter: `excCspFilters` + `exc-pf-*` buttons (same visual pattern, separate state so tabs do not clash).
 - **Reports** dropdown (nav): on-demand reports; the browser must allow pop-ups for the print / Save as PDF flow.
 

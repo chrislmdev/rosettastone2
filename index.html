@@ -36,6 +36,43 @@
       --mono: 'IBM Plex Mono', monospace;
       --sans: 'IBM Plex Sans', sans-serif;
       --radius: 6px;
+      --panel: #161b25;
+      --nav-bg: rgba(9, 12, 18, 0.95);
+    }
+
+    html[data-theme="light"] {
+      --bg: #f1f5f9;
+      --surface: #ffffff;
+      --surface2: #f8fafc;
+      --surface3: #f1f5f9;
+      --panel: #ffffff;
+      --border: #e2e8f0;
+      --border2: #cbd5e1;
+      --text: #0f172a;
+      --text-dim: #475569;
+      --text-muted: #64748b;
+      --accent: #2563eb;
+      --accent2: #0891b2;
+      --accent-glow: rgba(37, 99, 235, 0.1);
+      --nav-bg: rgba(255, 255, 255, 0.92);
+    }
+
+    html[data-theme="light"] .poc-banner {
+      background: rgba(245, 158, 11, 0.12);
+      border-bottom-color: rgba(245, 158, 11, 0.28);
+      color: #b45309;
+    }
+
+    html[data-theme="light"] .poc-banner a {
+      color: #d97706;
+    }
+
+    html[data-theme="light"] .ms-dropdown {
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.12);
+    }
+
+    html[data-theme="light"] .logo-mark {
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
     }
 
     * {
@@ -63,7 +100,7 @@
       position: sticky;
       top: 0;
       z-index: 200;
-      background: rgba(9, 12, 18, 0.95);
+      background: var(--nav-bg);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
       padding: 0 24px
@@ -209,6 +246,48 @@
 
     .focus-pill a:hover {
       text-decoration: underline
+    }
+
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--border2);
+      background: var(--surface2);
+      cursor: pointer;
+      color: var(--text-muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      color: var(--text-dim);
+    }
+
+    .theme-toggle .tog-icon {
+      display: block;
+      opacity: 0.4;
+      transition: opacity 0.15s, color 0.15s;
+    }
+
+    .theme-toggle .tog-icon.active {
+      opacity: 1;
+      color: var(--accent);
+    }
+
+    .theme-toggle .tog-sep {
+      width: 1px;
+      height: 14px;
+      background: var(--border2);
+      flex-shrink: 0;
     }
 
     /* ── BANNER ── */
@@ -1044,6 +1123,178 @@
 
     .csp-filter-btn.oracle.active {
       background: var(--oracle)
+    }
+
+    .csp-filter-btn.chg-csp-all.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .chg-mode-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .chg-mode-btn {
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border2);
+      background: var(--surface2);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+
+    .chg-mode-btn:hover {
+      color: var(--text-dim);
+    }
+
+    .chg-mode-btn.active {
+      color: var(--text);
+      border-color: var(--accent);
+      background: var(--surface3);
+    }
+
+    .chg-month-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 16px;
+    }
+
+    .chg-month-field {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .chg-month-field label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .chg-month-field input[type="month"] {
+      padding: 5px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border2);
+      background: var(--surface);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 11px;
+    }
+
+    .chg-toolbar-stack {
+      width: 100%;
+    }
+
+    .admin-page {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 20px 24px 40px;
+    }
+
+    .admin-hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .admin-hero h2 {
+      margin: 0 0 6px;
+      font-size: 1.35rem;
+    }
+
+    .admin-hero p {
+      margin: 0;
+      color: var(--text-dim);
+      font-size: 13px;
+      max-width: 640px;
+    }
+
+    .admin-dataset {
+      margin-bottom: 28px;
+    }
+
+    .admin-dataset summary {
+      cursor: pointer;
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+      padding: 8px 0;
+      list-style: none;
+    }
+
+    .admin-dataset summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .admin-dataset summary::before {
+      content: '▸ ';
+      color: var(--text-muted);
+    }
+
+    .admin-dataset[open] summary::before {
+      content: '▾ ';
+    }
+
+    .admin-toolbar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .admin-toolbar .p-toolbar-inner-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .admin-upload-grid {
+      margin-bottom: 0;
+    }
+
+    .admin-toolbar-row {
+      margin-bottom: 12px;
+    }
+
+    .p-toolbar-inner-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .admin-server-card {
+      margin-top: 28px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+
+    .admin-server-card h3 {
+      margin: 0 0 8px;
+      font-size: 14px;
     }
 
     .p-search {
@@ -2872,10 +3123,24 @@
             <option value="">Select…</option>
             <option value="exceptions_library">Exceptions library (PDF)</option>
             <option value="catalog_changes_summary">Catalog changes summary (PDF)</option>
+            <option value="exception_changes_summary">Exception changes summary (PDF)</option>
           </select>
         </div>
       </div>
       <div class="nav-right">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark color theme">
+          <svg class="tog-icon tog-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <span class="tog-sep" aria-hidden="true"></span>
+          <svg class="tog-icon tog-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
         <span class="focus-pill">FOCUS 1.3 · <a href="https://focus.finops.org/focus-specification/v1-3/"
             target="_blank">spec ↗</a></span>
       </div>
@@ -3035,30 +3300,32 @@
      PAGE: ADMIN
 ══════════════════════════════════════════ -->
   <div class="page" id="page-admin">
-      <div class="pricing-header">
+    <div class="admin-page">
+      <div class="admin-hero">
         <div>
           <h2>Data Management (Admin)</h2>
           <p>Upload monthly CSV files to update the application's underlying data schemas for each Cloud Service Provider (CSP).</p>
         </div>
-        <div style="display:flex;gap:8px;align-items:center">
-          <label style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">Import Month</label>
-          <input type="month" id="importMonth" style="padding:6px 8px;border-radius:8px;border:1px solid var(--border)" onchange="renderBatchStagedChips()" />
-          <button class="btn btn-ghost" onclick="loadSampleAdminData()">⬇ Load All Mock Data</button>
+        <div class="chg-month-row" style="margin:0">
+          <div class="chg-month-field">
+            <label for="importMonth">Import month</label>
+            <input type="month" id="importMonth" onchange="renderBatchStagedChips()">
+          </div>
+          <button type="button" class="btn btn-ghost" onclick="loadSampleAdminData()">⬇ Load All Mock Data</button>
         </div>
       </div>
 
-      <!-- Hidden file inputs -->
       <input type="file" id="file-csopricing" accept=".csv" style="display:none" onchange="handleAdminCSV('csoPricing',this)">
       <input type="file" id="file-csoexception" accept=".csv" style="display:none" onchange="handleAdminCSV('csoException',this)">
       <input type="file" id="file-csoparent" accept=".csv" style="display:none" onchange="handleAdminCSV('csOParentService',this)">
 
-      <!-- Section 1: CsoPricing -->
-      <div class="p-toolbar" style="margin-bottom:12px; border:none; background:rgba(0,0,0,0.02)">
-        <div style="font-family:var(--mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em">
-          1. CsoPricing (Monthly Catalog)</div>
-        <button class="btn btn-danger" style="margin-left:auto; font-size:10px; padding:4px 8px" onclick="clearAdminData('csoPricing')">Clear All Pricing</button>
-      </div>
-      <div class="upload-grid" style="margin-bottom:32px">
+      <details class="admin-dataset" open>
+        <summary>1. CsoPricing (monthly catalog)</summary>
+        <div class="p-toolbar admin-toolbar-row">
+          <span class="p-toolbar-inner-label">Per-CSP pricing CSV</span>
+          <button type="button" class="btn btn-danger" style="margin-left:auto;font-size:10px;padding:4px 8px" onclick="clearAdminData('csoPricing')">Clear All Pricing</button>
+        </div>
+        <div class="upload-grid admin-upload-grid">
         <div class="upload-card">
           <div class="uc-header">
             <div class="uc-dot" style="background:var(--aws)"></div><span class="uc-name">AWS</span>
@@ -3087,15 +3354,16 @@
           <div class="uc-meta" id="oracle-pricing-meta">No file</div>
           <button class="upload-btn" onclick="triggerCSPUpload('csoPricing','oracle')">⬆ Upload Pricing</button>
         </div>
-      </div>
+        </div>
+      </details>
 
-      <!-- Section 2: CsoParentService -->
-      <div class="p-toolbar" style="margin-bottom:12px; border:none; background:rgba(0,0,0,0.02)">
-        <div style="font-family:var(--mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em">
-          2. CsoParentService (Service Mapping)</div>
-        <button class="btn btn-danger" style="margin-left:auto; font-size:10px; padding:4px 8px" onclick="clearAdminData('csOParentService')">Clear All Mapping</button>
-      </div>
-      <div class="upload-grid" style="margin-bottom:32px">
+      <details class="admin-dataset" open>
+        <summary>2. CsoParentService (service mapping)</summary>
+        <div class="p-toolbar admin-toolbar-row">
+          <span class="p-toolbar-inner-label">Parent / mapping CSV</span>
+          <button type="button" class="btn btn-danger" style="margin-left:auto;font-size:10px;padding:4px 8px" onclick="clearAdminData('csOParentService')">Clear All Mapping</button>
+        </div>
+        <div class="upload-grid admin-upload-grid">
         <div class="upload-card">
           <div class="uc-header">
             <div class="uc-dot" style="background:var(--aws)"></div><span class="uc-name">AWS</span>
@@ -3124,15 +3392,16 @@
           <div class="uc-meta" id="oracle-mapping-meta">No file</div>
           <button class="upload-btn" onclick="triggerCSPUpload('csOParentService','oracle')">⬆ Upload Mapping</button>
         </div>
-      </div>
+        </div>
+      </details>
 
-      <!-- Section 3: csoException -->
-      <div class="p-toolbar" style="margin-bottom:12px; border:none; background:rgba(0,0,0,0.02)">
-        <div style="font-family:var(--mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em">
-          3. csoException (Authorization Library)</div>
-        <button class="btn btn-danger" style="margin-left:auto; font-size:10px; padding:4px 8px" onclick="clearAdminData('csoException')">Clear All Exceptions</button>
-      </div>
-      <div class="upload-grid">
+      <details class="admin-dataset" open>
+        <summary>3. csoException (authorization library)</summary>
+        <div class="p-toolbar admin-toolbar-row">
+          <span class="p-toolbar-inner-label">Exceptions CSV</span>
+          <button type="button" class="btn btn-danger" style="margin-left:auto;font-size:10px;padding:4px 8px" onclick="clearAdminData('csoException')">Clear All Exceptions</button>
+        </div>
+        <div class="upload-grid admin-upload-grid">
         <div class="upload-card">
           <div class="uc-header">
             <div class="uc-dot" style="background:var(--aws)"></div><span class="uc-name">AWS</span>
@@ -3161,9 +3430,10 @@
           <div class="uc-meta" id="oracle-exception-meta">No file</div>
           <button class="upload-btn" onclick="triggerCSPUpload('csoException','oracle')">⬆ Upload Exceptions</button>
         </div>
-      </div>
+        </div>
+      </details>
 
-      <div class="admin-batch-section">
+      <div class="admin-server-card admin-batch-section">
         <h3>Import CSVs to server</h3>
         <p style="font-size:11px;color:var(--text-muted);margin:0 0 10px;max-width:640px">
           Filenames should include CSP and type (e.g. <code style="font-size:10px">oci_pricing.csv</code>, <code style="font-size:10px">aws_parent_mapping.csv</code>). Set <strong>Import month</strong> above, add files, then <strong>Process all</strong> — uploads, waits for processing, and reloads catalogs from the backend.
@@ -3214,7 +3484,6 @@
           </div>
         </details>
       </div>
-
     </div>
   </div>
 
@@ -3695,22 +3964,40 @@
       <div class="pricing-header">
         <div>
           <h2>Catalog Change Report</h2>
-          <p>Track adds/removes/updates and monthly price fluctuations keyed by CSP + Catalog Item #.</p>
+          <p>Compare pricing catalogs or exception libraries between two import months. Use <strong>From</strong> / <strong>To</strong> to pick the transition (e.g. Jan→Feb removals).</p>
           <p id="chgCompareBanner" class="chg-compare-banner" style="display:none;margin:8px 0 0;font-size:12px;color:var(--text-muted);font-family:var(--mono)"></p>
         </div>
       </div>
-      <div class="p-toolbar">
-        <div class="select-wrap">
-          <select id="chgCspFilter" onchange="onCatalogChangesFilterChange()">
-            <option value="">CSP: All</option>
-            <option value="aws">AWS</option>
-            <option value="azure">Azure</option>
-            <option value="gcp">GCP</option>
-            <option value="oracle">Oracle</option>
-          </select>
-          <span class="select-arrow">▾</span>
+      <div class="p-toolbar chg-toolbar-stack">
+        <div class="chg-mode-row">
+          <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-right:4px">View</span>
+          <button type="button" class="chg-mode-btn active" id="chgModePricing" onclick="setCatalogChangesMode('pricing')">Pricing deltas</button>
+          <button type="button" class="chg-mode-btn" id="chgModeExceptions" onclick="setCatalogChangesMode('exceptions')">Exception deltas</button>
         </div>
-        <div class="select-wrap">
+        <div class="chg-month-row" style="width:100%;margin-bottom:8px">
+          <div class="chg-month-field">
+            <label for="chgMonthFrom">From</label>
+            <input type="month" id="chgMonthFrom" onchange="onChgMonthsChanged()">
+          </div>
+          <div class="chg-month-field">
+            <label for="chgMonthTo">To</label>
+            <input type="month" id="chgMonthTo" onchange="onChgMonthsChanged()">
+          </div>
+        </div>
+        <select id="chgCspFilter" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none" tabindex="-1" aria-hidden="true" onchange="onCatalogChangesFilterChange()">
+          <option value="">CSP: All</option>
+          <option value="aws">AWS</option>
+          <option value="azure">Azure</option>
+          <option value="gcp">GCP</option>
+          <option value="oracle">Oracle</option>
+        </select>
+        <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-right:4px">CSP</span>
+        <button type="button" class="csp-filter-btn chg-csp-all active" id="chgCspAll" data-chg-csp="" onclick="setChgCsp('')">All</button>
+        <button type="button" class="csp-filter-btn aws" id="chgCspAws" data-chg-csp="aws" onclick="setChgCsp('aws')"><svg width="13" height="13"><use href="#logo-aws" /></svg> AWS</button>
+        <button type="button" class="csp-filter-btn azure" id="chgCspAzure" data-chg-csp="azure" onclick="setChgCsp('azure')"><svg width="13" height="13"><use href="#logo-azure" /></svg> Azure</button>
+        <button type="button" class="csp-filter-btn gcp" id="chgCspGcp" data-chg-csp="gcp" onclick="setChgCsp('gcp')"><svg width="13" height="13"><use href="#logo-gcp" /></svg> GCP</button>
+        <button type="button" class="csp-filter-btn oracle" id="chgCspOracle" data-chg-csp="oracle" onclick="setChgCsp('oracle')"><svg width="13" height="13"><use href="#logo-oracle" /></svg> Oracle</button>
+        <div class="select-wrap" style="margin-left:8px">
           <select id="chgTypeFilter" onchange="onCatalogChangesFilterChange()">
             <option value="">Change Type: All</option>
             <option value="added">Added</option>
@@ -3724,7 +4011,7 @@
         <button type="button" class="btn btn-ghost" id="chgBtnNext" style="font-size:11px;padding:4px 10px" onclick="chgNextPage()">Next</button>
         <span id="chgCount" style="font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-left:auto"></span>
       </div>
-      <div class="pricing-table-wrap">
+      <div class="pricing-table-wrap" id="chgPricingTableWrap">
         <table>
           <thead>
             <tr>
@@ -3732,6 +4019,7 @@
               <th>Catalog #</th>
               <th>Title</th>
               <th>Type</th>
+              <th>Notes</th>
               <th>JWCC Price Δ</th>
               <th>JWCC Price Δ%</th>
               <th>Comm Price Δ</th>
@@ -3742,7 +4030,27 @@
         </table>
         <div id="chgEmpty" class="empty-state" style="display:none">
           <div class="es-icon">Δ</div>
-          <p>No change data yet. Import pricing for at least two distinct <strong>import months</strong> via the API, then open this tab (or use Admin CSV uploads with import months for a browser-only comparison).</p>
+          <p>No pricing change data yet. Import pricing for at least two distinct <strong>import months</strong> via the API, pick <strong>From</strong> / <strong>To</strong>, or use Admin CSV uploads with import months for a browser-only comparison.</p>
+        </div>
+      </div>
+      <div class="pricing-table-wrap" id="chgExceptionTableWrap" style="display:none">
+        <table>
+          <thead>
+            <tr>
+              <th>CSP</th>
+              <th>Exception ID</th>
+              <th>Short name</th>
+              <th>Type</th>
+              <th>Notes</th>
+              <th>Status (prev → curr)</th>
+              <th>Impact (prev → curr)</th>
+            </tr>
+          </thead>
+          <tbody id="chgExcBody"></tbody>
+        </table>
+        <div id="chgExcEmpty" class="empty-state" style="display:none">
+          <div class="es-icon">Δ</div>
+          <p>No exception change data. Import exception CSVs for at least two months via the API, set <strong>From</strong> / <strong>To</strong>, and reload.</p>
         </div>
       </div>
     </div>
@@ -3879,11 +4187,24 @@
     /** 'none' | 'client' (browser CSV history) | 'api' (GET /pricing/changes) */
     let catalogChangesSource = 'none';
     let catalogChangesOffset = 0;
+    /** 'pricing' | 'exceptions' — Catalog Changes tab */
+    let catalogChangesMode = 'pricing';
+    let exceptionChanges = [];
+    /** @type {{ month_from?: string, month_to?: string, imported_at_from?: string, imported_at_to?: string, total?: number, limit?: number, offset?: number } | null} */
+    let exceptionChangesMeta = null;
+    let exceptionChangesSource = 'none';
+    let exceptionChangesOffset = 0;
     const CATALOG_CHANGES_PAGE_LIMIT = 1000;
 
     function currentChgLimit() {
       return catalogChangesMeta && catalogChangesMeta.limit > 0
         ? catalogChangesMeta.limit
+        : CATALOG_CHANGES_PAGE_LIMIT;
+    }
+
+    function currentExcChgLimit() {
+      return exceptionChangesMeta && exceptionChangesMeta.limit > 0
+        ? exceptionChangesMeta.limit
         : CATALOG_CHANGES_PAGE_LIMIT;
     }
 
@@ -3896,6 +4217,10 @@
       window.catalogHistoryByMonth = catalogHistoryByMonth;
       window.catalogChangesMeta = catalogChangesMeta;
       window.catalogChangesSource = catalogChangesSource;
+      window.catalogChangesMode = catalogChangesMode;
+      window.exceptionChanges = exceptionChanges;
+      window.exceptionChangesMeta = exceptionChangesMeta;
+      window.exceptionChangesSource = exceptionChangesSource;
     }
     syncSharedState();
 
@@ -3903,6 +4228,47 @@
     const API_BASE_LS = 'cloudprism_api_base';
     const API_TOKEN_LS = 'cloudprism_api_token';
     const DEFAULT_API_BASE = 'http://localhost:3001';
+    const THEME_STORAGE_KEY = 'cloudprism_theme';
+
+    function getPreferredTheme() {
+      const s = localStorage.getItem(THEME_STORAGE_KEY);
+      if (s === 'light' || s === 'dark') return s;
+      return 'dark';
+    }
+
+    function updateThemeToggleUi(mode) {
+      const btn = document.getElementById('themeToggle');
+      if (!btn) return;
+      const isLight = mode === 'light';
+      btn.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+      btn.title = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+      btn.querySelector('.tog-sun')?.classList.toggle('active', isLight);
+      btn.querySelector('.tog-moon')?.classList.toggle('active', !isLight);
+    }
+
+    function applyTheme(mode) {
+      const html = document.documentElement;
+      if (mode === 'light') html.setAttribute('data-theme', 'light');
+      else html.removeAttribute('data-theme');
+      try {
+        localStorage.setItem(THEME_STORAGE_KEY, mode);
+      } catch (_) { /* ignore quota */ }
+      updateThemeToggleUi(mode);
+      window.dispatchEvent(new CustomEvent('cloudprism-theme', { detail: { mode } }));
+    }
+
+    function toggleTheme() {
+      applyTheme(document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+    }
+
+    function initTheme() {
+      applyTheme(getPreferredTheme());
+      const btn = document.getElementById('themeToggle');
+      if (btn && !btn.dataset.bound) {
+        btn.dataset.bound = '1';
+        btn.addEventListener('click', () => toggleTheme());
+      }
+    }
 
     function persistApiBaseUrl() {
       const v = (document.getElementById('apiBaseUrl')?.value || '').trim().replace(/\/$/, '');
@@ -3998,28 +4364,7 @@
       updateAdminMeta('csOParentService');
       if (typeof calcRun === 'function') calcRun();
 
-      const monthKeys = Object.keys(catalogHistoryByMonth || {}).filter(
-        k => Array.isArray(catalogHistoryByMonth[k]) && catalogHistoryByMonth[k].length
-      ).sort();
-      if (monthKeys.length >= 2 && window.computeCatalogChanges) {
-        catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth);
-        catalogChangesSource = 'client';
-        catalogChangesMeta = {
-          month_from: monthKeys[monthKeys.length - 2],
-          month_to: monthKeys[monthKeys.length - 1],
-          total: catalogChanges.length,
-          limit: catalogChanges.length,
-          offset: 0,
-        };
-      } else {
-        catalogChanges = [];
-        catalogChangesSource = 'none';
-        catalogChangesMeta = null;
-        catalogChangesOffset = 0;
-      }
-      syncSharedState();
-      if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
-      if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+      recomputeClientCatalogChanges();
     }
 
     function restoreCatalogSnapshot() {
@@ -4160,7 +4505,133 @@
       }
     }
 
+    function normalizeChgMonthOrder() {
+      const a = document.getElementById('chgMonthFrom');
+      const b = document.getElementById('chgMonthTo');
+      if (!a || !b || !a.value || !b.value) return;
+      if (a.value >= b.value) {
+        const t = a.value;
+        a.value = b.value;
+        b.value = t;
+      }
+    }
+
+    function syncChgMonthInputsFromList(months) {
+      const fromEl = document.getElementById('chgMonthFrom');
+      const toEl = document.getElementById('chgMonthTo');
+      if (!fromEl || !toEl || !months.length) return;
+      fromEl.min = months[0];
+      fromEl.max = months[months.length - 1];
+      toEl.min = months[0];
+      toEl.max = months[months.length - 1];
+      const validPair =
+        months.includes(fromEl.value) &&
+        months.includes(toEl.value) &&
+        fromEl.value < toEl.value;
+      if (!validPair && months.length >= 2) {
+        fromEl.value = months[months.length - 2];
+        toEl.value = months[months.length - 1];
+      }
+    }
+
+    function recomputeClientCatalogChanges() {
+      const monthKeys = Object.keys(catalogHistoryByMonth || {}).filter(
+        k => Array.isArray(catalogHistoryByMonth[k]) && catalogHistoryByMonth[k].length
+      ).sort();
+      syncChgMonthInputsFromList(monthKeys);
+      normalizeChgMonthOrder();
+      const fromEl = document.getElementById('chgMonthFrom');
+      const toEl = document.getElementById('chgMonthTo');
+      const fromM = fromEl?.value || '';
+      const toM = toEl?.value || '';
+      if (monthKeys.length < 2 || !fromM || !toM || !window.computeCatalogChanges) {
+        catalogChanges = [];
+        catalogChangesSource = 'none';
+        catalogChangesMeta = null;
+        catalogChangesOffset = 0;
+        syncSharedState();
+        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+        if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+        return;
+      }
+      catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth, fromM, toM);
+      catalogChangesSource = 'client';
+      catalogChangesMeta = {
+        month_from: fromM,
+        month_to: toM,
+        total: catalogChanges.length,
+        limit: catalogChanges.length,
+        offset: 0,
+      };
+      catalogChangesOffset = 0;
+      syncSharedState();
+      if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+      if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+    }
+
+    function setChgCsp(csp) {
+      const sel = document.getElementById('chgCspFilter');
+      if (sel) sel.value = csp || '';
+      ['chgCspAll', 'chgCspAws', 'chgCspAzure', 'chgCspGcp', 'chgCspOracle'].forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const v = el.getAttribute('data-chg-csp') ?? '';
+        el.classList.toggle('active', v === (csp || ''));
+      });
+      onCatalogChangesFilterChange();
+    }
+
+    function setCatalogChangesMode(mode) {
+      catalogChangesMode = mode === 'exceptions' ? 'exceptions' : 'pricing';
+      const p = document.getElementById('chgModePricing');
+      const e = document.getElementById('chgModeExceptions');
+      if (p) p.classList.toggle('active', catalogChangesMode === 'pricing');
+      if (e) e.classList.toggle('active', catalogChangesMode === 'exceptions');
+      const pw = document.getElementById('chgPricingTableWrap');
+      const ew = document.getElementById('chgExceptionTableWrap');
+      if (pw) pw.style.display = catalogChangesMode === 'pricing' ? '' : 'none';
+      if (ew) ew.style.display = catalogChangesMode === 'exceptions' ? '' : 'none';
+      syncSharedState();
+      if (catalogChangesMode === 'exceptions') {
+        if (exceptionChangesSource === 'client') {
+          if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+          if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+          return;
+        }
+        loadExceptionChangesFromApi(true);
+        return;
+      }
+      if (catalogChangesSource === 'client') {
+        recomputeClientCatalogChanges();
+        return;
+      }
+      loadCatalogPricingChangesFromApi(true);
+    }
+
+    function onChgMonthsChanged() {
+      normalizeChgMonthOrder();
+      if (catalogChangesMode === 'exceptions') {
+        if (exceptionChangesSource === 'client') {
+          if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+          if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+          return;
+        }
+        loadExceptionChangesFromApi(true);
+        return;
+      }
+      if (catalogChangesSource === 'client') recomputeClientCatalogChanges();
+      else loadCatalogPricingChangesFromApi(true);
+    }
+
     function onCatalogChangesFilterChange() {
+      if (catalogChangesMode === 'exceptions') {
+        if (exceptionChangesSource === 'client') {
+          if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+          return;
+        }
+        loadExceptionChangesFromApi(true);
+        return;
+      }
       if (catalogChangesSource === 'client') {
         if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
         return;
@@ -4169,6 +4640,13 @@
     }
 
     function chgPrevPage() {
+      if (catalogChangesMode === 'exceptions') {
+        if (exceptionChangesSource !== 'api' || exceptionChangesOffset <= 0) return;
+        const lim = currentExcChgLimit();
+        exceptionChangesOffset = Math.max(0, exceptionChangesOffset - lim);
+        loadExceptionChangesFromApi(false);
+        return;
+      }
       if (catalogChangesSource !== 'api' || catalogChangesOffset <= 0) return;
       const lim = currentChgLimit();
       catalogChangesOffset = Math.max(0, catalogChangesOffset - lim);
@@ -4176,6 +4654,15 @@
     }
 
     function chgNextPage() {
+      if (catalogChangesMode === 'exceptions') {
+        if (exceptionChangesSource !== 'api' || !exceptionChangesMeta) return;
+        const lim = currentExcChgLimit();
+        const next = exceptionChangesOffset + lim;
+        if (next >= (exceptionChangesMeta.total || 0)) return;
+        exceptionChangesOffset = next;
+        loadExceptionChangesFromApi(false);
+        return;
+      }
       if (catalogChangesSource !== 'api' || !catalogChangesMeta) return;
       const lim = currentChgLimit();
       const next = catalogChangesOffset + lim;
@@ -4218,8 +4705,12 @@
           if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
           return;
         }
-        const fromM = months[months.length - 2];
-        const toM = months[months.length - 1];
+        syncChgMonthInputsFromList(months);
+        normalizeChgMonthOrder();
+        const fromEl = document.getElementById('chgMonthFrom');
+        const toEl = document.getElementById('chgMonthTo');
+        const fromM = fromEl?.value || months[months.length - 2];
+        const toM = toEl?.value || months[months.length - 1];
         const csp = String(document.getElementById('chgCspFilter')?.value || '')
           .toLowerCase()
           .trim();
@@ -4263,9 +4754,100 @@
       }
     }
 
-    function ensureCatalogChangesWhenTabVisible() {
-      if (catalogChangesSource === 'client') {
+    async function loadExceptionChangesFromApi(resetOffset) {
+      if (exceptionChangesSource === 'client') return;
+      if (resetOffset) exceptionChangesOffset = 0;
+
+      const base = getApiBase();
+      const token = getApiToken();
+      const headers = { Accept: 'application/json' };
+      if (token) headers['Authorization'] = 'Bearer ' + token;
+
+      const loadEl = document.getElementById('chgLoading');
+      if (loadEl) loadEl.style.display = 'inline';
+
+      try {
+        const impRes = await fetch(`${base}/imports`, { headers });
+        if (!impRes.ok) throw new Error(`imports HTTP ${impRes.status}`);
+        const imports = await impRes.json();
+        const months = [
+          ...new Set(
+            (imports || [])
+              .filter(r => String(r.schema_name || '').toLowerCase() === 'exceptions')
+              .map(r => r.import_month)
+              .filter(Boolean)
+          ),
+        ].sort();
+        if (months.length < 2) {
+          exceptionChanges = [];
+          exceptionChangesMeta = null;
+          exceptionChangesSource = 'none';
+          syncSharedState();
+          if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+          if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+          return;
+        }
+        syncChgMonthInputsFromList(months);
+        normalizeChgMonthOrder();
+        const fromEl = document.getElementById('chgMonthFrom');
+        const toEl = document.getElementById('chgMonthTo');
+        const fromM = fromEl?.value || months[months.length - 2];
+        const toM = toEl?.value || months[months.length - 1];
+        const csp = String(document.getElementById('chgCspFilter')?.value || '')
+          .toLowerCase()
+          .trim();
+        const ctype = String(document.getElementById('chgTypeFilter')?.value || '')
+          .toLowerCase()
+          .trim();
+        const qs = new URLSearchParams({
+          from: fromM,
+          to: toM,
+          limit: String(currentExcChgLimit()),
+          offset: String(exceptionChangesOffset),
+        });
+        if (csp) qs.set('csp', csp);
+        if (ctype) qs.set('change_type', ctype);
+
+        const res = await fetch(`${base}/exceptions/changes?${qs}`, { headers });
+        if (!res.ok) {
+          const t = await res.text();
+          throw new Error(t || `exceptions/changes HTTP ${res.status}`);
+        }
+        const payload = await res.json();
+        exceptionChanges = Array.isArray(payload.rows) ? payload.rows : [];
+        exceptionChangesMeta = payload.meta || null;
+        exceptionChangesSource = 'api';
+        syncSharedState();
+        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
         if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+      } catch (err) {
+        console.warn('Exception changes API:', err);
+        exceptionChanges = [];
+        exceptionChangesMeta = null;
+        exceptionChangesSource = 'none';
+        syncSharedState();
+        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+        if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+        if (typeof showToast === 'function') {
+          showToast('Exception changes: ' + formatFetchError(err, getApiBase()), 'error');
+        }
+      } finally {
+        if (loadEl) loadEl.style.display = 'none';
+      }
+    }
+
+    function ensureCatalogChangesWhenTabVisible() {
+      if (catalogChangesMode === 'exceptions') {
+        if (exceptionChangesSource === 'client') {
+          if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+          if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+          return;
+        }
+        loadExceptionChangesFromApi(exceptionChangesSource !== 'api');
+        return;
+      }
+      if (catalogChangesSource === 'client') {
+        recomputeClientCatalogChanges();
         return;
       }
       loadCatalogPricingChangesFromApi(catalogChangesSource !== 'api');
@@ -5730,26 +6312,7 @@
           catalogHistoryByMonth[monthKey] = catalogHistoryByMonth[monthKey].filter(r => (r.csp_injected || '') !== (injectedCSP || '').toLowerCase());
           catalogHistoryByMonth[monthKey].push(...forCsp);
         }
-        if (window.computeCatalogChanges) {
-          catalogChanges = window.computeCatalogChanges(catalogHistoryByMonth);
-          const mk = Object.keys(catalogHistoryByMonth || {}).filter(
-            k => Array.isArray(catalogHistoryByMonth[k]) && catalogHistoryByMonth[k].length
-          ).sort();
-          catalogChangesSource = 'client';
-          catalogChangesMeta =
-            mk.length >= 2
-              ? {
-                  month_from: mk[mk.length - 2],
-                  month_to: mk[mk.length - 1],
-                  total: catalogChanges.length,
-                  limit: catalogChanges.length,
-                  offset: 0,
-                }
-              : null;
-        }
-        syncSharedState();
-        if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
-        if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
+        recomputeClientCatalogChanges();
       }
       if (typeof calcRun === 'function') calcRun();
       persistCatalogSnapshot();
@@ -6577,6 +7140,7 @@
       if (typeof initExceptionsPage === 'function') initExceptionsPage();
       if (typeof renderExceptions === 'function') renderExceptions();
       if (typeof renderCatalogChanges === 'function') renderCatalogChanges();
+      if (typeof updateCatalogChangesCompareLabel === 'function') updateCatalogChangesCompareLabel();
     }
     // NOTE: calcInit() is called at bottom of script after all calculator code is defined
 
@@ -7277,6 +7841,7 @@
     }
 
     // ── Initialize calculator (must be after all calc code is defined) ──
+    initTheme();
     calcInit();
 
   </script>
