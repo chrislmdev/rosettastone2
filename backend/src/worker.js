@@ -289,10 +289,10 @@ async function processException(filePath, csp, importId, client) {
     const effectiveCsp = pickEffectiveCsp(row, csp);
     const prevMap = await getPrevMap(effectiveCsp);
     const uid = (row.exceptionuniqueid || row.exception_unique_id || "").trim();
-    if (uid) {
-      if (!seenUidsByCsp.has(effectiveCsp)) seenUidsByCsp.set(effectiveCsp, new Set());
-      seenUidsByCsp.get(effectiveCsp).add(uid);
-    }
+    if (!uid) continue;
+
+    if (!seenUidsByCsp.has(effectiveCsp)) seenUidsByCsp.set(effectiveCsp, new Set());
+    seenUidsByCsp.get(effectiveCsp).add(uid);
 
     await client.query(
       `insert into exception_item (
@@ -311,7 +311,7 @@ async function processException(filePath, csp, importId, client) {
       ]
     );
 
-    if (uid && !prevMap[uid]) {
+    if (!prevMap[uid]) {
       await client.query(
         `insert into exception_change_log
            (import_id, csp, exceptionuniqueid, field_name, old_value, new_value)
@@ -320,7 +320,7 @@ async function processException(filePath, csp, importId, client) {
       );
     }
 
-    if (uid && prevMap[uid]) {
+    if (prevMap[uid]) {
       const old = prevMap[uid];
       for (const field of TRACKED_FIELDS) {
         const oldVal = old[field] ?? "";
