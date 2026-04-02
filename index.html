@@ -3304,139 +3304,48 @@
       <div class="admin-hero">
         <div>
           <h2>Data Management (Admin)</h2>
-          <p>Upload monthly CSV files to update the application's underlying data schemas for each Cloud Service Provider (CSP).</p>
+          <p>Load catalogs in the <strong>browser</strong> (CSV or Excel <code>.xlsx</code>, first sheet only, same columns as CSV) or send files to the <strong>backend</strong> for processing. Filename rules match batch import (CSP + pricing / parent / exception keywords).</p>
+          <p id="adminCatalogStats" class="admin-catalog-stats" style="margin-top:10px;font-family:var(--mono);font-size:11px;color:var(--text-dim)">Pricing · 0 rows · Mapping · 0 rows · Exceptions · 0 rows</p>
         </div>
         <div class="chg-month-row" style="margin:0">
           <div class="chg-month-field">
             <label for="importMonth">Import month</label>
             <input type="month" id="importMonth" onchange="renderBatchStagedChips()">
           </div>
-          <button type="button" class="btn btn-ghost" onclick="loadSampleAdminData()">⬇ Load All Mock Data</button>
         </div>
       </div>
 
-      <input type="file" id="file-csopricing" accept=".csv" style="display:none" onchange="handleAdminCSV('csoPricing',this)">
-      <input type="file" id="file-csoexception" accept=".csv" style="display:none" onchange="handleAdminCSV('csoException',this)">
-      <input type="file" id="file-csoparent" accept=".csv" style="display:none" onchange="handleAdminCSV('csOParentService',this)">
+      <div class="admin-server-card" style="margin-bottom:20px">
+        <h3 style="margin:0 0 8px;font-size:14px">Browser import (CSV / XLSX)</h3>
+        <p style="font-size:11px;color:var(--text-muted);margin:0 0 10px;max-width:720px">
+          Drops or picks files into this app only (no server). Use the <strong>same header row</strong> as CSV templates. For <code>.xlsx</code>, only the <strong>first worksheet</strong> is read. Names like <code>aws_pricing.csv</code> or <code>azure_exceptions.xlsx</code> are required so CSP and type can be inferred.
+        </p>
+        <div class="admin-batch-bar">
+          <div id="adminLocalDropzone" class="batch-dropzone batch-dropzone-compact" role="button" tabindex="0"
+            onclick="document.getElementById('adminLocalFileInput').click()"
+            onkeydown="if (event.key==='Enter'||event.key===' ') { event.preventDefault(); document.getElementById('adminLocalFileInput').click(); }"
+            ondragover="adminLocalDragOver(event)"
+            ondragleave="adminLocalDragLeave(event)"
+            ondrop="adminLocalDrop(event)">
+            <strong style="color:var(--text)">Drop files</strong> or click — CSV / XLSX
+          </div>
+        </div>
+        <input type="file" id="adminLocalFileInput" multiple accept=".csv,.xlsx,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" style="display:none" onchange="onAdminLocalFilesSelected(this)">
+      </div>
 
-      <details class="admin-dataset" open>
-        <summary>1. CsoPricing (monthly catalog)</summary>
-        <div class="p-toolbar admin-toolbar-row">
-          <span class="p-toolbar-inner-label">Per-CSP pricing CSV</span>
-          <button type="button" class="btn btn-danger" style="margin-left:auto;font-size:10px;padding:4px 8px" onclick="clearAdminData('csoPricing')">Clear All Pricing</button>
+      <div class="p-toolbar admin-toolbar-row" style="margin-bottom:20px">
+        <span class="p-toolbar-inner-label">Clear in-browser data (testing)</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-left:auto">
+          <button type="button" class="btn btn-danger" style="font-size:10px;padding:4px 10px" onclick="clearAdminData('csoPricing')">Clear pricing</button>
+          <button type="button" class="btn btn-danger" style="font-size:10px;padding:4px 10px" onclick="clearAdminData('csOParentService')">Clear mapping</button>
+          <button type="button" class="btn btn-danger" style="font-size:10px;padding:4px 10px" onclick="clearAdminData('csoException')">Clear exceptions</button>
         </div>
-        <div class="upload-grid admin-upload-grid">
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--aws)"></div><span class="uc-name">AWS</span>
-          </div>
-          <div class="uc-meta" id="aws-pricing-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoPricing','aws')">⬆ Upload Pricing</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--azure)"></div><span class="uc-name">Azure</span>
-          </div>
-          <div class="uc-meta" id="azure-pricing-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoPricing','azure')">⬆ Upload Pricing</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--gcp)"></div><span class="uc-name">GCP</span>
-          </div>
-          <div class="uc-meta" id="gcp-pricing-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoPricing','gcp')">⬆ Upload Pricing</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--oracle)"></div><span class="uc-name">Oracle</span>
-          </div>
-          <div class="uc-meta" id="oracle-pricing-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoPricing','oracle')">⬆ Upload Pricing</button>
-        </div>
-        </div>
-      </details>
-
-      <details class="admin-dataset" open>
-        <summary>2. CsoParentService (service mapping)</summary>
-        <div class="p-toolbar admin-toolbar-row">
-          <span class="p-toolbar-inner-label">Parent / mapping CSV</span>
-          <button type="button" class="btn btn-danger" style="margin-left:auto;font-size:10px;padding:4px 8px" onclick="clearAdminData('csOParentService')">Clear All Mapping</button>
-        </div>
-        <div class="upload-grid admin-upload-grid">
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--aws)"></div><span class="uc-name">AWS</span>
-          </div>
-          <div class="uc-meta" id="aws-mapping-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csOParentService','aws')">⬆ Upload Mapping</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--azure)"></div><span class="uc-name">Azure</span>
-          </div>
-          <div class="uc-meta" id="azure-mapping-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csOParentService','azure')">⬆ Upload Mapping</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--gcp)"></div><span class="uc-name">GCP</span>
-          </div>
-          <div class="uc-meta" id="gcp-mapping-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csOParentService','gcp')">⬆ Upload Mapping</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--oracle)"></div><span class="uc-name">Oracle</span>
-          </div>
-          <div class="uc-meta" id="oracle-mapping-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csOParentService','oracle')">⬆ Upload Mapping</button>
-        </div>
-        </div>
-      </details>
-
-      <details class="admin-dataset" open>
-        <summary>3. csoException (authorization library)</summary>
-        <div class="p-toolbar admin-toolbar-row">
-          <span class="p-toolbar-inner-label">Exceptions CSV</span>
-          <button type="button" class="btn btn-danger" style="margin-left:auto;font-size:10px;padding:4px 8px" onclick="clearAdminData('csoException')">Clear All Exceptions</button>
-        </div>
-        <div class="upload-grid admin-upload-grid">
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--aws)"></div><span class="uc-name">AWS</span>
-          </div>
-          <div class="uc-meta" id="aws-exception-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoException','aws')">⬆ Upload Exceptions</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--azure)"></div><span class="uc-name">Azure</span>
-          </div>
-          <div class="uc-meta" id="azure-exception-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoException','azure')">⬆ Upload Exceptions</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--gcp)"></div><span class="uc-name">GCP</span>
-          </div>
-          <div class="uc-meta" id="gcp-exception-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoException','gcp')">⬆ Upload Exceptions</button>
-        </div>
-        <div class="upload-card">
-          <div class="uc-header">
-            <div class="uc-dot" style="background:var(--oracle)"></div><span class="uc-name">Oracle</span>
-          </div>
-          <div class="uc-meta" id="oracle-exception-meta">No file</div>
-          <button class="upload-btn" onclick="triggerCSPUpload('csoException','oracle')">⬆ Upload Exceptions</button>
-        </div>
-        </div>
-      </details>
+      </div>
 
       <div class="admin-server-card admin-batch-section">
-        <h3>Import CSVs to server</h3>
+        <h3>Import files to server</h3>
         <p style="font-size:11px;color:var(--text-muted);margin:0 0 10px;max-width:640px">
-          Filenames should include CSP and type (e.g. <code style="font-size:10px">oci_pricing.csv</code>, <code style="font-size:10px">aws_parent_mapping.csv</code>). Set <strong>Import month</strong> above, add files, then <strong>Process all</strong> — uploads, waits for processing, and reloads catalogs from the backend.
+          <strong>CSV</strong> or <strong>XLSX</strong> (converted to CSV in the browser before upload). Filenames should include CSP and type (e.g. <code style="font-size:10px">oci_pricing.xlsx</code>, <code style="font-size:10px">aws_parent_mapping.csv</code>). Set <strong>Import month</strong> above, add files, then <strong>Process all</strong> — uploads, waits for processing, and reloads catalogs from the backend.
         </p>
         <p id="adminBatchBackendHint" class="admin-batch-backend-hint" aria-live="polite"></p>
         <div class="admin-batch-bar">
@@ -3446,17 +3355,17 @@
             ondragover="batchDropzoneDragOver(event)"
             ondragleave="batchDropzoneDragLeave(event)"
             ondrop="batchDropzoneDrop(event)">
-            <strong style="color:var(--text)">Drop CSVs</strong> or click to add
+            <strong style="color:var(--text)">Drop CSV / XLSX</strong> or click to add
           </div>
           <div class="admin-batch-actions">
             <button type="button" id="batchProcessAllBtn" class="btn btn-primary" style="font-size:12px;padding:8px 16px" disabled onclick="runBatchImport()">Process all</button>
           </div>
         </div>
-        <input type="file" id="batchDropzoneInput" multiple accept=".csv,text/csv" style="display:none" onchange="onBatchDropzoneFilesSelected(this)">
+        <input type="file" id="batchDropzoneInput" multiple accept=".csv,.xlsx,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" style="display:none" onchange="onBatchDropzoneFilesSelected(this)">
         <div id="batchStagedChips" style="margin-top:8px"></div>
         <details style="margin-top:8px">
           <summary style="font-size:11px;cursor:pointer;color:var(--text-muted)">Manifest overrides (JSON, optional)</summary>
-          <p style="font-size:10px;color:var(--text-muted);margin:8px 0 6px">Keys = exact filenames, e.g. <code style="font-size:9px">{"weird.csv":{"csp":"aws","fileType":"pricing"}}</code></p>
+          <p style="font-size:10px;color:var(--text-muted);margin:8px 0 6px">Staged list can show <code style="font-size:9px">.xlsx</code>; the browser still infers CSP/type from that name. Server-side manifest entries must use the uploaded name (Excel → same basename <code style="font-size:9px">.csv</code>), e.g. <code style="font-size:9px">{"weird.csv":{"csp":"aws","fileType":"pricing"}}</code>.</p>
           <textarea id="batchImportManifest" class="form-input" style="width:100%;max-width:640px;min-height:64px;font-size:11px;font-family:var(--mono);padding:8px" placeholder="{}" oninput="renderBatchStagedChips()"></textarea>
         </details>
         <div id="bulkImportPanel" style="display:none;margin-top:12px">
@@ -4030,7 +3939,7 @@
         </table>
         <div id="chgEmpty" class="empty-state" style="display:none">
           <div class="es-icon">Δ</div>
-          <p>No pricing change data yet. Import pricing for at least two distinct <strong>import months</strong> via the API, pick <strong>From</strong> / <strong>To</strong>, or use Admin CSV uploads with import months for a browser-only comparison.</p>
+          <p>No pricing change data yet. Import pricing for at least two distinct <strong>import months</strong> via the API, pick <strong>From</strong> / <strong>To</strong>, or use Admin browser import (CSV / XLSX) with import months for a browser-only comparison.</p>
         </div>
       </div>
       <div class="pricing-table-wrap" id="chgExceptionTableWrap" style="display:none">
@@ -4165,6 +4074,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
   <script src="src/data/focusInference.js"></script>
   <script src="src/data/serviceComparisonSubcategories.js"></script>
   <script src="src/data/taxonomy.js"></script>
@@ -4359,9 +4269,7 @@
       renderPricing();
       if (typeof initExceptionsPage === 'function') initExceptionsPage();
       if (typeof renderExceptions === 'function') renderExceptions();
-      updateAdminMeta('csoPricing');
-      updateAdminMeta('csoException');
-      updateAdminMeta('csOParentService');
+      updateAdminCatalogStats();
       if (typeof calcRun === 'function') calcRun();
 
       recomputeClientCatalogChanges();
@@ -4391,6 +4299,21 @@
 
     function mapPricingRowFromApi(r) {
       const csp = String(r.csp || '').toLowerCase();
+      function numishPrice(v) {
+        if (v == null || v === '') return v;
+        if (typeof v === 'number') return Number.isFinite(v) ? v : '';
+        const t = String(v)
+          .replace(/,/g, '')
+          .replace(/\$/g, '')
+          .trim()
+          .replace(/^\[+/, '')
+          .replace(/\]+$/, '')
+          .trim();
+        const n = parseFloat(t);
+        return Number.isFinite(n) ? n : String(v).trim();
+      }
+      const listP = numishPrice(r.list_unit_price);
+      const jwP = numishPrice(r.jwccunitprice ?? r.customerunitprice);
       return {
         csp_injected: csp,
         csp,
@@ -4398,12 +4321,12 @@
         title: r.title,
         csoshortname: r.csoshortname,
         description: r.description || '',
-        list_unit_price: r.list_unit_price,
-        commercialunitprice: r.list_unit_price,
+        list_unit_price: listP,
+        commercialunitprice: listP,
         pricing_unit: r.pricing_unit,
         commercialunitofissue: r.pricing_unit,
-        jwccunitprice: r.jwccunitprice,
-        customerunitprice: r.jwccunitprice ?? r.customerunitprice,
+        jwccunitprice: jwP,
+        customerunitprice: jwP,
         jwccunitofissue: r.jwccunitofissue,
         discountpremiumfee: r.discountpremiumfee || '',
         service_category: r.service_category,
@@ -4981,6 +4904,116 @@
       }
     }
 
+    function isAdminXlsxFile(f) {
+      return (
+        /\.xlsx$/i.test(f.name) ||
+        /spreadsheetml\.sheet/i.test(f.type || '') ||
+        String(f.type || '').toLowerCase() ===
+          'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+      );
+    }
+
+    function isAdminCsvFile(f) {
+      return /\.csv$/i.test(f.name) || (f.type && String(f.type).toLowerCase().indexOf('csv') >= 0);
+    }
+
+    function isAdminTabularImportFile(f) {
+      return isAdminCsvFile(f) || isAdminXlsxFile(f);
+    }
+
+    function readFileAsUtf8Text(file) {
+      return new Promise((resolve, reject) => {
+        const r = new FileReader();
+        r.onload = () => resolve(String(r.result ?? ''));
+        r.onerror = () => reject(r.error || new Error('read failed'));
+        r.readAsText(file);
+      });
+    }
+
+    async function tabularFileToCsvText(file) {
+      if (isAdminXlsxFile(file)) {
+        if (typeof XLSX === 'undefined' || !XLSX.read) {
+          throw new Error('Excel support unavailable (XLSX library failed to load)');
+        }
+        const buf = await file.arrayBuffer();
+        const wb = XLSX.read(buf, { type: 'array', cellDates: true });
+        const sheet0 = wb.SheetNames[0];
+        if (!sheet0) throw new Error('Workbook has no sheets');
+        return XLSX.utils.sheet_to_csv(wb.Sheets[sheet0]);
+      }
+      return readFileAsUtf8Text(file);
+    }
+
+    function uploadNameForBatchFile(file) {
+      if (isAdminXlsxFile(file)) return file.name.replace(/\.xlsx$/i, '.csv');
+      return file.name;
+    }
+
+    async function prepareBatchUploadCsvFile(file) {
+      const text = await tabularFileToCsvText(file);
+      const name = uploadNameForBatchFile(file);
+      return new File([text], name, { type: 'text/csv', lastModified: file.lastModified });
+    }
+
+    function adminLocalDragOver(e) {
+      e.preventDefault();
+      const z = document.getElementById('adminLocalDropzone');
+      if (z) z.classList.add('batch-drag-active');
+    }
+    function adminLocalDragLeave(e) {
+      e.preventDefault();
+      const z = document.getElementById('adminLocalDropzone');
+      if (z) z.classList.remove('batch-drag-active');
+    }
+    function adminLocalDrop(e) {
+      e.preventDefault();
+      const z = document.getElementById('adminLocalDropzone');
+      if (z) z.classList.remove('batch-drag-active');
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length) {
+        processAdminLocalImportFiles(e.dataTransfer.files);
+      }
+    }
+
+    async function onAdminLocalFilesSelected(input) {
+      if (input && input.files && input.files.length) await processAdminLocalImportFiles(input.files);
+      input.value = '';
+    }
+
+    async function processAdminLocalImportFiles(fileList) {
+      const arr = Array.from(fileList || []).filter(isAdminTabularImportFile);
+      if (!arr.length) {
+        showToast('Add CSV or XLSX files only', 'error');
+        return;
+      }
+      const man = readBatchManifestObject();
+      if (!man.ok) {
+        showToast(man.error, 'error');
+        return;
+      }
+      for (const file of arr) {
+        const spec = resolveImportSpecForFile(file.name, man.obj);
+        if (spec.error) {
+          showToast(`${file.name}: ${spec.error}`, 'error');
+          continue;
+        }
+        let text;
+        try {
+          text = await tabularFileToCsvText(file);
+        } catch (err) {
+          showToast(`${file.name}: ${err.message || err}`, 'error');
+          continue;
+        }
+        const schema =
+          spec.fileType === 'pricing'
+            ? 'csoPricing'
+            : spec.fileType === 'parent'
+              ? 'csOParentService'
+              : 'csoException';
+        handleAdminCSVRaw(schema, text, spec.csp);
+        showToast(`✓ Loaded ${file.name}`, 'success');
+      }
+    }
+
     function batchDropzoneDragOver(e) {
       e.preventDefault();
       const z = document.getElementById('batchDropzone');
@@ -5001,9 +5034,7 @@
     }
 
     function batchStagedAddFiles(fileList) {
-      const arr = Array.from(fileList || []).filter(
-        f => /\.csv$/i.test(f.name) || (f.type && String(f.type).indexOf('csv') >= 0)
-      );
+      const arr = Array.from(fileList || []).filter(isAdminTabularImportFile);
       for (const f of arr) {
         const dup = batchStagedFiles.some(
           x => x.name === f.name && x.size === f.size && x.lastModified === f.lastModified
@@ -5129,8 +5160,25 @@
       }
       setProgress();
 
+      let uploadFiles;
+      try {
+        uploadFiles = await Promise.all(jobs.map(j => prepareBatchUploadCsvFile(j.file)));
+      } catch (prepErr) {
+        if (labelEl) labelEl.textContent = 'Batch failed';
+        for (let i = 0; i < jobs.length; i++) {
+          const stEl = document.getElementById('bulk-st-' + i);
+          if (stEl) {
+            stEl.textContent = 'error';
+            stEl.className = 'bulk-st-error';
+            stEl.title = prepErr.message || String(prepErr);
+          }
+        }
+        showToast('Prepare upload: ' + (prepErr.message || prepErr), 'error');
+        return;
+      }
+
       const fd = new FormData();
-      for (const j of jobs) fd.append('files', j.file);
+      for (const uf of uploadFiles) fd.append('files', uf);
       fd.append('importMonth', importMonth);
       const rawManifest = document.getElementById('batchImportManifest');
       const mraw = rawManifest && String(rawManifest.value || '').trim();
@@ -5167,20 +5215,21 @@
 
       for (let i = 0; i < jobs.length; i++) {
         const job = jobs[i];
-        const name = job.file.name;
+        const uploadName = uploadFiles[i].name;
+        const displayName = job.file.name;
         const stEl = document.getElementById('bulk-st-' + i);
-        if (errByName[name]) {
+        if (errByName[uploadName]) {
           completed++;
           setProgress();
           if (stEl) {
             stEl.textContent = 'error';
             stEl.className = 'bulk-st-error';
-            stEl.title = errByName[name];
+            stEl.title = errByName[uploadName];
           }
-          showToast(`${name}: ${errByName[name]}`, 'error');
+          showToast(`${displayName}: ${errByName[uploadName]}`, 'error');
           continue;
         }
-        const r = resultByName[name];
+        const r = resultByName[uploadName];
         if (!r || r.importId == null) {
           completed++;
           setProgress();
@@ -5205,7 +5254,7 @@
               stEl.className = 'bulk-st-error';
               stEl.title = status.error_message || '';
             }
-            showToast(`${name}: ${status.error_message || 'error'}`, 'error');
+            showToast(`${displayName}: ${status.error_message || 'error'}`, 'error');
           } else {
             if (stEl) {
               stEl.textContent = 'done' + (status.row_count != null ? ` (${status.row_count})` : '');
@@ -5221,7 +5270,7 @@
             stEl.className = 'bulk-st-error';
             stEl.title = detail;
           }
-          showToast(`${name}: ${detail}`, 'error');
+          showToast(`${displayName}: ${detail}`, 'error');
         }
       }
 
@@ -6169,43 +6218,6 @@
     }
 
     // ── ADMIN LOGIC ──────────────────────────────────────────────
-    function loadSampleAdminData() {
-      const csps = ['aws', 'azure', 'gcp', 'oracle'];
-      const loadText = path =>
-        fetch(path).then(r => {
-          if (!r.ok) throw new Error(path + ' HTTP ' + r.status);
-          return r.text();
-        });
-      Promise.all(
-        csps.map(csp =>
-          Promise.all([
-            loadText(`mock_data/${csp}_Pricing_mock.csv`),
-            loadText(`mock_data/${csp}_Exception_mock.csv`),
-            loadText(`mock_data/${csp}_ParentService_mock.csv`),
-          ]).then(([pricingText, exceptionText, parentText]) => ({
-            csp,
-            pricingText,
-            exceptionText,
-            parentText,
-          }))
-        )
-      )
-        .then(results => {
-          csoPricingData = [];
-          csoExceptionData = [];
-          csOParentServiceData = [];
-          for (const { csp, pricingText, exceptionText, parentText } of results) {
-            handleAdminCSVRaw('csoPricing', pricingText, csp);
-            handleAdminCSVRaw('csoException', exceptionText, csp);
-            handleAdminCSVRaw('csOParentService', parentText, csp);
-          }
-          showToast('✓ Mock data loaded from mock_data/ (per CSP)', 'success');
-        })
-        .catch(() => {
-          showToast('Failed to load mock CSV files from mock_data/', 'error');
-        });
-    }
-
     function clearAdminData(schema) {
       if (schema === 'csoPricing') {
         csoPricingData = [];
@@ -6213,37 +6225,20 @@
       }
       if (schema === 'csoException') csoExceptionData = [];
       if (schema === 'csOParentService') csOParentServiceData = [];
-      
-      updateAdminMeta(schema);
+
+      updateAdminCatalogStats();
       renderPricing(); // Refresh catalog
       calcRun(); // Refresh calculator
       persistCatalogSnapshot();
       showToast(`✓ Removed all ${schema} data`, 'success');
     }
 
-    function handleAdminCSV(schema, input) {
-      const file = input.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = e => {
-        handleAdminCSVRaw(schema, e.target.result, currentCSPUpload);
-        showToast(`✓ Loaded ${file.name}`, 'success');
-        input.value = '';
-        currentCSPUpload = null;
-        currentSchemaUpload = null;
-      };
-      reader.readAsText(file);
-    }
-
-    let currentCSPUpload = null;
-    let currentSchemaUpload = null;
-
-    function triggerCSPUpload(schema, csp) {
-      currentSchemaUpload = schema;
-      currentCSPUpload = csp;
-      const inputId = schema === 'csoPricing' ? 'file-csopricing' :
-        schema === 'csoException' ? 'file-csoexception' : 'file-csoparent';
-      document.getElementById(inputId).click();
+    /** Some CSP exports (e.g. GCP) wrap prices in brackets, e.g. "[0.05]". */
+    function normalizeImportedPriceCell(v) {
+      if (v == null || v === '' || typeof v === 'boolean') return v;
+      let s = String(v).trim().replace(/,/g, '').replace(/\$/g, '');
+      s = s.replace(/^\[+/, '').replace(/\]+$/, '').trim();
+      return s;
     }
 
     function handleAdminCSVRaw(schema, text, injectedCSP = null) {
@@ -6264,14 +6259,17 @@
           const uVal = val.toUpperCase();
           if (uVal === 'TRUE') val = true;
           else if (uVal === 'FALSE') val = false;
-          if (!Object.prototype.hasOwnProperty.call(row, h)) row[h] = val;
+          row[h] = val;
         });
 
         if (schema === 'csoPricing') {
           const cup = row.commercialunitprice ?? row.listunitprice;
           const jw = row.jwccunitprice ?? row.jwccunitprice;
-          if (cup != null && cup !== '') row.list_unit_price = row.commercialunitprice = cup;
-          if (jw != null && jw !== '') row.jwccunitprice = jw;
+          if (cup != null && cup !== '') {
+            const n = normalizeImportedPriceCell(cup);
+            row.list_unit_price = row.commercialunitprice = n;
+          }
+          if (jw != null && jw !== '') row.jwccunitprice = normalizeImportedPriceCell(jw);
           if (row.commercialunitofissue) row.pricing_unit = row.commercialunitofissue;
           if (row.jwccunitofissue) row.jwccunitofissue = row.jwccunitofissue;
         }
@@ -6298,7 +6296,7 @@
       }
       syncSharedState();
 
-      updateAdminMeta(schema);
+      updateAdminCatalogStats();
       updatePricingEnrichment();
       renderServices();
       renderPricing();
@@ -6318,27 +6316,13 @@
       persistCatalogSnapshot();
     }
 
-    function updateAdminMeta(schema) {
-      const short = schema === 'csOParentService' ? 'mapping' :
-        schema === 'csoException' ? 'exception' : 'pricing';
-
-      ['aws', 'azure', 'gcp', 'oracle'].forEach(csp => {
-        const el = document.getElementById(`${csp}-${short}-meta`);
-        if (!el) return;
-        let data = [];
-        if (schema === 'csoPricing') data = csoPricingData;
-        else if (schema === 'csoException') data = csoExceptionData;
-        else data = csOParentServiceData;
-
-        // More robust count filter
-        const cnt = data.filter(r => {
-          const rCsp = (r.csp_injected || r.csp || '').toLowerCase().trim();
-          return rCsp === csp;
-        }).length;
-
-        el.textContent = cnt > 0 ? `✓ ${cnt} records` : 'No file';
-        el.className = 'uc-meta ' + (cnt > 0 ? 'loaded' : 'empty');
-      });
+    function updateAdminCatalogStats() {
+      const el = document.getElementById('adminCatalogStats');
+      if (!el) return;
+      const pr = (csoPricingData || []).length;
+      const pa = (csOParentServiceData || []).length;
+      const ex = (csoExceptionData || []).length;
+      el.textContent = `Pricing · ${pr} rows · Mapping · ${pa} rows · Exceptions · ${ex} rows`;
     }
 
     function splitCSVLine(line) {
@@ -6757,7 +6741,7 @@
       igceCatalogTargetClin = clinId;
       const allPricing = [...csoPricingData];
       if (!allPricing.length) {
-        showToast('No pricing catalog data loaded — go to Admin and load mock data first', 'error');
+        showToast('No pricing catalog data loaded — go to Admin and import catalogs (CSV / XLSX) first', 'error');
         return;
       }
       // Build a simple picker modal

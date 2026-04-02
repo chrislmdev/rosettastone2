@@ -1,6 +1,15 @@
 (() => {
   function toNum(v) {
-    const n = parseFloat(v);
+    if (v == null || v === '') return 0;
+    if (typeof v === 'number') return Number.isFinite(v) ? v : 0;
+    const s = String(v)
+      .replace(/,/g, '')
+      .replace(/\$/g, '')
+      .trim()
+      .replace(/^\[+/, '')
+      .replace(/\]+$/, '')
+      .trim();
+    const n = parseFloat(s);
     return Number.isFinite(n) ? n : 0;
   }
 

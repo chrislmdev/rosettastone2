@@ -60,7 +60,9 @@ function pickEffectiveCsp(row, jobCsp) {
 /** Strip currency formatting; null if not a finite number. */
 function parseMoneyLike(s) {
   if (s == null) return null;
-  const t = String(s).replace(/,/g, "").replace(/\$/g, "").trim();
+  let t = String(s).replace(/,/g, "").replace(/\$/g, "").trim();
+  // Some exports (e.g. GCP) wrap prices in brackets, e.g. "[0.05]" or "[$1.00]".
+  t = t.replace(/^\[+/, "").replace(/\]+$/, "").trim();
   if (!t) return null;
   const n = parseFloat(t);
   return Number.isFinite(n) ? n : null;

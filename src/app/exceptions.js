@@ -15,6 +15,48 @@
     il6: '#ef4444',
   };
 
+  function normHeaderKey(k) {
+    return String(k ?? '').replace(/[^a-z0-9]/gi, '').toLowerCase();
+  }
+
+  /** Match CSV/API column names regardless of underscores, camelCase, or spacing. */
+  function pickExcField(r, canonicalNames) {
+    if (!r || typeof r !== 'object') return '';
+    for (const name of canonicalNames) {
+      const want = normHeaderKey(name);
+      for (const key of Object.keys(r)) {
+        if (normHeaderKey(key) === want) {
+          const v = r[key];
+          if (v != null && String(v).trim() !== '') return String(v).trim();
+        }
+      }
+    }
+    return '';
+  }
+
+  function getExceptionUniqueId(r) {
+    return pickExcField(r, [
+      'exceptionuniqueid',
+      'exception_unique_id',
+      'uniqueid',
+      'exceptionid',
+      'exception_id',
+    ]);
+  }
+
+  function getCsoShortName(r) {
+    return pickExcField(r, [
+      'csoshortname',
+      'cso_short_name',
+      'cso_shortname',
+      'shortname',
+      'short_name',
+      'csoshort_name',
+      'servicename',
+      'service',
+    ]);
+  }
+
   function chartTheme() {
     const light = document.documentElement.getAttribute('data-theme') === 'light';
     return {
@@ -44,7 +86,7 @@
 
     const svcMap = {};
     rows.forEach(r => {
-      const k = (r.csoshortname || r.shortname || 'Unknown').trim();
+      const k = (getCsoShortName(r) || 'Unknown').trim();
       svcMap[k] = (svcMap[k] || 0) + 1;
     });
     const svcSorted = Object.entries(svcMap).sort((a, b) => b[1] - a[1]).slice(0, 12);
@@ -201,8 +243,8 @@
           if (h === 'csp') v = r.csp_injected || r.csp || '';
           else if (h === 'import_month') v = r.import_month || '';
           else if (h === 'imported_at') v = r.imported_at || '';
-          else if (h === 'exceptionuniqueid') v = r.uniqueid || '';
-          else if (h === 'csoshortname') v = r.shortname || '';
+          else if (h === 'exceptionuniqueid') v = getExceptionUniqueId(r);
+          else if (h === 'csoshortname') v = getCsoShortName(r);
           else if (h === 'exceptionstatus') v = r.status || '';
           else if (h === 'exceptionsecurityconsiderations') v = r.exceptionsecurity || '';
           else v = '';
@@ -301,8 +343,8 @@
       <td>${escHtml(r.csp_injected || r.csp)}</td>
       <td>${escHtml(r.import_month || '—')}</td>
       <td>${escHtml(formatExcImportedAt(r.imported_at))}</td>
-      <td>${escHtml(r.exceptionuniqueid || r.uniqueid)}</td>
-      <td>${escHtml(r.csoshortname || r.shortname)}</td>
+      <td>${escHtml(getExceptionUniqueId(r))}</td>
+      <td>${escHtml(getCsoShortName(r))}</td>
       <td>${escHtml(r.impactlevel)}</td>
       <td>${escHtml(r.exceptionstatus || r.status)}</td>
       <td>${escHtml(r.exceptionpwsrequirement)}</td>
@@ -410,7 +452,7 @@
 
     const svcEl = document.getElementById('excServiceFilter');
     if (svcEl) {
-      const vals = [...new Set(data.map(r => (r.csoshortname || r.shortname || '').trim()).filter(Boolean))].sort();
+      const vals = [...new Set(data.map(r => getCsoShortName(r).trim()).filter(Boolean))].sort();
       svcEl.innerHTML = '<option value="">Service: All</option>' +
         vals.map(v => `<option value="${escHtml(v)}">${escHtml(v)}</option>`).join('');
     }
@@ -433,9 +475,9 @@
       const rowCsp = String(r.csp_injected || r.csp || '').toLowerCase().trim();
       const rowStatus = String(r.exceptionstatus || r.status || '');
       const rowImpactRaw = String(r.impactlevel || '');
-      const rowService = String(r.csoshortname || r.shortname || '');
+      const rowService = String(getCsoShortName(r) || '');
       const blob = [
-        r.exceptionuniqueid || r.uniqueid,
+        getExceptionUniqueId(r),
         rowService,
         rowImpactRaw,
         rowStatus,
@@ -475,8 +517,8 @@
         <td><span class="pt-csp-badge ${(r.csp_injected || r.csp || '').toLowerCase()}">${String(r.csp_injected || r.csp || 'CSO').toUpperCase()}</span></td>
         <td>${r.import_month || '—'}</td>
         <td>${formatExcImportedAt(r.imported_at)}</td>
-        <td>${r.exceptionuniqueid || r.uniqueid || '—'}</td>
-        <td>${r.csoshortname || r.shortname || '—'}</td>
+        <td>${getExceptionUniqueId(r) || '—'}</td>
+        <td>${getCsoShortName(r) || '—'}</td>
         <td>${r.impactlevel || '—'}</td>
         <td>${r.exceptionstatus || r.status || '—'}</td>
         <td>${r.exceptionpwsrequirement || '—'}</td>
