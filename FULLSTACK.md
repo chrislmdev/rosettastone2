@@ -84,7 +84,7 @@ The **Exceptions** tab in the UI applies **additional client-side filters** afte
 | Table | Purpose |
 |--------|---------|
 | `catalog_import` | Import audit: month, CSP, schema, checksum, status, row counts. |
-| `pricing_item` | Pricing catalog rows (FOCUS-oriented columns, JWCC fields). |
+| `pricing_item` | Pricing catalog rows (FOCUS-oriented contracted/customer and commercial/list columns). |
 | `parent_service` | Parent / mapping catalog (categories, impact, comparison subcategory, etc.). |
 | `exception_item` | Exception library rows. |
 | `exception_change_log` | Field-level exception diffs per import. |

@@ -1,6 +1,6 @@
 # CloudPrism (RosettaStone)
 
-Proof-of-concept **FinOps / JWCC-style catalog browser**: compare **cloud service offerings**, **pricing** (JWCC + commercial list), and **exceptions** across **AWS, Azure, GCP, and Oracle**, with optional **PostgreSQL-backed** imports and **month-over-month catalog change** reporting.
+Proof-of-concept **FinOps catalog browser**: compare **cloud service offerings**, **pricing** (contracted / customer vs commercial list), and **exceptions** across **AWS, Azure, GCP, and Oracle**, with optional **PostgreSQL-backed** imports and **month-over-month catalog change** reporting.
 
 ## How it fits together
 
@@ -49,7 +49,7 @@ flowchart TD
 
   tab[Open Catalog Changes tab] --> imp[GET /imports last pricing months]
   imp --> chg[GET /pricing/changes paginated]
-  chg --> chgView[Render deltas JWCC and commercial]
+  chg --> chgView[Render contracted vs commercial deltas]
 ```
 
 ## Quick start

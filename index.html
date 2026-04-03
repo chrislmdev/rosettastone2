@@ -222,6 +222,22 @@
       cursor: pointer;
     }
 
+    .chg-reports-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .chg-toolbar-stack .nav-reports-wrap {
+      border-left: none;
+      margin-left: 0;
+      height: auto;
+      padding: 0;
+    }
+
     .nav-right {
       margin-left: auto;
       display: flex;
@@ -3116,16 +3132,6 @@
           </svg>
           <span>Admin</span>
         </button>
-        <div class="nav-reports-wrap">
-          <label class="nav-reports-label" for="navReportsSelect">Reports</label>
-          <select id="navReportsSelect" class="nav-reports-select" title="Run a report and print to PDF"
-            onchange="onNavReportChange(this)">
-            <option value="">Select…</option>
-            <option value="exceptions_library">Exceptions library (PDF)</option>
-            <option value="catalog_changes_summary">Catalog changes summary (PDF)</option>
-            <option value="exception_changes_summary">Exception changes summary (PDF)</option>
-          </select>
-        </div>
       </div>
       <div class="nav-right">
         <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark color theme">
@@ -3884,6 +3890,18 @@
           <button type="button" class="chg-mode-btn active" id="chgModePricing" onclick="setCatalogChangesMode('pricing')">Pricing deltas</button>
           <button type="button" class="chg-mode-btn" id="chgModeExceptions" onclick="setCatalogChangesMode('exceptions')">Exception deltas</button>
         </div>
+        <div class="chg-reports-row">
+          <div class="nav-reports-wrap">
+            <label class="nav-reports-label" for="navReportsSelect">Reports</label>
+            <select id="navReportsSelect" class="nav-reports-select" title="Run a report and print to PDF"
+              onchange="onNavReportChange(this)">
+              <option value="">Select…</option>
+              <option value="exceptions_library">Exceptions library (PDF)</option>
+              <option value="catalog_changes_summary">Catalog changes summary (PDF)</option>
+              <option value="exception_changes_summary">Exception changes summary (PDF)</option>
+            </select>
+          </div>
+        </div>
         <div class="chg-month-row" style="width:100%;margin-bottom:8px">
           <div class="chg-month-field">
             <label for="chgMonthFrom">From</label>
@@ -3933,11 +3951,9 @@
               <th>JWCC (from)</th>
               <th>JWCC (to)</th>
               <th>JWCC Price Δ</th>
-              <th>JWCC Price Δ%</th>
               <th>Comm (from)</th>
               <th>Comm (to)</th>
               <th>Comm Price Δ</th>
-              <th>Comm Price Δ%</th>
             </tr>
           </thead>
           <tbody id="chgBody"></tbody>
